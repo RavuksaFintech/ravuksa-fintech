@@ -1820,6 +1820,21 @@ function searchSite() {
 
     item.onclick = function () {
 
+      const parentGrid = result.element.closest(".grid");
+
+if (parentGrid && parentGrid.style.display === "none") {
+  parentGrid.style.display = "grid";
+
+  const toggleButton = parentGrid.previousElementSibling;
+
+  if (
+    toggleButton &&
+    toggleButton.classList.contains("platform-toggle")
+  ) {
+    toggleButton.textContent = "Hide Platforms ▲";
+  }
+}
+      
       result.element.scrollIntoView({
         behavior: "smooth",
         block: "center"
