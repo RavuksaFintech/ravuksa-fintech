@@ -1844,6 +1844,61 @@ function searchSite() {
 
 }
 </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const platformCategories = [
+    "stock-platforms",
+    "mutual-fund-platforms",
+    "bank-platforms",
+    "wealth-platforms",
+    "research-platforms"
+  ];
+
+  platformCategories.forEach(function (id) {
+
+    const heading = document.getElementById(id);
+
+    if (!heading) return;
+
+    const grid = heading.nextElementSibling;
+
+    if (!grid || !grid.classList.contains("grid")) return;
+
+    const button = document.createElement("button");
+
+    button.type = "button";
+    button.textContent = "View Platforms ▼";
+
+    button.className = "btn secondary platform-toggle";
+
+    button.style.marginBottom = "20px";
+
+    grid.style.display = "none";
+
+    button.onclick = function () {
+
+      if (grid.style.display === "none") {
+
+        grid.style.display = "grid";
+        button.textContent = "Hide Platforms ▲";
+
+      } else {
+
+        grid.style.display = "none";
+        button.textContent = "View Platforms ▼";
+
+      }
+
+    };
+
+    heading.insertAdjacentElement("afterend", button);
+
+  });
+
+});
+    </script>
     
 </body>
 </html>
