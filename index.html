@@ -1140,5 +1140,46 @@ function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("active");
 }
     </script>
+
+    <script>
+function calculateSIP() {
+  const monthly = parseFloat(document.getElementById("sipMonthly").value);
+  const annualRate = parseFloat(document.getElementById("sipRate").value);
+  const years = parseFloat(document.getElementById("sipYears").value);
+
+  const result = document.getElementById("sipResult");
+
+  if (!monthly || monthly <= 0 || annualRate < 0 || !years || years <= 0) {
+    result.innerHTML = "Please enter valid values in all fields.";
+    return;
+  }
+
+  const months = years * 12;
+  const monthlyRate = annualRate / 12 / 100;
+
+  let futureValue;
+
+  if (monthlyRate === 0) {
+    futureValue = monthly * months;
+  } else {
+    futureValue =
+      monthly *
+      (((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) *
+      (1 + monthlyRate));
+  }
+
+  const investedAmount = monthly * months;
+  const estimatedReturns = futureValue - investedAmount;
+
+  result.innerHTML = `
+    <h3>SIP Estimate</h3>
+    <p><strong>Invested Amount:</strong> ₹${investedAmount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Estimated Returns:</strong> ₹${estimatedReturns.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Estimated Future Value:</strong> ₹${futureValue.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <small>Illustrative estimate only. Actual investment returns can vary.</small>
+  `;
+}
+    </script>
+    
 </body>
 </html>
