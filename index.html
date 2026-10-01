@@ -1141,12 +1141,11 @@ function toggleMenu(){
 }
     </script>
 
-    <script>
+<script>
 function calculateSIP() {
   const monthly = parseFloat(document.getElementById("sipMonthly").value);
   const annualRate = parseFloat(document.getElementById("sipRate").value);
   const years = parseFloat(document.getElementById("sipYears").value);
-
   const result = document.getElementById("sipResult");
 
   if (!monthly || monthly <= 0 || annualRate < 0 || !years || years <= 0) {
@@ -1179,7 +1178,7 @@ function calculateSIP() {
     <small>Illustrative estimate only. Actual investment returns can vary.</small>
   `;
 }
-    </script>
+</script>
     
 </body>
 </html>
