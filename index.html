@@ -1171,13 +1171,13 @@ function calculateSIP() {
   const estimatedReturns = futureValue - investedAmount;
 
   result.innerHTML = `
-  <h3>SIP Calculation Result</h3>
-    <p><strong>Invested Amount:</strong> ₹${investedAmount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <h3>SIP Calculation Result</h3>
+    <p><strong>Total Investment:</strong> ₹${investedAmount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
     <p><strong>Estimated Returns:</strong> ₹${estimatedReturns.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
     <p><strong>Estimated Future Value:</strong> ₹${futureValue.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
-    <small>Illustrative estimate only. Actual investment returns can vary.</small>
+    <small>Illustrative estimate only. Actual market-linked returns may vary and are not guaranteed.</small>
   `;
-}
+      }
 </script>
     
 </body>
