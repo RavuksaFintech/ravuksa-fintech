@@ -1721,7 +1721,9 @@ function calculateCompound() {
 }
 </script>
 <script>
+<script>
 function searchSite() {
+
   const input = document.getElementById("siteSearch");
   const resultsBox = document.getElementById("searchResults");
   const query = input.value.trim().toLowerCase();
@@ -1733,67 +1735,113 @@ function searchSite() {
     return;
   }
 
-  const elements = document.querySelectorAll(
-    "h1, h2, h3, h4, p, li, a, .card, .notice, .badge"
+  const cards = document.querySelectorAll(".card");
+  const otherElements = document.querySelectorAll(
+    "h1, h2, h3, h4, p, li, a, .notice, .badge"
   );
 
   let results = [];
+  let matchedCards = new Set();
 
-  for (const element of elements) {
-    const text = element.innerText.trim();
+  /* First search inside complete cards */
+  cards.forEach((card) => {
+
+    const text = card.innerText.trim();
 
     if (
       text &&
       text.toLowerCase().includes(query) &&
-      !element.closest(".search-box") &&
-      !element.closest("#searchResults")
+      !card.closest(".search-box") &&
+      !card.closest("#searchResults")
     ) {
-      results.push(element);
-    }
-  }
+      results.push({
+        element: card,
+        title: text.replace(/\s+/g, " ").substring(0, 80)
+      });
 
-  if (results.length === 0) {
+      matchedCards.add(card);
+    }
+
+  });
+
+  /* Then search other website content */
+  otherElements.forEach((element) => {
+
+    if (
+      element.closest(".card") ||
+      element.closest(".search-box") ||
+      element.closest("#searchResults")
+    ) {
+      return;
+    }
+
+    const text = element.innerText.trim();
+
+    if (
+      text &&
+      text.toLowerCase().includes(query)
+    ) {
+      results.push({
+        element: element,
+        title: text.replace(/\s+/g, " ").substring(0, 80)
+      });
+    }
+
+  });
+
+  /* Remove duplicate elements */
+  const uniqueResults = [];
+  const seen = new Set();
+
+  results.forEach((result) => {
+
+    if (!seen.has(result.element)) {
+      seen.add(result.element);
+      uniqueResults.push(result);
+    }
+
+  });
+
+  if (uniqueResults.length === 0) {
+
     resultsBox.innerHTML =
       '<div class="search-no-result">No matching content found.</div>';
+
     resultsBox.style.display = "block";
     return;
   }
 
-  results.slice(0, 10).forEach((element) => {
+  uniqueResults.slice(0, 10).forEach((result) => {
+
     const item = document.createElement("div");
+
     item.className = "search-result-item";
+    item.textContent = result.title;
 
-    let title = element.innerText.trim().replace(/\s+/g, " ");
+    item.onclick = function () {
 
-    if (title.length > 80) {
-      title = title.substring(0, 80) + "...";
-    }
-
-    item.textContent = title;
-
-item.onclick = function () {
-
-      const target =
-        element.closest(".card") || element;
-
-      target.scrollIntoView({
+      result.element.scrollIntoView({
         behavior: "smooth",
         block: "center"
       });
 
-      target.style.outline = "3px solid #1d8cff";
-      target.style.transition = "outline 0.2s ease";
+      result.element.style.outline = "3px solid #1d8cff";
+      result.element.style.transition = "outline 0.2s ease";
 
       setTimeout(() => {
-        target.style.outline = "";
+        result.element.style.outline = "";
       }, 2500);
 
       resultsBox.style.display = "none";
+
     };
+
     resultsBox.appendChild(item);
+
   });
 
   resultsBox.style.display = "block";
+
 }
 </script>
     
