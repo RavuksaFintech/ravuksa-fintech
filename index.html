@@ -1151,7 +1151,7 @@ function calculateSIP() {
       }
 </script>
 
-    <script>
+<script>
 function searchSite() {
   const query = document.getElementById("siteSearch").value.trim().toLowerCase();
 
@@ -1160,15 +1160,37 @@ function searchSite() {
     return;
   }
 
-  const pageText = document.body.innerText.toLowerCase();
+  const elements = document.querySelectorAll(
+    "h1, h2, h3, h4, p, li, a, .card, .notice, .badge"
+  );
 
-  if (pageText.includes(query)) {
-    alert("Search term found on this page: " + query);
-  } else {
+  let found = false;
+
+  for (const element of elements) {
+    const text = element.innerText.toLowerCase();
+
+    if (text.includes(query)) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      element.style.outline = "3px solid #1d8cff";
+
+      setTimeout(() => {
+        element.style.outline = "";
+      }, 2500);
+
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
     alert("No matching content found for: " + query);
   }
 }
-    </script>
+</script>
     
 </body>
 </html>
