@@ -1184,10 +1184,14 @@ function calculateSIP() {
 
 <script>
 function searchSite() {
-  const query = document.getElementById("siteSearch").value.trim().toLowerCase();
+  const input = document.getElementById("siteSearch");
+  const resultsBox = document.getElementById("searchResults");
+  const query = input.value.trim().toLowerCase();
+
+  resultsBox.innerHTML = "";
 
   if (!query) {
-    alert("Please enter something to search.");
+    resultsBox.style.display = "none";
     return;
   }
 
@@ -1195,12 +1199,41 @@ function searchSite() {
     "h1, h2, h3, h4, p, li, a, .card, .notice, .badge"
   );
 
-  let found = false;
+  let results = [];
 
   for (const element of elements) {
-    const text = element.innerText.toLowerCase();
+    const text = element.innerText.trim();
 
-    if (text.includes(query)) {
+    if (
+      text &&
+      text.toLowerCase().includes(query) &&
+      !element.closest(".search-box") &&
+      !element.closest("#searchResults")
+    ) {
+      results.push(element);
+    }
+  }
+
+  if (results.length === 0) {
+    resultsBox.innerHTML =
+      '<div class="search-no-result">No matching content found.</div>';
+    resultsBox.style.display = "block";
+    return;
+  }
+
+  results.slice(0, 10).forEach((element) => {
+    const item = document.createElement("div");
+    item.className = "search-result-item";
+
+    let title = element.innerText.trim().replace(/\s+/g, " ");
+
+    if (title.length > 80) {
+      title = title.substring(0, 80) + "...";
+    }
+
+    item.textContent = title;
+
+    item.onclick = function () {
       element.scrollIntoView({
         behavior: "smooth",
         block: "center"
@@ -1212,14 +1245,13 @@ function searchSite() {
         element.style.outline = "";
       }, 2500);
 
-      found = true;
-      break;
-    }
-  }
+      resultsBox.style.display = "none";
+    };
 
-  if (!found) {
-    alert("No matching content found for: " + query);
-  }
+    resultsBox.appendChild(item);
+  });
+
+  resultsBox.style.display = "block";
 }
 </script>
     
