@@ -65,7 +65,45 @@ section{padding:65px 5%}.section-title{font-size:32px;margin-bottom:12px}.sub{co
 .notice{font-size:13px;color:#9eb0c4;background:#091522;border:1px solid #1b2b3e;padding:18px;border-radius:12px}
 footer{padding:30px 5%;border-top:1px solid #1d3048;color:#8ea2b7;font-size:13px;text-align:center}
 @media(max-width:760px){.grid,.founder{grid-template-columns:1fr}nav .links{display:none}.hero{padding-top:65px}}
-</style>
+/* Mobile Hamburger Menu */
+.menu-btn{
+  display:none;
+  background:none;
+  border:0;
+  color:#fff;
+  font-size:28px;
+  cursor:pointer;
+  padding:5px;
+}
+
+.mobile-menu{
+  display:none;
+  background:#07111f;
+  border-top:1px solid #1d3048;
+  padding:10px 5%;
+}
+
+.mobile-menu a{
+  display:block;
+  padding:12px 0;
+  color:#c9d8e9;
+  border-bottom:1px solid #16283d;
+}
+
+@media(max-width:760px){
+  .menu-btn{
+    display:block;
+  }
+
+  nav .links{
+    display:none;
+  }
+
+  .mobile-menu.active{
+    display:block;
+  }
+  }
+  </style>
 </head>
 <body>
 <nav>
