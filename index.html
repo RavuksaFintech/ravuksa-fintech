@@ -1150,6 +1150,25 @@ function calculateSIP() {
   `;
       }
 </script>
+
+    <script>
+function searchSite() {
+  const query = document.getElementById("siteSearch").value.trim().toLowerCase();
+
+  if (!query) {
+    alert("Please enter something to search.");
+    return;
+  }
+
+  const pageText = document.body.innerText.toLowerCase();
+
+  if (pageText.includes(query)) {
+    alert("Search term found on this page: " + query);
+  } else {
+    alert("No matching content found for: " + query);
+  }
+}
+    </script>
     
 </body>
 </html>
