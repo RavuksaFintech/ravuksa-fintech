@@ -1821,7 +1821,7 @@ function searchSite() {
 
       const parentGrid = result.element.closest(".grid");
 
-if (parentGrid && parentGrid.style.display === "none") {
+      if (parentGrid && getComputedStyle(parentGrid).display === "none") {
   parentGrid.style.display = "grid";
 
   const toggleButton = parentGrid.previousElementSibling;
