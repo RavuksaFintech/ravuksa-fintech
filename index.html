@@ -1085,6 +1085,80 @@ RAVUKSA FINTECH is being developed as an educational and community-focused platf
 </div>
 </section>
 
+    <section id="auth">
+  <div class="wrap">
+
+    <h2 class="section-title">🔐 Login / Sign Up</h2>
+    <p class="sub">Create your free RAVUKSA FINTECH account or login to continue.</p>
+
+    <div class="grid">
+
+      <!-- Sign Up -->
+      <div class="card">
+        <h3>📝 Create Free Account</h3>
+
+        <input id="signupName"
+          type="text"
+          placeholder="Full Name"
+          style="width:100%;padding:13px;margin-top:15px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <input id="signupEmail"
+          type="email"
+          placeholder="Email Address"
+          style="width:100%;padding:13px;margin-top:12px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <input id="signupPassword"
+          type="password"
+          placeholder="Password"
+          style="width:100%;padding:13px;margin-top:12px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <input id="signupConfirm"
+          type="password"
+          placeholder="Confirm Password"
+          style="width:100%;padding:13px;margin-top:12px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <button class="btn primary"
+          onclick="signUpUser()"
+          style="border:0;margin-top:15px;cursor:pointer">
+          Create Account
+        </button>
+
+        <p id="signupMessage"
+          style="margin-top:12px;color:#9eb0c4;font-size:13px">
+        </p>
+      </div>
+
+
+      <!-- Login -->
+      <div class="card">
+        <h3>🔑 Login</h3>
+
+        <input id="loginEmail"
+          type="email"
+          placeholder="Email Address"
+          style="width:100%;padding:13px;margin-top:15px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <input id="loginPassword"
+          type="password"
+          placeholder="Password"
+          style="width:100%;padding:13px;margin-top:12px;border-radius:8px;border:1px solid #1d3048;background:#07111f;color:#fff">
+
+        <button class="btn primary"
+          onclick="loginUser()"
+          style="border:0;margin-top:15px;cursor:pointer">
+          Login
+        </button>
+
+        <p id="loginMessage"
+          style="margin-top:12px;color:#9eb0c4;font-size:13px">
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+    </section>
+    
 <footer>© 2026 RAVUKSA FINTECH · Smart Investment Technology Platform · Founder & CEO: Rajesh Kumar</footer>
 <script>
 function toggleMenu(){
