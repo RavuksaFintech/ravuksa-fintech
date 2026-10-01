@@ -1771,21 +1771,25 @@ function searchSite() {
 
     item.textContent = title;
 
-    item.onclick = function () {
-      element.scrollIntoView({
+item.onclick = function () {
+
+      const target =
+        element.closest(".card") || element;
+
+      target.scrollIntoView({
         behavior: "smooth",
         block: "center"
       });
 
-      element.style.outline = "3px solid #1d8cff";
+      target.style.outline = "3px solid #1d8cff";
+      target.style.transition = "outline 0.2s ease";
 
       setTimeout(() => {
-        element.style.outline = "";
+        target.style.outline = "";
       }, 2500);
 
       resultsBox.style.display = "none";
     };
-
     resultsBox.appendChild(item);
   });
 
