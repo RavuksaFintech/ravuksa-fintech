@@ -2341,6 +2341,29 @@ function calculateInvestment() {
   `;
 }
     </script>
+
+    <script>
+function calculateRisk() {
+  const capital = parseFloat(document.getElementById("riskCapital").value);
+  const riskPercent = parseFloat(document.getElementById("riskPercent").value);
+  const result = document.getElementById("riskResult");
+
+  if (!capital || capital <= 0 || riskPercent < 0) {
+    result.innerHTML = "Please enter valid values in all fields.";
+    return;
+  }
+
+  const riskAmount = capital * (riskPercent / 100);
+
+  result.innerHTML = `
+    <h3>Risk Calculation Result</h3>
+    <p><strong>Total Capital:</strong> ₹${capital.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Risk Percentage:</strong> ${riskPercent}%</p>
+    <p><strong>Calculated Risk Amount:</strong> ₹${riskAmount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <small>Educational estimate only. This calculator does not recommend any particular investment, trade or position.</small>
+  `;
+}
+    </script>
     
 <script>
 function searchSite() {
