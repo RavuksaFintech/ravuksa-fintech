@@ -2813,6 +2813,45 @@ function showLearningSection() {
 window.addEventListener("hashchange", showLearningSection);
 window.addEventListener("load", showLearningSection);
     </script>
+
+    <script>
+const toolSectionIds = [
+  "tools",
+  "sip-calculator",
+  "compound-calculator",
+  "investment-calculator",
+  "risk-calculator",
+  "cagr-calculator",
+  "inflation-calculator"
+];
+
+function showToolSection() {
+  const hash = window.location.hash.replace("#", "");
+
+  toolSectionIds.forEach(function(id) {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.style.display = "none";
+    }
+  });
+
+  let targetId = "tools";
+
+  if (toolSectionIds.includes(hash)) {
+    targetId = hash;
+  }
+
+  const target = document.getElementById(targetId);
+
+  if (target) {
+    target.style.display = "block";
+  }
+}
+
+window.addEventListener("hashchange", showToolSection);
+window.addEventListener("load", showToolSection);
+  </script>
     
 </body>
 </html>
