@@ -2776,7 +2776,35 @@ function zoomLogo() {
 }
     </script>
 
+<script>
+const calculatorIds = [
+  "sip-calculator",
+  "compound-calculator",
+  "investment-calculator",
+  "risk-calculator",
+  "cagr-calculator",
+  "inflation-calculator"
+];
 
+calculatorIds.forEach(function(id) {
+  const calculator = document.getElementById(id);
+
+  if (calculator) {
+    const backButton = document.createElement("div");
+
+    backButton.className = "btns";
+    backButton.style.marginTop = "25px";
+
+    backButton.innerHTML = `
+      <a class="btn secondary" href="#tools">
+        ← Back to Tools / Calculators
+      </a>
+    `;
+
+    calculator.appendChild(backButton);
+  }
+});
+</script>
     
 </body>
 </html>
