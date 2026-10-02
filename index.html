@@ -1706,7 +1706,69 @@ A good investor mindset starts with learning, research, discipline and understan
 
   </div>
   </section>
-  
+
+  </section>
+
+<section id="cagr-calculator" class="about">
+  <div class="wrap">
+
+    <h2 class="section-title">📊 CAGR Calculator</h2>
+
+    <p class="sub">
+      Calculate the annualized growth rate of an investment over a selected time period.
+    </p>
+
+    <div class="card" style="max-width:600px;margin:0 auto;">
+
+      <label for="cagrInitial">Initial Investment (₹)</label>
+      <input
+        type="number"
+        id="cagrInitial"
+        placeholder="Example: 100000"
+        min="1"
+        style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;"
+      >
+
+      <label for="cagrFinal">Final Value (₹)</label>
+      <input
+        type="number"
+        id="cagrFinal"
+        placeholder="Example: 161051"
+        min="1"
+        style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;"
+      >
+
+      <label for="cagrYears">Investment Period (Years)</label>
+      <input
+        type="number"
+        id="cagrYears"
+        placeholder="Example: 5"
+        min="1"
+        step="0.1"
+        style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;"
+      >
+
+      <button
+        type="button"
+        class="btn primary"
+        onclick="calculateCAGR()"
+      >
+        Calculate CAGR
+      </button>
+
+      <div
+        id="cagrResult"
+        style="margin-top:20px;padding:16px;border-radius:10px;background:rgba(22,160,133,0.08);"
+      >
+        Enter your details and click Calculate CAGR.
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="platforms" class="about">
 <section id="platforms" class="about">
   <div class="wrap">
 
