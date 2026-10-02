@@ -3393,6 +3393,30 @@ onAuthStateChanged(auth, function(user) {
   }
 
 };
+
+      window.submitFeedback = function() {
+
+  const rating = document.getElementById("feedbackRating").value;
+  const feedback = document.getElementById("feedbackText").value.trim();
+  const message = document.getElementById("feedbackMessage");
+
+  if (!rating) {
+    message.textContent = "Please select a rating.";
+    return;
+  }
+
+  if (!feedback) {
+    message.textContent = "Please write your feedback.";
+    return;
+  }
+
+  message.textContent =
+    "Thank you! Your feedback has been received.";
+
+  document.getElementById("feedbackRating").value = "";
+  document.getElementById("feedbackText").value = "";
+
+};
       
     </script>
     
