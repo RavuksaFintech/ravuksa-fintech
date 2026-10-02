@@ -3259,6 +3259,44 @@ calculatorIds.forEach(function(id) {
   }
 
 };
+      window.loginUser = async function() {
+
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+  const message = document.getElementById("loginMessage");
+
+  if (!email || !password) {
+    message.textContent = "Please enter your email and password.";
+    return;
+  }
+
+  try {
+
+    await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+
+    message.textContent = "Login successful!";
+
+  } catch (error) {
+
+    if (
+      error.code === "auth/invalid-credential" ||
+      error.code === "auth/wrong-password" ||
+      error.code === "auth/user-not-found"
+    ) {
+      message.textContent = "Invalid email or password.";
+    } else if (error.code === "auth/invalid-email") {
+      message.textContent = "Please enter a valid email address.";
+    } else {
+      message.textContent = "Login failed. Please try again.";
+    }
+
+  }
+
+};
     </script>
     
 </body>
