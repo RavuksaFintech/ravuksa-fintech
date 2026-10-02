@@ -3324,6 +3324,21 @@ onAuthStateChanged(auth, function(user) {
   }
 
 });
+
+    window.logoutUser = async function() {
+
+  try {
+
+    await signOut(auth);
+
+  } catch (error) {
+
+    console.error("Logout Error:", error);
+    alert("Logout failed. Please try again.");
+
+  }
+
+};
       
     </script>
     
