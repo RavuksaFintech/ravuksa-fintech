@@ -2535,6 +2535,34 @@ function calculateCAGR() {
   `;
 }
 </script>
+    <script>
+function calculateInflation() {
+  const amount = parseFloat(document.getElementById("inflationAmount").value);
+  const inflationRate = parseFloat(document.getElementById("inflationRate").value);
+  const years = parseFloat(document.getElementById("inflationYears").value);
+  const result = document.getElementById("inflationResult");
+
+  if (!amount || amount <= 0 || inflationRate < 0 || !years || years <= 0) {
+    result.innerHTML = "Please enter valid values in all fields.";
+    return;
+  }
+
+  const rate = inflationRate / 100;
+
+  const futureAmount = amount * Math.pow(1 + rate, years);
+  const purchasingPower = amount / Math.pow(1 + rate, years);
+
+  result.innerHTML = `
+    <h3>Inflation Calculation Result</h3>
+    <p><strong>Current Amount:</strong> ₹${amount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Inflation Rate:</strong> ${inflationRate}%</p>
+    <p><strong>Time Period:</strong> ${years} years</p>
+    <p><strong>Future Amount Needed:</strong> ₹${futureAmount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Estimated Purchasing Power:</strong> ₹${purchasingPower.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <small>Illustrative estimate only. Actual inflation may vary over time and this calculation does not predict future prices.</small>
+  `;
+}
+    </script>
   <script>
 function searchSite() {
 
