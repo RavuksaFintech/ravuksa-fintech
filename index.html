@@ -2260,6 +2260,33 @@ function calculateCompound() {
   `;
 }
 </script>
+
+    <script>
+function calculateInvestment() {
+  const amount = parseFloat(document.getElementById("investmentAmount").value);
+  const annualRate = parseFloat(document.getElementById("investmentRate").value);
+  const years = parseFloat(document.getElementById("investmentYears").value);
+  const result = document.getElementById("investmentResult");
+
+  if (!amount || amount <= 0 || annualRate < 0 || !years || years <= 0) {
+    result.innerHTML = "Please enter valid values in all fields.";
+    return;
+  }
+
+  const rate = annualRate / 100;
+  const futureValue = amount * Math.pow(1 + rate, years);
+  const estimatedReturns = futureValue - amount;
+
+  result.innerHTML = `
+    <h3>Investment Calculation Result</h3>
+    <p><strong>Initial Investment:</strong> ₹${amount.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Estimated Returns:</strong> ₹${estimatedReturns.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Estimated Future Value:</strong> ₹${futureValue.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <small>Illustrative estimate only. Actual returns may vary and are not guaranteed.</small>
+  `;
+}
+    </script>
+    
 <script>
 function searchSite() {
 
