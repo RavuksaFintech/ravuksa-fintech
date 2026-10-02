@@ -2676,6 +2676,21 @@ function searchSite() {
   
   resultsBox.innerHTML = "";
 
+  const closeButton = document.createElement("button");
+
+closeButton.type = "button";
+closeButton.textContent = "✕ Close";
+
+closeButton.style.cssText =
+  "display:block;margin:8px;padding:7px 12px;border:0;border-radius:6px;cursor:pointer;background:#e9eef3;color:#172033;font-weight:600;";
+
+closeButton.onclick = function() {
+  resultsBox.style.display = "none";
+  clearSearchHighlights();
+};
+
+resultsBox.appendChild(closeButton);
+  
   if (!query) {
     resultsBox.style.display = "none";
     return;
