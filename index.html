@@ -2804,6 +2804,130 @@ function searchSite() {
 </script>
 
     <script>
+
+let searchMatches = [];
+let currentSearchMatch = 0;
+
+function clearSearchHighlights() {
+
+  const highlights = document.querySelectorAll(".search-highlight");
+
+  highlights.forEach(function(highlight) {
+
+    const parent = highlight.parentNode;
+
+    parent.replaceChild(
+      document.createTextNode(highlight.textContent),
+      highlight
+    );
+
+    parent.normalize();
+
+  });
+
+  searchMatches = [];
+  currentSearchMatch = 0;
+}
+
+function highlightSearchWord() {
+
+  clearSearchHighlights();
+
+  const input = document.getElementById("siteSearch");
+  const query = input.value.trim();
+
+  if (!query) {
+    return;
+  }
+
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode: function(node) {
+
+        if (
+          node.parentElement.closest(".search-box") ||
+          node.parentElement.closest("#searchResults") ||
+          node.parentElement.closest("nav") ||
+          node.parentElement.closest("script") ||
+          node.parentElement.closest("style")
+        ) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const textNodes = [];
+
+  while (walker.nextNode()) {
+    textNodes.push(walker.currentNode);
+  }
+
+  const searchText = query.toLowerCase();
+
+  textNodes.forEach(function(node) {
+
+    const text = node.nodeValue;
+    const lowerText = text.toLowerCase();
+
+    if (!lowerText.includes(searchText)) {
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    let start = 0;
+    let index;
+
+    while ((index = lowerText.indexOf(searchText, start)) !== -1) {
+
+      fragment.appendChild(
+        document.createTextNode(text.substring(start, index))
+      );
+
+      const mark = document.createElement("mark");
+
+      mark.className = "search-highlight";
+      mark.textContent = text.substring(
+        index,
+        index + query.length
+      );
+
+      fragment.appendChild(mark);
+
+      searchMatches.push(mark);
+
+      start = index + query.length;
+    }
+
+    fragment.appendChild(
+      document.createTextNode(text.substring(start))
+    );
+
+    node.parentNode.replaceChild(fragment, node);
+
+  });
+
+  if (searchMatches.length > 0) {
+
+    currentSearchMatch = 0;
+
+    searchMatches[0].scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+
+  }
+
+}
+
+    </script>
+    
+    <script>
 document.addEventListener("DOMContentLoaded", function () {
 
   const platformCategories = [
