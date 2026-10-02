@@ -2385,6 +2385,43 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
     </script>
+
+    <script>
+const learningSections = [
+  "learn",
+  "stock-basics",
+  "mutual-funds",
+  "sip-basics",
+  "investor-mindset",
+  "trading-basics",
+  "charts-candlesticks",
+  "risk-management",
+  "fundamental-analysis",
+  "technical-analysis"
+];
+
+function showLearningSection() {
+  const hash = window.location.hash.replace("#", "");
+
+  learningSections.forEach(function(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = "none";
+    }
+  });
+
+  if (learningSections.includes(hash)) {
+    const section = document.getElementById(hash);
+    if (section) {
+      section.style.display = "block";
+      section.scrollIntoView({behavior:"smooth"});
+    }
+  }
+}
+
+window.addEventListener("hashchange", showLearningSection);
+window.addEventListener("load", showLearningSection);
+    </script>
     
 </body>
 </html>
