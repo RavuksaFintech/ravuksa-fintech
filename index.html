@@ -3298,6 +3298,16 @@ window.loginUser = async function() {
   }
 
 };
+
+      onAuthStateChanged(auth, function(user) {
+
+  if (user) {
+    console.log("User is logged in:", user.email);
+  } else {
+    console.log("No user is logged in.");
+  }
+
+});
       
     </script>
     
