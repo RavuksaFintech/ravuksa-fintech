@@ -2441,6 +2441,30 @@ function calculateRisk() {
     </script>
     
 <script>
+  <script>
+function calculateCAGR() {
+  const initialValue = parseFloat(document.getElementById("cagrInitial").value);
+  const finalValue = parseFloat(document.getElementById("cagrFinal").value);
+  const years = parseFloat(document.getElementById("cagrYears").value);
+  const result = document.getElementById("cagrResult");
+
+  if (!initialValue || initialValue <= 0 || !finalValue || finalValue <= 0 || !years || years <= 0) {
+    result.innerHTML = "Please enter valid values in all fields.";
+    return;
+  }
+
+  const cagr = (Math.pow(finalValue / initialValue, 1 / years) - 1) * 100;
+
+  result.innerHTML = `
+    <h3>CAGR Calculation Result</h3>
+    <p><strong>Initial Investment:</strong> ₹${initialValue.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Final Value:</strong> ₹${finalValue.toLocaleString("en-IN", {maximumFractionDigits: 0})}</p>
+    <p><strong>Investment Period:</strong> ${years} years</p>
+    <p><strong>CAGR:</strong> ${cagr.toFixed(2)}% per year</p>
+    <small>CAGR is an annualized growth measure. It does not mean the investment actually grew by the same percentage every year and does not guarantee future returns.</small>
+  `;
+}
+</script>
 function searchSite() {
 
   const input = document.getElementById("siteSearch");
