@@ -3206,6 +3206,59 @@ calculatorIds.forEach(function(id) {
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+    window.registerUser = async function() {
+
+  const name = document.getElementById("registerName").value.trim();
+  const email = document.getElementById("registerEmail").value.trim();
+  const password = document.getElementById("registerPassword").value;
+  const confirmPassword = document.getElementById("registerConfirmPassword").value;
+  const message = document.getElementById("registerMessage");
+
+  if (!name || !email || !password || !confirmPassword) {
+    message.textContent = "Please fill all fields.";
+    return;
+  }
+
+  if (password !== confirmPassword) {
+    message.textContent = "Passwords do not match.";
+    return;
+  }
+
+  if (password.length < 6) {
+    message.textContent = "Password must be at least 6 characters.";
+    return;
+  }
+
+  try {
+
+    await createUserWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+
+    message.textContent = "Account created successfully!";
+
+    document.getElementById("registerName").value = "";
+    document.getElementById("registerEmail").value = "";
+    document.getElementById("registerPassword").value = "";
+    document.getElementById("registerConfirmPassword").value = "";
+
+  } catch (error) {
+
+    if (error.code === "auth/email-already-in-use") {
+      message.textContent = "This email is already registered.";
+    } else if (error.code === "auth/invalid-email") {
+      message.textContent = "Please enter a valid email address.";
+    } else if (error.code === "auth/weak-password") {
+      message.textContent = "Password is too weak.";
+    } else {
+      message.textContent = "Registration failed. Please try again.";
+    }
+
+  }
+
+};
     </script>
     
 </body>
