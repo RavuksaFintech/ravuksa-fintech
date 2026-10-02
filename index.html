@@ -3053,6 +3053,29 @@ calculatorIds.forEach(function(id) {
   }
 });
 </script>
+
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged
+  } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCHul_vTiy_QMWB4Luptlr4j4x0HsPONXE",
+    authDomain: "ravuksa-fintech.firebaseapp.com",
+    projectId: "ravuksa-fintech",
+    storageBucket: "ravuksa-fintech.firebasestorage.app",
+    messagingSenderId: "462916173284",
+    appId: "1:462916173284:web:01b35781982c82e6359bf1"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+    </script>
     
 </body>
 </html>
