@@ -2776,7 +2776,7 @@ function zoomLogo() {
 }
     </script>
 
-    <script>
+<script>
 const learningSectionIds = [
   "learning-categories",
   "learn",
@@ -2791,35 +2791,6 @@ const learningSectionIds = [
   "technical-analysis"
 ];
 
-function showLearningSection() {
-  const hash = window.location.hash.replace("#", "");
-
-  learningSectionIds.forEach(function(id) {
-    const section = document.getElementById(id);
-
-    if (section) {
-      section.style.display = "none";
-    }
-  });
-
-  let targetId = "learning-categories";
-
-  if (learningSectionIds.includes(hash)) {
-    targetId = hash;
-  }
-
-  const target = document.getElementById(targetId);
-
-  if (target) {
-    target.style.display = "block";
-  }
-}
-
-window.addEventListener("hashchange", showLearningSection);
-window.addEventListener("load", showLearningSection);
-    </script>
-
-    <script>
 const toolSectionIds = [
   "tools",
   "sip-calculator",
@@ -2830,21 +2801,40 @@ const toolSectionIds = [
   "inflation-calculator"
 ];
 
-function showToolSection() {
+function showPageSection() {
+
   const hash = window.location.hash.replace("#", "");
 
-  toolSectionIds.forEach(function(id) {
+  /* Hide Learning sections */
+  learningSectionIds.forEach(function(id) {
     const section = document.getElementById(id);
-
     if (section) {
       section.style.display = "none";
     }
   });
 
-  let targetId = "tools";
+  /* Hide Tool sections */
+  toolSectionIds.forEach(function(id) {
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = "none";
+    }
+  });
+
+  /* Decide which section to show */
+  let targetId = "";
+
+  if (learningSectionIds.includes(hash)) {
+    targetId = hash;
+  }
 
   if (toolSectionIds.includes(hash)) {
     targetId = hash;
+  }
+
+  /* Default page */
+  if (!targetId) {
+    targetId = "learning-categories";
   }
 
   const target = document.getElementById(targetId);
@@ -2854,9 +2844,9 @@ function showToolSection() {
   }
 }
 
-window.addEventListener("hashchange", showToolSection);
-window.addEventListener("load", showToolSection);
-  </script>
+window.addEventListener("hashchange", showPageSection);
+window.addEventListener("load", showPageSection);
+</script>
     
 </body>
 </html>
