@@ -2667,6 +2667,8 @@ function searchSite() {
   const resultsBox = document.getElementById("searchResults");
   const query = input.value.trim().toLowerCase();
 
+  highlightSearchWord();
+  
   resultsBox.innerHTML = "";
 
   if (!query) {
