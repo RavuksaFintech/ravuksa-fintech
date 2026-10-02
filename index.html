@@ -2652,6 +2652,7 @@ function calculateInflation() {
   `;
 }
     </script>
+
   <script>
 function searchSite() {
 
@@ -2666,74 +2667,59 @@ function searchSite() {
     return;
   }
 
-  const cards = document.querySelectorAll(".card");
-  const otherElements = document.querySelectorAll(
-    "h1, h2, h3, h4, p, li, a, .notice, .badge"
+  const searchableElements = document.querySelectorAll(
+    "section, .card, h1, h2, h3, h4, p, li, a, .notice, .badge"
   );
 
-  let results = [];
-  let matchedCards = new Set();
+  const results = [];
+  const seen = new Set();
 
-  /* First search inside complete cards */
-  cards.forEach((card) => {
-
-    const text = card.innerText.trim();
+  searchableElements.forEach(function(element) {
 
     if (
-      text &&
-      text.toLowerCase().includes(query) &&
-      !card.closest(".search-box") &&
-      !card.closest("#searchResults")
-    ) {
-      results.push({
-        element: card,
-        title: text.replace(/\s+/g, " ").substring(0, 80)
-      });
-
-      matchedCards.add(card);
-    }
-
-  });
-
-  /* Then search other website content */
-  otherElements.forEach((element) => {
-
-    if (
-      element.closest(".card") ||
       element.closest(".search-box") ||
-      element.closest("#searchResults")
+      element.closest("#searchResults") ||
+      element.closest("nav")
     ) {
       return;
     }
 
     const text = element.innerText.trim();
 
-    if (
-      text &&
-      text.toLowerCase().includes(query)
-    ) {
-      results.push({
-        element: element,
-        title: text.replace(/\s+/g, " ").substring(0, 80)
-      });
+    if (!text || !text.toLowerCase().includes(query)) {
+      return;
     }
+
+    /*
+      अगर किसी card के अंदर match मिला है,
+      तो अलग-अलग h3/p को duplicate result न बनाएं।
+    */
+    const target = element.closest(".card") || element;
+
+    if (seen.has(target)) {
+      return;
+    }
+
+    seen.add(target);
+
+    let title = "";
+
+    const heading = target.querySelector("h1, h2, h3, h4");
+
+    if (heading) {
+      title = heading.innerText.trim();
+    } else {
+      title = text.replace(/\s+/g, " ").substring(0, 100);
+    }
+
+    results.push({
+      element: target,
+      title: title
+    });
 
   });
 
-  /* Remove duplicate elements */
-  const uniqueResults = [];
-  const seen = new Set();
-
-  results.forEach((result) => {
-
-    if (!seen.has(result.element)) {
-      seen.add(result.element);
-      uniqueResults.push(result);
-    }
-
-  });
-
-  if (uniqueResults.length === 0) {
+  if (results.length === 0) {
 
     resultsBox.innerHTML =
       '<div class="search-no-result">No matching content found.</div>';
@@ -2742,43 +2728,69 @@ function searchSite() {
     return;
   }
 
-  uniqueResults.slice(0, 10).forEach((result) => {
+  results.slice(0, 20).forEach(function(result) {
 
     const item = document.createElement("div");
 
     item.className = "search-result-item";
     item.textContent = result.title;
 
-    item.onclick = function () {
+    item.onclick = function() {
 
+      /*
+        अगर result किसी hidden section में है,
+        तो उस section को visible करने की कोशिश करें।
+      */
+      const section = result.element.closest("section");
+
+      if (section) {
+        section.style.display = "";
+      }
+
+      /*
+        अगर result hidden grid के अंदर है,
+        तो grid को वापस दिखाएँ।
+      */
       const parentGrid = result.element.closest(".grid");
 
-      if (parentGrid && getComputedStyle(parentGrid).display === "none") {
-  parentGrid.style.display = "grid";
+      if (
+        parentGrid &&
+        getComputedStyle(parentGrid).display === "none"
+      ) {
+        parentGrid.style.display = "grid";
 
-  const toggleButton = parentGrid.previousElementSibling;
+        const toggleButton = parentGrid.previousElementSibling;
 
-  if (
-    toggleButton &&
-    toggleButton.classList.contains("platform-toggle")
-  ) {
-    toggleButton.textContent = "Hide Platforms ▲";
-  }
-}
-      
+        if (
+          toggleButton &&
+          toggleButton.classList.contains("platform-toggle")
+        ) {
+          toggleButton.textContent = "Hide Platforms ▲";
+        }
+      }
+
+      /*
+        Search result बंद करें।
+      */
+      resultsBox.style.display = "none";
+
+      /*
+        सीधे matching content तक जाएँ।
+      */
       result.element.scrollIntoView({
         behavior: "smooth",
         block: "center"
       });
 
+      /*
+        Matching content को कुछ समय के लिए highlight करें।
+      */
       result.element.style.outline = "3px solid #1d8cff";
       result.element.style.transition = "outline 0.2s ease";
 
-      setTimeout(() => {
+      setTimeout(function() {
         result.element.style.outline = "";
       }, 2500);
-
-      resultsBox.style.display = "none";
 
     };
 
