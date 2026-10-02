@@ -2840,9 +2840,13 @@ function showPageSection() {
   const target = document.getElementById(targetId);
 
   if (target) {
-    target.style.display = "block";
+  target.style.display = "block";
+
+  target.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
   }
-}
 
 window.addEventListener("hashchange", showPageSection);
 window.addEventListener("load", showPageSection);
