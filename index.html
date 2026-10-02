@@ -2770,6 +2770,49 @@ function zoomLogo() {
   }, 3000);
 }
     </script>
+
+    <script>
+const learningSectionIds = [
+  "learning-categories",
+  "learn",
+  "stock-basics",
+  "mutual-funds",
+  "sip-basics",
+  "investor-mindset",
+  "trading-basics",
+  "charts-candlesticks",
+  "risk-management",
+  "fundamental-analysis",
+  "technical-analysis"
+];
+
+function showLearningSection() {
+  const hash = window.location.hash.replace("#", "");
+
+  learningSectionIds.forEach(function(id) {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.style.display = "none";
+    }
+  });
+
+  let targetId = "learning-categories";
+
+  if (learningSectionIds.includes(hash)) {
+    targetId = hash;
+  }
+
+  const target = document.getElementById(targetId);
+
+  if (target) {
+    target.style.display = "block";
+  }
+}
+
+window.addEventListener("hashchange", showLearningSection);
+window.addEventListener("load", showLearningSection);
+    </script>
     
 </body>
 </html>
