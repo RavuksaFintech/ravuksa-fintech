@@ -3301,12 +3301,26 @@ window.loginUser = async function() {
 
 };
 
-      onAuthStateChanged(auth, function(user) {
+onAuthStateChanged(auth, function(user) {
+
+  const authNav = document.getElementById("authNav");
+
+  if (!authNav) return;
 
   if (user) {
-    console.log("User is logged in:", user.email);
+
+    authNav.innerHTML = `
+      <a href="#account">👤 Account</a>
+      <a href="#" onclick="logoutUser(); return false;">🚪 Logout</a>
+    `;
+
   } else {
-    console.log("No user is logged in.");
+
+    authNav.innerHTML = `
+      <a href="#login">🔐 Login</a>
+      <a href="#register">📝 Register</a>
+    `;
+
   }
 
 });
