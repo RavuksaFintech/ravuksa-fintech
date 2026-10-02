@@ -380,7 +380,11 @@ footer{
 <nav>
 <div class="nav">
 <div class="logo">
-  <img src="./logo.png.jpg" alt="RAVUKSA FINTECH Logo" style="height:42px;width:auto;display:block;">
+  <img src="./logo.png.jpg"
+     alt="RAVUKSA FINTECH Logo"
+     id="mainLogo"
+     onclick="zoomLogo()"
+     style="height:42px;width:auto;display:block;cursor:pointer;transition:transform 0.35s ease;">
 </div>
 
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -2427,6 +2431,18 @@ function showLearningSection() {
 
 window.addEventListener("hashchange", showLearningSection);
 window.addEventListener("load", showLearningSection);
+    </script>
+
+    <script>
+function zoomLogo() {
+  const logo = document.getElementById("mainLogo");
+
+  logo.style.transform = "scale(2.5)";
+
+  setTimeout(function() {
+    logo.style.transform = "scale(1)";
+  }, 3000);
+}
     </script>
     
 </body>
