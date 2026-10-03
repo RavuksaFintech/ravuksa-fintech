@@ -3815,6 +3815,13 @@ const isHoliday = marketHolidays.includes(today);
     currentMinutes >= marketOpen &&
     currentMinutes <= marketClose;
 
+  if (isHoliday) {
+  status.innerHTML =
+    "🔴 Market Status: <strong>Closed</strong><br>" +
+    "📅 Today is a market holiday.";
+  return;
+  }
+  
   if (isMarketOpen) {
     status.innerHTML =
       "🟢 Market Status: <strong>Open</strong><br>" +
