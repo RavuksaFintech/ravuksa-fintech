@@ -3811,6 +3811,7 @@ const isHoliday = marketHolidays.includes(today);
   const isWeekday = day >= 1 && day <= 5;
   const isMarketOpen =
     isWeekday &&
+    !isHoliday &&
     currentMinutes >= marketOpen &&
     currentMinutes <= marketClose;
 
