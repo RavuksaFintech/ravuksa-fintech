@@ -3267,6 +3267,7 @@ calculatorIds.forEach(function(id) {
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
+      window.db = getFirestore(app);
     window.registerUser = async function() {
 
   const name = document.getElementById("registerName").value.trim();
