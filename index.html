@@ -3249,6 +3249,13 @@ calculatorIds.forEach(function(id) {
     onAuthStateChanged
   } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
 
+      import {
+  getFirestore,
+  collection,
+  addDoc,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js";
+      
   const firebaseConfig = {
     apiKey: "AIzaSyCHul_vTiy_QMWB4Luptlr4j4x0HsPONXE",
     authDomain: "ravuksa-fintech.firebaseapp.com",
