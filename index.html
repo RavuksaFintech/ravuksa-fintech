@@ -3794,6 +3794,20 @@ function updateMarketStatus() {
   const marketOpen = 9 * 60 + 15;
   const marketClose = 15 * 60 + 30;
 
+  const marketHolidays = [
+  "2026-10-02",
+  "2026-10-20",
+  "2026-11-09",
+  "2026-11-24",
+  "2026-12-25"
+];
+
+const today = now.getFullYear() + "-" +
+  String(now.getMonth() + 1).padStart(2, "0") + "-" +
+  String(now.getDate()).padStart(2, "0");
+
+const isHoliday = marketHolidays.includes(today);
+  
   const isWeekday = day >= 1 && day <= 5;
   const isMarketOpen =
     isWeekday &&
