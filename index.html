@@ -3776,6 +3776,45 @@ message.textContent =
 };
       
     </script>
+
+    <script>
+function updateMarketStatus() {
+
+  const status = document.getElementById("marketStatus");
+  if (!status) return;
+
+  const now = new Date();
+
+  const day = now.getDay();
+  const hours = now.getHours();
+  const minutes = now.getMinutes();
+
+  const currentMinutes = hours * 60 + minutes;
+
+  const marketOpen = 9 * 60 + 15;
+  const marketClose = 15 * 60 + 30;
+
+  const isWeekday = day >= 1 && day <= 5;
+  const isMarketOpen =
+    isWeekday &&
+    currentMinutes >= marketOpen &&
+    currentMinutes <= marketClose;
+
+  if (isMarketOpen) {
+    status.innerHTML =
+      "🟢 Market Status: <strong>Open</strong><br>" +
+      "Regular market hours: 9:15 AM – 3:30 PM";
+  } else {
+    status.innerHTML =
+      "🔴 Market Status: <strong>Closed</strong><br>" +
+      "Regular market hours: 9:15 AM – 3:30 PM";
+  }
+}
+
+updateMarketStatus();
+
+setInterval(updateMarketStatus, 60000);
+    </script>
     
 </body>
 </html>
