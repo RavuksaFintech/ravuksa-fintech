@@ -3446,9 +3446,8 @@ window.submitFeedback = async function() {
 
     console.error("Feedback Error:", error);
 
-    message.textContent =
-      "Feedback could not be submitted. Please try again.";
-
+message.textContent =
+  "Feedback Error: " + error.code + " — " + error.message;
   }
 
 };
