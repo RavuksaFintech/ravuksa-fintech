@@ -3401,11 +3401,20 @@ onAuthStateChanged(auth, function(user) {
 
 };
 
-      window.submitFeedback = function() {
+window.submitFeedback = async function() {
+
+  const user = auth.currentUser;
 
   const rating = document.getElementById("feedbackRating").value;
   const feedback = document.getElementById("feedbackText").value.trim();
   const message = document.getElementById("feedbackMessage");
+
+  message.textContent = "";
+
+  if (!user) {
+    message.textContent = "Please login first to submit feedback.";
+    return;
+  }
 
   if (!rating) {
     message.textContent = "Please select a rating.";
@@ -3417,11 +3426,30 @@ onAuthStateChanged(auth, function(user) {
     return;
   }
 
-  message.textContent =
-    "Thank you! Your feedback has been received.";
+  try {
 
-  document.getElementById("feedbackRating").value = "";
-  document.getElementById("feedbackText").value = "";
+    await addDoc(collection(db, "feedback"), {
+      uid: user.uid,
+      email: user.email,
+      rating: Number(rating),
+      feedback: feedback,
+      createdAt: serverTimestamp()
+    });
+
+    message.textContent =
+      "Thank you! Your feedback has been submitted successfully.";
+
+    document.getElementById("feedbackRating").value = "";
+    document.getElementById("feedbackText").value = "";
+
+  } catch (error) {
+
+    console.error("Feedback Error:", error);
+
+    message.textContent =
+      "Feedback could not be submitted. Please try again.";
+
+  }
 
 };
       
