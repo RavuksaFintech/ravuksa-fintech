@@ -4097,6 +4097,34 @@ updateMarketStatus();
 
 setInterval(updateMarketStatus, 60000);
     </script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const levelButtons = document.querySelectorAll(
+    'a[href="#beginner-learning"], a[href="#intermediate-learning"], a[href="#advanced-learning"]'
+  );
+
+  levelButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.querySelectorAll(
+        "#beginner-learning, #intermediate-learning, #advanced-learning"
+      ).forEach(function (section) {
+        section.style.display = "none";
+      });
+
+      const target = document.querySelector(button.getAttribute("href"));
+
+      if (target) {
+        target.style.display = "block";
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+});
+    </script>
     
 </body>
 </html>
