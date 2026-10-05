@@ -4845,11 +4845,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
     </script>
 
-    <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
   const home = document.getElementById("home");
-  const quickAccess = document.getElementById("quick-access");
 
   function hideAllSections() {
     document.querySelectorAll("body > section, body > header").forEach(function (section) {
@@ -4860,10 +4859,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showTarget(id) {
+
     hideAllSections();
 
-    if (id === "home" || id === "") {
-      if (home) home.style.display = "block";
+    if (!id || id === "home") {
+      if (home) {
+        home.style.display = "block";
+        home.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
       return;
     }
 
@@ -4872,6 +4878,20 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!target) {
       if (home) home.style.display = "block";
       return;
+    }
+
+    /* Target के parent sections को भी visible रखें */
+    let parent = target.parentElement;
+
+    while (parent && parent !== document.body) {
+      if (
+        parent.tagName === "SECTION" ||
+        parent.tagName === "HEADER"
+      ) {
+        parent.style.display = "block";
+      }
+
+      parent = parent.parentElement;
     }
 
     target.style.display = "block";
@@ -4884,21 +4904,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function handleNavigation() {
     const id = window.location.hash.replace("#", "");
-
-    if (!id) {
-      showTarget("home");
-    } else {
-      showTarget(id);
-    }
+    showTarget(id || "home");
   }
 
-  hideAllSections();
-  showTarget(window.location.hash.replace("#", "") || "home");
+  handleNavigation();
 
   window.addEventListener("hashchange", handleNavigation);
 
 });
-    </script>
+</script>
     
 </body>
 </html>
