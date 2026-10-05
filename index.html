@@ -122,6 +122,50 @@ h1 span{
   color:#16a085;
 }
 
+    .hero-tagline{
+  margin:18px 0 24px;
+  padding:10px 16px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border-left:4px solid #16a085;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 5px 18px rgba(20,40,70,.08);
+  animation:heroTaglineMove 3s ease-in-out infinite alternate;
+}
+
+.hero-tagline span{
+  color:#16a085;
+  font-weight:700;
+}
+
+.hero-tagline strong{
+  color:#526174;
+  font-size:14px;
+}
+
+@keyframes heroTaglineMove{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(8px);
+  }
+}
+
+@media (max-width:600px){
+  .hero-tagline{
+    font-size:13px;
+    margin-top:12px;
+  }
+
+  .hero-tagline strong{
+    font-size:13px;
+  }
+    }
+    
 .hero p{
   max-width:650px;
   color:#526174;
@@ -514,7 +558,10 @@ footer{
   <p>RAVUKSA FINTECH is a financial education and market learning platform helping people understand investing, financial markets, trading concepts, risk management and personal finance in simple language.</p>
 <div class="btns">
   <a class="btn primary" href="#contact">Contact Us</a>
-<a class="btn secondary" href="#learn">Start Learning</a>
+<div class="hero-tagline">
+  <span>सीखिए • समझिए • आगे बढ़िए</span>
+  <strong>Smart Finance Starts With Better Understanding.</strong>
+</div> 
 </div>
   <a class="btn secondary" href="#quick-access">🚀 Explore Sections</a>
 </div>
