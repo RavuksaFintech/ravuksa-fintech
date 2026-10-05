@@ -1963,11 +1963,27 @@ Stock Market में आगे बढ़ने से पहले basic conce
 
 <div style="margin-top:18px;">
 <p><strong>Q3. Stock Market में profit guaranteed है?</strong></p>
-<p style="margin-top:6px;">A) हमेशा</p>
-<p>B) केवल short term में</p>
-<p>C) नहीं</p>
-<p>D) केवल NSE में</p>
-</div>
+
+<label style="display:block;margin-top:8px;">
+  <input type="radio" name="stockQ3" value="A">
+  A) हमेशा
+</label>
+
+<label style="display:block;margin-top:6px;">
+  <input type="radio" name="stockQ3" value="B">
+  B) केवल short term में
+</label>
+
+<label style="display:block;margin-top:6px;">
+  <input type="radio" name="stockQ3" value="C">
+  C) नहीं
+</label>
+
+<label style="display:block;margin-top:6px;">
+  <input type="radio" name="stockQ3" value="D">
+  D) केवल NSE में
+</label>
+  </div> 
 
 <div class="highlight" style="margin-top:20px;">
 
@@ -1992,7 +2008,18 @@ Q3 — <strong>C</strong>
   <button
     type="button"
     class="btn primary"
-    onclick="document.getElementById('stockQuizAnswers').style.display='block'; document.getElementById('stockQuizScore').textContent='🎯 Score: 3/3 — Excellent! आपने Stock Market Basics के सभी answers सही समझे।';
+    onclick="document.getElementById('stockQuizAnswers').style.display='block'; const q1 = document.querySelector('input[name="stockQ1"]:checked');
+const q2 = document.querySelector('input[name="stockQ2"]:checked');
+const q3 = document.querySelector('input[name="stockQ3"]:checked');
+
+let score = 0;
+
+if (q1 && q1.value === 'B') score++;
+if (q2 && q2.value === 'A') score++;
+if (q3 && q3.value === 'C') score++;
+
+document.getElementById('stockQuizScore').textContent =
+  '🎯 Your Score: ' + score + '/3 — Answer Key नीचे देखें।';
     ✅ Check Answers
   </button>
     </div>
