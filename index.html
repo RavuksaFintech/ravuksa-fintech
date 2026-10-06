@@ -4362,8 +4362,8 @@ resultsBox.appendChild(closeButton);
       */
       const section = result.element.closest("section");
 
-      if (section) {
-        section.style.display = "";
+if (section) {
+  window.location.hash = "#" + section.id;
       }
 
       /*
