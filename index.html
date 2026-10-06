@@ -4354,65 +4354,38 @@ resultsBox.appendChild(closeButton);
     item.className = "search-result-item";
     item.textContent = result.title;
 
-    item.onclick = function() {
+item.onclick = function() {
 
-      /*
-        अगर result किसी hidden section में है,
-        तो उस section को visible करने की कोशिश करें।
-      */
-      const section = result.element.closest("section");
+  const section = result.element.closest("section");
 
-if (section) {
-  window.location.hash = "#" + section.id;
-      }
+  if (section && section.id) {
 
-      /*
-        अगर result hidden grid के अंदर है,
-        तो grid को वापस दिखाएँ।
-      */
-      const parentGrid = result.element.closest(".grid");
+    document.querySelectorAll("body > section").forEach(function(s) {
+      s.style.display = "none";
+    });
 
-      if (
-        parentGrid &&
-        getComputedStyle(parentGrid).display === "none"
-      ) {
-        parentGrid.style.display = "grid";
+    section.style.display = "block";
 
-        const toggleButton = parentGrid.previousElementSibling;
+    resultsBox.style.display = "none";
+    clearSearchHighlights();
 
-        if (
-          toggleButton &&
-          toggleButton.classList.contains("platform-toggle")
-        ) {
-          toggleButton.textContent = "Hide Platforms ▲";
-        }
-      }
-
-      /*
-        Search result बंद करें।
-      */
-      resultsBox.style.display = "none";
-
-      /*
-        सीधे matching content तक जाएँ।
-      */
-      result.element.scrollIntoView({
+    setTimeout(function() {
+      section.scrollIntoView({
         behavior: "smooth",
-        block: "center"
+        block: "start"
       });
 
-      /*
-        Matching content को कुछ समय के लिए highlight करें।
-      */
       result.element.style.outline = "3px solid #1d8cff";
-      result.element.style.transition = "outline 0.2s ease";
 
       setTimeout(function() {
         result.element.style.outline = "";
       }, 2500);
 
-    };
+    }, 100);
+  }
 
+};
+    
     resultsBox.appendChild(item);
 
   });
