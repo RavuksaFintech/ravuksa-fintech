@@ -5282,7 +5282,7 @@ window.saveProfile = async function() {
 
   try {
 
-    await addDoc(collection(db, "profiles"), {
+ await setDoc(doc(db, "profiles", user.uid), {
       uid: user.uid,
       email: user.email,
       name: name,
