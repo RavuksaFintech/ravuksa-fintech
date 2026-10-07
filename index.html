@@ -5340,7 +5340,11 @@ window.saveProfile = async function() {
       updatedAt: serverTimestamp()
     });
 
-    alert("Profile saved successfully!");
+  const profileMessage = document.getElementById("profileMessage");
+
+if (profileMessage) {
+  profileMessage.textContent = "✅ Profile saved successfully!";
+    }.
 
   } catch (error) {
 
