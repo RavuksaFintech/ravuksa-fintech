@@ -5352,14 +5352,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
     </script>
 
-async function saveProfile() {
-
-  const user = firebase.auth().currentUser;
-
-  if (!user) {
-    alert("Please login first.");
-    return;
-  }
 
   const name = document.getElementById("profileName").value.trim();
   const username = document.getElementById("profileUsername").value.trim();
