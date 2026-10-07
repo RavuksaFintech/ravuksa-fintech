@@ -5253,6 +5253,55 @@ message.textContent =
   }
 
 };
+
+      window.saveProfile = async function() {
+
+  const user = auth.currentUser;
+
+  const name = document.getElementById("profileName").value.trim();
+  const username = document.getElementById("profileUsername").value.trim();
+  const bio = document.getElementById("profileBio").value.trim();
+
+  if (!user) {
+    alert("Please login first.");
+    return;
+  }
+
+  if (!name) {
+    alert("Please enter your Full Name.");
+    return;
+  }
+
+  if (!username) {
+    alert("Please enter your Username.");
+    return;
+  }
+
+  try {
+
+    await setDoc(doc(db, "profiles", user.uid), {
+      uid: user.uid,
+      email: user.email,
+      name: name,
+      username: username,
+      bio: bio,
+      updatedAt: serverTimestamp()
+    }, { merge: true });
+
+    alert("Profile saved successfully!");
+
+  } catch (error) {
+
+    console.error("Profile Save Error:", error);
+
+    alert(
+      "Profile Save Error: " +
+      error.code +
+      " — " +
+      error.message
+    );
+  }
+};
       
     </script>
 
