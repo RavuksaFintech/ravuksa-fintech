@@ -5356,41 +5356,6 @@ if (emailElement) {
 
   }
 };
-
-      window.loadProfile = async function() {
-
-  const user = auth.currentUser;
-
-  if (!user) {
-    return;
-  }
-
-  try {
-
-    const profileDoc = await getDoc(
-      doc(db, "profiles", user.uid)
-    );
-
-    if (profileDoc.exists()) {
-
-      const profile = profileDoc.data();
-
-      document.getElementById("profileName").value =
-        profile.name || "";
-
-      document.getElementById("profileUsername").value =
-        profile.username || "";
-
-      document.getElementById("profileBio").value =
-        profile.bio || "";
-    }
-
-  } catch (error) {
-
-    console.error("Profile Load Error:", error);
-
-  }
-};
       
     </script>
 
