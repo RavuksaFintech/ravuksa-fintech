@@ -5186,6 +5186,12 @@ onAuthStateChanged(auth, function(user) {
   if (user) {
 
     loadProfile();
+
+    const mobileLogout = document.getElementById("mobileLogout");
+
+if (mobileLogout) {
+  mobileLogout.style.display = "block";
+}
     
     authNav.innerHTML = `
       <a href="#account">👤 Account</a>
@@ -5194,6 +5200,12 @@ onAuthStateChanged(auth, function(user) {
 
   } else {
 
+    const mobileLogout = document.getElementById("mobileLogout");
+
+if (mobileLogout) {
+  mobileLogout.style.display = "none";
+}
+    
     authNav.innerHTML = `
       <a href="#login">🔐 Login</a>
       <a href="#register">📝 Register</a>
