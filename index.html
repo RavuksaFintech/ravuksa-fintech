@@ -5413,15 +5413,7 @@ if (emailElement) {
       document.getElementById("profileUsername").value =
         profile.username || "";
 
-      const avatar = document.getElementById("profileAvatar");
 
-if (avatar) {
-  const username = profile.username || "";
-
-  avatar.textContent = username
-    ? username.charAt(0).toUpperCase()
-    : "👤";
-}
       
       document.getElementById("profileBio").value =
         profile.bio || "";
