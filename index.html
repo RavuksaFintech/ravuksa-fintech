@@ -5192,6 +5192,17 @@ onAuthStateChanged(auth, function(user) {
 if (mobileLogout) {
   mobileLogout.style.display = "block";
 }
+
+    const mobileLogin = document.getElementById("mobileLogin");
+const mobileRegister = document.getElementById("mobileRegister");
+
+if (mobileLogin) {
+  mobileLogin.style.display = "none";
+}
+
+if (mobileRegister) {
+  mobileRegister.style.display = "block";
+}
     
     authNav.innerHTML = `
       <a href="#account">👤 Account</a>
@@ -5204,6 +5215,17 @@ if (mobileLogout) {
 
 if (mobileLogout) {
   mobileLogout.style.display = "none";
+}
+
+    const mobileLogin = document.getElementById("mobileLogin");
+const mobileRegister = document.getElementById("mobileRegister");
+
+if (mobileLogin) {
+  mobileLogin.style.display = "block";
+}
+
+if (mobileRegister) {
+  mobileRegister.style.display = "block";
 }
     
     authNav.innerHTML = `
