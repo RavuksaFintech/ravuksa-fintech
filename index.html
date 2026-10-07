@@ -3584,7 +3584,7 @@ Inflation के कारण समय के साथ money की purchasing
   ></textarea>
 
   <div class="btns" style="margin-top:20px;">
-    <button type="button" class="btn primary">
+    <button type="button" class="btn primary" onclick="saveProfile()">
       💾 Save Profile
     </button>
   </div>
@@ -5352,7 +5352,46 @@ document.addEventListener("DOMContentLoaded", function () {
 });
     </script>
 
+async function saveProfile() {
 
+  const user = firebase.auth().currentUser;
+
+  if (!user) {
+    alert("Please login first.");
+    return;
+  }
+
+  const name = document.getElementById("profileName").value.trim();
+  const username = document.getElementById("profileUsername").value.trim();
+  const bio = document.getElementById("profileBio").value.trim();
+
+  if (!name || !username) {
+    alert("Please enter your Full Name and Username.");
+    return;
+  }
+
+  try {
+
+    await firebase.firestore()
+      .collection("profiles")
+      .doc(user.uid)
+      .set({
+        name: name,
+        username: username,
+        bio: bio,
+        email: user.email,
+        updatedAt: new Date()
+      }, { merge: true });
+
+    alert("Profile saved successfully!");
+
+  } catch (error) {
+
+    console.error("Profile save error:", error);
+    alert("Unable to save profile. Please try again.");
+
+  }
+}
     
 </body>
 </html>
