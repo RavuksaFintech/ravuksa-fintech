@@ -5324,6 +5324,12 @@ window.saveProfile = async function() {
     return;
   }
 
+        const emailElement = document.getElementById("profileEmail");
+
+if (emailElement) {
+  emailElement.textContent = user.email || "Email not available";
+}
+        
   try {
 
     const profileDoc = await getDoc(
