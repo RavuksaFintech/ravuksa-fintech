@@ -5642,6 +5642,69 @@ if (profileMessage) {
   }
 
 };
+
+      window.markTopicCompleted = async function(topicId) {
+
+  const user = auth.currentUser;
+
+  if (!user) {
+    return;
+  }
+
+  try {
+
+    const profileRef = doc(db, "profiles", user.uid);
+    const profileDoc = await getDoc(profileRef);
+
+    let completedTopics = [];
+
+    if (profileDoc.exists()) {
+      const profile = profileDoc.data();
+      completedTopics = profile.completedTopics || [];
+    }
+
+    if (completedTopics.includes(topicId)) {
+      return;
+    }
+
+    completedTopics.push(topicId);
+
+    await setDoc(profileRef, {
+      completedTopics: completedTopics,
+      topicsCompleted: completedTopics.length,
+      quizProgress: 100,
+      overallProgress: 100,
+      updatedAt: serverTimestamp()
+    }, { merge: true });
+
+    const completedElement =
+      document.getElementById("topicsCompleted");
+
+    const quizElement =
+      document.getElementById("quizProgress");
+
+    const overallElement =
+      document.getElementById("overallProgress");
+
+    if (completedElement) {
+      completedElement.textContent = completedTopics.length;
+    }
+
+    if (quizElement) {
+      quizElement.textContent = "100%";
+    }
+
+    if (overallElement) {
+      overallElement.textContent = "100%";
+    }
+
+  } catch (error) {
+
+    console.error("Learning Completion Error:", error);
+
+  }
+
+};
       
       window.loadProfile = async function() {
 
