@@ -6731,7 +6731,7 @@ if (profileMessage) {
 
 };
 
-      window.markTopicCompleted = async function(topicId) {
+window.markTopicCompleted = async function(topicId) {
 
   const user = auth.currentUser;
 
@@ -6757,13 +6757,35 @@ if (profileMessage) {
 
     completedTopics.push(topicId);
 
+    const totalLearningTopics = 9;
+
+    const topicsCompleted =
+      completedTopics.length;
+
+    const overallProgress =
+      Math.min(
+        100,
+        Math.round(
+          (topicsCompleted / totalLearningTopics) * 100
+        )
+      );
+
+    const quizProgress = overallProgress;
+
     await setDoc(profileRef, {
+
       completedTopics: completedTopics,
-      topicsCompleted: completedTopics.length,
-      quizProgress: 100,
-      overallProgress: 100,
+
+      topicsCompleted: topicsCompleted,
+
+      quizProgress: quizProgress,
+
+      overallProgress: overallProgress,
+
       updatedAt: serverTimestamp()
+
     }, { merge: true });
+
 
     const completedElement =
       document.getElementById("topicsCompleted");
@@ -6774,21 +6796,28 @@ if (profileMessage) {
     const overallElement =
       document.getElementById("overallProgress");
 
+
     if (completedElement) {
-      completedElement.textContent = completedTopics.length;
+      completedElement.textContent =
+        topicsCompleted;
     }
 
     if (quizElement) {
-      quizElement.textContent = "100%";
+      quizElement.textContent =
+        quizProgress + "%";
     }
 
     if (overallElement) {
-      overallElement.textContent = "100%";
+      overallElement.textContent =
+        overallProgress + "%";
     }
 
   } catch (error) {
 
-    console.error("Learning Completion Error:", error);
+    console.error(
+      "Learning Completion Error:",
+      error
+    );
 
   }
 
