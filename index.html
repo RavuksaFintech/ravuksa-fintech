@@ -1812,6 +1812,120 @@ SIP शुरू करने से पहले mutual fund scheme, उसक�
 
 </div>
 
+  <div class="highlight" style="margin-top:20px;">
+
+  <h3>📝 Test Yourself — SIP Basics</h3>
+
+  <p style="margin-top:10px;">
+    नीचे दिए गए 3 questions के सही answers चुनें और अपनी learning check करें।
+  </p>
+
+  <div style="margin-top:18px;">
+
+    <p><strong>Q1. SIP क्या है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="sipQ1" value="A">
+      A) Guaranteed return देने वाला product
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ1" value="B">
+      B) Mutual Fund में नियमित investment करने का एक तरीका
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ1" value="C">
+      C) केवल bank account में पैसे जमा करने का तरीका
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ1" value="D">
+      D) केवल एक बार किया जाने वाला investment
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q2. SIP में मिलने वाली units की संख्या किससे प्रभावित हो सकती है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="sipQ2" value="A">
+      A) Applicable NAV
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ2" value="B">
+      B) केवल investor के नाम से
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ2" value="C">
+      C) केवल bank balance से
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ2" value="D">
+      D) कभी भी NAV से नहीं
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q3. क्या SIP market risk को पूरी तरह खत्म कर देता है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="sipQ3" value="A">
+      A) हाँ
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ3" value="B">
+      B) केवल कुछ schemes में
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ3" value="C">
+      C) नहीं
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="sipQ3" value="D">
+      D) केवल long-term में
+    </label>
+
+  </div>
+
+  <div id="sipQuizScore" style="margin-top:18px;font-weight:700;color:#16a085;">
+  </div>
+
+  <div id="sipQuizAnswers" style="display:none;margin-top:15px;">
+
+    <h3>✅ Answer Key</h3>
+
+    <p style="margin-top:8px;">
+      Q1 — <strong>B</strong> |
+      Q2 — <strong>A</strong> |
+      Q3 — <strong>C</strong>
+    </p>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <button
+      type="button"
+      class="btn primary"
+      onclick="const q1=document.querySelector('input[name=&quot;sipQ1&quot;]:checked'); const q2=document.querySelector('input[name=&quot;sipQ2&quot;]:checked'); const q3=document.querySelector('input[name=&quot;sipQ3&quot;]:checked'); if(!q1 || !q2 || !q3){document.getElementById('sipQuizScore').textContent='⚠️ Please answer all 3 questions first.'; return;} let score=0; if(q1.value==='B') score++; if(q2.value==='A') score++; if(q3.value==='C') score++; document.getElementById('sipQuizScore').textContent='🎯 Your Score: '+score+'/3 — Answer Key नीचे देखें।'; document.getElementById('sipQuizAnswers').style.display='block'; if(score===3){markTopicCompleted('sip-basics');}">
+      ✅ Check Answers
+    </button>
+
+  </div>
+
+  </div>
+  
 <div class="btns">
 <a class="btn secondary" href="#learning-categories">
 ← Back to Learning Center
