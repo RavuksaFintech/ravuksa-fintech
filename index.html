@@ -5564,15 +5564,21 @@ window.saveProfile = async function() {
 
   try {
 
- await setDoc(doc(db, "profiles", user.uid), {
-      uid: user.uid,
-      email: user.email,
-      name: name,
-      username: username,
-      bio: bio,
-   level: level,
-      updatedAt: serverTimestamp()
-    });
+await setDoc(doc(db, "profiles", user.uid), {
+  uid: user.uid,
+  email: user.email,
+  name: name,
+  username: username,
+  bio: bio,
+  level: level,
+
+  topicsStarted: 0,
+  topicsCompleted: 0,
+  quizProgress: 0,
+  overallProgress: 0,
+
+  updatedAt: serverTimestamp()
+});
 
   const profileMessage = document.getElementById("profileMessage");
 
