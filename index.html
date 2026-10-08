@@ -5633,6 +5633,17 @@ if (emailElement) {
       
       document.getElementById("profileBio").value =
         profile.bio || "";
+      document.getElementById("topicsStarted").textContent =
+  profile.topicsStarted || 0;
+
+document.getElementById("topicsCompleted").textContent =
+  profile.topicsCompleted || 0;
+
+document.getElementById("quizProgress").textContent =
+  (profile.quizProgress || 0) + "%";
+
+document.getElementById("overallProgress").textContent =
+  (profile.overallProgress || 0) + "%";
     }
 
   } catch (error) {
