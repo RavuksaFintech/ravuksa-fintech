@@ -5569,13 +5569,10 @@ await setDoc(doc(db, "profiles", user.uid), {
   bio: bio,
   level: level,
 
-  topicsStarted: 0,
-  topicsCompleted: 0,
-  quizProgress: 0,
-  overallProgress: 0,
+  updatedAt: serverTimestamp()
 
   updatedAt: serverTimestamp()
-});
+}, { merge: true });
 
   const profileMessage = document.getElementById("profileMessage");
 
