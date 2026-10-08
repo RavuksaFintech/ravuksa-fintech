@@ -2080,7 +2080,7 @@ Q3 — <strong>C</strong>
   <button
     type="button"
     class="btn primary"
-    onclick="const q1=document.querySelector('input[name=&quot;stockQ1&quot;]:checked'); const q2=document.querySelector('input[name=&quot;stockQ2&quot;]:checked'); const q3=document.querySelector('input[name=&quot;stockQ3&quot;]:checked'); let score=0; if(q1 &amp;&amp; q1.value==='B') score++; if(q2 &amp;&amp; q2.value==='A') score++; if(q3 &amp;&amp; q3.value==='C') score++; document.getElementById('stockQuizScore').textContent='🎯 Your Score: '+score+'/3 — Answer Key नीचे देखें।'; document.getElementById('stockQuizAnswers').style.display='block';">
+   onclick="const q1=document.querySelector('input[name=&quot;stockQ1&quot;]:checked'); const q2=document.querySelector('input[name=&quot;stockQ2&quot;]:checked'); const q3=document.querySelector('input[name=&quot;stockQ3&quot;]:checked'); if(!q1 || !q2 || !q3){document.getElementById('stockQuizScore').textContent='⚠️ Please answer all 3 questions first.'; return;} let score=0; if(q1.value==='B') score++; if(q2.value==='A') score++; if(q3.value==='C') score++; document.getElementById('stockQuizScore').textContent='🎯 Your Score: '+score+'/3 — Answer Key नीचे देखें।'; document.getElementById('stockQuizAnswers').style.display='block'; if(score===3){markTopicCompleted('stock-basics');}"
     ✅ Check Answers
   </button>
   </div>
