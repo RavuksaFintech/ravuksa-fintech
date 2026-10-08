@@ -2467,6 +2467,120 @@ Trading शुरू करने से पहले Buy, Sell, Market Order, L
 </p>
 </div>
 
+  <div class="highlight" style="margin-top:20px;">
+
+  <h3>📝 Test Yourself — Trading Basics</h3>
+
+  <p style="margin-top:10px;">
+    नीचे दिए गए 3 questions के सही answers चुनें और अपनी learning check करें।
+  </p>
+
+  <div style="margin-top:18px;">
+
+    <p><strong>Q1. Trading क्या है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="tradingQ1" value="A">
+      A) केवल पैसे bank में जमा करना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ1" value="B">
+      B) Shares या securities को buy और sell करने की activity
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ1" value="C">
+      C) Guaranteed return पाने का तरीका
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ1" value="D">
+      D) केवल long-term investment करना
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q2. Limit Order में क्या किया जाता है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="tradingQ2" value="A">
+      A) एक specific price तय की जा सकती है
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ2" value="B">
+      B) हमेशा guaranteed profit मिलता है
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ2" value="C">
+      C) कोई price तय नहीं की जाती
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ2" value="D">
+      D) केवल bank account में पैसे जमा किए जाते हैं
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q3. Stop-Loss का मुख्य purpose क्या है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="tradingQ3" value="A">
+      A) Profit की guarantee देना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ3" value="B">
+      B) Trading risk को समझने और potential loss को limit करने में मदद करना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ3" value="C">
+      C) Market को हमेशा ऊपर ले जाना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="tradingQ3" value="D">
+      D) Loss को पूरी तरह खत्म कर देना
+    </label>
+
+  </div>
+
+  <div id="tradingQuizScore" style="margin-top:18px;font-weight:700;color:#16a085;">
+  </div>
+
+  <div id="tradingQuizAnswers" style="display:none;margin-top:15px;">
+
+    <h3>✅ Answer Key</h3>
+
+    <p style="margin-top:8px;">
+      Q1 — <strong>B</strong> |
+      Q2 — <strong>A</strong> |
+      Q3 — <strong>B</strong>
+    </p>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <button
+      type="button"
+      class="btn primary"
+      onclick="const q1=document.querySelector('input[name=&quot;tradingQ1&quot;]:checked'); const q2=document.querySelector('input[name=&quot;tradingQ2&quot;]:checked'); const q3=document.querySelector('input[name=&quot;tradingQ3&quot;]:checked'); if(!q1 || !q2 || !q3){document.getElementById('tradingQuizScore').textContent='⚠️ Please answer all 3 questions first.'; return;} let score=0; if(q1.value==='B') score++; if(q2.value==='A') score++; if(q3.value==='B') score++; document.getElementById('tradingQuizScore').textContent='🎯 Your Score: '+score+'/3 — Answer Key नीचे देखें।'; document.getElementById('tradingQuizAnswers').style.display='block'; if(score===3){markTopicCompleted('trading-basics');}">
+      ✅ Check Answers
+    </button>
+
+  </div>
+
+  </div>
+  
 <div class="btns">
 <a class="btn secondary" href="#learn">← Back to Learning Topics</a>
 </div>
