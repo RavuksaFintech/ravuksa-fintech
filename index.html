@@ -1089,6 +1089,120 @@ relevant scheme documents और applicable information को ध्यान �
 <p>Mutual Funds से जुड़े निर्णय लेने से पहले basic concepts, risk और अपने financial goals को समझना महत्वपूर्ण है।</p>
 </div>
 
+  <div class="highlight" style="margin-top:20px;">
+
+  <h3>📝 Test Yourself — Mutual Funds Basics</h3>
+
+  <p style="margin-top:10px;">
+    नीचे दिए गए 3 questions के सही answers चुनें और अपनी learning check करें।
+  </p>
+
+  <div style="margin-top:18px;">
+
+    <p><strong>Q1. Mutual Fund में investors का पैसा क्या किया जाता है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="mfQ1" value="A">
+      A) केवल bank account में रखा जाता है
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ1" value="B">
+      B) Scheme के objective के अनुसार अलग-अलग securities/assets में invest किया जा सकता है
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ1" value="C">
+      C) हमेशा cash में रखा जाता है
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ1" value="D">
+      D) केवल gold में invest किया जाता है
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q2. SIP का मुख्य उद्देश्य क्या है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="mfQ2" value="A">
+      A) नियमित investing की आदत और disciplined approach बनाने में मदद करना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ2" value="B">
+      B) Guaranteed return देना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ2" value="C">
+      C) Market risk को पूरी तरह खत्म करना
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ2" value="D">
+      D) केवल एक बार investment करना
+    </label>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <p><strong>Q3. NAV किसे दर्शाती है?</strong></p>
+
+    <label style="display:block;margin-top:8px;">
+      <input type="radio" name="mfQ3" value="A">
+      A) केवल fund का annual profit
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ3" value="B">
+      B) केवल investor की bank balance
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ3" value="C">
+      C) Mutual Fund scheme की एक unit की value
+    </label>
+
+    <label style="display:block;margin-top:6px;">
+      <input type="radio" name="mfQ3" value="D">
+      D) Guaranteed return percentage
+    </label>
+
+  </div>
+
+  <div id="mfQuizScore" style="margin-top:18px;font-weight:700;color:#16a085;">
+  </div>
+
+  <div id="mfQuizAnswers" style="display:none;margin-top:15px;">
+
+    <h3>✅ Answer Key</h3>
+
+    <p style="margin-top:8px;">
+      Q1 — <strong>B</strong> |
+      Q2 — <strong>A</strong> |
+      Q3 — <strong>C</strong>
+    </p>
+
+  </div>
+
+  <div style="margin-top:20px;">
+
+    <button
+      type="button"
+      class="btn primary"
+      onclick="const q1=document.querySelector('input[name=&quot;mfQ1&quot;]:checked'); const q2=document.querySelector('input[name=&quot;mfQ2&quot;]:checked'); const q3=document.querySelector('input[name=&quot;mfQ3&quot;]:checked'); if(!q1 || !q2 || !q3){document.getElementById('mfQuizScore').textContent='⚠️ Please answer all 3 questions first.'; return;} let score=0; if(q1.value==='B') score++; if(q2.value==='A') score++; if(q3.value==='C') score++; document.getElementById('mfQuizScore').textContent='🎯 Your Score: '+score+'/3 — Answer Key नीचे देखें।'; document.getElementById('mfQuizAnswers').style.display='block'; if(score===3){markTopicCompleted('mutual-funds');}">
+      ✅ Check Answers
+    </button>
+
+  </div>
+
+  </div>
+  
   <div class="btns">
 <a class="btn secondary" href="#learning-categories">← Back to Learning Categories</a>
   </div>
