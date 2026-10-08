@@ -5599,6 +5599,53 @@ if (profileMessage) {
   }
 };
 
+      window.markTopicStarted = async function(topicId) {
+
+  const user = auth.currentUser;
+
+  if (!user) {
+    return;
+  }
+
+  try {
+
+    const profileRef = doc(db, "profiles", user.uid);
+    const profileDoc = await getDoc(profileRef);
+
+    let startedTopics = [];
+
+    if (profileDoc.exists()) {
+      const profile = profileDoc.data();
+      startedTopics = profile.startedTopics || [];
+    }
+
+    if (startedTopics.includes(topicId)) {
+      return;
+    }
+
+    startedTopics.push(topicId);
+
+    await setDoc(profileRef, {
+      startedTopics: startedTopics,
+      topicsStarted: startedTopics.length,
+      updatedAt: serverTimestamp()
+    }, { merge: true });
+
+    const progressElement =
+      document.getElementById("topicsStarted");
+
+    if (progressElement) {
+      progressElement.textContent = startedTopics.length;
+    }
+
+  } catch (error) {
+
+    console.error("Learning Progress Error:", error);
+
+  }
+
+};
+      
       window.loadProfile = async function() {
 
   const user = auth.currentUser;
