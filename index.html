@@ -7091,6 +7091,7 @@ function renderKnowledgeDemo() {
 
         <div class="notice" style="margin-top:18px;">
           <strong>💡 Beginner Tip</strong>
+
           <p style="margin-top:6px;">
             ${topic.beginnerTip}
           </p>
@@ -7101,7 +7102,9 @@ function renderKnowledgeDemo() {
   });
 }
 
-renderKnowledgeDemo();
+document.addEventListener("DOMContentLoaded", function () {
+  renderKnowledgeDemo();
+});
 
 </script>
 
