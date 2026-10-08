@@ -5568,9 +5568,6 @@ await setDoc(doc(db, "profiles", user.uid), {
   username: username,
   bio: bio,
   level: level,
-
-  updatedAt: serverTimestamp()
-
   updatedAt: serverTimestamp()
 }, { merge: true });
 
