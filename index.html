@@ -5401,6 +5401,8 @@ window.saveProfile = async function() {
   const username = document.getElementById("profileUsername").value.trim();
   const bio = document.getElementById("profileBio").value.trim();
 
+  const level = document.getElementById("profileLevel").value;
+  
   if (!user) {
     alert("Please login first.");
     return;
@@ -5424,6 +5426,7 @@ window.saveProfile = async function() {
       name: name,
       username: username,
       bio: bio,
+   level: level,
       updatedAt: serverTimestamp()
     });
 
