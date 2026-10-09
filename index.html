@@ -1316,6 +1316,150 @@ nav .menu-btn {
     grid-template-columns: 1fr;
   }
     }
+    /* RAVUKSA FINTECH - Premium Financial Tools */
+
+#tools {
+  background: linear-gradient(180deg, #f5f9fd 0%, #ffffff 100%);
+  padding: 60px 5%;
+}
+
+#tools .section-title {
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 38px) !important;
+  font-weight: 850;
+  letter-spacing: -0.6px;
+}
+
+#tools > .wrap > .sub {
+  max-width: 800px;
+  line-height: 1.85;
+  margin: 16px 0 24px;
+}
+
+/* Quick calculator buttons */
+
+#tools .tools-quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+#tools .tools-quick-buttons .btn {
+  min-width: 95px;
+  border-radius: 999px;
+  font-weight: 750;
+}
+
+/* Educational notice */
+
+#tools .notice {
+  padding: 18px 20px;
+  border: 1px solid #cfe3f4;
+  border-left: 5px solid #087f8c;
+  border-radius: 13px;
+  background: #f0f8fc;
+  color: #40546b;
+  line-height: 1.85;
+}
+
+/* Calculator cards */
+
+#tools .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+#tools .grid > .card {
+  min-width: 0;
+  padding: 25px 22px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              border-color 0.22s ease;
+}
+
+#tools .grid > .card:hover {
+  transform: translateY(-4px);
+  border-color: #a7d9df;
+  box-shadow: 0 12px 26px rgba(23, 32, 51, 0.11);
+}
+
+#tools .grid > .card .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #e8f7f8;
+  font-size: 27px;
+}
+
+#tools .grid > .card h3 {
+  margin: 14px 0 10px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+#tools .grid > .card p {
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#tools .grid > .card .btns {
+  margin-top: 18px;
+}
+
+#tools .grid > .card .btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile layout */
+
+@media (max-width: 760px) {
+  #tools {
+    padding: 42px 5%;
+  }
+
+  #tools .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+  }
+
+  #tools .grid > .card {
+    padding: 19px 14px;
+  }
+
+  #tools .grid > .card h3 {
+    font-size: 16px;
+  }
+
+  #tools .grid > .card p {
+    font-size: 13px;
+  }
+
+  #tools .tools-quick-buttons .btn {
+    min-width: 0;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  #tools .grid {
+    grid-template-columns: 1fr;
+  }
+    }
   </style>
 </head>
 <body>
