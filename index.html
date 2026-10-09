@@ -946,6 +946,115 @@ width: 100%;
 box-sizing: border-box;
 }
     }
+    /* RAVUKSA FINTECH - Premium Explore Cards */
+
+#quick-access {
+background: #f5f8fc !important;
+padding: 55px 5% !important;
+}
+
+#quick-access .section-title {
+color: #14243a;
+font-size: clamp(28px, 4vw, 36px) !important;
+font-weight: 850;
+letter-spacing: -0.6px;
+}
+
+#quick-access .sub {
+margin: 0 auto 30px;
+color: #617186;
+line-height: 1.8;
+}
+
+#quick-access .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+align-items: stretch;
+}
+
+#quick-access a.quick-access-card {
+min-width: 0;
+padding: 26px 20px;
+text-align: center;
+text-decoration: none;
+background: #ffffff;
+border: 1px solid #dce5ef;
+border-top: 4px solid #087f8c;
+border-radius: 18px;
+box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+transition: transform 0.22s ease,
+box-shadow 0.22s ease,
+border-color 0.22s ease;
+}
+
+#quick-access a.quick-access-card:hover {
+transform: translateY(-5px);
+border-color: #8ed4d6;
+box-shadow: 0 12px 28px rgba(23, 32, 51, 0.12);
+}
+
+#quick-access .quick-access-card .icon {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 54px;
+height: 54px;
+margin-bottom: 12px;
+border-radius: 15px;
+background: #e8f7f8;
+font-size: 27px;
+}
+
+#quick-access .quick-access-card h3 {
+margin: 4px 0 10px;
+color: #172033;
+font-size: 18px;
+font-weight: 800;
+line-height: 1.4;
+}
+
+#quick-access .quick-access-card p {
+margin: 0;
+color: #617186;
+font-size: 14px;
+line-height: 1.7;
+}
+
+#quick-access a.quick-access-card:focus-visible {
+outline: 3px solid #60a5fa;
+outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+#quick-access {
+padding: 40px 5% !important;
+}
+
+#quick-access .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 13px;
+}
+
+#quick-access a.quick-access-card {
+padding: 20px 12px;
+border-radius: 15px;
+}
+
+#quick-access .quick-access-card h3 {
+font-size: 16px;
+}
+
+#quick-access .quick-access-card p {
+font-size: 13px;
+}
+}
+
+@media (max-width: 380px) {
+#quick-access .grid {
+grid-template-columns: 1fr;
+}
+    }
   </style>
 </head>
 <body>
