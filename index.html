@@ -502,6 +502,341 @@ body > header#home{
     body > section:target{
   display:block !important;
     }
+    /* =====================================
+   RAVUKSA FINTECH
+   PROFESSIONAL DESIGN SYSTEM V1
+===================================== */
+
+:root {
+  --rf-primary: #087f8c;
+  --rf-primary-dark: #075e68;
+  --rf-primary-light: #e8f7f8;
+
+  --rf-accent: #2563eb;
+  --rf-accent-light: #eff6ff;
+
+  --rf-heading: #172033;
+  --rf-text: #526174;
+  --rf-muted: #65758a;
+
+  --rf-border: #dce5ef;
+  --rf-surface: #ffffff;
+  --rf-background: #f5f8fc;
+
+  --rf-radius: 16px;
+  --rf-radius-small: 10px;
+
+  --rf-shadow:
+    0 5px 18px rgba(23, 32, 51, 0.07);
+
+  --rf-shadow-hover:
+    0 12px 28px rgba(23, 32, 51, 0.13);
+}
+
+/* Overall website */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  background: var(--rf-background);
+  color: var(--rf-heading);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+
+.section-title {
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
+}
+
+.sub {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--rf-text);
+}
+
+/* Navigation */
+
+nav {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--rf-border);
+  box-shadow: 0 3px 15px rgba(23, 32, 51, 0.04);
+  backdrop-filter: blur(12px);
+}
+
+nav a {
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--rf-primary);
+}
+
+/* General cards */
+
+.card {
+  position: relative;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
+  box-shadow: var(--rf-shadow);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.card h3 {
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.card p {
+  line-height: 1.75;
+}
+
+/* Only cards that are clickable */
+
+a.card {
+  display: block;
+  cursor: pointer;
+}
+
+a.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--rf-shadow-hover);
+  border-color: #a7d9df;
+}
+
+a.card:focus-visible,
+.btn:focus-visible,
+button:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+/* Quick access cards */
+
+.quick-access-card {
+  border-top: 4px solid var(--rf-accent);
+  border-radius: 18px;
+}
+
+.quick-access-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--rf-shadow-hover);
+}
+
+/* Learning category cards */
+
+.learning-category-card {
+  border-top: 4px solid var(--rf-primary);
+  border-radius: 18px;
+}
+
+.learning-category-card:hover {
+  border-color: #9bd8dc;
+}
+
+/* Buttons */
+
+.btn,
+button.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 20px;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.4;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn:hover,
+button.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 17px rgba(23, 32, 51, 0.12);
+}
+
+.btn.primary,
+.btn.primary:visited {
+  background: linear-gradient(
+    135deg,
+    var(--rf-primary),
+    var(--rf-primary-dark)
+  );
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.btn.secondary,
+.btn.secondary:visited {
+  background: #ffffff;
+  color: var(--rf-heading);
+  border: 1px solid #cbd7e4;
+}
+
+.btn.secondary:hover {
+  background: var(--rf-primary-light);
+  border-color: var(--rf-primary);
+  color: var(--rf-primary-dark);
+}
+
+/* Button groups */
+
+.btns {
+  gap: 12px;
+  align-items: center;
+}
+
+/* Featured highlight panels */
+
+.highlight {
+  border-left: 5px solid var(--rf-primary);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    var(--rf-primary-light)
+  );
+  box-shadow: var(--rf-shadow);
+}
+
+/* Notices */
+
+.notice {
+  border-radius: 13px;
+  border: 1px solid var(--rf-border);
+  background: #f0f5fa;
+  line-height: 1.75;
+}
+
+/* Form controls */
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--rf-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Search controls */
+
+.search-box input {
+  border-radius: 10px;
+}
+
+.search-box button {
+  border-radius: 10px;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.search-box button:hover {
+  background: #176ed0;
+  transform: translateY(-1px);
+}
+
+/* Footer */
+
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--rf-border);
+  line-height: 1.8;
+}
+
+/* Mobile refinements */
+
+@media (max-width: 760px) {
+
+  section {
+    padding: 44px 5%;
+  }
+
+  .hero {
+    padding: 58px 5% 48px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.12;
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
+
+  .sub {
+    font-size: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btns {
+    gap: 10px;
+  }
+
+  .btn {
+    min-height: 44px;
+  }
+
+  .search-results {
+    width: min(280px, 90vw);
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+    }
   </style>
 </head>
 <body>
