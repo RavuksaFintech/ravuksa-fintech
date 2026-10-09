@@ -2238,6 +2238,169 @@ transition: none;
 transform: none;
 }
     }
+    /* RAVUKSA FINTECH - PREMIUM ABOUT DESIGN */
+#about {
+padding: 65px 20px;
+background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+color: #17324d;
+}
+
+#about .wrap {
+max-width: 1150px;
+margin: 0 auto;
+}
+
+#about .section-title {
+text-align: center;
+color: #12345a;
+font-size: clamp(26px, 4vw, 36px);
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+#about .sub {
+text-align: center;
+color: #5b7087;
+line-height: 1.8;
+margin: 0 auto 32px;
+}
+
+#about .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+margin-top: 28px;
+}
+
+#about .card {
+padding: 26px 22px;
+background: #ffffff;
+border: 1px solid #dce8f5;
+border-radius: 18px;
+box-shadow: 0 8px 24px rgba(25, 65, 110, 0.07);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#about .card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 30px rgba(25, 65, 110, 0.12);
+}
+
+#about .icon {
+font-size: 34px;
+margin-bottom: 14px;
+}
+
+#about .card h3 {
+color: #174b82;
+font-size: 19px;
+margin-bottom: 10px;
+}
+
+#about .card p {
+color: #5b7087;
+font-size: 15px;
+line-height: 1.8;
+}
+
+#about .highlight {
+margin-top: 30px;
+padding: 30px;
+background: linear-gradient(135deg, #12345a, #1769aa);
+border: 1px solid #2d76b7;
+border-radius: 20px;
+box-shadow: 0 12px 28px rgba(18, 52, 90, 0.16);
+color: #ffffff;
+}
+
+#about .highlight h3 {
+color: #ffffff;
+font-size: 23px;
+}
+
+#about .founder {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+}
+
+#about .founder > div {
+flex: 1;
+min-width: 0;
+}
+
+#about .founder p {
+line-height: 1.8;
+}
+
+#about .founder-photo {
+display: block;
+width: 190px;
+height: 220px;
+object-fit: cover;
+object-position: center top;
+border: 3px solid rgba(255, 255, 255, 0.75);
+border-radius: 16px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+#about .notice {
+padding: 20px 22px;
+background: #eaf4ff;
+color: #294966;
+border: 1px solid #cfe3f7;
+border-left: 5px solid #2475bd;
+border-radius: 12px;
+line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+#about {
+padding: 45px 15px;
+}
+
+#about .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+#about .card {
+padding: 20px 16px;
+}
+
+#about .highlight {
+padding: 22px 18px;
+}
+
+#about .founder {
+flex-direction: column-reverse;
+align-items: flex-start;
+gap: 22px;
+}
+
+#about .founder-photo {
+width: 150px;
+height: 175px;
+align-self: center;
+}
+}
+
+@media (max-width: 480px) {
+#about .grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+#about .card {
+transition: none;
+}
+
+#about .card:hover {
+transform: none;
+}
+    }
   </style>
 </head>
 <body>
