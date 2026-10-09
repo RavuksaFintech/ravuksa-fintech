@@ -1925,6 +1925,170 @@ nav .menu-btn {
     transform: none;
   }
     }
+    /* =====================================
+   RAVUKSA FINTECH - PREMIUM PLATFORMS
+===================================== */
+
+#platforms {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 65%);
+}
+
+#platforms .section-title {
+  color: #12345a;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#platforms > .wrap > .section-title {
+  text-align: center;
+  font-size: clamp(27px, 4vw, 36px);
+  margin-bottom: 18px;
+}
+
+#platforms .sub {
+  color: #52657b;
+  line-height: 1.85;
+}
+
+#platforms .notice {
+  padding: 22px;
+  background: #fffaf0;
+  border: 1px solid #f4e5c4;
+  border-left: 4px solid #e8a23a;
+  border-radius: 17px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.06);
+  line-height: 1.8;
+}
+
+#platforms .highlight {
+  padding: 23px;
+  background: linear-gradient(135deg, #f0fdfa, #f5f8ff);
+  border: 1px solid #dcebe9;
+  border-radius: 17px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.06);
+}
+
+#platforms .highlight h3 {
+  color: #12345a;
+  line-height: 1.5;
+}
+
+#platforms .highlight p {
+  color: #52657b;
+  line-height: 1.85;
+}
+
+#platforms .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+#platforms .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-top: 3px solid #0d9488;
+  border-radius: 16px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#platforms .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#platforms .card h3 {
+  color: #12345a;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#platforms .card p {
+  color: #52657b;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+#platforms .card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  min-height: 42px;
+  margin-top: auto;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#platforms > .wrap > .btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#platforms .btns .btn {
+  border-radius: 10px;
+}
+
+#platforms .wrap > h2[id$="-platforms"] {
+  scroll-margin-top: 90px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #platforms .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #platforms {
+    padding: 25px 0 35px;
+  }
+
+  #platforms .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #platforms .card,
+  #platforms .highlight,
+  #platforms .notice {
+    padding: 18px;
+  }
+
+  #platforms .card h3 {
+    font-size: 18px;
+  }
+
+  #platforms .wrap > h2[id$="-platforms"] {
+    font-size: 23px !important;
+    scroll-margin-top: 75px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #platforms .card {
+    transition: none;
+  }
+
+  #platforms .card:hover {
+    transform: none;
+  }
+    }
   </style>
 </head>
 <body>
