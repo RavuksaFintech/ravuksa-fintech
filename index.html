@@ -1788,6 +1788,143 @@ nav .menu-btn {
     transform: none;
   }
     }
+    /* =====================================
+   RAVUKSA FINTECH - PREMIUM RISK & SAFETY
+===================================== */
+
+#risk-safety {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 65%);
+}
+
+#risk-safety .section-title {
+  color: #12345a;
+  font-size: clamp(25px, 4vw, 35px);
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#risk-safety .sub {
+  color: #52657b;
+  text-align: center;
+  line-height: 1.8;
+  margin: 18px 0 28px;
+}
+
+#risk-safety .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#risk-safety .card {
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-top: 3px solid #0d9488;
+  border-radius: 17px;
+  padding: 23px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#risk-safety .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#risk-safety .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#risk-safety .card h3 {
+  color: #12345a;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#risk-safety .card p {
+  color: #52657b;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+#risk-safety .highlight {
+  background: linear-gradient(135deg, #fff7ed, #fffaf5);
+  border: 1px solid #fed7aa;
+  border-left: 4px solid #ea580c;
+  border-radius: 17px;
+  padding: 23px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.05);
+}
+
+#risk-safety .highlight h3 {
+  color: #9a3412;
+  line-height: 1.5;
+}
+
+#risk-safety .highlight p {
+  color: #52657b !important;
+  line-height: 1.85;
+}
+
+#risk-safety .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+#risk-safety .btns .btn {
+  border-radius: 10px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #risk-safety .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #risk-safety {
+    padding: 25px 0 35px;
+  }
+
+  #risk-safety .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #risk-safety .card,
+  #risk-safety .highlight {
+    padding: 18px;
+  }
+
+  #risk-safety .card h3 {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #risk-safety .card {
+    transition: none;
+  }
+
+  #risk-safety .card:hover {
+    transform: none;
+  }
+    }
   </style>
 </head>
 <body>
