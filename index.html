@@ -1184,6 +1184,138 @@ nav .menu-btn {
     font-size: 14px;
   }
     }
+    /* RAVUKSA FINTECH - Premium Learning Center */
+
+#learning-categories {
+  background: linear-gradient(180deg, #f5f9fd 0%, #ffffff 100%);
+  padding: 60px 5%;
+}
+
+#learning-categories .section-title {
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 38px) !important;
+  font-weight: 850;
+  letter-spacing: -0.6px;
+}
+
+#learning-categories > .wrap > .sub {
+  max-width: 760px;
+  margin-top: 12px;
+  line-height: 1.85;
+}
+
+/* Beginner, Intermediate and Advanced buttons */
+
+#learning-categories > .wrap > div:first-of-type {
+  gap: 12px !important;
+  margin: 24px 0 30px !important;
+}
+
+#learning-categories > .wrap > div:first-of-type .btn {
+  min-width: 130px;
+  border-radius: 999px;
+  font-weight: 750;
+}
+
+/* Dynamic Learning featured card */
+
+#learning-categories > .wrap > div:nth-of-type(2) > a {
+  border: 1px solid #b8d9fa !important;
+  border-left: 5px solid #2563eb !important;
+  background: linear-gradient(120deg, #eaf4ff, #ffffff 75%) !important;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.09) !important;
+}
+
+#learning-categories > .wrap > div:nth-of-type(2) > a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Learning category cards */
+
+#learning-categories .grid {
+  gap: 20px;
+  align-items: stretch;
+}
+
+#learning-categories a.learning-category-card {
+  padding: 25px 22px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+  text-decoration: none;
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              border-color 0.22s ease;
+}
+
+#learning-categories a.learning-category-card:hover {
+  transform: translateY(-5px);
+  border-color: #a7d9df;
+  box-shadow: 0 12px 26px rgba(23, 32, 51, 0.11);
+}
+
+#learning-categories .learning-category-card .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #e8f7f8;
+  font-size: 27px;
+}
+
+#learning-categories .learning-category-card h3 {
+  margin: 14px 0 8px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+#learning-categories .learning-category-card p {
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#learning-categories .learning-category-card:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 760px) {
+  #learning-categories {
+    padding: 42px 5%;
+  }
+
+  #learning-categories .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+  }
+
+  #learning-categories a.learning-category-card {
+    padding: 19px 14px;
+  }
+
+  #learning-categories .learning-category-card h3 {
+    font-size: 16px;
+  }
+
+  #learning-categories .learning-category-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  #learning-categories .grid {
+    grid-template-columns: 1fr;
+  }
+    }
   </style>
 </head>
 <body>
