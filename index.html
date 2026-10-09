@@ -837,6 +837,115 @@ footer {
     transition-duration: 0.01ms !important;
   }
     }
+    /* RAVUKSA FINTECH - Premium Hero Design */
+
+header#home.hero {
+position: relative;
+overflow: hidden;
+padding: 85px 5% 75px;
+background:
+radial-gradient(ellipse at 90% 10%, rgba(45, 212, 191, 0.16), transparent 38%),
+linear-gradient(135deg, #f8fbff 0%, #eaf5fb 55%, #f2fbf9 100%);
+border-bottom: 1px solid #dce8f1;
+}
+
+header#home.hero .wrap {
+max-width: 1100px;
+}
+
+header#home.hero .badge {
+display: inline-block;
+padding: 9px 15px;
+margin-bottom: 22px;
+border: 1px solid #b9e5e4;
+border-radius: 30px;
+background: #e6f7f5;
+color: #087f8c;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1px;
+}
+
+header#home.hero h1 {
+max-width: 850px;
+margin: 0 0 22px;
+color: #14243a;
+font-size: clamp(38px, 6vw, 66px);
+font-weight: 850;
+line-height: 1.12;
+letter-spacing: -1.5px;
+}
+
+header#home.hero h1 span {
+color: #087f8c;
+}
+
+header#home.hero .wrap > p {
+max-width: 760px;
+margin: 0 0 28px;
+color: #526174;
+font-size: 17px;
+line-height: 1.9;
+}
+
+header#home.hero .btns {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 14px;
+margin-bottom: 22px;
+}
+
+header#home.hero .hero-tagline {
+display: flex;
+flex-direction: column;
+gap: 6px;
+padding: 12px 16px;
+border-left: 3px solid #0d9488;
+border-radius: 0 10px 10px 0;
+background: rgba(255, 255, 255, 0.75);
+}
+
+header#home.hero .hero-tagline span {
+color: #087f8c;
+font-size: 15px;
+font-weight: 800;
+}
+
+header#home.hero .hero-tagline strong {
+color: #526174;
+font-size: 13px;
+line-height: 1.6;
+}
+
+header#home.hero > .wrap > .btn.secondary {
+margin-top: 4px;
+}
+
+@media (max-width: 760px) {
+header#home.hero {
+padding: 58px 5% 48px;
+}
+
+header#home.hero h1 {
+font-size: clamp(35px, 9vw, 48px);
+letter-spacing: -0.7px;
+}
+
+header#home.hero .wrap > p {
+font-size: 15px;
+line-height: 1.8;
+}
+
+header#home.hero .btns {
+align-items: stretch;
+}
+
+header#home.hero .hero-tagline {
+width: 100%;
+box-sizing: border-box;
+}
+    }
   </style>
 </head>
 <body>
