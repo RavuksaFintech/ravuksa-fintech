@@ -2632,6 +2632,104 @@ footer a {
 transition: none;
 }
     }
+    /* HOME PAGE - FOUNDER & CEO PROFILE */
+#home .home-founder {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+max-width: 900px;
+margin: 38px auto 10px;
+padding: 26px;
+text-align: left;
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #d7e7f7;
+border-radius: 22px;
+box-shadow: 0 12px 32px rgba(18, 52, 90, 0.12);
+box-sizing: border-box;
+}
+
+#home .home-founder-photo {
+display: block;
+flex: 0 0 180px;
+width: 180px;
+height: 210px;
+object-fit: cover;
+object-position: center top;
+border: 4px solid #ffffff;
+outline: 2px solid #c8e1fa;
+border-radius: 16px;
+box-shadow: 0 8px 22px rgba(18, 52, 90, 0.15);
+}
+
+#home .home-founder-info {
+flex: 1;
+min-width: 0;
+}
+
+#home .home-founder-label {
+display: inline-block;
+margin-bottom: 9px;
+color: #1769aa;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
+
+#home .home-founder-info h2 {
+margin: 0 0 7px;
+color: #12345a;
+font-size: clamp(25px, 3vw, 34px);
+font-weight: 800;
+}
+
+#home .home-founder-info h3 {
+margin: 0 0 14px;
+color: #1769aa;
+font-size: 17px;
+line-height: 1.5;
+}
+
+#home .home-founder-info p {
+margin: 0 0 18px;
+color: #52677e;
+font-size: 15px;
+line-height: 1.8;
+}
+
+#home .home-founder-info .btn {
+display: inline-block;
+text-decoration: none;
+}
+
+@media (max-width: 600px) {
+#home .home-founder {
+flex-direction: column;
+gap: 20px;
+margin: 30px 0 8px;
+padding: 22px 18px;
+text-align: center;
+border-radius: 18px;
+}
+
+#home .home-founder-photo {
+flex: none;
+width: 155px;
+height: 180px;
+}
+
+#home .home-founder-info h2 {
+font-size: 27px;
+}
+
+#home .home-founder-info h3 {
+font-size: 16px;
+}
+
+#home .home-founder-info p {
+font-size: 14px;
+}
+}
   </style>
 </head>
 <body>
