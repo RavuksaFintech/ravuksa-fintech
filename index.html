@@ -1055,6 +1055,135 @@ font-size: 13px;
 grid-template-columns: 1fr;
 }
     }
+    /* RAVUKSA FINTECH - Premium Navigation */
+
+nav {
+  position: relative;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid #dce5ef;
+  box-shadow: 0 4px 18px rgba(23, 32, 51, 0.07);
+}
+
+nav .nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 3%;
+}
+
+nav .logo {
+  flex-shrink: 0;
+}
+
+nav .logo img {
+  max-width: 155px;
+  object-fit: contain;
+}
+
+nav .search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav .search-box input {
+  width: 130px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #dce5ef;
+  background: #f8fafc;
+  color: #172033;
+}
+
+nav .search-box button {
+  min-height: 40px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #087f8c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav .links a,
+nav .mobile-menu a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 10px;
+  border-radius: 9px;
+  color: #26374d;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav .links a:hover,
+nav .mobile-menu a:hover {
+  background: #e8f7f8;
+  color: #087f8c;
+}
+
+nav .menu-btn {
+  border: 1px solid #dce5ef;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+
+@media (max-width: 760px) {
+  nav .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 4%;
+  }
+
+  nav .logo img {
+    max-width: 125px;
+    height: auto !important;
+  }
+
+  nav .search-box {
+    flex: 1;
+    min-width: 130px;
+  }
+
+  nav .search-box input {
+    width: 100%;
+  }
+
+  nav .links {
+    display: none;
+  }
+
+  nav .mobile-menu {
+    padding: 10px 4% 16px;
+    background: #ffffff;
+    border-top: 1px solid #e5edf5;
+  }
+
+  nav .mobile-menu a {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 3px 0;
+    font-size: 14px;
+  }
+    }
   </style>
 </head>
 <body>
