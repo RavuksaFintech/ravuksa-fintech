@@ -1,0 +1,37 @@
+name: Update Market Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 4,6,8,10 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  update-market-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch trending stocks
+        env:
+          INDIANAPI_KEY: ${{ secrets.INDIANAPI_KEY }}
+        run: |
+          mkdir -p data
+
+          curl --fail --silent --show-error \
+            --retry 2 \
+            -H "X-API-Key: $INDIANAPI_KEY" \
+            "https://stock.indianapi.in/trending" \
+            -o data/trending.json
+
+          python -m json.tool data/trending.json > /dev/null
+
+      - name: Save updated market data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update market trending data"
+          file_pattern: data/trending.json
