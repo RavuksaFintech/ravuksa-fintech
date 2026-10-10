@@ -6644,7 +6644,9 @@ onclick="const q1=document.querySelector('input[name=&quot;mindsetQ1&quot;]:chec
           जिन shares में market session के दौरान सबसे अधिक positive
           price movement हुआ है।
         </p>
-        <p><strong>Status:</strong> Data will be updated</p>
+       <div id="top-gainers-data">
+  <p>⏳ Loading market data...</p>
+</div>
      <p style="margin-top:10px;font-size:13px;">
   📘 Educational View: Top Gainers वे shares होते हैं जिनकी कीमत में
   किसी market session के दौरान अपेक्षाकृत अधिक positive movement हुआ हो।
@@ -6658,7 +6660,9 @@ onclick="const q1=document.querySelector('input[name=&quot;mindsetQ1&quot;]:chec
           जिन shares में market session के दौरान सबसे अधिक negative
           price movement हुआ है।
         </p>
-        <p><strong>Status:</strong> Data will be updated</p>
+      <div id="top-losers-data">
+  <p>⏳ Loading market data...</p>
+</div>
       <p style="margin-top:10px;font-size:13px;">
   📘 Educational View: Top Losers वे shares होते हैं जिनकी कीमत में
   किसी market session के दौरान अपेक्षाकृत अधिक negative movement हुआ हो।
@@ -9579,6 +9583,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </script>
 
+  <script>
+async function loadMarketMovers() {
+  const gainersBox = document.getElementById("top-gainers-data");
+  const losersBox = document.getElementById("top-losers-data");
+
+  try {
+    const response = await fetch("./data/trending.json");
+
+    if (!response.ok) {
+      throw new Error("Market data unavailable");
+    }
+
+    const data = await response.json();
+    const stocks = data.trending_stocks || data;
+
+    function renderStocks(list, box, positive) {
+      if (!Array.isArray(list) || list.length === 0) {
+        box.textContent = "Market data is currently unavailable.";
+        return;
+      }
+
+      box.replaceChildren();
+
+      list.slice(0, 5).forEach(stock => {
+        const item = document.createElement("div");
+        item.style.cssText =
+          "padding:10px 0;border-bottom:1px solid #ddd;";
+
+        const name = document.createElement("strong");
+        name.textContent =
+          stock.company_name || stock.ticker_id || "Stock";
+
+        const details = document.createElement("p");
+        details.style.margin = "5px 0 0";
+        details.textContent =
+          "Price: ₹" + (stock.price ?? "N/A") +
+          " | Change: " + (stock.percent_change ?? "N/A") + "%";
+
+        item.append(name, details);
+        box.appendChild(item);
+      });
+    }
+
+    renderStocks(stocks.top_gainers, gainersBox, true);
+    renderStocks(stocks.top_losers, losersBox, false);
+
+  } catch (error) {
+    gainersBox.textContent = "Market data is temporarily unavailable.";
+    losersBox.textContent = "Market data is temporarily unavailable.";
+    console.error("Market data error:", error);
+  }
+}
+
+loadMarketMovers();
+  </script>
   
 </body>
 </html>
