@@ -2823,6 +2823,102 @@ transition: none;
 transform: none;
 }
     }
+    
+/* PREMIUM DESIGN - TOP GAINERS & TOP LOSERS */
+
+#market-movers .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+#market-movers .grid > .card {
+  position: relative;
+  min-width: 0;
+  padding: 28px 24px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f1f7ff);
+  border: 1px solid #d5e5f6;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(18, 52, 90, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+#market-movers .grid > .card:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #16a34a, #86efac);
+}
+
+#market-movers .grid > .card:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #dc2626, #fca5a5);
+}
+
+#market-movers .grid > .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(18, 52, 90, 0.14);
+}
+
+#market-movers .grid > .card .icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+#market-movers .grid > .card h3 {
+  color: #174b82;
+  font-size: 23px;
+  margin: 0 0 14px;
+}
+
+#market-movers .grid > .card p {
+  color: #52677e;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+#market-movers .grid > .card p strong {
+  color: #174b82;
+}
+
+@media (max-width: 600px) {
+  #market-movers .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #market-movers .grid > .card {
+    padding: 25px 20px;
+    border-radius: 17px;
+  }
+
+  #market-movers .grid > .card h3 {
+    font-size: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #market-movers .grid > .card {
+    transition: none;
+  }
+
+  #market-movers .grid > .card:hover {
+    transform: none;
+  }
+}
+    
   </style>
 </head>
 <body>
