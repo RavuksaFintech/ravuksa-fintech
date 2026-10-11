@@ -9494,29 +9494,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* RAVUKSA FINTECH — Dynamic Knowledge Data */
 
-const ravuksaKnowledge = [
+let ravuksaKnowledge = [];
 
-  {
-    id: "stock-market-basics",
-    title: "Stock Market Basics",
-    category: "Stock Market",
-    level: "Beginner",
-
-    description:
-      "Stock market के basic concepts को आसान भाषा में समझें।",
-
-    lessons: [
-      "Stock क्या है?",
-      "Share Market कैसे काम करता है?",
-      "NSE और BSE क्या हैं?",
-      "Investor और Trader में अंतर"
-    ],
-
-    beginnerTip:
-      "किसी भी investment से पहले basic concepts और risks को समझना जरूरी है।"
-  }
-
-];
+fetch("./data/learning.json")
+.then(function(response) {
+if (!response.ok) {
+throw new Error("Learning data could not be loaded");
+}
+return response.json();
+})
+.then(function(data) {
+ravuksaKnowledge = data;
+renderKnowledgeDemo();
+})
+.catch(function(error) {
+console.error("Learning Data Err.  or:", error);
+});
 
   </script>
 
