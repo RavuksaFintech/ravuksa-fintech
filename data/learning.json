@@ -1,0 +1,16 @@
+[
+{
+"id": "stock-market-basics",
+"title": "Stock Market Basics",
+"category": "Stock Market",
+"level": "Beginner",
+"description": "Stock market के basic concepts को आसान भाषा में समझें।",
+"lessons": [
+"Stock क्या है?",
+"Share Market कैसे काम करता है?",
+"NSE और BSE क्या हैं?",
+"Investor और Trader में अंतर"
+],
+"beginnerTip": "किसी भी investment से पहले basic concepts और risks को समझना जरूरी है।"
+}
+]
