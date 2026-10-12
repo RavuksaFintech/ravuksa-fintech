@@ -2704,13 +2704,59 @@ text-decoration: none;
 
 @media (max-width: 600px) {
 #home .home-founder {
+display: flex;
 flex-direction: column;
-gap: 20px;
-margin: 30px 0 8px;
-padding: 22px 18px;
+align-items: center;
+gap: 16px;
+width: 100%;
+max-width: 100%;
+margin: 24px auto 8px;
+padding: 20px 16px;
 text-align: center;
+box-sizing: border-box;
 border-radius: 18px;
 }
+
+.home-founder-info {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+box-sizing: border-box;
+}
+
+.home-founder-photo {
+display: block;
+width: 110px;
+height: 130px;
+max-width: 100%;
+margin: 0 auto;
+object-fit: cover;
+object-position: center top;
+}
+
+.home-founder-info h2 {
+font-size: 25px;
+line-height: 1.3;
+overflow-wrap: anywhere;
+}
+
+.home-founder-info h3 {
+font-size: 15px;
+line-height: 1.5;
+overflow-wrap: anywhere;
+}
+
+.home-founder-info p {
+font-size: 14px;
+line-height: 1.7;
+overflow-wrap: anywhere;
+}
+
+.home-founder-info .btn {
+max-width: 100%;
+white-space: normal;
+box-sizing: border-box;
+    }
 
 .home-founder-photo {
 flex: none;
