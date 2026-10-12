@@ -2703,11 +2703,12 @@ text-decoration: none;
 }
 
 @media (max-width: 600px) {
-#home .home-founder {
+.home-founder {
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 16px;
+justify-content: center;
+gap: 14px;
 width: 100%;
 max-width: 100%;
 margin: 24px auto 8px;
@@ -2717,15 +2718,9 @@ box-sizing: border-box;
 border-radius: 18px;
 }
 
-.home-founder-info {
-width: 100%;
-max-width: 100%;
-min-width: 0;
-box-sizing: border-box;
-}
-
 .home-founder-photo {
 display: block;
+flex: none;
 width: 110px;
 height: 130px;
 max-width: 100%;
@@ -2734,51 +2729,47 @@ object-fit: cover;
 object-position: center top;
 }
 
+.home-founder-info {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+box-sizing: border-box;
+}
+
+.home-founder-label {
+font-size: 12px;
+line-height: 1.5;
+overflow-wrap: normal;
+}
+
 .home-founder-info h2 {
 font-size: 25px;
 line-height: 1.3;
-overflow-wrap: anywhere;
+overflow-wrap: normal;
 }
 
 .home-founder-info h3 {
-font-size: 15px;
+font-size: 16px;
 line-height: 1.5;
-overflow-wrap: anywhere;
+color: #1769aa;
+overflow-wrap: normal;
+word-break: normal;
 }
 
 .home-founder-info p {
 font-size: 14px;
 line-height: 1.7;
-overflow-wrap: anywhere;
+overflow-wrap: normal;
+word-break: normal;
 }
 
 .home-founder-info .btn {
 max-width: 100%;
 white-space: normal;
 box-sizing: border-box;
+}
     }
-
-.home-founder-photo {
-flex: none;
-width: 110px;
-max-width: 100%;
-height: 130px;
-object-fit: cover;
-object-position: center top;
-    }
-
-  .home-founder-info h2 {
-font-size: 27px;
-}
-
-  .home-founder-info h3 {
-font-size: 16px;
-}
-
-  .home-founder-info p {
-font-size: 14px;
-}
-}
+    
     /* PREMIUM MARKET INDEX CARDS */
 #market-dashboard > .wrap > .grid {
 display: grid;
