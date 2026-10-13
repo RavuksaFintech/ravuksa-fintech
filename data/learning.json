@@ -1,16 +1,182 @@
 [
-{
-"id": "stock-market-basics",
-"title": "Stock Market Basics",
-"category": "Stock Market",
-"level": "Beginner",
-"description": "Stock market के basic concepts को आसान भाषा में समझें।",
-"lessons": [
-"Stock क्या है?",
-"Share Market कैसे काम करता है?",
-"NSE और BSE क्या हैं?",
-"Investor और Trader में अंतर"
-],
-"beginnerTip": "किसी भी investment से पहले basic concepts और risks को समझना जरूरी है।"
-}
-]
+  {
+    "id": "stock-market-basics",
+    "title": "Stock Market Basics",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "शेयर बाजार की बुनियादी जानकारी हिंदी और English में सीखें। Understand how the stock market works.",
+    "lessons": [
+      "1. Stock क्या है और कंपनी में ownership का क्या अर्थ है?",
+      "2. Share Market क्या है और इसकी जरूरत क्यों होती है?",
+      "3. Primary Market और Secondary Market में अंतर।",
+      "4. NSE और BSE क्या हैं?",
+      "5. Investor और Trader में क्या अंतर है?",
+      "6. Stock Price कैसे बदलती है?",
+      "7. Market Capitalization क्या है?",
+      "8. Stock Market के फायदे, जोखिम और सीमाएँ।"
+    ],
+    "beginnerTip": "शेयर खरीदने से पहले कंपनी, निवेश के उद्देश्य और संभावित जोखिमों को समझें। किसी भी रिटर्न की गारंटी नहीं होती।"
+  },
+  {
+    "id": "how-stock-exchanges-work",
+    "title": "How Stock Exchanges Work",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "जानें कि Stock Exchanges पर शेयरों की खरीद-बिक्री कैसे होती है।",
+    "lessons": [
+      "1. Stock Exchange क्या है?",
+      "2. NSE और BSE की भूमिका।",
+      "3. Buyers और Sellers कैसे मिलते हैं?",
+      "4. Electronic Trading System क्या है?",
+      "5. Order Matching कैसे होता है?",
+      "6. Market Hours और Trading Sessions।",
+      "7. Clearing और Settlement का परिचय।",
+      "8. Stock Exchange के नियम और निवेशक सुरक्षा।"
+    ],
+    "beginnerTip": "Stock Exchange, Broker और Depository अलग-अलग भूमिकाएँ निभाते हैं। इनकी जिम्मेदारियों को समझना जरूरी है।"
+  },
+  {
+    "id": "investor-vs-trader",
+    "title": "Investor vs Trader",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Investor और Trader के उद्देश्य, समयावधि और जोखिमों को समझें।",
+    "lessons": [
+      "1. Investor किसे कहते हैं?",
+      "2. Trader किसे कहते हैं?",
+      "3. Short-Term और Long-Term Approach।",
+      "4. Investing और Trading में अंतर।",
+      "5. Risk Tolerance क्या है?",
+      "6. Investment Horizon का अर्थ।",
+      "7. Emotional Decisions से होने वाली गलतियाँ।",
+      "8. अपने वित्तीय उद्देश्य के अनुसार सीखने की योजना।"
+    ],
+    "beginnerTip": "Trading और Investing में से कोई भी तरीका निश्चित लाभ नहीं देता। पहले अपनी वित्तीय स्थिति और जोखिम समझें।"
+  },
+  {
+    "id": "market-orders-explained",
+    "title": "Market Orders Explained",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Market Order, Limit Order और दूसरे सामान्य Orders को आसान उदाहरणों से समझें।",
+    "lessons": [
+      "1. Stock Market Order क्या होता है?",
+      "2. Market Order कैसे काम करता है?",
+      "3. Limit Order क्या है?",
+      "4. Stop-Loss Order का परिचय।",
+      "5. Trigger Price और Limit Price में अंतर।",
+      "6. Order Book और Bid-Ask Price।",
+      "7. Liquidity कम होने पर Order से जुड़े जोखिम।",
+      "8. Order लगाने से पहले किन बातों की जाँच करें?"
+    ],
+    "beginnerTip": "Market Order में निष्पादन मूल्य की गारंटी नहीं होती। किसी भी Order को लगाने से पहले उसके प्रकार और शर्तें समझें।"
+  },
+  {
+    "id": "stock-market-indices",
+    "title": "Stock Market Indices",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "NIFTY 50, SENSEX और Market Indices का अर्थ तथा उपयोग सीखें।",
+    "lessons": [
+      "1. Stock Market Index क्या है?",
+      "2. NIFTY 50 का परिचय।",
+      "3. SENSEX का परिचय।",
+      "4. Index में कंपनियों का चयन कैसे होता है?",
+      "5. Index Value क्यों बदलती है?",
+      "6. Market Up और Market Down का अर्थ।",
+      "7. Index और Individual Stock में अंतर।",
+      "8. Benchmark का उपयोग और उसकी सीमाएँ।"
+    ],
+    "beginnerTip": "किसी Index का बढ़ना यह नहीं दर्शाता कि बाजार के सभी शेयर बढ़ रहे हैं।"
+  },
+  {
+    "id": "demat-trading-accounts",
+    "title": "Demat & Trading Accounts",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Demat Account, Trading Account और Bank Account की भूमिकाएँ समझें।",
+    "lessons": [
+      "1. Demat Account क्या है?",
+      "2. Trading Account क्या है?",
+      "3. Bank Account की भूमिका।",
+      "4. Depository और Depository Participant का परिचय।",
+      "5. NSDL और CDSL क्या हैं?",
+      "6. Broker का काम क्या है?",
+      "7. Account Charges और संबंधित शर्तें।",
+      "8. Account Security और OTP की सुरक्षा।"
+    ],
+    "beginnerTip": "अपना OTP, Password या TPIN किसी अनजान व्यक्ति के साथ साझा न करें। खाता खोलने से पहले सभी शुल्क और शर्तें पढ़ें।"
+  },
+  {
+    "id": "market-participants",
+    "title": "Stock Market Participants",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "शेयर बाजार में भाग लेने वाले प्रमुख लोगों और संस्थाओं की भूमिकाएँ जानें।",
+    "lessons": [
+      "1. Retail Investor कौन होता है?",
+      "2. Institutional Investor का परिचय।",
+      "3. Broker और Trading Member की भूमिका।",
+      "4. Market Maker क्या होता है?",
+      "5. SEBI की नियामक भूमिका।",
+      "6. Depositories की भूमिका।",
+      "7. Clearing Corporation क्या करती है?",
+      "8. बाजार के प्रतिभागियों के बीच समन्वय।"
+    ],
+    "beginnerTip": "किसी व्यक्ति या संस्था के बड़े निवेश को देखकर बिना स्वतंत्र जाँच के निवेश का निर्णय न लें।"
+  },
+  {
+    "id": "ipo-basics",
+    "title": "IPO Basics",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "IPO क्या है, कंपनियाँ इसे क्यों लाती हैं और निवेशकों को क्या समझना चाहिए।",
+    "lessons": [
+      "1. IPO का Full Form और अर्थ।",
+      "2. कंपनी IPO क्यों लाती है?",
+      "3. Primary Market की भूमिका।",
+      "4. Price Band और Issue Size क्या हैं?",
+      "5. IPO Application प्रक्रिया का परिचय।",
+      "6. Allotment और Listing में अंतर।",
+      "7. IPO से जुड़े प्रमुख जोखिम।",
+      "8. IPO Documents और आधिकारिक जानकारी कैसे पढ़ें?"
+    ],
+    "beginnerTip": "IPO में Listing Gain की गारंटी नहीं होती। कंपनी के दस्तावेज, जोखिम और मूल्यांकन को समझें।"
+  },
+  {
+    "id": "corporate-actions",
+    "title": "Corporate Actions",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Dividend, Bonus Shares, Stock Split और Rights Issue जैसे Corporate Actions समझें।",
+    "lessons": [
+      "1. Corporate Action क्या है?",
+      "2. Dividend का अर्थ।",
+      "3. Bonus Shares कैसे काम करते हैं?",
+      "4. Stock Split क्या है?",
+      "5. Rights Issue का परिचय।",
+      "6. Record Date और Ex-Date क्या हैं?",
+      "7. Corporate Actions का Share Price पर प्रभाव।",
+      "8. आधिकारिक Corporate Announcements कैसे पढ़ें?"
+    ],
+    "beginnerTip": "Bonus Shares या Stock Split से अपने-आप निवेश का कुल मूल्य नहीं बढ़ जाता। हर Corporate Action का प्रभाव अलग हो सकता है।"
+  },
+  {
+    "id": "stock-market-risks",
+    "title": "Stock Market Risks",
+    "category": "Risk Management",
+    "level": "Beginner",
+    "description": "शेयर बाजार के जोखिम, संभावित नुकसान और निवेशक सुरक्षा की बुनियादी बातें सीखें।",
+    "lessons": [
+      "1. Market Risk क्या है?",
+      "2. Volatility का अर्थ।",
+      "3. Liquidity Risk क्या है?",
+      "4. Concentration Risk का परिचय।",
+      "5. Leverage और उधार लेकर निवेश करने के जोखिम।",
+      "6. Diversification की भूमिका और सीमाएँ।",
+      "7. Fraud, Fake Tips और Guaranteed Returns के दावे पहचानना।",
+      "8. निवेश से पहले Risk Assessment कैसे करें?"
+    ],
+    "beginnerTip": "केवल उतना ही जोखिम लें जिसे आप समझते हैं। आपातकालीन जरूरतों का पैसा जोखिम वाले निवेश में लगाने से बचें।"
+  }
+    ]
