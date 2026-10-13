@@ -178,5 +178,185 @@
       "8. निवेश से पहले Risk Assessment कैसे करें?"
     ],
     "beginnerTip": "केवल उतना ही जोखिम लें जिसे आप समझते हैं। आपातकालीन जरूरतों का पैसा जोखिम वाले निवेश में लगाने से बचें।"
+  },
+    {
+    "id": "mutual-fund-nav",
+    "title": "Mutual Fund NAV Explained",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Mutual Fund की NAV क्या होती है और यह कैसे समझी जाती है, जानें।",
+    "lessons": [
+      "1. NAV का Full Form और अर्थ।",
+      "2. Mutual Fund में NAV की भूमिका।",
+      "3. NAV की गणना का बुनियादी तरीका।",
+      "4. Units और NAV के बीच संबंध।",
+      "5. NAV रोज क्यों बदल सकती है?",
+      "6. नई और पुरानी NAV को कैसे समझें?",
+      "7. NAV और Fund Performance में अंतर।",
+      "8. NAV से जुड़े सामान्य भ्रम।"
+    ],
+    "beginnerTip": "कम NAV वाला Fund अपने-आप सस्ता या बेहतर निवेश नहीं होता। Fund के प्रदर्शन, लागत, जोखिम और उद्देश्य को भी समझें।"
+  },
+  {
+    "id": "mutual-fund-expense-ratio",
+    "title": "Mutual Fund Expense Ratio",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Mutual Fund की लागत और Expense Ratio का निवेश पर संभावित प्रभाव समझें।",
+    "lessons": [
+      "1. Expense Ratio क्या है?",
+      "2. Fund Management Costs का परिचय।",
+      "3. Expense Ratio प्रतिशत में कैसे दिखाया जाता है?",
+      "4. निवेश की लागत का उदाहरण।",
+      "5. Direct और Regular Plans की लागत का अंतर।",
+      "6. कम Expense Ratio के फायदे और सीमाएँ।",
+      "7. लंबी अवधि में लागत का संभावित प्रभाव।",
+      "8. Fund की आधिकारिक जानकारी में खर्च कैसे देखें?"
+    ],
+    "beginnerTip": "केवल कम Expense Ratio देखकर Fund न चुनें। उसके निवेश उद्देश्य, जोखिम और अन्य महत्वपूर्ण विशेषताओं की भी तुलना करें।"
+  },
+  {
+    "id": "direct-vs-regular-mutual-funds",
+    "title": "Direct vs Regular Mutual Funds",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Direct और Regular Mutual Fund Plans के बीच अंतर समझें।",
+    "lessons": [
+      "1. Direct Plan क्या होता है?",
+      "2. Regular Plan क्या होता है?",
+      "3. दोनों Plans में Distribution की भूमिका।",
+      "4. Expense Ratio में संभावित अंतर।",
+      "5. Returns की तुलना करते समय किन बातों का ध्यान रखें?",
+      "6. Direct Plan में स्वयं जानकारी जुटाने की जिम्मेदारी।",
+      "7. Regular Plan में मिलने वाली सेवाओं को समझना।",
+      "8. Plan चुनने से पहले जरूरी सवाल।"
+    ],
+    "beginnerTip": "Direct और Regular Plans के बीच चुनाव करते समय लागत, उपलब्ध सहायता, अपनी जानकारी और जरूरतों को समझें।"
+  },
+  {
+    "id": "active-vs-passive-funds",
+    "title": "Active vs Passive Funds",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Active और Passive Mutual Funds कैसे काम करते हैं, यह आसान भाषा में सीखें।",
+    "lessons": [
+      "1. Active Fund क्या होता है?",
+      "2. Passive Fund क्या होता है?",
+      "3. Fund Manager की भूमिका।",
+      "4. Benchmark Index का अर्थ।",
+      "5. Active और Passive Investing में अंतर।",
+      "6. Tracking Error का परिचय।",
+      "7. Costs और Returns की तुलना।",
+      "8. दोनों तरीकों के जोखिम और सीमाएँ।"
+    ],
+    "beginnerTip": "Active Fund हमेशा Index से बेहतर प्रदर्शन नहीं करता और Passive Fund भी बाजार के नुकसान से सुरक्षित नहीं होता।"
+  },
+  {
+    "id": "index-fund-basics",
+    "title": "Index Fund Basics",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Index Funds का उद्देश्य, उनकी कार्यप्रणाली और उनसे जुड़े जोखिम समझें।",
+    "lessons": [
+      "1. Index Fund क्या है?",
+      "2. Index को Follow करने का अर्थ।",
+      "3. Index Fund कैसे काम करता है?",
+      "4. Benchmark और Fund Portfolio का संबंध।",
+      "5. Expense Ratio और Tracking Error।",
+      "6. Index Funds में Diversification की भूमिका।",
+      "7. Market Downturn में Index Fund का व्यवहार।",
+      "8. Index Fund की जानकारी कैसे जाँचें?"
+    ],
+    "beginnerTip": "Index Fund का प्रदर्शन उसके Benchmark और बाजार की चाल से प्रभावित होता है। Diversification होने पर भी नुकसान संभव है।"
+  },
+  {
+    "id": "equity-mutual-funds",
+    "title": "Equity Mutual Funds",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Equity Mutual Funds के निवेश उद्देश्य, प्रकार और जोखिमों को समझें।",
+    "lessons": [
+      "1. Equity Mutual Fund क्या है?",
+      "2. Shares में निवेश की भूमिका।",
+      "3. Large Cap, Mid Cap और Small Cap का परिचय।",
+      "4. Equity Fund के निवेश उद्देश्य।",
+      "5. Market Volatility का प्रभाव।",
+      "6. Investment Horizon और Risk Tolerance।",
+      "7. Fund Factsheet में क्या देखें?",
+      "8. Equity Funds से जुड़े सामान्य भ्रम।"
+    ],
+    "beginnerTip": "Equity Mutual Funds में बाजार के उतार-चढ़ाव के कारण नुकसान हो सकता है। केवल पिछले Returns देखकर निर्णय न लें।"
+  },
+  {
+    "id": "debt-mutual-funds",
+    "title": "Debt Mutual Funds",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Debt Mutual Funds, Bonds और उनसे जुड़े प्रमुख जोखिमों का परिचय प्राप्त करें।",
+    "lessons": [
+      "1. Debt Mutual Fund क्या है?",
+      "2. Bonds और Debt Securities का परिचय।",
+      "3. Interest Rate Risk क्या है?",
+      "4. Credit Risk का अर्थ।",
+      "5. Duration और Maturity में अंतर।",
+      "6. अलग-अलग Debt Fund Categories।",
+      "7. Liquidity और Redemption से जुड़े पहलू।",
+      "8. Debt Funds की जानकारी कैसे जाँचें?"
+    ],
+    "beginnerTip": "Debt Mutual Funds बैंक जमा के समान नहीं हैं और इनमें भी जोखिम होता है। Returns या मूलधन की गारंटी मानकर न चलें।"
+  },
+  {
+    "id": "hybrid-mutual-funds",
+    "title": "Hybrid Mutual Funds",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Equity और Debt में निवेश करने वाले Hybrid Funds की बुनियादी जानकारी सीखें।",
+    "lessons": [
+      "1. Hybrid Mutual Fund क्या है?",
+      "2. Equity और Debt का संयोजन।",
+      "3. Asset Allocation का अर्थ।",
+      "4. Aggressive और Conservative Hybrid Categories का परिचय।",
+      "5. Balanced Advantage Funds का परिचय।",
+      "6. Portfolio Rebalancing की भूमिका।",
+      "7. Hybrid Funds के जोखिम।",
+      "8. Fund के उद्देश्य और Portfolio की जाँच।"
+    ],
+    "beginnerTip": "Hybrid Fund में दो Asset Classes होने से जोखिम समाप्त नहीं होता। वास्तविक Allocation और Fund की Category को समझें।"
+  },
+  {
+    "id": "etf-basics",
+    "title": "Exchange Traded Funds (ETFs)",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "ETF क्या है और यह Stock Exchange पर कैसे खरीदा-बेचा जाता है, जानें।",
+    "lessons": [
+      "1. ETF का Full Form और अर्थ।",
+      "2. ETF कैसे काम करता है?",
+      "3. ETF और Index Fund में अंतर।",
+      "4. Stock Exchange पर ETF की Trading।",
+      "5. Market Price और NAV में अंतर।",
+      "6. Liquidity और Bid-Ask Spread।",
+      "7. Expense Ratio और Tracking Error।",
+      "8. ETF से जुड़े प्रमुख जोखिम।"
+    ],
+    "beginnerTip": "ETF की Exchange Price उसकी NAV से अलग हो सकती है। खरीदने से पहले Liquidity, Spread और संबंधित खर्च समझें।"
+  },
+  {
+    "id": "mutual-fund-risk-research",
+    "title": "Mutual Fund Risks & Research",
+    "category": "Mutual Funds",
+    "level": "Beginner",
+    "description": "Mutual Fund की जाँच करना, जोखिम समझना और आधिकारिक जानकारी पढ़ना सीखें।",
+    "lessons": [
+      "1. Mutual Fund में जोखिम के प्रमुख प्रकार।",
+      "2. Riskometer क्या बताता है?",
+      "3. Scheme Information Document (SID) का परिचय।",
+      "4. Key Information Memorandum (KIM) क्या है?",
+      "5. Fund Factsheet कैसे पढ़ें?",
+      "6. Benchmark और Performance की तुलना।",
+      "7. Portfolio, Costs और Fund Objective की जाँच।",
+      "8. Guaranteed Returns के भ्रामक दावों को पहचानना।"
+    ],
+    "beginnerTip": "Fund चुनने से पहले आधिकारिक दस्तावेज पढ़ें। पिछले Returns भविष्य के प्रदर्शन की गारंटी नहीं देते।"
   }
     ]
