@@ -358,5 +358,185 @@
       "8. Guaranteed Returns के भ्रामक दावों को पहचानना।"
     ],
     "beginnerTip": "Fund चुनने से पहले आधिकारिक दस्तावेज पढ़ें। पिछले Returns भविष्य के प्रदर्शन की गारंटी नहीं देते।"
+  },
+    {
+    "id": "personal-finance-basics",
+    "title": "Personal Finance Basics",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "व्यक्तिगत वित्त को समझें और अपनी आय, खर्च, बचत तथा वित्तीय लक्ष्यों को व्यवस्थित करना सीखें।",
+    "lessons": [
+      "1. Personal Finance क्या है?",
+      "2. Income और Expenses में अंतर।",
+      "3. Needs और Wants को समझना।",
+      "4. Financial Planning क्यों जरूरी है?",
+      "5. Net Worth का सामान्य परिचय।",
+      "6. Financial Habits कैसे बनती हैं?",
+      "7. पैसों से जुड़े सामान्य निर्णय।",
+      "8. अपनी वित्तीय स्थिति का शुरुआती आकलन।"
+    ],
+    "beginnerTip": "अपनी आय और खर्च लिखना शुरू करें। अपनी वास्तविक वित्तीय स्थिति समझे बिना बड़े वित्तीय निर्णय न लें।"
+  },
+  {
+    "id": "budgeting-expense-management",
+    "title": "Budgeting & Expense Management",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "बजट बनाना, खर्चों पर नजर रखना और अपनी आय का बेहतर उपयोग करना सीखें।",
+    "lessons": [
+      "1. Budget क्या है?",
+      "2. Monthly Budget कैसे बनाएँ?",
+      "3. Fixed और Variable Expenses में अंतर।",
+      "4. Needs और Wants के लिए खर्च तय करना।",
+      "5. खर्चों को Track करने के तरीके।",
+      "6. बजट में अनावश्यक खर्च पहचानना।",
+      "7. बजट की नियमित समीक्षा कैसे करें?",
+      "8. बजट बिगड़ने पर उसे सुधारने के तरीके।"
+    ],
+    "beginnerTip": "ऐसा बजट बनाएँ जो आपकी वास्तविक आय और जरूरी खर्चों के अनुकूल हो। बजट को समय-समय पर अपडेट करें।"
+  },
+  {
+    "id": "emergency-fund-planning",
+    "title": "Emergency Fund Planning",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "अचानक आने वाले खर्चों और आय में रुकावट के लिए Emergency Fund की भूमिका समझें।",
+    "lessons": [
+      "1. Emergency Fund क्या है?",
+      "2. Emergency Fund क्यों जरूरी है?",
+      "3. जरूरी और गैर-जरूरी खर्चों में अंतर।",
+      "4. Emergency Fund की जरूरत का अनुमान।",
+      "5. छोटी राशि से बचत शुरू करना।",
+      "6. Emergency Fund कहाँ रखना चाहिए?",
+      "7. किन परिस्थितियों में इसका उपयोग करें?",
+      "8. इस्तेमाल के बाद Emergency Fund दोबारा बनाना।"
+    ],
+    "beginnerTip": "अपनी आय, जरूरी खर्चों और पारिवारिक जिम्मेदारियों के अनुसार Emergency Fund का लक्ष्य तय करें। इसे जोखिम वाले निवेश से अलग रखें।"
+  },
+  {
+    "id": "saving-vs-investing",
+    "title": "Saving vs Investing",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "बचत और निवेश के उद्देश्य, अंतर, संभावित लाभ और जोखिम समझें।",
+    "lessons": [
+      "1. Saving यानी बचत क्या है?",
+      "2. Investing यानी निवेश क्या है?",
+      "3. Saving और Investing में मुख्य अंतर।",
+      "4. Liquidity का महत्व।",
+      "5. Risk और Return का सामान्य परिचय।",
+      "6. अलग-अलग समय के वित्तीय लक्ष्यों को समझना।",
+      "7. बचत और निवेश में संतुलन कैसे रखें?",
+      "8. निर्णय से पहले किन बातों पर विचार करें?"
+    ],
+    "beginnerTip": "बचत और निवेश दोनों के अलग-अलग उद्देश्य हैं। जरूरी खर्चों और आपातकालीन जरूरतों को ध्यान में रखकर निर्णय लें।"
+  },
+  {
+    "id": "compound-interest-explained",
+    "title": "Compound Interest Explained",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "चक्रवृद्धि ब्याज, समय और ब्याज पर ब्याज के प्रभाव को उदाहरणों से समझें।",
+    "lessons": [
+      "1. Compound Interest क्या है?",
+      "2. Simple Interest और Compound Interest में अंतर।",
+      "3. ब्याज पर ब्याज कैसे जुड़ता है?",
+      "4. Principal, Rate और Time का अर्थ।",
+      "5. Compounding का एक आसान उदाहरण।",
+      "6. समय का संभावित प्रभाव।",
+      "7. Compounding की सीमाएँ और गलतफहमियाँ।",
+      "8. Compound Interest Calculator का शैक्षिक उपयोग।"
+    ],
+    "beginnerTip": "Compound Interest के उदाहरणों में ब्याज दर और समय की मान्यताओं को ध्यान से देखें। निवेश में वास्तविक रिटर्न निश्चित नहीं होता।"
+  },
+  {
+    "id": "inflation-purchasing-power",
+    "title": "Inflation & Purchasing Power",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "महँगाई का अर्थ और समय के साथ पैसे की खरीदने की क्षमता में होने वाले बदलाव को समझें।",
+    "lessons": [
+      "1. Inflation यानी महँगाई क्या है?",
+      "2. Purchasing Power का अर्थ।",
+      "3. कीमतें बढ़ने से बजट पर प्रभाव।",
+      "4. Inflation का बचत पर संभावित असर।",
+      "5. Nominal और Real Return में अंतर।",
+      "6. रोजमर्रा की चीजों से महँगाई समझना।",
+      "7. लंबे समय के लक्ष्यों में Inflation का ध्यान।",
+      "8. Inflation से जुड़े सामान्य भ्रम।"
+    ],
+    "beginnerTip": "वित्तीय लक्ष्यों की योजना बनाते समय भविष्य में खर्च बढ़ने की संभावना को ध्यान में रखें।"
+  },
+  {
+    "id": "financial-goals-planning",
+    "title": "Financial Goals & Planning",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "अपने छोटे, मध्यम और लंबे समय के वित्तीय लक्ष्यों को व्यवस्थित करना सीखें।",
+    "lessons": [
+      "1. Financial Goal क्या है?",
+      "2. Short-Term और Long-Term Goals में अंतर।",
+      "3. लक्ष्य के लिए समयसीमा तय करना।",
+      "4. लक्ष्य की अनुमानित लागत समझना।",
+      "5. नियमित बचत की योजना बनाना।",
+      "6. प्राथमिकताओं के अनुसार लक्ष्य चुनना।",
+      "7. लक्ष्य की प्रगति कैसे मापें?",
+      "8. परिस्थितियाँ बदलने पर योजना अपडेट करना।"
+    ],
+    "beginnerTip": "हर लक्ष्य के लिए उसकी अनुमानित लागत, समयसीमा और नियमित बचत की जरूरत लिखें। अनुमान समय-समय पर बदल सकते हैं।"
+  },
+  {
+    "id": "debt-loan-management",
+    "title": "Debt & Loan Management",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "कर्ज, ब्याज, EMI और उधार चुकाने की जिम्मेदारियों को समझें।",
+    "lessons": [
+      "1. Debt और Loan क्या हैं?",
+      "2. Principal और Interest का अर्थ।",
+      "3. EMI कैसे काम करती है?",
+      "4. Interest Rate और Loan Tenure का प्रभाव।",
+      "5. Total Repayment Cost कैसे समझें?",
+      "6. समय पर भुगतान क्यों जरूरी है?",
+      "7. कर्ज चुकाने की योजना बनाना।",
+      "8. नया Loan लेने से पहले क्या जाँचें?"
+    ],
+    "beginnerTip": "Loan लेने से पहले ब्याज दर, सभी शुल्क, कुल भुगतान और अपनी EMI चुकाने की क्षमता समझें।"
+  },
+  {
+    "id": "credit-score-credit-report",
+    "title": "Credit Score & Credit Report",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "Credit Score और Credit Report का अर्थ, उनका महत्व और सुरक्षित तरीके से उन्हें जाँचना सीखें।",
+    "lessons": [
+      "1. Credit Score क्या है?",
+      "2. Credit Report क्या बताती है?",
+      "3. Credit Bureau की भूमिका।",
+      "4. भुगतान का रिकॉर्ड क्यों महत्वपूर्ण है?",
+      "5. Credit Utilisation का सामान्य परिचय।",
+      "6. Credit Report में गलती कैसे पहचानें?",
+      "7. गलत जानकारी सुधारने की प्रक्रिया समझना।",
+      "8. Credit Score से जुड़े मिथक और सावधानियाँ।"
+    ],
+    "beginnerTip": "अपनी Credit Report को आधिकारिक माध्यम से जाँचें। किसी अनजान व्यक्ति को OTP, पासवर्ड या संवेदनशील वित्तीय जानकारी न दें।"
+  },
+  {
+    "id": "financial-fraud-money-safety",
+    "title": "Financial Fraud & Money Safety",
+    "category": "Personal Finance",
+    "level": "Beginner",
+    "description": "डिजिटल भुगतान, ऑनलाइन धोखाधड़ी, फर्जी निवेश योजनाओं और वित्तीय जानकारी की सुरक्षा सीखें।",
+    "lessons": [
+      "1. Financial Fraud क्या है?",
+      "2. Phishing और Fake Links की पहचान।",
+      "3. OTP, PIN और Password की सुरक्षा।",
+      "4. UPI और Digital Payment में सावधानियाँ।",
+      "5. Fake Investment Schemes और Guaranteed Returns के दावे।",
+      "6. अनजान कॉल और संदेशों से सुरक्षा।",
+      "7. संदिग्ध लेनदेन होने पर तुरंत क्या करें?",
+      "8. शिकायत करने के लिए आधिकारिक माध्यम पहचानना।"
+    ],
+    "beginnerTip": "OTP, UPI PIN या पासवर्ड किसी के साथ साझा न करें। धोखाधड़ी की आशंका होने पर तुरंत अपने बैंक और संबंधित आधिकारिक शिकायत माध्यम से संपर्क करें।"
   }
     ]
