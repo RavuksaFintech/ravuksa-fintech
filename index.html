@@ -9747,7 +9747,7 @@ function renderKnowledgeDemo() {
 
   container.innerHTML = "";
 
-  ravuksaKnowledge.forEach(function(topic) {
+ ravuksaKnowledge.forEach(function(topic, index) {
 
     const lessons = topic.lessons
       .map(function(lesson) {
@@ -9758,7 +9758,7 @@ function renderKnowledgeDemo() {
     container.innerHTML += `
       <div class="card" style="margin-top:20px;">
 
-        <h3>${topic.title}</h3>
+       <h3>${index + 1}. ${topic.title}</h3>
 
         <p style="margin-top:8px;">
           ${topic.description}
