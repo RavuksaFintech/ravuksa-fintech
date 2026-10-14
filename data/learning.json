@@ -538,5 +538,185 @@
       "8. शिकायत करने के लिए आधिकारिक माध्यम पहचानना।"
     ],
     "beginnerTip": "OTP, UPI PIN या पासवर्ड किसी के साथ साझा न करें। धोखाधड़ी की आशंका होने पर तुरंत अपने बैंक और संबंधित आधिकारिक शिकायत माध्यम से संपर्क करें।"
+  },
+    {
+    "id": "banking-basics",
+    "title": "31. Banking Basics — बैंकिंग की बुनियादी जानकारी",
+    "category": "Banking",
+    "level": "Beginner",
+    "description": "बैंक कैसे काम करते हैं, उनकी भूमिका क्या है और पैसे को सुरक्षित रखने में बैंकिंग क्यों महत्वपूर्ण है।",
+    "lessons": [
+      "1. बैंक क्या है? What is a Bank?",
+      "2. बैंक लोगों के पैसे को कैसे संभालते हैं?",
+      "3. Savings, Loans और Payments में बैंक की भूमिका।",
+      "4. Public Sector और Private Sector Banks में अंतर।",
+      "5. Commercial Banks और Cooperative Banks की बुनियादी जानकारी।",
+      "6. बैंक जमा और लोन से आय कैसे कमाते हैं?",
+      "7. बैंकिंग सेवाओं के मुख्य प्रकार।",
+      "8. बैंक चुनते समय सुरक्षा, शुल्क और सुविधाएँ कैसे समझें?"
+    ],
+    "beginnerTip": "बैंक चुनते समय केवल ब्याज दर नहीं, बल्कि सुरक्षा, शुल्क, ग्राहक सेवा और अपनी जरूरतों को भी देखें।"
+  },
+  {
+    "id": "bank-accounts-explained",
+    "title": "32. Bank Accounts Explained — बैंक खाते",
+    "category": "Banking",
+    "level": "Beginner",
+    "description": "अलग-अलग बैंक खातों, उनके उपयोग, सुविधाओं और सीमाओं को समझें।",
+    "lessons": [
+      "1. Savings Account क्या है?",
+      "2. Current Account किसके लिए होता है?",
+      "3. Salary Account की बुनियादी जानकारी।",
+      "4. Basic Savings Bank Deposit Account क्या है?",
+      "5. Joint Account और Single Account में अंतर।",
+      "6. Minimum Balance और Account Charges को समझें।",
+      "7. Nominee और बैंक खाते की जानकारी का महत्व।",
+      "8. सही बैंक खाता अपनी जरूरत के अनुसार कैसे चुनें?"
+    ],
+    "beginnerTip": "खाता खोलने से पहले minimum balance, charges, withdrawal limits और account terms जरूर पढ़ें।"
+  },
+  {
+    "id": "fixed-deposit-recurring-deposit",
+    "title": "33. Fixed Deposit & Recurring Deposit — FD और RD",
+    "category": "Banking",
+    "level": "Beginner",
+    "description": "FD और RD की कार्यप्रणाली, अवधि, ब्याज, समय से पहले निकासी और जोखिम समझें।",
+    "lessons": [
+      "1. Fixed Deposit (FD) क्या है?",
+      "2. Recurring Deposit (RD) क्या है?",
+      "3. FD और RD में मुख्य अंतर।",
+      "4. Principal, Interest Rate और Tenure का अर्थ।",
+      "5. Simple Interest और Compound Interest की भूमिका।",
+      "6. समय से पहले पैसा निकालने पर क्या हो सकता है?",
+      "7. बैंक जमा बीमा की सीमा और शर्तें समझें।",
+      "8. FD या RD चुनने से पहले किन बातों की तुलना करें?"
+    ],
+    "beginnerTip": "FD या RD खोलने से पहले ब्याज, अवधि, premature withdrawal penalty और लागू नियम जाँचें।"
+  },
+  {
+    "id": "banking-interest-rates",
+    "title": "34. Banking Interest Rates — बैंक ब्याज दरें",
+    "category": "Banking",
+    "level": "Beginner",
+    "description": "जमा और लोन पर ब्याज दरें कैसे काम करती हैं तथा EMI और कुल लागत पर उनका क्या प्रभाव पड़ता है।",
+    "lessons": [
+      "1. Interest Rate यानी ब्याज दर क्या है?",
+      "2. Deposit Interest और Loan Interest में अंतर।",
+      "3. Fixed Rate और Floating Rate की बुनियादी जानकारी।",
+      "4. Annual Interest Rate और अवधि को समझें।",
+      "5. ब्याज दर बदलने से EMI पर क्या प्रभाव पड़ सकता है?",
+      "6. Benchmark Rate और Lending Rate का सामान्य परिचय।",
+      "7. ब्याज के साथ Fees और अन्य Charges का महत्व।",
+      "8. अलग-अलग बैंक ऑफर की सही तुलना कैसे करें?"
+    ],
+    "beginnerTip": "लोन की तुलना केवल ब्याज दर से न करें; कुल भुगतान, फीस और शर्तें भी देखें।"
+  },
+  {
+    "id": "insurance-basics",
+    "title": "35. Insurance Basics — बीमा की बुनियादी जानकारी",
+    "category": "Insurance",
+    "level": "Beginner",
+    "description": "बीमा का उद्देश्य, प्रीमियम, कवरेज और पॉलिसी की मुख्य शर्तें सरल भाषा में समझें।",
+    "lessons": [
+      "1. Insurance यानी बीमा क्या है?",
+      "2. Risk Pooling और Financial Protection का अर्थ।",
+      "3. Policyholder, Insurer और Beneficiary कौन होते हैं?",
+      "4. Premium और Sum Insured क्या हैं?",
+      "5. Coverage, Exclusions और Waiting Period का अर्थ।",
+      "6. Deductible, Co-payment और Sub-limits को समझें।",
+      "7. बीमा और निवेश में अंतर।",
+      "8. पॉलिसी खरीदने से पहले किन दस्तावेजों और शर्तों को पढ़ें?"
+    ],
+    "beginnerTip": "बीमा खरीदते समय विज्ञापन के बजाय policy wording, exclusions और वास्तविक जरूरत पर ध्यान दें।"
+  },
+  {
+    "id": "health-life-insurance",
+    "title": "36. Health & Life Insurance — स्वास्थ्य और जीवन बीमा",
+    "category": "Insurance",
+    "level": "Beginner",
+    "description": "Health Insurance और Life Insurance के अलग-अलग उद्देश्यों और कवरेज को समझें।",
+    "lessons": [
+      "1. Health Insurance किस तरह की सुरक्षा देता है?",
+      "2. Life Insurance का मुख्य उद्देश्य क्या है?",
+      "3. Term Life Insurance की बुनियादी जानकारी।",
+      "4. Hospitalisation और Network Hospitals का अर्थ।",
+      "5. Waiting Period और Pre-existing Conditions को समझें।",
+      "6. Nominee और Beneficiary की भूमिका।",
+      "7. व्यक्तिगत और परिवार आधारित स्वास्थ्य बीमा में अंतर।",
+      "8. बीमा कवरेज का मूल्यांकन किन जरूरतों के आधार पर करें?"
+    ],
+    "beginnerTip": "Health और Life Insurance की जरूरतें अलग होती हैं; दोनों को एक ही उद्देश्य वाला उत्पाद न समझें।"
+  },
+  {
+    "id": "insurance-policy-claims",
+    "title": "37. Insurance Policy & Claims — पॉलिसी और क्लेम",
+    "category": "Insurance",
+    "level": "Beginner",
+    "description": "बीमा दस्तावेज पढ़ना, क्लेम प्रक्रिया समझना और शिकायत के आधिकारिक रास्तों की जानकारी पाना।",
+    "lessons": [
+      "1. Insurance Policy Document के मुख्य हिस्से।",
+      "2. Policy Schedule और Policy Wording में अंतर।",
+      "3. Premium Due Date और Policy Renewal का महत्व।",
+      "4. Claim Intimation और Claim Form क्या हैं?",
+      "5. क्लेम के लिए जरूरी दस्तावेज कैसे व्यवस्थित करें?",
+      "6. Cashless और Reimbursement Claim का सामान्य अंतर।",
+      "7. Claim Rejection के संभावित कारण और पॉलिसी शर्तें।",
+      "8. शिकायत होने पर बीमाकर्ता और आधिकारिक शिकायत व्यवस्था का उपयोग कैसे करें?"
+    ],
+    "beginnerTip": "पॉलिसी, प्रीमियम रसीदें और क्लेम से जुड़े दस्तावेज सुरक्षित रखें; जरूरत पड़ने पर आधिकारिक शिकायत प्रक्रिया अपनाएँ।"
+  },
+  {
+    "id": "digital-payments-upi-safety",
+    "title": "38. Digital Payments & UPI Safety — डिजिटल भुगतान",
+    "category": "Digital Finance",
+    "level": "Beginner",
+    "description": "UPI और अन्य डिजिटल भुगतान माध्यमों का उपयोग तथा भुगतान करते समय जरूरी सुरक्षा नियम सीखें।",
+    "lessons": [
+      "1. Digital Payments क्या हैं?",
+      "2. UPI, IMPS, NEFT और RTGS का सामान्य परिचय।",
+      "3. UPI ID और QR Code से भुगतान कैसे काम करता है?",
+      "4. पैसे भेजने और पैसे प्राप्त करने की प्रक्रिया में अंतर।",
+      "5. UPI PIN और OTP की सुरक्षा क्यों जरूरी है?",
+      "6. गलत खाते में भुगतान हो जाने पर तुरंत क्या कदम उठाएँ?",
+      "7. Pending और Failed Transactions को कैसे समझें?",
+      "8. डिजिटल भुगतान के लिए आधिकारिक ऐप और शिकायत माध्यम कैसे चुनें?"
+    ],
+    "beginnerTip": "पैसे प्राप्त करने के लिए सामान्यतः UPI PIN डालने की जरूरत नहीं होती। PIN डालने से पहले स्क्रीन पर भुगतान की जानकारी जाँचें।"
+  },
+  {
+    "id": "online-banking-cybersecurity",
+    "title": "39. Online Banking & Cybersecurity — ऑनलाइन बैंकिंग सुरक्षा",
+    "category": "Cyber Safety",
+    "level": "Beginner",
+    "description": "Internet Banking, Mobile Banking और डिजिटल बैंकिंग खाते को सुरक्षित रखने के तरीके सीखें।",
+    "lessons": [
+      "1. Internet Banking और Mobile Banking क्या हैं?",
+      "2. Strong Password और Multi-factor Authentication का महत्व।",
+      "3. Phishing Email, Fake SMS और नकली बैंक वेबसाइट पहचानें।",
+      "4. सार्वजनिक Wi-Fi पर वित्तीय काम करते समय सावधानी।",
+      "5. Screen-sharing और Remote-access ऐप के जोखिम।",
+      "6. SIM Swap और Account Takeover का सामान्य परिचय।",
+      "7. संदिग्ध लेन-देन पर बैंक से संपर्क और खाते की सुरक्षा।",
+      "8. ऑनलाइन बैंकिंग के लिए सुरक्षित आदतों की चेकलिस्ट।"
+    ],
+    "beginnerTip": "अपना OTP, PIN, पासवर्ड या स्क्रीन-शेयरिंग एक्सेस किसी के साथ साझा न करें—भले ही वह खुद को बैंक कर्मचारी बताए।"
+  },
+  {
+    "id": "digital-finance-fintech",
+    "title": "40. Digital Finance & Fintech — डिजिटल वित्त और फिनटेक",
+    "category": "Fintech",
+    "level": "Beginner",
+    "description": "Fintech, डिजिटल वित्तीय सेवाओं और तकनीक के माध्यम से बदलते वित्तीय अनुभव को समझें।",
+    "lessons": [
+      "1. Fintech यानी Financial Technology क्या है?",
+      "2. डिजिटल भुगतान और ऑनलाइन वित्तीय सेवाओं का विकास।",
+      "3. Mobile Banking और Digital Wallets की भूमिका।",
+      "4. Lending Technology और डिजिटल लोन प्लेटफॉर्म का परिचय।",
+      "5. Robo-advisory और Automated Financial Tools क्या हैं?",
+      "6. AI और Data Analytics का वित्तीय सेवाओं में उपयोग।",
+      "7. Fintech सेवाओं में Privacy, Fraud और Data Security के जोखिम।",
+      "8. किसी डिजिटल वित्तीय सेवा की विश्वसनीयता और नियामकीय स्थिति कैसे जाँचें?"
+    ],
+    "beginnerTip": "किसी भी डिजिटल वित्तीय सेवा का उपयोग करने से पहले उसके प्रदाता, शुल्क, डेटा उपयोग, नियम और लागू नियामकीय स्थिति की जाँच करें।"
   }
     ]
