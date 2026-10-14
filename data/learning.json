@@ -541,7 +541,7 @@
   },
     {
     "id": "banking-basics",
-    "title": "31. Banking Basics — बैंकिंग की बुनियादी जानकारी",
+    "title": "Banking Basics — बैंकिंग की बुनियादी जानकारी",
     "category": "Banking",
     "level": "Beginner",
     "description": "बैंक कैसे काम करते हैं, उनकी भूमिका क्या है और पैसे को सुरक्षित रखने में बैंकिंग क्यों महत्वपूर्ण है।",
@@ -559,7 +559,7 @@
   },
   {
     "id": "bank-accounts-explained",
-    "title": "32. Bank Accounts Explained — बैंक खाते",
+    "title": "Bank Accounts Explained — बैंक खाते",
     "category": "Banking",
     "level": "Beginner",
     "description": "अलग-अलग बैंक खातों, उनके उपयोग, सुविधाओं और सीमाओं को समझें।",
@@ -577,7 +577,7 @@
   },
   {
     "id": "fixed-deposit-recurring-deposit",
-    "title": "33. Fixed Deposit & Recurring Deposit — FD और RD",
+    "title": "Fixed Deposit & Recurring Deposit — FD और RD",
     "category": "Banking",
     "level": "Beginner",
     "description": "FD और RD की कार्यप्रणाली, अवधि, ब्याज, समय से पहले निकासी और जोखिम समझें।",
@@ -595,7 +595,7 @@
   },
   {
     "id": "banking-interest-rates",
-    "title": "34. Banking Interest Rates — बैंक ब्याज दरें",
+    "title": "Banking Interest Rates — बैंक ब्याज दरें",
     "category": "Banking",
     "level": "Beginner",
     "description": "जमा और लोन पर ब्याज दरें कैसे काम करती हैं तथा EMI और कुल लागत पर उनका क्या प्रभाव पड़ता है।",
@@ -613,7 +613,7 @@
   },
   {
     "id": "insurance-basics",
-    "title": "35. Insurance Basics — बीमा की बुनियादी जानकारी",
+    "title": "Insurance Basics — बीमा की बुनियादी जानकारी",
     "category": "Insurance",
     "level": "Beginner",
     "description": "बीमा का उद्देश्य, प्रीमियम, कवरेज और पॉलिसी की मुख्य शर्तें सरल भाषा में समझें।",
@@ -631,7 +631,7 @@
   },
   {
     "id": "health-life-insurance",
-    "title": "36. Health & Life Insurance — स्वास्थ्य और जीवन बीमा",
+    "title": "Health & Life Insurance — स्वास्थ्य और जीवन बीमा",
     "category": "Insurance",
     "level": "Beginner",
     "description": "Health Insurance और Life Insurance के अलग-अलग उद्देश्यों और कवरेज को समझें।",
@@ -649,7 +649,7 @@
   },
   {
     "id": "insurance-policy-claims",
-    "title": "37. Insurance Policy & Claims — पॉलिसी और क्लेम",
+    "title": "Insurance Policy & Claims — पॉलिसी और क्लेम",
     "category": "Insurance",
     "level": "Beginner",
     "description": "बीमा दस्तावेज पढ़ना, क्लेम प्रक्रिया समझना और शिकायत के आधिकारिक रास्तों की जानकारी पाना।",
@@ -667,7 +667,7 @@
   },
   {
     "id": "digital-payments-upi-safety",
-    "title": "38. Digital Payments & UPI Safety — डिजिटल भुगतान",
+    "title": "Digital Payments & UPI Safety — डिजिटल भुगतान",
     "category": "Digital Finance",
     "level": "Beginner",
     "description": "UPI और अन्य डिजिटल भुगतान माध्यमों का उपयोग तथा भुगतान करते समय जरूरी सुरक्षा नियम सीखें।",
@@ -685,7 +685,7 @@
   },
   {
     "id": "online-banking-cybersecurity",
-    "title": "39. Online Banking & Cybersecurity — ऑनलाइन बैंकिंग सुरक्षा",
+    "title": "Online Banking & Cybersecurity — ऑनलाइन बैंकिंग सुरक्षा",
     "category": "Cyber Safety",
     "level": "Beginner",
     "description": "Internet Banking, Mobile Banking और डिजिटल बैंकिंग खाते को सुरक्षित रखने के तरीके सीखें।",
@@ -703,7 +703,7 @@
   },
   {
     "id": "digital-finance-fintech",
-    "title": "40. Digital Finance & Fintech — डिजिटल वित्त और फिनटेक",
+    "title": "Digital Finance & Fintech — डिजिटल वित्त और फिनटेक",
     "category": "Fintech",
     "level": "Beginner",
     "description": "Fintech, डिजिटल वित्तीय सेवाओं और तकनीक के माध्यम से बदलते वित्तीय अनुभव को समझें।",
