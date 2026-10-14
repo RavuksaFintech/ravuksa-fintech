@@ -9737,65 +9737,157 @@ console.error("Learning Data Err.  or:", error);
 
 
 <script>
-
 function renderKnowledgeDemo() {
-
-  const container =
-    document.getElementById("dynamicKnowledgeContent");
-
+  const container = document.getElementById("dynamicKnowledgeContent");
   if (!container) return;
 
   container.innerHTML = "";
 
- ravuksaKnowledge.forEach(function(topic, index) {
+  function escapeHTML(value) {
+    return String(value ?? "").replace(/[&<>"']/g, function (char) {
+      return {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char];
+    });
+  }
 
-    const lessons = topic.lessons
-      .map(function(lesson) {
-        return "<li>" + lesson + "</li>";
-      })
-      .join("");
+  function renderList(items) {
+    if (!Array.isArray(items) || items.length === 0) return "";
+    return "<ul style='margin-top:8px;'>" +
+      items.map(function (item) {
+        if (typeof item === "object" && item !== null) {
+          return "<li><strong>" +
+            escapeHTML(item.term || item.title || item.question || "") +
+            "</strong> " +
+            escapeHTML(item.meaning || item.content || item.text || "") +
+            "</li>";
+        }
+        return "<li>" + escapeHTML(item) + "</li>";
+      }).join("") + "</ul>";
+  }
 
-    container.innerHTML += `
-      <div class="card" style="margin-top:20px;">
+  ravuksaKnowledge.forEach(function (topic, index) {
+    const lessons = renderList(topic.lessons);
+    const examples = renderList(topic.examples);
+    const terms = renderList(topic.keyTerms || topic.importantTerms);
+    const risks = renderList(topic.risks || topic.risksAndSafety);
+    const mistakes = renderList(topic.commonMistakes);
+    const summary = Array.isArray(topic.summary)
+      ? renderList(topic.summary)
+      : (topic.summary
+          ? "<p style='margin-top:8px;'>" + escapeHTML(topic.summary) + "</p>"
+          : "");
 
-       <h3>${index + 1}. ${topic.title}</h3>
+    let detailedContent = "";
 
-        <p style="margin-top:8px;">
-          ${topic.description}
-        </p>
+    if (topic.detailedLessons) {
+      detailedContent += "<h4>📘 Detailed Lessons</h4>" +
+        renderList(topic.detailedLessons);
+    }
 
-        <p style="margin-top:12px;">
-          <strong>Category:</strong> ${topic.category}
-          &nbsp; | &nbsp;
-          <strong>Level:</strong> ${topic.level}
-        </p>
+    if (examples) {
+      detailedContent += "<h4 style='margin-top:16px;'>💡 Practical Examples</h4>" + examples;
+    }
 
-        <h4 style="margin-top:18px;">
-          📖 What You Will Learn
-        </h4>
+    if (terms) {
+      detailedContent += "<h4 style='margin-top:16px;'>📚 Important Terms</h4>" + terms;
+    }
 
-        <ul style="margin-top:8px;">
-          ${lessons}
-        </ul>
+    if (risks) {
+      detailedContent += "<h4 style='margin-top:16px;'>🛡️ Risks & Safety</h4>" + risks;
+    }
 
-        <div class="notice" style="margin-top:18px;">
-          <strong>💡 Beginner Tip</strong>
+    if (mistakes) {
+      detailedContent += "<h4 style='margin-top:16px;'>⚠️ Common Mistakes</h4>" + mistakes;
+    }
 
-          <p style="margin-top:6px;">
-            ${topic.beginnerTip}
-          </p>
-        </div>
+    if (summary) {
+      detailedContent += "<h4 style='margin-top:16px;'>📝 Summary</h4>" + summary;
+    }
 
-      </div>
-    `;
+    let quizHTML = "";
+
+    if (Array.isArray(topic.quiz) && topic.quiz.length) {
+      quizHTML = topic.quiz.map(function (question, qIndex) {
+        const options = Array.isArray(question.options) ? question.options : [];
+
+        return "<div style='margin-top:16px;padding:12px;border:1px solid #ddd;border-radius:8px;'>" +
+          "<p><strong>Q" + (qIndex + 1) + ". " +
+          escapeHTML(question.question) + "</strong></p>" +
+          options.map(function (option, optionIndex) {
+            return "<label style='display:block;margin-top:8px;'>" +
+              "<input type='radio' name='quiz-" + index + "-" + qIndex +
+              "' value='" + optionIndex + "'> " +
+              escapeHTML(option) + "</label>";
+          }).join("") +
+          "<button type='button' style='margin-top:12px;' data-quiz-topic='" +
+          index + "' data-quiz-question='" + qIndex +
+          "'>Check Answer</button>" +
+          "<p id='quiz-result-" + index + "-" + qIndex +
+          "' style='margin-top:8px;'></p></div>";
+      }).join("");
+    }
+
+    if (quizHTML) {
+      detailedContent += "<h4 style='margin-top:18px;'>❓ Test Your Knowledge</h4>" + quizHTML;
+    }
+
+    container.insertAdjacentHTML("beforeend",
+      "<div class='card' style='margin-top:20px;'>" +
+        "<h3>" + (index + 1) + ". " + escapeHTML(topic.title) + "</h3>" +
+        "<p style='margin-top:8px;'>" + escapeHTML(topic.description) + "</p>" +
+        "<p style='margin-top:12px;'><strong>Category:</strong> " +
+        escapeHTML(topic.category) + " &nbsp; | &nbsp; <strong>Level:</strong> " +
+        escapeHTML(topic.level) + "</p>" +
+        "<h4 style='margin-top:18px;'>📖 What You Will Learn</h4>" +
+        lessons +
+        "<div class='notice' style='margin-top:18px;'><strong>💡 Beginner Tip</strong>" +
+        "<p style='margin-top:6px;'>" + escapeHTML(topic.beginnerTip) + "</p></div>" +
+        (detailedContent
+          ? "<details style='margin-top:18px;'><summary style='cursor:pointer;font-weight:bold;padding:10px 0;'>📚 Explore Detailed Learning</summary>" +
+            "<div style='margin-top:12px;'>" + detailedContent + "</div></details>"
+          : "") +
+      "</div>"
+    );
+  });
+
+  container.querySelectorAll("button[data-quiz-topic]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const topicIndex = Number(button.dataset.quizTopic);
+      const questionIndex = Number(button.dataset.quizQuestion);
+      const question = ravuksaKnowledge[topicIndex].quiz[questionIndex];
+      const selected = container.querySelector(
+        "input[name='quiz-" + topicIndex + "-" + questionIndex + "']:checked"
+      );
+      const result = document.getElementById(
+        "quiz-result-" + topicIndex + "-" + questionIndex
+      );
+
+      if (!selected) {
+        result.textContent = "पहले एक उत्तर चुनें। Please select an answer first.";
+        return;
+      }
+
+      const correctIndex = question.answerIndex;
+      const isCorrect = Number(selected.value) === correctIndex;
+
+      result.textContent =
+        (isCorrect ? "✅ सही उत्तर! Correct answer. " : "❌ अभी सही नहीं। ") +
+        (question.explanation || "");
+    });
   });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   renderKnowledgeDemo();
 });
+        </script>
+  
 
-</script>
 
   <script>
 async function loadMarketMovers() {
