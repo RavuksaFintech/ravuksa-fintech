@@ -718,5 +718,185 @@
       "8. किसी डिजिटल वित्तीय सेवा की विश्वसनीयता और नियामकीय स्थिति कैसे जाँचें?"
     ],
     "beginnerTip": "किसी भी डिजिटल वित्तीय सेवा का उपयोग करने से पहले उसके प्रदाता, शुल्क, डेटा उपयोग, नियम और लागू नियामकीय स्थिति की जाँच करें।"
+  },
+    {
+    "id": "financial-planning-beginners",
+    "title": "Financial Planning for Beginners — शुरुआती वित्तीय योजना",
+    "category": "Financial Planning",
+    "level": "Beginner",
+    "description": "अपनी आय, खर्च, बचत, निवेश और भविष्य की जरूरतों को एक व्यवस्थित योजना में जोड़ना सीखें।",
+    "lessons": [
+      "1. Financial Planning यानी वित्तीय योजना क्या है?",
+      "2. Income, Expenses, Savings और Investments का संबंध।",
+      "3. अपनी वर्तमान वित्तीय स्थिति का आकलन कैसे करें?",
+      "4. Short-term, Medium-term और Long-term Goals में अंतर।",
+      "5. बजट और बचत के लिए व्यावहारिक योजना बनाना।",
+      "6. Emergency Fund और Insurance को योजना में शामिल करना।",
+      "7. जोखिम और समय के अनुसार निवेश की जरूरत समझना।",
+      "8. अपनी वित्तीय योजना की नियमित समीक्षा कैसे करें?"
+    ],
+    "beginnerTip": "पहले अपनी आय, खर्च, कर्ज और बचत की स्थिति लिखें। फिर वास्तविक जरूरतों के अनुसार योजना बनाएँ।"
+  },
+  {
+    "id": "retirement-planning-basics",
+    "title": "Retirement Planning Basics — रिटायरमेंट की तैयारी",
+    "category": "Financial Planning",
+    "level": "Beginner",
+    "description": "कामकाजी जीवन के बाद नियमित आय और खर्चों के लिए पहले से तैयारी करना सीखें।",
+    "lessons": [
+      "1. Retirement Planning क्या है और क्यों जरूरी है?",
+      "2. रिटायरमेंट के बाद संभावित खर्चों का अनुमान।",
+      "3. Retirement Corpus यानी आवश्यक कुल धनराशि का अर्थ।",
+      "4. Inflation का भविष्य के खर्चों पर प्रभाव।",
+      "5. नियमित बचत और लंबे समय की Compounding।",
+      "6. Pension, EPF, NPS और अन्य स्रोतों का सामान्य परिचय।",
+      "7. रिटायरमेंट योजना में स्वास्थ्य और आपातकालीन खर्च।",
+      "8. योजना की समीक्षा और बदलती जरूरतों के अनुसार सुधार।"
+    ],
+    "beginnerTip": "रिटायरमेंट की योजना जल्दी शुरू करने से समय का लाभ मिल सकता है, लेकिन अनुमानित रिटर्न की गारंटी नहीं होती।"
+  },
+  {
+    "id": "taxation-basics-india",
+    "title": "Taxation Basics in India — भारत में कर व्यवस्था",
+    "category": "Tax Education",
+    "level": "Beginner",
+    "description": "भारत में टैक्स का उद्देश्य, मुख्य प्रकार और करदाता की बुनियादी जिम्मेदारियाँ समझें।",
+    "lessons": [
+      "1. Tax यानी कर क्या है और सरकार इसे क्यों एकत्र करती है?",
+      "2. Direct Tax और Indirect Tax में अंतर।",
+      "3. Income Tax की बुनियादी जानकारी।",
+      "4. GST का सामान्य परिचय।",
+      "5. Financial Year और Assessment Year का अर्थ।",
+      "6. PAN और कर संबंधी दस्तावेजों की भूमिका।",
+      "7. Taxable Income और Tax Liability का सामान्य अर्थ।",
+      "8. आधिकारिक कर जानकारी और नियमों में बदलाव कैसे जाँचें?"
+    ],
+    "beginnerTip": "कर नियम बदल सकते हैं। सही जानकारी के लिए भारत के Income Tax Department और GST की आधिकारिक वेबसाइट देखें।"
+  },
+  {
+    "id": "income-tax-regimes",
+    "title": "Income Tax & Tax Regimes — आयकर और टैक्स व्यवस्था",
+    "category": "Tax Education",
+    "level": "Beginner",
+    "description": "Income Tax Return, पुरानी और नई कर व्यवस्था तथा टैक्स गणना की बुनियादी अवधारणाएँ समझें।",
+    "lessons": [
+      "1. Income Tax Return (ITR) क्या है?",
+      "2. Old Tax Regime और New Tax Regime का सामान्य परिचय।",
+      "3. Gross Income और Taxable Income में अंतर।",
+      "4. Salary, Interest और अन्य आय के स्रोतों का परिचय।",
+      "5. Deductions और Exemptions का अर्थ।",
+      "6. Tax Slabs और Rebate की बुनियादी जानकारी।",
+      "7. TDS और Form 16 का सामान्य परिचय।",
+      "8. ITR दाखिल करने से पहले जानकारी और दस्तावेज कैसे व्यवस्थित करें?"
+    ],
+    "beginnerTip": "किसी भी टैक्स व्यवस्था को चुनने से पहले अपनी पात्रता, लागू वित्तीय वर्ष के नियम और कुल टैक्स प्रभाव की जाँच करें।"
+  },
+  {
+    "id": "tax-saving-investments",
+    "title": "Tax-Saving Investments — टैक्स बचाने वाले निवेश",
+    "category": "Tax Education",
+    "level": "Beginner",
+    "description": "कर लाभ वाले वित्तीय उत्पादों, उनकी शर्तों, लॉक-इन अवधि और निवेश जोखिम को समझें।",
+    "lessons": [
+      "1. Tax-saving investment का उद्देश्य क्या है?",
+      "2. Tax Deduction और Tax Exemption में अंतर।",
+      "3. Section 80C का सामान्य परिचय और लागू शर्तें।",
+      "4. ELSS Mutual Funds की बुनियादी जानकारी।",
+      "5. PPF, EPF और पात्र बीमा प्रीमियम का सामान्य परिचय।",
+      "6. Lock-in Period और Liquidity का महत्व।",
+      "7. टैक्स लाभ और निवेश जोखिम के बीच संतुलन।",
+      "8. निवेश से पहले लागू टैक्स व्यवस्था और पात्रता कैसे जाँचें?"
+    ],
+    "beginnerTip": "सिर्फ टैक्स बचाने के लिए ऐसा उत्पाद न चुनें जो आपके लक्ष्यों या जोखिम सहने की क्षमता के अनुकूल न हो।"
+  },
+  {
+    "id": "government-savings-schemes",
+    "title": "Government Savings Schemes — सरकारी बचत योजनाएँ",
+    "category": "Savings",
+    "level": "Beginner",
+    "description": "भारत की प्रमुख सरकारी बचत योजनाओं, पात्रता, अवधि और नियमों को समझें।",
+    "lessons": [
+      "1. Government Savings Schemes क्या होती हैं?",
+      "2. Small Savings Schemes का सामान्य परिचय।",
+      "3. Post Office Savings Account और Time Deposit की जानकारी।",
+      "4. National Savings Certificate (NSC) क्या है?",
+      "5. Senior Citizens' Savings Scheme (SCSS) का परिचय।",
+      "6. Sukanya Samriddhi Account की पात्रता और उद्देश्य।",
+      "7. ब्याज दर, अवधि, निकासी और टैक्स नियमों को समझना।",
+      "8. सरकारी योजनाओं की वर्तमान शर्तें आधिकारिक स्रोत से कैसे जाँचें?"
+    ],
+    "beginnerTip": "सरकारी योजनाओं की ब्याज दरें और शर्तें बदल सकती हैं। निवेश से पहले आधिकारिक नियम और अपनी पात्रता जाँचें।"
+  },
+  {
+    "id": "national-pension-system",
+    "title": "National Pension System (NPS) — राष्ट्रीय पेंशन प्रणाली",
+    "category": "Retirement Planning",
+    "level": "Beginner",
+    "description": "NPS की संरचना, योगदान, निवेश विकल्प और रिटायरमेंट से संबंधित सामान्य नियम समझें।",
+    "lessons": [
+      "1. National Pension System यानी NPS क्या है?",
+      "2. NPS का उद्देश्य और सामान्य कार्यप्रणाली।",
+      "3. Subscriber, PRAN और NPS Account का अर्थ।",
+      "4. Equity, Corporate Debt और Government Securities का परिचय।",
+      "5. Active Choice और Auto Choice की बुनियादी जानकारी।",
+      "6. योगदान, शुल्क और निवेश जोखिम को समझना।",
+      "7. Withdrawal और Annuity के सामान्य नियम।",
+      "8. NPS की पात्रता और वर्तमान नियम आधिकारिक स्रोत से कैसे जाँचें?"
+    ],
+    "beginnerTip": "NPS में निवेश बाजार से जुड़ा जोखिम रख सकता है। योगदान, निकासी और टैक्स नियम लागू शर्तों के अनुसार समझें।"
+  },
+  {
+    "id": "public-provident-fund",
+    "title": "Public Provident Fund (PPF) — सार्वजनिक भविष्य निधि",
+    "category": "Savings",
+    "level": "Beginner",
+    "description": "PPF की अवधि, योगदान, ब्याज, निकासी और लागू कर नियमों की बुनियादी जानकारी प्राप्त करें।",
+    "lessons": [
+      "1. Public Provident Fund यानी PPF क्या है?",
+      "2. PPF Account खोलने की सामान्य पात्रता।",
+      "3. न्यूनतम और अधिकतम वार्षिक योगदान के नियम।",
+      "4. PPF की अवधि और विस्तार की बुनियादी जानकारी।",
+      "5. ब्याज की गणना और दरों में बदलाव को समझना।",
+      "6. Partial Withdrawal और Loan की लागू शर्तें।",
+      "7. PPF और अन्य बचत विकल्पों में अंतर।",
+      "8. मौजूदा नियम, ब्याज दर और टैक्स लाभ कैसे जाँचें?"
+    ],
+    "beginnerTip": "PPF लंबी अवधि की बचत योजना है। खाता खोलने से पहले मौजूदा योगदान, निकासी और कर संबंधी नियम पढ़ें।"
+  },
+  {
+    "id": "gold-investment-basics",
+    "title": "Gold Investment Basics — सोने में निवेश",
+    "category": "Investment Education",
+    "level": "Beginner",
+    "description": "Physical Gold, Gold ETF और अन्य सोना-आधारित विकल्पों की संरचना, लागत और जोखिम समझें।",
+    "lessons": [
+      "1. सोने को निवेश के रूप में क्यों देखा जाता है?",
+      "2. Jewellery और Investment Gold में अंतर।",
+      "3. Physical Gold में Purity, Making Charges और Storage।",
+      "4. Gold ETF की बुनियादी जानकारी।",
+      "5. Sovereign Gold Bond की योजना और वर्तमान उपलब्धता की जाँच।",
+      "6. सोने की कीमतों को प्रभावित करने वाले कारक।",
+      "7. Gold Investment में Liquidity, Cost और Price Risk।",
+      "8. अलग-अलग विकल्पों की तुलना और आधिकारिक दस्तावेजों की जाँच।"
+    ],
+    "beginnerTip": "सोने की कीमत बढ़ने की गारंटी नहीं है। खरीदने से पहले लागत, शुद्धता, तरलता और उत्पाद की शर्तें समझें।"
+  },
+  {
+    "id": "real-estate-investment-basics",
+    "title": "Real Estate Investment Basics — रियल एस्टेट निवेश",
+    "category": "Investment Education",
+    "level": "Beginner",
+    "description": "Property Investment की लागत, किराये की आय, कानूनी जाँच और तरलता से जुड़े पहलुओं को समझें।",
+    "lessons": [
+      "1. Real Estate Investment क्या है?",
+      "2. Residential और Commercial Property में अंतर।",
+      "3. Property Price, Registration और अन्य खरीद लागत।",
+      "4. Rental Income और Property Yield का सामान्य अर्थ।",
+      "5. Home Loan, EMI और Interest Cost की भूमिका।",
+      "6. Title, Ownership और जरूरी कानूनी दस्तावेजों की जाँच।",
+      "7. Liquidity, Maintenance और Market Risk को समझना।",
+      "8. Property खरीदने से पहले स्वतंत्र कानूनी और वित्तीय जाँच क्यों जरूरी है?"
+    ],
+    "beginnerTip": "रियल एस्टेट में बड़ी पूँजी लग सकती है और बिक्री में समय लग सकता है। दस्तावेजों की स्वतंत्र जाँच कराएँ और कुल लागत का अनुमान लगाएँ।"
   }
     ]
