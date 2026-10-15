@@ -9371,5 +9371,990 @@
         "explanation": "Clearing और settlement executed trade से जुड़े दायित्वों तथा funds और securities के transfer को पूरा करने की प्रक्रियाएँ हैं।"
       }
     ]
-    }
+    },
+    {
+    "id": "sebi-role-investor-protection",
+    "title": "SEBI की भूमिका और निवेशक सुरक्षा (Role of SEBI & Investor Protection)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "SEBI क्या है, भारतीय securities market को regulate करने में उसकी क्या भूमिका है और investors अपने अधिकारों तथा शिकायतों के बारे में कैसे जान सकते हैं, इसे हिंदी और English में सीखें।",
+    "beginnerTip": "SEBI भारत के securities market का प्रमुख regulator है। इसका उद्देश्य investors के हितों की रक्षा करना, securities market के विकास को बढ़ावा देना और market को regulate करना है। SEBI की मौजूदगी investment में profit की guarantee नहीं देती और न ही market risk को समाप्त करती है।",
+    "lessons": [
+      "1. SEBI क्या है? (What is SEBI?)",
+      "2. SEBI की स्थापना और मुख्य उद्देश्य",
+      "3. Investor Protection में SEBI की भूमिका",
+      "4. Stock Exchanges और Brokers का Regulation",
+      "5. Market Manipulation और Insider Trading",
+      "6. Investor के अधिकार और जिम्मेदारियाँ",
+      "7. शिकायत कैसे दर्ज करें?",
+      "8. Investment Fraud और Fake Tips से कैसे बचें?"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. SEBI क्या है? (What is SEBI?)",
+        "content": "SEBI का पूरा नाम Securities and Exchange Board of India है। यह भारत के securities market का प्रमुख regulator है। SEBI के कार्यों में investors के हितों की रक्षा, securities market का विकास और market को regulate करना शामिल है। यह securities market से संबंधित कानूनों और regulations के अनुसार कार्य करता है।"
+      },
+      {
+        "title": "2. SEBI की स्थापना और मुख्य उद्देश्य",
+        "content": "SEBI को 1988 में स्थापित किया गया था और 1992 में इसे वैधानिक दर्जा (statutory status) मिला। इसके तीन प्रमुख उद्देश्य हैं: investors के हितों की रक्षा करना, securities market के विकास को बढ़ावा देना और market को regulate करना। इन उद्देश्यों के माध्यम से market में transparency, fairness और investor confidence को मजबूत करने का प्रयास किया जाता है।"
+      },
+      {
+        "title": "3. Investor Protection में SEBI की भूमिका",
+        "content": "SEBI market intermediaries के लिए नियम बनाता और लागू करता है, disclosures तथा compliance की व्यवस्था करता है और नियमों के उल्लंघन पर लागू कानून के अनुसार कार्रवाई कर सकता है। यह investors को financial awareness और सावधानी से जुड़े संदेश भी उपलब्ध कराता है। हालांकि, SEBI हर investment decision को approve नहीं करता और हर प्रकार के financial loss की भरपाई की guarantee नहीं देता।"
+      },
+      {
+        "title": "4. Stock Exchanges और Brokers का Regulation",
+        "content": "भारत में stock exchanges और securities market के कई intermediaries को लागू कानूनों और SEBI regulations के अनुसार काम करना होता है। Investors को broker चुनने से पहले उसका registration और संबंधित विवरण official sources पर verify करना चाहिए। Trading account खोलते समय charges, terms, risk disclosures और complaint process को पढ़ना भी जरूरी है। केवल किसी app या website का professional दिखना उसकी legitimacy का प्रमाण नहीं है।"
+      },
+      {
+        "title": "5. Market Manipulation और Insider Trading",
+        "content": "Market manipulation में गलत या भ्रामक गतिविधियों के माध्यम से market price या trading activity को कृत्रिम रूप से प्रभावित करने का प्रयास शामिल हो सकता है। Insider trading से संबंधित नियमों का उद्देश्य unpublished price-sensitive information के अनुचित उपयोग को रोकना है। Investors को guaranteed returns, secret stock tips, fake news और ऐसे दावों से सावधान रहना चाहिए जो बिना प्रमाण के निश्चित profit का वादा करते हैं।"
+      },
+      {
+        "title": "6. Investor के अधिकार और जिम्मेदारियाँ",
+        "content": "Investors को संबंधित disclosures, transaction records, contract notes और अपने account से जुड़े विवरण प्राप्त करने के अधिकार लागू नियमों तथा सेवाओं की शर्तों के अनुसार होते हैं। Investors की जिम्मेदारी है कि वे अपने account credentials सुरक्षित रखें, documents पढ़ें, transaction details जाँचें और केवल registered तथा verified intermediaries के साथ काम करें। निवेश का निर्णय लेने से पहले risk और संभावित नुकसान को समझना भी जरूरी है।"
+      },
+      {
+        "title": "7. शिकायत कैसे दर्ज करें?",
+        "content": "यदि investor को broker, listed company या securities market intermediary से संबंधित समस्या हो, तो पहले संबंधित संस्था के official grievance channel पर शिकायत दर्ज करके उसका reference number सुरक्षित रखना उपयोगी होता है। यदि शिकायत का समाधान नहीं होता या मामला SEBI के grievance mechanism के अंतर्गत आता है, तो investor SEBI की official website पर उपलब्ध complaint process और SCORES platform की जानकारी देख सकता है। शिकायत के साथ relevant dates, transaction details, contract notes, emails और पहले की communication तैयार रखें।"
+      },
+      {
+        "title": "8. Investment Fraud और Fake Tips से कैसे बचें?",
+        "content": "ऐसे लोगों से सावधान रहें जो guaranteed profit, निश्चित daily income या बिना risk के बड़े returns का वादा करते हैं। किसी अनजान व्यक्ति को OTP, password, PIN या remote access न दें। किसी व्यक्ति या संस्था के registration और contact details को official sources से verify करें। Social media पर दिखाई गई SEBI registration certificate की image मात्र को पर्याप्त प्रमाण न मानें। Suspicious activity होने पर evidence सुरक्षित रखें और उचित official complaint channel का उपयोग करें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Broker की जाँच",
+        "content": "राहुल एक trading account खोलना चाहता है। वह केवल advertisement देखकर account खोलने के बजाय broker के registration details, official website, charges और complaint process को verify करता है। इससे उसे गलत या भ्रामक दावों पर भरोसा करने से बचने में मदद मिल सकती है।"
+      },
+      {
+        "title": "Example 2: Guaranteed Profit का दावा",
+        "content": "किसी social media group में दावा किया जाता है कि ₹5,000 लगाने पर हर दिन निश्चित profit मिलेगा। यह एक गंभीर warning sign है। Investor को पैसे भेजने से पहले दावे की सत्यता जाँचनी चाहिए और guaranteed returns के वादे पर भरोसा नहीं करना चाहिए।"
+      },
+      {
+        "title": "Example 3: Transaction से जुड़ी शिकायत",
+        "content": "एक investor को अपने account में ऐसा transaction दिखाई देता है जिसे वह पहचान नहीं पा रहा। उसे transaction details और account records सुरक्षित रखने चाहिए, broker के official grievance channel पर शिकायत करनी चाहिए और आवश्यकता होने पर उपलब्ध regulatory complaint process देखना चाहिए।"
+      },
+      {
+        "title": "Example 4: Fake SEBI Certificate",
+        "content": "एक व्यक्ति अपने social media profile पर registration certificate दिखाकर investors से पैसे माँगता है। Investor को केवल image देखकर विश्वास नहीं करना चाहिए। उसे registration और संबंधित विवरण official SEBI resources पर independently verify करना चाहिए।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SEBI",
+        "meaning": "Securities and Exchange Board of India; भारत के securities market का प्रमुख regulator।"
+      },
+      {
+        "term": "Regulator",
+        "meaning": "ऐसी संस्था जो संबंधित क्षेत्र में लागू कानूनों और regulations के अनुसार निगरानी तथा regulation का कार्य करती है।"
+      },
+      {
+        "term": "Investor Protection",
+        "meaning": "निवेशकों के हितों की रक्षा, सही disclosures और अनुचित market practices के विरुद्ध safeguards से संबंधित व्यवस्था।"
+      },
+      {
+        "term": "Securities Market",
+        "meaning": "ऐसा market जहाँ shares और अन्य securities जारी की जाती हैं या trade होती हैं।"
+      },
+      {
+        "term": "Market Manipulation",
+        "meaning": "ऐसी अनुचित गतिविधि जो market price या trading activity को कृत्रिम रूप से प्रभावित करने का प्रयास करती है।"
+      },
+      {
+        "term": "Insider Trading",
+        "meaning": "लागू कानूनों का उल्लंघन करते हुए unpublished price-sensitive information के आधार पर securities में dealing करने या उससे संबंधित निषिद्ध गतिविधि।"
+      },
+      {
+        "term": "Grievance",
+        "meaning": "किसी service, transaction या संबंधित प्रक्रिया के बारे में दर्ज की गई शिकायत।"
+      },
+      {
+        "term": "SCORES",
+        "meaning": "SEBI का Complaint Redress System, जिसके माध्यम से securities market से संबंधित पात्र शिकायतें दर्ज और track की जा सकती हैं।"
+      },
+      {
+        "term": "Disclosure",
+        "meaning": "Company या intermediary द्वारा नियमों के अनुसार आवश्यक जानकारी सार्वजनिक या संबंधित पक्षों को उपलब्ध कराना।"
+      },
+      {
+        "term": "Risk Disclosure",
+        "meaning": "Investment या financial product से जुड़े संभावित जोखिमों की जानकारी।"
+      }
+    ],
+    "risks": [
+      "SEBI regulation होने के बावजूद share prices गिर सकते हैं और investors को नुकसान हो सकता है।",
+      "Fake advisors SEBI का नाम या नकली registration details इस्तेमाल कर सकते हैं।",
+      "Guaranteed returns और secret tips के दावे financial fraud का संकेत हो सकते हैं।",
+      "गलत या अधूरे documents के कारण complaint resolve होने में कठिनाई आ सकती है।",
+      "किसी शिकायत को दर्ज करने का अर्थ यह नहीं कि refund या compensation की guarantee है।",
+      "OTP, password या account access साझा करने से financial loss और account misuse का जोखिम बढ़ सकता है।"
+    ],
+    "commonMistakes": [
+      "यह मान लेना कि SEBI हर investment को approve या recommend करता है।",
+      "SEBI registration का दावा देखकर बिना verification के भरोसा करना।",
+      "Guaranteed profit या निश्चित daily income के वादे पर पैसे भेज देना।",
+      "Broker के charges, terms और risk disclosures न पढ़ना।",
+      "Transaction records, contract notes और complaint reference number सुरक्षित न रखना।",
+      "यह समझना कि SEBI से शिकायत करने पर हर मामले में पैसा वापस मिल जाएगा।",
+      "अपना OTP, PIN, password या remote access किसी दूसरे व्यक्ति को देना।"
+    ],
+    "summary": [
+      "SEBI का पूरा नाम Securities and Exchange Board of India है।",
+      "SEBI को 1988 में स्थापित किया गया और 1992 में वैधानिक दर्जा मिला।",
+      "SEBI के प्रमुख उद्देश्य investor protection, securities market development और regulation हैं।",
+      "Investors को broker तथा intermediary के registration details verify करने चाहिए।",
+      "Market manipulation, insider trading और fraudulent claims से सावधान रहना चाहिए।",
+      "शिकायत के लिए संबंधित संस्था के official grievance channel और लागू होने पर SEBI के SCORES platform की जानकारी देखी जा सकती है।",
+      "SEBI regulation market risk या loss को समाप्त नहीं करता और profit की guarantee नहीं देता।"
+    ],
+    "quiz": [
+      {
+        "question": "1. SEBI का पूरा नाम क्या है?",
+        "options": [
+          "Stock Exchange Bank of India",
+          "Securities and Exchange Board of India",
+          "Security Exchange Business Institution",
+          "Share Earnings Board of India"
+        ],
+        "answerIndex": 1,
+        "explanation": "SEBI का पूरा नाम Securities and Exchange Board of India है।"
+      },
+      {
+        "question": "2. SEBI के प्रमुख उद्देश्यों में क्या शामिल है?",
+        "options": [
+          "हर investor को guaranteed profit देना",
+          "हर share का price बढ़ाना",
+          "Investor protection, market development और regulation",
+          "सभी market losses की भरपाई करना"
+        ],
+        "answerIndex": 2,
+        "explanation": "SEBI के तीन प्रमुख उद्देश्य investors के हितों की रक्षा, securities market का विकास और market regulation हैं।"
+      },
+      {
+        "question": "3. कोई व्यक्ति guaranteed daily profit का दावा करे, तो investor को क्या करना चाहिए?",
+        "options": [
+          "बिना जाँच के पैसे भेज देना",
+          "अपना OTP और password साझा करना",
+          "उधार लेकर निवेश करना",
+          "दावे की जाँच करना और बिना प्रमाण के वादे से सावधान रहना"
+        ],
+        "answerIndex": 3,
+        "explanation": "Guaranteed profit के दावे fraud का संकेत हो सकते हैं। किसी भी व्यक्ति या संस्था को पैसे देने से पहले independent verification जरूरी है।"
+      },
+      {
+        "question": "4. Securities market से संबंधित शिकायत के लिए investor क्या कर सकता है?",
+        "options": [
+          "संबंधित संस्था के official grievance channel का उपयोग करे और लागू होने पर SEBI के SCORES platform की जानकारी देखे",
+          "अपना password social media पर पोस्ट करे",
+          "शिकायत के सारे records मिटा दे",
+          "केवल अनजान social media account से संपर्क करे"
+        ],
+        "answerIndex": 0,
+        "explanation": "पहले संबंधित संस्था के official complaint channel का उपयोग करना और आवश्यक होने पर लागू regulatory grievance process देखना उपयोगी है।"
+      },
+      {
+        "question": "5. क्या SEBI regulation investment में profit की guarantee देता है?",
+        "options": [
+          "हाँ, हर investment में",
+          "नहीं, market risk और नुकसान की संभावना बनी रहती है",
+          "हाँ, यदि investor social media tips follow करे",
+          "हाँ, यदि share की price पहले बढ़ चुकी हो"
+        ],
+        "answerIndex": 1,
+        "explanation": "SEBI market को regulate करता है और investor protection के लिए कार्य करता है, लेकिन investment returns की guarantee नहीं देता।"
+      }
+    ]
+    },
+    {
+    "id": "demat-account-complete-guide",
+    "title": "Demat Account की पूरी जानकारी (Complete Guide to Demat Account)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Demat Account क्या है, यह कैसे काम करता है, कैसे खोला जाता है, इसके charges क्या हो सकते हैं और securities को सुरक्षित रखने के लिए किन बातों का ध्यान रखना चाहिए, इसे हिंदी और English में सीखें।",
+    "beginnerTip": "Demat Account में shares और अन्य eligible securities electronic form में रखी जाती हैं। Demat Account में securities रखना और Trading Account से shares खरीदने-बेचने के orders देना दो अलग-अलग काम हैं।",
+    "lessons": [
+      "1. Demat Account क्या है? (What is a Demat Account?)",
+      "2. Demat Account की जरूरत क्यों होती है?",
+      "3. Depository, DP और Depository Participant क्या हैं?",
+      "4. NSDL और CDSL की भूमिका",
+      "5. Demat Account कैसे खोलें?",
+      "6. Demat Account और Trading Account में अंतर",
+      "7. Demat Account के Charges",
+      "8. Securities को सुरक्षित कैसे रखें?",
+      "9. Demat Account से जुड़े Risks और सावधानियाँ"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Demat Account क्या है? (What is a Demat Account?)",
+        "content": "Demat का अर्थ Dematerialised है। Demat Account वह account है जिसमें shares और अन्य eligible securities electronic form में रखी जाती हैं। पहले physical share certificates का उपयोग होता था, जबकि Demat व्यवस्था securities को electronic form में रखने और transfer करने में मदद करती है। Demat Account bank account जैसा दिख सकता है, लेकिन इसका काम अलग है: इसमें securities रखी जाती हैं, सामान्य cash balance नहीं।"
+      },
+      {
+        "title": "2. Demat Account की जरूरत क्यों होती है?",
+        "content": "Demat Account electronic securities को रखने और लागू प्रक्रियाओं के अनुसार transfer करने में मदद करता है। Shares के अलावा account और product eligibility के अनुसार कुछ अन्य securities भी रखी जा सकती हैं। इससे physical certificates से जुड़ी कई समस्याएँ, जैसे certificate खो जाना या physical transfer में कठिनाई, कम होती हैं। फिर भी securities की market value घट सकती है और Demat Account होने से investment profit की guarantee नहीं मिलती।"
+      },
+      {
+        "title": "3. Depository, DP और Depository Participant क्या हैं?",
+        "content": "Depository वह संस्था है जो securities को electronic form में रखने और संबंधित depository system चलाने की सुविधा देती है। भारत में NSDL और CDSL प्रमुख depositories हैं। Depository Participant या DP वह intermediary है जिसके माध्यम से investor सामान्यतः Demat Account खोलता और संचालित करता है। DP bank, broker या अन्य eligible institution हो सकता है। Account खोलने से पहले उसकी eligibility, services, charges और official registration details जाँचें।"
+      },
+      {
+        "title": "4. NSDL और CDSL की भूमिका",
+        "content": "NSDL और CDSL भारत की प्रमुख securities depositories हैं। ये electronic securities holding और transfer से संबंधित infrastructure उपलब्ध कराती हैं। Investor का Demat Account संबंधित depository के system से जुड़ा होता है, लेकिन investor अक्सर अपने DP के माध्यम से account services का उपयोग करता है। Account खोलने से पहले यह समझना उपयोगी है कि आपकी depository कौन-सी है और holdings तथा statements कहाँ से verify किए जा सकते हैं।"
+      },
+      {
+        "title": "5. Demat Account कैसे खोलें?",
+        "content": "Demat Account खोलने के लिए eligible DP या service provider चुना जाता है। सामान्य प्रक्रिया में account-opening form भरना, PAN तथा लागू KYC documents देना, identity और address verification पूरा करना और आवश्यक होने पर in-person या digital verification शामिल हो सकता है। Requirements provider और लागू नियमों के अनुसार बदल सकती हैं। Account खोलने से पहले charges, account maintenance fees, transaction fees, closure process और grievance mechanism पढ़ें। केवल official website या verified application का उपयोग करें।"
+      },
+      {
+        "title": "6. Demat Account और Trading Account में अंतर",
+        "content": "Demat Account securities रखने के लिए होता है, जबकि Trading Account securities खरीदने और बेचने के orders देने के लिए उपयोग किया जाता है। सामान्य share trading में investor Trading Account से order देता है और खरीदी गई securities settlement process के बाद उसके Demat Account में credit हो सकती हैं। Sale के समय securities को लागू प्रक्रिया के अनुसार debit किया जाता है। इन दोनों accounts की भूमिकाएँ अलग हैं, भले ही कोई provider दोनों सुविधाएँ एक साथ दे।"
+      },
+      {
+        "title": "7. Demat Account के Charges",
+        "content": "Demat Account के charges provider और account type के अनुसार अलग-अलग हो सकते हैं। इनमें Account Maintenance Charges (AMC), कुछ transactions पर debit charges, applicable taxes और अन्य service-related fees शामिल हो सकती हैं। कुछ providers विशेष account types में अलग pricing देते हैं। Account खोलने से पहले current tariff sheet पढ़ें और केवल 'zero charges' के advertisement पर निर्भर न रहें। यह भी देखें कि कौन-से transactions पर fees लगती हैं और account बंद करने की प्रक्रिया क्या है।"
+      },
+      {
+        "title": "8. Securities को सुरक्षित कैसे रखें?",
+        "content": "अपने account का password और OTP किसी के साथ साझा न करें। Strong, unique password और उपलब्ध security features का उपयोग करें। Registered mobile number और email को updated रखें तथा transaction alerts और periodic statements जाँचें। किसी अनजान व्यक्ति के कहने पर remote-access application install न करें। यदि कोई transaction पहचान में न आए, तो तुरंत अपने DP या संबंधित official support channel से संपर्क करें, evidence सुरक्षित रखें और आवश्यक security steps लें।"
+      },
+      {
+        "title": "9. Demat Account से जुड़े Risks और सावधानियाँ",
+        "content": "Demat Account में securities electronic form में सुरक्षित रखने की सुविधा होती है, लेकिन इससे market risk समाप्त नहीं होता। Shares की कीमत गिर सकती है और company-specific या market-wide events से नुकसान हो सकता है। Fake apps, phishing messages, unauthorized access और गलत instructions भी जोखिम पैदा कर सकते हैं। Account opening documents, charges और transaction instructions ध्यान से पढ़ें। यदि account में कोई अनधिकृत transaction दिखाई दे, तो तुरंत संबंधित DP और उचित official grievance channel को सूचित करें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Shares रखना",
+        "content": "नेहा ने अपने Trading Account से एक listed company के 10 shares खरीदे। Trade और settlement की applicable प्रक्रिया पूरी होने पर shares उसके Demat Account में electronic form में दिखाई दे सकते हैं। वह अपने holdings statement से इन securities की जानकारी verify कर सकती है।"
+      },
+      {
+        "title": "Example 2: Demat और Trading का अंतर",
+        "content": "अमन के पास Demat Account है, जिसमें उसके shares रखे जाते हैं। वह shares खरीदने या बेचने के लिए Trading Account और संबंधित broker platform का उपयोग करता है। एक account securities रखने के लिए है और दूसरा trading orders के लिए।"
+      },
+      {
+        "title": "Example 3: Charges की जाँच",
+        "content": "रिया दो DP providers की तुलना कर रही है। वह केवल account-opening fee नहीं देखती, बल्कि AMC, securities debit charges, applicable taxes और account closure conditions भी पढ़ती है। इससे उसे account की कुल संभावित लागत समझने में मदद मिलती है।"
+      },
+      {
+        "title": "Example 4: Suspicious Transaction",
+        "content": "विकास को अपने Demat Account में ऐसा debit दिखाई देता है जिसे वह पहचान नहीं पाता। वह transaction details और alerts सुरक्षित रखता है, अपने DP के official contact channel पर तुरंत शिकायत करता है और आवश्यक account-security steps लेता है।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Demat Account",
+        "meaning": "वह account जिसमें shares और अन्य eligible securities electronic form में रखी जाती हैं।"
+      },
+      {
+        "term": "Dematerialisation",
+        "meaning": "Physical securities को निर्धारित प्रक्रिया के अनुसार electronic form में बदलना।"
+      },
+      {
+        "term": "Depository",
+        "meaning": "वह संस्था जो securities को electronic form में रखने और transfer से संबंधित infrastructure उपलब्ध कराती है।"
+      },
+      {
+        "term": "Depository Participant (DP)",
+        "meaning": "वह intermediary जिसके माध्यम से investor सामान्यतः depository services का उपयोग करता है।"
+      },
+      {
+        "term": "NSDL",
+        "meaning": "National Securities Depository Limited, भारत की प्रमुख securities depositories में से एक।"
+      },
+      {
+        "term": "CDSL",
+        "meaning": "Central Depository Services (India) Limited, भारत की प्रमुख securities depositories में से एक।"
+      },
+      {
+        "term": "Trading Account",
+        "meaning": "वह account जिसका उपयोग securities खरीदने और बेचने के orders देने के लिए किया जाता है।"
+      },
+      {
+        "term": "KYC",
+        "meaning": "Know Your Customer; ग्राहक की पहचान और संबंधित जानकारी verify करने की प्रक्रिया।"
+      },
+      {
+        "term": "AMC",
+        "meaning": "Annual Maintenance Charges; account को maintain करने के लिए लगने वाला वार्षिक charge, यदि लागू हो।"
+      },
+      {
+        "term": "Holdings Statement",
+        "meaning": "Account में रखी securities और उनकी quantity का विवरण।"
+      }
+    ],
+    "risks": [
+      "Demat Account होने से shares की market value स्थिर नहीं रहती।",
+      "Provider के अनुसार AMC, debit transaction fees और अन्य charges लग सकते हैं।",
+      "Phishing, fake apps और stolen credentials के कारण account misuse का जोखिम हो सकता है।",
+      "गलत या अनधिकृत transaction की जानकारी देर से मिलने पर शिकायत और जाँच कठिन हो सकती है।",
+      "Account में securities रखने से profit या capital protection की guarantee नहीं मिलती।",
+      "गलत DP चुनने या terms न पढ़ने से service और complaint handling में कठिनाई हो सकती है।"
+    ],
+    "commonMistakes": [
+      "Demat Account और Trading Account को एक ही account समझना।",
+      "यह मान लेना कि Demat Account में shares होने से investment risk समाप्त हो जाता है।",
+      "Account खोलने से पहले charges और tariff sheet न पढ़ना।",
+      "OTP, PIN या password किसी दूसरे व्यक्ति के साथ साझा करना।",
+      "Holdings statements और transaction alerts को नियमित रूप से न जाँचना।",
+      "केवल advertisement देखकर किसी provider को verified मान लेना।",
+      "Unauthorized transaction दिखाई देने पर शिकायत करने में देरी करना।"
+    ],
+    "summary": [
+      "Demat Account में shares और अन्य eligible securities electronic form में रखी जाती हैं।",
+      "NSDL और CDSL भारत की प्रमुख securities depositories हैं।",
+      "Depository Participant के माध्यम से investor सामान्यतः Demat Account खोलता और संचालित करता है।",
+      "Trading Account का उपयोग orders देने के लिए होता है, जबकि Demat Account securities रखने के लिए होता है।",
+      "Account खोलने से पहले KYC requirements, charges और service terms जाँचनी चाहिए।",
+      "Strong account security, transaction alerts और regular statements उपयोगी हैं।",
+      "Demat Account सुविधा देता है, लेकिन investment returns की guarantee नहीं देता।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Demat Account का मुख्य काम क्या है?",
+        "options": [
+          "हर investment पर profit देना",
+          "Securities को electronic form में रखना",
+          "Share price तय करना",
+          "सभी bank loans manage करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Demat Account shares और अन्य eligible securities को electronic form में रखने के लिए उपयोग किया जाता है।"
+      },
+      {
+        "question": "2. भारत की प्रमुख securities depositories कौन-सी हैं?",
+        "options": [
+          "RBI और SBI",
+          "NSE और BSE",
+          "NSDL और CDSL",
+          "UPI और NEFT"
+        ],
+        "answerIndex": 2,
+        "explanation": "NSDL और CDSL भारत की प्रमुख securities depositories हैं।"
+      },
+      {
+        "question": "3. Trading Account का मुख्य उपयोग क्या है?",
+        "options": [
+          "केवल securities का electronic storage",
+          "PAN card जारी करना",
+          "Share price को स्थिर रखना",
+          "Securities खरीदने और बेचने के orders देना"
+        ],
+        "answerIndex": 3,
+        "explanation": "Trading Account का उपयोग securities की buying और selling के orders देने के लिए किया जाता है।"
+      },
+      {
+        "question": "4. Demat Account खोलने से पहले क्या जाँचना चाहिए?",
+        "options": [
+          "Provider के charges, KYC requirements और service terms",
+          "केवल advertisement का रंग",
+          "किसी social media influencer की guarantee",
+          "यह कि provider profit की guarantee देता है या नहीं"
+        ],
+        "answerIndex": 0,
+        "explanation": "Account खोलने से पहले charges, KYC requirements, terms और official provider details की जाँच करना जरूरी है।"
+      },
+      {
+        "question": "5. Demat Account में अनजान transaction दिखाई दे, तो क्या करना चाहिए?",
+        "options": [
+          "उसे नजरअंदाज करना",
+          "Transaction details सुरक्षित रखकर DP के official channel पर तुरंत शिकायत करना",
+          "अपना OTP social media पर डालना",
+          "बिना जाँच के किसी अनजान व्यक्ति को पैसे भेजना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Suspicious transaction की स्थिति में evidence सुरक्षित रखना, account security जाँचना और संबंधित DP के official channel पर तुरंत शिकायत करना उचित है।"
+      }
+    ]
+    },
+    {
+    "id": "trading-account-vs-demat-account",
+    "title": "Trading Account और Demat Account में अंतर (Trading vs Demat Account)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Trading Account और Demat Account का उद्देश्य, उनके बीच अंतर, buying-selling की प्रक्रिया, charges और account security को हिंदी और English में समझें।",
+    "beginnerTip": "Trading Account का उपयोग shares खरीदने और बेचने के orders देने के लिए होता है, जबकि Demat Account में shares और अन्य eligible securities electronic form में रखी जाती हैं। दोनों की भूमिका अलग है।",
+    "lessons": [
+      "1. Trading Account क्या है?",
+      "2. Demat Account क्या है?",
+      "3. Trading और Demat Account के मुख्य अंतर",
+      "4. Share खरीदने पर दोनों Accounts कैसे काम करते हैं?",
+      "5. Share बेचने पर क्या होता है?",
+      "6. क्या दोनों Accounts एक ही Provider से खोलने जरूरी हैं?",
+      "7. दोनों Accounts के Charges",
+      "8. Account Security और Investor Responsibilities"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Trading Account क्या है?",
+        "content": "Trading Account वह account है जिसका उपयोग securities खरीदने और बेचने के orders देने के लिए किया जाता है। Investor सामान्यतः broker के trading platform पर company या security चुनता है, quantity दर्ज करता है और order type निर्धारित करता है। Order का execution market conditions, available orders और applicable trading rules पर निर्भर करता है।"
+      },
+      {
+        "title": "2. Demat Account क्या है?",
+        "content": "Demat Account में shares और अन्य eligible securities electronic form में रखी जाती हैं। यह account physical certificates की जगह electronic holdings रखने की सुविधा देता है। भारत में NSDL और CDSL प्रमुख depositories हैं। Investor सामान्यतः Depository Participant (DP) के माध्यम से Demat Account संचालित करता है।"
+      },
+      {
+        "title": "3. Trading और Demat Account के मुख्य अंतर",
+        "content": "Trading Account का मुख्य काम buy और sell orders देना है, जबकि Demat Account का मुख्य काम securities रखना है। Trading Account में order और trade से जुड़ी जानकारी दिखाई जा सकती है, जबकि Demat Account में holdings और securities debit-credit से जुड़ी जानकारी मिलती है। दोनों accounts एक-दूसरे के पूरक हैं, लेकिन उनकी भूमिका समान नहीं है।"
+      },
+      {
+        "title": "4. Share खरीदने पर दोनों Accounts कैसे काम करते हैं?",
+        "content": "जब investor share खरीदने का order देता है, तो order Trading Account के माध्यम से broker के trading system तक पहुँचता है। Order execute होने के बाद clearing और settlement की प्रक्रिया होती है। लागू settlement process पूरी होने पर खरीदे गए shares investor के Demat Account में credit हो सकते हैं। Order देना, trade execution और settlement अलग-अलग चरण हैं।"
+      },
+      {
+        "title": "5. Share बेचने पर क्या होता है?",
+        "content": "Investor Trading Account के माध्यम से sell order देता है। Sell order execute होने के बाद संबंधित securities को लागू process के अनुसार Demat Account से debit किया जा सकता है और settlement के अनुसार funds प्राप्त होते हैं। Investor को quantity, order details और available holdings की जाँच करनी चाहिए। किसी भी transaction का समय और तरीका applicable rules तथा provider की व्यवस्था पर निर्भर करता है।"
+      },
+      {
+        "title": "6. क्या दोनों Accounts एक ही Provider से खोलने जरूरी हैं?",
+        "content": "कई brokers Trading और Demat Account दोनों की सुविधाएँ देते हैं, इसलिए दोनों एक ही provider के माध्यम से खोले जा सकते हैं। लेकिन provider की services, account arrangements और eligibility अलग हो सकती हैं। Account खोलने से पहले यह जाँचें कि दोनों accounts कैसे linked होंगे, कौन-से charges लगेंगे और securities transfer या account closure की क्या प्रक्रिया है।"
+      },
+      {
+        "title": "7. दोनों Accounts के Charges",
+        "content": "Trading Account से जुड़े खर्चों में brokerage, applicable transaction charges और taxes शामिल हो सकते हैं। Demat Account पर account maintenance charges और कुछ securities debit transactions पर fees लागू हो सकती हैं। वास्तविक charges provider, transaction type और current tariff के अनुसार बदलते हैं। Account खोलने से पहले official charges schedule पढ़ना जरूरी है।"
+      },
+      {
+        "title": "8. Account Security और Investor Responsibilities",
+        "content": "Trading और Demat Account दोनों की सुरक्षा महत्वपूर्ण है। Strong passwords, two-factor authentication जैसी उपलब्ध सुरक्षा सुविधाओं और transaction alerts का उपयोग करें। OTP, PIN और passwords किसी से साझा न करें। नियमित रूप से trade confirmations, contract notes, holdings statements और account alerts जाँचें। अनजान transaction दिखाई देने पर संबंधित broker या DP के official channel पर तुरंत संपर्क करें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Share खरीदना",
+        "content": "अमन Trading Account में ABC Ltd. के 10 shares खरीदने का order देता है। Order execute होने और applicable settlement process पूरी होने के बाद shares उसके Demat Account में credit हो सकते हैं।"
+      },
+      {
+        "title": "Example 2: Share बेचना",
+        "content": "नेहा अपने Demat Account में रखे shares बेचने के लिए Trading Account से sell order देती है। Trade execute होने के बाद securities और funds का transfer applicable settlement process के अनुसार होता है।"
+      },
+      {
+        "title": "Example 3: Charges की तुलना",
+        "content": "राहुल दो brokers की तुलना करता है। वह brokerage, account maintenance charges, securities debit fees और applicable taxes पढ़ता है, ताकि account की संभावित कुल लागत समझ सके।"
+      },
+      {
+        "title": "Example 4: Unauthorized Transaction",
+        "content": "पूजा को अपने account में ऐसा transaction दिखाई देता है जिसे उसने नहीं किया। वह records सुरक्षित रखती है, account security जाँचती है और संबंधित broker या DP के official complaint channel से संपर्क करती है।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Trading Account",
+        "meaning": "Securities खरीदने और बेचने के orders देने के लिए इस्तेमाल किया जाने वाला account।"
+      },
+      {
+        "term": "Demat Account",
+        "meaning": "Shares और अन्य eligible securities को electronic form में रखने वाला account।"
+      },
+      {
+        "term": "Broker",
+        "meaning": "Registered intermediary जो investor के orders को trading system तक पहुँचाने में मदद करता है।"
+      },
+      {
+        "term": "Depository",
+        "meaning": "वह संस्था जो securities को electronic form में रखने और transfer करने का infrastructure उपलब्ध कराती है।"
+      },
+      {
+        "term": "Depository Participant",
+        "meaning": "वह intermediary जिसके माध्यम से investor depository services का उपयोग करता है।"
+      },
+      {
+        "term": "Order Execution",
+        "meaning": "जब buy या sell order market में निर्धारित नियमों के अनुसार पूरा या आंशिक रूप से execute होता है।"
+      },
+      {
+        "term": "Settlement",
+        "meaning": "Trade से संबंधित securities और funds के transfer की प्रक्रिया।"
+      },
+      {
+        "term": "Brokerage",
+        "meaning": "Broker द्वारा trading services के लिए लिया जाने वाला charge, यदि लागू हो।"
+      },
+      {
+        "term": "Holdings",
+        "meaning": "Demat Account में रखी securities का विवरण।"
+      },
+      {
+        "term": "Contract Note",
+        "meaning": "Executed trades का विवरण देने वाला document, जिसे broker निर्धारित नियमों के अनुसार उपलब्ध कराता है।"
+      }
+    ],
+    "risks": [
+      "गलत order quantity या order type चुनने से अनचाहा trade हो सकता है।",
+      "Brokerage, taxes और अन्य charges से trading की कुल लागत बढ़ सकती है।",
+      "Demat Account में securities होने से market loss का risk समाप्त नहीं होता।",
+      "Phishing या account credentials चोरी होने से unauthorized access का खतरा रहता है।",
+      "Settlement और holdings की जानकारी न जाँचने से discrepancies देर से पता चल सकती हैं।",
+      "Provider के terms न पढ़ने से account services और charges को लेकर भ्रम हो सकता है।"
+    ],
+    "commonMistakes": [
+      "Trading Account और Demat Account को एक ही चीज समझना।",
+      "यह मानना कि order देते ही shares Demat Account में आ जाते हैं।",
+      "Brokerage और Demat charges को नजरअंदाज करना।",
+      "Order execute होने और settlement पूरा होने में अंतर न समझना।",
+      "Trade confirmations और holdings statements न जाँचना।",
+      "OTP, PIN या password किसी अन्य व्यक्ति के साथ साझा करना।"
+    ],
+    "summary": [
+      "Trading Account securities के buy और sell orders देने के लिए होता है।",
+      "Demat Account securities को electronic form में रखने के लिए होता है।",
+      "Order execution के बाद applicable clearing और settlement process होती है।",
+      "Trading और Demat services एक ही provider से मिल सकती हैं, लेकिन दोनों की भूमिकाएँ अलग हैं।",
+      "Brokerage, maintenance fees और अन्य applicable charges जाँचने चाहिए।",
+      "Account security और regular transaction monitoring जरूरी हैं।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Trading Account का मुख्य उपयोग क्या है?",
+        "options": [
+          "Shares को electronic form में store करना",
+          "Shares खरीदने और बेचने के orders देना",
+          "Company का profit तय करना",
+          "Market risk समाप्त करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Trading Account का मुख्य उपयोग securities खरीदने और बेचने के orders देने के लिए होता है।"
+      },
+      {
+        "question": "2. Demat Account में मुख्य रूप से क्या रखा जाता है?",
+        "options": [
+          "केवल passwords",
+          "केवल bank loans",
+          "Shares और अन्य eligible securities electronic form में",
+          "Company के employees की salary"
+        ],
+        "answerIndex": 2,
+        "explanation": "Demat Account securities को electronic form में रखने के लिए इस्तेमाल होता है।"
+      },
+      {
+        "question": "3. Share खरीदने का order execute होने के बाद क्या होता है?",
+        "options": [
+          "Share price हमेशा बढ़ता है",
+          "Investor को guaranteed profit मिलता है",
+          "Settlement की जरूरत नहीं रहती",
+          "Applicable clearing और settlement process पूरी होती है"
+        ],
+        "answerIndex": 3,
+        "explanation": "Executed trade के बाद applicable clearing और settlement process के अनुसार securities तथा funds का transfer होता है।"
+      },
+      {
+        "question": "4. Trading और Demat Account के charges कैसे पता करने चाहिए?",
+        "options": [
+          "Provider की official tariff sheet और terms पढ़कर",
+          "केवल social media comments देखकर",
+          "किसी unknown व्यक्ति की बात मानकर",
+          "Charges को जाँचे बिना"
+        ],
+        "answerIndex": 0,
+        "explanation": "Official tariff sheet और account terms से लागू charges और conditions की जानकारी मिलती है।"
+      },
+      {
+        "question": "5. Account में अनजान transaction दिखाई दे तो क्या करना चाहिए?",
+        "options": [
+          "उसे नजरअंदाज करना",
+          "Records सुरक्षित करके संबंधित official support channel पर तुरंत शिकायत करना",
+          "अपना password सार्वजनिक करना",
+          "अनजान व्यक्ति को OTP देना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Suspicious transaction की स्थिति में records सुरक्षित रखना और संबंधित broker या DP के official channel से संपर्क करना चाहिए।"
+      }
+    ]
+      },
+    {
+    "id": "nsdl-cdsl-role",
+    "title": "NSDL और CDSL की भूमिका (Role of NSDL & CDSL)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "NSDL और CDSL क्या हैं, Depository System कैसे काम करता है, Depository Participant की भूमिका क्या है और investors अपनी electronic securities holdings कैसे समझ सकते हैं, इसे हिंदी और English में सीखें।",
+    "beginnerTip": "NSDL और CDSL भारत की प्रमुख securities depositories हैं। ये securities को electronic form में रखने और transfer करने से संबंधित infrastructure उपलब्ध कराती हैं। Investor सामान्यतः Depository Participant यानी DP के माध्यम से इन सेवाओं का उपयोग करता है।",
+    "lessons": [
+      "1. Depository क्या है?",
+      "2. NSDL क्या है?",
+      "3. CDSL क्या है?",
+      "4. NSDL और CDSL में क्या अंतर है?",
+      "5. Depository Participant (DP) की भूमिका",
+      "6. Securities का Electronic Holding System",
+      "7. Demat Statements और Transaction Verification",
+      "8. Investor Security और Complaint Process"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Depository क्या है?",
+        "content": "Depository एक ऐसी संस्था है जो securities को electronic form में रखने और उनके transfer से संबंधित infrastructure उपलब्ध कराती है। इस व्यवस्था से physical share certificates पर निर्भरता कम होती है। Depository System में investor की holdings और securities transactions निर्धारित प्रक्रियाओं के अनुसार record किए जाते हैं।"
+      },
+      {
+        "title": "2. NSDL क्या है?",
+        "content": "NSDL का पूरा नाम National Securities Depository Limited है। यह भारत की प्रमुख securities depositories में से एक है। इसका infrastructure eligible securities को electronic form में रखने और संबंधित depository services को support करता है। Investors सामान्यतः अपने Depository Participant के माध्यम से NSDL से जुड़ी Demat services का उपयोग करते हैं।"
+      },
+      {
+        "title": "3. CDSL क्या है?",
+        "content": "CDSL का पूरा नाम Central Depository Services (India) Limited है। यह भारत की दूसरी प्रमुख securities depositories में से एक है। यह भी eligible securities की electronic holding और transfer से संबंधित infrastructure उपलब्ध कराती है। Investor अपने DP और उपलब्ध official services के माध्यम से holdings तथा transaction information देख सकता है।"
+      },
+      {
+        "title": "4. NSDL और CDSL में क्या अंतर है?",
+        "content": "NSDL और CDSL दोनों depository services से संबंधित infrastructure उपलब्ध कराती हैं, लेकिन ये अलग-अलग संस्थाएँ हैं और इनके systems तथा account identifiers अलग हो सकते हैं। Investor का Demat Account किसी एक depository से जुड़ा होता है, जो संबंधित DP और account arrangement पर निर्भर करता है। दोनों का उद्देश्य electronic securities holding और transfer को support करना है। किसी एक depository का नाम देखकर यह निष्कर्ष नहीं निकालना चाहिए कि दूसरी depository असुरक्षित है।"
+      },
+      {
+        "title": "5. Depository Participant (DP) की भूमिका",
+        "content": "DP वह intermediary है जिसके माध्यम से investor सामान्यतः Demat Account खोलता और संचालित करता है। DP account opening, KYC, statements, transaction services और customer support जैसी सुविधाएँ उपलब्ध करा सकता है। DP को चुनने से पहले उसकी eligibility, official details, charges, service terms और grievance process verify करना चाहिए।"
+      },
+      {
+        "title": "6. Securities का Electronic Holding System",
+        "content": "जब investor shares खरीदता है, तो trade execute होने और applicable settlement process पूरी होने पर securities उसके Demat Account में credit हो सकती हैं। Securities बेचने पर संबंधित holdings निर्धारित प्रक्रिया के अनुसार debit हो सकती हैं। Depository infrastructure और DP services इन electronic holdings तथा transfers से संबंधित रिकॉर्ड और processes को support करते हैं। वास्तविक प्रक्रिया security type और applicable rules पर निर्भर कर सकती है।"
+      },
+      {
+        "title": "7. Demat Statements और Transaction Verification",
+        "content": "Investors को अपने holdings statements और transaction records नियमित रूप से देखने चाहिए। DP या depository की उपलब्ध official services के माध्यम से account information verify की जा सकती है। यदि statement में quantity, credit या debit से जुड़ी कोई ऐसी entry दिखे जिसे investor पहचान नहीं पाता, तो संबंधित records सुरक्षित रखें और अपने DP के official support channel से संपर्क करें।"
+      },
+      {
+        "title": "8. Investor Security और Complaint Process",
+        "content": "Investors को account credentials, OTP और PIN सुरक्षित रखने चाहिए तथा किसी अनजान व्यक्ति को remote access नहीं देना चाहिए। केवल official apps, websites और verified contact channels का उपयोग करें। यदि unauthorized transaction या service-related issue हो, तो पहले संबंधित DP या intermediary के grievance channel पर शिकायत दर्ज करें। आवश्यकता होने पर संबंधित depository और लागू regulatory complaint mechanism की official instructions देखें। Complaint reference number और supporting documents सुरक्षित रखें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Demat Account की पहचान",
+        "content": "सीमा अपना Demat Account statement देखती है और अपने DP से पूछती है कि उसका account NSDL से जुड़ा है या CDSL से। वह account documents और official statement के आधार पर जानकारी verify करती है।"
+      },
+      {
+        "title": "Example 2: Shares का Credit",
+        "content": "अर्जुन shares खरीदने का order देता है। Trade execute होने और applicable settlement process पूरी होने के बाद shares उसके Demat Account में credit हो सकते हैं। वह holdings statement से quantity verify करता है।"
+      },
+      {
+        "title": "Example 3: Statement में अंतर",
+        "content": "कविता को अपने Demat statement में ऐसी debit entry दिखाई देती है जिसे वह पहचान नहीं पाती। वह statement और transaction alerts सुरक्षित रखती है तथा अपने DP के official complaint channel पर संपर्क करती है।"
+      },
+      {
+        "title": "Example 4: DP का चुनाव",
+        "content": "रोहित Demat Account खोलने से पहले दो eligible providers की services, charges, support arrangements और official details की तुलना करता है। वह केवल advertisement के आधार पर निर्णय नहीं लेता।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Depository",
+        "meaning": "ऐसी संस्था जो securities को electronic form में रखने और transfer से संबंधित infrastructure उपलब्ध कराती है।"
+      },
+      {
+        "term": "NSDL",
+        "meaning": "National Securities Depository Limited, भारत की प्रमुख securities depositories में से एक।"
+      },
+      {
+        "term": "CDSL",
+        "meaning": "Central Depository Services (India) Limited, भारत की प्रमुख securities depositories में से एक।"
+      },
+      {
+        "term": "Depository Participant",
+        "meaning": "वह intermediary जिसके माध्यम से investor सामान्यतः depository services का उपयोग करता है।"
+      },
+      {
+        "term": "Demat Account",
+        "meaning": "वह account जिसमें eligible securities electronic form में रखी जाती हैं।"
+      },
+      {
+        "term": "Electronic Holding",
+        "meaning": "Securities को physical certificates के बजाय electronic form में रखना।"
+      },
+      {
+        "term": "Securities Transfer",
+        "meaning": "लागू प्रक्रिया के अनुसार securities को एक holding या account से दूसरे में transfer करना।"
+      },
+      {
+        "term": "Holdings Statement",
+        "meaning": "Demat Account में रखी securities की quantity और संबंधित विवरण दिखाने वाला statement।"
+      },
+      {
+        "term": "KYC",
+        "meaning": "Know Your Customer; ग्राहक की पहचान और आवश्यक विवरण verify करने की प्रक्रिया।"
+      },
+      {
+        "term": "Grievance Redressal",
+        "meaning": "शिकायत दर्ज करने, जाँचने और निर्धारित प्रक्रिया के अनुसार समाधान की व्यवस्था।"
+      }
+    ],
+    "risks": [
+      "गलत account information या unauthorized access से holdings की सुरक्षा प्रभावित हो सकती है।",
+      "Fake websites या phishing messages investor से confidential information चुरा सकते हैं।",
+      "Demat statement न जाँचने से गलत या अनजान entries देर से पता चल सकती हैं।",
+      "DP के charges और service terms न पढ़ने से अनपेक्षित costs हो सकते हैं।",
+      "Depository infrastructure होने से securities की market value सुरक्षित या स्थिर रहने की guarantee नहीं मिलती।",
+      "शिकायत दर्ज करने से हर मामले में refund या compensation की guarantee नहीं होती।"
+    ],
+    "commonMistakes": [
+      "NSDL और CDSL को stock brokers समझना।",
+      "यह मानना कि सभी investors के Demat Accounts एक ही depository से जुड़े होते हैं।",
+      "DP और depository की भूमिकाओं को एक जैसा समझना।",
+      "Holdings statements और transaction alerts को नजरअंदाज करना।",
+      "अनजान links पर account details या OTP दर्ज करना।",
+      "केवल social media post के आधार पर depository या DP की जानकारी मान लेना।"
+    ],
+    "summary": [
+      "NSDL और CDSL भारत की प्रमुख securities depositories हैं।",
+      "Depositories electronic securities holding और transfer से संबंधित infrastructure उपलब्ध कराती हैं।",
+      "Investor सामान्यतः Depository Participant के माध्यम से Demat Account services का उपयोग करता है।",
+      "NSDL और CDSL अलग संस्थाएँ हैं, लेकिन दोनों का संबंध electronic securities depository services से है।",
+      "Investors को holdings statements और transaction entries नियमित रूप से verify करनी चाहिए।",
+      "Account credentials सुरक्षित रखें और suspicious entries पर official support channel से संपर्क करें।",
+      "Depository services investment returns या market value की guarantee नहीं देतीं।"
+    ],
+    "quiz": [
+      {
+        "question": "1. NSDL का पूरा नाम क्या है?",
+        "options": [
+          "National Securities Depository Limited",
+          "National Share Dealers Limited",
+          "New Securities Development League",
+          "National Stock Distribution Line"
+        ],
+        "answerIndex": 0,
+        "explanation": "NSDL का पूरा नाम National Securities Depository Limited है।"
+      },
+      {
+        "question": "2. CDSL का पूरा नाम क्या है?",
+        "options": [
+          "Central Share Dealers Limited",
+          "Central Depository Services (India) Limited",
+          "Company Deposits and Securities League",
+          "Central Stock Distribution Line"
+        ],
+        "answerIndex": 1,
+        "explanation": "CDSL का पूरा नाम Central Depository Services (India) Limited है।"
+      },
+      {
+        "question": "3. Depository Participant की मुख्य भूमिका क्या है?",
+        "options": [
+          "Share price बढ़ाने की guarantee देना",
+          "हर company का profit तय करना",
+          "Investor को depository services का उपयोग करने में मदद करना",
+          "Market risk समाप्त करना"
+        ],
+        "answerIndex": 2,
+        "explanation": "DP वह intermediary है जिसके माध्यम से investor सामान्यतः Demat Account खोलता और depository services का उपयोग करता है।"
+      },
+      {
+        "question": "4. Demat statement में अनजान debit दिखाई दे तो क्या करना चाहिए?",
+        "options": [
+          "उसे नजरअंदाज करना",
+          "Statement delete कर देना",
+          "अपना OTP किसी अनजान व्यक्ति को देना",
+          "Records सुरक्षित करके DP के official channel पर संपर्क करना"
+        ],
+        "answerIndex": 3,
+        "explanation": "अनजान transaction की स्थिति में evidence सुरक्षित रखना और संबंधित DP के official support channel पर शिकायत करना उचित है।"
+      },
+      {
+        "question": "5. क्या NSDL या CDSL से जुड़ा Demat Account होने पर market loss नहीं हो सकता?",
+        "options": [
+          "नहीं, securities की market value घट सकती है",
+          "हाँ, हर share सुरक्षित profit देता है",
+          "हाँ, सभी losses की भरपाई होती है",
+          "हाँ, share price कभी नहीं गिरता"
+        ],
+        "answerIndex": 0,
+        "explanation": "Depository infrastructure securities को electronic form में रखने में मदद करता है, लेकिन market risk को समाप्त नहीं करता।"
+      }
+    ]
+    },
+    {
+    "id": "complete-share-buying-selling-process",
+    "title": "शेयर खरीदने और बेचने की पूरी प्रक्रिया (Complete Share Buying & Selling Process)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Demat Account और Trading Account की तैयारी से लेकर order placement, execution, clearing, settlement और transaction records तक shares खरीदने-बेचने की पूरी प्रक्रिया हिंदी और English में सीखें।",
+    "beginnerTip": "Share खरीदने या बेचने से पहले account details, company name, quantity, order type और price ध्यान से जाँचें। Order execute होना, securities का settlement और profit कमाना तीन अलग-अलग बातें हैं।",
+    "lessons": [
+      "1. Share Trading से पहले क्या जरूरी है?",
+      "2. Broker और Trading Platform चुनना",
+      "3. Company और Share की जानकारी जाँचना",
+      "4. Buy Order कैसे लगाएँ?",
+      "5. Market Order और Limit Order",
+      "6. Sell Order कैसे लगाएँ?",
+      "7. Trade Execution और Settlement",
+      "8. Charges और Transaction Records",
+      "9. Common Risks और Safety Checklist"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Share Trading से पहले क्या जरूरी है?",
+        "content": "Shares की trading शुरू करने से पहले लागू eligibility और KYC requirements पूरी करना जरूरी है। सामान्यतः investor को bank account, Trading Account और Demat Account की जरूरत पड़ती है। Trading Account से orders दिए जाते हैं और Demat Account में eligible securities रखी जाती हैं। Account खोलने से पहले provider की official details, charges, terms और grievance process जाँचें।"
+      },
+      {
+        "title": "2. Broker और Trading Platform चुनना",
+        "content": "Broker या trading platform चुनते समय applicable registration details, services, brokerage, platform features, customer support और security arrangements की तुलना करें। Official website या verified application का ही उपयोग करें। केवल advertisements, social media recommendations या guaranteed returns के दावों पर भरोसा न करें। Account credentials और OTP हमेशा confidential रखें।"
+      },
+      {
+        "title": "3. Company और Share की जानकारी जाँचना",
+        "content": "Order देने से पहले सही company और security symbol verify करें। Company की official disclosures, business information, financial results, risks और market conditions समझने का प्रयास करें। एक जैसी names या symbols के कारण गलत security चुनने का जोखिम हो सकता है। केवल social media tips या पिछली price movement को future performance की guarantee न मानें।"
+      },
+      {
+        "title": "4. Buy Order कैसे लगाएँ?",
+        "content": "Trading platform पर सही security चुनें, Buy विकल्प पर जाएँ और quantity दर्ज करें। उसके बाद उपलब्ध order types में से उपयुक्त type चुनें और order details को ध्यान से review करें। Order submit करने के बाद उसका status जाँचें। Order pending, rejected, partially filled या fully executed हो सकता है। Order देना अपने-आप में trade execution की guarantee नहीं है।"
+      },
+      {
+        "title": "5. Market Order और Limit Order",
+        "content": "Market Order उपलब्ध market prices पर execution का प्रयास करता है, लेकिन actual execution price अपेक्षित price से अलग हो सकती है। Limit Order में investor अपनी buying या selling price limit निर्धारित करता है। Buy Limit Order में निर्धारित limit से अधिक कीमत पर execution नहीं होना चाहिए, जबकि Sell Limit Order में limit से कम कीमत पर execution नहीं होना चाहिए; फिर भी order execute होने की guarantee नहीं है। Order type चुनते समय liquidity, price movement और platform instructions समझें।"
+      },
+      {
+        "title": "6. Sell Order कैसे लगाएँ?",
+        "content": "Shares बेचने के लिए investor अपने Trading Account में सही security, quantity और order type चुनकर Sell Order देता है। Order देने से पहले उपलब्ध holdings, applicable restrictions और order details जाँचें। Order execute होने पर applicable process के अनुसार securities debit और funds credit होते हैं। Funds की availability और settlement timing संबंधित rules तथा broker arrangements पर निर्भर कर सकती है।"
+      },
+      {
+        "title": "7. Trade Execution और Settlement",
+        "content": "जब buy और sell orders matching rules के अनुसार match होते हैं, तो trade execute हो सकता है। इसके बाद clearing और settlement process के माध्यम से trade-related obligations और securities तथा funds के transfer पूरे होते हैं। भारत में settlement arrangements लागू exchange rules और regulations के अनुसार होते हैं। Investor को order status, trade confirmation और holdings statement के बीच अंतर समझना चाहिए।"
+      },
+      {
+        "title": "8. Charges और Transaction Records",
+        "content": "Share transactions पर brokerage, exchange-related charges, applicable taxes, statutory levies और अन्य fees लग सकती हैं। वास्तविक charges broker, transaction type और वर्तमान नियमों पर निर्भर करते हैं। Contract note, order confirmation, trade book, funds statement और Demat holdings statement को नियमित रूप से जाँचें। इन records से transaction details verify करने और discrepancies पहचानने में मदद मिलती है।"
+      },
+      {
+        "title": "9. Common Risks और Safety Checklist",
+        "content": "Share prices तेजी से बदल सकती हैं और investor को नुकसान हो सकता है। गलत quantity, गलत security, गलत order type या गलत price दर्ज करने से अनचाहा transaction हो सकता है। Trade करने से पहले company name, symbol, quantity, price, order type और estimated charges जाँचें। Password तथा OTP सुरक्षित रखें और अनजान व्यक्ति की tips या guaranteed profit schemes से सावधान रहें। Investment decision अपनी समझ और risk assessment के आधार पर लें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Buy Limit Order",
+        "content": "आरव किसी share को ₹200 से अधिक कीमत पर नहीं खरीदना चाहता। वह 5 shares के लिए ₹200 का Buy Limit Order देता है। यदि matching rules के अनुसार compatible sell orders उपलब्ध हों, तो order पूरा या आंशिक रूप से execute हो सकता है। अन्यथा order pending रह सकता है।"
+      },
+      {
+        "title": "Example 2: Market Order",
+        "content": "मीना एक liquid share खरीदने के लिए Market Order देती है। Order उपलब्ध prices पर execute होने का प्रयास करता है, लेकिन तेजी से बदलते market में वास्तविक execution price उसके देखे गए price से अलग हो सकती है।"
+      },
+      {
+        "title": "Example 3: Share बेचने की प्रक्रिया",
+        "content": "कबीर के Demat Account में 20 shares हैं। वह Trading Account से 5 shares बेचने का order देता है। Order execute होने और applicable settlement process के अनुसार संबंधित securities तथा funds का transfer होता है। उसे transaction records से details verify करनी चाहिए।"
+      },
+      {
+        "title": "Example 4: Charges की जाँच",
+        "content": "सिया ने shares खरीदने और बाद में बेचने की योजना बनाई है। वह केवल buying price नहीं देखती, बल्कि brokerage, applicable taxes और अन्य transaction charges भी समझती है, क्योंकि ये उसकी कुल लागत को प्रभावित कर सकते हैं।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Buy Order",
+        "meaning": "Security खरीदने के लिए दिया गया trading instruction।"
+      },
+      {
+        "term": "Sell Order",
+        "meaning": "Security बेचने के लिए दिया गया trading instruction।"
+      },
+      {
+        "term": "Market Order",
+        "meaning": "ऐसा order जो उपलब्ध market prices पर execution का प्रयास करता है।"
+      },
+      {
+        "term": "Limit Order",
+        "meaning": "ऐसा order जिसमें investor buying या selling की price limit तय करता है।"
+      },
+      {
+        "term": "Order Status",
+        "meaning": "Order की वर्तमान स्थिति, जैसे pending, rejected, partially filled या executed।"
+      },
+      {
+        "term": "Order Execution",
+        "meaning": "Trading system में order का पूरा या आंशिक रूप से execute होना।"
+      },
+      {
+        "term": "Clearing",
+        "meaning": "Executed trades से जुड़े दायित्वों की गणना और व्यवस्था की प्रक्रिया।"
+      },
+      {
+        "term": "Settlement",
+        "meaning": "Trade के बाद securities और funds के transfer की प्रक्रिया।"
+      },
+      {
+        "term": "Contract Note",
+        "meaning": "Broker द्वारा निर्धारित नियमों के अनुसार उपलब्ध कराया गया executed trades का विवरण।"
+      },
+      {
+        "term": "Transaction Charges",
+        "meaning": "Trading और संबंधित services पर लागू brokerage, fees, taxes तथा अन्य charges।"
+      }
+    ],
+    "risks": [
+      "Share prices बदलने से capital loss हो सकता है।",
+      "Market Order में execution price अपेक्षित price से अलग हो सकती है।",
+      "कम liquidity होने पर order पूरा execute नहीं हो सकता या price पर असर पड़ सकता है।",
+      "गलत security, quantity या order type चुनने से अनचाहा transaction हो सकता है।",
+      "Brokerage, taxes और अन्य charges से कुल transaction cost बढ़ सकती है।",
+      "Fake trading apps, phishing और unauthorized account access से financial loss हो सकता है।",
+      "केवल tips या past performance के आधार पर trade करने से निर्णय संबंधी जोखिम बढ़ सकता है।"
+    ],
+    "commonMistakes": [
+      "Order submit होते ही trade execute हो गया, ऐसा मान लेना।",
+      "Company name और trading symbol verify न करना।",
+      "Market Order और Limit Order का अंतर न समझना।",
+      "Order quantity और estimated cost जाँचे बिना order देना।",
+      "Brokerage और applicable taxes को नजरअंदाज करना।",
+      "Contract notes और Demat statements नियमित रूप से न देखना।",
+      "Guaranteed profit के दावों या unverified trading tips पर भरोसा करना।",
+      "यह मानना कि share खरीदने से हमेशा profit होगा।"
+    ],
+    "summary": [
+      "Trading Account से shares खरीदने और बेचने के orders दिए जाते हैं।",
+      "Demat Account में eligible securities electronic form में रखी जाती हैं।",
+      "Order देने से पहले security, quantity, price और order type जाँचें।",
+      "Market Order और Limit Order की execution conditions अलग होती हैं।",
+      "Trade execution के बाद applicable clearing और settlement process होती है।",
+      "Brokerage, taxes और अन्य charges transaction की कुल लागत को प्रभावित कर सकते हैं।",
+      "Contract notes, trade records और holdings statements नियमित रूप से verify करें।",
+      "Stock market में loss का risk बना रहता है और profit guaranteed नहीं होता।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Shares खरीदने या बेचने का order सामान्यतः किस account से दिया जाता है?",
+        "options": [
+          "केवल Savings Account से",
+          "Trading Account से",
+          "केवल Demat Account से",
+          "केवल Insurance Account से"
+        ],
+        "answerIndex": 1,
+        "explanation": "Trading Account का उपयोग securities खरीदने और बेचने के orders देने के लिए किया जाता है।"
+      },
+      {
+        "question": "2. Market Order का क्या अर्थ है?",
+        "options": [
+          "ऐसा order जो guaranteed profit देता है",
+          "ऐसा order जो हमेशा एक निश्चित price पर execute होता है",
+          "ऐसा order जो उपलब्ध market prices पर execution का प्रयास करता है",
+          "ऐसा order जो कभी execute नहीं होता"
+        ],
+        "answerIndex": 2,
+        "explanation": "Market Order उपलब्ध market prices पर execution का प्रयास करता है, लेकिन वास्तविक price बदल सकती है।"
+      },
+      {
+        "question": "3. Limit Order की विशेषता क्या है?",
+        "options": [
+          "यह हर बार तुरंत execute होता है",
+          "यह loss को पूरी तरह समाप्त करता है",
+          "यह share price को स्थिर रखता है",
+          "इसमें investor अपनी buying या selling price limit निर्धारित करता है"
+        ],
+        "answerIndex": 3,
+        "explanation": "Limit Order में investor price limit तय करता है, लेकिन order execute होने की guarantee नहीं होती।"
+      },
+      {
+        "question": "4. Trade execute होने के बाद क्या प्रक्रिया होती है?",
+        "options": [
+          "Applicable clearing और settlement process",
+          "हर trade पर guaranteed bonus",
+          "Share price स्थायी रूप से lock हो जाती है",
+          "सभी transaction records अपने-आप मिट जाते हैं"
+        ],
+        "answerIndex": 0,
+        "explanation": "Trade execution के बाद applicable clearing और settlement process के अनुसार securities तथा funds का transfer होता है।"
+      },
+      {
+        "question": "5. Share order submit करने से पहले सबसे उचित कदम क्या है?",
+        "options": [
+          "बिना जाँच के quantity बढ़ाना",
+          "Security, quantity, order type और price verify करना",
+          "अपना OTP किसी दूसरे व्यक्ति को देना",
+          "केवल social media tip पर भरोसा करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Order details को verify करने से गलत security, quantity या price दर्ज करने का जोखिम कम करने में मदद मिलती है।"
+      }
+    ]
+      }
     ]
