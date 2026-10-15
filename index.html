@@ -3131,6 +3131,49 @@ transform: none;
 }
     
   </style>
+  
+<style>
+  #ravuksaInstallButton {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 99999;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0b1f3a;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+    display: none;
+  }
+
+  #ravuksaInstallHelp {
+    position: fixed;
+    z-index: 100000;
+    top: 60px;
+    right: 12px;
+    width: min(300px, calc(100vw - 24px));
+    padding: 14px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #172033;
+    border: 1px solid #dbe2ea;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    display: none;
+  }
+
+  #ravuksaInstallHelp button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0b1f3a;
+    color: #ffffff;
+  }
+</style>
+  
 </head>
 <body>
 <nav>
@@ -10087,6 +10130,70 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 
+  
+<button id="ravuksaInstallButton" type="button">
+  📲 Install App
+</button>
+
+<div id="ravuksaInstallHelp" role="dialog" aria-label="Install RAVUKSA FINTECH">
+  <strong>Install RAVUKSA FINTECH</strong>
+  <p id="ravuksaInstallMessage">
+    अपने ब्राउज़र के मेनू में जाकर Install App या Add to Home Screen चुनें।
+  </p>
+  <button id="ravuksaInstallClose" type="button">Close</button>
+</div>
+
+<script>
+(function () {
+  const installButton = document.getElementById("ravuksaInstallButton");
+  const installHelp = document.getElementById("ravuksaInstallHelp");
+  const installMessage = document.getElementById("ravuksaInstallMessage");
+  const closeButton = document.getElementById("ravuksaInstallClose");
+
+  if (!installButton || !installHelp) return;
+
+  let deferredPrompt = null;
+
+  function isStandalone() {
+    return window.matchMedia("(display-mode: standalone)").matches ||
+      window.navigator.standalone === true;
+  }
+
+  if (isStandalone()) return;
+
+  installButton.style.display = "block";
+
+  window.addEventListener("beforeinstallprompt", function (event) {
+    event.preventDefault();
+    deferredPrompt = event;
+    installMessage.textContent =
+      "नीचे दिए गए बटन से RAVUKSA FINTECH को अपने मोबाइल में इंस्टॉल करें।";
+    installButton.textContent = "📲 Install App";
+  });
+
+  installButton.addEventListener("click", async function () {
+    if (!deferredPrompt) {
+      installHelp.style.display = "block";
+      return;
+    }
+
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    installHelp.style.display = "none";
+  });
+
+  closeButton.addEventListener("click", function () {
+    installHelp.style.display = "none";
+  });
+
+  window.addEventListener("appinstalled", function () {
+    installButton.style.display = "none";
+    installHelp.style.display = "none";
+  });
+})();
+</script>
+  
   
 </body>
 </html>
