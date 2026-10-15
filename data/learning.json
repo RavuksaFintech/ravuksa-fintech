@@ -8440,5 +8440,182 @@
     "explanation": "लोन लेने से पहले कुल लागत और अपनी भुगतान क्षमता का आकलन करना चाहिए।"
   }
     ]
-  }
+  },
+    {
+    "id": "financial-markets-types",
+    "title": "Financial Markets के प्रकार",
+    "category": "Financial Markets",
+    "level": "Beginner",
+    "description": "Financial Markets के अलग-अलग प्रकार, उनके काम और उनके बीच के अंतर को आसान हिंदी और English में समझें।",
+    "beginnerTip": "हर Financial Market का उद्देश्य अलग होता है। किसी भी Market में पैसा लगाने से पहले उसके काम करने के तरीके, जोखिम, लागत और नियमों को समझें।",
+    "lessons": [
+      "1. Financial Market क्या है?",
+      "2. Capital Market और Money Market में अंतर",
+      "3. Primary Market और Secondary Market",
+      "4. Debt Market और Equity Market",
+      "5. Derivatives और Foreign Exchange Markets की बुनियादी जानकारी",
+      "6. Commodity Market और अन्य Financial Markets",
+      "7. Market के जोखिम और निवेशक की सावधानियाँ"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Financial Market क्या है?",
+        "content": "Financial Market वह व्यवस्था है जहाँ financial assets और instruments का लेन-देन होता है। उदाहरण के लिए Shares, Bonds, Government Securities और अन्य वित्तीय साधन। इन Markets की मदद से कंपनियाँ और सरकारें धन जुटा सकती हैं तथा निवेशक उपलब्ध नियमों के अनुसार निवेश या ट्रेडिंग कर सकते हैं। Financial Markets में जोखिम होता है और रिटर्न की गारंटी नहीं होती।"
+      },
+      {
+        "title": "2. Capital Market और Money Market",
+        "content": "Capital Market सामान्यतः लंबी अवधि की पूँजी जुटाने और निवेश से संबंधित होता है। Shares और कई प्रकार के Bonds इसके उदाहरण हैं। Money Market में सामान्यतः एक वर्ष तक की अवधि वाले अल्पकालिक वित्तीय साधनों का लेन-देन होता है। दोनों Markets के उद्देश्य, साधन और जोखिम अलग हो सकते हैं।"
+      },
+      {
+        "title": "3. Primary Market और Secondary Market",
+        "content": "Primary Market में नए Securities पहली बार जारी किए जाते हैं, जैसे IPO के माध्यम से Shares जारी करना। Secondary Market में पहले से जारी Securities निवेशकों के बीच खरीदे और बेचे जाते हैं। Stock Exchange पर सामान्य शेयरों की ट्रेडिंग Secondary Market का उदाहरण है। हर IPO में लाभ होना जरूरी नहीं है।"
+      },
+      {
+        "title": "4. Equity Market और Debt Market",
+        "content": "Equity Market में Shares के माध्यम से कंपनी में हिस्सेदारी खरीदी जाती है। शेयरधारक को लाभ की गारंटी नहीं होती और शेयर की कीमत घट सकती है। Debt Market में Bonds और अन्य ऋण साधन शामिल हो सकते हैं। Debt instrument जारी करने वाला पक्ष निर्धारित शर्तों के अनुसार भुगतान करने का दायित्व लेता है, लेकिन Credit Risk और अन्य जोखिम बने रहते हैं।"
+      },
+      {
+        "title": "5. Derivatives और Foreign Exchange Markets",
+        "content": "Derivatives ऐसे Financial Contracts हैं जिनका मूल्य किसी Underlying Asset, Index, Currency या अन्य Reference से जुड़ा होता है। Futures और Options इसके उदाहरण हैं। Foreign Exchange Market में एक Currency के बदले दूसरी Currency का लेन-देन होता है। Derivatives में Leverage, तेजी से नुकसान और जटिलता का जोखिम हो सकता है।"
+      },
+      {
+        "title": "6. Commodity Market और अन्य Markets",
+        "content": "Commodity Market में Gold, Silver, Crude Oil और कुछ कृषि उत्पादों से जुड़े Contracts का कारोबार हो सकता है। इनके मूल्य पर मांग, आपूर्ति, मौसम, वैश्विक घटनाओं और मुद्रा में बदलाव का प्रभाव पड़ सकता है। Financial Markets के अन्य हिस्सों में Insurance-linked products और कुछ वैकल्पिक वित्तीय साधन भी हो सकते हैं। हर साधन का नियामकीय ढाँचा और जोखिम अलग-अलग जाँचना चाहिए।"
+      },
+      {
+        "title": "7. Market चुनने से पहले क्या समझें?",
+        "content": "किसी Market या Financial Product को समझने के लिए उसके उद्देश्य, समय अवधि, लागत, Liquidity, Volatility, कर संबंधी प्रभाव और लागू नियमों को देखें। केवल दूसरों की कमाई देखकर निर्णय न लें। भारत में संबंधित गतिविधि और उत्पाद के अनुसार SEBI, RBI या अन्य सक्षम नियामक की आधिकारिक जानकारी देखें।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "IPO का उदाहरण",
+        "content": "एक कंपनी पहली बार जनता को Shares जारी करती है। पात्र निवेशक IPO के नियमों के अनुसार आवेदन कर सकते हैं। यह Primary Market का उदाहरण है। Listing के बाद Exchange पर उन Shares की खरीद-बिक्री Secondary Market में हो सकती है।"
+      },
+      {
+        "title": "Bond का उदाहरण",
+        "content": "कोई संस्था निर्धारित शर्तों पर Bond जारी करके धन जुटाती है। Bond खरीदने वाला निवेशक उन शर्तों के अनुसार भुगतान पाने की अपेक्षा करता है, लेकिन जारीकर्ता के भुगतान न कर पाने का Credit Risk हो सकता है।"
+      },
+      {
+        "title": "Commodity का उदाहरण",
+        "content": "Gold की कीमत वैश्विक मांग, ब्याज दरों, Currency Movements और अन्य परिस्थितियों से प्रभावित हो सकती है। इसलिए Gold से जुड़े किसी Financial Product का मूल्य हमेशा एक जैसा नहीं रहता।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Financial Market",
+        "meaning": "ऐसी व्यवस्था जहाँ Financial Assets और Instruments का लेन-देन होता है।"
+      },
+      {
+        "term": "Capital Market",
+        "meaning": "लंबी अवधि की पूँजी जुटाने और निवेश से संबंधित Market।"
+      },
+      {
+        "term": "Money Market",
+        "meaning": "अल्पकालिक वित्तीय साधनों से संबंधित Market।"
+      },
+      {
+        "term": "Primary Market",
+        "meaning": "वह Market जहाँ Securities पहली बार जारी किए जाते हैं।"
+      },
+      {
+        "term": "Secondary Market",
+        "meaning": "वह Market जहाँ पहले से जारी Securities का लेन-देन होता है।"
+      },
+      {
+        "term": "Equity",
+        "meaning": "किसी कंपनी में हिस्सेदारी को दर्शाने वाला स्वामित्व हित।"
+      },
+      {
+        "term": "Debt Instrument",
+        "meaning": "ऐसा वित्तीय साधन जिसके तहत जारीकर्ता निर्धारित शर्तों के अनुसार भुगतान करने का दायित्व लेता है।"
+      },
+      {
+        "term": "Derivative",
+        "meaning": "ऐसा Contract जिसका मूल्य किसी Underlying Asset या Reference से जुड़ा होता है।"
+      },
+      {
+        "term": "Liquidity",
+        "meaning": "किसी Asset को उचित समय और कीमत पर खरीदने या बेचने की क्षमता।"
+      }
+    ],
+    "risks": [
+      "Shares, Bonds, Commodities और अन्य Financial Instruments की कीमत या मूल्य घट सकता है।",
+      "कम Liquidity वाले साधन को उचित कीमत पर बेचना कठिन हो सकता है।",
+      "Derivatives में Leverage के कारण नुकसान तेजी से बढ़ सकता है।",
+      "Debt Instruments में Issuer के भुगतान न कर पाने का जोखिम हो सकता है।",
+      "बिना समझे निवेश करना, अफवाहों पर भरोसा करना और अनधिकृत Platforms का उपयोग करना नुकसान का कारण बन सकता है।"
+    ],
+    "commonMistakes": [
+      "यह मान लेना कि सभी Financial Markets में जोखिम एक जैसा होता है।",
+      "Primary Market और Secondary Market के अंतर को न समझना।",
+      "यह मान लेना कि Bonds या अन्य Debt Instruments में कोई जोखिम नहीं होता।",
+      "Derivatives को बिना समझे आसान कमाई का साधन मान लेना।",
+      "निवेश करने से पहले लागत, Liquidity, नियम और जोखिम न जाँचना।"
+    ],
+    "summary": [
+      "Financial Markets धन जुटाने और Financial Instruments के लेन-देन में महत्वपूर्ण भूमिका निभाते हैं।",
+      "Capital Market और Money Market की अवधि तथा उद्देश्य अलग होते हैं।",
+      "Primary Market में Securities जारी होते हैं, जबकि Secondary Market में पहले से जारी Securities का कारोबार होता है।",
+      "Equity, Debt, Derivatives, Foreign Exchange और Commodity Markets के साधन तथा जोखिम अलग-अलग होते हैं।",
+      "किसी भी Financial Product को समझकर और आधिकारिक जानकारी जाँचकर ही निर्णय लेना चाहिए।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Financial Market का मुख्य कार्य क्या है?",
+        "options": [
+          "सिर्फ नकद पैसे छापना",
+          "Financial Instruments के लेन-देन और पूँजी जुटाने में सहायता करना",
+          "हर निवेश पर लाभ की गारंटी देना",
+          "सभी निवेशकों का नुकसान रोकना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Financial Markets वित्तीय साधनों के लेन-देन और पूँजी जुटाने में सहायता करते हैं, लेकिन लाभ की गारंटी नहीं देते।"
+      },
+      {
+        "question": "2. IPO सामान्यतः किस Market का उदाहरण है?",
+        "options": [
+          "Primary Market",
+          "Secondary Market",
+          "केवल Commodity Market",
+          "केवल Foreign Exchange Market"
+        ],
+        "answerIndex": 0,
+        "explanation": "IPO में कंपनी पहली बार जनता को Shares जारी कर सकती है, इसलिए यह Primary Market का उदाहरण है।"
+      },
+      {
+        "question": "3. पहले से जारी Shares की Stock Exchange पर खरीद-बिक्री किस Market में होती है?",
+        "options": [
+          "Primary Market",
+          "Money Market בלבד",
+          "Secondary Market",
+          "केवल Insurance Market"
+        ],
+        "answerIndex": 2,
+        "explanation": "पहले से जारी Shares की Exchange पर खरीद-बिक्री Secondary Market में होती है।"
+      },
+      {
+        "question": "4. Derivative का मूल्य सामान्यतः किससे जुड़ा होता है?",
+        "options": [
+          "केवल बैंक की इमारत से",
+          "किसी Underlying Asset, Index या अन्य Reference से",
+          "सभी निवेशकों की निश्चित कमाई से",
+          "किसी भी वित्तीय चीज से नहीं"
+        ],
+        "answerIndex": 1,
+        "explanation": "Derivative का मूल्य किसी Underlying Asset, Index, Currency या अन्य Reference से जुड़ा होता है।"
+      },
+      {
+        "question": "5. किसी Financial Market या Product को समझने के लिए सबसे सही कदम क्या है?",
+        "options": [
+          "केवल सोशल मीडिया की सलाह मानना",
+          "बिना पढ़े पैसा लगाना",
+          "सिर्फ पुराने Returns देखकर निर्णय लेना",
+          "उद्देश्य, लागत, जोखिम, Liquidity और लागू नियम समझना"
+        ],
+        "answerIndex": 3,
+        "explanation": "सही जानकारी के लिए Product का उद्देश्य, लागत, जोखिम, Liquidity और लागू नियम समझना आवश्यक है।"
+      }
+    ]
+  },
     ]
