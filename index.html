@@ -9735,7 +9735,6 @@ console.error("Learning Data Err.  or:", error);
   </script>
 
 
-
 <script>
 function renderKnowledgeDemo() {
   const container = document.getElementById("dynamicKnowledgeContent");
@@ -9757,16 +9756,20 @@ function renderKnowledgeDemo() {
 
   function renderList(items) {
     if (!Array.isArray(items) || items.length === 0) return "";
-    return "<ul style='margin-top:8px;'>" +
+
+    return "<ul style='margin-top:10px;padding-left:22px;'>" +
       items.map(function (item) {
         if (typeof item === "object" && item !== null) {
-          return "<li><strong>" +
-            escapeHTML(item.term || item.title || item.question || "") +
-            "</strong> " +
-            escapeHTML(item.meaning || item.content || item.text || "") +
-            "</li>";
+          const title = item.term || item.title || item.question || "";
+          const content = item.meaning || item.content || item.text || "";
+
+          return "<li style='margin-bottom:9px;'>" +
+            (title ? "<strong>" + escapeHTML(title) + "</strong> " : "") +
+            escapeHTML(content) + "</li>";
         }
-        return "<li>" + escapeHTML(item) + "</li>";
+
+        return "<li style='margin-bottom:9px;'>" +
+          escapeHTML(item) + "</li>";
       }).join("") + "</ul>";
   }
 
@@ -9776,107 +9779,228 @@ function renderKnowledgeDemo() {
     const terms = renderList(topic.keyTerms || topic.importantTerms);
     const risks = renderList(topic.risks || topic.risksAndSafety);
     const mistakes = renderList(topic.commonMistakes);
+
     const summary = Array.isArray(topic.summary)
       ? renderList(topic.summary)
       : (topic.summary
-          ? "<p style='margin-top:8px;'>" + escapeHTML(topic.summary) + "</p>"
+          ? "<p style='margin-top:10px;'>" +
+            escapeHTML(topic.summary) + "</p>"
           : "");
 
     let detailedContent = "";
 
     if (topic.detailedLessons) {
-      detailedContent += "<h4>📘 Detailed Lessons</h4>" +
+      detailedContent +=
+        "<h4 style='margin-top:20px;'>📘 Detailed Lessons | विस्तृत पाठ</h4>" +
         renderList(topic.detailedLessons);
     }
 
     if (examples) {
-      detailedContent += "<h4 style='margin-top:16px;'>💡 Practical Examples</h4>" + examples;
+      detailedContent +=
+        "<h4 style='margin-top:22px;'>💡 Practical Examples | उदाहरण</h4>" +
+        examples;
     }
 
     if (terms) {
-      detailedContent += "<h4 style='margin-top:16px;'>📚 Important Terms</h4>" + terms;
+      detailedContent +=
+        "<h4 style='margin-top:22px;'>📚 Important Terms | जरूरी शब्द</h4>" +
+        terms;
     }
 
     if (risks) {
-      detailedContent += "<h4 style='margin-top:16px;'>🛡️ Risks & Safety</h4>" + risks;
+      detailedContent +=
+        "<h4 style='margin-top:22px;'>🛡️ Risks & Safety | जोखिम और सुरक्षा</h4>" +
+        risks;
     }
 
     if (mistakes) {
-      detailedContent += "<h4 style='margin-top:16px;'>⚠️ Common Mistakes</h4>" + mistakes;
+      detailedContent +=
+        "<h4 style='margin-top:22px;'>⚠️ Common Mistakes | आम गलतियाँ</h4>" +
+        mistakes;
     }
 
     if (summary) {
-      detailedContent += "<h4 style='margin-top:16px;'>📝 Summary</h4>" + summary;
+      detailedContent +=
+        "<h4 style='margin-top:22px;'>📝 Summary | सारांश</h4>" +
+        summary;
     }
 
     let quizHTML = "";
 
     if (Array.isArray(topic.quiz) && topic.quiz.length) {
       quizHTML = topic.quiz.map(function (question, qIndex) {
-        const options = Array.isArray(question.options) ? question.options : [];
+        const options = Array.isArray(question.options)
+          ? question.options
+          : [];
 
-        return "<div style='margin-top:16px;padding:12px;border:1px solid #ddd;border-radius:8px;'>" +
-          "<p><strong>Q" + (qIndex + 1) + ". " +
-          escapeHTML(question.question) + "</strong></p>" +
-          options.map(function (option, optionIndex) {
-            return "<label style='display:block;margin-top:8px;'>" +
-              "<input type='radio' name='quiz-" + index + "-" + qIndex +
-              "' value='" + optionIndex + "'> " +
-              escapeHTML(option) + "</label>";
-          }).join("") +
-          "<button type='button' style='margin-top:12px;' data-quiz-topic='" +
-          index + "' data-quiz-question='" + qIndex +
-          "'>Check Answer</button>" +
-          "<p id='quiz-result-" + index + "-" + qIndex +
-          "' style='margin-top:8px;'></p></div>";
+        return (
+          "<div style='margin-top:16px;padding:15px;border:1px solid #dbe4ee;border-radius:12px;background:#fff;'>" +
+            "<p><strong>Q" + (qIndex + 1) + ". " +
+            escapeHTML(question.question) + "</strong></p>" +
+
+            options.map(function (option, optionIndex) {
+              return (
+                "<label style='display:block;margin-top:10px;cursor:pointer;'>" +
+                  "<input type='radio' name='quiz-" + index + "-" + qIndex +
+                  "' value='" + optionIndex + "'> " +
+                  escapeHTML(option) +
+                "</label>"
+              );
+            }).join("") +
+
+            "<button type='button' class='ravuksa-check-answer' " +
+            "style='margin-top:14px;padding:10px 16px;border:0;border-radius:8px;background:#1769aa;color:#fff;font-weight:600;cursor:pointer;' " +
+            "data-quiz-topic='" + index + "' data-quiz-question='" + qIndex + "'>" +
+            "✅ Check Answer | उत्तर जाँचें</button>" +
+
+            "<p id='quiz-result-" + index + "-" + qIndex +
+            "' aria-live='polite' style='margin-top:10px;'></p>" +
+          "</div>"
+        );
       }).join("");
     }
 
     if (quizHTML) {
-      detailedContent += "<h4 style='margin-top:18px;'>❓ Test Your Knowledge</h4>" + quizHTML;
+      detailedContent +=
+        "<h4 style='margin-top:24px;'>❓ Test Your Knowledge | अपनी जानकारी जाँचें</h4>" +
+        quizHTML;
     }
 
-    container.insertAdjacentHTML("beforeend",
-      "<div class='card' style='margin-top:20px;'>" +
-        "<h3>" + (index + 1) + ". " + escapeHTML(topic.title) + "</h3>" +
-        "<p style='margin-top:8px;'>" + escapeHTML(topic.description) + "</p>" +
-        "<p style='margin-top:12px;'><strong>Category:</strong> " +
-        escapeHTML(topic.category) + " &nbsp; | &nbsp; <strong>Level:</strong> " +
+    const hasDetails = detailedContent.trim().length > 0;
+    const detailId = "ravuksa-details-" + index;
+
+    const exploreButton = hasDetails
+      ? (
+          "<button type='button' class='ravuksa-explore-button' " +
+          "data-detail-target='" + detailId + "' " +
+          "aria-expanded='false' " +
+          "style='width:100%;margin-top:20px;padding:15px 18px;border:0;border-radius:12px;background:linear-gradient(135deg,#1769aa,#23856d);color:#fff;text-align:left;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.12);'>" +
+            "<span style='display:block;font-size:17px;font-weight:700;'>📚 Explore Detailed Learning</span>" +
+            "<span style='display:block;margin-top:6px;font-size:13px;line-height:1.6;'>पूरे पाठ, उदाहरण, जरूरी शब्द, सुरक्षा और Quiz देखने के लिए यहाँ क्लिक करें।</span>" +
+            "<span class='ravuksa-explore-label' style='display:block;margin-top:8px;font-size:13px;font-weight:600;'>＋ पूरा पाठ खोलें</span>" +
+          "</button>"
+        )
+      : (
+          "<div class='notice' style='margin-top:18px;'>" +
+          "📚 इस Topic की विस्तृत सामग्री जल्द जोड़ी जाएगी।" +
+          "</div>"
+        );
+
+    container.insertAdjacentHTML(
+      "beforeend",
+      "<div class='card' style='margin-top:22px;padding:20px;border-radius:14px;'>" +
+
+        "<h3>" + (index + 1) + ". " +
+        escapeHTML(topic.title) + "</h3>" +
+
+        "<p style='margin-top:10px;line-height:1.7;'>" +
+        escapeHTML(topic.description) + "</p>" +
+
+        "<p style='margin-top:12px;line-height:1.8;'>" +
+        "<strong>Category:</strong> " + escapeHTML(topic.category) +
+        " &nbsp; | &nbsp; <strong>Level:</strong> " +
         escapeHTML(topic.level) + "</p>" +
-        "<h4 style='margin-top:18px;'>📖 What You Will Learn</h4>" +
+
+        "<h4 style='margin-top:20px;'>📖 What You Will Learn</h4>" +
         lessons +
-        "<div class='notice' style='margin-top:18px;'><strong>💡 Beginner Tip</strong>" +
-        "<p style='margin-top:6px;'>" + escapeHTML(topic.beginnerTip) + "</p></div>" +
-        (detailedContent
-          ? "<details style='margin-top:18px;'><summary style='cursor:pointer;font-weight:bold;padding:10px 0;'>📚 Explore Detailed Learning</summary>" +
-            "<div style='margin-top:12px;'>" + detailedContent + "</div></details>"
+
+        "<div class='notice' style='margin-top:18px;padding:14px;border-radius:10px;'>" +
+          "<strong>💡 Beginner Tip | शुरुआती सुझाव</strong>" +
+          "<p style='margin-top:8px;line-height:1.7;'>" +
+          escapeHTML(topic.beginnerTip) + "</p>" +
+        "</div>" +
+
+        exploreButton +
+
+        (hasDetails
+          ? (
+              "<div id='" + detailId + "' hidden " +
+              "style='margin-top:18px;padding:16px;border:1px solid #dbe4ee;border-radius:12px;background:#f8fbff;'>" +
+
+                "<h3 style='line-height:1.5;'>" +
+                escapeHTML(topic.title) + " — Detailed Learning</h3>" +
+
+                "<div style='margin-top:14px;line-height:1.8;'>" +
+                detailedContent +
+                "</div>" +
+
+                "<button type='button' class='ravuksa-back-button' " +
+                "data-detail-target='" + detailId + "' " +
+                "style='display:block;width:100%;margin-top:25px;padding:13px 16px;border:1px solid #1769aa;border-radius:10px;background:#fff;color:#1769aa;font-weight:700;cursor:pointer;'>" +
+                "⬅️ Back to Learning Topics</button>" +
+
+              "</div>"
+            )
           : "") +
+
       "</div>"
     );
   });
 
-  container.querySelectorAll("button[data-quiz-topic]").forEach(function (button) {
+  container.querySelectorAll(".ravuksa-explore-button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const details = document.getElementById(button.dataset.detailTarget);
+      if (!details) return;
+
+      details.hidden = false;
+      button.setAttribute("aria-expanded", "true");
+
+      const label = button.querySelector(".ravuksa-explore-label");
+      if (label) label.textContent = "− विस्तृत पाठ खुला है";
+
+      details.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  container.querySelectorAll(".ravuksa-back-button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      const details = document.getElementById(button.dataset.detailTarget);
+      if (!details) return;
+
+      details.hidden = true;
+
+      const explore = container.querySelector(
+        ".ravuksa-explore-button[data-detail-target='" +
+        button.dataset.detailTarget + "']"
+      );
+
+      if (explore) {
+        explore.setAttribute("aria-expanded", "false");
+
+        const label = explore.querySelector(".ravuksa-explore-label");
+        if (label) label.textContent = "＋ पूरा पाठ खोलें";
+
+        explore.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  });
+
+  container.querySelectorAll(".ravuksa-check-answer").forEach(function (button) {
     button.addEventListener("click", function () {
       const topicIndex = Number(button.dataset.quizTopic);
       const questionIndex = Number(button.dataset.quizQuestion);
       const question = ravuksaKnowledge[topicIndex].quiz[questionIndex];
+
       const selected = container.querySelector(
         "input[name='quiz-" + topicIndex + "-" + questionIndex + "']:checked"
       );
+
       const result = document.getElementById(
         "quiz-result-" + topicIndex + "-" + questionIndex
       );
 
       if (!selected) {
-        result.textContent = "पहले एक उत्तर चुनें। Please select an answer first.";
+        result.textContent =
+          "पहले एक उत्तर चुनें। Please select an answer first.";
         return;
       }
 
-      const correctIndex = question.answerIndex;
-      const isCorrect = Number(selected.value) === correctIndex;
+      const isCorrect = Number(selected.value) === question.answerIndex;
 
       result.textContent =
-        (isCorrect ? "✅ सही उत्तर! Correct answer. " : "❌ अभी सही नहीं। ") +
+        (isCorrect
+          ? "✅ सही उत्तर! Correct answer. "
+          : "❌ यह सही उत्तर नहीं है। Please review the explanation. ") +
         (question.explanation || "");
     });
   });
@@ -9885,7 +10009,7 @@ function renderKnowledgeDemo() {
 document.addEventListener("DOMContentLoaded", function () {
   renderKnowledgeDemo();
 });
-        </script>
+</script>
   
 
 
