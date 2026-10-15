@@ -1,0 +1,17 @@
+{
+"id": "/ravuksa-fintech/",
+"name": "RAVUKSA FINTECH",
+"short_name": "RAVUKSA",
+"description": "Financial Education & Market Learning — Learn. Understand. Make Informed Decisions.",
+"lang": "en-IN",
+"start_url": "/ravuksa-fintech/",
+"scope": "/ravuksa-fintech/",
+"display": "standalone",
+"orientation": "portrait",
+"theme_color": "#ffffff",
+"background_color": "#ffffff",
+"categories": [
+"education",
+"finance"
+]
+}
