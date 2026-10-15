@@ -10356,5 +10356,1812 @@
         "explanation": "Order details को verify करने से गलत security, quantity या price दर्ज करने का जोखिम कम करने में मदद मिलती है।"
       }
     ]
-      }
+      },
+  {
+  "id": "share-market-orders-guide",
+  "title": "Share Market Orders की पूरी जानकारी (Market, Limit और Stop-Loss Orders)",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Market Order, Limit Order, Stop-Loss Order और अन्य order types को सरल हिंदी और English में समझें। Learn how stock market orders work, their execution, limitations and risks.",
+  "lessons": [
+    "1. Share Market Order क्या होता है?",
+    "2. Market Order क्या है और यह कैसे काम करता है?",
+    "3. Limit Order क्या है और इसका उपयोग कैसे होता है?",
+    "4. Stop-Loss Order क्या है और इसका उद्देश्य क्या है?",
+    "5. Stop-Loss Market और Stop-Loss Limit Order में अंतर",
+    "6. Order Status: Open, Pending, Executed, Rejected और Cancelled",
+    "7. Partial Execution और Slippage क्या हैं?",
+    "8. Order Validity: Day और अन्य उपलब्ध विकल्प",
+    "9. सही Order Type चुनते समय किन बातों का ध्यान रखें?"
+  ],
+  "beginnerTip": "Order लगाने से पहले Order Type, Quantity, Price और Buy/Sell का चयन दोबारा जाँचें। Stop-Loss नुकसान को सीमित करने में मदद कर सकता है, लेकिन यह निश्चित कीमत पर exit या नुकसान की पूरी रोकथाम की गारंटी नहीं देता।",
+  "detailedLessons": [
+    {
+      "title": "1. Share Market Order क्या होता है?",
+      "content": "Share Market Order वह instruction है जो investor या trader अपने broker के माध्यम से exchange को किसी security को खरीदने या बेचने के लिए देता है। Order में Buy या Sell, quantity, order type और जरूरत के अनुसार price तथा validity जैसी जानकारी होती है। Order लगाना और उसका execute होना अलग-अलग बातें हैं। Order स्वीकार होने के बाद भी वह pending रह सकता है, partially execute हो सकता है या reject हो सकता है।"
+    },
+    {
+      "title": "2. Market Order क्या है?",
+      "content": "Market Order में आप उपलब्ध market price पर order execute करने का प्रयास करते हैं। इसका मुख्य उद्देश्य execution को प्राथमिकता देना है, न कि एक निश्चित कीमत तय करना। तेजी से बदलते बाजार में वास्तविक execution price स्क्रीन पर दिखाई गई पिछली कीमत से अलग हो सकती है। इसे slippage कहते हैं। कम liquidity वाले शेयरों में यह अंतर अधिक हो सकता है।"
+    },
+    {
+      "title": "3. Limit Order क्या है?",
+      "content": "Limit Order में आप वह अधिकतम कीमत तय करते हैं जिस पर खरीदना चाहते हैं या वह न्यूनतम कीमत जिस पर बेचना चाहते हैं। Buy Limit सामान्यतः तय की गई limit price या उससे कम पर ही execute हो सकता है। Sell Limit सामान्यतः limit price या उससे अधिक पर execute हो सकता है। लेकिन बाजार में पर्याप्त opposite orders न होने पर order execute नहीं भी हो सकता। Limit price execution की गारंटी नहीं है।"
+    },
+    {
+      "title": "4. Stop-Loss Order क्या है?",
+      "content": "Stop-Loss Order का उपयोग संभावित नुकसान को सीमित करने या किसी तय trigger level पर order सक्रिय करने के लिए किया जाता है। उदाहरण के लिए, यदि कोई शेयर ₹200 पर खरीदा गया है, तो investor ₹190 के आसपास stop level रखने पर विचार कर सकता है। वास्तविक परिणाम order type, market movement और broker/exchange rules पर निर्भर करेगा। Stop-Loss तय कीमत पर exit की गारंटी नहीं देता।"
+    },
+    {
+      "title": "5. Stop-Loss Market और Stop-Loss Limit Order में अंतर",
+      "content": "Stop-Loss Market Order में trigger condition पूरी होने पर market order सक्रिय हो सकता है। इससे execution की संभावना बढ़ सकती है, लेकिन वास्तविक execution price trigger price से अलग हो सकती है। Stop-Loss Limit Order में trigger price के साथ limit price भी निर्धारित होती है। Trigger होने के बाद order केवल निर्धारित limit conditions के भीतर execute हो सकता है, इसलिए तेज गिरावट या कम liquidity में order unfilled रह सकता है। SL-M जैसे order types की उपलब्धता broker और लागू exchange rules के अनुसार बदल सकती है।"
+    },
+    {
+      "title": "6. Order Status कैसे समझें?",
+      "content": "Open या Pending का अर्थ है कि order अभी पूरी तरह execute नहीं हुआ है। Executed या Filled का अर्थ है कि order पूरा हो गया है। Partially Filled का अर्थ है कि quantity का केवल एक हिस्सा execute हुआ है। Rejected का अर्थ है कि order स्वीकार नहीं किया गया या किसी नियम के कारण अस्वीकृत हो गया। Cancelled का अर्थ है कि order cancel हो चुका है। Cancel करने का अनुरोध देने और cancellation की पुष्टि होने के बीच स्थिति जाँचना जरूरी है।"
+    },
+    {
+      "title": "7. Partial Execution और Slippage क्या हैं?",
+      "content": "Partial Execution तब होता है जब order की पूरी quantity एक साथ उपलब्ध buyers या sellers से match नहीं होती और केवल कुछ shares execute होते हैं। Slippage वह अंतर है जो अपेक्षित कीमत और वास्तविक execution price के बीच हो सकता है। तेज बाजार, कम liquidity, बड़े order और price gaps slippage को प्रभावित कर सकते हैं। Order लगाने के बाद broker app में executed quantity और average price जाँचें।"
+    },
+    {
+      "title": "8. Order Validity और Day Order",
+      "content": "Order Validity बताती है कि order कितनी अवधि तक active रह सकता है। Day Order सामान्यतः संबंधित trading day तक valid रहता है; यदि वह execute नहीं होता तो लागू नियमों के अनुसार समाप्त हो सकता है। कुछ brokers या segments में अन्य validity options भी उपलब्ध हो सकते हैं। हर order type के साथ हर validity option उपलब्ध हो, यह जरूरी नहीं है। Order लगाने से पहले broker app में दिखाई गई validity और नियम पढ़ें।"
+    },
+    {
+      "title": "9. सही Order Type चुनते समय सावधानियाँ",
+      "content": "Order Type का चुनाव आपके उद्देश्य, liquidity, price movement और जोखिम समझ पर निर्भर करता है। Market Order में execution price अनिश्चित हो सकती है। Limit Order में execution न होने की संभावना रहती है। Stop-Loss में तेज price movement के कारण अपेक्षा से अलग परिणाम मिल सकता है। Buy/Sell direction, quantity, price, trigger price, limit price और order status की जाँच करें। केवल order type के आधार पर लाभ या नुकसान का अनुमान न लगाएँ।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Market Order",
+      "content": "मान लीजिए किसी शेयर का displayed price ₹100 है और आप Market Buy Order लगाते हैं। जब order exchange तक पहुँचता है, तब उपलब्ध sell orders ₹100.20 पर हो सकते हैं। ऐसे में execution ₹100.20 या अलग-अलग कीमतों पर हो सकता है। ₹100 पर ही execution की गारंटी नहीं होती।"
+    },
+    {
+      "title": "Example 2: Buy Limit Order",
+      "content": "मान लीजिए किसी शेयर की मौजूदा कीमत ₹150 है और आप ₹145 का Buy Limit Order लगाते हैं। यदि उपयुक्त sell orders ₹145 या उससे कम पर उपलब्ध होते हैं, तो order execute हो सकता है। यदि कीमत ₹146 से नीचे नहीं आती या पर्याप्त quantity उपलब्ध नहीं होती, तो order पूरा नहीं भी हो सकता।"
+    },
+    {
+      "title": "Example 3: Stop-Loss का उद्देश्य",
+      "content": "मान लीजिए आपने एक शेयर ₹200 पर खरीदा और संभावित नुकसान को नियंत्रित करने के लिए ₹190 के आसपास stop level तय किया। Trigger होने के बाद market conditions के कारण वास्तविक selling price ₹190 से कम भी हो सकती है। यह उदाहरण केवल order mechanics समझाने के लिए है, किसी शेयर को खरीदने या बेचने की सलाह नहीं है।"
+    },
+    {
+      "title": "Example 4: Partial Execution",
+      "content": "मान लीजिए आपने 100 shares खरीदने का order लगाया, लेकिन उस समय केवल 60 shares ही आपकी order conditions के अनुसार match हुए। तब order का 60-share हिस्सा execute हो सकता है और बाकी 40 shares pending रह सकते हैं। Order status देखकर पता करें कि बाकी quantity active है, cancel हुई है या किसी अन्य स्थिति में है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Market Order",
+      "meaning": "उपलब्ध बाजार कीमतों पर execution को प्राथमिकता देने वाला order।"
+    },
+    {
+      "term": "Limit Order",
+      "meaning": "ऐसा order जिसमें खरीदने की अधिकतम या बेचने की न्यूनतम कीमत तय की जाती है।"
+    },
+    {
+      "term": "Trigger Price",
+      "meaning": "वह कीमत जिस पर trigger-based order सक्रिय होने की शर्त पूरी होती है।"
+    },
+    {
+      "term": "Stop-Loss",
+      "meaning": "संभावित नुकसान को सीमित करने के उद्देश्य से उपयोग की जाने वाली order व्यवस्था।"
+    },
+    {
+      "term": "SL-M",
+      "meaning": "Stop-Loss Market; उपलब्ध होने पर trigger के बाद market order सक्रिय होता है।"
+    },
+    {
+      "term": "SL-L",
+      "meaning": "Stop-Loss Limit; trigger होने के बाद निर्धारित limit conditions के अनुसार order सक्रिय होता है।"
+    },
+    {
+      "term": "Slippage",
+      "meaning": "अपेक्षित और वास्तविक execution price के बीच का अंतर।"
+    },
+    {
+      "term": "Liquidity",
+      "meaning": "किसी asset को खरीदने या बेचने की वह क्षमता जिसमें कीमत पर अपेक्षाकृत कम असर पड़े।"
+    },
+    {
+      "term": "Partial Execution",
+      "meaning": "Order की पूरी quantity के बजाय केवल कुछ quantity का execute होना।"
+    },
+    {
+      "term": "Order Validity",
+      "meaning": "वह अवधि जिसके दौरान order active रह सकता है।"
+    }
+  ],
+  "risks": [
+    "Market Order में वास्तविक execution price दिखाई गई कीमत से अलग हो सकती है।",
+    "Limit Order execute न होने के कारण मनचाहे समय पर खरीद या बिक्री नहीं हो सकती।",
+    "तेज बाजार या price gap में Stop-Loss Market Order अपेक्षा से खराब कीमत पर execute हो सकता है।",
+    "Stop-Loss Limit Order trigger होने के बाद भी execute नहीं हो सकता, यदि कीमत limit conditions से बाहर चली जाए।",
+    "कम liquidity में spread और slippage बढ़ सकते हैं।",
+    "गलत quantity, गलत Buy/Sell selection या गलत price डालने से अनचाहा transaction हो सकता है।",
+    "Brokerage, taxes, exchange charges और अन्य लागू लागतें transaction के कुल परिणाम को प्रभावित कर सकती हैं।",
+    "SL-M और अन्य order types की उपलब्धता broker, market segment और वर्तमान exchange rules पर निर्भर करती है।"
+  ],
+  "commonMistakes": [
+    "यह मान लेना कि Market Order हमेशा स्क्रीन पर दिखाई गई कीमत पर execute होगा।",
+    "यह मान लेना कि Limit Order लगाते ही transaction पूरा हो जाएगा।",
+    "Stop-Loss को निश्चित कीमत पर exit की गारंटी समझना।",
+    "Stop-Loss Limit Order और Stop-Loss Market Order के अंतर को न समझना।",
+    "Order लगाने के बाद executed quantity और average price नहीं जाँचना।",
+    "Trigger Price और Limit Price को एक ही समझना।",
+    "कम liquidity और Bid-Ask Spread को नजरअंदाज करना।",
+    "Broker के नियम और order validity पढ़े बिना order submit करना।"
+  ],
+  "summary": [
+    "Market Order execution को प्राथमिकता देता है, लेकिन वास्तविक कीमत निश्चित नहीं होती।",
+    "Limit Order कीमत पर नियंत्रण देता है, लेकिन execution की गारंटी नहीं देता।",
+    "Stop-Loss संभावित नुकसान को नियंत्रित करने में मदद कर सकता है, पर यह पूर्ण सुरक्षा नहीं है।",
+    "Stop-Loss Market और Stop-Loss Limit Order के execution परिणाम अलग हो सकते हैं।",
+    "Order Status, Partial Execution, Liquidity और Slippage को समझना जरूरी है।",
+    "हर order submit करने से पहले direction, quantity, price और validity की जाँच करें।",
+    "Order types की उपलब्धता और नियमों के लिए अपने broker तथा संबंधित exchange की वर्तमान जानकारी देखें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Market Order का मुख्य उद्देश्य क्या है?",
+      "options": [
+        "उपलब्ध बाजार कीमतों पर execution को प्राथमिकता देना",
+        "हर स्थिति में एक निश्चित कीमत की गारंटी देना",
+        "Transaction Charges को समाप्त करना",
+        "निश्चित लाभ कमाना"
+      ],
+      "answerIndex": 0,
+      "explanation": "Market Order execution को प्राथमिकता देता है, लेकिन वास्तविक execution price बदल सकती है।"
+    },
+    {
+      "question": "2. Buy Limit Order में क्या तय किया जाता है?",
+      "options": [
+        "निश्चित लाभ",
+        "खरीदने की अधिकतम कीमत",
+        "कंपनी का भविष्य का शेयर भाव",
+        "बाजार बंद होने का समय"
+      ],
+      "answerIndex": 1,
+      "explanation": "Buy Limit Order में वह अधिकतम कीमत तय की जाती है जिस पर खरीदार खरीदने को तैयार है। Order execute होना फिर भी बाजार की उपलब्धता पर निर्भर करता है।"
+    },
+    {
+      "question": "3. Stop-Loss Order के बारे में कौन-सा कथन सही है?",
+      "options": [
+        "यह हर नुकसान को पूरी तरह रोक देता है",
+        "यह हमेशा trigger price पर execute होता है",
+        "यह संभावित नुकसान को नियंत्रित करने में मदद कर सकता है, लेकिन परिणाम की गारंटी नहीं देता",
+        "यह केवल लाभ वाले trades में काम करता है"
+      ],
+      "answerIndex": 2,
+      "explanation": "तेज price movement, gaps और order type के कारण वास्तविक execution अपेक्षा से अलग हो सकता है।"
+    },
+    {
+      "question": "4. Slippage का क्या अर्थ है?",
+      "options": [
+        "शेयर का face value",
+        "अपेक्षित और वास्तविक execution price के बीच अंतर",
+        "Demat Account का प्रकार",
+        "कंपनी द्वारा दिया गया dividend"
+      ],
+      "answerIndex": 1,
+      "explanation": "Slippage तब होता है जब order की वास्तविक execution price अपेक्षित कीमत से अलग होती है।"
+    },
+    {
+      "question": "5. Partial Execution का क्या अर्थ है?",
+      "options": [
+        "Order हमेशा reject हो गया",
+        "पूरा order cancel हो गया",
+        "Order की पूरी quantity एक ही कीमत पर execute हुई",
+        "Order की केवल कुछ quantity execute हुई"
+      ],
+      "answerIndex": 3,
+      "explanation": "Partial Execution में order की कुछ quantity execute होती है और बाकी quantity pending या अन्य स्थिति में रह सकती है।"
+    }
+  ]
+  },
+  {
+  "id": "bid-ask-price-spread",
+  "title": "Bid Price, Ask Price और Bid-Ask Spread क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Bid Price, Ask Price और Bid-Ask Spread को आसान हिंदी और English में समझें।",
+  "lessons": [
+    "1. Bid Price क्या होता है?",
+    "2. Ask Price क्या होता है?",
+    "3. Bid-Ask Spread क्या है?",
+    "4. Buyers और Sellers कीमत कैसे तय करते हैं?",
+    "5. Spread का Trading Cost पर प्रभाव",
+    "6. High Spread और Low Spread में अंतर",
+    "7. Liquidity और Spread का संबंध",
+    "8. Order Book में Bid और Ask कैसे देखें?"
+  ],
+  "beginnerTip": "केवल Last Traded Price देखकर order न लगाएँ। Bid Price, Ask Price, Spread और उपलब्ध Quantity भी देखें।",
+  "detailedLessons": [
+    {
+      "title": "1. Bid Price क्या होता है?",
+      "content": "Bid Price वह कीमत है जिस पर कोई buyer किसी security को खरीदने के लिए बोली लगा रहा होता है। Order Book में अलग-अलग buyers की bid prices और उनकी quantities दिखाई जा सकती हैं। सबसे ऊँची उपलब्ध bid सामान्यतः buyers की ओर से सबसे अधिक खरीदने की पेशकश होती है।"
+    },
+    {
+      "title": "2. Ask Price क्या होता है?",
+      "content": "Ask Price, जिसे Offer Price भी कहते हैं, वह कीमत है जिस पर कोई seller security बेचने के लिए तैयार होता है। सबसे कम उपलब्ध ask price सामान्यतः sellers की ओर से सबसे कम बिक्री पेशकश होती है। वास्तविक execution order matching और उपलब्ध quantity पर निर्भर करता है।"
+    },
+    {
+      "title": "3. Bid-Ask Spread क्या है?",
+      "content": "Bid-Ask Spread सबसे कम उपलब्ध Ask Price और सबसे ऊँची उपलब्ध Bid Price के बीच का अंतर है। उदाहरण के लिए, यदि Bid ₹99 और Ask ₹100 है, तो Spread ₹1 है। Spread को रुपये में या प्रतिशत के रूप में भी देखा जा सकता है।"
+    },
+    {
+      "title": "4. Buyers और Sellers कीमत कैसे तय करते हैं?",
+      "content": "Buyers अपनी खरीदने की कीमत और sellers अपनी बेचने की कीमत के साथ orders देते हैं। जब opposite-side orders की कीमतें और शर्तें match होती हैं, तब trade execute हो सकता है। Demand, supply, news, liquidity और market conditions के कारण Bid और Ask बदलते रहते हैं।"
+    },
+    {
+      "title": "5. Spread का Trading Cost पर प्रभाव",
+      "content": "Spread transaction की एक महत्वपूर्ण implicit cost हो सकता है। यदि investor तुरंत खरीदने के लिए Ask पर खरीदता है और तुरंत बेचने के लिए Bid पर बेचता है, तो कीमतें समान रहने पर भी spread के कारण अंतर आ सकता है। Brokerage, taxes और अन्य charges अलग हो सकते हैं।"
+    },
+    {
+      "title": "6. High Spread और Low Spread",
+      "content": "Low Spread का अर्थ Bid और Ask के बीच कम अंतर है। High Spread का अर्थ दोनों के बीच अधिक अंतर है। Spread शेयर की liquidity, market volatility, order size और trading activity के अनुसार बदल सकता है। कम spread अपने-आप निवेश को सुरक्षित या लाभदायक नहीं बनाता।"
+    },
+    {
+      "title": "7. Liquidity और Spread का संबंध",
+      "content": "जिन securities में पर्याप्त buyers और sellers सक्रिय होते हैं, उनमें कई बार spread कम हो सकता है। कम trading activity या तेजी से बदलते बाजार में spread बढ़ सकता है। यह एक सामान्य प्रवृत्ति है, कोई निश्चित नियम नहीं।"
+    },
+    {
+      "title": "8. Order Book में Bid और Ask देखना",
+      "content": "Order Book में उपलब्ध buy और sell orders की कीमतें तथा quantities देखी जा सकती हैं। यह उस समय उपलब्ध orders की तस्वीर है, भविष्य की कीमत की गारंटी नहीं। Orders तेजी से बदल या cancel हो सकते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Spread की गणना",
+      "content": "यदि सबसे ऊँची Bid ₹99 और सबसे कम Ask ₹100 है, तो Spread = ₹100 - ₹99 = ₹1।"
+    },
+    {
+      "title": "Example 2: कम Spread",
+      "content": "यदि Bid ₹249.90 और Ask ₹250 है, तो Spread ₹0.10 है। यह केवल उस समय के उपलब्ध quotes को दर्शाता है।"
+    },
+    {
+      "title": "Example 3: अधिक Spread",
+      "content": "यदि Bid ₹98 और Ask ₹100 है, तो Spread ₹2 है। Market Order का execution उपलब्ध कीमतों और quantity पर निर्भर करेगा।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Bid Price",
+      "meaning": "वह कीमत जिस पर buyer खरीदने की पेशकश करता है।"
+    },
+    {
+      "term": "Ask Price",
+      "meaning": "वह कीमत जिस पर seller बेचने की पेशकश करता है।"
+    },
+    {
+      "term": "Spread",
+      "meaning": "Ask और Bid Price के बीच का अंतर।"
+    },
+    {
+      "term": "Order Book",
+      "meaning": "विभिन्न कीमतों पर उपलब्ध buy और sell orders का रिकॉर्ड।"
+    },
+    {
+      "term": "Best Bid",
+      "meaning": "Order Book में सबसे ऊँची उपलब्ध bid price।"
+    },
+    {
+      "term": "Best Ask",
+      "meaning": "Order Book में सबसे कम उपलब्ध ask price।"
+    },
+    {
+      "term": "Liquidity",
+      "meaning": "किसी security को अपेक्षाकृत आसानी से खरीदने या बेचने की क्षमता।"
+    },
+    {
+      "term": "Quote",
+      "meaning": "किसी security की दिखाई गई bid या ask price।"
+    }
+  ],
+  "risks": [
+    "High Spread से transaction की implicit cost बढ़ सकती है।",
+    "Market Order में अपेक्षित कीमत से अलग execution हो सकता है।",
+    "Order Book के orders तेजी से बदल सकते हैं।",
+    "कम liquidity में बड़ी quantity execute करना कठिन हो सकता है।",
+    "दिखाई गई Bid या Ask Price भविष्य की कीमत की गारंटी नहीं है।"
+  ],
+  "commonMistakes": [
+    "Bid और Ask को एक ही कीमत समझना।",
+    "Spread को अनदेखा करना।",
+    "केवल Last Traded Price देखकर order लगाना।",
+    "यह मान लेना कि Order Book के सभी orders execute होंगे।",
+    "कम Spread को निश्चित लाभ का संकेत समझना।"
+  ],
+  "summary": [
+    "Bid Price buyer की पेशकश है।",
+    "Ask Price seller की पेशकश है।",
+    "Spread = Ask Price - Best Bid Price।",
+    "Spread market conditions और liquidity के अनुसार बदल सकता है।",
+    "Order Book वर्तमान orders दिखाता है, भविष्य की कीमत नहीं।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Bid Price क्या दर्शाता है?",
+      "options": [
+        "Buyer की खरीदने की पेशकश",
+        "कंपनी का वार्षिक लाभ",
+        "Dividend की राशि",
+        "Trading Holiday"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bid Price वह कीमत है जिस पर buyer खरीदने की पेशकश करता है।"
+    },
+    {
+      "question": "2. Ask Price क्या दर्शाता है?",
+      "options": [
+        "Buyer की अधिकतम आय",
+        "Seller की बेचने की पेशकश",
+        "कंपनी की कुल संपत्ति",
+        "Brokerage की दर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ask Price वह कीमत है जिस पर seller बेचने के लिए तैयार होता है।"
+    },
+    {
+      "question": "3. Bid ₹99 और Ask ₹100 हो, तो Spread कितना है?",
+      "options": [
+        "₹99",
+        "₹100",
+        "₹1",
+        "₹199"
+      ],
+      "answerIndex": 2,
+      "explanation": "Spread = ₹100 - ₹99 = ₹1।"
+    },
+    {
+      "question": "4. High Spread का क्या अर्थ है?",
+      "options": [
+        "Bid और Ask में अधिक अंतर",
+        "निश्चित लाभ",
+        "कोई market risk नहीं",
+        "हमेशा अधिक liquidity"
+      ],
+      "answerIndex": 0,
+      "explanation": "High Spread में Bid और Ask Price का अंतर अधिक होता है।"
+    },
+    {
+      "question": "5. Order Book क्या दिखाता है?",
+      "options": [
+        "भविष्य का निश्चित शेयर भाव",
+        "केवल कंपनी का लाभ",
+        "केवल dividend history",
+        "उपलब्ध buy और sell orders"
+      ],
+      "answerIndex": 3,
+      "explanation": "Order Book अलग-अलग कीमतों पर उपलब्ध buy और sell orders दिखाता है।"
+    }
+  ]
+    },
+  {
+  "id": "market-depth-order-book",
+  "title": "Market Depth और Order Book कैसे पढ़ें?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Market Depth, Buy Orders, Sell Orders और Available Quantity को सरल हिंदी और English में समझें।",
+  "lessons": [
+    "1. Market Depth क्या है?",
+    "2. Order Book क्या होता है?",
+    "3. Buy Orders और Sell Orders",
+    "4. Price और Quantity का संबंध",
+    "5. Best Bid और Best Ask",
+    "6. Order Book में बदलाव क्यों होता है?",
+    "7. Market Depth की सीमाएँ",
+    "8. Market Depth देखते समय सावधानियाँ"
+  ],
+  "beginnerTip": "Market Depth वर्तमान orders दिखाता है, भविष्य में कीमत किस दिशा में जाएगी इसकी गारंटी नहीं देता।",
+  "detailedLessons": [
+    {
+      "title": "1. Market Depth क्या है?",
+      "content": "Market Depth किसी security के अलग-अलग price levels पर उपलब्ध buy और sell orders की जानकारी है। इससे पता चल सकता है कि विभिन्न कीमतों पर कितनी quantity खरीदने या बेचने के लिए दिखाई जा रही है। उपलब्ध levels और display broker या exchange interface के अनुसार बदल सकते हैं।"
+    },
+    {
+      "title": "2. Order Book क्या होता है?",
+      "content": "Order Book में trading system के active buy और sell orders की जानकारी होती है। Orders price-time priority और लागू exchange rules के अनुसार match हो सकते हैं। Order Book में दिखाई गई जानकारी बदलती रहती है क्योंकि नए orders आते हैं, execute होते हैं या cancel होते हैं।"
+    },
+    {
+      "title": "3. Buy Orders और Sell Orders",
+      "content": "Buy side पर खरीदने के orders और Sell side पर बेचने के orders दिखते हैं। प्रत्येक level पर price और quantity की जानकारी मिल सकती है। अधिक quantity दिखाई देना केवल उस समय उपलब्ध orders बताता है; यह सुनिश्चित नहीं करता कि सभी orders वहीं बने रहेंगे।"
+    },
+    {
+      "title": "4. Price और Quantity",
+      "content": "Market Depth पढ़ते समय केवल कीमत नहीं, बल्कि उस कीमत पर उपलब्ध quantity भी देखनी चाहिए। यदि किसी कीमत पर आपकी order quantity से कम shares उपलब्ध हैं, तो order का केवल कुछ हिस्सा execute हो सकता है या बाकी के लिए दूसरी कीमतें लागू हो सकती हैं।"
+    },
+    {
+      "title": "5. Best Bid और Best Ask",
+      "content": "Best Bid सबसे ऊँची उपलब्ध buy price और Best Ask सबसे कम उपलब्ध sell price होती है। इनके बीच का अंतर Bid-Ask Spread कहलाता है। Market conditions बदलने पर Best Bid, Best Ask और Spread भी बदल सकते हैं।"
+    },
+    {
+      "title": "6. Order Book में बदलाव",
+      "content": "Order Book में orders लगातार add, modify, execute या cancel हो सकते हैं। इसलिए स्क्रीन पर दिखाई गई quantity अगले ही पल बदल सकती है। तेजी से बदलते बाजार में पुरानी जानकारी के आधार पर order लगाने से अपेक्षित परिणाम अलग हो सकते हैं।"
+    },
+    {
+      "title": "7. Market Depth की सीमाएँ",
+      "content": "Market Depth सभी भविष्य के buyers और sellers का अनुमान नहीं है। यह भविष्य के news events, नए orders या अचानक होने वाले cancellations को निश्चित रूप से नहीं बता सकता। Display की गई depth की मात्रा भी interface और market segment के अनुसार सीमित हो सकती है।"
+    },
+    {
+      "title": "8. Market Depth का जिम्मेदार उपयोग",
+      "content": "Market Depth को अन्य जानकारी जैसे liquidity, spread, trading volume और अपने order type के साथ समझें। केवल buy side बड़ी दिखने के कारण कीमत बढ़ने या sell side बड़ी दिखने के कारण कीमत गिरने का निष्कर्ष न निकालें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Buy Side",
+      "content": "यदि ₹100 पर 500 shares के buy orders दिखाई दे रहे हैं, तो यह उस समय की दिखाई गई buy quantity है। Orders cancel या execute होने पर quantity बदल सकती है।"
+    },
+    {
+      "title": "Example 2: Sell Side",
+      "content": "यदि ₹101 पर 300 shares के sell orders हैं और आप 500 shares खरीदना चाहते हैं, तो पूरी quantity उसी level पर उपलब्ध होना जरूरी नहीं है। बाकी quantity अलग price levels पर execute हो सकती है।"
+    },
+    {
+      "title": "Example 3: Spread",
+      "content": "Best Bid ₹199 और Best Ask ₹200 हो तो Spread ₹1 होगा। Order Book में दोनों sides की उपलब्ध quantities भी देखी जा सकती हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Market Depth",
+      "meaning": "अलग-अलग price levels पर उपलब्ध buy और sell orders की जानकारी।"
+    },
+    {
+      "term": "Order Book",
+      "meaning": "Trading system में active orders का रिकॉर्ड।"
+    },
+    {
+      "term": "Buy Side",
+      "meaning": "खरीदने के orders की तरफ।"
+    },
+    {
+      "term": "Sell Side",
+      "meaning": "बेचने के orders की तरफ।"
+    },
+    {
+      "term": "Best Bid",
+      "meaning": "सबसे ऊँची उपलब्ध buy price।"
+    },
+    {
+      "term": "Best Ask",
+      "meaning": "सबसे कम उपलब्ध sell price।"
+    },
+    {
+      "term": "Quantity",
+      "meaning": "किसी order में shares या units की संख्या।"
+    },
+    {
+      "term": "Price Level",
+      "meaning": "Order Book में एक विशिष्ट कीमत का स्तर।"
+    }
+  ],
+  "risks": [
+    "Orders अचानक cancel या modify हो सकते हैं।",
+    "Market Depth भविष्य की कीमत की गारंटी नहीं देती।",
+    "बड़ी दिखाई देने वाली quantity हमेशा execute नहीं होती।",
+    "कम depth में बड़ी order quantity का execution कई कीमतों पर हो सकता है।",
+    "तेजी से बदलते बाजार में displayed data जल्दी पुराना हो सकता है।"
+  ],
+  "commonMistakes": [
+    "बड़ी Buy Side देखकर निश्चित रूप से कीमत बढ़ने का अनुमान लगाना।",
+    "बड़ी Sell Side देखकर निश्चित रूप से कीमत गिरने का अनुमान लगाना।",
+    "केवल quantity देखकर liquidity का पूरा आकलन करना।",
+    "Market Depth को भविष्यवाणी का साधन समझना।",
+    "Spread और order type को अनदेखा करना।"
+  ],
+  "summary": [
+    "Market Depth विभिन्न कीमतों पर buy और sell orders दिखाती है।",
+    "Order Book में orders लगातार बदल सकते हैं।",
+    "Best Bid और Best Ask से Spread समझने में मदद मिलती है।",
+    "Displayed quantity के execute होने की गारंटी नहीं है।",
+    "Market Depth को अन्य market information के साथ समझना चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Market Depth क्या दिखाती है?",
+      "options": [
+        "कंपनी की पूरी annual report",
+        "अलग-अलग कीमतों पर buy और sell orders",
+        "निश्चित भविष्य की कीमत",
+        "केवल dividend"
+      ],
+      "answerIndex": 1,
+      "explanation": "Market Depth विभिन्न price levels पर उपलब्ध buy और sell orders की जानकारी देती है।"
+    },
+    {
+      "question": "2. Best Bid क्या होती है?",
+      "options": [
+        "सबसे ऊँची उपलब्ध buy price",
+        "सबसे ऊँची sell price",
+        "पिछले साल की कीमत",
+        "कंपनी का face value"
+      ],
+      "answerIndex": 0,
+      "explanation": "Best Bid सबसे ऊँची उपलब्ध खरीदने की पेशकश होती है।"
+    },
+    {
+      "question": "3. Order Book में quantity क्यों बदल सकती है?",
+      "options": [
+        "केवल dividend के कारण",
+        "कंपनी का नाम बदलने से",
+        "Orders add, execute या cancel होने से",
+        "सिर्फ market holiday पर"
+      ],
+      "answerIndex": 2,
+      "explanation": "नए orders आने, पुराने orders execute होने या cancel होने से depth बदल सकती है।"
+    },
+    {
+      "question": "4. क्या बड़ी Buy Side कीमत बढ़ने की गारंटी है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, लेकिन केवल हर small-cap में",
+        "हाँ, बिना किसी जोखिम के",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Order Book वर्तमान orders दिखाती है; भविष्य की price movement निश्चित नहीं करती।"
+    },
+    {
+      "question": "5. Best Bid ₹99 और Best Ask ₹100 है। Spread कितना है?",
+      "options": [
+        "₹199",
+        "₹1",
+        "₹99",
+        "₹100"
+      ],
+      "answerIndex": 1,
+      "explanation": "Spread = ₹100 - ₹99 = ₹1।"
+    }
+  ]
+  },
+  {
+  "id": "liquidity-trading-volume",
+  "title": "Liquidity और Trading Volume क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Liquidity, Trading Volume, Market Activity और Execution Risk को हिंदी और English में समझें।",
+  "lessons": [
+    "1. Liquidity क्या है?",
+    "2. Trading Volume क्या होता है?",
+    "3. Liquidity और Volume में अंतर",
+    "4. High Liquidity और Low Liquidity",
+    "5. Spread और Liquidity का संबंध",
+    "6. Volume को कैसे पढ़ें?",
+    "7. Liquidity बदलने के कारण",
+    "8. Liquidity की सीमाएँ और जोखिम"
+  ],
+  "beginnerTip": "High Trading Volume हमेशा High Liquidity की गारंटी नहीं होता। Volume, Spread और Order Book को साथ में समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. Liquidity क्या है?",
+      "content": "Liquidity किसी share या asset को खरीदने या बेचने की क्षमता है, जिसमें transaction को पूरा करने के लिए बहुत अधिक कीमत बदलने की जरूरत न पड़े। अधिक liquidity में सामान्यतः buyers और sellers आसानी से मिल सकते हैं, लेकिन हर समय ऐसा होना निश्चित नहीं है।"
+    },
+    {
+      "title": "2. Trading Volume क्या है?",
+      "content": "Trading Volume किसी निश्चित अवधि में trade हुई shares या units की कुल संख्या को दर्शाता है। Volume को shares की संख्या या किसी अन्य asset में units के आधार पर मापा जा सकता है। Volume बढ़ने का अर्थ अधिक trading activity हो सकता है, लेकिन इससे अपने-आप कीमत की दिशा तय नहीं होती।"
+    },
+    {
+      "title": "3. Liquidity और Volume में अंतर",
+      "content": "Volume बताता है कि कितनी quantity trade हुई, जबकि Liquidity बताती है कि asset को कितनी आसानी से खरीदा या बेचा जा सकता है। किसी security का volume अधिक हो सकता है, फिर भी किसी खास समय पर spread बड़ा या order book कम गहरी हो सकती है।"
+    },
+    {
+      "title": "4. High Liquidity और Low Liquidity",
+      "content": "High Liquidity में आम तौर पर कई buyers और sellers, अपेक्षाकृत कम spread और बेहतर order availability हो सकती है। Low Liquidity में order पूरा करने में समय लग सकता है या कीमत अपेक्षा से अधिक बदल सकती है। ये स्थितियाँ market conditions के अनुसार बदलती हैं।"
+    },
+    {
+      "title": "5. Spread और Liquidity",
+      "content": "Liquidity अच्छी होने पर bid और ask के बीच spread अक्सर कम हो सकता है। कम liquidity में spread बढ़ सकता है। फिर भी केवल spread देखकर किसी asset की पूरी liquidity नहीं समझी जा सकती; available quantity और order size भी मायने रखते हैं।"
+    },
+    {
+      "title": "6. Volume को कैसे पढ़ें?",
+      "content": "Volume को पिछले समय के volume, price movement और market context के साथ देखें। अचानक volume बढ़ने के पीछे news, results, corporate action या अन्य कारण हो सकते हैं। Volume अकेले यह नहीं बताता कि खरीदना या बेचना सही होगा।"
+    },
+    {
+      "title": "7. Liquidity बदलने के कारण",
+      "content": "Market opening और closing, news, company announcements, volatility, investor interest और market-wide events liquidity को प्रभावित कर सकते हैं। किसी शेयर में सामान्य समय पर liquidity अच्छी हो सकती है, लेकिन असाधारण घटनाओं के दौरान यह घट सकती है।"
+    },
+    {
+      "title": "8. Liquidity की सीमाएँ",
+      "content": "दिखाई गई liquidity भविष्य में उपलब्ध रहने की गारंटी नहीं है। बड़े orders को अलग-अलग prices पर execute होना पड़ सकता है। Market Order में slippage हो सकती है और Limit Order execute न भी हो।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Volume",
+      "content": "यदि किसी trading day में 2,00,000 shares trade हुए, तो उस दिन का reported volume 2,00,000 shares होगा।"
+    },
+    {
+      "title": "Example 2: High Liquidity",
+      "content": "यदि किसी शेयर में कई buyers और sellers सक्रिय हैं और spread छोटा है, तो उस समय उसे खरीदना या बेचना अपेक्षाकृत आसान हो सकता है।"
+    },
+    {
+      "title": "Example 3: Low Liquidity",
+      "content": "यदि किसी शेयर में कम orders हैं और spread बड़ा है, तो market order की execution price अपेक्षित कीमत से अलग हो सकती है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Liquidity",
+      "meaning": "किसी asset को कम price impact के साथ खरीदने या बेचने की क्षमता।"
+    },
+    {
+      "term": "Trading Volume",
+      "meaning": "एक निश्चित अवधि में trade हुई shares या units की कुल संख्या।"
+    },
+    {
+      "term": "Market Activity",
+      "meaning": "बाजार में होने वाली trading की गतिविधि।"
+    },
+    {
+      "term": "Spread",
+      "meaning": "Best Ask और Best Bid के बीच का अंतर।"
+    },
+    {
+      "term": "Slippage",
+      "meaning": "अपेक्षित और वास्तविक execution price का अंतर।"
+    },
+    {
+      "term": "Order Size",
+      "meaning": "किसी order में shares या units की मात्रा।"
+    },
+    {
+      "term": "Volatility",
+      "meaning": "कीमतों में उतार-चढ़ाव की मात्रा।"
+    },
+    {
+      "term": "Execution",
+      "meaning": "Order का पूरी तरह या आंशिक रूप से trade में बदलना।"
+    }
+  ],
+  "risks": [
+    "Low Liquidity में खरीदना या बेचना कठिन हो सकता है।",
+    "बड़े orders से price impact हो सकता है।",
+    "High Volume को निश्चित price direction समझना गलत हो सकता है।",
+    "Market conditions बदलने पर liquidity तेजी से घट सकती है।",
+    "बड़े spread और slippage से transaction cost बढ़ सकती है।"
+  ],
+  "commonMistakes": [
+    "High Volume को हमेशा अच्छा निवेश संकेत मानना।",
+    "Liquidity और Volume को एक ही चीज समझना।",
+    "Order Size और available quantity को अनदेखा करना।",
+    "केवल एक दिन के volume से निष्कर्ष निकालना।",
+    "Low Liquidity में Market Order के जोखिम को अनदेखा करना।"
+  ],
+  "summary": [
+    "Volume trade हुई quantity बताता है।",
+    "Liquidity बताती है कि asset को खरीदना या बेचना कितना आसान है।",
+    "High Volume हमेशा High Liquidity की गारंटी नहीं है।",
+    "Spread, order book और order size भी महत्वपूर्ण हैं।",
+    "Liquidity और volume को market context के साथ समझना चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Trading Volume क्या बताता है?",
+      "options": [
+        "कंपनी का भविष्य का लाभ",
+        "एक अवधि में trade हुई quantity",
+        "निश्चित dividend",
+        "केवल share की face value"
+      ],
+      "answerIndex": 1,
+      "explanation": "Trading Volume किसी अवधि में trade हुई shares या units की संख्या दर्शाता है।"
+    },
+    {
+      "question": "2. Liquidity का अर्थ क्या है?",
+      "options": [
+        "किसी asset को अपेक्षाकृत आसानी से खरीदने या बेचने की क्षमता",
+        "कंपनी का नाम",
+        "Dividend की तारीख",
+        "Stock Exchange की छुट्टी"
+      ],
+      "answerIndex": 0,
+      "explanation": "Liquidity किसी asset को कम price impact के साथ खरीदने या बेचने की क्षमता से जुड़ी है।"
+    },
+    {
+      "question": "3. High Volume का क्या अर्थ है?",
+      "options": [
+        "कीमत जरूर बढ़ेगी",
+        "नुकसान संभव नहीं",
+        "अधिक trading activity हुई",
+        "हर order execute होगा"
+      ],
+      "answerIndex": 2,
+      "explanation": "High Volume अधिक trading activity दर्शा सकता है, लेकिन price direction की गारंटी नहीं देता।"
+    },
+    {
+      "question": "4. Low Liquidity में क्या समस्या हो सकती है?",
+      "options": [
+        "हर बार निश्चित लाभ",
+        "कोई spread नहीं",
+        "निश्चित execution price",
+        "बड़ा spread या slippage"
+      ],
+      "answerIndex": 3,
+      "explanation": "कम liquidity में order को execute करने के लिए कीमत में अधिक बदलाव हो सकता है।"
+    },
+    {
+      "question": "5. Liquidity समझने के लिए क्या देखना उपयोगी है?",
+      "options": [
+        "केवल कंपनी का लोगो",
+        "Spread, Order Book और available quantity",
+        "केवल dividend का नाम",
+        "केवल share का face value"
+      ],
+      "answerIndex": 1,
+      "explanation": "Spread और available quantity जैसी जानकारी liquidity समझने में मदद करती है।"
+    }
+  ]
+    },
+  {
+  "id": "market-cap-large-mid-small",
+  "title": "Market Capitalization क्या है? Large Cap, Mid Cap और Small Cap",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Market Capitalization और Large Cap, Mid Cap तथा Small Cap companies के अंतर को समझें।",
+  "lessons": [
+    "1. Market Capitalization क्या है?",
+    "2. Market Cap की गणना कैसे होती है?",
+    "3. Large Cap Companies क्या हैं?",
+    "4. Mid Cap Companies क्या हैं?",
+    "5. Small Cap Companies क्या हैं?",
+    "6. Market Cap और Share Price में अंतर",
+    "7. Market Cap क्यों बदलता है?",
+    "8. Market Cap की सीमाएँ और जोखिम"
+  ],
+  "beginnerTip": "कम share price का मतलब कंपनी छोटी होना नहीं है। Market Cap समझने के लिए share price के साथ कुल shares की संख्या भी देखिए।",
+  "detailedLessons": [
+    {
+      "title": "1. Market Capitalization क्या है?",
+      "content": "Market Capitalization या Market Cap कंपनी के outstanding equity shares के market value का माप है। इसे सामान्य रूप से share price को outstanding shares की संख्या से गुणा करके निकाला जाता है। यह कंपनी का बाजार मूल्यांकन दर्शाता है, लेकिन कंपनी की पूरी financial health या वास्तविक intrinsic value नहीं बताता।"
+    },
+    {
+      "title": "2. Market Cap की गणना",
+      "content": "Market Cap = Market Price per Share × Outstanding Shares। यदि कंपनी के 10 करोड़ shares हैं और share price ₹100 है, तो illustrative market cap ₹1,000 करोड़ होगा। Price बदलने या shares की संख्या बदलने से market cap बदल सकता है।"
+    },
+    {
+      "title": "3. Large Cap Companies",
+      "content": "Large Cap सामान्यतः बड़ी market capitalization वाली कंपनियों के लिए इस्तेमाल होता है। भारत में mutual fund classification के संदर्भ में SEBI की लागू श्रेणी के अनुसार market capitalization ranking महत्वपूर्ण है। Large Cap का अर्थ zero risk या guaranteed return नहीं है।"
+    },
+    {
+      "title": "4. Mid Cap Companies",
+      "content": "Mid Cap कंपनियाँ market capitalization के आधार पर Large Cap और Small Cap के बीच आती हैं। इनके business growth opportunities और risks दोनों हो सकते हैं। Market capitalization ranking समय के साथ बदल सकती है।"
+    },
+    {
+      "title": "5. Small Cap Companies",
+      "content": "Small Cap अपेक्षाकृत कम market capitalization वाली कंपनियों को दर्शाता है। इनमें growth potential हो सकता है, लेकिन liquidity, business stability और price volatility से जुड़े जोखिम भी हो सकते हैं। हर Small Cap कंपनी एक जैसी नहीं होती।"
+    },
+    {
+      "title": "6. Market Cap और Share Price",
+      "content": "किसी कंपनी का share ₹50 का और दूसरी का ₹2,000 का हो सकता है, फिर भी पहली कंपनी का market cap अधिक हो सकता है यदि उसके outstanding shares अधिक हों। केवल प्रति-share कीमत देखकर कंपनी का आकार नहीं समझा जा सकता।"
+    },
+    {
+      "title": "7. Market Cap क्यों बदलता है?",
+      "content": "Market price में बदलाव, नए shares जारी होना, buyback और अन्य corporate actions market cap को प्रभावित कर सकते हैं। अलग-अलग market data providers की गणना और displayed figures में समय या methodology के कारण अंतर हो सकता है।"
+    },
+    {
+      "title": "8. Market Cap की सीमाएँ",
+      "content": "Market Cap कंपनी के debt, cash, profitability, business quality और valuation के सभी पहलुओं को अकेले नहीं दर्शाता। कंपनी का विश्लेषण करते समय financial statements, cash flow, debt और valuation ratios भी देखे जाते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Market Cap Calculation",
+      "content": "यदि किसी कंपनी के 10 करोड़ outstanding shares हैं और share price ₹100 है, तो Market Cap = 10 करोड़ × ₹100 = ₹1,000 करोड़।"
+    },
+    {
+      "title": "Example 2: अलग Share Prices",
+      "content": "कंपनी A का share ₹50 और outstanding shares 100 करोड़ हैं, तो उसका market cap ₹5,000 करोड़ होगा। कंपनी B का share ₹500 और shares 5 करोड़ हैं, तो उसका market cap ₹2,500 करोड़ होगा।"
+    },
+    {
+      "title": "Example 3: Price Change",
+      "content": "यदि shares की संख्या स्थिर रहते हुए share price ₹100 से ₹110 हो जाती है, तो market cap भी उसी अनुपात में बढ़ेगा। यह अपने-आप business fundamentals में सुधार साबित नहीं करता।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Market Capitalization",
+      "meaning": "Share price और outstanding shares के आधार पर कंपनी के equity market value का माप।"
+    },
+    {
+      "term": "Outstanding Shares",
+      "meaning": "कंपनी द्वारा जारी किए गए और वर्तमान में outstanding shares।"
+    },
+    {
+      "term": "Large Cap",
+      "meaning": "बड़ी market capitalization वाली कंपनियों की श्रेणी।"
+    },
+    {
+      "term": "Mid Cap",
+      "meaning": "Market capitalization के मध्य वर्ग की कंपनियाँ।"
+    },
+    {
+      "term": "Small Cap",
+      "meaning": "अपेक्षाकृत कम market capitalization वाली कंपनियाँ।"
+    },
+    {
+      "term": "Equity",
+      "meaning": "कंपनी में ownership से संबंधित हिस्सा।"
+    },
+    {
+      "term": "Valuation",
+      "meaning": "कंपनी या asset के मूल्य का आकलन।"
+    },
+    {
+      "term": "Corporate Action",
+      "meaning": "कंपनी द्वारा लिया गया ऐसा कदम जो shareholders या shares को प्रभावित कर सकता है।"
+    }
+  ],
+  "risks": [
+    "Market Cap कंपनी की पूरी financial condition नहीं बताता।",
+    "Small Cap shares में liquidity और volatility का जोखिम हो सकता है।",
+    "Large Cap companies में भी share price गिर सकता है।",
+    "Market price में बदलाव से market cap बदल सकता है।",
+    "Market cap की अलग-अलग परिभाषाओं को बिना जाँचे तुलना करने से भ्रम हो सकता है।"
+  ],
+  "commonMistakes": [
+    "कम share price वाली कंपनी को हमेशा छोटी मानना।",
+    "Large Cap को risk-free समझना।",
+    "Market Cap को कंपनी के cash या bank balance के बराबर मानना।",
+    "केवल market cap देखकर निवेश का निर्णय लेना।",
+    "Market capitalization classification के नियमों को न जाँचना।"
+  ],
+  "summary": [
+    "Market Cap = Share Price × Outstanding Shares।",
+    "Large Cap, Mid Cap और Small Cap कंपनी के आकार की श्रेणियाँ हैं।",
+    "कम share price का अर्थ कम market cap नहीं है।",
+    "Market Cap कंपनी की पूरी financial health नहीं बताता।",
+    "कंपनी का अध्ययन करने के लिए valuation और financial statements भी समझें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Market Cap का सामान्य formula क्या है?",
+      "options": [
+        "Share Price + Dividend",
+        "Profit × Tax",
+        "Share Price × Outstanding Shares",
+        "Debt - Revenue"
+      ],
+      "answerIndex": 2,
+      "explanation": "Market Cap निकालने के लिए share price को outstanding shares की संख्या से गुणा किया जाता है।"
+    },
+    {
+      "question": "2. क्या कम share price का मतलब हमेशा छोटी कंपनी है?",
+      "options": [
+        "नहीं",
+        "हाँ, हमेशा",
+        "केवल dividend देने पर",
+        "केवल market holiday पर"
+      ],
+      "answerIndex": 0,
+      "explanation": "कंपनी का market cap share price और outstanding shares दोनों पर निर्भर करता है।"
+    },
+    {
+      "question": "3. Market Cap अकेले क्या नहीं बताता?",
+      "options": [
+        "एक अनुमानित equity market value",
+        "Shares और price का संबंध",
+        "Market value का सामान्य माप",
+        "कंपनी की पूरी financial health"
+      ],
+      "answerIndex": 3,
+      "explanation": "Financial health समझने के लिए debt, cash flow, profitability और अन्य जानकारी भी चाहिए।"
+    },
+    {
+      "question": "4. Small Cap companies में कौन-सा जोखिम हो सकता है?",
+      "options": [
+        "कोई जोखिम नहीं",
+        "Liquidity और volatility का जोखिम",
+        "निश्चित return",
+        "Share price कभी नहीं गिरना"
+      ],
+      "answerIndex": 1,
+      "explanation": "कुछ Small Cap shares में liquidity कम और price volatility अधिक हो सकती है।"
+    },
+    {
+      "question": "5. यदि share price बढ़े और shares की संख्या स्थिर रहे, तो Market Cap सामान्यतः क्या करेगा?",
+      "options": [
+        "हमेशा शून्य हो जाएगा",
+        "हमेशा आधा हो जाएगा",
+        "बढ़ेगा",
+        "बदल नहीं सकता"
+      ],
+      "answerIndex": 2,
+      "explanation": "Shares की संख्या स्थिर होने पर share price बढ़ने से market cap भी बढ़ता है।"
+    }
+  ]
+  },
+  {
+  "id": "free-float-market-cap",
+  "title": "Free-Float Market Capitalization क्या है?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Free-Float Market Cap, publicly available shares और index weightage में इसकी भूमिका को समझें।",
+  "lessons": [
+    "1. Free-Float Market Cap क्या है?",
+    "2. Total Market Cap और Free-Float Market Cap",
+    "3. Publicly Available Shares क्या हैं?",
+    "4. Promoter Holdings की भूमिका",
+    "5. Free-Float Factor क्या होता है?",
+    "6. Index Calculation में Free Float",
+    "7. Free-Float Market Cap कैसे बदलता है?",
+    "8. इसकी सीमाएँ और सावधानियाँ"
+  ],
+  "beginnerTip": "Free-Float Market Cap, total market cap से अलग हो सकता है क्योंकि कंपनी के सभी shares सामान्य public trading के लिए उपलब्ध नहीं होते।",
+  "detailedLessons": [
+    {
+      "title": "1. Free-Float Market Cap क्या है?",
+      "content": "Free-Float Market Capitalization कंपनी के उन shares के market value का अनुमान है जो लागू methodology के अनुसार public trading के लिए उपलब्ध माने जाते हैं। इसमें सभी outstanding shares को जरूरी नहीं कि शामिल किया जाए।"
+    },
+    {
+      "title": "2. Total Market Cap और Free Float",
+      "content": "Total Market Cap सामान्यतः share price को सभी outstanding shares से गुणा करके निकाला जाता है। Free-Float Market Cap में eligible free-float shares को ध्यान में रखा जाता है। इसलिए Free-Float Market Cap total market cap से कम हो सकता है।"
+    },
+    {
+      "title": "3. Publicly Available Shares",
+      "content": "Free-float methodology में ऐसे shares पर ध्यान दिया जाता है जो सामान्यतः market trading के लिए उपलब्ध हों। कौन-सी shareholding शामिल होगी या बाहर रखी जाएगी, यह संबंधित index provider या लागू methodology के नियमों पर निर्भर करता है।"
+    },
+    {
+      "title": "4. Promoter Holdings की भूमिका",
+      "content": "कंपनी के कुछ shares promoters, controlling shareholders या अन्य strategic holders के पास हो सकते हैं। लागू index methodology के अनुसार ऐसी holdings का कुछ हिस्सा free-float calculation से बाहर हो सकता है। हर प्रकार की holding पर नियम समान हों, यह जरूरी नहीं है।"
+    },
+    {
+      "title": "5. Free-Float Factor",
+      "content": "Free-Float Factor वह अनुपात है जिसका उपयोग eligible free-float shares का अनुमान लगाने के लिए किया जा सकता है। उदाहरण के लिए, यदि लागू factor 0.60 है, तो illustrative calculation में total market cap का 60% free-float market cap के रूप में माना जा सकता है। वास्तविक index methodology अधिक विस्तृत हो सकती है।"
+    },
+    {
+      "title": "6. Index Calculation में भूमिका",
+      "content": "कुछ प्रमुख stock indices free-float market capitalization methodology का उपयोग करते हैं। इससे index weightage तय करने में eligible publicly tradable shares का प्रभाव शामिल होता है। अलग-अलग indices अपनी methodology के अनुसार गणना करते हैं।"
+    },
+    {
+      "title": "7. Free-Float Market Cap में बदलाव",
+      "content": "Share price, outstanding shares, eligible shareholding और free-float factor में बदलाव से free-float market cap प्रभावित हो सकता है। Index provider के periodic reviews से भी constituents या weightage बदल सकते हैं।"
+    },
+    {
+      "title": "8. सीमाएँ और सावधानियाँ",
+      "content": "Free-Float Market Cap किसी कंपनी की financial quality या future performance का सीधा माप नहीं है। यह index construction और market structure समझने का एक तरीका है। सही तुलना के लिए संबंधित index provider की current methodology देखें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Free-Float Calculation",
+      "content": "यदि total market cap ₹1,000 करोड़ और illustrative free-float factor 0.60 है, तो अनुमानित free-float market cap ₹600 करोड़ होगा।"
+    },
+    {
+      "title": "Example 2: Total और Free Float",
+      "content": "किसी कंपनी के सभी outstanding shares का market cap ₹5,000 करोड़ है, लेकिन methodology के अनुसार केवल 50% shares free float में शामिल हैं। सरल उदाहरण में free-float market cap ₹2,500 करोड़ होगा।"
+    },
+    {
+      "title": "Example 3: Index Weightage",
+      "content": "यदि किसी index में companies की free-float market caps अलग-अलग हैं, तो methodology के अनुसार अधिक free-float market cap वाली company का weightage अधिक हो सकता है। वास्तविक weightage index rules और adjustments पर निर्भर करता है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Free-Float Market Cap",
+      "meaning": "Eligible free-float shares के आधार पर निकाला गया market value।"
+    },
+    {
+      "term": "Total Market Cap",
+      "meaning": "Outstanding shares के आधार पर निकाला गया कुल equity market value।"
+    },
+    {
+      "term": "Free-Float Shares",
+      "meaning": "लागू methodology के अनुसार public trading के लिए उपलब्ध माने गए shares।"
+    },
+    {
+      "term": "Free-Float Factor",
+      "meaning": "Free-float shares के अनुपात को दर्शाने वाला factor।"
+    },
+    {
+      "term": "Promoter Holding",
+      "meaning": "कंपनी के promoters के पास मौजूद shareholding।"
+    },
+    {
+      "term": "Index Weightage",
+      "meaning": "किसी company का index में निर्धारित हिस्सा।"
+    },
+    {
+      "term": "Index Provider",
+      "meaning": "वह संस्था जो index की methodology और calculation संचालित करती है।"
+    },
+    {
+      "term": "Methodology",
+      "meaning": "गणना या classification के लिए निर्धारित नियम और प्रक्रिया।"
+    }
+  ],
+  "risks": [
+    "Free-Float Market Cap को company की financial strength समझना गलत हो सकता है।",
+    "अलग index providers की methodology अलग हो सकती है।",
+    "Shareholding changes से free-float calculation प्रभावित हो सकती है।",
+    "Index weightage में बदलाव से index performance पर असर पड़ सकता है।",
+    "पुराने free-float data से गलत निष्कर्ष निकल सकते हैं।"
+  ],
+  "commonMistakes": [
+    "Free-Float Market Cap और Total Market Cap को एक जैसा समझना।",
+    "मान लेना कि कंपनी के सभी shares public trading के लिए उपलब्ध हैं।",
+    "हर index की methodology समान मानना।",
+    "Free-Float Market Cap को निवेश की गारंटी समझना।",
+    "Index weightage को बिना methodology देखे समझने की कोशिश करना।"
+  ],
+  "summary": [
+    "Free-Float Market Cap eligible free-float shares पर आधारित होता है।",
+    "यह Total Market Cap से अलग हो सकता है।",
+    "Promoter और अन्य strategic holdings की treatment methodology पर निर्भर करती है।",
+    "कुछ indices weightage निर्धारित करने में free-float market cap का उपयोग करते हैं।",
+    "सही जानकारी के लिए संबंधित index provider की methodology देखनी चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Free-Float Market Cap किस पर आधारित होता है?",
+      "options": [
+        "केवल कंपनी के profit पर",
+        "Eligible free-float shares के market value पर",
+        "केवल dividend पर",
+        "केवल company के debt पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Free-Float Market Cap eligible free-float shares के market value को दर्शाता है।"
+    },
+    {
+      "question": "2. Total Market Cap और Free-Float Market Cap में अंतर क्यों हो सकता है?",
+      "options": [
+        "क्योंकि सभी outstanding shares free float में शामिल नहीं होते",
+        "क्योंकि share price का कोई महत्व नहीं",
+        "क्योंकि market cap हमेशा शून्य होता है",
+        "क्योंकि dividend कभी नहीं मिलता"
+      ],
+      "answerIndex": 0,
+      "explanation": "Free-float calculation में methodology के अनुसार कुछ holdings शामिल नहीं की जा सकतीं।"
+    },
+    {
+      "question": "3. Free-Float Factor 0.50 और Total Market Cap ₹1,000 करोड़ हो, तो सरल उदाहरण में Free-Float Market Cap कितना होगा?",
+      "options": [
+        "₹100 करोड़",
+        "₹1,500 करोड़",
+        "₹500 करोड़",
+        "₹2,000 करोड़"
+      ],
+      "answerIndex": 2,
+      "explanation": "सरल उदाहरण में ₹1,000 करोड़ × 0.50 = ₹500 करोड़।"
+    },
+    {
+      "question": "4. क्या Free-Float Market Cap कंपनी की financial quality की गारंटी देता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, यदि price बढ़े",
+        "हाँ, यदि volume अधिक हो",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "यह market structure और index calculation से जुड़ा माप है, financial quality की गारंटी नहीं।"
+    },
+    {
+      "question": "5. Index weightage समझने के लिए क्या देखना चाहिए?",
+      "options": [
+        "केवल company का नाम",
+        "संबंधित index की methodology",
+        "केवल dividend date",
+        "केवल face value"
+      ],
+      "answerIndex": 1,
+      "explanation": "Index weightage का निर्धारण संबंधित index provider की methodology पर निर्भर करता है।"
+    }
+  ]
+  },
+  {
+  "id": "stock-indices-nifty-sensex",
+  "title": "Stock Indices क्या हैं? NIFTY 50, SENSEX और अन्य Indices",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Stock Market Index, NIFTY 50, SENSEX और market performance को समझें।",
+  "lessons": [
+    "1. Stock Market Index क्या है?",
+    "2. NIFTY 50 क्या है?",
+    "3. SENSEX क्या है?",
+    "4. Index और Individual Stock में अंतर",
+    "5. Index का मूल्य कैसे बदलता है?",
+    "6. Sectoral और Broad Market Indices",
+    "7. Index का उपयोग कैसे होता है?",
+    "8. Index की सीमाएँ और जोखिम"
+  ],
+  "beginnerTip": "Index बढ़ने का अर्थ यह नहीं कि बाजार के सभी shares बढ़े हैं। Index अपने constituents और methodology को दर्शाता है।",
+  "detailedLessons": [
+    {
+      "title": "1. Stock Market Index क्या है?",
+      "content": "Stock Market Index चुनी गई securities के समूह की performance को एक संख्या या benchmark के रूप में दर्शाता है। Index की constituents और calculation methodology पहले से निर्धारित नियमों के अनुसार होती हैं। Index पूरे बाजार के हर share की performance नहीं दिखाता।"
+    },
+    {
+      "title": "2. NIFTY 50 क्या है?",
+      "content": "NIFTY 50 भारत का एक प्रमुख equity index है, जिसे NSE Indices संचालित करता है। यह निर्धारित methodology के अनुसार चुनी गई 50 प्रमुख कंपनियों की performance को दर्शाता है। Constituents और weightage समय के साथ बदल सकते हैं।"
+    },
+    {
+      "title": "3. SENSEX क्या है?",
+      "content": "SENSEX BSE का प्रमुख equity index है। इसमें निर्धारित methodology के अनुसार चुनी गई 30 कंपनियाँ शामिल होती हैं। यह BSE के चुनिंदा constituents की performance का benchmark है, पूरे बाजार के हर share का प्रतिनिधित्व नहीं।"
+    },
+    {
+      "title": "4. Index और Individual Stock",
+      "content": "Individual Stock किसी एक कंपनी के share की कीमत और performance को दर्शाता है। Index कई constituents की performance को एक साथ मापता है। किसी index में तेजी के बावजूद कुछ shares गिर सकते हैं, और index गिरने पर भी कुछ shares बढ़ सकते हैं।"
+    },
+    {
+      "title": "5. Index का मूल्य कैसे बदलता है?",
+      "content": "Index value constituents के price movements, उनके weightage और index methodology के अनुसार बदलती है। यदि बड़े weight वाले constituents में अधिक movement हो, तो index पर उनका प्रभाव अपेक्षाकृत अधिक हो सकता है।"
+    },
+    {
+      "title": "6. Broad Market और Sectoral Indices",
+      "content": "Broad Market Index बाजार के व्यापक हिस्से की performance मापने का प्रयास करता है। Sectoral Index किसी विशेष sector, जैसे banking या information technology, की चुनी गई कंपनियों पर केंद्रित होता है। Index का उद्देश्य और constituents समझना जरूरी है।"
+    },
+    {
+      "title": "7. Index का उपयोग",
+      "content": "Investors और analysts index का उपयोग market performance समझने, portfolio benchmark बनाने और index funds या ETFs की performance का संदर्भ लेने के लिए कर सकते हैं। Index अपने-आप किसी investment की suitability या future return नहीं बताता।"
+    },
+    {
+      "title": "8. Index की सीमाएँ",
+      "content": "Index में शामिल कंपनियाँ पूरे economy या market की सभी कंपनियों का प्रतिनिधित्व नहीं करतीं। Constituents, sector concentration, weightage और methodology के कारण index का व्यवहार अलग हो सकता है। Historical performance future results की गारंटी नहीं है।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Index में तेजी",
+      "content": "यदि बड़े weight वाली कुछ कंपनियों के shares बढ़ते हैं, तो index बढ़ सकता है, भले ही कुछ अन्य shares गिर रहे हों।"
+    },
+    {
+      "title": "Example 2: Sectoral Index",
+      "content": "Banking sector index मुख्य रूप से संबंधित banking companies की performance को दर्शाता है। इससे पूरे बाजार की हर कंपनी की performance का पता नहीं चलता।"
+    },
+    {
+      "title": "Example 3: Benchmark",
+      "content": "किसी diversified portfolio की performance की तुलना एक उपयुक्त broad-market index से की जा सकती है। Benchmark चुनते समय portfolio की nature और index methodology समझना जरूरी है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Stock Market Index",
+      "meaning": "चुनी गई securities के समूह की performance मापने वाला benchmark।"
+    },
+    {
+      "term": "NIFTY 50",
+      "meaning": "NSE Indices द्वारा संचालित 50-company equity index।"
+    },
+    {
+      "term": "SENSEX",
+      "meaning": "BSE का प्रमुख 30-company equity index।"
+    },
+    {
+      "term": "Constituent",
+      "meaning": "Index में शामिल security या company।"
+    },
+    {
+      "term": "Benchmark",
+      "meaning": "Performance की तुलना के लिए इस्तेमाल किया जाने वाला मानक।"
+    },
+    {
+      "term": "Sectoral Index",
+      "meaning": "किसी विशेष sector पर केंद्रित index।"
+    },
+    {
+      "term": "Index Weightage",
+      "meaning": "Index में किसी constituent का निर्धारित हिस्सा।"
+    },
+    {
+      "term": "Index Methodology",
+      "meaning": "Index selection और calculation के नियम।"
+    }
+  ],
+  "risks": [
+    "Index की performance हर constituent की performance नहीं दर्शाती।",
+    "कुछ बड़े weight वाले shares index को अधिक प्रभावित कर सकते हैं।",
+    "Index value में गिरावट संभव है।",
+    "Historical index returns future returns की गारंटी नहीं देते।",
+    "गलत benchmark से portfolio comparison भ्रामक हो सकता है।"
+  ],
+  "commonMistakes": [
+    "NIFTY या SENSEX बढ़ने का अर्थ सभी shares का बढ़ना मानना।",
+    "Index को एक individual company समझना।",
+    "Sectoral index को पूरे बाजार का प्रतिनिधि मानना।",
+    "Index की methodology और constituents को न समझना।",
+    "Index के पिछले प्रदर्शन को भविष्य का निश्चित परिणाम मानना।"
+  ],
+  "summary": [
+    "Index चुनी गई securities की performance को दर्शाता है।",
+    "NIFTY 50 NSE Indices का प्रमुख 50-company index है।",
+    "SENSEX BSE का प्रमुख 30-company index है।",
+    "Sectoral index किसी विशेष sector पर केंद्रित होता है।",
+    "Index को benchmark की तरह इस्तेमाल किया जा सकता है, लेकिन future returns निश्चित नहीं हैं।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Stock Market Index क्या है?",
+      "options": [
+        "केवल एक कंपनी का bank account",
+        "चुनी गई securities की performance का benchmark",
+        "एक निश्चित लाभ योजना",
+        "एक प्रकार का demat account"
+      ],
+      "answerIndex": 1,
+      "explanation": "Index चुनी गई securities के समूह की performance को दर्शाता है।"
+    },
+    {
+      "question": "2. NIFTY 50 किससे संबंधित है?",
+      "options": [
+        "NSE Indices",
+        "केवल RBI",
+        "केवल Insurance sector",
+        "केवल commodity market"
+      ],
+      "answerIndex": 0,
+      "explanation": "NIFTY 50 को NSE Indices संचालित करता है।"
+    },
+    {
+      "question": "3. SENSEX किसका प्रमुख index है?",
+      "options": [
+        "NSDL",
+        "CDSL",
+        "BSE",
+        "एक private bank"
+      ],
+      "answerIndex": 2,
+      "explanation": "SENSEX BSE का प्रमुख equity index है।"
+    },
+    {
+      "question": "4. क्या Index बढ़ने पर सभी shares बढ़ते हैं?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, बिना किसी अपवाद के",
+        "हाँ, यदि volume कम हो",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Index के बढ़ने के बावजूद कुछ constituents के shares गिर सकते हैं।"
+    },
+    {
+      "question": "5. Sectoral Index किसे दर्शाता है?",
+      "options": [
+        "हर देश की पूरी economy",
+        "किसी विशेष sector की चुनी गई कंपनियाँ",
+        "केवल एक investor का portfolio",
+        "केवल bank deposits"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sectoral Index किसी खास sector की चुनी गई securities की performance पर केंद्रित होता है।"
+    }
+  ]
+    },
+  {
+  "id": "index-weightage-calculation",
+  "title": "Index Weightage और Index Calculation कैसे काम करते हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Index Weightage, Market-Cap Weighted Index और index movements को आसान भाषा में समझें।",
+  "lessons": [
+    "1. Index Weightage क्या है?",
+    "2. Market-Cap Weighted Index",
+    "3. Free-Float Market Cap की भूमिका",
+    "4. बड़े Weight वाले Shares का प्रभाव",
+    "5. Index Points कैसे बदलते हैं?",
+    "6. Index Rebalancing क्या है?",
+    "7. Index Constituents क्यों बदलते हैं?",
+    "8. Index Calculation की सीमाएँ"
+  ],
+  "beginnerTip": "Index में किसी company का weightage अधिक होने पर उसकी price movement का index पर अपेक्षाकृत अधिक प्रभाव पड़ सकता है।",
+  "detailedLessons": [
+    {
+      "title": "1. Index Weightage क्या है?",
+      "content": "Index Weightage बताता है कि index की कुल गणना में किसी constituent का कितना हिस्सा है। Weightage calculation index provider की methodology पर निर्भर करती है। सभी constituents का weightage बराबर होना जरूरी नहीं है।"
+    },
+    {
+      "title": "2. Market-Cap Weighted Index",
+      "content": "Market-cap weighted index में companies का weightage उनकी market capitalization से जुड़ा होता है। कुछ indices free-float market capitalization का उपयोग करते हैं। ऐसी methodology में eligible shares और लागू adjustments महत्वपूर्ण होते हैं।"
+    },
+    {
+      "title": "3. Free-Float Market Cap",
+      "content": "Free-float methodology में public trading के लिए eligible माने गए shares का market value ध्यान में रखा जाता है। इससे index weightage निकालते समय सभी outstanding shares को हमेशा समान रूप से शामिल नहीं किया जाता।"
+    },
+    {
+      "title": "4. बड़े Weight का प्रभाव",
+      "content": "यदि किसी constituent का weightage अधिक है, तो अन्य बातें समान रहने पर उसके price movement का index पर प्रभाव अधिक हो सकता है। कम weight वाले constituent का समान प्रतिशत movement index पर अपेक्षाकृत कम प्रभाव डाल सकता है।"
+    },
+    {
+      "title": "5. Index Points कैसे बदलते हैं?",
+      "content": "Index value constituent prices, weightages और index calculation formula के अनुसार बदलती है। Index का point movement और percentage movement अलग माप हैं। अलग-अलग indices के base values और methodologies अलग हो सकती हैं।"
+    },
+    {
+      "title": "6. Index Rebalancing",
+      "content": "Index Rebalancing या Review में methodology के अनुसार constituents या weightages में बदलाव किए जा सकते हैं। यह बदलाव periodic review या निर्धारित events के कारण हो सकता है। प्रक्रिया और तारीख index provider घोषित करता है।"
+    },
+    {
+      "title": "7. Constituents क्यों बदलते हैं?",
+      "content": "Eligibility criteria, market capitalization ranking, liquidity और अन्य methodology rules के कारण companies index में शामिल या बाहर हो सकती हैं। हर index के selection criteria अलग हो सकते हैं।"
+    },
+    {
+      "title": "8. Index Calculation की सीमाएँ",
+      "content": "Index calculation एक निर्धारित methodology के अनुसार performance का माप देती है। इससे किसी individual investor के portfolio return, tax, charges या future return का स्वतः पता नहीं चलता।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Weightage",
+      "content": "एक illustrative index में Company A का weight 10% और Company B का weight 2% है। अन्य बातें समान रहने पर Company A का समान percentage price movement index पर Company B की तुलना में अधिक प्रभाव डाल सकता है।"
+    },
+    {
+      "title": "Example 2: Percentage Movement",
+      "content": "यदि किसी index का value 20,000 से 20,200 हो जाता है, तो वृद्धि 200 points या 1% है। यह गणना केवल index के दिए गए values पर आधारित है।"
+    },
+    {
+      "title": "Example 3: Rebalancing",
+      "content": "यदि किसी company के eligibility criteria बदलते हैं, तो index provider review के दौरान उसे शामिल या बाहर कर सकता है। इससे index constituents और weightages बदल सकते हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Index Weightage",
+      "meaning": "Index में किसी constituent का हिस्सा।"
+    },
+    {
+      "term": "Market-Cap Weighted Index",
+      "meaning": "Market capitalization के आधार पर weightage तय करने वाला index।"
+    },
+    {
+      "term": "Free-Float Market Cap",
+      "meaning": "Eligible free-float shares के आधार पर निकाला गया market value।"
+    },
+    {
+      "term": "Constituent",
+      "meaning": "Index में शामिल company या security।"
+    },
+    {
+      "term": "Rebalancing",
+      "meaning": "Index constituents या weightages को methodology के अनुसार समायोजित करना।"
+    },
+    {
+      "term": "Base Value",
+      "meaning": "Index calculation के लिए निर्धारित आधार मूल्य।"
+    },
+    {
+      "term": "Point Movement",
+      "meaning": "Index value में points के रूप में बदलाव।"
+    },
+    {
+      "term": "Percentage Change",
+      "meaning": "Index value में प्रतिशत के रूप में बदलाव।"
+    }
+  ],
+  "risks": [
+    "बड़े weight वाले constituents index को अधिक प्रभावित कर सकते हैं।",
+    "Index calculation methodology समय के साथ बदल सकती है।",
+    "Index का return किसी individual investor के actual return से अलग हो सकता है।",
+    "Index points को percentage return के समान समझने से भ्रम हो सकता है।",
+    "Index rebalancing के प्रभाव का अनुमान निश्चित रूप से नहीं लगाया जा सकता।"
+  ],
+  "commonMistakes": [
+    "मान लेना कि हर constituent का weight बराबर है।",
+    "Index points और percentage movement में अंतर न समझना।",
+    "हर index की calculation methodology समान मानना।",
+    "Index performance को अपने portfolio return के बराबर मानना।",
+    "Weightage को company quality की गारंटी समझना।"
+  ],
+  "summary": [
+    "Weightage index में किसी constituent का हिस्सा बताता है।",
+    "कुछ indices market cap या free-float market cap पर आधारित होते हैं।",
+    "अधिक weight वाले share की movement का index पर अधिक प्रभाव हो सकता है।",
+    "Index provider review के दौरान constituents और weights बदल सकता है।",
+    "Index points, percentage movement और investor returns अलग-अलग माप हैं।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Index Weightage क्या बताता है?",
+      "options": [
+        "कंपनी का dividend",
+        "कंपनी के employees की संख्या",
+        "Index में constituent का हिस्सा",
+        "केवल face value"
+      ],
+      "answerIndex": 2,
+      "explanation": "Weightage बताता है कि index calculation में किसी constituent का कितना हिस्सा है।"
+    },
+    {
+      "question": "2. अधिक weight वाले share की movement का क्या प्रभाव हो सकता है?",
+      "options": [
+        "Index पर अपेक्षाकृत अधिक प्रभाव",
+        "कोई प्रभाव नहीं",
+        "केवल bank balance बदलता है",
+        "Index हमेशा स्थिर रहता है"
+      ],
+      "answerIndex": 0,
+      "explanation": "अन्य बातें समान रहने पर अधिक weight वाले constituent का price movement index को अधिक प्रभावित कर सकता है।"
+    },
+    {
+      "question": "3. Index Rebalancing क्या है?",
+      "options": [
+        "Bank account खोलना",
+        "Dividend की घोषणा",
+        "हर share की कीमत स्थिर करना",
+        "Methodology के अनुसार constituents या weightages में बदलाव"
+      ],
+      "answerIndex": 3,
+      "explanation": "Rebalancing में index provider के नियमों के अनुसार constituents या weightages समायोजित हो सकते हैं।"
+    },
+    {
+      "question": "4. Index 20,000 से 20,200 हो जाए, तो percentage increase कितना है?",
+      "options": [
+        "0.1%",
+        "1%",
+        "10%",
+        "20%"
+      ],
+      "answerIndex": 1,
+      "explanation": "वृद्धि 200 points है। 200 ÷ 20,000 × 100 = 1%।"
+    },
+    {
+      "question": "5. क्या Index Return हमेशा investor के actual return के बराबर होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, सभी charges के बाद भी",
+        "नहीं",
+        "केवल market बंद होने पर"
+      ],
+      "answerIndex": 2,
+      "explanation": "Portfolio composition, charges, taxes और tracking differences के कारण actual return अलग हो सकता है।"
+    }
+  ]
+    },
+  {
+  "id": "bull-bear-market",
+  "title": "Bull Market और Bear Market क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Bull Market, Bear Market, Market Sentiment और market cycles को सरल हिंदी और English में समझें।",
+  "lessons": [
+    "1. Bull Market क्या है?",
+    "2. Bear Market क्या है?",
+    "3. Bullish और Bearish Sentiment",
+    "4. Market Trends कैसे बनते हैं?",
+    "5. Bull और Bear Market के संभावित कारण",
+    "6. Market Corrections और Crashes",
+    "7. Headlines और Investor Emotions",
+    "8. Market Cycles में जोखिम प्रबंधन"
+  ],
+  "beginnerTip": "Bull Market या Bear Market का नाम देखकर निर्णय न लें। Market direction बदल सकती है और कोई भी trend हमेशा जारी रहने की गारंटी नहीं है।",
+  "detailedLessons": [
+    {
+      "title": "1. Bull Market क्या है?",
+      "content": "Bull Market आम तौर पर उस अवधि को कहा जाता है जिसमें बाजार या किसी asset की कीमतें व्यापक रूप से बढ़ रही हों और positive sentiment हो। इसकी कोई एक सार्वभौमिक परिभाषा सभी बाजारों में लागू नहीं होती। केवल कुछ दिनों की तेजी से लंबा Bull Market घोषित नहीं किया जा सकता।"
+    },
+    {
+      "title": "2. Bear Market क्या है?",
+      "content": "Bear Market आम तौर पर लंबे समय तक कमजोर market trend, गिरती कीमतों और negative sentiment से जुड़ा होता है। अलग-अलग analysts और markets इसे अलग thresholds या time periods से परिभाषित कर सकते हैं। गिरते बाजार में भी कुछ shares बढ़ सकते हैं।"
+    },
+    {
+      "title": "3. Bullish और Bearish Sentiment",
+      "content": "Bullish sentiment का अर्थ कीमतों या बाजार के बारे में आशावादी दृष्टिकोण है। Bearish sentiment का अर्थ निराशावादी या गिरावट की आशंका वाला दृष्टिकोण है। Sentiment बदल सकता है और हमेशा actual market movement का सही अनुमान नहीं देता।"
+    },
+    {
+      "title": "4. Market Trends कैसे बनते हैं?",
+      "content": "Market trends को economic growth, interest rates, company earnings, liquidity, global events, investor expectations और sentiment प्रभावित कर सकते हैं। कोई एक factor अकेले हर market movement को नहीं समझाता।"
+    },
+    {
+      "title": "5. Bull और Bear Market के कारण",
+      "content": "Positive earnings, economic expectations और investor confidence तेजी में योगदान कर सकते हैं। कमजोर earnings, economic uncertainty, higher risk aversion या unexpected events गिरावट में योगदान कर सकते हैं। बाजार पहले से उपलब्ध जानकारी को भी कीमतों में शामिल कर सकता है।"
+    },
+    {
+      "title": "6. Correction और Crash",
+      "content": "Market Correction आम तौर पर हाल की ऊँची कीमतों से उल्लेखनीय गिरावट को कहा जाता है। Market Crash अधिक तीव्र या तेजी से हुई गिरावट को दर्शाता है। इन terms की सटीक परिभाषा context के अनुसार बदल सकती है।"
+    },
+    {
+      "title": "7. Headlines और Emotions",
+      "content": "बड़ी headlines के दौरान डर या उत्साह बढ़ सकता है। केवल सोशल मीडिया या एक खबर के आधार पर तुरंत फैसला लेना जोखिमपूर्ण है। स्रोत की विश्वसनीयता, खबर का context और company fundamentals समझना उपयोगी है।"
+    },
+    {
+      "title": "8. Market Cycles में जोखिम प्रबंधन",
+      "content": "बाजार के अलग-अलग phases में volatility, liquidity और investor behavior बदल सकते हैं। Diversification, investment horizon और अपनी risk capacity को समझना उपयोगी है। कोई भी strategy हर Bull या Bear Market में सफल होने की गारंटी नहीं देती।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Bullish Market",
+      "content": "यदि कई महीनों में broad market index लगातार मजबूत होता है और earnings expectations भी बेहतर रहती हैं, तो analysts उस अवधि को Bullish phase कह सकते हैं। यह भविष्य की तेजी की गारंटी नहीं है।"
+    },
+    {
+      "title": "Example 2: Bearish Market",
+      "content": "यदि कमजोर economic outlook और खराब earnings expectations के साथ बाजार लंबे समय तक गिरता है, तो इसे Bearish phase कहा जा सकता है। सभी shares का प्रदर्शन समान होना जरूरी नहीं है।"
+    },
+    {
+      "title": "Example 3: Correction",
+      "content": "यदि कोई index हाल के high से उल्लेखनीय रूप से गिरता है, तो market commentary में इसे correction कहा जा सकता है। यह अपने-आप किसी निश्चित भविष्य की दिशा को साबित नहीं करता।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Bull Market",
+      "meaning": "आम तौर पर बढ़ती कीमतों और सकारात्मक market trend की अवधि।"
+    },
+    {
+      "term": "Bear Market",
+      "meaning": "आम तौर पर कमजोर trend और गिरती कीमतों की अवधि।"
+    },
+    {
+      "term": "Bullish",
+      "meaning": "बाजार या कीमतों को लेकर आशावादी दृष्टिकोण।"
+    },
+    {
+      "term": "Bearish",
+      "meaning": "बाजार या कीमतों को लेकर निराशावादी दृष्टिकोण।"
+    },
+    {
+      "term": "Market Sentiment",
+      "meaning": "बाजार के बारे में investors की सामूहिक भावना या धारणा।"
+    },
+    {
+      "term": "Market Correction",
+      "meaning": "हाल की ऊँची कीमतों से उल्लेखनीय गिरावट।"
+    },
+    {
+      "term": "Market Crash",
+      "meaning": "बाजार में तीव्र या तेजी से हुई बड़ी गिरावट।"
+    },
+    {
+      "term": "Market Cycle",
+      "meaning": "समय के साथ बाजार में अलग-अलग phases का आना।"
+    }
+  ],
+  "risks": [
+    "Bull Market में भी कीमतें तेजी से गिर सकती हैं।",
+    "Bear Market में बेचने का दबाव और volatility बढ़ सकती है।",
+    "Sentiment या headlines के आधार पर लिए गए निर्णय गलत हो सकते हैं।",
+    "Market timing का प्रयास नुकसान का कारण बन सकता है।",
+    "कोई भी market phase निश्चित अवधि तक जारी रहने की गारंटी नहीं देता।"
+  ],
+  "commonMistakes": [
+    "Bull Market में हर share को अच्छा मान लेना।",
+    "Bear Market में सभी shares को खराब मान लेना।",
+    "हर गिरावट को crash कहना।",
+    "सोशल मीडिया की predictions पर बिना जाँच भरोसा करना।",
+    "यह मानना कि बाजार की दिशा निश्चित रूप से पता लगाई जा सकती है।"
+  ],
+  "summary": [
+    "Bull Market आम तौर पर बढ़ते trend से जुड़ा है।",
+    "Bear Market आम तौर पर कमजोर या गिरते trend से जुड़ा है।",
+    "Bullish और Bearish market sentiment को दर्शाते हैं।",
+    "Correction और crash की परिभाषा context के अनुसार बदल सकती है।",
+    "Market direction निश्चित नहीं होती; risk management महत्वपूर्ण है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Bull Market सामान्यतः किससे जुड़ा होता है?",
+      "options": [
+        "बढ़ते market trend से",
+        "हर share का शून्य हो जाना",
+        "केवल bank deposits से",
+        "Trading हमेशा बंद रहने से"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bull Market आम तौर पर बढ़ती कीमतों और सकारात्मक trend से जुड़ा होता है।"
+    },
+    {
+      "question": "2. Bearish Sentiment का अर्थ क्या है?",
+      "options": [
+        "निश्चित लाभ",
+        "केवल dividend बढ़ना",
+        "गिरावट को लेकर निराशावादी दृष्टिकोण",
+        "Market risk समाप्त होना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Bearish sentiment बाजार के बारे में निराशावादी या गिरावट की आशंका वाला दृष्टिकोण है।"
+    },
+    {
+      "question": "3. क्या Bull Market में कीमतें गिर सकती हैं?",
+      "options": [
+        "नहीं, कभी नहीं",
+        "हाँ",
+        "केवल रविवार को",
+        "केवल dividend date पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bull Market में भी corrections और गिरावट संभव हैं।"
+    },
+    {
+      "question": "4. Market Sentiment क्या दर्शाता है?",
+      "options": [
+        "केवल कंपनी का debt",
+        "केवल tax rate",
+        "केवल face value",
+        "Investors की सामूहिक भावना या धारणा"
+      ],
+      "answerIndex": 3,
+      "explanation": "Market Sentiment बाजार को लेकर investors की सामूहिक धारणा को दर्शाता है।"
+    },
+    {
+      "question": "5. Market phases में जिम्मेदार approach क्या है?",
+      "options": [
+        "हर headline पर तुरंत trade करना",
+        "सभी risks को अनदेखा करना",
+        "Risk management और विश्वसनीय जानकारी का उपयोग",
+        "निश्चित लाभ की उम्मीद रखना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Risk management और विश्वसनीय जानकारी अलग-अलग market conditions को समझने में मदद करती है।"
+    }
+  ]
+    },
+  {
+  "id": "market-volatility-guide",
+  "title": "Market Volatility क्या है और इसे कैसे समझें?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Market Volatility, price fluctuations, volatility measures और market risk को सरल हिंदी और English में समझें।",
+  "lessons": [
+    "1. Market Volatility क्या है?",
+    "2. High Volatility और Low Volatility",
+    "3. Volatility और Risk में संबंध",
+    "4. Volatility के सामान्य कारण",
+    "5. Historical Volatility क्या है?",
+    "6. Implied Volatility क्या है?",
+    "7. India VIX का परिचय",
+    "8. Volatility के दौरान सावधानियाँ"
+  ],
+  "beginnerTip": "High Volatility का अर्थ कीमतों में अधिक उतार-चढ़ाव है, न कि कीमत का निश्चित रूप से ऊपर या नीचे जाना।",
+  "detailedLessons": [
+    {
+      "title": "1. Market Volatility क्या है?",
+      "content": "Volatility किसी security या market की कीमतों में समय के साथ होने वाले उतार-चढ़ाव की मात्रा को दर्शाती है। अधिक volatility में कीमतें अपेक्षाकृत तेजी से और बड़े स्तर पर बदल सकती हैं। Volatility दिशा नहीं बताती; कीमत ऊपर या नीचे दोनों जा सकती है।"
+    },
+    {
+      "title": "2. High Volatility और Low Volatility",
+      "content": "High Volatility में price movements अधिक बड़े या तेज हो सकते हैं। Low Volatility में कीमतों का उतार-चढ़ाव अपेक्षाकृत कम हो सकता है। Low Volatility का अर्थ risk समाप्त होना नहीं है; परिस्थितियाँ बदलने पर volatility बढ़ सकती है।"
+    },
+    {
+      "title": "3. Volatility और Risk",
+      "content": "Volatility market risk को समझने में उपयोगी measure है, लेकिन यह सभी प्रकार के risks को नहीं मापती। Liquidity risk, credit risk, business risk और operational risk अलग-अलग हो सकते हैं। किसी asset की volatility कम होने से वह पूरी तरह सुरक्षित नहीं बन जाता।"
+    },
+    {
+      "title": "4. Volatility के कारण",
+      "content": "Economic data, interest rate announcements, company results, geopolitical events, market-wide news और अचानक बदलती expectations volatility को प्रभावित कर सकती हैं। कभी-कभी कम liquidity भी price movements को बड़ा बना सकती है।"
+    },
+    {
+      "title": "5. Historical Volatility",
+      "content": "Historical Volatility पिछले price data के आधार पर उतार-चढ़ाव का अनुमान लगाती है। इसकी गणना में अलग-अलग time periods और statistical methods इस्तेमाल हो सकते हैं। Historical volatility बताती है कि अतीत में price movements कैसे रहे; यह भविष्य की गारंटी नहीं है।"
+    },
+    {
+      "title": "6. Implied Volatility",
+      "content": "Implied Volatility options prices से निकाला गया बाजार की अपेक्षित future volatility का अनुमान है। यह सीधे भविष्य की कीमत की दिशा नहीं बताता। Implied volatility में बदलाव options की कीमतों को प्रभावित कर सकता है, लेकिन परिणाम अन्य factors पर भी निर्भर करता है।"
+    },
+    {
+      "title": "7. India VIX का परिचय",
+      "content": "India VIX भारतीय बाजार में NIFTY options prices से निकाला जाने वाला volatility indicator है। इसे अक्सर बाजार की निकट अवधि की अपेक्षित volatility के संकेतक के रूप में देखा जाता है। यह NIFTY की दिशा की गारंटी नहीं देता और न ही अपने-आप खरीदने या बेचने का संकेत है।"
+    },
+    {
+      "title": "8. Volatility के दौरान सावधानियाँ",
+      "content": "तेज market movements के दौरान order execution price बदल सकती है और stop-loss भी अपेक्षित कीमत पर execute न हो। अपनी risk capacity समझना, leverage के जोखिम पहचानना और बिना समझे trade न करना महत्वपूर्ण है। कोई भी indicator निश्चित परिणाम नहीं देता।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: High Volatility",
+      "content": "यदि किसी शेयर की कीमत एक दिन में तेजी से ऊपर जाती है और फिर नीचे आती है, तो उस अवधि में volatility अधिक हो सकती है। इससे भविष्य की दिशा तय नहीं होती।"
+    },
+    {
+      "title": "Example 2: Historical Volatility",
+      "content": "किसी analyst ने पिछले 30 trading days के price data से volatility निकाली। यह calculation पिछले data पर आधारित होगी और अगले 30 दिनों का निश्चित अनुमान नहीं होगी।"
+    },
+    {
+      "title": "Example 3: India VIX",
+      "content": "यदि India VIX बढ़ता है, तो यह options market में अपेक्षित volatility बढ़ने का संकेत हो सकता है। इससे यह निश्चित नहीं होता कि NIFTY बढ़ेगा या गिरेगा।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Volatility",
+      "meaning": "कीमतों में उतार-चढ़ाव की मात्रा।"
+    },
+    {
+      "term": "High Volatility",
+      "meaning": "कीमतों में अपेक्षाकृत तेज या बड़े उतार-चढ़ाव की स्थिति।"
+    },
+    {
+      "term": "Low Volatility",
+      "meaning": "कीमतों में अपेक्षाकृत कम उतार-चढ़ाव की स्थिति।"
+    },
+    {
+      "term": "Historical Volatility",
+      "meaning": "पिछले price data से मापा गया volatility estimate।"
+    },
+    {
+      "term": "Implied Volatility",
+      "meaning": "Options prices से निकाला गया अपेक्षित future volatility का अनुमान।"
+    },
+    {
+      "term": "India VIX",
+      "meaning": "NIFTY options prices से निकाला जाने वाला भारतीय बाजार का volatility indicator।"
+    },
+    {
+      "term": "Market Risk",
+      "meaning": "बाजार में price movements के कारण निवेश मूल्य में नुकसान का जोखिम।"
+    },
+    {
+      "term": "Liquidity Risk",
+      "meaning": "उचित समय या कीमत पर asset खरीदने या बेचने में कठिनाई का जोखिम।"
+    }
+  ],
+  "risks": [
+    "High Volatility में कीमतें तेजी से बदल सकती हैं।",
+    "Stop-Loss अपेक्षित कीमत पर execute होने की गारंटी नहीं देता।",
+    "Historical Volatility भविष्य के movements की गारंटी नहीं देती।",
+    "Implied Volatility कीमत की दिशा नहीं बताती।",
+    "Leverage के साथ तेज price movements से नुकसान बढ़ सकता है।",
+    "कम liquidity में spread और slippage बढ़ सकते हैं।"
+  ],
+  "commonMistakes": [
+    "High Volatility को हमेशा market गिरने का संकेत समझना।",
+    "Low Volatility को zero risk मानना।",
+    "India VIX को NIFTY की निश्चित दिशा का prediction समझना।",
+    "Historical Volatility को भविष्य की गारंटी मानना।",
+    "Volatile market में बिना order type समझे trade करना।"
+  ],
+  "summary": [
+    "Volatility कीमतों में उतार-चढ़ाव की मात्रा है।",
+    "High Volatility में कीमतें ऊपर या नीचे तेजी से बदल सकती हैं।",
+    "Historical Volatility पिछले data पर आधारित होती है।",
+    "Implied Volatility options prices से निकाला गया estimate है।",
+    "India VIX volatility का indicator है, market direction की गारंटी नहीं।",
+    "Volatile conditions में risk management और order execution को समझना महत्वपूर्ण है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Market Volatility क्या दर्शाती है?",
+      "options": [
+        "कंपनी के employees की संख्या",
+        "कीमतों में उतार-चढ़ाव की मात्रा",
+        "निश्चित dividend",
+        "Bank account balance"
+      ],
+      "answerIndex": 1,
+      "explanation": "Volatility price movements की मात्रा को दर्शाती है, न कि उनकी निश्चित दिशा को।"
+    },
+    {
+      "question": "2. High Volatility का क्या अर्थ है?",
+      "options": [
+        "कीमतों में तेज या बड़े उतार-चढ़ाव हो सकते हैं",
+        "कीमत हमेशा बढ़ेगी",
+        "नुकसान असंभव है",
+        "Market बंद है"
+      ],
+      "answerIndex": 0,
+      "explanation": "High Volatility में कीमतें तेजी से ऊपर या नीचे बदल सकती हैं।"
+    },
+    {
+      "question": "3. Historical Volatility किस पर आधारित होती है?",
+      "options": [
+        "केवल भविष्य की खबरों पर",
+        "कंपनी के logo पर",
+        "पिछले price data पर",
+        "केवल dividend पर"
+      ],
+      "answerIndex": 2,
+      "explanation": "Historical Volatility का अनुमान पिछले price movements के आधार पर निकाला जाता है।"
+    },
+    {
+      "question": "4. Implied Volatility सामान्यतः किससे निकाली जाती है?",
+      "options": [
+        "केवल bank deposits से",
+        "केवल company name से",
+        "केवल annual report के cover से",
+        "Options prices से"
+      ],
+      "answerIndex": 3,
+      "explanation": "Implied Volatility options prices से निकाला गया expected volatility estimate है।"
+    },
+    {
+      "question": "5. India VIX क्या बताने में मदद करता है?",
+      "options": [
+        "हर share का निश्चित return",
+        "Options market से संबंधित अपेक्षित volatility का संकेत",
+        "हर company का profit",
+        "सभी investors की guaranteed income"
+      ],
+      "answerIndex": 1,
+      "explanation": "India VIX को बाजार की निकट अवधि की अपेक्षित volatility के संकेतक के रूप में देखा जाता है।"
+    }
+  ]
+    }
     ]
