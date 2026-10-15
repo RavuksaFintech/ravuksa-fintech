@@ -9177,5 +9177,199 @@
       }
     ]
   },
-  
+    {
+    "id": "how-stock-exchange-works",
+    "title": "Stock Exchange कैसे काम करता है? (How Does a Stock Exchange Work?)",
+    "category": "Stock Market",
+    "level": "Beginner",
+    "description": "Stock Exchange क्या है, shares की buying-selling कैसे होती है और exchange investors को सुरक्षित व व्यवस्थित trading environment देने में क्या भूमिका निभाता है, इसे हिंदी और English में सीखें।",
+    "beginnerTip": "Stock Exchange एक organized marketplace है जहाँ eligible buyers और sellers के orders trading system के माध्यम से match होते हैं। Share का price demand, supply और market conditions के अनुसार बदल सकता है।",
+    "lessons": [
+      "1. Stock Exchange क्या है? (What is a Stock Exchange?)",
+      "2. Stock Exchange और Stock Market में क्या अंतर है?",
+      "3. Buyer, Seller और Broker की भूमिका",
+      "4. Trading Order कैसे लगाया जाता है?",
+      "5. Buy और Sell Orders Match कैसे होते हैं?",
+      "6. Share Price कैसे तय होता है?",
+      "7. Clearing और Settlement क्या हैं?",
+      "8. Stock Exchange के नियम और Investor Protection"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Stock Exchange क्या है? (What is a Stock Exchange?)",
+        "content": "Stock Exchange एक regulated marketplace है जहाँ listed securities, जैसे shares, को exchange के निर्धारित नियमों और trading system के अनुसार खरीदा और बेचा जाता है। भारत में NSE और BSE प्रमुख stock exchanges हैं। Exchange trading को व्यवस्थित करने, orders match करने और market information उपलब्ध कराने में महत्वपूर्ण भूमिका निभाता है।"
+      },
+      {
+        "title": "2. Stock Exchange और Stock Market में अंतर",
+        "content": "Stock Market एक व्यापक व्यवस्था है जिसमें shares की issuance, buying-selling और उनसे जुड़ी संस्थाएँ शामिल होती हैं। Stock Exchange इस व्यवस्था का एक महत्वपूर्ण हिस्सा है, जहाँ listed securities की trading होती है। Stock Market और Stock Exchange संबंधित हैं, लेकिन दोनों शब्दों का अर्थ बिल्कुल एक जैसा नहीं है।"
+      },
+      {
+        "title": "3. Buyer, Seller और Broker की भूमिका",
+        "content": "Buyer वह व्यक्ति या संस्था है जो shares खरीदना चाहती है। Seller वह है जो shares बेचना चाहता है। Retail investors सामान्यतः registered broker या trading platform के माध्यम से orders देते हैं। Broker investor के order को exchange के trading system तक पहुँचाने में मदद करता है। Broker या platform की सेवाएँ, charges और सुविधाएँ अलग-अलग हो सकती हैं।"
+      },
+      {
+        "title": "4. Trading Order कैसे लगाया जाता है?",
+        "content": "Investor अपने trading account में login करके किसी share को चुनता है और Buy या Sell order देता है। Order में quantity और order type जैसे Market Order या Limit Order चुने जा सकते हैं। Limit Order में investor अपनी निर्धारित price बताता है। Market Order उपलब्ध market prices पर execution का प्रयास करता है, लेकिन वास्तविक execution price बदल सकती है। Order का पूरा या आंशिक execution होना market conditions और उपलब्ध orders पर निर्भर करता है।"
+      },
+      {
+        "title": "5. Buy और Sell Orders Match कैसे होते हैं?",
+        "content": "Exchange का electronic trading system eligible buy और sell orders को निर्धारित matching rules के अनुसार match करता है। सामान्यतः price और order की priority महत्वपूर्ण होती है। उदाहरण के लिए, यदि किसी share के लिए compatible buyer और seller orders उपलब्ध हों, तो trade execute हो सकता है। हर order तुरंत execute हो, इसकी गारंटी नहीं होती।"
+      },
+      {
+        "title": "6. Share Price कैसे तय होता है?",
+        "content": "Share price पर demand और supply का प्रभाव पड़ता है। यदि buyers किसी share को खरीदने के लिए अधिक कीमत देने को तैयार हों और sellers कम मात्रा में बेच रहे हों, तो price ऊपर जा सकता है। इसके विपरीत selling pressure बढ़ने पर price नीचे जा सकता है। Company results, business outlook, economic conditions, news और investor expectations भी price को प्रभावित कर सकते हैं।"
+      },
+      {
+        "title": "7. Clearing और Settlement क्या हैं?",
+        "content": "Trade execute होने के बाद clearing और settlement की प्रक्रिया पूरी होती है। Clearing में trade से जुड़े दायित्वों की गणना और व्यवस्था की जाती है। Settlement में securities और funds का संबंधित पक्षों के बीच निर्धारित प्रक्रिया के अनुसार transfer होता है। भारत में settlement के नियम और समय exchange तथा लागू regulations के अनुसार होते हैं। किसी भी trade का execution और उसका settlement अलग-अलग चरण हैं।"
+      },
+      {
+        "title": "8. Stock Exchange के नियम और Investor Protection",
+        "content": "Stock Exchanges निर्धारित नियमों, surveillance systems और trading procedures के माध्यम से orderly trading में मदद करते हैं। भारत में SEBI securities market का प्रमुख regulator है। Investors को registered intermediaries का उपयोग करना चाहिए, order details जाँचनी चाहिए, contract notes और account statements सुरक्षित रखने चाहिए तथा suspicious activity की शिकायत उचित official channel पर करनी चाहिए। Exchange या regulator की मौजूदगी market risk को समाप्त नहीं करती।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Buy Order",
+        "content": "मान लीजिए किसी investor ने ABC Ltd. के 10 shares खरीदने के लिए ₹100 प्रति share का Limit Order लगाया। यदि matching rules के अनुसार ₹100 या उससे बेहतर compatible selling orders उपलब्ध हों, तो order पूरा या आंशिक रूप से execute हो सकता है।"
+      },
+      {
+        "title": "Example 2: Sell Order",
+        "content": "एक investor के पास XYZ Ltd. के shares हैं और वह उन्हें बेचने का order देता है। यदि उसके order के साथ match होने वाला buyer order उपलब्ध है, तो trade execute हो सकता है। अन्यथा order pending रह सकता है या निर्धारित conditions के अनुसार cancel हो सकता है।"
+      },
+      {
+        "title": "Example 3: Demand और Supply",
+        "content": "किसी company के बारे में सकारात्मक business news आने पर कुछ investors shares खरीदने में अधिक रुचि दिखा सकते हैं। यदि demand बढ़ती है और sellers अपनी कीमतें बढ़ाते हैं, तो share price ऊपर जा सकता है। हालांकि, price movement की गारंटी नहीं होती।"
+      },
+      {
+        "title": "Example 4: Trade और Settlement",
+        "content": "किसी investor का buy order execute होने के बाद भी पूरी प्रक्रिया उसी क्षण समाप्त नहीं मानी जाती। Trade के बाद applicable clearing और settlement process के अनुसार funds और securities का transfer होता है।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Stock Exchange",
+        "meaning": "ऐसा organized marketplace जहाँ listed securities की trading निर्धारित नियमों के अनुसार होती है।"
+      },
+      {
+        "term": "Buyer",
+        "meaning": "वह व्यक्ति या संस्था जो security खरीदना चाहती है।"
+      },
+      {
+        "term": "Seller",
+        "meaning": "वह व्यक्ति या संस्था जो अपनी security बेचना चाहती है।"
+      },
+      {
+        "term": "Broker",
+        "meaning": "Registered intermediary जो investor के orders को exchange तक पहुँचाने और संबंधित सेवाएँ देने में मदद करता है।"
+      },
+      {
+        "term": "Trading Order",
+        "meaning": "Security खरीदने या बेचने के लिए दिया गया निर्देश।"
+      },
+      {
+        "term": "Market Order",
+        "meaning": "ऐसा order जो उपलब्ध market prices पर execution का प्रयास करता है।"
+      },
+      {
+        "term": "Limit Order",
+        "meaning": "ऐसा order जिसमें investor खरीदने की अधिकतम या बेचने की न्यूनतम price निर्धारित करता है।"
+      },
+      {
+        "term": "Order Matching",
+        "meaning": "Trading system द्वारा compatible buy और sell orders को match करने की प्रक्रिया।"
+      },
+      {
+        "term": "Clearing",
+        "meaning": "Executed trades से जुड़े दायित्वों की गणना और व्यवस्था की प्रक्रिया।"
+      },
+      {
+        "term": "Settlement",
+        "meaning": "Trade के बाद securities और funds के transfer की प्रक्रिया।"
+      }
+    ],
+    "risks": [
+      "Share prices ऊपर या नीचे जा सकते हैं और निवेश में नुकसान हो सकता है।",
+      "Market Order में वास्तविक execution price अपेक्षित price से अलग हो सकती है।",
+      "कम liquidity होने पर order का पूरा execution कठिन हो सकता है।",
+      "Trading charges, taxes और अन्य applicable fees से कुल लागत बढ़ सकती है।",
+      "Exchange पर trading होने का अर्थ यह नहीं है कि हर investment सुरक्षित या लाभदायक है।",
+      "गलत order type, quantity या price चुनने से अनचाहा trade हो सकता है।"
+    ],
+    "commonMistakes": [
+      "Stock Exchange और stock broker को एक ही चीज समझना।",
+      "यह मान लेना कि हर buy या sell order तुरंत execute हो जाएगा।",
+      "Market Order और Limit Order के अंतर को समझे बिना order देना।",
+      "Share price को केवल एक news या social media post के आधार पर निश्चित मान लेना।",
+      "Trade execute होने और settlement पूरा होने को एक ही चरण समझना।",
+      "Brokerage, taxes और अन्य applicable charges को नजरअंदाज करना।",
+      "यह मान लेना कि stock exchange पर listed हर share में risk कम होता है।"
+    ],
+    "summary": [
+      "Stock Exchange listed securities की trading के लिए organized marketplace है।",
+      "Investors सामान्यतः broker या trading platform के माध्यम से orders देते हैं।",
+      "Electronic trading system compatible buy और sell orders को निर्धारित rules के अनुसार match करता है।",
+      "Share price demand, supply और कई market factors से प्रभावित होता है।",
+      "Trade execution के बाद clearing और settlement की प्रक्रिया होती है।",
+      "Stock Exchange और SEBI की भूमिका महत्वपूर्ण है, लेकिन market risk समाप्त नहीं होता।",
+      "Investors को order details, charges और official account records ध्यान से जाँचने चाहिए।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Stock Exchange का मुख्य काम क्या है?",
+        "options": [
+          "हर investor को guaranteed profit देना",
+          "Listed securities की trading के लिए organized marketplace उपलब्ध कराना",
+          "हर company का share price स्थिर रखना",
+          "सभी investors के नुकसान की भरपाई करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Stock Exchange निर्धारित rules और trading systems के माध्यम से listed securities की trading को व्यवस्थित करता है।"
+      },
+      {
+        "question": "2. Investor सामान्यतः share खरीदने या बेचने का order किसके माध्यम से देता है?",
+        "options": [
+          "केवल company के receptionist के माध्यम से",
+          "केवल newspaper के माध्यम से",
+          "Registered broker या trading platform के माध्यम से",
+          "केवल bank के cash counter पर"
+        ],
+        "answerIndex": 2,
+        "explanation": "Retail investors सामान्यतः registered broker या trading platform के जरिए exchange तक orders पहुँचाते हैं।"
+      },
+      {
+        "question": "3. Limit Order में investor क्या निर्धारित करता है?",
+        "options": [
+          "सिर्फ company का नाम",
+          "खरीदने की अधिकतम या बेचने की न्यूनतम price",
+          "Company का annual profit",
+          "अगले दिन का guaranteed share price"
+        ],
+        "answerIndex": 1,
+        "explanation": "Limit Order में investor अपनी price limit तय करता है। Order execute होना उपलब्ध compatible orders पर निर्भर करता है।"
+      },
+      {
+        "question": "4. Share price को कौन-सा factor प्रभावित कर सकता है?",
+        "options": [
+          "केवल investor का account password",
+          "केवल broker का नाम",
+          "केवल trading app का logo",
+          "Demand, supply, company performance और market conditions"
+        ],
+        "answerIndex": 3,
+        "explanation": "Demand और supply के साथ company performance, economic conditions और investor expectations भी share price को प्रभावित कर सकते हैं।"
+      },
+      {
+        "question": "5. Trade execute होने के बाद clearing और settlement का क्या महत्व है?",
+        "options": [
+          "ये trade से जुड़े दायित्वों और funds तथा securities के transfer की प्रक्रिया में मदद करते हैं",
+          "ये profit की guarantee देते हैं",
+          "ये share price को हमेशा बढ़ाते हैं",
+          "इनसे market risk पूरी तरह समाप्त हो जाता है"
+        ],
+        "answerIndex": 0,
+        "explanation": "Clearing और settlement executed trade से जुड़े दायित्वों तथा funds और securities के transfer को पूरा करने की प्रक्रियाएँ हैं।"
+      }
+    ]
+    }
     ]
