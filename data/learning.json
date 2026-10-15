@@ -15066,5 +15066,1125 @@
       "explanation": "Cash flow, debt और earnings consistency company की financial स्थिति समझने में मदद करते हैं।"
     }
   ]
+  },
+  {
+  "id": "roe-roce-basics",
+  "title": "91. ROE और ROCE क्या हैं? — Profitability Ratios",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Return on Equity और Return on Capital Employed को आसान हिंदी और English में समझें।",
+  "lessons": [
+    "1. ROE क्या है?",
+    "2. ROCE क्या है?",
+    "3. ROE और ROCE का Formula",
+    "4. Companies के ratios की तुलना",
+    "5. Profitability ratios की सीमाएं"
+  ],
+  "detailedLessons": [
+    {
+      "title": "ROE का अर्थ",
+      "content": "ROE यानी Return on Equity यह दर्शाता है कि company shareholders की equity के मुकाबले कितना profit कमा रही है। इसका सामान्य formula Net Profit attributable to shareholders ÷ Average Shareholders' Equity × 100 है।"
+    },
+    {
+      "title": "ROCE का अर्थ",
+      "content": "ROCE यानी Return on Capital Employed यह दर्शाता है कि business अपने capital का उपयोग करके कितना operating profit generate करता है। इसका सामान्य formula EBIT ÷ Capital Employed × 100 है। अलग-अलग sources में calculation की definitions अलग हो सकती हैं।"
+    },
+    {
+      "title": "Ratios का उपयोग",
+      "content": "ROE और ROCE को कई वर्षों के trend, industry peers, debt और business conditions के साथ देखना चाहिए। एक वर्ष का ऊंचा ratio अपने-आप अच्छी company या अच्छी investment साबित नहीं करता।"
+    }
+  ],
+  "examples": [
+    "यदि net profit ₹20 करोड़ और average equity ₹100 करोड़ है, तो सरल उदाहरण में ROE 20% होगा।",
+    "यदि EBIT ₹30 करोड़ और capital employed ₹150 करोड़ है, तो सरल उदाहरण में ROCE 20% होगा।"
+  ],
+  "keyTerms": [
+    "ROE: Return on Equity",
+    "ROCE: Return on Capital Employed",
+    "EBIT: Earnings Before Interest and Taxes",
+    "Equity: Shareholders की accounting equity",
+    "Profitability: Business की profit कमाने की क्षमता"
+  ],
+  "risks": [
+    "बहुत अधिक debt ROE को प्रभावित कर सकता है।",
+    "One-time gains किसी वर्ष के ratios को असामान्य बना सकते हैं।",
+    "अलग industries के ratios की सीधी तुलना भ्रामक हो सकती है।"
+  ],
+  "commonMistakes": [
+    "सिर्फ एक साल के ROE को देखकर निर्णय लेना।",
+    "ROE और ROCE को एक ही ratio समझना।",
+    "Debt और cash flow को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "ROE shareholders की equity के मुकाबले profitability दर्शाता है।",
+    "ROCE capital employed के मुकाबले operating returns को मापने में मदद करता है।",
+    "इन ratios को trend और industry context के साथ समझना चाहिए।"
+  ],
+  "beginnerTip": "ROE और ROCE देखते समय कई वर्षों का data, debt, cash flow और industry comparison भी जांचें।",
+  "quiz": [
+    {
+      "question": "1. ROE का full form क्या है?",
+      "options": [
+        "Return on Equity",
+        "Rate of Exchange",
+        "Return on Expense",
+        "Ratio of Earnings"
+      ],
+      "answerIndex": 0,
+      "explanation": "ROE का अर्थ Return on Equity है।"
+    },
+    {
+      "question": "2. ROCE का सामान्य आधार क्या है?",
+      "options": [
+        "केवल share price",
+        "केवल dividend",
+        "EBIT और Capital Employed",
+        "केवल trading volume"
+      ],
+      "answerIndex": 2,
+      "explanation": "ROCE सामान्यतः EBIT को Capital Employed से compare करता है।"
+    },
+    {
+      "question": "3. ROE 20% होने से क्या guaranteed है?",
+      "options": [
+        "Share price बढ़ेगा",
+        "कोई guarantee नहीं",
+        "Dividend हमेशा मिलेगा",
+        "Loss कभी नहीं होगा"
+      ],
+      "answerIndex": 1,
+      "explanation": "ROE एक historical या calculated profitability measure है, future returns की guarantee नहीं।"
+    },
+    {
+      "question": "4. Ratios की तुलना कैसे करनी चाहिए?",
+      "options": [
+        "केवल company logo देखकर",
+        "केवल share price देखकर",
+        "केवल social media comments से",
+        "Industry, trend और financial condition के साथ"
+      ],
+      "answerIndex": 3,
+      "explanation": "Industry context और financial condition ratio analysis के लिए जरूरी हैं।"
+    },
+    {
+      "question": "5. ROE को कौन-सा factor प्रभावित कर सकता है?",
+      "options": [
+        "Debt और equity structure",
+        "केवल website design",
+        "केवल company का नाम",
+        "केवल market holiday"
+      ],
+      "answerIndex": 0,
+      "explanation": "Debt और equity structure ROE को प्रभावित कर सकते हैं।"
+    }
+  ]
+  },
+  {
+  "id": "debt-to-equity-ratio",
+  "title": "92. Debt-to-Equity Ratio क्या है?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Debt-to-Equity Ratio से company के debt और equity के संबंध को समझें।",
+  "lessons": [
+    "1. Debt-to-Equity Ratio का अर्थ",
+    "2. Formula और calculation",
+    "3. High और Low Ratio",
+    "4. अलग-अलग industries में अंतर",
+    "5. Debt analysis की सावधानियां"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Ratio का अर्थ",
+      "content": "Debt-to-Equity Ratio company के debt की तुलना shareholders' equity से करता है। एक सामान्य formula Total Debt ÷ Shareholders' Equity है। अलग data providers debt की definition में कुछ अंतर रख सकते हैं।"
+    },
+    {
+      "title": "Ratio की व्याख्या",
+      "content": "ऊंचा ratio अधिक debt के उपयोग का संकेत हो सकता है, लेकिन उसका अर्थ company और industry पर निर्भर करता है। कुछ businesses स्वाभाविक रूप से अधिक borrowing के साथ काम करते हैं।"
+    },
+    {
+      "title": "Debt के साथ क्या देखें?",
+      "content": "Debt analysis में interest cost, repayment schedule, operating cash flow, interest coverage और business stability भी देखना उपयोगी है। केवल एक ratio से पूरी financial condition नहीं समझी जा सकती।"
+    }
+  ],
+  "examples": [
+    "यदि total debt ₹50 करोड़ और equity ₹100 करोड़ है, तो सरल उदाहरण में Debt-to-Equity Ratio 0.5 होगा।",
+    "यदि debt ₹100 करोड़ और equity ₹50 करोड़ है, तो ratio 2 होगा। यह अपने-आप company को अच्छा या खराब घोषित नहीं करता।"
+  ],
+  "keyTerms": [
+    "Debt: उधार ली गई राशि",
+    "Equity: Shareholders की accounting equity",
+    "Leverage: Debt के उपयोग का स्तर",
+    "Interest Coverage: Interest भुगतान की क्षमता का एक measure",
+    "Cash Flow: Business में cash का आना-जाना"
+  ],
+  "risks": [
+    "अधिक debt interest और repayment pressure बढ़ा सकता है।",
+    "कम earnings के दौरान debt servicing कठिन हो सकती है।",
+    "Negative equity होने पर ratio भ्रामक या कम उपयोगी हो सकता है।"
+  ],
+  "commonMistakes": [
+    "हर industry के लिए एक ही ideal ratio मानना।",
+    "Debt का आकार देखकर cash flow भूल जाना।",
+    "Negative equity के साथ ratio की सामान्य interpretation करना।"
+  ],
+  "summary": [
+    "Debt-to-Equity debt और shareholders' equity का संबंध दिखाता है।",
+    "Ratio की सही interpretation industry और business पर निर्भर करती है।",
+    "Interest coverage और cash flow भी जांचें।"
+  ],
+  "beginnerTip": "Debt ratio के साथ company की repayment capacity और cash flow जरूर देखें।",
+  "quiz": [
+    {
+      "question": "1. Debt-to-Equity Ratio का सामान्य formula क्या है?",
+      "options": [
+        "Debt ÷ Shareholders' Equity",
+        "Dividend ÷ Share Price",
+        "Volume ÷ Price",
+        "Assets × Employees"
+      ],
+      "answerIndex": 0,
+      "explanation": "इस ratio का सामान्य formula total debt divided by shareholders' equity है।"
+    },
+    {
+      "question": "2. Debt ₹50 करोड़ और equity ₹100 करोड़ हो, तो ratio कितना है?",
+      "options": [
+        "2",
+        "5",
+        "0.5",
+        "50"
+      ],
+      "answerIndex": 2,
+      "explanation": "₹50 करोड़ ÷ ₹100 करोड़ = 0.5।"
+    },
+    {
+      "question": "3. क्या हर industry में एक ही ideal ratio होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "नहीं",
+        "केवल सोमवार को",
+        "केवल small-cap में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Industry के business model और capital needs के अनुसार ratio अलग हो सकता है।"
+    },
+    {
+      "question": "4. Debt analysis में क्या महत्वपूर्ण है?",
+      "options": [
+        "केवल logo",
+        "केवल share का नाम",
+        "केवल dividend history",
+        "Cash flow और interest repayment capacity"
+      ],
+      "answerIndex": 3,
+      "explanation": "Debt चुकाने की क्षमता समझने के लिए cash flow और interest coverage महत्वपूर्ण हैं।"
+    },
+    {
+      "question": "5. अधिक debt किस जोखिम को बढ़ा सकता है?",
+      "options": [
+        "Interest और repayment pressure",
+        "Guaranteed profit",
+        "Market risk का अंत",
+        "Trading holidays का अंत"
+      ],
+      "answerIndex": 0,
+      "explanation": "अधिक debt company पर interest और repayment का दबाव बढ़ा सकता है।"
+    }
+  ]
+  },
+  {
+  "id": "operating-profit-vs-net-profit",
+  "title": "93. Operating Profit और Net Profit में अंतर",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Company की operating performance और final profit के बीच अंतर को समझें।",
+  "lessons": [
+    "1. Operating Profit क्या है?",
+    "2. Net Profit क्या है?",
+    "3. दोनों में अंतर",
+    "4. Profit margins का महत्व",
+    "5. Financial statements में profit कैसे पढ़ें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Operating Profit",
+      "content": "Operating Profit business के मुख्य operations से कमाई और संबंधित operating expenses के बाद बची राशि को दर्शाता है। इसकी calculation company और reporting definition के अनुसार अलग हो सकती है।"
+    },
+    {
+      "title": "Net Profit",
+      "content": "Net Profit सामान्यतः applicable expenses, interest, depreciation, taxes और अन्य relevant items को शामिल करने के बाद बचा profit होता है। Financial statements में reported profit की exact definition और period देखना चाहिए।"
+    },
+    {
+      "title": "दोनों को साथ समझना",
+      "content": "Operating Profit business operations का प्रदर्शन समझने में मदद करता है, जबकि Net Profit अन्य खर्चों और income items के बाद की तस्वीर देता है। एक बार का gain या expense net profit को प्रभावित कर सकता है।"
+    }
+  ],
+  "examples": [
+    "किसी business का revenue ₹100 करोड़ और operating expenses ₹70 करोड़ हों, तो सरल उदाहरण में operating profit ₹30 करोड़ हो सकता है।",
+    "Interest, tax और अन्य expenses के बाद उसी business का net profit ₹18 करोड़ रह सकता है।"
+  ],
+  "keyTerms": [
+    "Revenue: बिक्री या सेवाओं से प्राप्त आय",
+    "Operating Profit: मुख्य operations से जुड़ा profit measure",
+    "Net Profit: Relevant expenses और taxes के बाद का profit",
+    "Operating Expenses: Business संचालन के खर्च",
+    "Net Profit Margin: Net Profit का Revenue से percentage संबंध"
+  ],
+  "risks": [
+    "One-time income net profit को अस्थायी रूप से बढ़ा सकती है।",
+    "Accounting policies के कारण companies के figures में अंतर हो सकता है।",
+    "Profit positive होने पर भी cash flow कमजोर हो सकता है।"
+  ],
+  "commonMistakes": [
+    "Revenue को profit समझना।",
+    "Operating Profit और Net Profit को समान मानना।",
+    "Cash flow और one-time items को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Operating Profit मुख्य business operations पर ध्यान देता है।",
+    "Net Profit में अन्य relevant expenses और taxes भी शामिल होते हैं।",
+    "Profit को cash flow और financial statement notes के साथ समझें।"
+  ],
+  "beginnerTip": "Company का profit देखते समय revenue growth, margins, cash flow और one-time items भी जांचें।",
+  "quiz": [
+    {
+      "question": "1. Revenue क्या है?",
+      "options": [
+        "हमेशा net profit",
+        "केवल company debt",
+        "बिक्री या सेवाओं से प्राप्त आय",
+        "केवल dividend"
+      ],
+      "answerIndex": 2,
+      "explanation": "Revenue business की sales या services से प्राप्त आय को दर्शाता है।"
+    },
+    {
+      "question": "2. Net Profit में सामान्यतः क्या शामिल होता है?",
+      "options": [
+        "Relevant expenses और taxes के बाद का profit",
+        "केवल share price",
+        "केवल trading volume",
+        "केवल face value"
+      ],
+      "answerIndex": 0,
+      "explanation": "Net profit में applicable expenses, interest, taxes और अन्य relevant items शामिल होते हैं।"
+    },
+    {
+      "question": "3. क्या Operating Profit और Net Profit हमेशा समान होते हैं?",
+      "options": [
+        "हाँ",
+        "नहीं",
+        "केवल छुट्टी के दिन",
+        "केवल large-cap में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Interest, tax और अन्य items के कारण net profit अलग हो सकता है।"
+    },
+    {
+      "question": "4. Positive profit के बावजूद क्या समस्या हो सकती है?",
+      "options": [
+        "कभी कोई समस्या नहीं",
+        "Company का नाम बदल जाएगा",
+        "Market बंद हो जाएगा",
+        "Cash flow कमजोर हो सकता है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Accounting profit और actual cash flow में अंतर हो सकता है।"
+    },
+    {
+      "question": "5. Profit analysis में क्या उपयोगी है?",
+      "options": [
+        "केवल logo",
+        "Margins, cash flow और one-time items",
+        "केवल share का नाम",
+        "केवल social media followers"
+      ],
+      "answerIndex": 1,
+      "explanation": "Profit की quality समझने के लिए margins, cash flow और one-time items देखना उपयोगी है।"
+    }
+  ]
+    },
+  {
+  "id": "cash-flow-statement-basics",
+  "title": "94. Cash Flow Statement क्या है?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Operating, Investing और Financing Cash Flow को आसान उदाहरणों से समझें।",
+  "lessons": [
+    "1. Cash Flow Statement का उद्देश्य",
+    "2. Operating Cash Flow",
+    "3. Investing Cash Flow",
+    "4. Financing Cash Flow",
+    "5. Profit और Cash Flow में अंतर"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Cash Flow Statement",
+      "content": "Cash Flow Statement बताता है कि reporting period में company के cash और cash equivalents कहां से आए और कहां उपयोग हुए। यह Income Statement और Balance Sheet से अलग financial statement है।"
+    },
+    {
+      "title": "तीन मुख्य भाग",
+      "content": "Operating Cash Flow मुख्य business activities से संबंधित cash movement दिखाता है। Investing Cash Flow assets और investments की खरीद-बिक्री से जुड़ा होता है। Financing Cash Flow borrowing, repayment, share issuance और dividends जैसी activities दिखा सकता है।"
+    },
+    {
+      "title": "Profit और Cash Flow",
+      "content": "Company accounting profit कमा सकती है, लेकिन customers से cash देर से मिलने पर operating cash flow कमजोर हो सकता है। इसलिए profit और cash flow दोनों का विश्लेषण जरूरी है।"
+    }
+  ],
+  "examples": [
+    "Customer को credit पर goods बेचने से revenue और profit record हो सकते हैं, लेकिन cash बाद में प्राप्त हो सकता है।",
+    "नई factory खरीदने में cash खर्च हो सकता है, जिसे सामान्यतः investing activity के रूप में दिखाया जाता है।"
+  ],
+  "keyTerms": [
+    "Operating Cash Flow: मुख्य business operations से cash movement",
+    "Investing Cash Flow: Assets और investments से संबंधित cash movement",
+    "Financing Cash Flow: Borrowing, repayment और capital transactions से cash movement",
+    "Cash Equivalents: निर्धारित accounting criteria पूरा करने वाले highly liquid short-term investments",
+    "Working Capital: Current assets और current liabilities के संबंध का measure"
+  ],
+  "risks": [
+    "एक अवधि का cash flow पूरे business की स्थिति नहीं बताता।",
+    "बहुत ज्यादा capital expenditure short-term free cash flow को प्रभावित कर सकता है।",
+    "असामान्य working-capital changes को समझे बिना निष्कर्ष गलत हो सकते हैं।"
+  ],
+  "commonMistakes": [
+    "Net Profit और Operating Cash Flow को समान मानना।",
+    "Investing cash outflow को हमेशा खराब संकेत मानना।",
+    "Cash flow statement के notes और reporting period न देखना।"
+  ],
+  "summary": [
+    "Cash Flow Statement cash movement दिखाता है।",
+    "इसके तीन मुख्य भाग operating, investing और financing activities हैं।",
+    "Profit और cash flow दोनों की quality समझना जरूरी है।"
+  ],
+  "beginnerTip": "कई वर्षों के Operating Cash Flow को reported profit और debt के साथ compare करें।",
+  "quiz": [
+    {
+      "question": "1. Cash Flow Statement क्या बताता है?",
+      "options": [
+        "केवल share का face value",
+        "Cash और cash equivalents का inflow और outflow",
+        "केवल dividend yield",
+        "केवल market timing"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cash Flow Statement reporting period में cash movement दिखाता है।"
+    },
+    {
+      "question": "2. Factory खरीदना सामान्यतः किस category में आता है?",
+      "options": [
+        "Operating activity हमेशा",
+        "Dividend income",
+        "Investing activity",
+        "Market order"
+      ],
+      "answerIndex": 2,
+      "explanation": "Long-term assets की खरीद सामान्यतः investing cash flow में आती है।"
+    },
+    {
+      "question": "3. Borrowing और loan repayment सामान्यतः किस category में आते हैं?",
+      "options": [
+        "Financing activities",
+        "केवल operating activities",
+        "केवल trading volume",
+        "Corporate logo activity"
+      ],
+      "answerIndex": 0,
+      "explanation": "Borrowing और repayment सामान्यतः financing cash flows हैं।"
+    },
+    {
+      "question": "4. क्या Net Profit हमेशा positive cash flow का मतलब है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल नए businesses में",
+        "केवल large-cap में",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Credit sales और working capital जैसे कारणों से profit और cash flow अलग हो सकते हैं।"
+    },
+    {
+      "question": "5. Company का cash flow समझने के लिए क्या करना चाहिए?",
+      "options": [
+        "केवल share price देखना",
+        "तीनों cash flow categories और समय के साथ trend देखना",
+        "केवल logo देखना",
+        "केवल social media posts पढ़ना"
+      ],
+      "answerIndex": 1,
+      "explanation": "Operating, investing और financing cash flows को साथ में समझना उपयोगी है।"
+    }
+  ]
+  },
+  {
+  "id": "balance-sheet-basics",
+  "title": "95. Balance Sheet कैसे पढ़ें?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Assets, Liabilities और Shareholders' Equity की मदद से Balance Sheet समझें।",
+  "lessons": [
+    "1. Balance Sheet क्या है?",
+    "2. Assets क्या होते हैं?",
+    "3. Liabilities क्या होती हैं?",
+    "4. Shareholders' Equity क्या है?",
+    "5. Balance Sheet पढ़ते समय क्या जांचें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Balance Sheet का उद्देश्य",
+      "content": "Balance Sheet किसी निश्चित तारीख पर company की financial position दिखाती है। यह एक समय-बिंदु का snapshot है, पूरे वर्ष का cash movement नहीं।"
+    },
+    {
+      "title": "Accounting Equation",
+      "content": "मुख्य accounting equation है: Assets = Liabilities + Shareholders' Equity. Assets में cash, receivables, inventory और property जैसी चीजें हो सकती हैं। Liabilities में loans, payables और अन्य obligations शामिल हो सकते हैं।"
+    },
+    {
+      "title": "Financial Position का आकलन",
+      "content": "Balance Sheet में cash, borrowings, receivables, inventory, current liabilities और equity के बदलाव देखें। इन आंकड़ों को पिछले वर्षों, cash flow statement और industry context के साथ compare करें।"
+    }
+  ],
+  "examples": [
+    "यदि total assets ₹200 करोड़ और liabilities ₹120 करोड़ हैं, तो सरल उदाहरण में equity ₹80 करोड़ होगी।",
+    "Receivables लगातार बढ़ रहे हों तो यह जांचना उपयोगी है कि customers से payment समय पर मिल रही है या नहीं।"
+  ],
+  "keyTerms": [
+    "Assets: Company के resources",
+    "Liabilities: Company की obligations",
+    "Shareholders' Equity: Assets में से liabilities घटाने के बाद बचा accounting interest",
+    "Receivables: ग्राहकों से प्राप्त होने वाली राशि",
+    "Inventory: बिक्री या उत्पादन के लिए रखे goods और materials"
+  ],
+  "risks": [
+    "Assets की book value उनकी वर्तमान market value से अलग हो सकती है।",
+    "Receivables की वसूली में समस्या हो सकती है।",
+    "कम cash और अधिक short-term liabilities liquidity pressure पैदा कर सकते हैं।"
+  ],
+  "commonMistakes": [
+    "Total Assets को company की net worth समझ लेना।",
+    "Balance Sheet को अकेले देखकर investment decision लेना।",
+    "एक तारीख के आंकड़ों को हमेशा की financial condition मानना।"
+  ],
+  "summary": [
+    "Balance Sheet एक निश्चित तारीख की financial position दिखाती है।",
+    "Assets = Liabilities + Shareholders' Equity.",
+    "Balance Sheet को income और cash flow statements के साथ पढ़ना चाहिए।"
+  ],
+  "beginnerTip": "Cash, borrowings, receivables और current liabilities का कई वर्षों का trend देखें।",
+  "quiz": [
+    {
+      "question": "1. Balance Sheet क्या दिखाती है?",
+      "options": [
+        "हर दिन का stock price ही",
+        "केवल dividend",
+        "एक निश्चित तारीख की financial position",
+        "केवल trading orders"
+      ],
+      "answerIndex": 2,
+      "explanation": "Balance Sheet एक निश्चित तारीख पर assets, liabilities और equity दिखाती है।"
+    },
+    {
+      "question": "2. सही accounting equation कौन-सी है?",
+      "options": [
+        "Assets = Liabilities + Equity",
+        "Assets = Profit × Tax",
+        "Debt = Dividend + Price",
+        "Revenue = Cash × Employees"
+      ],
+      "answerIndex": 0,
+      "explanation": "मुख्य accounting equation Assets = Liabilities + Equity है।"
+    },
+    {
+      "question": "3. Receivables क्या हैं?",
+      "options": [
+        "केवल company के shares",
+        "Market holidays",
+        "Shareholder passwords",
+        "Customers से प्राप्त होने वाली राशि"
+      ],
+      "answerIndex": 3,
+      "explanation": "Receivables वह राशि है जो customers से प्राप्त होनी बाकी है।"
+    },
+    {
+      "question": "4. क्या Total Assets ही company की equity होती है?",
+      "options": [
+        "हाँ",
+        "नहीं, liabilities घटाने पर equity निकलती है",
+        "केवल नई company में",
+        "केवल holidays में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Equity accounting equation के अनुसार assets में से liabilities घटाने पर मिलती है।"
+    },
+    {
+      "question": "5. Balance Sheet के साथ और क्या पढ़ना चाहिए?",
+      "options": [
+        "केवल company का logo",
+        "केवल share price",
+        "Income Statement और Cash Flow Statement",
+        "केवल social media comments"
+      ],
+      "answerIndex": 2,
+      "explanation": "तीनों financial statements मिलकर company की स्थिति समझने में मदद करती हैं।"
+    }
+  ]
+  },
+  {
+  "id": "annual-report-reading-guide",
+  "title": "96. Company की Annual Report कैसे पढ़ें?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Annual Report के मुख्य sections, financial statements और disclosures पढ़ना सीखें।",
+  "lessons": [
+    "1. Annual Report क्या है?",
+    "2. Management Discussion और Business Overview",
+    "3. Financial Statements",
+    "4. Auditor's Report और Notes",
+    "5. Annual Report से जानकारी कैसे निकालें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Annual Report का उद्देश्य",
+      "content": "Annual Report company के business, financial performance, governance और अन्य महत्वपूर्ण disclosures की जानकारी देती है। इसमें management commentary, financial statements और auditor-related information शामिल हो सकती है।"
+    },
+    {
+      "title": "Financial Statements",
+      "content": "Income Statement, Balance Sheet और Cash Flow Statement के साथ notes और comparative figures पढ़ें। Consolidated और standalone statements में अंतर समझना भी जरूरी है।"
+    },
+    {
+      "title": "Auditor's Report और Management Discussion",
+      "content": "Auditor's Report में audit opinion और संबंधित matters हो सकते हैं। Management Discussion business conditions और risks पर management का दृष्टिकोण देती है। Management की commentary को independent evidence और reported figures के साथ जांचें।"
+    }
+  ],
+  "examples": [
+    "यदि management sales growth का दावा करता है, तो revenue trend और financial statements में संबंधित figures जांचें।",
+    "यदि auditor की report में qualification या विशेष टिप्पणी हो, तो उसका पूरा संदर्भ पढ़ें।"
+  ],
+  "keyTerms": [
+    "Annual Report: वर्ष की company reporting और disclosures का दस्तावेज",
+    "Consolidated Statements: Company और relevant subsidiaries का संयुक्त विवरण",
+    "Standalone Statements: संबंधित individual entity के statements",
+    "Auditor's Report: Financial statements पर auditor की report",
+    "Management Discussion: Business performance और outlook पर management commentary"
+  ],
+  "risks": [
+    "Management commentary भविष्य के परिणामों की guarantee नहीं है।",
+    "बहुत लंबी report में महत्वपूर्ण notes छूट सकते हैं।",
+    "Consolidated और standalone figures अलग हो सकते हैं।"
+  ],
+  "commonMistakes": [
+    "केवल chairman का message पढ़कर निष्कर्ष निकालना।",
+    "Auditor's Report और financial notes छोड़ देना।",
+    "एक वर्ष के results को लंबे समय का trend मान लेना।"
+  ],
+  "summary": [
+    "Annual Report company के business और financial disclosures का महत्वपूर्ण स्रोत है।",
+    "Financial statements के साथ notes और auditor report भी पढ़ें।",
+    "Management के दावों को reported data के साथ compare करें।"
+  ],
+  "beginnerTip": "Annual Report में पहले business overview, financial statements, auditor's report और risk disclosures पढ़ें।",
+  "quiz": [
+    {
+      "question": "1. Annual Report में क्या मिल सकता है?",
+      "options": [
+        "Financial statements और company disclosures",
+        "Guaranteed stock returns",
+        "केवल live share prices",
+        "केवल investor passwords"
+      ],
+      "answerIndex": 0,
+      "explanation": "Annual Report में business information, financial statements और disclosures शामिल होते हैं।"
+    },
+    {
+      "question": "2. Auditor's Report क्यों महत्वपूर्ण है?",
+      "options": [
+        "यह future profit की guarantee देता है",
+        "यह share price तय करता है",
+        "यह financial statements पर auditor की report देता है",
+        "यह market holidays हटाता है"
+      ],
+      "answerIndex": 2,
+      "explanation": "Auditor's Report financial statements की audit से संबंधित महत्वपूर्ण जानकारी देती है।"
+    },
+    {
+      "question": "3. Consolidated Statements किससे संबंधित होते हैं?",
+      "options": [
+        "केवल daily stock prices",
+        "Company और relevant subsidiaries का संयुक्त विवरण",
+        "केवल trading volume",
+        "केवल dividend dates"
+      ],
+      "answerIndex": 1,
+      "explanation": "Consolidated statements group entities की financial information को संयुक्त रूप में दिखाते हैं।"
+    },
+    {
+      "question": "4. क्या Management Discussion future performance की guarantee है?",
+      "options": [
+        "हाँ",
+        "केवल बड़ी companies के लिए",
+        "केवल एक वर्ष के लिए",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Management commentary outlook देती है, लेकिन भविष्य के results की guarantee नहीं होती।"
+    },
+    {
+      "question": "5. Annual Report पढ़ने का अच्छा तरीका क्या है?",
+      "options": [
+        "केवल cover page देखना",
+        "केवल management message पढ़ना",
+        "Statements, notes, auditor report और risks देखना",
+        "केवल social media posts देखना"
+      ],
+      "answerIndex": 2,
+      "explanation": "पूरी financial picture समझने के लिए statements, notes, auditor report और risks महत्वपूर्ण हैं।"
+    }
+  ]
+  },
+  {
+  "id": "quarterly-results-analysis",
+  "title": "97. Quarterly Results कैसे पढ़ें?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Quarterly financial results, YoY और QoQ comparison तथा profit margins को समझें।",
+  "lessons": [
+    "1. Quarterly Results क्या होते हैं?",
+    "2. YoY और QoQ Comparison",
+    "3. Revenue और Profit",
+    "4. Margins और Exceptional Items",
+    "5. Results के बाद stock price क्यों बदलती है?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Quarterly Results",
+      "content": "Quarterly Results company की एक quarter की financial performance दिखाते हैं। इनमें revenue, expenses, profit, margins और अन्य relevant disclosures शामिल हो सकते हैं। Reporting requirements company और applicable regulations पर निर्भर करती हैं।"
+    },
+    {
+      "title": "YoY और QoQ",
+      "content": "YoY यानी Year-on-Year comparison में वर्तमान quarter की तुलना पिछले वर्ष के उसी quarter से की जाती है। QoQ यानी Quarter-on-Quarter comparison में पिछले quarter से तुलना होती है। Seasonality के कारण दोनों comparisons अलग तस्वीर दिखा सकते हैं।"
+    },
+    {
+      "title": "Market Reaction",
+      "content": "Stock price केवल reported results पर नहीं, बल्कि market expectations, future outlook, guidance और पहले से price में शामिल expectations पर भी प्रतिक्रिया दे सकती है। अच्छे results आने पर भी price गिर सकती है।"
+    }
+  ],
+  "examples": [
+    "Revenue पिछले वर्ष ₹100 करोड़ और इस वर्ष उसी quarter में ₹120 करोड़ हो, तो YoY growth 20% है।",
+    "यदि पिछले quarter profit ₹20 करोड़ और वर्तमान quarter profit ₹18 करोड़ हो, तो QoQ profit घटा है, लेकिन अन्य context भी जांचना चाहिए।"
+  ],
+  "keyTerms": [
+    "Quarterly Results: एक quarter के financial results",
+    "YoY: पिछले वर्ष के समान period से तुलना",
+    "QoQ: पिछले quarter से तुलना",
+    "Operating Margin: Operating profit का revenue से percentage संबंध",
+    "Exceptional Item: ऐसा अलग item जो reported results को प्रभावित कर सकता है"
+  ],
+  "risks": [
+    "एक quarter का result पूरे वर्ष की performance नहीं बताता।",
+    "Seasonality comparison को प्रभावित कर सकती है।",
+    "Exceptional items reported profit को असामान्य बना सकते हैं।"
+  ],
+  "commonMistakes": [
+    "सिर्फ revenue growth देखकर निष्कर्ष निकालना।",
+    "YoY और QoQ comparison में अंतर भूलना।",
+    "Market expectations और guidance को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Quarterly Results short-term financial performance की जानकारी देते हैं।",
+    "YoY और QoQ अलग periods से तुलना करते हैं।",
+    "Revenue, profit, margins और management commentary साथ में देखें।"
+  ],
+  "beginnerTip": "Results पढ़ते समय revenue growth के साथ profit margins, debt, cash flow और पिछले periods का comparison करें।",
+  "quiz": [
+    {
+      "question": "1. YoY का अर्थ क्या है?",
+      "options": [
+        "पिछले वर्ष के समान period से तुलना",
+        "केवल आज की price",
+        "केवल trading volume",
+        "Market holiday calculation"
+      ],
+      "answerIndex": 0,
+      "explanation": "YoY वर्तमान period की तुलना पिछले वर्ष के समान period से करता है।"
+    },
+    {
+      "question": "2. QoQ किससे तुलना करता है?",
+      "options": [
+        "पांच वर्ष पहले से",
+        "पिछले quarter से",
+        "केवल market index से",
+        "केवल face value से"
+      ],
+      "answerIndex": 1,
+      "explanation": "QoQ का अर्थ Quarter-on-Quarter comparison है।"
+    },
+    {
+      "question": "3. Revenue ₹100 करोड़ से ₹120 करोड़ हो, तो YoY growth कितनी है?",
+      "options": [
+        "2%",
+        "10%",
+        "20%",
+        "120%"
+      ],
+      "answerIndex": 2,
+      "explanation": "Growth = (120 − 100) ÷ 100 × 100 = 20%।"
+    },
+    {
+      "question": "4. अच्छे results के बाद भी share price क्यों गिर सकती है?",
+      "options": [
+        "यह कभी संभव नहीं",
+        "केवल trading holidays के कारण",
+        "क्योंकि profit हमेशा irrelevant है",
+        "Market expectations या future outlook अलग हो सकता है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Market reaction expectations और future outlook पर भी निर्भर करती है।"
+    },
+    {
+      "question": "5. Quarterly Results में क्या देखना चाहिए?",
+      "options": [
+        "केवल company logo",
+        "Revenue, profit, margins और relevant disclosures",
+        "केवल social media comments",
+        "केवल share की face value"
+      ],
+      "answerIndex": 1,
+      "explanation": "इन आंकड़ों से financial performance की अधिक व्यापक समझ मिलती है।"
+    }
+  ]
+  },
+  {
+  "id": "ipo-basics",
+  "title": "98. IPO क्या है? — Initial Public Offering",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "IPO का उद्देश्य, price band, application process और listing risks को समझें।",
+  "lessons": [
+    "1. IPO क्या होता है?",
+    "2. Fresh Issue और Offer for Sale",
+    "3. Price Band और Lot Size",
+    "4. IPO Application और Allotment",
+    "5. Listing Gain और Investment Risks"
+  ],
+  "detailedLessons": [
+    {
+      "title": "IPO का अर्थ",
+      "content": "IPO यानी Initial Public Offering वह प्रक्रिया है जिसमें company पहली बार public investors को shares offer करती है। IPO के बाद shares exchange पर list हो सकते हैं, यदि लागू listing requirements पूरी हों।"
+    },
+    {
+      "title": "Fresh Issue और OFS",
+      "content": "Fresh Issue में company नए shares जारी करके funds जुटाती है। Offer for Sale यानी OFS में existing shareholders अपने shares बेचते हैं। दोनों का company को मिलने वाले funds पर अलग प्रभाव होता है।"
+    },
+    {
+      "title": "Application और Allotment",
+      "content": "IPO application में price band, lot size, eligibility, payment mechanism और deadlines पढ़ें। Application देने से allotment की guarantee नहीं होती। Listing price issue price से ऊपर या नीचे हो सकती है।"
+    }
+  ],
+  "examples": [
+    "यदि IPO price band ₹90–₹100 है, तो final issue price लागू प्रक्रिया के अनुसार इस band में तय हो सकती है।",
+    "Fresh Issue से company को capital मिल सकती है, जबकि OFS में sale proceeds selling shareholders को जाते हैं।"
+  ],
+  "keyTerms": [
+    "IPO: Initial Public Offering",
+    "Fresh Issue: नए shares जारी करके funds जुटाना",
+    "OFS: Existing shareholders द्वारा shares बेचना",
+    "Price Band: IPO application के लिए घोषित price range",
+    "Allotment: Applicants को shares का allocation"
+  ],
+  "risks": [
+    "IPO listing price issue price से कम हो सकती है।",
+    "Company की valuation और business risks को समझना जरूरी है।",
+    "Oversubscription होने पर सभी applicants को allotment नहीं मिलता।"
+  ],
+  "commonMistakes": [
+    "हर IPO में listing gain की उम्मीद करना।",
+    "Prospectus और risk factors न पढ़ना।",
+    "सिर्फ social media hype के आधार पर apply करना।"
+  ],
+  "summary": [
+    "IPO public investors को shares offer करने की प्रक्रिया है।",
+    "Fresh Issue और OFS का उद्देश्य और proceeds अलग होते हैं।",
+    "Allotment और listing gain की guarantee नहीं होती।"
+  ],
+  "beginnerTip": "IPO से पहले official offer documents, business model, financial statements, valuation और risk factors पढ़ें।",
+  "quiz": [
+    {
+      "question": "1. IPO का full form क्या है?",
+      "options": [
+        "Initial Public Offering",
+        "Investment Price Order",
+        "Internal Profit Option",
+        "Indian Payment Operation"
+      ],
+      "answerIndex": 0,
+      "explanation": "IPO का अर्थ Initial Public Offering है।"
+    },
+    {
+      "question": "2. Fresh Issue में सामान्यतः क्या होता है?",
+      "options": [
+        "Market holiday घोषित होती है",
+        "Existing shares हमेशा cancel होते हैं",
+        "Company नए shares जारी करके funds जुटाती है",
+        "Dividend guaranteed होता है"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fresh Issue में company नए shares जारी करके funds जुटाती है।"
+    },
+    {
+      "question": "3. OFS में shares कौन बेचता है?",
+      "options": [
+        "केवल stock exchange",
+        "Existing shareholders",
+        "केवल नए applicants",
+        "केवल depository"
+      ],
+      "answerIndex": 1,
+      "explanation": "OFS में existing shareholders अपने shares बेचते हैं।"
+    },
+    {
+      "question": "4. IPO application देने से क्या allotment निश्चित होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल oversubscribed IPO में",
+        "केवल weekend पर",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Allotment applicable process और demand पर निर्भर करता है।"
+    },
+    {
+      "question": "5. IPO से पहले क्या पढ़ना चाहिए?",
+      "options": [
+        "Official offer documents और risk factors",
+        "केवल social media posts",
+        "केवल company logo",
+        "केवल listing rumours"
+      ],
+      "answerIndex": 0,
+      "explanation": "Official offer documents business, financial information और risks समझने में मदद करते हैं।"
+    }
+  ]
+    },
+  {
+  "id": "ipo-subscription-allotment",
+  "title": "99. IPO Subscription और Allotment कैसे काम करते हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "IPO subscription ratio, oversubscription, undersubscription और allotment की प्रक्रिया समझें।",
+  "lessons": [
+    "1. IPO Subscription क्या है?",
+    "2. Oversubscription और Undersubscription",
+    "3. Retail और अन्य Investor Categories",
+    "4. Allotment Process",
+    "5. Application Status और Refund/Unblocking"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Subscription का अर्थ",
+      "content": "IPO subscription यह बताता है कि offer की गई shares की quantity के मुकाबले कितनी applications या demand आई है। अलग investor categories का subscription अलग हो सकता है।"
+    },
+    {
+      "title": "Oversubscription",
+      "content": "जब किसी category में demand उपलब्ध shares से अधिक हो जाती है, तो उसे oversubscription कहा जाता है। Allotment लागू नियमों और category-specific process के अनुसार होता है।"
+    },
+    {
+      "title": "Application Status",
+      "content": "Applicants को official registrar, exchange या अन्य अधिकृत channel पर allotment status जांचना चाहिए। ASBA या UPI-based processes में funds का blocking या unblocking लागू banking और issue process के अनुसार होता है।"
+    }
+  ],
+  "examples": [
+    "यदि किसी category में 1 लाख shares offer किए गए और demand 3 लाख shares की है, तो उस category का subscription 3 times हो सकता है।",
+    "Oversubscribed IPO में हर applicant को shares मिलना जरूरी नहीं है।"
+  ],
+  "keyTerms": [
+    "Subscription: Offer के मुकाबले applications या demand",
+    "Oversubscription: Demand उपलब्ध quantity से अधिक होना",
+    "Undersubscription: Demand उपलब्ध quantity से कम होना",
+    "Allotment: Shares का allocation",
+    "ASBA: Application Supported by Blocked Amount"
+  ],
+  "risks": [
+    "High subscription listing gain की guarantee नहीं है।",
+    "Application details में गलती से application प्रभावित हो सकती है।",
+    "Funds unblocking में banking या process-related delay हो सकता है।"
+  ],
+  "commonMistakes": [
+    "High subscription को guaranteed profit मानना।",
+    "गलत category में application करना।",
+    "Unverified links पर PAN, bank details या OTP साझा करना।"
+  ],
+  "summary": [
+    "Subscription offer की तुलना में demand का संकेत देता है।",
+    "Allotment applicable category और rules पर निर्भर करता है।",
+    "Status केवल official या authorized channels पर जांचें।"
+  ],
+  "beginnerTip": "Application submit करने से पहले category, lot size, bank/UPI details और official deadlines जांचें।",
+  "quiz": [
+    {
+      "question": "1. IPO subscription क्या दर्शाता है?",
+      "options": [
+        "Company का daily profit",
+        "Offer quantity के मुकाबले demand",
+        "केवल share का face value",
+        "Market holiday"
+      ],
+      "answerIndex": 1,
+      "explanation": "Subscription offer की गई quantity के मुकाबले applications या demand दिखाता है।"
+    },
+    {
+      "question": "2. 1 लाख shares के मुकाबले 3 लाख shares की demand हो, तो subscription कितना है?",
+      "options": [
+        "0.3 times",
+        "1 time",
+        "3 times",
+        "30 times"
+      ],
+      "answerIndex": 2,
+      "explanation": "3 लाख ÷ 1 लाख = 3 times subscription।"
+    },
+    {
+      "question": "3. क्या Oversubscription allotment की guarantee देता है?",
+      "options": [
+        "नहीं",
+        "हाँ, हर applicant को",
+        "केवल weekend पर",
+        "केवल बड़े applicants को हमेशा"
+      ],
+      "answerIndex": 0,
+      "explanation": "Oversubscription होने पर allotment लागू rules और category-specific process के अनुसार होता है।"
+    },
+    {
+      "question": "4. ASBA का full form क्या है?",
+      "options": [
+        "Annual Share Balance Account",
+        "Automatic Stock Buying Arrangement",
+        "All Shares Become Available",
+        "Application Supported by Blocked Amount"
+      ],
+      "answerIndex": 3,
+      "explanation": "ASBA का full form Application Supported by Blocked Amount है।"
+    },
+    {
+      "question": "5. IPO allotment status कहां जांचना चाहिए?",
+      "options": [
+        "Unverified messages में",
+        "Official registrar या authorized channel पर",
+        "Random social media links पर",
+        "Unknown caller से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Official या authorized channel का उपयोग fraud risk कम करने में मदद करता है।"
+    }
+  ]
+    },
+  {
+  "id": "ipo-listing-listing-gain",
+  "title": "100. IPO Listing और Listing Gain क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "IPO listing price, issue price, listing gain और listing-day risks को समझें।",
+  "lessons": [
+    "1. IPO Listing क्या है?",
+    "2. Issue Price और Listing Price",
+    "3. Listing Gain की Calculation",
+    "4. Listing Price किन बातों से प्रभावित होती है?",
+    "5. Listing Day के Risks"
+  ],
+  "detailedLessons": [
+    {
+      "title": "IPO Listing",
+      "content": "IPO allotment और संबंधित प्रक्रियाओं के बाद shares exchange पर trading के लिए उपलब्ध हो सकते हैं, यदि listing requirements पूरी हों। Exchange पर पहली trading price issue price से अलग हो सकती है।"
+    },
+    {
+      "title": "Listing Gain",
+      "content": "Listing gain उस स्थिति को कहा जाता है जब listing price issue price से अधिक हो। सरल calculation में प्रति share difference = Listing Price − Issue Price. Percentage difference निकालने के लिए इस अंतर को issue price से divide करके 100 से multiply करें।"
+    },
+    {
+      "title": "Listing-Day Risk",
+      "content": "Listing price demand, supply, market sentiment, company valuation और broader market conditions से प्रभावित हो सकती है। Listing gain निश्चित नहीं है; shares issue price से नीचे भी list हो सकते हैं।"
+    }
+  ],
+  "examples": [
+    "Issue price ₹100 और listing price ₹120 हो, तो प्रति share difference ₹20 और सरल percentage gain 20% होगा, transaction costs और taxes से पहले।",
+    "Issue price ₹100 और listing price ₹90 हो, तो प्रति share difference minus ₹10 होगा। यह listing पर गिरावट दर्शाता है।"
+  ],
+  "keyTerms": [
+    "Issue Price: IPO में तय final offer price",
+    "Listing Price: Exchange पर listing के समय trading price",
+    "Listing Gain: Listing price का issue price से अधिक होना",
+    "Market Sentiment: Market participants की व्यापक भावना",
+    "Volatility: Price में उतार-चढ़ाव की मात्रा"
+  ],
+  "risks": [
+    "IPO shares issue price से नीचे list हो सकते हैं।",
+    "Listing day पर volatility अधिक हो सकती है।",
+    "Transaction costs और taxes actual net result को प्रभावित कर सकते हैं।"
+  ],
+  "commonMistakes": [
+    "हर IPO से listing gain की उम्मीद करना।",
+    "Subscription data को future return की guarantee समझना।",
+    "Company fundamentals और valuation को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Listing price और issue price अलग हो सकती हैं।",
+    "Listing gain केवल तब होता है जब listing price issue price से ऊपर हो।",
+    "IPO में loss और volatility का risk बना रहता है।"
+  ],
+  "beginnerTip": "IPO की listing से पहले issue documents, valuation और risks पढ़ें; केवल listing gain की उम्मीद पर निर्णय न लें।",
+  "quiz": [
+    {
+      "question": "1. Listing Price क्या है?",
+      "options": [
+        "Exchange पर listing के समय trading price",
+        "हमेशा face value",
+        "Company का annual tax",
+        "Demat account fee"
+      ],
+      "answerIndex": 0,
+      "explanation": "Listing Price वह price है जिस पर share exchange पर listing के समय trade हो सकता है।"
+    },
+    {
+      "question": "2. Issue price ₹100 और listing price ₹120 हो, तो सरल percentage gain कितना है?",
+      "options": [
+        "10%",
+        "20%",
+        "30%",
+        "120%"
+      ],
+      "answerIndex": 1,
+      "explanation": "Difference ₹20 है; ₹20 ÷ ₹100 × 100 = 20%, transaction costs से पहले।"
+    },
+    {
+      "question": "3. क्या हर IPO में listing gain होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल बड़े IPO में",
+        "नहीं",
+        "केवल holidays में"
+      ],
+      "answerIndex": 2,
+      "explanation": "Listing price issue price से नीचे, बराबर या ऊपर हो सकती है।"
+    },
+    {
+      "question": "4. Listing price को कौन प्रभावित कर सकता है?",
+      "options": [
+        "केवल company logo",
+        "केवल face value",
+        "केवल Demat password",
+        "Demand, supply और market sentiment"
+      ],
+      "answerIndex": 3,
+      "explanation": "Listing price demand, supply, valuation और market conditions से प्रभावित हो सकती है।"
+    },
+    {
+      "question": "5. IPO से पहले क्या देखना चाहिए?",
+      "options": [
+        "केवल rumours",
+        "Company fundamentals, valuation और risks",
+        "केवल social media likes",
+        "केवल listing-day predictions"
+      ],
+      "answerIndex": 1,
+      "explanation": "Fundamentals, valuation और risks को समझना hype पर निर्भर रहने से बेहतर है।"
+    }
+  ]
   }
     ]
