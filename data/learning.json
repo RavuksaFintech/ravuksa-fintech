@@ -12163,5 +12163,1788 @@
       "explanation": "India VIX को बाजार की निकट अवधि की अपेक्षित volatility के संकेतक के रूप में देखा जाता है।"
     }
   ]
+    },
+  {
+  "id": "trading-volume-vs-delivery-volume",
+  "title": "Trading Volume और Delivery Volume में अंतर",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Trading Volume, Delivery Volume और Delivery Percentage को आसान हिंदी और English में समझें।",
+  "lessons": [
+    "1. Trading Volume क्या है?",
+    "2. Delivery Volume क्या है?",
+    "3. Intraday और Delivery Trades",
+    "4. Delivery Percentage क्या है?",
+    "5. Volume Data कहाँ देखें?",
+    "6. Price और Volume का संबंध",
+    "7. High Delivery Volume का अर्थ",
+    "8. Volume Data की सीमाएँ"
+  ],
+  "beginnerTip": "High Delivery Volume अपने-आप शेयर खरीदने का संकेत नहीं है। Volume, price movement, company fundamentals और market context को साथ में समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. Trading Volume क्या है?",
+      "content": "Trading Volume किसी निर्धारित अवधि में trade हुई shares की कुल संख्या है। उदाहरण के लिए, यदि किसी trading day में 5 लाख shares trade हुए, तो reported volume 5 लाख shares हो सकता है। Volume trading activity बताता है, लेकिन अपने-आप यह नहीं बताता कि कीमत बढ़ेगी या गिरेगी।"
+    },
+    {
+      "title": "2. Delivery Volume क्या है?",
+      "content": "Delivery Volume आम तौर पर उन trades की quantity को दर्शाता है जिनके परिणामस्वरूप shares delivery-based settlement के लिए जाते हैं। इसकी reporting और calculation exchange के data definitions पर निर्भर करती है। इसे केवल किसी शेयर में long-term investment interest का निश्चित प्रमाण नहीं मानना चाहिए।"
+    },
+    {
+      "title": "3. Intraday और Delivery Trades",
+      "content": "Intraday trading में सामान्यतः एक ही trading day में position बंद की जाती है। Delivery-based buying में खरीदे गए shares settlement प्रक्रिया के बाद demat account में आ सकते हैं। अलग-अलग products और market segments में नियम अलग हो सकते हैं।"
+    },
+    {
+      "title": "4. Delivery Percentage क्या है?",
+      "content": "कुछ market reports में Delivery Percentage निकालने के लिए delivery quantity को total traded quantity से divide करके 100 से गुणा किया जाता है। हालांकि, अलग-अलग data providers की definitions और reporting methods में अंतर हो सकता है। इसलिए जिस source का data देखें, उसकी methodology समझें।"
+    },
+    {
+      "title": "5. Volume Data कहाँ देखें?",
+      "content": "Volume और delivery-related data broker platforms, exchange websites और market data services पर उपलब्ध हो सकता है। Data की तारीख, reporting period और definition जरूर जाँचें। अलग sources में data update होने के समय के कारण अंतर दिखाई दे सकता है।"
+    },
+    {
+      "title": "6. Price और Volume का संबंध",
+      "content": "Price movement के साथ volume का अध्ययन market activity समझने में मदद कर सकता है। लेकिन price और volume के बीच संबंध हर situation में एक जैसा नहीं होता। केवल volume बढ़ने से यह निष्कर्ष नहीं निकलता कि किसी share में तेजी आने वाली है।"
+    },
+    {
+      "title": "7. High Delivery Volume का अर्थ",
+      "content": "High Delivery Volume बताता है कि reported delivery quantity अधिक रही। इसके पीछे निवेश, portfolio changes, institutional activity या अन्य कारण हो सकते हैं। केवल delivery data से खरीदारों का उद्देश्य या भविष्य का price movement निश्चित रूप से पता नहीं चलता।"
+    },
+    {
+      "title": "8. Volume Data की सीमाएँ",
+      "content": "Volume पिछले या वर्तमान trading activity का माप है, future performance की guarantee नहीं। अलग exchanges, products और reporting methodologies के कारण आँकड़ों की तुलना सावधानी से करनी चाहिए। Volume को company analysis और risk management का विकल्प नहीं समझना चाहिए।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Trading Volume",
+      "content": "यदि किसी दिन 1,00,000 shares trade हुए, तो उस अवधि का reported trading volume 1,00,000 shares होगा।"
+    },
+    {
+      "title": "Example 2: Delivery Percentage",
+      "content": "मान लीजिए reported traded quantity 1,00,000 shares और delivery quantity 40,000 shares है। यदि दोनों आँकड़े समान reporting definition के हैं, तो delivery percentage = 40,000 ÷ 1,00,000 × 100 = 40%।"
+    },
+    {
+      "title": "Example 3: Volume और Price",
+      "content": "किसी share का volume बढ़ने के साथ कीमत बढ़ सकती है या गिर सकती है। इसलिए volume को अकेले खरीदने या बेचने का signal नहीं मानना चाहिए।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Trading Volume",
+      "meaning": "एक अवधि में trade हुई shares की कुल संख्या।"
+    },
+    {
+      "term": "Delivery Volume",
+      "meaning": "Reported delivery-based trades से संबंधित shares की quantity।"
+    },
+    {
+      "term": "Delivery Percentage",
+      "meaning": "परिभाषित delivery quantity का total traded quantity से प्रतिशत संबंध।"
+    },
+    {
+      "term": "Intraday Trading",
+      "meaning": "एक ही trading day में position खोलना और बंद करना।"
+    },
+    {
+      "term": "Settlement",
+      "meaning": "Trade के बाद securities और funds के लेन-देन को पूरा करने की प्रक्रिया।"
+    },
+    {
+      "term": "Price Movement",
+      "meaning": "किसी security की कीमत में बदलाव।"
+    },
+    {
+      "term": "Market Data",
+      "meaning": "Prices, volume और trading activity से संबंधित जानकारी।"
+    },
+    {
+      "term": "Reporting Methodology",
+      "meaning": "Data को calculate और report करने के नियम।"
+    }
+  ],
+  "risks": [
+    "High Delivery Volume भविष्य में price increase की guarantee नहीं देता।",
+    "गलत या पुराने data से गलत निष्कर्ष निकल सकते हैं।",
+    "अलग sources की definitions अलग हो सकती हैं।",
+    "Volume को company की financial health का विकल्प नहीं मानना चाहिए।",
+    "असामान्य volume के पीछे कई अलग कारण हो सकते हैं।"
+  ],
+  "commonMistakes": [
+    "High Delivery Percentage को निश्चित खरीद संकेत समझना।",
+    "Trading Volume और Delivery Volume को एक ही मानना।",
+    "Data की तारीख और source नहीं जाँचना।",
+    "केवल volume के आधार पर trading decision लेना।",
+    "यह मानना कि हर delivery trade long-term investment के लिए है।"
+  ],
+  "summary": [
+    "Trading Volume trade हुई quantity दर्शाता है।",
+    "Delivery Volume delivery-based trades से संबंधित reported quantity है।",
+    "Delivery Percentage की गणना source की methodology पर निर्भर करती है।",
+    "High volume भविष्य की कीमत की दिशा की guarantee नहीं देता।",
+    "Volume को अन्य market information के साथ समझना चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Trading Volume क्या दर्शाता है?",
+      "options": [
+        "एक अवधि में trade हुई quantity",
+        "कंपनी का निश्चित लाभ",
+        "Dividend की गारंटी",
+        "केवल face value"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trading Volume किसी निर्धारित अवधि में trade हुई shares की संख्या बताता है।"
+    },
+    {
+      "question": "2. क्या High Delivery Volume भविष्य में तेजी की guarantee है?",
+      "options": [
+        "हाँ, हमेशा",
+        "नहीं",
+        "हाँ, यदि share price कम हो",
+        "हाँ, यदि market बंद हो"
+      ],
+      "answerIndex": 1,
+      "explanation": "Delivery data अकेले भविष्य की कीमत की दिशा नहीं बताता।"
+    },
+    {
+      "question": "3. Delivery Percentage निकालने के लिए क्या जरूरी है?",
+      "options": [
+        "केवल company name",
+        "केवल dividend",
+        "समान definition वाले delivery और total traded quantity data",
+        "केवल face value"
+      ],
+      "answerIndex": 2,
+      "explanation": "सही गणना के लिए दोनों quantities की reporting definition समझना जरूरी है।"
+    },
+    {
+      "question": "4. Volume बढ़ने पर कीमत क्या कर सकती है?",
+      "options": [
+        "केवल बढ़ सकती है",
+        "कभी बदल नहीं सकती",
+        "हमेशा स्थिर रहती है",
+        "बढ़ या घट सकती है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Volume बढ़ने के साथ कीमत की दिशा निश्चित नहीं होती।"
+    },
+    {
+      "question": "5. Volume data का जिम्मेदार उपयोग क्या है?",
+      "options": [
+        "इसे अन्य market information के साथ समझना",
+        "हर share तुरंत खरीदना",
+        "Risk को अनदेखा करना",
+        "हर data को भविष्यवाणी मानना"
+      ],
+      "answerIndex": 0,
+      "explanation": "Volume उपयोगी जानकारी है, लेकिन अकेले investment decision का आधार नहीं होना चाहिए।"
+    }
+  ]
+    },
+  {
+  "id": "intraday-trading-guide",
+  "title": "Intraday Trading क्या है? प्रक्रिया, लागत और जोखिम",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Intraday Trading, order execution, charges और risks को हिंदी तथा English में समझें।",
+  "lessons": [
+    "1. Intraday Trading क्या है?",
+    "2. Intraday और Delivery Trading में अंतर",
+    "3. Intraday Order कैसे लगाया जाता है?",
+    "4. Margin और Leverage क्या हैं?",
+    "5. Intraday Trading की लागत",
+    "6. Square-Off और Auto Square-Off",
+    "7. Intraday Trading के प्रमुख जोखिम",
+    "8. Risk Management और Trading Discipline"
+  ],
+  "beginnerTip": "Intraday Trading में कम समय में बड़ा नुकसान हो सकता है। Leverage, charges और broker की square-off policy समझे बिना शुरुआत न करें।",
+  "detailedLessons": [
+    {
+      "title": "1. Intraday Trading क्या है?",
+      "content": "Intraday Trading में trader सामान्यतः एक ही trading day में position खोलता और बंद करता है। इसका उद्देश्य दिन के price movements से लाभ कमाने का प्रयास हो सकता है, लेकिन नुकसान भी संभव है। सभी intraday orders का परिणाम लाभ में हो, यह जरूरी नहीं है।"
+    },
+    {
+      "title": "2. Intraday और Delivery Trading",
+      "content": "Intraday product में position उसी दिन बंद करनी होती है, जबकि delivery-based purchase में shares settlement के बाद demat account में रखे जा सकते हैं। Broker के product rules, margin requirements और square-off policies अलग हो सकती हैं।"
+    },
+    {
+      "title": "3. Intraday Order कैसे लगाया जाता है?",
+      "content": "Broker app में security चुनकर Buy या Sell, quantity, order type और आवश्यक price details दर्ज की जाती हैं। Order submit करने के बाद execution status जाँचना चाहिए। Order लग जाना और पूरा execute होना अलग बातें हैं। Product selection में गलती से अनचाहा risk हो सकता है।"
+    },
+    {
+      "title": "4. Margin और Leverage",
+      "content": "Margin वह राशि या collateral है जो broker या trading system के नियमों के अनुसार position लेने के लिए आवश्यक हो सकती है। Leverage से उपलब्ध capital की तुलना में बड़ी exposure बन सकती है। इससे लाभ और नुकसान दोनों बढ़ सकते हैं। Margin rules और उपलब्ध leverage बदल सकते हैं।"
+    },
+    {
+      "title": "5. Intraday Trading की लागत",
+      "content": "Intraday trades पर लागू brokerage, exchange transaction charges, taxes, regulatory charges और अन्य fees हो सकती हैं। लागत broker, transaction value, instrument और लागू नियमों के अनुसार बदलती है। छोटी price movement से मिलने वाला gross result charges के बाद अलग हो सकता है।"
+    },
+    {
+      "title": "6. Square-Off और Auto Square-Off",
+      "content": "Square-Off का अर्थ open position बंद करना है। Auto Square-Off कुछ broker products में निर्धारित समय या conditions के अनुसार हो सकता है। इसकी timing, fees और applicability broker की policy पर निर्भर करती है। यह मानकर न चलें कि हर position अपने-आप एक ही समय पर बंद होगी।"
+    },
+    {
+      "title": "7. Intraday Trading के जोखिम",
+      "content": "Price volatility, slippage, leverage, liquidity, technical failures और गलत order entry नुकसान का कारण बन सकते हैं। Stop-Loss भी निश्चित कीमत पर exit की guarantee नहीं देता। तेज market movements में नुकसान तेजी से बढ़ सकता है।"
+    },
+    {
+      "title": "8. Risk Management और Discipline",
+      "content": "Trading से पहले संभावित नुकसान, order size, exit conditions और transaction costs समझें। बिना योजना के बार-बार trades करना जोखिम बढ़ा सकता है। उधार के पैसे या जरूरी खर्चों के लिए रखी रकम से high-risk trading करना विशेष रूप से खतरनाक हो सकता है। कोई strategy निश्चित profit नहीं देती।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Position बंद करना",
+      "content": "Trader सुबह एक share खरीदता है और उसी दिन बाद में उसे बेच देता है। यह intraday position का उदाहरण है, बशर्ते संबंधित broker product और market rules के अनुसार trade किया गया हो।"
+    },
+    {
+      "title": "Example 2: Charges का प्रभाव",
+      "content": "यदि किसी trade का gross profit ₹200 है और सभी लागू charges कुल ₹50 हैं, तो अन्य adjustments से पहले illustrative net amount ₹150 होगा। वास्तविक charges transaction और broker पर निर्भर करते हैं।"
+    },
+    {
+      "title": "Example 3: Leverage",
+      "content": "यदि किसी trader की अपनी capital ₹5,000 है और वह ₹20,000 की exposure लेता है, तो price movement का असर उसकी capital के अनुपात में बड़ा हो सकता है। यह उदाहरण केवल leverage का प्रभाव समझाने के लिए है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Intraday Trading",
+      "meaning": "एक trading day में position खोलने और बंद करने की trading activity।"
+    },
+    {
+      "term": "Margin",
+      "meaning": "Position लेने के लिए आवश्यक funds या collateral।"
+    },
+    {
+      "term": "Leverage",
+      "meaning": "अपनी capital से बड़ी market exposure लेना।"
+    },
+    {
+      "term": "Square-Off",
+      "meaning": "Open trading position को बंद करना।"
+    },
+    {
+      "term": "Auto Square-Off",
+      "meaning": "Broker policy के अनुसार कुछ positions को स्वतः बंद करने की प्रक्रिया।"
+    },
+    {
+      "term": "Slippage",
+      "meaning": "अपेक्षित और वास्तविक execution price के बीच का अंतर।"
+    },
+    {
+      "term": "Exposure",
+      "meaning": "Market price movements के प्रति position की कुल संवेदनशीलता या value।"
+    },
+    {
+      "term": "Transaction Cost",
+      "meaning": "Trade करने से संबंधित charges और fees।"
+    }
+  ],
+  "risks": [
+    "Leverage के कारण नुकसान तेजी से बढ़ सकता है।",
+    "तेज price movements में Stop-Loss अपेक्षित कीमत पर execute नहीं हो सकता।",
+    "Auto Square-Off की timing और charges broker के अनुसार अलग हो सकते हैं।",
+    "बार-बार trading करने से transaction costs बढ़ सकती हैं।",
+    "Technical failure या liquidity की कमी execution को प्रभावित कर सकती है।",
+    "Intraday trading में लाभ की कोई guarantee नहीं है।"
+  ],
+  "commonMistakes": [
+    "Intraday और Delivery product में अंतर न समझना।",
+    "Leverage को मुफ्त अतिरिक्त पैसा समझना।",
+    "Broker charges को अनदेखा करना।",
+    "Order execution status न देखना।",
+    "बिना exit plan के position लेना।",
+    "Auto Square-Off की policy जाँचे बिना trade करना।"
+  ],
+  "summary": [
+    "Intraday Trading में सामान्यतः उसी दिन position बंद की जाती है।",
+    "Margin और leverage exposure तथा risk बढ़ा सकते हैं।",
+    "Brokerage और अन्य charges net result को प्रभावित करते हैं।",
+    "Square-Off rules broker और product के अनुसार अलग हो सकते हैं।",
+    "Intraday Trading में नुकसान संभव है; कोई guaranteed profit strategy नहीं है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Intraday Trading का सामान्य अर्थ क्या है?",
+      "options": [
+        "एक ही trading day में position खोलना और बंद करना",
+        "केवल dividend प्राप्त करना",
+        "Bank deposit करना",
+        "Demat account बंद करना"
+      ],
+      "answerIndex": 0,
+      "explanation": "Intraday Trading में सामान्यतः position उसी trading day में बंद की जाती है।"
+    },
+    {
+      "question": "2. Leverage का क्या प्रभाव हो सकता है?",
+      "options": [
+        "नुकसान असंभव हो जाता है",
+        "लाभ और नुकसान दोनों बढ़ सकते हैं",
+        "सभी charges खत्म हो जाते हैं",
+        "Share price स्थिर हो जाती है"
+      ],
+      "answerIndex": 1,
+      "explanation": "Leverage बड़ी exposure बनाता है, जिससे gains और losses दोनों बढ़ सकते हैं।"
+    },
+    {
+      "question": "3. Square-Off का अर्थ क्या है?",
+      "options": [
+        "Dividend घोषित करना",
+        "Company का नाम बदलना",
+        "Open position बंद करना",
+        "Market index बनाना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Square-Off का अर्थ trading position बंद करना है।"
+    },
+    {
+      "question": "4. क्या Stop-Loss निश्चित exit price की guarantee देता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, केवल high volume में",
+        "हाँ, बिना किसी exception के",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Market gaps, slippage और order type के कारण वास्तविक execution price अलग हो सकती है।"
+    },
+    {
+      "question": "5. Intraday trade का net result समझने के लिए क्या देखना चाहिए?",
+      "options": [
+        "केवल gross profit",
+        "केवल share का नाम",
+        "Gross result और लागू charges",
+        "केवल company logo"
+      ],
+      "answerIndex": 2,
+      "explanation": "Charges और अन्य लागू costs gross profit या loss को प्रभावित करती हैं।"
+    }
+  ]
+    },
+  {
+  "id": "delivery-based-trading-guide",
+  "title": "Delivery-Based Trading क्या है?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Delivery-based buying, demat holdings, settlement और संबंधित risks को समझें।",
+  "lessons": [
+    "1. Delivery-Based Trading क्या है?",
+    "2. Delivery और Intraday में अंतर",
+    "3. Delivery Shares Demat Account में कैसे आते हैं?",
+    "4. Settlement की भूमिका",
+    "5. Delivery Trade की लागत",
+    "6. Holdings और Positions में अंतर",
+    "7. Corporate Actions का प्रभाव",
+    "8. Delivery Trading के जोखिम"
+  ],
+  "beginnerTip": "Delivery खरीदने का अर्थ यह नहीं कि share की कीमत हमेशा बढ़ेगी। Investment से पहले कंपनी, valuation और जोखिम समझना जरूरी है।",
+  "detailedLessons": [
+    {
+      "title": "1. Delivery-Based Trading क्या है?",
+      "content": "Delivery-based buying में खरीदे गए shares settlement प्रक्रिया के बाद demat account में holdings के रूप में आ सकते हैं। Investor shares को अगले trading day या अधिक समय तक रख सकता है, लेकिन ऐसा करना अपने-आप लाभ की guarantee नहीं है। लागू settlement और broker rules समझना जरूरी है।"
+    },
+    {
+      "title": "2. Delivery और Intraday में अंतर",
+      "content": "Intraday product सामान्यतः उसी दिन position बंद करने के लिए होता है। Delivery-based purchase में shares settlement के बाद demat holdings में रखे जा सकते हैं। दोनों products के margin, charges और transaction handling में अंतर हो सकता है।"
+    },
+    {
+      "title": "3. Shares Demat Account में कैसे आते हैं?",
+      "content": "Exchange पर trade execute होने के बाद clearing corporation और depository व्यवस्था के माध्यम से settlement होता है। Settlement पूरा होने पर eligible purchased shares demat account में credit हो सकते हैं। Credit का समय लागू settlement cycle, holidays और processing पर निर्भर करता है।"
+    },
+    {
+      "title": "4. Settlement की भूमिका",
+      "content": "Settlement में खरीदार के funds और seller की securities का निर्धारित प्रक्रिया के अनुसार निपटान होता है। भारत में लागू settlement cycle market segment और eligible securities के अनुसार अलग हो सकती है। Trade execute होने और shares demat account में दिखाई देने के बीच अंतर हो सकता है।"
+    },
+    {
+      "title": "5. Delivery Trade की लागत",
+      "content": "Delivery transactions पर brokerage, taxes, exchange charges, depository participant charges और अन्य लागू costs हो सकती हैं। Charges broker और transaction details के अनुसार बदलते हैं। खरीद और बिक्री के कुल खर्च को समझे बिना net return का सही अनुमान नहीं लगाया जा सकता।"
+    },
+    {
+      "title": "6. Holdings और Positions",
+      "content": "Holdings सामान्यतः demat account में रखी securities को दर्शाती हैं। Positions में open trades या trading exposure दिखाई जा सकती है। Broker interfaces में terminology अलग हो सकती है। Trade के बाद holdings और available quantity की पुष्टि करना उपयोगी है।"
+    },
+    {
+      "title": "7. Corporate Actions",
+      "content": "Bonus issue, stock split, dividend और rights issue जैसे corporate actions holdings को प्रभावित कर सकते हैं। हर corporate action का प्रभाव अलग होता है। पात्रता record date, settlement rules और संबंधित कंपनी की घोषणा पर निर्भर कर सकती है।"
+    },
+    {
+      "title": "8. Delivery Trading के जोखिम",
+      "content": "Delivery-based holding में share price गिर सकती है और निवेश का मूल्य कम हो सकता है। Company-specific events, market volatility, liquidity और business performance जोखिम पैदा कर सकते हैं। Shares लंबे समय तक रखने से लाभ निश्चित नहीं हो जाता।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Delivery Purchase",
+      "content": "एक investor 20 shares खरीदता है और trade settlement पूरा होने के बाद eligible shares उसके demat holdings में दिखाई देते हैं।"
+    },
+    {
+      "title": "Example 2: Holdings Value",
+      "content": "यदि 20 shares का market price ₹100 प्रति share है, तो उनका illustrative market value ₹2,000 है। Price बदलने पर holdings value भी बदल सकती है।"
+    },
+    {
+      "title": "Example 3: Charges",
+      "content": "यदि खरीद और बिक्री से संबंधित कुल लागू costs ₹100 हैं, तो net result निकालते समय इन costs को शामिल करना होगा। वास्तविक costs broker और transaction पर निर्भर करती हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Delivery-Based Trading",
+      "meaning": "ऐसी buying जिसमें shares settlement के बाद demat holdings में रखे जा सकते हैं।"
+    },
+    {
+      "term": "Demat Account",
+      "meaning": "Electronic form में securities रखने वाला account।"
+    },
+    {
+      "term": "Holdings",
+      "meaning": "Account में रखी securities का विवरण।"
+    },
+    {
+      "term": "Position",
+      "meaning": "Trading activity से संबंधित open exposure या trade का विवरण।"
+    },
+    {
+      "term": "Settlement",
+      "meaning": "Trade के बाद funds और securities का निपटान।"
+    },
+    {
+      "term": "Depository",
+      "meaning": "Electronic securities holding और संबंधित व्यवस्था प्रदान करने वाली संस्था।"
+    },
+    {
+      "term": "Corporate Action",
+      "meaning": "Shareholders या securities को प्रभावित करने वाला company action।"
+    },
+    {
+      "term": "Market Value",
+      "meaning": "वर्तमान market price के आधार पर निकाला गया मूल्य।"
+    }
+  ],
+  "risks": [
+    "Delivery shares की कीमत गिर सकती है।",
+    "Company-specific risks लंबे समय तक holding करने पर भी बने रहते हैं।",
+    "Liquidity कम होने पर shares बेचना कठिन हो सकता है।",
+    "Settlement timing holidays और लागू नियमों से प्रभावित हो सकती है।",
+    "Brokerage, taxes और अन्य costs net return को घटा सकती हैं।"
+  ],
+  "commonMistakes": [
+    "Delivery investment को guaranteed profit समझना।",
+    "Intraday और delivery product की conditions न पढ़ना।",
+    "Settlement से पहले demat credit की उम्मीद करना।",
+    "Transaction charges को अनदेखा करना।",
+    "Corporate action की eligibility और record date न जाँचना।"
+  ],
+  "summary": [
+    "Delivery-based purchases settlement के बाद demat holdings में आ सकती हैं।",
+    "Delivery और Intraday products की conditions अलग हो सकती हैं।",
+    "Holdings value market price के साथ बदलती है।",
+    "Settlement timing और charges लागू नियमों पर निर्भर करते हैं।",
+    "Delivery holding में भी market और company risks बने रहते हैं।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Delivery-based purchase में shares सामान्यतः कहाँ रखे जाते हैं?",
+      "options": [
+        "केवल email में",
+        "Demat Account में",
+        "Bank passbook में",
+        "Trading password में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Settlement पूरा होने के बाद eligible shares demat holdings में आ सकते हैं।"
+    },
+    {
+      "question": "2. क्या Delivery Trading में लाभ निश्चित होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, केवल long-term में",
+        "नहीं",
+        "हाँ, यदि price कम हो"
+      ],
+      "answerIndex": 2,
+      "explanation": "Delivery holdings में भी market और company risks बने रहते हैं।"
+    },
+    {
+      "question": "3. Settlement क्या है?",
+      "options": [
+        "Company का advertisement",
+        "Share का नाम",
+        "Dividend की घोषणा",
+        "Trade के बाद funds और securities का निपटान"
+      ],
+      "answerIndex": 3,
+      "explanation": "Settlement trade के बाद funds और securities के निर्धारित निपटान की प्रक्रिया है।"
+    },
+    {
+      "question": "4. Holdings Value किससे प्रभावित होती है?",
+      "options": [
+        "Share की market price और quantity से",
+        "केवल account password से",
+        "केवल mobile model से",
+        "केवल email address से"
+      ],
+      "answerIndex": 0,
+      "explanation": "Holdings की market value सामान्यतः quantity और current market price पर निर्भर करती है।"
+    },
+    {
+      "question": "5. Delivery trade में कौन-सी लागत हो सकती है?",
+      "options": [
+        "कभी कोई लागत नहीं",
+        "Brokerage और लागू transaction charges",
+        "केवल school fees",
+        "केवल internet recharge"
+      ],
+      "answerIndex": 1,
+      "explanation": "Delivery transactions पर broker और लागू नियमों के अनुसार charges हो सकते हैं।"
+    }
+  ]
+        },
+  {
+  "id": "btst-stbt-guide",
+  "title": "BTST और STBT क्या हैं? नियम और जोखिम",
+  "category": "Stock Market",
+  "level": "Intermediate",
+  "description": "BTST और STBT concepts, settlement, short selling और broker-specific restrictions को समझें।",
+  "lessons": [
+    "1. BTST क्या है?",
+    "2. STBT क्या है?",
+    "3. BTST और Delivery Trading में अंतर",
+    "4. Settlement और Delivery Risk",
+    "5. Short Selling से संबंध",
+    "6. Broker और Exchange Rules",
+    "7. BTST/STBT के प्रमुख जोखिम",
+    "8. Trade करने से पहले क्या जाँचें?"
+  ],
+  "beginnerTip": "BTST और STBT हर broker या market segment में समान रूप से उपलब्ध नहीं होते। Product availability, settlement rules और short-selling restrictions पहले जाँचें।",
+  "detailedLessons": [
+    {
+      "title": "1. BTST क्या है?",
+      "content": "BTST का प्रचलित अर्थ Buy Today, Sell Tomorrow है। यह उस प्रकार की trading activity को दर्शाता है जिसमें खरीदे गए shares को अगले trading day पर बेचने का प्रयास किया जाता है, जबकि purchase की settlement प्रक्रिया अभी पूरी नहीं हुई हो सकती। इसकी अनुमति और handling broker तथा exchange rules पर निर्भर करती है।"
+    },
+    {
+      "title": "2. STBT क्या है?",
+      "content": "STBT का प्रचलित अर्थ Sell Today, Buy Tomorrow है। यह शब्द कुछ trading contexts में आज sell करके अगले दिन buy back करने की रणनीति के लिए उपयोग किया जाता है। Cash equity में overnight short position रखने पर restrictions हो सकती हैं। हर broker या segment में ऐसा trade permitted नहीं होता।"
+    },
+    {
+      "title": "3. BTST और Delivery Trading",
+      "content": "सामान्य delivery purchase में shares settlement के बाद demat holdings में आ सकते हैं। BTST में purchase settlement पूरा होने से पहले अगले trading day पर selling का प्रयास हो सकता है। इससे delivery failure या broker-specific charges और restrictions का जोखिम हो सकता है।"
+    },
+    {
+      "title": "4. Settlement और Delivery Risk",
+      "content": "यदि खरीदे गए shares समय पर deliver नहीं होते, तो short delivery या auction-related processes लागू हो सकती हैं। वास्तविक handling exchange, clearing corporation और broker rules पर निर्भर करती है। BTST transaction में केवल price movement नहीं, settlement-related risk भी समझना चाहिए।"
+    },
+    {
+      "title": "5. Short Selling से संबंध",
+      "content": "STBT concept में sell-first और buy-later exposure शामिल हो सकता है। Cash equity market में overnight short selling की अनुमति को सामान्य नियम नहीं मानना चाहिए। Exchange rules, securities restrictions और product type की जाँच जरूरी है। Derivatives में अलग contract rules लागू होते हैं।"
+    },
+    {
+      "title": "6. Broker और Exchange Rules",
+      "content": "Broker कुछ securities में BTST सुविधा दे सकता है या कुछ securities को restrict कर सकता है। Margin, settlement handling, charges और order restrictions बदल सकते हैं। Broker app में दिखाई गई current product conditions और exchange circulars देखना आवश्यक है।"
+    },
+    {
+      "title": "7. प्रमुख जोखिम",
+      "content": "BTST में price gap, delivery failure और liquidity risk हो सकते हैं। STBT या short exposure में कीमत बढ़ने पर नुकसान हो सकता है। कुछ short positions में loss potential बहुत बड़ा हो सकता है। दोनों में profit guaranteed नहीं है।"
+    },
+    {
+      "title": "8. Trade से पहले जाँच",
+      "content": "Product availability, settlement status, eligible securities, margin requirements, transaction costs और broker policy की पुष्टि करें। किसी भी trade को केवल abbreviation के नाम से सुरक्षित न मानें। यदि नियम स्पष्ट नहीं हैं, तो transaction से पहले broker से लिखित जानकारी लें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: BTST Concept",
+      "content": "एक trader सोमवार को shares खरीदता है और broker की अनुमति तथा लागू rules के अनुसार मंगलवार को उन्हें बेचने का प्रयास करता है। यह BTST concept का उदाहरण है, लेकिन actual availability और settlement handling अलग हो सकती है।"
+    },
+    {
+      "title": "Example 2: Price Gap",
+      "content": "यदि कोई trader आज खरीदता है और अगले trading day market lower open होता है, तो selling price खरीद मूल्य से कम हो सकती है। BTST में overnight price risk बना रहता है।"
+    },
+    {
+      "title": "Example 3: STBT Risk",
+      "content": "यदि किसी permitted trading arrangement में sell-first exposure ली गई और अगले दिन price बढ़ गया, तो buyback अधिक कीमत पर करना पड़ सकता है। यह उदाहरण short exposure के price risk को समझाता है, किसी trade की सलाह नहीं है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "BTST",
+      "meaning": "Buy Today, Sell Tomorrow; broker और market rules के अधीन trading concept।"
+    },
+    {
+      "term": "STBT",
+      "meaning": "Sell Today, Buy Tomorrow; इसकी availability और permissibility segment के अनुसार बदल सकती है।"
+    },
+    {
+      "term": "Settlement",
+      "meaning": "Trade के बाद securities और funds का निपटान।"
+    },
+    {
+      "term": "Short Delivery",
+      "meaning": "जब seller निर्धारित समय पर पूरी securities deliver नहीं कर पाता।"
+    },
+    {
+      "term": "Auction",
+      "meaning": "कुछ settlement failures को resolve करने के लिए लागू प्रक्रिया।"
+    },
+    {
+      "term": "Short Selling",
+      "meaning": "ऐसी selling जिसमें seller के पास संबंधित security की सामान्य owned holding न हो या short exposure बनाई जाए; नियम लागू होते हैं।"
+    },
+    {
+      "term": "Price Gap",
+      "meaning": "दो trading periods के बीच कीमत का उल्लेखनीय अंतर।"
+    },
+    {
+      "term": "Broker Restriction",
+      "meaning": "Broker द्वारा किसी product या security पर लगाई गई सीमा।"
+    }
+  ],
+  "risks": [
+    "BTST में shares की timely delivery न होने का जोखिम हो सकता है।",
+    "Overnight price gaps से नुकसान हो सकता है।",
+    "STBT या short exposure में price increase से नुकसान हो सकता है।",
+    "Auction-related charges या अन्य settlement costs लागू हो सकते हैं।",
+    "हर security या broker में ये सुविधाएँ उपलब्ध नहीं होतीं।",
+    "गलत product selection से unexpected exposure बन सकती है।"
+  ],
+  "commonMistakes": [
+    "BTST को सामान्य delivery holding के समान समझना।",
+    "STBT को हर cash equity share में स्वतः permitted मानना।",
+    "Settlement rules और broker restrictions न जाँचना।",
+    "Overnight price gap को अनदेखा करना।",
+    "संभावित charges और short delivery risk को न समझना।"
+  ],
+  "summary": [
+    "BTST का अर्थ सामान्यतः Buy Today, Sell Tomorrow है।",
+    "STBT का अर्थ सामान्यतः Sell Today, Buy Tomorrow है।",
+    "इनकी availability broker, security और market rules पर निर्भर करती है।",
+    "Settlement failure, price gap और liquidity risk हो सकते हैं।",
+    "Current rules की पुष्टि किए बिना ऐसे trades नहीं करने चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. BTST का प्रचलित अर्थ क्या है?",
+      "options": [
+        "Buy Today, Sell Tomorrow",
+        "Buy Tomorrow, Sell Today",
+        "Bank Transfer Settlement Time",
+        "Bonus Trading Share Type"
+      ],
+      "answerIndex": 0,
+      "explanation": "BTST का प्रचलित अर्थ Buy Today, Sell Tomorrow है।"
+    },
+    {
+      "question": "2. क्या STBT हर cash equity security में स्वतः permitted है?",
+      "options": [
+        "हाँ, सभी securities में",
+        "नहीं, लागू rules और restrictions जाँचने चाहिए",
+        "हाँ, बिना margin के हमेशा",
+        "हाँ, केवल holiday पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cash equity short positions पर restrictions हो सकती हैं और rules की जाँच जरूरी है।"
+    },
+    {
+      "question": "3. BTST में कौन-सा अतिरिक्त जोखिम हो सकता है?",
+      "options": [
+        "कोई settlement risk नहीं",
+        "निश्चित लाभ",
+        "Delivery failure या settlement-related risk",
+        "Dividend हमेशा मिलना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Settlement पूरा होने से पहले selling के प्रयास में delivery-related risk हो सकता है।"
+    },
+    {
+      "question": "4. Short exposure में price बढ़ने पर क्या हो सकता है?",
+      "options": [
+        "नुकसान असंभव है",
+        "हमेशा dividend मिलेगा",
+        "Charges समाप्त होंगे",
+        "Buyback महँगा पड़ सकता है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Short exposure में कीमत बढ़ने पर position बंद करने की लागत बढ़ सकती है।"
+    },
+    {
+      "question": "5. BTST/STBT से पहले क्या करना चाहिए?",
+      "options": [
+        "Broker, settlement और exchange rules जाँचना",
+        "सभी restrictions अनदेखी करना",
+        "केवल social media देखना",
+        "Profit guaranteed मानना"
+      ],
+      "answerIndex": 0,
+      "explanation": "इन trading concepts की availability और risks समझने के लिए current rules की जाँच जरूरी है।"
+    }
+  ]
+    },
+  {
+  "id": "circuit-limit-price-bands",
+  "title": "Circuit Limit और Price Bands क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Price Bands, circuit limits और exchange risk-control mechanisms को समझें।",
+  "lessons": [
+    "1. Price Band क्या है?",
+    "2. Circuit Limit क्या होती है?",
+    "3. Upper और Lower Price Limits",
+    "4. अलग securities में अलग bands",
+    "5. Price Band कैसे काम करती है?",
+    "6. Order Placement पर प्रभाव",
+    "7. Price Bands और Market-wide Circuit Breakers",
+    "8. Circuit Limits की सीमाएँ"
+  ],
+  "beginnerTip": "Price Band या Circuit Limit किसी share की fair value नहीं बताती। ये trading rules हैं और लागू limits security तथा exchange rules के अनुसार बदल सकती हैं।",
+  "detailedLessons": [
+    {
+      "title": "1. Price Band क्या है?",
+      "content": "Price Band वह निर्धारित price range है जिसके भीतर किसी security के trades या orders को लागू exchange rules के अनुसार अनुमति दी जा सकती है। Price bands का उद्देश्य कुछ securities में असामान्य price movement को नियंत्रित करने में मदद करना है।"
+    },
+    {
+      "title": "2. Circuit Limit क्या होती है?",
+      "content": "Circuit Limit आम बोलचाल में उस सीमा के लिए उपयोग होती है जहाँ price band या market-wide circuit mechanism के कारण trading सीमित या रोक दी जा सकती है। अलग mechanisms के नियम अलग होते हैं, इसलिए दोनों को एक जैसा नहीं मानना चाहिए।"
+    },
+    {
+      "title": "3. Upper और Lower Price Limits",
+      "content": "Upper Price Limit किसी security के लिए लागू ऊपरी price boundary और Lower Price Limit निचली boundary को दर्शा सकती है। इन सीमाओं तक पहुँचने पर आगे trades की अनुमति उपलब्ध orders और exchange rules पर निर्भर करती है।"
+    },
+    {
+      "title": "4. अलग securities में अलग bands",
+      "content": "हर security के लिए एक ही price band लागू हो, यह जरूरी नहीं है। Security type, exchange framework और वर्तमान surveillance या risk-control rules के अनुसार limits अलग हो सकती हैं। Current band की पुष्टि broker या exchange data से करें।"
+    },
+    {
+      "title": "5. Price Band कैसे काम करती है?",
+      "content": "जब price applicable band की सीमा तक पहुँचती है, तो उस सीमा से बाहर के orders या trades पर restrictions लागू हो सकती हैं। यदि upper limit पर sellers उपलब्ध नहीं हैं या lower limit पर buyers उपलब्ध नहीं हैं, तो order execution कठिन हो सकता है।"
+    },
+    {
+      "title": "6. Order Placement पर प्रभाव",
+      "content": "Price band के पास market orders, limit orders और available liquidity के परिणाम अलग हो सकते हैं। किसी order का submit होना execution की guarantee नहीं है। Price limits के कारण order reject, pending या unfilled रह सकता है।"
+    },
+    {
+      "title": "7. Price Bands और Market-wide Circuit Breakers",
+      "content": "Individual security price bands और market-wide circuit breakers अलग mechanisms हैं। Market-wide circuit breakers व्यापक index movement के आधार पर लागू हो सकते हैं, जबकि security-specific price bands किसी individual security पर लागू हो सकती हैं। Current thresholds और procedures के लिए exchange rules देखें।"
+    },
+    {
+      "title": "8. सीमाएँ",
+      "content": "Price band सुरक्षा की पूर्ण guarantee नहीं है और न ही fair value का संकेत है। Liquidity कम होने पर buyer या seller मिलना कठिन हो सकता है। Price band के अंदर भी निवेशक नुकसान उठा सकते हैं।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Illustrative Upper Limit",
+      "content": "यदि किसी security के लिए illustrative upper limit ₹110 है, तो applicable rules के अनुसार ₹110 से ऊपर trade की अनुमति न हो सकती है। वास्तविक limit security और exchange के current rules पर निर्भर करती है।"
+    },
+    {
+      "title": "Example 2: Lower Limit",
+      "content": "यदि price lower limit तक पहुँच जाए और buyers उपलब्ध न हों, तो seller को shares बेचने के लिए matching buyer न मिल सके।"
+    },
+    {
+      "title": "Example 3: Market-wide Circuit",
+      "content": "यदि व्यापक market index निर्धारित threshold तक move करता है, तो लागू framework के अनुसार market-wide trading halt हो सकता है। इसका mechanism individual share price band से अलग है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Price Band",
+      "meaning": "किसी security के लिए लागू price range या trading boundary।"
+    },
+    {
+      "term": "Circuit Limit",
+      "meaning": "Price movement पर लागू सीमा या circuit-related restriction के लिए प्रचलित शब्द।"
+    },
+    {
+      "term": "Upper Price Limit",
+      "meaning": "लागू नियमों के अनुसार निर्धारित ऊपरी price boundary।"
+    },
+    {
+      "term": "Lower Price Limit",
+      "meaning": "लागू नियमों के अनुसार निर्धारित निचली price boundary।"
+    },
+    {
+      "term": "Market-wide Circuit Breaker",
+      "meaning": "व्यापक market movement पर लागू trading halt mechanism।"
+    },
+    {
+      "term": "Liquidity",
+      "meaning": "किसी security को खरीदने या बेचने की क्षमता।"
+    },
+    {
+      "term": "Order Execution",
+      "meaning": "Order का trade में बदलना।"
+    },
+    {
+      "term": "Exchange Rules",
+      "meaning": "Exchange द्वारा निर्धारित trading और risk-control नियम।"
+    }
+  ],
+  "risks": [
+    "Price band पर buyers या sellers की कमी से order execute नहीं हो सकता।",
+    "Price band fair value या guaranteed support level नहीं है।",
+    "अचानक news के कारण security price band तक पहुँच सकती है।",
+    "Market-wide circuit और individual security band के नियम अलग हैं।",
+    "पुरानी limit information पर निर्भर करना गलत order decisions का कारण बन सकता है।"
+  ],
+  "commonMistakes": [
+    "Price band को guaranteed support या resistance समझना।",
+    "मानना कि circuit लगने पर हर order execute हो जाएगा।",
+    "Individual security band और market-wide circuit breaker को एक समझना।",
+    "Current price limits जाँचे बिना order देना।",
+    "Price band को investment safety की guarantee मानना।"
+  ],
+  "summary": [
+    "Price bands securities में लागू price boundaries हैं।",
+    "Upper और Lower Limits के पास execution कठिन हो सकता है।",
+    "हर security की limits समान होना जरूरी नहीं है।",
+    "Market-wide circuit breakers अलग mechanism हैं।",
+    "Current limits और procedures exchange rules से verify करने चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Price Band क्या है?",
+      "options": [
+        "कंपनी का dividend",
+        "लागू price range या boundary",
+        "निश्चित profit level",
+        "Demat account number"
+      ],
+      "answerIndex": 1,
+      "explanation": "Price Band security पर लागू price range या boundary होती है।"
+    },
+    {
+      "question": "2. Upper Price Limit क्या दर्शाती है?",
+      "options": [
+        "ऊपरी price boundary",
+        "कंपनी का annual profit",
+        "Bank interest rate",
+        "Dividend yield"
+      ],
+      "answerIndex": 0,
+      "explanation": "Upper Price Limit लागू rules के अनुसार निर्धारित ऊपरी price boundary है।"
+    },
+    {
+      "question": "3. Price band पर order execute न होने का एक कारण क्या है?",
+      "options": [
+        "कंपनी का नाम",
+        "Investor का शहर",
+        "Matching buyers या sellers की कमी",
+        "Mobile का रंग"
+      ],
+      "answerIndex": 2,
+      "explanation": "Price limit पर पर्याप्त opposite-side orders न होने से execution कठिन हो सकता है।"
+    },
+    {
+      "question": "4. Individual security price band और market-wide circuit breaker क्या हैं?",
+      "options": [
+        "हमेशा एक ही mechanism",
+        "केवल dividend के नियम",
+        "Demat account के विकल्प",
+        "अलग mechanisms"
+      ],
+      "answerIndex": 3,
+      "explanation": "Security-specific price bands और market-wide circuit breakers के उद्देश्य तथा नियम अलग होते हैं।"
+    },
+    {
+      "question": "5. Current price limits कहाँ verify करनी चाहिए?",
+      "options": [
+        "केवल random social media post पर",
+        "Broker या exchange की current information से",
+        "केवल पुराने screenshot से",
+        "किसी अनुमान से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Price limits बदल सकती हैं, इसलिए current broker या exchange information जाँचें।"
+    }
+  ]
+  },
+  {
+  "id": "upper-lower-circuit-guide",
+  "title": "Upper Circuit और Lower Circuit कैसे काम करते हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Upper Circuit, Lower Circuit, order matching और liquidity-related risks को समझें।",
+  "lessons": [
+    "1. Upper Circuit क्या है?",
+    "2. Lower Circuit क्या है?",
+    "3. Upper Circuit पर Trading",
+    "4. Lower Circuit पर Trading",
+    "5. Buyers और Sellers की भूमिका",
+    "6. Circuit पर Order Execution",
+    "7. Circuit लगने के संभावित कारण",
+    "8. Circuit Stocks में जोखिम"
+  ],
+  "beginnerTip": "Upper Circuit लगना भविष्य में और तेजी की guarantee नहीं है। Lower Circuit लगना भी अपने-आप share की fair value नहीं बताता।",
+  "detailedLessons": [
+    {
+      "title": "1. Upper Circuit क्या है?",
+      "content": "Upper Circuit शब्द आम तौर पर उस स्थिति के लिए इस्तेमाल होता है जब किसी security की कीमत लागू upper price limit तक पहुँच जाती है। आगे trading और orders की अनुमति संबंधित exchange rules और उस समय की order-book conditions पर निर्भर करती है।"
+    },
+    {
+      "title": "2. Lower Circuit क्या है?",
+      "content": "Lower Circuit उस स्थिति के लिए प्रचलित शब्द है जब security की कीमत लागू lower price limit तक पहुँच जाती है। यदि sellers अधिक हों और buyers कम या अनुपस्थित हों, तो sell order execute करना कठिन हो सकता है।"
+    },
+    {
+      "title": "3. Upper Circuit पर Trading",
+      "content": "Upper limit पर खरीदने के इच्छुक orders अधिक और बेचने वाले कम हों, तो buyer को seller मिलने में कठिनाई हो सकती है। Buy order submit करने से shares मिलना सुनिश्चित नहीं होता। Queue priority और exchange matching rules परिणाम को प्रभावित कर सकते हैं।"
+    },
+    {
+      "title": "4. Lower Circuit पर Trading",
+      "content": "Lower limit पर बेचने के इच्छुक orders अधिक और buyers कम हों, तो seller के shares तुरंत नहीं बिक सकते। Order pending रह सकता है या लागू नियमों के अनुसार उसकी स्थिति बदल सकती है।"
+    },
+    {
+      "title": "5. Buyers और Sellers की भूमिका",
+      "content": "Order matching में उपलब्ध opposite-side orders महत्वपूर्ण हैं। Price limit तक पहुँचने के बावजूद trading outcome order-book balance, order priority और exchange rules पर निर्भर करता है। केवल circuit status देखकर liquidity की guarantee नहीं माननी चाहिए।"
+    },
+    {
+      "title": "6. Order Execution",
+      "content": "Circuit के पास order लगाना और order execute होना अलग बातें हैं। यदि opposite-side quantity पर्याप्त नहीं है, तो order unfilled रह सकता है। Broker app में order status और executed quantity की पुष्टि करना जरूरी है।"
+    },
+    {
+      "title": "7. Circuit लगने के कारण",
+      "content": "अचानक demand-supply imbalance, company news, market sentiment और अन्य events price movement को प्रभावित कर सकते हैं। Circuit limit तक पहुँचना अपने-आप यह साबित नहीं करता कि कंपनी fundamentally अच्छी या खराब है।"
+    },
+    {
+      "title": "8. Circuit Stocks में जोखिम",
+      "content": "Upper circuit के बाद price reversal संभव है और lower circuit पर exit मुश्किल हो सकता है। Liquidity, volatility और company-specific risks को समझना चाहिए। Circuit movements का पीछा करते हुए बिना research के trade करना नुकसानदायक हो सकता है।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Upper Circuit",
+      "content": "यदि किसी security की applicable upper limit ₹110 है और buyers उपलब्ध हैं लेकिन sellers नहीं हैं, तो खरीदने का order होने के बावजूद execution नहीं हो सकता।"
+    },
+    {
+      "title": "Example 2: Lower Circuit",
+      "content": "यदि किसी security की applicable lower limit ₹90 है और sellers अधिक हैं लेकिन buyers उपलब्ध नहीं हैं, तो बेचने का order pending रह सकता है।"
+    },
+    {
+      "title": "Example 3: Order Status",
+      "content": "Circuit limit पर order submit करने के बाद trader को broker app में status देखना चाहिए। Order submitted दिखना completed trade होने के बराबर नहीं है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Upper Circuit",
+      "meaning": "Security की लागू upper price limit तक पहुँचने की स्थिति।"
+    },
+    {
+      "term": "Lower Circuit",
+      "meaning": "Security की लागू lower price limit तक पहुँचने की स्थिति।"
+    },
+    {
+      "term": "Order Queue",
+      "meaning": "Execution की प्रतीक्षा कर रहे orders की कतार।"
+    },
+    {
+      "term": "Order Matching",
+      "meaning": "Buy और sell orders को लागू नियमों के अनुसार match करना।"
+    },
+    {
+      "term": "Liquidity",
+      "meaning": "किसी security को खरीदने या बेचने की क्षमता।"
+    },
+    {
+      "term": "Price Limit",
+      "meaning": "Security के लिए लागू price boundary।"
+    },
+    {
+      "term": "Pending Order",
+      "meaning": "ऐसा order जो अभी पूरी तरह execute नहीं हुआ है।"
+    },
+    {
+      "term": "Price Reversal",
+      "meaning": "पहले की price direction से विपरीत दिशा में movement।"
+    }
+  ],
+  "risks": [
+    "Upper Circuit पर buyer को seller नहीं मिल सकता।",
+    "Lower Circuit पर seller को buyer नहीं मिल सकता।",
+    "Circuit status भविष्य की कीमत की guarantee नहीं है।",
+    "Low liquidity के कारण exit में देरी हो सकती है।",
+    "अचानक company news के कारण price तेजी से बदल सकती है।"
+  ],
+  "commonMistakes": [
+    "Upper Circuit को guaranteed profit समझना।",
+    "Lower Circuit पर तुरंत exit संभव मानना।",
+    "Order submit होने को trade execution समझना।",
+    "Queue priority और liquidity को अनदेखा करना।",
+    "बिना research के circuit movement का पीछा करना।"
+  ],
+  "summary": [
+    "Upper Circuit upper price limit से संबंधित है।",
+    "Lower Circuit lower price limit से संबंधित है।",
+    "Order execution opposite-side liquidity पर निर्भर करता है।",
+    "Circuit limit पर orders unfilled रह सकते हैं।",
+    "Circuit status investment safety या future profit की guarantee नहीं है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Upper Circuit किससे संबंधित है?",
+      "options": [
+        "कंपनी के dividend से",
+        "लागू upper price limit से",
+        "Bank account से",
+        "Demat password से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Upper Circuit security की applicable upper price limit तक पहुँचने की स्थिति है।"
+    },
+    {
+      "question": "2. Lower Circuit पर sell order क्यों pending रह सकता है?",
+      "options": [
+        "क्योंकि buyers उपलब्ध नहीं हो सकते",
+        "क्योंकि share का नाम लंबा है",
+        "क्योंकि dividend हमेशा अधिक होता है",
+        "क्योंकि हर order स्वतः execute होता है"
+      ],
+      "answerIndex": 0,
+      "explanation": "Lower limit पर पर्याप्त buyers न होने से seller का order execute नहीं हो सकता।"
+    },
+    {
+      "question": "3. क्या Upper Circuit guaranteed profit देता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "हाँ, केवल small-cap में",
+        "नहीं",
+        "हाँ, यदि order pending हो"
+      ],
+      "answerIndex": 2,
+      "explanation": "Circuit status future price movement या profit की guarantee नहीं देता।"
+    },
+    {
+      "question": "4. Order submit होने का अर्थ क्या order execute हो गया?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल market holiday पर",
+        "केवल dividend date पर",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Order submit होना और पूरा execute होना अलग बातें हैं।"
+    },
+    {
+      "question": "5. Circuit पर order के बारे में क्या जाँचना चाहिए?",
+      "options": [
+        "केवल company logo",
+        "Order status और executed quantity",
+        "केवल social media comments",
+        "केवल face value"
+      ],
+      "answerIndex": 1,
+      "explanation": "Broker app में order status और executed quantity की पुष्टि करनी चाहिए।"
+    }
+  ]
+  },
+  {
+  "id": "trading-holidays-market-timings",
+  "title": "Trading Holidays, Market Timings और Trading Sessions",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Indian equity market timings, trading sessions और exchange holidays को समझें।",
+  "lessons": [
+    "1. Indian Equity Market Timings",
+    "2. Pre-Open Session का परिचय",
+    "3. Normal Trading Session",
+    "4. Closing Process",
+    "5. Trading Holidays क्या हैं?",
+    "6. Settlement Holidays और Trading Holidays",
+    "7. Special Trading Sessions",
+    "8. Timings Verify कैसे करें?"
+  ],
+  "beginnerTip": "Market timings और holidays की जानकारी हर साल तथा special sessions में बदल सकती है। Order लगाने से पहले संबंधित exchange का current calendar देखें।",
+  "detailedLessons": [
+    {
+      "title": "1. Indian Equity Market Timings",
+      "content": "भारत के प्रमुख equity cash market में सामान्य regular trading session आम तौर पर सोमवार से शुक्रवार, सुबह 9:15 से दोपहर 3:30 बजे तक होता है। Holidays, special sessions और market segment के अनुसार timing अलग हो सकती है। Current timings संबंधित exchange की official information से verify करें।"
+    },
+    {
+      "title": "2. Pre-Open Session",
+      "content": "Pre-open session में निर्धारित समय के दौरान orders collect किए जा सकते हैं और लागू rules के अनुसार opening price discovery की प्रक्रिया होती है। Exact timings, eligible securities और order modification या cancellation rules exchange के current framework पर निर्भर करते हैं।"
+    },
+    {
+      "title": "3. Normal Trading Session",
+      "content": "Normal trading session में eligible securities के buy और sell orders exchange system में match होते हैं। Liquidity, volatility और order type के अनुसार execution results बदल सकते हैं। Regular session की timing से पहले या बाद में सभी products समान रूप से उपलब्ध हों, यह जरूरी नहीं है।"
+    },
+    {
+      "title": "4. Closing Process",
+      "content": "Trading session समाप्त होने के बाद exchange और broker systems में closing-related processes तथा reporting होती है। Closing price की calculation security और exchange methodology के अनुसार होती है। Closing price और किसी individual trade की execution price अलग हो सकती हैं।"
+    },
+    {
+      "title": "5. Trading Holidays",
+      "content": "Trading Holidays वे दिन हैं जब संबंधित exchange में सामान्य trading बंद रहती है। Holidays exchange calendar के अनुसार घोषित की जाती हैं और अलग segments में calendar अलग हो सकता है। Festival या public holiday के कारण market बंद है या नहीं, इसे official calendar से verify करें।"
+    },
+    {
+      "title": "6. Settlement Holidays और Trading Holidays",
+      "content": "Trading Holiday और Settlement Holiday हमेशा एक ही चीज नहीं होते। Trading बंद होने के बावजूद कुछ settlement processes के लिए अलग calendar लागू हो सकता है। Funds और securities की expected settlement date जानने के लिए broker तथा clearing corporation की current information देखें।"
+    },
+    {
+      "title": "7. Special Trading Sessions",
+      "content": "कभी-कभी exchange विशेष अवसरों पर special trading session घोषित कर सकता है। ऐसे sessions की तारीख, timing और eligible segments सामान्य trading schedule से अलग हो सकते हैं। केवल सामान्य market timing देखकर special session का अनुमान न लगाएँ।"
+    },
+    {
+      "title": "8. Timings Verify कैसे करें?",
+      "content": "NSE, BSE या संबंधित exchange की official notices, holiday calendar और broker app के announcements देखें। Commodity, currency, derivatives और equity segments की timings अलग हो सकती हैं। Data provider की local time zone और timestamp भी समझें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Regular Session",
+      "content": "भारत के equity cash market में सामान्य regular session प्रायः 9:15 AM से 3:30 PM तक होता है। किसी special session या holiday पर अलग schedule लागू हो सकता है।"
+    },
+    {
+      "title": "Example 2: Holiday Check",
+      "content": "यदि किसी festival पर market बंद होने की जानकारी चाहिए, तो संबंधित exchange का उस वर्ष का holiday calendar देखें। केवल public holiday होने से हर market segment के बंद होने का निष्कर्ष न निकालें।"
+    },
+    {
+      "title": "Example 3: Settlement Timing",
+      "content": "यदि trade के बाद settlement date के आसपास holiday है, तो expected processing पर असर हो सकता है। Current settlement calendar और broker status जाँचना चाहिए।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Trading Session",
+      "meaning": "वह अवधि जिसमें exchange के नियमों के अनुसार trading होती है।"
+    },
+    {
+      "term": "Pre-Open Session",
+      "meaning": "Opening price discovery और order collection से जुड़ा निर्धारित session।"
+    },
+    {
+      "term": "Normal Trading Session",
+      "meaning": "Exchange का सामान्य regular trading period।"
+    },
+    {
+      "term": "Trading Holiday",
+      "meaning": "वह दिन जब संबंधित exchange में निर्धारित trading बंद रहती है।"
+    },
+    {
+      "term": "Settlement Holiday",
+      "meaning": "Settlement processing के calendar से संबंधित छुट्टी।"
+    },
+    {
+      "term": "Closing Price",
+      "meaning": "Exchange methodology के अनुसार निर्धारित trading day की closing price।"
+    },
+    {
+      "term": "Special Session",
+      "meaning": "Exchange द्वारा घोषित अतिरिक्त या विशेष trading period।"
+    },
+    {
+      "term": "Exchange Calendar",
+      "meaning": "Trading sessions और holidays का official schedule।"
+    }
+  ],
+  "risks": [
+    "गलत timing समझने से order गलत समय पर submit हो सकता है।",
+    "Special sessions में सामान्य rules या timing अलग हो सकती है।",
+    "Settlement holidays से processing dates प्रभावित हो सकती हैं।",
+    "अलग market segments की timings अलग हो सकती हैं।",
+    "पुराने holiday calendar पर निर्भर करने से confusion हो सकता है।"
+  ],
+  "commonMistakes": [
+    "हर market segment की timing समान मानना।",
+    "Trading Holiday और Settlement Holiday को एक समझना।",
+    "Special session की announcement न देखना।",
+    "पुराने वर्ष का holiday calendar इस्तेमाल करना।",
+    "Closing price को अपनी exact execution price समझना।"
+  ],
+  "summary": [
+    "Indian equity cash market का सामान्य regular session प्रायः 9:15 AM से 3:30 PM होता है।",
+    "Pre-open और closing processes के अलग नियम हो सकते हैं।",
+    "Trading holidays exchange calendar से verify करनी चाहिए।",
+    "Settlement calendar trading calendar से अलग हो सकता है।",
+    "Special sessions और segment timings की current official information देखें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Indian equity cash market का सामान्य regular session प्रायः कब होता है?",
+      "options": [
+        "9:15 AM से 3:30 PM",
+        "12:00 AM से 6:00 AM",
+        "केवल रविवार",
+        "पूरे 24 घंटे"
+      ],
+      "answerIndex": 0,
+      "explanation": "भारतीय equity cash market का सामान्य regular session प्रायः 9:15 AM से 3:30 PM तक होता है।"
+    },
+    {
+      "question": "2. Trading Holiday क्या है?",
+      "options": [
+        "Dividend का दिन",
+        "वह दिन जब संबंधित exchange में निर्धारित trading बंद रहती है",
+        "हर investor की छुट्टी",
+        "कंपनी का annual result"
+      ],
+      "answerIndex": 1,
+      "explanation": "Trading Holiday exchange calendar के अनुसार निर्धारित trading बंद रहने का दिन है।"
+    },
+    {
+      "question": "3. क्या सभी market segments की timing समान होती है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल festival पर",
+        "नहीं",
+        "केवल सोमवार को"
+      ],
+      "answerIndex": 2,
+      "explanation": "अलग market segments की trading timings अलग हो सकती हैं।"
+    },
+    {
+      "question": "4. Current trading holiday कहाँ verify करनी चाहिए?",
+      "options": [
+        "केवल पुराने screenshot से",
+        "अनुमान लगाकर",
+        "केवल social media comments से",
+        "संबंधित exchange के official calendar से"
+      ],
+      "answerIndex": 3,
+      "explanation": "Exchange का current official calendar सबसे उपयुक्त reference है।"
+    },
+    {
+      "question": "5. Settlement Holiday का संबंध किससे है?",
+      "options": [
+        "केवल company logo से",
+        "Settlement processing calendar से",
+        "केवल share price से",
+        "केवल mobile settings से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Settlement Holiday settlement processing के schedule से संबंधित होती है।"
+    }
+  ]
+  },
+  {
+  "id": "pre-open-market-closing-session",
+  "title": "Pre-Open Market और Closing Session क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Pre-open session, price discovery, opening price और closing price को समझें।",
+  "lessons": [
+    "1. Pre-Open Session क्या है?",
+    "2. Order Collection और Price Discovery",
+    "3. Opening Price कैसे निर्धारित होती है?",
+    "4. Pre-Open और Normal Trading",
+    "5. Closing Session का परिचय",
+    "6. Closing Price कैसे तय होती है?",
+    "7. Orders और Execution",
+    "8. Pre-Open और Closing Session के जोखिम"
+  ],
+  "beginnerTip": "Pre-open या closing price देखकर भविष्य की कीमत का निश्चित अनुमान नहीं लगाया जा सकता। Current exchange rules और order status समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. Pre-Open Session क्या है?",
+      "content": "Pre-open session normal trading session से पहले होने वाली निर्धारित प्रक्रिया है। इसका उद्देश्य eligible securities के लिए opening price discovery में सहायता करना होता है। इसमें order collection और matching के अलग चरण हो सकते हैं। Exact rules संबंधित exchange की current guidelines पर निर्भर करते हैं।"
+    },
+    {
+      "title": "2. Order Collection और Price Discovery",
+      "content": "Order collection phase में eligible buy और sell orders जमा किए जा सकते हैं। Exchange के algorithm और rules के अनुसार वह price निर्धारित करने का प्रयास किया जाता है जिस पर उपलब्ध orders का matching संभव हो। Order modification और cancellation की अनुमति phase के अनुसार अलग हो सकती है।"
+    },
+    {
+      "title": "3. Opening Price कैसे निर्धारित होती है?",
+      "content": "Opening price discovery में eligible orders और exchange methodology का उपयोग होता है। उद्देश्य ऐसा equilibrium price निर्धारित करना हो सकता है जिस पर अधिकतम executable quantity या लागू criteria पूरे हों। सभी securities में एक जैसी प्रक्रिया लागू हो, यह जरूरी नहीं है।"
+    },
+    {
+      "title": "4. Pre-Open और Normal Trading",
+      "content": "Pre-open session में order collection और opening price discovery पर ध्यान होता है। Normal session में eligible orders सामान्य continuous trading mechanism के अनुसार match हो सकते हैं। दोनों sessions में available order types और order handling के नियम अलग हो सकते हैं।"
+    },
+    {
+      "title": "5. Closing Session",
+      "content": "Closing session या closing-related process trading day के अंत में price determination और exchange reporting से जुड़ा हो सकता है। अलग exchanges और market segments की closing methodology अलग हो सकती है। Closing price किसी investor के प्रत्येक trade की execution price के समान होना जरूरी नहीं है।"
+    },
+    {
+      "title": "6. Closing Price कैसे तय होती है?",
+      "content": "Closing price exchange के निर्धारित rules और eligible trades या price-calculation method के अनुसार तय हो सकती है। केवल दिन के आखिरी trade की कीमत को हर market में closing price मानना सही नहीं है। संबंधित exchange की methodology देखें।"
+    },
+    {
+      "title": "7. Orders और Execution",
+      "content": "Pre-open या closing-related phases में order submit करने से execution की guarantee नहीं मिलती। Orders की eligibility, matching, price limits और order status महत्वपूर्ण हैं। Broker app में order की final status और executed quantity जाँचना चाहिए।"
+    },
+    {
+      "title": "8. Risks",
+      "content": "Overnight news के कारण opening price में बड़ा gap हो सकता है। Closing price पर भी supply-demand imbalance या limited liquidity का प्रभाव हो सकता है। Opening या closing price भविष्य की direction की guarantee नहीं देती।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Opening Price",
+      "content": "यदि pre-open phase में कई buy और sell orders collect होते हैं, तो exchange methodology के अनुसार opening price निर्धारित की जा सकती है। यह पिछले दिन की closing price से अलग हो सकती है।"
+    },
+    {
+      "title": "Example 2: Overnight News",
+      "content": "यदि बाजार बंद होने के बाद महत्वपूर्ण news आती है, तो अगले trading day की opening price पिछले closing price से ऊपर या नीचे हो सकती है।"
+    },
+    {
+      "title": "Example 3: Closing Price",
+      "content": "किसी share की closing price exchange methodology से निर्धारित होती है। यह जरूरी नहीं कि हर investor के अंतिम trade की price ही official closing price हो।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Pre-Open Session",
+      "meaning": "Opening price discovery से जुड़ा निर्धारित trading phase।"
+    },
+    {
+      "term": "Order Collection",
+      "meaning": "निर्धारित phase में eligible orders एकत्र करने की प्रक्रिया।"
+    },
+    {
+      "term": "Price Discovery",
+      "meaning": "Available orders और market rules से price निर्धारित करने की प्रक्रिया।"
+    },
+    {
+      "term": "Opening Price",
+      "meaning": "Trading day की exchange-defined opening price।"
+    },
+    {
+      "term": "Closing Price",
+      "meaning": "Exchange methodology के अनुसार निर्धारित trading day की closing price।"
+    },
+    {
+      "term": "Order Matching",
+      "meaning": "Buy और sell orders को rules के अनुसार match करना।"
+    },
+    {
+      "term": "Price Gap",
+      "meaning": "दो trading periods की prices के बीच अंतर।"
+    },
+    {
+      "term": "Exchange Methodology",
+      "meaning": "Exchange द्वारा निर्धारित price calculation और trading rules।"
+    }
+  ],
+  "risks": [
+    "Opening price पिछले close से काफी अलग हो सकती है।",
+    "Pre-open order submit करने से execution guaranteed नहीं है।",
+    "Closing price प्रत्येक investor की execution price के बराबर होना जरूरी नहीं है।",
+    "Overnight news और market events price gap पैदा कर सकते हैं।",
+    "Exchange rules और eligible order types phase के अनुसार बदल सकते हैं।"
+  ],
+  "commonMistakes": [
+    "Pre-open price को पूरे दिन की निश्चित price direction समझना।",
+    "हर exchange की closing methodology समान मानना।",
+    "Order submit होने को executed trade समझना।",
+    "Overnight news और price gap को अनदेखा करना।",
+    "Current exchange guidelines नहीं देखना।"
+  ],
+  "summary": [
+    "Pre-open session opening price discovery में मदद करता है।",
+    "Opening price eligible orders और exchange methodology पर निर्भर करती है।",
+    "Normal trading और pre-open के नियम अलग हो सकते हैं।",
+    "Closing price exchange-defined methodology से तय होती है।",
+    "Opening और closing prices भविष्य की दिशा की guarantee नहीं देतीं।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Pre-Open Session का मुख्य उद्देश्य क्या है?",
+      "options": [
+        "Dividend देना",
+        "Opening price discovery में मदद करना",
+        "Demat account खोलना",
+        "Company का नाम बदलना"
+      ],
+      "answerIndex": 1,
+      "explanation": "Pre-open session eligible orders के आधार पर opening price discovery में मदद करता है।"
+    },
+    {
+      "question": "2. क्या Opening Price पिछले Closing Price के बराबर होना जरूरी है?",
+      "options": [
+        "नहीं",
+        "हाँ, हमेशा",
+        "केवल हर सोमवार को",
+        "केवल holiday पर"
+      ],
+      "answerIndex": 0,
+      "explanation": "Overnight news और demand-supply conditions के कारण opening price अलग हो सकती है।"
+    },
+    {
+      "question": "3. Price Discovery का अर्थ क्या है?",
+      "options": [
+        "Bank balance निकालना",
+        "Dividend calculate करना",
+        "Orders और rules के आधार पर price निर्धारित करना",
+        "Account password बदलना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Price Discovery available orders और exchange methodology के आधार पर price निर्धारित करने की प्रक्रिया है।"
+    },
+    {
+      "question": "4. Closing Price किस पर निर्भर करती है?",
+      "options": [
+        "केवल company logo",
+        "केवल investor का नाम",
+        "केवल mobile model",
+        "Exchange की निर्धारित methodology"
+      ],
+      "answerIndex": 3,
+      "explanation": "Official closing price exchange की लागू calculation methodology पर निर्भर करती है।"
+    },
+    {
+      "question": "5. Pre-open order submit होने का अर्थ क्या है?",
+      "options": [
+        "निश्चित लाभ",
+        "Order जरूर execute होगा",
+        "Execution guaranteed नहीं है",
+        "Market हमेशा बढ़ेगा"
+      ],
+      "answerIndex": 2,
+      "explanation": "Order execution eligibility, matching और market conditions पर निर्भर करती है।"
+    }
+  ]
+        },
+  {
+  "id": "corporate-actions-bonus-split-dividend",
+  "title": "Corporate Actions की पूरी जानकारी — Bonus, Stock Split और Dividend",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Bonus Shares, Stock Split, Dividend और अन्य corporate actions को समझें।",
+  "lessons": [
+    "1. Corporate Action क्या है?",
+    "2. Bonus Shares क्या हैं?",
+    "3. Stock Split क्या है?",
+    "4. Dividend क्या है?",
+    "5. Record Date और Ex-Date",
+    "6. Bonus और Split का अंतर",
+    "7. Corporate Actions का Price पर प्रभाव",
+    "8. Official Announcements कैसे पढ़ें?"
+  ],
+  "beginnerTip": "Bonus Shares या Stock Split से अपने-आप investment का कुल मूल्य नहीं बढ़ता। हर corporate action का प्रभाव अलग हो सकता है।",
+  "detailedLessons": [
+    {
+      "title": "1. Corporate Action क्या है?",
+      "content": "Corporate Action कंपनी का ऐसा घोषित कदम है जो shareholders, share capital या securities को प्रभावित कर सकता है। इसके उदाहरण bonus issue, stock split, dividend, rights issue और buyback हैं। हर action की eligibility और प्रभाव उसके आधिकारिक terms पर निर्भर करता है।"
+    },
+    {
+      "title": "2. Bonus Shares क्या हैं?",
+      "content": "Bonus Issue में कंपनी eligible existing shareholders को निर्धारित अनुपात में अतिरिक्त shares जारी कर सकती है। उदाहरण के लिए, 1:1 bonus का अर्थ सामान्यतः हर एक eligible share पर एक अतिरिक्त share होता है। Shares की संख्या बढ़ने के बावजूद कुल investment value अपने-आप नहीं बढ़ती; price और अन्य factors बदल सकते हैं।"
+    },
+    {
+      "title": "3. Stock Split क्या है?",
+      "content": "Stock Split में कंपनी एक share को कई shares में विभाजित करती है और face value उसी अनुपात में बदल सकती है। उदाहरण के लिए, 1 share को 2 shares में split करने पर shares की संख्या दोगुनी हो सकती है। अन्य बातें समान रहने पर प्रति-share price समायोजित हो सकती है, लेकिन market price वास्तविक trading के कारण अलग बदल सकती है।"
+    },
+    {
+      "title": "4. Dividend क्या है?",
+      "content": "Dividend कंपनी द्वारा eligible shareholders को घोषित distribution है, जो सामान्यतः profits या उपलब्ध reserves और लागू कानूनों के अधीन होता है। Dividend घोषित होना भविष्य में हर बार dividend मिलने की guarantee नहीं है। Dividend की राशि, प्रकार, record date और payment details official announcement से समझें।"
+    },
+    {
+      "title": "5. Record Date और Ex-Date",
+      "content": "Record Date वह तारीख है जिस पर कंपनी eligible shareholders की पहचान के लिए records देखती है। Ex-Date वह तारीख है जिससे share corporate action के entitlement के बिना trade होता है। भारत में eligibility समझने के लिए applicable settlement cycle और exchange rules के अनुसार official ex-date तथा record date देखें।"
+    },
+    {
+      "title": "6. Bonus और Split का अंतर",
+      "content": "Bonus issue eligible shareholders को अतिरिक्त shares जारी करने का तरीका है। Stock split में existing shares को छोटी face-value units में विभाजित किया जाता है। दोनों में share count और per-share price में बदलाव हो सकता है, लेकिन इनके legal और accounting treatment अलग होते हैं।"
+    },
+    {
+      "title": "7. Price पर प्रभाव",
+      "content": "Bonus और split के बाद share price adjustment हो सकता है क्योंकि shares की संख्या या per-share structure बदलता है। Dividend के ex-date पर भी price adjustment हो सकता है, लेकिन वास्तविक market price demand, supply और अन्य factors के कारण अलग चल सकती है। किसी corporate action को guaranteed profit नहीं मानना चाहिए।"
+    },
+    {
+      "title": "8. Official Announcements",
+      "content": "Corporate action की जानकारी company filings, stock exchange announcements और investor relations pages से verify करनी चाहिए। Ratio, record date, ex-date, eligibility और payment details को ध्यान से पढ़ें। केवल social media message या पुराने data पर भरोसा न करें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: Bonus Issue",
+      "content": "यदि किसी eligible shareholder के पास 100 shares हैं और कंपनी 1:1 bonus घोषित करती है, तो लागू terms के अनुसार 100 अतिरिक्त shares मिल सकते हैं। इससे अपने-आप कुल investment value दोगुनी नहीं हो जाती।"
+    },
+    {
+      "title": "Example 2: Stock Split",
+      "content": "यदि 1 share को 2 shares में split किया जाता है, तो 100 shares रखने वाले investor के पास adjustment के बाद 200 shares हो सकते हैं। वास्तविक price adjustment और eligibility official terms पर निर्भर करती है।"
+    },
+    {
+      "title": "Example 3: Dividend",
+      "content": "यदि कंपनी eligible shareholders के लिए ₹5 प्रति share dividend घोषित करती है और किसी investor के 100 eligible shares हैं, तो gross dividend ₹500 होगा, लागू tax और अन्य नियमों से पहले।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Corporate Action",
+      "meaning": "Company का ऐसा कदम जो shareholders या securities को प्रभावित करता है।"
+    },
+    {
+      "term": "Bonus Issue",
+      "meaning": "Eligible shareholders को निर्धारित ratio में अतिरिक्त shares जारी करना।"
+    },
+    {
+      "term": "Stock Split",
+      "meaning": "एक share को कई shares में विभाजित करने की प्रक्रिया।"
+    },
+    {
+      "term": "Dividend",
+      "meaning": "Eligible shareholders को घोषित distribution।"
+    },
+    {
+      "term": "Record Date",
+      "meaning": "Eligibility records निर्धारित करने की घोषित तारीख।"
+    },
+    {
+      "term": "Ex-Date",
+      "meaning": "वह तारीख जिससे security corporate action entitlement के बिना trade होती है।"
+    },
+    {
+      "term": "Face Value",
+      "meaning": "Share का nominal value, जो market price से अलग होता है।"
+    },
+    {
+      "term": "Shareholder",
+      "meaning": "कंपनी के shares रखने वाला व्यक्ति या संस्था।"
+    }
+  ],
+  "risks": [
+    "Bonus issue को guaranteed profit समझना गलत है।",
+    "Stock split के बाद भी market price गिर सकती है।",
+    "Dividend की घोषणा भविष्य में नियमित dividend की guarantee नहीं देती।",
+    "Record date और ex-date गलत समझने से eligibility प्रभावित हो सकती है।",
+    "गलत या पुरानी corporate-action information से नुकसान हो सकता है।"
+  ],
+  "commonMistakes": [
+    "Bonus shares मिलने का अर्थ investment value दोगुनी होना मानना।",
+    "Stock split और bonus issue को एक जैसा समझना।",
+    "Dividend को बिना tax के guaranteed income मानना।",
+    "Record date और ex-date को एक ही मानना।",
+    "Official company या exchange announcement न देखना।"
+  ],
+  "summary": [
+    "Corporate actions shareholders और securities को प्रभावित कर सकते हैं।",
+    "Bonus issue में eligible shareholders को अतिरिक्त shares मिल सकते हैं।",
+    "Stock split में shares की संख्या और face value बदल सकती है।",
+    "Dividend कंपनी द्वारा घोषित distribution है।",
+    "Eligibility, dates और ratios official announcements से verify करें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Corporate Action का उदाहरण कौन-सा है?",
+      "options": [
+        "Bonus Issue",
+        "Mobile wallpaper",
+        "Email password",
+        "Trading app का रंग"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bonus Issue एक corporate action है।"
+    },
+    {
+      "question": "2. 1:1 Bonus Issue का सामान्य अर्थ क्या है?",
+      "options": [
+        "हर share पर एक share कम",
+        "हर eligible share पर एक अतिरिक्त share",
+        "हर share की कीमत निश्चित रूप से दोगुनी",
+        "Dividend हमेशा दोगुना"
+      ],
+      "answerIndex": 1,
+      "explanation": "1:1 bonus में प्रत्येक eligible existing share पर एक अतिरिक्त share जारी हो सकता है।"
+    },
+    {
+      "question": "3. Stock Split में क्या हो सकता है?",
+      "options": [
+        "Company का नाम जरूर बदलता है",
+        "Dividend हमेशा समाप्त हो जाता है",
+        "Shares की संख्या बढ़ती है और face value अनुपात के अनुसार बदल सकती है",
+        "Investment risk समाप्त हो जाता है"
+      ],
+      "answerIndex": 2,
+      "explanation": "Stock split में shares की संख्या और प्रति-share face value बदल सकती है।"
+    },
+    {
+      "question": "4. Record Date का उद्देश्य क्या है?",
+      "options": [
+        "Market बंद करना",
+        "Brokerage तय करना",
+        "Share price की guarantee देना",
+        "Eligible shareholders के records निर्धारित करना"
+      ],
+      "answerIndex": 3,
+      "explanation": "Record Date corporate action के लिए eligible shareholders की पहचान से जुड़ी होती है।"
+    },
+    {
+      "question": "5. Corporate Action की जानकारी कहाँ verify करनी चाहिए?",
+      "options": [
+        "केवल अफवाहों से",
+        "Official company filings और exchange announcements से",
+        "केवल पुराने screenshots से",
+        "बिना जाँच किसी भी message से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Official company filings और exchange announcements अधिक उपयुक्त sources हैं।"
+    }
+  ]
+    },
+  {
+  "id": "stock-settlement-t1-t0",
+  "title": "Stock Settlement, T+1 और T+0 Settlement की जानकारी",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Trade Date, Settlement Date, T+1 और T+0 settlement concepts को हिंदी और English में समझें।",
+  "lessons": [
+    "1. Stock Settlement क्या है?",
+    "2. Trade Date और Settlement Date",
+    "3. T+1 Settlement क्या है?",
+    "4. T+0 Settlement क्या है?",
+    "5. Clearing Corporation की भूमिका",
+    "6. Funds और Shares का Settlement",
+    "7. Settlement Holidays और Delays",
+    "8. Settlement Status कैसे जाँचें?"
+  ],
+  "beginnerTip": "Trade execute होने और shares या funds का final settlement पूरा होने में अंतर हो सकता है। अपने broker और exchange की current settlement rules जाँचें।",
+  "detailedLessons": [
+    {
+      "title": "1. Stock Settlement क्या है?",
+      "content": "Stock Settlement वह प्रक्रिया है जिसमें trade के बाद खरीदार के funds और seller की securities का निर्धारित नियमों के अनुसार निपटान होता है। Exchange पर order execute होना settlement process की शुरुआत से संबंधित हो सकता है, लेकिन funds और securities का final transfer अलग चरणों में पूरा हो सकता है।"
+    },
+    {
+      "title": "2. Trade Date और Settlement Date",
+      "content": "Trade Date वह दिन है जिस दिन transaction execute होता है। Settlement Date वह दिन है जिस दिन संबंधित funds और securities का settlement निर्धारित rules के अनुसार पूरा होना है। Holidays और applicable market calendar settlement timing को प्रभावित कर सकते हैं।"
+    },
+    {
+      "title": "3. T+1 Settlement",
+      "content": "T+1 का अर्थ सामान्यतः Trade Date के बाद एक business day में settlement है। T trade date को दर्शाता है और +1 अगले eligible settlement business day को। इसका अर्थ जरूरी नहीं कि हर स्थिति में calendar के अगले दिन settlement हो, क्योंकि weekends और settlement holidays लागू हो सकते हैं।"
+    },
+    {
+      "title": "4. T+0 Settlement",
+      "content": "T+0 settlement का अर्थ संबंधित eligible framework के अनुसार उसी trading day में settlement है। यह हर security, broker या transaction के लिए स्वतः उपलब्ध नहीं होता। लागू securities, timings, eligibility और operational conditions current exchange तथा clearing rules पर निर्भर करते हैं।"
+    },
+    {
+      "title": "5. Clearing Corporation की भूमिका",
+      "content": "Clearing Corporation trades के clearing और settlement में महत्वपूर्ण भूमिका निभाती है। लागू framework के अनुसार यह obligations calculate करती है और funds तथा securities के settlement को व्यवस्थित करने में मदद करती है। Exact procedures market segment और current regulations पर निर्भर करते हैं।"
+    },
+    {
+      "title": "6. Funds और Shares का Settlement",
+      "content": "Settlement में खरीदार की payment obligations और seller की securities delivery से जुड़े दायित्व पूरे किए जाते हैं। Depository और clearing systems securities transfer तथा settlement processes में भूमिका निभाते हैं। Broker app में funds या holdings दिखने का समय operational processing और rules के अनुसार अलग हो सकता है।"
+    },
+    {
+      "title": "7. Holidays और Settlement Delays",
+      "content": "Weekend, settlement holiday, operational issue या exceptional market event के कारण expected settlement timing प्रभावित हो सकती है। Trade की settlement date निर्धारित करने के लिए relevant exchange और clearing corporation calendar देखें।"
+    },
+    {
+      "title": "8. Settlement Status कैसे जाँचें?",
+      "content": "Broker app में trade book, holdings, funds ledger और settlement status देखें। यदि expected credit या debit दिखाई नहीं देता, तो transaction details और official broker support से पुष्टि करें। केवल order confirmation को final settlement का प्रमाण न मानें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "Example 1: T+1",
+      "content": "यदि eligible transaction सोमवार को execute होता है और बीच में कोई settlement holiday नहीं है, तो T+1 framework में settlement सामान्यतः अगले eligible business day, यानी मंगलवार को निर्धारित हो सकता है।"
+    },
+    {
+      "title": "Example 2: Weekend",
+      "content": "यदि transaction शुक्रवार को execute होता है और बीच में settlement holiday नहीं है, तो T+1 settlement सामान्यतः अगले eligible business day पर हो सकता है। Weekend के कारण calendar date और business-day count में अंतर होता है।"
+    },
+    {
+      "title": "Example 3: T+0",
+      "content": "यदि कोई security और transaction T+0 framework के लिए eligible हैं, तो लागू rules और cut-off timings के अधीन उसी trading day में settlement हो सकता है। सभी trades को T+0 मानना सही नहीं है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Settlement",
+      "meaning": "Trade के बाद funds और securities का निपटान।"
+    },
+    {
+      "term": "Trade Date",
+      "meaning": "वह तारीख जिस दिन trade execute हुआ।"
+    },
+    {
+      "term": "Settlement Date",
+      "meaning": "वह तारीख जिस दिन settlement निर्धारित रूप से पूरा होना है।"
+    },
+    {
+      "term": "T+1",
+      "meaning": "Trade date के बाद एक eligible business day में settlement।"
+    },
+    {
+      "term": "T+0",
+      "meaning": "Eligible framework में उसी trading day में settlement।"
+    },
+    {
+      "term": "Clearing Corporation",
+      "meaning": "Trades की clearing और settlement में भूमिका निभाने वाली संस्था।"
+    },
+    {
+      "term": "Depository",
+      "meaning": "Electronic securities holding और transfer व्यवस्था प्रदान करने वाली संस्था।"
+    },
+    {
+      "term": "Settlement Holiday",
+      "meaning": "Settlement processing calendar में निर्धारित छुट्टी।"
+    }
+  ],
+  "risks": [
+    "Trade execution और final settlement को एक ही समझने से confusion हो सकता है।",
+    "Holidays के कारण settlement date बदल सकती है।",
+    "T+0 हर security या transaction में उपलब्ध नहीं होता।",
+    "Operational issues के कारण display या processing में देरी हो सकती है।",
+    "गलत settlement assumptions से funds या holdings की planning प्रभावित हो सकती है।"
+  ],
+  "commonMistakes": [
+    "T+1 को हमेशा अगले calendar day का अर्थ समझना।",
+    "हर transaction को T+0 eligible मानना।",
+    "Order confirmation को final settlement समझना।",
+    "Settlement holidays को अनदेखा करना।",
+    "Holdings और funds ledger verify न करना।"
+  ],
+  "summary": [
+    "Settlement में funds और securities का निपटान होता है।",
+    "Trade Date और Settlement Date अलग हो सकती हैं।",
+    "T+1 सामान्यतः अगले eligible business day में settlement दर्शाता है।",
+    "T+0 केवल eligible framework और लागू rules के अधीन होता है।",
+    "Settlement status broker और official market information से verify करें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Trade Date क्या है?",
+      "options": [
+        "वह दिन जब trade execute होता है",
+        "केवल dividend date",
+        "Bank account खोलने का दिन",
+        "Market holiday"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trade Date वह तारीख है जिस दिन transaction execute होता है।"
+    },
+    {
+      "question": "2. T+1 Settlement का सामान्य अर्थ क्या है?",
+      "options": [
+        "एक महीने बाद settlement",
+        "Trade Date के बाद एक eligible business day में settlement",
+        "हर स्थिति में उसी समय settlement",
+        "Settlement की जरूरत नहीं"
+      ],
+      "answerIndex": 1,
+      "explanation": "T+1 का सामान्य अर्थ trade date के बाद एक eligible business day में settlement है।"
+    },
+    {
+      "question": "3. क्या T+0 सभी transactions में उपलब्ध होता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल रविवार को",
+        "नहीं, eligibility और applicable rules पर निर्भर करता है",
+        "हाँ, सभी brokers में"
+      ],
+      "answerIndex": 2,
+      "explanation": "T+0 की availability संबंधित security, transaction और लागू framework पर निर्भर करती है।"
+    },
+    {
+      "question": "4. Clearing Corporation की एक भूमिका क्या है?",
+      "options": [
+        "Company का advertisement बनाना",
+        "Investor का mobile बदलना",
+        "Dividend की guarantee देना",
+        "Trades की clearing और settlement में मदद करना"
+      ],
+      "answerIndex": 3,
+      "explanation": "Clearing Corporation clearing और settlement obligations को व्यवस्थित करने में महत्वपूर्ण भूमिका निभाती है।"
+    },
+    {
+      "question": "5. Final settlement की पुष्टि कैसे करनी चाहिए?",
+      "options": [
+        "केवल social media देखकर",
+        "Broker के trade, holdings, funds और settlement records जाँचकर",
+        "सिर्फ share का नाम देखकर",
+        "बिना records जाँचे"
+      ],
+      "answerIndex": 1,
+      "explanation": "Broker के transaction records और settlement status से settlement की पुष्टि करने में मदद मिलती है।"
+    }
+  ]
     }
     ]
