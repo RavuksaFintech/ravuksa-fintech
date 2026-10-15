@@ -8617,5 +8617,565 @@
         "explanation": "सही जानकारी के लिए Product का उद्देश्य, लागत, जोखिम, Liquidity और लागू नियम समझना आवश्यक है।"
       }
     ]
-  }
+  },
+    {
+    "id": "primary-secondary-market",
+    "title": "Primary Market और Secondary Market",
+    "category": "Financial Markets",
+    "level": "Beginner",
+    "description": "Primary Market और Secondary Market कैसे काम करते हैं, IPO और Stock Exchange का उनसे क्या संबंध है, और दोनों में क्या अंतर है—यह सब आसान हिंदी और English में सीखें।",
+    "beginnerTip": "Primary Market में Securities पहली बार जारी की जाती हैं, जबकि Secondary Market में पहले से जारी Securities का लेन-देन होता है। किसी भी निवेश से पहले नियम, जोखिम और लागत समझें।",
+    "lessons": [
+      "1. Primary Market क्या है?",
+      "2. Secondary Market क्या है?",
+      "3. Primary और Secondary Market में अंतर",
+      "4. IPO और Share Listing की प्रक्रिया",
+      "5. Stock Exchange और Secondary Market",
+      "6. शेयर की कीमत कैसे बदलती है?",
+      "7. निवेशकों के लिए जोखिम और सावधानियाँ"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. Primary Market क्या है?",
+        "content": "Primary Market वह Market है जहाँ कंपनी या अन्य पात्र जारीकर्ता नए Securities जारी करके पूँजी जुटाते हैं। उदाहरण के लिए, कोई कंपनी IPO के माध्यम से पहली बार जनता को Shares जारी कर सकती है। जारी करने की प्रक्रिया में लागू नियमों, दस्तावेजों और पात्रता शर्तों का पालन करना जरूरी होता है। Primary Market में आवेदन करने से Shares मिलना या लाभ होना सुनिश्चित नहीं होता।"
+      },
+      {
+        "title": "2. Secondary Market क्या है?",
+        "content": "Secondary Market में पहले से जारी Securities का निवेशकों के बीच लेन-देन होता है। भारत में सूचीबद्ध Shares की खरीद-बिक्री NSE या BSE जैसे Stock Exchanges पर हो सकती है। सामान्य Exchange Trading में खरीदार द्वारा भुगतान किया गया मूल्य, लागू नियमों और शुल्कों के अनुसार, बेचने वाले को मिलने वाली बिक्री राशि से जुड़ा होता है। कंपनी को हर Secondary Market Trade से सीधे नई पूँजी नहीं मिलती।"
+      },
+      {
+        "title": "3. दोनों Markets में मुख्य अंतर",
+        "content": "Primary Market में जारीकर्ता नए Securities जारी करता है और उस प्रक्रिया से पूँजी जुटा सकता है। Secondary Market में निवेशक पहले से जारी Securities खरीदते और बेचते हैं। Primary Market में IPO या अन्य नए Issue के नियम लागू होते हैं, जबकि Secondary Market में Exchange Trading, Order Types, Settlement और संबंधित नियम महत्वपूर्ण होते हैं। दोनों Markets में कीमत, आवंटन और निवेश परिणाम अलग-अलग परिस्थितियों पर निर्भर करते हैं।"
+      },
+      {
+        "title": "4. IPO और Listing कैसे जुड़े हैं?",
+        "content": "IPO यानी Initial Public Offering में पात्र कंपनी पहली बार जनता को Shares जारी करने का प्रस्ताव रख सकती है। निवेशक निर्धारित प्रक्रिया के अनुसार आवेदन करते हैं। आवेदन करने से आवंटन की गारंटी नहीं होती। Listing के बाद Shares Stock Exchange पर कारोबार के लिए उपलब्ध हो सकते हैं, यदि लागू आवश्यकताएँ पूरी हों। Listing Price, IPO Price से अधिक या कम हो सकती है।"
+      },
+      {
+        "title": "5. Stock Exchange की भूमिका",
+        "content": "Stock Exchange एक व्यवस्थित और नियम-आधारित व्यवस्था प्रदान करता है, जहाँ पात्र प्रतिभागी Securities में खरीद-बिक्री कर सकते हैं। Orders, उपलब्ध खरीदारों और विक्रेताओं तथा बाजार की परिस्थितियों के आधार पर Trades हो सकते हैं। Exchange पर कीमतें बदलती रहती हैं। Trading Account, Demat Account, Broker, Clearing और Settlement की भूमिकाएँ अलग-अलग होती हैं।"
+      },
+      {
+        "title": "6. शेयर की कीमत कैसे बदलती है?",
+        "content": "Secondary Market में किसी Share की कीमत पर Demand और Supply, कंपनी के परिणाम, भविष्य की अपेक्षाएँ, ब्याज दरें, आर्थिक घटनाएँ और निवेशकों की भावनाएँ प्रभाव डाल सकती हैं। यदि खरीदने की इच्छा और उपलब्ध बिक्री Orders में बदलाव आता है, तो कीमत ऊपर या नीचे जा सकती है। किसी कंपनी का अच्छा होना भी Share Price बढ़ने की गारंटी नहीं देता।"
+      },
+      {
+        "title": "7. निवेशकों के लिए जोखिम और सावधानियाँ",
+        "content": "किसी IPO या सूचीबद्ध Share में निवेश करने से पहले संबंधित दस्तावेज, कंपनी की जानकारी, Valuation, जोखिम, शुल्क और अपनी वित्तीय स्थिति पर विचार करें। केवल सोशल मीडिया की अफवाहों या Listing Gain की उम्मीद पर आवेदन न करें। भारत में लागू नियमों और निवेशक शिक्षा के लिए SEBI, NSE और BSE की आधिकारिक जानकारी देखें। यह सामग्री सामान्य शिक्षा के लिए है, व्यक्तिगत निवेश सलाह नहीं।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Primary Market में IPO",
+        "content": "मान लीजिए ABC Ltd. IPO में ₹100 प्रति Share के Issue Price पर Shares जारी करने का प्रस्ताव देती है। कोई पात्र निवेशक आवेदन करता है। उसे Shares तभी मिलेंगे जब आवंटन के नियमों के अनुसार Shares आवंटित हों। यह Primary Market का उदाहरण है।"
+      },
+      {
+        "title": "Example 2: Secondary Market में खरीद-बिक्री",
+        "content": "IPO के बाद ABC Ltd. के Shares Stock Exchange पर सूचीबद्ध हो जाते हैं। कोई निवेशक उपलब्ध बाजार मूल्य पर Share खरीदता है और दूसरा निवेशक उसे बेचता है। यह Secondary Market का उदाहरण है। दोनों निवेशकों के लिए लाभ या नुकसान खरीद-बिक्री की कीमतों, लागत और अन्य परिस्थितियों पर निर्भर करता है।"
+      },
+      {
+        "title": "Example 3: Listing Price का अंतर",
+        "content": "यदि किसी Share का Issue Price ₹100 था, तो Listing के समय उसका बाजार मूल्य ₹100 से ऊपर या नीचे हो सकता है। उदाहरण के लिए, वह ₹90 या ₹115 पर कारोबार कर सकता है। ये केवल काल्पनिक उदाहरण हैं; वास्तविक कीमत की कोई गारंटी नहीं होती।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Primary Market",
+        "meaning": "वह Market जहाँ जारीकर्ता नए Securities जारी करके पूँजी जुटा सकता है।"
+      },
+      {
+        "term": "Secondary Market",
+        "meaning": "वह Market जहाँ पहले से जारी Securities का लेन-देन होता है।"
+      },
+      {
+        "term": "IPO",
+        "meaning": "Initial Public Offering; जनता को Shares जारी करने का प्रारंभिक प्रस्ताव।"
+      },
+      {
+        "term": "Issuer",
+        "meaning": "वह कंपनी या संस्था जो Securities जारी करती है।"
+      },
+      {
+        "term": "Issue Price",
+        "meaning": "नए Issue में निर्धारित मूल्य या मूल्य-सीमा के अनुसार तय किया गया मूल्य।"
+      },
+      {
+        "term": "Listing",
+        "meaning": "लागू आवश्यकताएँ पूरी होने पर Securities का Stock Exchange पर कारोबार के लिए सूचीबद्ध होना।"
+      },
+      {
+        "term": "Stock Exchange",
+        "meaning": "नियमों के अंतर्गत Securities के कारोबार की सुविधा देने वाला संगठित बाजार।"
+      },
+      {
+        "term": "Demand and Supply",
+        "meaning": "खरीदने और बेचने की इच्छाओं तथा उपलब्धता का संबंध, जो बाजार मूल्य को प्रभावित कर सकता है।"
+      },
+      {
+        "term": "Settlement",
+        "meaning": "Trade के बाद Securities और धन के हस्तांतरण की प्रक्रिया।"
+      }
+    ],
+    "risks": [
+      "IPO में आवेदन करने पर Shares का आवंटन सुनिश्चित नहीं होता।",
+      "Listing के बाद Share Price, Issue Price से नीचे जा सकती है।",
+      "Secondary Market में Share बेचते समय अपेक्षित कीमत मिलना सुनिश्चित नहीं होता।",
+      "कंपनी की खराब वित्तीय स्थिति, बाजार में गिरावट या अन्य घटनाओं से नुकसान हो सकता है।",
+      "अफवाहों, फर्जी IPO संदेशों या अनधिकृत निवेश प्लेटफॉर्म के कारण धोखाधड़ी का जोखिम हो सकता है।"
+    ],
+    "commonMistakes": [
+      "यह मानना कि Primary Market में निवेश हमेशा लाभ देता है।",
+      "यह समझना कि IPO में आवेदन करने से Shares जरूर मिलेंगे।",
+      "Issue Price को भविष्य की बाजार कीमत की गारंटी मान लेना।",
+      "यह मानना कि Secondary Market की हर खरीद-बिक्री से कंपनी को सीधे पैसा मिलता है।",
+      "कंपनी के दस्तावेज और जोखिम पढ़े बिना केवल लोकप्रियता देखकर निवेश करना।"
+    ],
+    "summary": [
+      "Primary Market में नए Securities जारी करके पूँजी जुटाई जा सकती है।",
+      "Secondary Market में पहले से जारी Securities का लेन-देन होता है।",
+      "IPO Primary Market का उदाहरण है; Listing के बाद Exchange पर होने वाली सामान्य खरीद-बिक्री Secondary Market का उदाहरण है।",
+      "Issue Price और Listing या बाद की Market Price अलग हो सकती हैं।",
+      "किसी भी निवेश से पहले दस्तावेज, जोखिम, लागत और लागू नियमों को समझना चाहिए।"
+    ],
+    "quiz": [
+      {
+        "question": "1. Primary Market का मुख्य उद्देश्य क्या हो सकता है?",
+        "options": [
+          "केवल पुराने Shares की आपस में खरीद-बिक्री",
+          "नए Securities जारी करके पूँजी जुटाना",
+          "हर निवेशक को निश्चित लाभ देना",
+          "शेयर की कीमत हमेशा स्थिर रखना"
+        ],
+        "answerIndex": 1,
+        "explanation": "Primary Market में जारीकर्ता नए Securities जारी करके पूँजी जुटा सकता है।"
+      },
+      {
+        "question": "2. Stock Exchange पर पहले से सूचीबद्ध Shares की सामान्य खरीद-बिक्री किस Market में होती है?",
+        "options": [
+          "Primary Market",
+          "केवल Money Market",
+          "Secondary Market",
+          "केवल Insurance Market"
+        ],
+        "answerIndex": 2,
+        "explanation": "पहले से जारी Shares का Stock Exchange पर कारोबार Secondary Market का उदाहरण है।"
+      },
+      {
+        "question": "3. IPO में आवेदन करने का क्या अर्थ है?",
+        "options": [
+          "Shares का आवंटन निश्चित हो गया",
+          "नुकसान नहीं हो सकता",
+          "Listing Price तय हो गई",
+          "निवेशक ने Shares के लिए आवेदन किया है, लेकिन आवंटन सुनिश्चित नहीं है"
+        ],
+        "answerIndex": 3,
+        "explanation": "IPO में आवेदन करने से Shares का आवंटन सुनिश्चित नहीं होता; आवंटन लागू नियमों और उपलब्ध Shares पर निर्भर करता है।"
+      },
+      {
+        "question": "4. क्या IPO का Issue Price भविष्य की Market Price की गारंटी देता है?",
+        "options": [
+          "हाँ, कीमत हमेशा समान रहती है",
+          "नहीं, Market Price ऊपर या नीचे जा सकती है",
+          "हाँ, नुकसान असंभव है",
+          "केवल पहले दिन कीमत नहीं बदलती"
+        ],
+        "answerIndex": 1,
+        "explanation": "Listing और उसके बाद बाजार मूल्य माँग, आपूर्ति तथा अन्य परिस्थितियों के अनुसार बदल सकता है।"
+      },
+      {
+        "question": "5. Primary और Secondary Market में मुख्य अंतर क्या है?",
+        "options": [
+          "दोनों में हमेशा एक ही प्रक्रिया होती है",
+          "Primary Market में कोई Securities जारी नहीं होती",
+          "Primary Market में नए Securities जारी होते हैं, जबकि Secondary Market में पहले से जारी Securities का लेन-देन होता है",
+          "Secondary Market में किसी भी तरह का जोखिम नहीं होता"
+        ],
+        "answerIndex": 2,
+        "explanation": "Primary Market में नए Securities जारी होते हैं; Secondary Market में पहले से जारी Securities का कारोबार होता है।"
+      }
+    ]
+  },
+    {
+    "id": "ipo-complete-guide",
+    "title": "IPO की पूरी जानकारी",
+    "category": "Financial Markets",
+    "level": "Beginner",
+    "description": "IPO क्या है, कंपनी IPO क्यों लाती है, आवेदन कैसे किया जाता है, Allotment और Listing कैसे होती है, और निवेशक को किन जोखिमों का ध्यान रखना चाहिए—यह सब आसान हिंदी और English में सीखें।",
+    "beginnerTip": "IPO में आवेदन करने से पहले कंपनी की जानकारी, IPO के उद्देश्य, मूल्यांकन, जोखिम और आधिकारिक दस्तावेज पढ़ें। IPO में आवेदन करने से Shares का Allotment या Listing पर लाभ सुनिश्चित नहीं होता।",
+    "lessons": [
+      "1. IPO क्या है और कंपनी इसे क्यों लाती है?",
+      "2. Fresh Issue और Offer for Sale (OFS) में अंतर",
+      "3. IPO Price Band और Lot Size",
+      "4. IPO में आवेदन करने की प्रक्रिया",
+      "5. ASBA और UPI की भूमिका",
+      "6. IPO Allotment और Refund",
+      "7. Share Listing और Listing Price",
+      "8. IPO के दस्तावेज कैसे पढ़ें?",
+      "9. IPO के जोखिम और आम गलतियाँ"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. IPO क्या है?",
+        "content": "IPO का पूरा नाम Initial Public Offering है। इसके माध्यम से कोई पात्र कंपनी पहली बार जनता को अपने Shares जारी करने का प्रस्ताव रख सकती है। IPO के बाद कंपनी के Shares Stock Exchange पर सूचीबद्ध हो सकते हैं, यदि संबंधित नियम और आवश्यकताएँ पूरी हों। IPO से कंपनी को व्यवसाय विस्तार, कर्ज चुकाने या अन्य घोषित उद्देश्यों के लिए पूँजी जुटाने में मदद मिल सकती है। हर IPO में लाभ होना जरूरी नहीं है।"
+      },
+      {
+        "title": "2. Fresh Issue और Offer for Sale (OFS)",
+        "content": "Fresh Issue में कंपनी नए Shares जारी करती है और इससे प्राप्त धन कंपनी को मिलता है, जिसे घोषित उद्देश्यों के अनुसार उपयोग किया जाता है। Offer for Sale (OFS) में मौजूदा Shareholders अपने Shares बेचते हैं। इस हिस्से की बिक्री से प्राप्त धन सामान्यतः बेचने वाले Shareholders को मिलता है, कंपनी को नई पूँजी नहीं। किसी IPO में Fresh Issue, OFS या दोनों शामिल हो सकते हैं।"
+      },
+      {
+        "title": "3. Price Band और Lot Size",
+        "content": "IPO में Price Band वह मूल्य-सीमा होती है जिसके भीतर आवेदन के लिए कीमत निर्धारित की जा सकती है। Fixed Price Issue में निर्धारित Issue Price दिया जाता है। Lot Size बताता है कि आवेदन के लिए न्यूनतम कितने Shares के समूह पर बोली लगाई जा सकती है। आवेदन से पहले Issue Price या Price Band, Lot Size, कुल आवेदन राशि और पात्रता नियम जाँचें।"
+      },
+      {
+        "title": "4. IPO में आवेदन कैसे करें?",
+        "content": "निवेशक IPO में आवेदन करने के लिए संबंधित आधिकारिक Issue विवरण और अपने Broker या अधिकृत आवेदन माध्यम के निर्देश देख सकते हैं। आवेदन में आवश्यक जानकारी, Bid Quantity और लागू Price दर्ज करनी होती है। आवेदन की पुष्टि करने से पहले नाम, PAN, Demat विवरण, बैंक विवरण और अन्य आवश्यक जानकारी जाँचें। किसी अनजान व्यक्ति को OTP, UPI PIN या बैंक पासवर्ड न दें।"
+      },
+      {
+        "title": "5. ASBA और UPI की भूमिका",
+        "content": "ASBA यानी Application Supported by Blocked Amount, IPO आवेदन में बैंक खाते की निर्धारित राशि को Block करने की सुविधा है। UPI का उपयोग कुछ पात्र IPO आवेदनों में भुगतान Mandate को अधिकृत करने के लिए किया जा सकता है, जो लागू नियमों और सीमाओं पर निर्भर करता है। राशि Block होने का अर्थ यह नहीं है कि Shares का Allotment हो गया। अपने बैंक या UPI App में केवल सही और सत्यापित Mandate की पुष्टि करें।"
+      },
+      {
+        "title": "6. Allotment और Refund",
+        "content": "IPO में आवेदन करने वाले प्रत्येक व्यक्ति को Shares मिलना जरूरी नहीं है। यदि आवेदन सफलतापूर्वक स्वीकार हुआ और उपलब्ध Shares तथा लागू Allotment नियमों के अनुसार आवंटन हुआ, तो Shares Demat Account में जमा हो सकते हैं। जिन आवेदकों को Shares नहीं मिलते या जिन्हें पूरी मात्रा में Shares नहीं मिलते, उनके लिए लागू प्रक्रिया के अनुसार Block की गई राशि Unblock या शेष राशि Release की जाती है। समय और प्रक्रिया Issue के नियमों पर निर्भर कर सकते हैं।"
+      },
+      {
+        "title": "7. Listing और Listing Price",
+        "content": "IPO की प्रक्रिया पूरी होने और संबंधित आवश्यकताएँ पूरी होने पर Shares Stock Exchange पर सूचीबद्ध हो सकते हैं। Listing Price बाजार में खरीदने और बेचने की माँग, आपूर्ति तथा अन्य परिस्थितियों से प्रभावित होती है। यह Issue Price से अधिक, बराबर या कम हो सकती है। Listing Gain की कोई गारंटी नहीं होती और Listing के बाद भी Share Price बदलती रहती है।"
+      },
+      {
+        "title": "8. IPO के दस्तावेज कैसे पढ़ें?",
+        "content": "IPO से पहले कंपनी के आधिकारिक Offer Documents, जैसे लागू होने पर DRHP और RHP, पढ़ना उपयोगी है। इनमें कंपनी का व्यवसाय, वित्तीय स्थिति, जोखिम कारक, कानूनी मामलों की जानकारी, जुटाई जाने वाली राशि का उद्देश्य और Issue से जुड़ी शर्तें हो सकती हैं। केवल विज्ञापन, सोशल मीडिया पोस्ट या किसी व्यक्ति की राय के आधार पर निर्णय न लें। जानकारी को समझने में कठिनाई हो तो योग्य वित्तीय विशेषज्ञ से सहायता लें।"
+      },
+      {
+        "title": "9. IPO के जोखिम और आम गलतियाँ",
+        "content": "IPO में कंपनी का मूल्यांकन अधिक हो सकता है, व्यवसाय में अनिश्चितता हो सकती है और Listing के बाद कीमत गिर सकती है। कंपनी की पिछली वृद्धि भविष्य के प्रदर्शन की गारंटी नहीं है। केवल लोकप्रियता, Oversubscription या संभावित Listing Gain देखकर आवेदन करना उचित विश्लेषण का विकल्प नहीं है। अपनी वित्तीय स्थिति, जोखिम सहने की क्षमता और निवेश उद्देश्य पर विचार करें। यह सामग्री सामान्य शिक्षा के लिए है, व्यक्तिगत निवेश सलाह नहीं।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: Fresh Issue",
+        "content": "ABC Ltd. अपने व्यवसाय का विस्तार करने के लिए नए Shares जारी करती है। IPO के Fresh Issue वाले हिस्से से प्राप्त धन कंपनी को मिलता है और उसका उपयोग घोषित उद्देश्यों के अनुसार किया जाना चाहिए।"
+      },
+      {
+        "title": "Example 2: Offer for Sale",
+        "content": "ABC Ltd. के एक मौजूदा Shareholder IPO में अपने कुछ Shares बेचता है। इस OFS वाले हिस्से से प्राप्त धन सामान्यतः उस Shareholder को मिलता है, न कि कंपनी को नई पूँजी के रूप में।"
+      },
+      {
+        "title": "Example 3: Listing Price",
+        "content": "मान लीजिए किसी IPO का Issue Price ₹100 प्रति Share है। Listing के दिन बाजार में Share ₹90 या ₹115 पर कारोबार कर सकता है। ये केवल काल्पनिक उदाहरण हैं; वास्तविक Listing Price की गारंटी नहीं होती।"
+      },
+      {
+        "title": "Example 4: Allotment",
+        "content": "यदि किसी IPO में आवेदन करने वाले लोगों की संख्या उपलब्ध Shares से अधिक है, तो Allotment लागू नियमों के अनुसार हो सकता है। आवेदन करने वाले हर व्यक्ति को Shares मिलेंगे, यह जरूरी नहीं है।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "IPO",
+        "meaning": "Initial Public Offering; जनता को Shares जारी करने का प्रारंभिक प्रस्ताव।"
+      },
+      {
+        "term": "Fresh Issue",
+        "meaning": "कंपनी द्वारा नए Shares जारी करके पूँजी जुटाने की प्रक्रिया।"
+      },
+      {
+        "term": "Offer for Sale (OFS)",
+        "meaning": "मौजूदा Shareholders द्वारा अपने Shares बेचने की प्रक्रिया।"
+      },
+      {
+        "term": "Price Band",
+        "meaning": "IPO में बोली लगाने के लिए निर्धारित मूल्य-सीमा।"
+      },
+      {
+        "term": "Lot Size",
+        "meaning": "आवेदन के लिए निर्धारित Shares की न्यूनतम संख्या या समूह।"
+      },
+      {
+        "term": "ASBA",
+        "meaning": "Application Supported by Blocked Amount; IPO आवेदन में राशि Block करने की सुविधा।"
+      },
+      {
+        "term": "UPI Mandate",
+        "meaning": "पात्र आवेदन में निर्धारित राशि Block करने के लिए UPI के माध्यम से दी जाने वाली अनुमति।"
+      },
+      {
+        "term": "Allotment",
+        "meaning": "IPO के नियमों के अनुसार आवेदक को Shares आवंटित करने की प्रक्रिया।"
+      },
+      {
+        "term": "Listing Price",
+        "meaning": "Stock Exchange पर कारोबार शुरू होने के समय बाजार में बनने वाली कीमत।"
+      },
+      {
+        "term": "Offer Document",
+        "meaning": "IPO और कंपनी से संबंधित महत्वपूर्ण जानकारी तथा जोखिम बताने वाला आधिकारिक दस्तावेज।"
+      }
+    ],
+    "risks": [
+      "IPO में आवेदन करने से Shares का Allotment सुनिश्चित नहीं होता।",
+      "Listing Price, Issue Price से कम हो सकती है और निवेश में नुकसान हो सकता है।",
+      "कंपनी का व्यवसाय, वित्तीय प्रदर्शन या भविष्य की संभावनाएँ अपेक्षा से कमजोर हो सकती हैं।",
+      "केवल Oversubscription या लोकप्रियता देखकर आवेदन करने से जोखिम का सही आकलन नहीं होता।",
+      "फर्जी IPO लिंक, नकली भुगतान अनुरोध और अनजान लोगों द्वारा माँगी गई गोपनीय जानकारी से धोखाधड़ी का जोखिम हो सकता है।",
+      "Issue की शर्तें, पात्रता, आवेदन सीमा और समय-सीमा अलग-अलग हो सकती हैं; इन्हें आधिकारिक दस्तावेजों से जाँचना जरूरी है।"
+    ],
+    "commonMistakes": [
+      "यह मानना कि हर IPO Listing पर लाभ देगा।",
+      "Fresh Issue और OFS के बीच अंतर न समझना।",
+      "Offer Documents और Risk Factors पढ़े बिना आवेदन करना।",
+      "Allotment से पहले यह मान लेना कि Shares मिल चुके हैं।",
+      "गलत UPI Mandate स्वीकार करना या किसी के साथ UPI PIN और OTP साझा करना।",
+      "केवल किसी Influencer या सोशल मीडिया संदेश के आधार पर आवेदन करना।"
+    ],
+    "summary": [
+      "IPO के माध्यम से पात्र कंपनी पहली बार जनता को Shares जारी कर सकती है।",
+      "Fresh Issue से कंपनी नई पूँजी जुटाती है, जबकि OFS में मौजूदा Shareholders अपने Shares बेचते हैं।",
+      "Price Band, Lot Size, आवेदन प्रक्रिया और Allotment के नियम समझना जरूरी है।",
+      "ASBA या पात्र UPI प्रक्रिया में राशि Block हो सकती है; इससे Allotment की गारंटी नहीं होती।",
+      "Listing Price Issue Price से ऊपर या नीचे हो सकती है।",
+      "निर्णय लेने से पहले आधिकारिक Offer Documents, कंपनी की जानकारी और जोखिमों की जाँच करें।"
+    ],
+    "quiz": [
+      {
+        "question": "1. IPO का पूरा नाम क्या है?",
+        "options": [
+          "International Payment Order",
+          "Initial Public Offering",
+          "Indian Purchase Option",
+          "Investment Profit Operation"
+        ],
+        "answerIndex": 1,
+        "explanation": "IPO का पूरा नाम Initial Public Offering है। इसके माध्यम से पात्र कंपनी जनता को Shares जारी करने का प्रस्ताव रख सकती है।"
+      },
+      {
+        "question": "2. Fresh Issue से प्राप्त धन सामान्यतः किसे मिलता है?",
+        "options": [
+          "कंपनी को, घोषित उद्देश्यों के अनुसार उपयोग के लिए",
+          "हर आवेदन करने वाले निवेशक को",
+          "Stock Exchange के सभी निवेशकों को",
+          "केवल उन लोगों को जिन्हें Allotment नहीं मिला"
+        ],
+        "answerIndex": 0,
+        "explanation": "Fresh Issue में कंपनी नए Shares जारी करती है और उससे प्राप्त धन कंपनी को मिलता है।"
+      },
+      {
+        "question": "3. Offer for Sale (OFS) में कौन Shares बेचता है?",
+        "options": [
+          "केवल नए IPO आवेदक",
+          "केवल बैंक",
+          "मौजूदा Shareholders",
+          "सभी Stock Exchange कर्मचारी"
+        ],
+        "answerIndex": 2,
+        "explanation": "OFS में मौजूदा Shareholders अपने Shares बेचते हैं; इस हिस्से की बिक्री से धन सामान्यतः उन्हें मिलता है।"
+      },
+      {
+        "question": "4. क्या IPO में आवेदन करने से Shares का Allotment सुनिश्चित होता है?",
+        "options": [
+          "हाँ, सभी आवेदकों को Shares मिलते हैं",
+          "हाँ, लेकिन केवल Listing के दिन",
+          "हाँ, यदि Issue लोकप्रिय हो",
+          "नहीं, Allotment लागू नियमों और उपलब्ध Shares पर निर्भर करता है"
+        ],
+        "answerIndex": 3,
+        "explanation": "IPO में आवेदन करने से Allotment की गारंटी नहीं होती। आवंटन संबंधित नियमों और उपलब्ध Shares पर निर्भर करता है।"
+      },
+      {
+        "question": "5. IPO में निवेश करने से पहले सबसे उचित कदम क्या है?",
+        "options": [
+          "केवल सोशल मीडिया पर लोकप्रियता देखना",
+          "आधिकारिक Offer Documents, कंपनी की जानकारी और जोखिम पढ़ना",
+          "Listing Gain को निश्चित मान लेना",
+          "बिना विवरण पढ़े आवेदन करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "आधिकारिक Offer Documents और जोखिमों को पढ़ने से कंपनी तथा IPO की शर्तों को बेहतर ढंग से समझने में मदद मिलती है।"
+      }
+    ]
+  },
+    {
+    "id": "fpo-rights-issue-ofs",
+    "title": "FPO, Rights Issue और OFS",
+    "category": "Financial Markets",
+    "level": "Beginner",
+    "description": "FPO, Rights Issue और Offer for Sale (OFS) क्या हैं, इनमें क्या अंतर है और कंपनियाँ इनका उपयोग क्यों करती हैं—आसान हिंदी और English में सीखें।",
+    "beginnerTip": "FPO, Rights Issue और OFS को एक जैसा न समझें। FPO में कंपनी अतिरिक्त Shares जारी कर सकती है, Rights Issue में मौजूदा Shareholders को निर्धारित शर्तों पर Shares खरीदने का अधिकार दिया जाता है, जबकि OFS में मौजूदा Shareholders अपने Shares बेचते हैं।",
+    "lessons": [
+      "1. FPO क्या है?",
+      "2. Rights Issue क्या है?",
+      "3. OFS यानी Offer for Sale क्या है?",
+      "4. FPO, Rights Issue और OFS में अंतर",
+      "5. Record Date, Entitlement और Renunciation",
+      "6. Issue Price और Market Price",
+      "7. निवेशकों के लिए जोखिम और सावधानियाँ"
+    ],
+    "detailedLessons": [
+      {
+        "title": "1. FPO क्या है?",
+        "content": "FPO का पूरा नाम Follow-on Public Offer है। जब कोई पहले से सूचीबद्ध कंपनी जनता को अतिरिक्त Shares जारी करने का प्रस्ताव रखती है, तो उसे FPO कहा जा सकता है। कंपनी घोषित उद्देश्यों, जैसे विस्तार या अन्य वित्तीय जरूरतों, के लिए पूँजी जुटा सकती है। FPO में आवेदन करने से Shares का आवंटन या लाभ सुनिश्चित नहीं होता। Issue की शर्तें और आधिकारिक दस्तावेज पढ़ना जरूरी है।"
+      },
+      {
+        "title": "2. Rights Issue क्या है?",
+        "content": "Rights Issue में कंपनी अपने मौजूदा Shareholders को निर्धारित शर्तों के अनुसार अतिरिक्त Shares खरीदने का अधिकार देती है। पात्रता सामान्यतः Record Date और घोषित Issue Terms से जुड़ी होती है। Shareholder को दिए गए अधिकार का उपयोग करने, जहाँ अनुमति हो वहाँ उसे Transfer या Renounce करने, अथवा उसे उपयोग न करने जैसे विकल्प मिल सकते हैं। उपलब्ध विकल्प और प्रक्रिया प्रत्येक Issue के दस्तावेजों पर निर्भर करते हैं।"
+      },
+      {
+        "title": "3. OFS यानी Offer for Sale क्या है?",
+        "content": "Offer for Sale (OFS) में कंपनी के मौजूदा Shareholders अपने Shares बेचते हैं। सूचीबद्ध कंपनियों के लिए लागू नियमों के अंतर्गत OFS के माध्यम से Shares की बिक्री की जा सकती है। इस बिक्री से प्राप्त धन सामान्यतः Shares बेचने वाले Shareholder को मिलता है, कंपनी को नई पूँजी नहीं। OFS की प्रक्रिया, पात्र प्रतिभागियों और अन्य शर्तों के लिए संबंधित आधिकारिक नियम देखने चाहिए।"
+      },
+      {
+        "title": "4. तीनों में मुख्य अंतर",
+        "content": "FPO में कंपनी अतिरिक्त Shares जारी करके पूँजी जुटा सकती है। Rights Issue में मौजूदा Shareholders को निर्धारित अनुपात और शर्तों पर अतिरिक्त Shares खरीदने का अधिकार दिया जाता है। OFS में मौजूदा Shareholders अपने पहले से मौजूद Shares बेचते हैं। इसलिए यह समझना महत्वपूर्ण है कि नए Shares जारी हो रहे हैं या पुराने Shares का स्वामित्व बदल रहा है। हर प्रक्रिया का उद्देश्य, पात्रता और प्रभाव अलग हो सकता है।"
+      },
+      {
+        "title": "5. Record Date, Entitlement और Renunciation",
+        "content": "Record Date वह तारीख होती है जिसके आधार पर संबंधित Corporate Action के लिए पात्र Shareholders की पहचान की जा सकती है। Rights Entitlement वह अधिकार है जिसके आधार पर पात्र Shareholder Issue की शर्तों के अनुसार Rights Shares के लिए आवेदन कर सकता है। कुछ Rights Issues में लागू नियमों के अनुसार इस Entitlement को Renounce या Transfer करने की अनुमति हो सकती है। अंतिम तारीखें, पात्रता और प्रक्रिया आधिकारिक दस्तावेजों से जाँचें।"
+      },
+      {
+        "title": "6. Issue Price और Market Price",
+        "content": "FPO या Rights Issue का Issue Price, बाजार में चल रही Share Price से अलग हो सकता है। केवल कम Issue Price देखकर यह निष्कर्ष नहीं निकालना चाहिए कि Issue सस्ता या लाभदायक है। कंपनी के मूल्यांकन, वित्तीय स्थिति, Issue के उद्देश्य, कुल Shares में बदलाव और बाजार की परिस्थितियों को समझना जरूरी है। OFS में बिक्री मूल्य और लागू प्रक्रिया संबंधित नियमों तथा Issue Terms पर निर्भर कर सकती है।"
+      },
+      {
+        "title": "7. निवेशकों के लिए जोखिम और सावधानियाँ",
+        "content": "किसी भी Issue से पहले कंपनी के आधिकारिक दस्तावेज, धन के उपयोग का उद्देश्य, जोखिम कारक, मूल्यांकन और पात्रता शर्तें पढ़ें। अतिरिक्त Shares जारी होने से कुल Shares की संख्या बढ़ सकती है और मौजूदा Shareholders की हिस्सेदारी का प्रतिशत प्रभावित हो सकता है। Rights Issue में अधिकार का उपयोग न करने के प्रभाव भी परिस्थितियों पर निर्भर कर सकते हैं। केवल अफवाहों या संभावित Listing Gain के आधार पर निर्णय न लें। यह सामग्री सामान्य शिक्षा के लिए है, व्यक्तिगत निवेश सलाह नहीं।"
+      }
+    ],
+    "examples": [
+      {
+        "title": "Example 1: FPO",
+        "content": "ABC Ltd. पहले से Stock Exchange पर सूचीबद्ध है। कंपनी विस्तार के लिए अतिरिक्त Shares जारी करने का प्रस्ताव रखती है। यह FPO का उदाहरण हो सकता है। नए Shares के Issue की शर्तों के अनुसार कंपनी पूँजी जुटा सकती है।"
+      },
+      {
+        "title": "Example 2: Rights Issue",
+        "content": "किसी कंपनी के पास Record Date पर एक निवेशक के 100 Shares हैं। कंपनी की घोषित शर्तों के अनुसार पात्र Shareholders को हर 5 Shares पर 1 अतिरिक्त Share खरीदने का अधिकार दिया जाता है। इस काल्पनिक उदाहरण में निवेशक को 20 Rights Shares के लिए आवेदन करने का अधिकार हो सकता है, बशर्ते सभी लागू शर्तें पूरी हों।"
+      },
+      {
+        "title": "Example 3: OFS",
+        "content": "ABC Ltd. का एक मौजूदा Shareholder अपने कुछ Shares बेचने का निर्णय लेता है। बिक्री की प्रक्रिया और नियमों के अनुसार Shares दूसरे खरीदारों को मिलते हैं। यह OFS का उदाहरण है। इस बिक्री से प्राप्त धन सामान्यतः Share बेचने वाले को मिलता है।"
+      },
+      {
+        "title": "Example 4: Issue Price की तुलना",
+        "content": "मान लीजिए किसी कंपनी के Shares बाजार में ₹120 पर कारोबार कर रहे हैं और उसका Rights Issue Price ₹100 है। केवल ₹20 के अंतर से यह तय नहीं होता कि निवेश करना लाभदायक है। कंपनी की स्थिति, Issue Terms, संभावित प्रभाव और जोखिमों को भी समझना चाहिए। ये केवल काल्पनिक मूल्य हैं।"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "FPO",
+        "meaning": "Follow-on Public Offer; पहले से सूचीबद्ध कंपनी द्वारा अतिरिक्त Shares जारी करने का प्रस्ताव।"
+      },
+      {
+        "term": "Rights Issue",
+        "meaning": "मौजूदा Shareholders को निर्धारित शर्तों पर अतिरिक्त Shares खरीदने का अधिकार देने की प्रक्रिया।"
+      },
+      {
+        "term": "OFS",
+        "meaning": "Offer for Sale; मौजूदा Shareholders द्वारा अपने Shares बेचने की प्रक्रिया।"
+      },
+      {
+        "term": "Record Date",
+        "meaning": "वह तारीख जिसके आधार पर संबंधित Corporate Action के लिए पात्र Shareholders की पहचान की जाती है।"
+      },
+      {
+        "term": "Rights Entitlement",
+        "meaning": "Rights Issue में पात्र Shareholder को मिलने वाला अधिकार, जिसके आधार पर वह घोषित शर्तों के अनुसार आवेदन कर सकता है।"
+      },
+      {
+        "term": "Renunciation",
+        "meaning": "जहाँ अनुमति हो, वहाँ Rights Entitlement को किसी अन्य पात्र व्यक्ति के पक्ष में छोड़ने या Transfer करने की प्रक्रिया।"
+      },
+      {
+        "term": "Issue Price",
+        "meaning": "नए Issue में निर्धारित शर्तों के अनुसार तय किया गया मूल्य।"
+      },
+      {
+        "term": "Dilution",
+        "meaning": "अतिरिक्त Shares जारी होने के कारण मौजूदा Shareholder की कुल Shares में हिस्सेदारी का प्रतिशत कम हो जाना।"
+      },
+      {
+        "term": "Shareholder",
+        "meaning": "किसी कंपनी के Shares रखने वाला व्यक्ति या संस्था।"
+      }
+    ],
+    "risks": [
+      "FPO या Rights Issue में निवेश करने के बाद Share Price घट सकती है।",
+      "अतिरिक्त Shares जारी होने से मौजूदा Shareholders की हिस्सेदारी का प्रतिशत प्रभावित हो सकता है।",
+      "Rights Entitlement का उपयोग न करने के परिणाम संबंधित Issue Terms और लागू नियमों पर निर्भर कर सकते हैं।",
+      "OFS में Shares बेचने वाले Shareholder और कंपनी के हित अलग हो सकते हैं; दस्तावेज पढ़ना जरूरी है।",
+      "केवल Issue Price कम होने को निवेश के लाभदायक होने का प्रमाण मानना गलत हो सकता है।",
+      "फर्जी Corporate Action संदेशों या अनजान लिंक के कारण वित्तीय धोखाधड़ी का जोखिम हो सकता है।"
+    ],
+    "commonMistakes": [
+      "FPO, Rights Issue और OFS को एक ही प्रक्रिया समझना।",
+      "यह मानना कि Rights Issue में Shareholder को Shares मुफ्त मिलते हैं।",
+      "Rights Entitlement की अंतिम तारीख और आवेदन प्रक्रिया न जाँचना।",
+      "Issue Price को भविष्य की Market Price की गारंटी समझना।",
+      "कंपनी के उद्देश्य और आधिकारिक दस्तावेज पढ़े बिना आवेदन करना।",
+      "अनजान व्यक्ति के कहने पर बैंक विवरण, OTP या UPI PIN साझा करना।"
+    ],
+    "summary": [
+      "FPO में पहले से सूचीबद्ध कंपनी अतिरिक्त Shares जारी करके पूँजी जुटा सकती है।",
+      "Rights Issue में मौजूदा Shareholders को निर्धारित शर्तों पर अतिरिक्त Shares खरीदने का अधिकार दिया जाता है।",
+      "OFS में मौजूदा Shareholders अपने पहले से मौजूद Shares बेचते हैं।",
+      "Rights Issue की पात्रता, Record Date, Entitlement और अंतिम तारीखें आधिकारिक दस्तावेजों से जाँचनी चाहिए।",
+      "Issue Price कम होने से लाभ सुनिश्चित नहीं होता और Share Price घट सकती है।",
+      "किसी भी Corporate Action से पहले उद्देश्य, नियम, लागत और जोखिम समझें।"
+    ],
+    "quiz": [
+      {
+        "question": "1. FPO का पूरा नाम क्या है?",
+        "options": [
+          "Final Purchase Order",
+          "Follow-on Public Offer",
+          "Fixed Payment Option",
+          "Financial Profit Objective"
+        ],
+        "answerIndex": 1,
+        "explanation": "FPO का पूरा नाम Follow-on Public Offer है। इसमें पहले से सूचीबद्ध कंपनी अतिरिक्त Shares जारी करने का प्रस्ताव रख सकती है।"
+      },
+      {
+        "question": "2. Rights Issue में सामान्यतः किसे अतिरिक्त Shares खरीदने का अधिकार दिया जाता है?",
+        "options": [
+          "केवल नए बैंक कर्मचारियों को",
+          "हर व्यक्ति को बिना किसी शर्त के",
+          "मौजूदा Shareholders को निर्धारित शर्तों के अनुसार",
+          "केवल Stock Exchange के कर्मचारियों को"
+        ],
+        "answerIndex": 2,
+        "explanation": "Rights Issue में मौजूदा Shareholders को घोषित शर्तों और पात्रता के अनुसार अतिरिक्त Shares खरीदने का अधिकार दिया जाता है।"
+      },
+      {
+        "question": "3. OFS में सामान्यतः कौन अपने Shares बेचता है?",
+        "options": [
+          "मौजूदा Shareholders",
+          "केवल नए निवेशक",
+          "केवल IPO के आवेदक",
+          "हर बैंक ग्राहक"
+        ],
+        "answerIndex": 0,
+        "explanation": "OFS में मौजूदा Shareholders अपने Shares बेचते हैं और बिक्री से प्राप्त धन सामान्यतः उन्हें मिलता है।"
+      },
+      {
+        "question": "4. Rights Entitlement का क्या अर्थ है?",
+        "options": [
+          "निश्चित लाभ की गारंटी",
+          "मुफ्त Shares पाने का बिना शर्त अधिकार",
+          "बिना आवेदन किए हर Shareholder को अतिरिक्त Shares मिलना",
+          "Rights Issue में घोषित शर्तों के अनुसार आवेदन करने का अधिकार"
+        ],
+        "answerIndex": 3,
+        "explanation": "Rights Entitlement पात्र Shareholder को घोषित शर्तों के अनुसार Rights Shares के लिए आवेदन करने का अधिकार देता है।"
+      },
+      {
+        "question": "5. FPO, Rights Issue या OFS से पहले सबसे उचित कदम क्या है?",
+        "options": [
+          "केवल सोशल मीडिया की अफवाहों पर भरोसा करना",
+          "आधिकारिक दस्तावेज, उद्देश्य, पात्रता और जोखिम पढ़ना",
+          "Issue Price को निश्चित लाभ मान लेना",
+          "बिना शर्तें पढ़े आवेदन करना"
+        ],
+        "answerIndex": 1,
+        "explanation": "आधिकारिक दस्तावेज पढ़ने से Issue का उद्देश्य, पात्रता, नियम और जोखिम समझने में मदद मिलती है।"
+      }
+    ]
+  },
+  
     ]
