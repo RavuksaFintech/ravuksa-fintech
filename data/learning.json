@@ -13946,5 +13946,1125 @@
       "explanation": "Broker के transaction records और settlement status से settlement की पुष्टि करने में मदद मिलती है।"
     }
   ]
+    },
+  {
+  "id": "demat-account-basics",
+  "title": "81. Demat Account क्या है? — शेयर रखने का तरीका",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Demat Account की भूमिका, उपयोग और सुरक्षा को आसान हिंदी और English में समझें।",
+  "lessons": [
+    "1. Demat Account क्या होता है?",
+    "2. Demat और Trading Account में अंतर",
+    "3. Depository और Depository Participant क्या हैं?",
+    "4. Shares Demat Account में कैसे रखे जाते हैं?",
+    "5. Demat Account की सुरक्षा कैसे करें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Demat Account का अर्थ",
+      "content": "Demat यानी Dematerialised Account. इसमें shares और अन्य eligible securities को electronic form में रखा जाता है। यह कागजी share certificates को संभालने की जरूरत कम करता है।"
+    },
+    {
+      "title": "Demat और Trading Account",
+      "content": "Trading Account का उपयोग securities खरीदने और बेचने के orders देने के लिए होता है। Demat Account eligible securities को रखने के लिए होता है। दोनों की भूमिका अलग है, हालांकि कई providers इन्हें एक ही platform पर उपलब्ध कराते हैं।"
+    },
+    {
+      "title": "Depository और DP",
+      "content": "भारत में NSDL और CDSL securities depositories हैं। Depository Participant यानी DP ग्राहक और depository के बीच सेवा उपलब्ध कराता है। Account खोलने से पहले provider की registration details जांचें।"
     }
+  ],
+  "examples": [
+    "यदि कोई व्यक्ति shares खरीदता है, तो settlement के बाद eligible shares उसके Demat Account में दिखाई दे सकते हैं।",
+    "यदि व्यक्ति shares बेचता है, तो लागू settlement प्रक्रिया के अनुसार securities उसके Demat Account से debit हो सकती हैं।"
+  ],
+  "keyTerms": [
+    "Demat Account: इलेक्ट्रॉनिक securities रखने वाला account",
+    "Trading Account: Securities के orders देने वाला account",
+    "Depository: Securities को electronic form में रखने वाली संस्था",
+    "DP: Depository Participant",
+    "Dematerialisation: कागजी securities को electronic form में बदलना"
+  ],
+  "risks": [
+    "Account credentials चोरी होने पर अनधिकृत गतिविधि का जोखिम हो सकता है।",
+    "लागू नियमों के अनुसार account maintenance या अन्य शुल्क लग सकते हैं।",
+    "Demat Account में shares होने से निवेश का market risk समाप्त नहीं होता।"
+  ],
+  "commonMistakes": [
+    "Demat Account और Trading Account को एक ही चीज समझना।",
+    "Provider की registration और शुल्क संबंधी जानकारी न जांचना।",
+    "OTP, PIN या password दूसरों के साथ साझा करना।"
+  ],
+  "summary": [
+    "Demat Account securities को electronic form में रखने के लिए होता है।",
+    "Trading Account खरीदने और बेचने के orders के लिए उपयोग होता है।",
+    "Account की सुरक्षा और provider की जांच जरूरी है।"
+  ],
+  "beginnerTip": "Account खोलने से पहले provider की registration details, शुल्क और सुरक्षा सुविधाएं पढ़ें।",
+  "quiz": [
+    {
+      "question": "1. Demat Account का मुख्य उपयोग क्या है?",
+      "options": [
+        "Electronic securities रखना",
+        "केवल cash निकालना",
+        "Loan अपने-आप प्राप्त करना",
+        "निश्चित profit कमाना"
+      ],
+      "answerIndex": 0,
+      "explanation": "Demat Account eligible securities को electronic form में रखने के लिए उपयोग होता है।"
+    },
+    {
+      "question": "2. Trading Account का मुख्य उपयोग क्या है?",
+      "options": [
+        "केवल passbook छापना",
+        "Securities के buy और sell orders देना",
+        "ब्याज की गारंटी लेना",
+        "Tax अपने-आप समाप्त करना"
+      ],
+      "answerIndex": 1,
+      "explanation": "Trading Account के माध्यम से securities के खरीदने और बेचने के orders दिए जाते हैं।"
+    },
+    {
+      "question": "3. भारत में securities depositories के उदाहरण कौन-से हैं?",
+      "options": [
+        "RBI और SBI",
+        "NSE और BSE ही",
+        "NSDL और CDSL",
+        "केवल commercial banks"
+      ],
+      "answerIndex": 2,
+      "explanation": "NSDL और CDSL भारत की securities depositories हैं।"
+    },
+    {
+      "question": "4. Demat Account में shares होने से क्या market risk खत्म हो जाता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "नहीं, market risk बना रहता है",
+        "केवल सोमवार को",
+        "केवल नए investors के लिए"
+      ],
+      "answerIndex": 1,
+      "explanation": "Demat Account securities रखने का माध्यम है, profit की गारंटी नहीं।"
+    },
+    {
+      "question": "5. Account सुरक्षा के लिए क्या करना चाहिए?",
+      "options": [
+        "OTP सार्वजनिक करना",
+        "एक ही password सभी जगह रखना",
+        "Credentials दूसरों को देना",
+        "Strong password और सुरक्षित authentication अपनाना"
+      ],
+      "answerIndex": 3,
+      "explanation": "मजबूत password और सुरक्षित authentication account की सुरक्षा बढ़ाते हैं।"
+    }
+  ]
+  },
+  {
+  "id": "trading-account-basics",
+  "title": "82. Trading Account क्या है? — Orders और Transactions",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Trading Account, broker, order placement और transaction process को आसान हिंदी और English में सीखें।",
+  "lessons": [
+    "1. Trading Account क्या है?",
+    "2. Stockbroker की भूमिका",
+    "3. Buy और Sell Orders कैसे दिए जाते हैं?",
+    "4. Order Status और Trade Confirmation",
+    "5. Trading Account की सुरक्षा"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Trading Account की भूमिका",
+      "content": "Trading Account के जरिए investor या trader exchange पर उपलब्ध securities के लिए buy और sell orders देता है। Order execute होने की गारंटी नहीं होती; price, liquidity और market conditions का प्रभाव पड़ता है।"
+    },
+    {
+      "title": "Stockbroker क्या करता है?",
+      "content": "Stockbroker ग्राहकों को लागू नियमों के अनुसार exchange trading की सुविधा देता है। Broker चुनते समय registration, charges, platform reliability, customer support और official disclosures जांचें।"
+    },
+    {
+      "title": "Order से Trade तक",
+      "content": "Order place करने के बाद उसका status pending, open, partially filled, executed या rejected हो सकता है। Order execution के बाद trade confirmation और contract note जैसे records को ध्यान से जांचना चाहिए।"
+    }
+  ],
+  "examples": [
+    "Investor ने 10 shares खरीदने का order दिया, लेकिन market में केवल 6 shares के लिए matching हुई। Order partially filled हो सकता है।",
+    "Market price तेजी से बदलने पर order का execution अपेक्षित price से अलग हो सकता है।"
+  ],
+  "keyTerms": [
+    "Stockbroker: Trading की सुविधा देने वाला registered intermediary",
+    "Order: खरीदने या बेचने का निर्देश",
+    "Execution: Order का पूरा या आंशिक रूप से पूरा होना",
+    "Contract Note: Trade details का महत्वपूर्ण record",
+    "Liquidity: बिना बड़े price impact के खरीदने-बेचने की क्षमता"
+  ],
+  "risks": [
+    "गलत quantity या गलत order type से अनचाहा transaction हो सकता है।",
+    "कम liquidity में execution अपेक्षित price से अलग हो सकता है।",
+    "Unauthorized access से account misuse हो सकता है।"
+  ],
+  "commonMistakes": [
+    "Order submit करने के बाद उसका status न देखना।",
+    "Charges और contract note की जांच न करना।",
+    "Broker registration और official details verify न करना।"
+  ],
+  "summary": [
+    "Trading Account securities के orders देने के लिए उपयोग होता है।",
+    "Order place करना और order execute होना अलग बातें हैं।",
+    "Transaction records और account security महत्वपूर्ण हैं।"
+  ],
+  "beginnerTip": "हर order submit करने से पहले symbol, quantity, price और order type दोबारा जांचें।",
+  "quiz": [
+    {
+      "question": "1. Trading Account का मुख्य काम क्या है?",
+      "options": [
+        "Securities के trading orders देना",
+        "Profit की गारंटी देना",
+        "Market को नियंत्रित करना",
+        "हर transaction को tax-free बनाना"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trading Account के माध्यम से buy और sell orders दिए जाते हैं।"
+    },
+    {
+      "question": "2. Partially filled order का अर्थ क्या है?",
+      "options": [
+        "Order कभी submit नहीं हुआ",
+        "Order केवल cancel हो सकता है",
+        "Order का कुछ हिस्सा execute हुआ",
+        "Profit की गारंटी मिल गई"
+      ],
+      "answerIndex": 2,
+      "explanation": "Partially filled order में पूरी quantity के बजाय केवल कुछ quantity execute होती है।"
+    },
+    {
+      "question": "3. Stockbroker चुनते समय क्या जांचना चाहिए?",
+      "options": [
+        "केवल advertisement",
+        "Registration, charges और services",
+        "Profit के वादे",
+        "सोशल मीडिया followers मात्र"
+      ],
+      "answerIndex": 1,
+      "explanation": "Broker की registration, fees और service details जांचना जरूरी है।"
+    },
+    {
+      "question": "4. Order place होने का मतलब क्या order execute हो गया?",
+      "options": [
+        "हाँ, हर बार",
+        "केवल छुट्टी के दिन",
+        "केवल बड़े orders में",
+        "नहीं, execution अलग प्रक्रिया है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Order place होने के बाद execution market conditions और matching पर निर्भर करता है।"
+    },
+    {
+      "question": "5. Contract Note क्यों महत्वपूर्ण है?",
+      "options": [
+        "Trade details का record होने के कारण",
+        "यह guaranteed return देता है",
+        "यह market risk समाप्त करता है",
+        "यह Demat Account की जगह लेता है"
+      ],
+      "answerIndex": 0,
+      "explanation": "Contract Note transaction details का महत्वपूर्ण record होता है।"
+    }
+  ]
+  },
+  {
+  "id": "market-order-vs-limit-order",
+  "title": "83. Market Order और Limit Order में अंतर",
+  "category": "Trading",
+  "level": "Beginner",
+  "description": "Market Order और Limit Order कैसे काम करते हैं और उनके price तथा execution risks क्या हैं, यह सीखें।",
+  "lessons": [
+    "1. Market Order क्या है?",
+    "2. Limit Order क्या है?",
+    "3. Execution Price और Order Price",
+    "4. Liquidity और Slippage",
+    "5. सही Order Type चुनने से पहले क्या देखें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Market Order",
+      "content": "Market Order में trader उपलब्ध market prices पर order execute कराने की कोशिश करता है। Execution price निश्चित नहीं होती और तेज market में अपेक्षित price से अलग हो सकती है।"
+    },
+    {
+      "title": "Limit Order",
+      "content": "Buy Limit Order में अधिकतम खरीद price निर्धारित की जाती है। Sell Limit Order में न्यूनतम बिक्री price तय की जाती है। Limit price मिलने पर भी order execute होना निश्चित नहीं है।"
+    },
+    {
+      "title": "Slippage",
+      "content": "Slippage का अर्थ अपेक्षित price और वास्तविक execution price के बीच अंतर है। कम liquidity, तेज price movement और बड़े orders से slippage बढ़ सकती है।"
+    }
+  ],
+  "examples": [
+    "Buy Limit ₹100 रखने का अर्थ है कि order ₹100 या उससे कम पर execute हो सकता है, यदि matching उपलब्ध हो।",
+    "Market Buy Order तेजी से बदलते market में ₹100 के बजाय अधिक price पर execute हो सकता है।"
+  ],
+  "keyTerms": [
+    "Market Order: उपलब्ध market price पर execution का प्रयास",
+    "Limit Order: निर्धारित price सीमा वाला order",
+    "Slippage: Expected और executed price में अंतर",
+    "Bid: Buyers द्वारा दी गई बोली",
+    "Ask: Sellers द्वारा मांगी गई कीमत"
+  ],
+  "risks": [
+    "Market Order में execution price अपेक्षित price से अलग हो सकती है।",
+    "Limit Order execute न होने की संभावना रहती है।",
+    "कम liquidity में bid-ask spread बड़ा हो सकता है।"
+  ],
+  "commonMistakes": [
+    "यह मानना कि Market Order हमेशा उसी price पर execute होगा जो स्क्रीन पर दिख रही है।",
+    "यह मानना कि Limit Order जरूर execute होगा।",
+    "Bid-ask spread और liquidity को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Market Order execution पर प्राथमिकता देता है, निश्चित price पर नहीं।",
+    "Limit Order price सीमा तय करता है, लेकिन execution की गारंटी नहीं देता।",
+    "Order type चुनते समय liquidity और market conditions समझें।"
+  ],
+  "beginnerTip": "Order submit करने से पहले price, quantity, order type और estimated value जांचें।",
+  "quiz": [
+    {
+      "question": "1. Market Order में मुख्य अनिश्चितता क्या है?",
+      "options": [
+        "Order में quantity नहीं हो सकती",
+        "Execution price बदल सकती है",
+        "Market कभी खुलता नहीं",
+        "हर order reject होता है"
+      ],
+      "answerIndex": 1,
+      "explanation": "Market Order की वास्तविक execution price market conditions पर निर्भर करती है।"
+    },
+    {
+      "question": "2. Buy Limit ₹100 का सामान्य अर्थ क्या है?",
+      "options": [
+        "केवल ₹110 पर खरीदना",
+        "हर स्थिति में खरीदना",
+        "₹100 या उससे कम पर खरीदने की सीमा",
+        "₹100 का guaranteed profit"
+      ],
+      "answerIndex": 2,
+      "explanation": "Buy Limit Order में अधिकतम स्वीकार्य खरीद price निर्धारित होती है।"
+    },
+    {
+      "question": "3. क्या Limit Order का execute होना निश्चित है?",
+      "options": [
+        "नहीं",
+        "हाँ, हमेशा",
+        "केवल रविवार को",
+        "केवल long-term निवेश में"
+      ],
+      "answerIndex": 0,
+      "explanation": "Limit price पर matching उपलब्ध न होने पर order execute नहीं हो सकता।"
+    },
+    {
+      "question": "4. Slippage क्या है?",
+      "options": [
+        "Account खोलने का शुल्क",
+        "Dividend का प्रकार",
+        "Demat Account का नाम",
+        "Expected और actual execution price में अंतर"
+      ],
+      "answerIndex": 3,
+      "explanation": "Slippage अपेक्षित और वास्तविक execution price के बीच अंतर है।"
+    },
+    {
+      "question": "5. Order submit करने से पहले क्या जांचना चाहिए?",
+      "options": [
+        "केवल कंपनी का नाम",
+        "Price, quantity और order type",
+        "केवल market की रंग योजना",
+        "केवल social media comments"
+      ],
+      "answerIndex": 1,
+      "explanation": "Price, quantity और order type जांचने से गलत order का जोखिम घट सकता है।"
+    }
+  ]
+  },
+  {
+  "id": "stop-loss-order-basics",
+  "title": "84. Stop-Loss Order क्या है? — Risk Management",
+  "category": "Trading",
+  "level": "Beginner",
+  "description": "Stop-Loss के उद्देश्य, trigger price, order execution और इसकी सीमाओं को हिंदी और English में समझें।",
+  "lessons": [
+    "1. Stop-Loss Order क्या होता है?",
+    "2. Trigger Price और Order Price",
+    "3. Stop-Loss Market और Stop-Loss Limit",
+    "4. Stop-Loss की सीमाएं",
+    "5. Risk Management में Stop-Loss की भूमिका"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Stop-Loss का उद्देश्य",
+      "content": "Stop-Loss एक trading tool है जिसका उपयोग संभावित नुकसान को सीमित करने की योजना के लिए किया जाता है। यह maximum loss की गारंटी नहीं देता, क्योंकि तेज price movement या gap के कारण execution अलग price पर हो सकता है।"
+    },
+    {
+      "title": "Trigger Price",
+      "content": "Trigger Price वह स्तर है जिस पर stop order सक्रिय होता है। इसके बाद order किस प्रकार execute होगा, यह चुने गए order type और लागू broker/exchange नियमों पर निर्भर करता है।"
+    },
+    {
+      "title": "Stop-Loss Market और Limit",
+      "content": "Stop-Loss Market trigger होने के बाद उपलब्ध prices पर execution का प्रयास करता है। Stop-Loss Limit में price सीमा होती है, इसलिए तेजी से बदलते market में order execute न होने का जोखिम रहता है।"
+    }
+  ],
+  "examples": [
+    "किसी share की खरीद price ₹200 है और trader ₹190 के आसपास stop trigger तय करता है। Actual exit price ₹190 से अलग हो सकती है।",
+    "तेज गिरावट में Stop-Loss Limit order trigger होने के बाद भी sell order execute नहीं हो सकता।"
+  ],
+  "keyTerms": [
+    "Stop-Loss: नुकसान सीमित करने की योजना वाला order",
+    "Trigger Price: वह price जो order को सक्रिय करती है",
+    "Stop-Loss Market: Trigger के बाद market execution का प्रयास",
+    "Stop-Loss Limit: Trigger के बाद निर्धारित price सीमा वाला order",
+    "Gap Risk: Price का पिछले स्तर से अचानक दूर खुलना"
+  ],
+  "risks": [
+    "Stop-Loss price पर execution की गारंटी नहीं होती।",
+    "तेज market movement में slippage हो सकती है।",
+    "बहुत tight stop अनावश्यक रूप से trigger हो सकता है।"
+  ],
+  "commonMistakes": [
+    "Stop-Loss को guaranteed maximum loss समझना।",
+    "Stop order लगाने के बाद position size और total risk भूल जाना।",
+    "Broker की trigger और order rules न पढ़ना।"
+  ],
+  "summary": [
+    "Stop-Loss संभावित downside risk को manage करने का tool है।",
+    "Trigger price और actual execution price अलग हो सकती हैं।",
+    "Position sizing और risk planning भी जरूरी हैं।"
+  ],
+  "beginnerTip": "Stop-Loss को risk management का एक हिस्सा समझें, पूरी सुरक्षा की गारंटी नहीं।",
+  "quiz": [
+    {
+      "question": "1. Stop-Loss का मुख्य उद्देश्य क्या है?",
+      "options": [
+        "निश्चित profit देना",
+        "हर market loss खत्म करना",
+        "संभावित नुकसान को manage करने में मदद करना",
+        "Trading fees हटाना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Stop-Loss संभावित नुकसान को manage करने की योजना का एक हिस्सा है।"
+    },
+    {
+      "question": "2. Trigger Price क्या करती है?",
+      "options": [
+        "Stop order को सक्रिय करती है",
+        "Dividend घोषित करती है",
+        "Company ownership बदलती है",
+        "Tax हमेशा खत्म करती है"
+      ],
+      "answerIndex": 0,
+      "explanation": "Trigger Price पर पहुंचने के बाद stop order सक्रिय होता है।"
+    },
+    {
+      "question": "3. क्या Stop-Loss हमेशा उसी price पर execute होता है?",
+      "options": [
+        "हाँ, बिना किसी अपवाद",
+        "केवल नए traders के लिए",
+        "केवल market बंद होने पर",
+        "नहीं, actual price अलग हो सकती है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Gap और तेज price movement के कारण execution price अलग हो सकती है।"
+    },
+    {
+      "question": "4. Stop-Loss Limit का एक जोखिम क्या है?",
+      "options": [
+        "यह हमेशा profit देता है",
+        "Trigger होने के बाद भी order execute न हो",
+        "यह shares को bonus बना देता है",
+        "यह market holiday हटाता है"
+      ],
+      "answerIndex": 1,
+      "explanation": "Price सीमा के कारण matching न मिलने पर order execute नहीं हो सकता।"
+    },
+    {
+      "question": "5. Stop-Loss के साथ और क्या जरूरी है?",
+      "options": [
+        "केवल rumours",
+        "Guaranteed return का दावा",
+        "Position sizing और risk planning",
+        "सभी market updates बंद करना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Position size और कुल संभावित नुकसान को समझना भी महत्वपूर्ण है।"
+    }
+  ]
+  },
+  {
+  "id": "bid-ask-price-spread",
+  "title": "85. Bid Price और Ask Price क्या हैं?",
+  "category": "Trading",
+  "level": "Beginner",
+  "description": "Buyers की bid, sellers की ask और bid-ask spread को आसान उदाहरणों के साथ समझें।",
+  "lessons": [
+    "1. Bid Price क्या है?",
+    "2. Ask Price क्या है?",
+    "3. Bid-Ask Spread कैसे निकलता है?",
+    "4. Liquidity और Spread का संबंध",
+    "5. Spread trading cost को कैसे प्रभावित करता है?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Bid Price",
+      "content": "Bid वह price है जिस पर buyer खरीदने के लिए बोली देता है। अलग-अलग buyers अलग prices और quantities के orders दे सकते हैं।"
+    },
+    {
+      "title": "Ask Price",
+      "content": "Ask या Offer वह price है जिस पर seller बेचने के लिए तैयार होता है। Order book में उपलब्ध best ask सामान्यतः सबसे कम उपलब्ध sell price होती है।"
+    },
+    {
+      "title": "Bid-Ask Spread",
+      "content": "Best Ask और Best Bid का अंतर bid-ask spread कहलाता है। Spread छोटा होना अक्सर बेहतर liquidity से जुड़ा हो सकता है, लेकिन यह अकेला liquidity या risk का पूरा माप नहीं है।"
+    }
+  ],
+  "examples": [
+    "यदि Best Bid ₹99 और Best Ask ₹100 है, तो spread ₹1 होगा।",
+    "कम traded stock में buyers और sellers की कीमतों में बड़ा अंतर हो सकता है।"
+  ],
+  "keyTerms": [
+    "Bid: Buyer की बोली",
+    "Ask: Seller की मांगी हुई कीमत",
+    "Spread: Best Ask minus Best Bid",
+    "Order Book: Buy और sell orders का विवरण",
+    "Liquidity: Market में खरीदने-बेचने की आसानी"
+  ],
+  "risks": [
+    "बड़े spread के कारण trading की implicit cost बढ़ सकती है।",
+    "कम liquidity में order का execution कठिन हो सकता है।",
+    "Order book में दिखाई देने वाली quantity बदल सकती है।"
+  ],
+  "commonMistakes": [
+    "Last Traded Price को हमेशा खरीदने या बेचने की उपलब्ध price समझना।",
+    "Spread को नजरअंदाज करना।",
+    "कम liquidity वाले stock में market order के price impact को भूलना।"
+  ],
+  "summary": [
+    "Bid buyer की बोली है और Ask seller की मांगी हुई price है।",
+    "Spread इन दोनों best prices का अंतर है।",
+    "Liquidity और spread execution को प्रभावित कर सकते हैं।"
+  ],
+  "beginnerTip": "Order देने से पहले Best Bid, Best Ask और available quantity देखें।",
+  "quiz": [
+    {
+      "question": "1. Bid Price किससे संबंधित है?",
+      "options": [
+        "Buyer की बोली",
+        "कंपनी का annual profit",
+        "Dividend tax",
+        "Demat password"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bid वह price है जिस पर buyer खरीदने की बोली देता है।"
+    },
+    {
+      "question": "2. Ask Price क्या दर्शाती है?",
+      "options": [
+        "केवल पिछला closing price",
+        "Seller की मांगी हुई price",
+        "कंपनी का market capitalisation",
+        "सरकारी tax rate"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ask या Offer वह price है जिस पर seller बेचने के लिए तैयार होता है।"
+    },
+    {
+      "question": "3. यदि Best Bid ₹99 और Best Ask ₹100 है, तो spread कितना है?",
+      "options": [
+        "₹100",
+        "₹99",
+        "₹1",
+        "₹199"
+      ],
+      "answerIndex": 2,
+      "explanation": "Spread = ₹100 − ₹99 = ₹1।"
+    },
+    {
+      "question": "4. बड़ा spread किस बात का संकेत हो सकता है?",
+      "options": [
+        "Guaranteed profit",
+        "Zero trading cost",
+        "हमेशा बढ़ता हुआ share price",
+        "कम liquidity या अधिक trading cost"
+      ],
+      "answerIndex": 3,
+      "explanation": "बड़ा spread कम liquidity या अधिक transaction cost से जुड़ा हो सकता है।"
+    },
+    {
+      "question": "5. Order देने से पहले क्या देखना उपयोगी है?",
+      "options": [
+        "केवल company logo",
+        "Bid, Ask और available quantity",
+        "केवल online comments",
+        "केवल पिछले साल का dividend"
+      ],
+      "answerIndex": 1,
+      "explanation": "Bid, Ask और quantity देखने से execution conditions समझने में मदद मिलती है।"
+    }
+  ]
+  },
+  {
+  "id": "liquidity-vs-volatility",
+  "title": "86. Liquidity और Volatility में अंतर",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Liquidity और Volatility का अर्थ, अंतर और trading में उनकी भूमिका समझें।",
+  "lessons": [
+    "1. Liquidity क्या है?",
+    "2. Volatility क्या है?",
+    "3. High और Low Liquidity",
+    "4. Price Volatility और Risk",
+    "5. Trading से पहले दोनों को कैसे समझें?"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Liquidity",
+      "content": "Liquidity का अर्थ किसी asset को खरीदने या बेचने की क्षमता है, बिना उसके price पर बहुत बड़ा प्रभाव डाले। Trading volume, order-book depth और bid-ask spread इसके आकलन में मदद कर सकते हैं।"
+    },
+    {
+      "title": "Volatility",
+      "content": "Volatility price के उतार-चढ़ाव की मात्रा को दर्शाती है। अधिक volatility में prices तेजी से ऊपर या नीचे जा सकती हैं। Volatility दिशा नहीं बताती और अपने-आप profit का संकेत नहीं है।"
+    },
+    {
+      "title": "दोनों में अंतर",
+      "content": "किसी stock में अच्छी liquidity के साथ भी high volatility हो सकती है। किसी दूसरे stock में कम volatility के बावजूद liquidity कमजोर हो सकती है। दोनों को अलग-अलग समझना चाहिए।"
+    }
+  ],
+  "examples": [
+    "एक actively traded stock में बहुत से buyers और sellers हो सकते हैं, जिससे orders को match करना आसान हो सकता है।",
+    "किसी news event के बाद share price तेजी से बदल सकती है; यह volatility का उदाहरण है।"
+  ],
+  "keyTerms": [
+    "Liquidity: आसानी से खरीदने-बेचने की क्षमता",
+    "Volatility: Price movement की मात्रा",
+    "Order-Book Depth: अलग-अलग prices पर उपलब्ध orders",
+    "Trading Volume: एक अवधि में trade हुई quantity",
+    "Price Impact: Order के कारण price पर पड़ने वाला प्रभाव"
+  ],
+  "risks": [
+    "कम liquidity में अपेक्षित price पर exit करना कठिन हो सकता है।",
+    "High volatility से तेज profit और तेज loss दोनों संभव हैं।",
+    "पुराना volume वर्तमान market conditions का पूरा प्रतिनिधित्व नहीं करता।"
+  ],
+  "commonMistakes": [
+    "High volume को guaranteed profit समझना।",
+    "High volatility को हमेशा bullish trend समझना।",
+    "Liquidity और volatility को एक ही चीज समझना।"
+  ],
+  "summary": [
+    "Liquidity trading की आसानी से संबंधित है।",
+    "Volatility price के उतार-चढ़ाव से संबंधित है।",
+    "दोनों को समझने से market risk का आकलन बेहतर हो सकता है।"
+  ],
+  "beginnerTip": "Stock चुनने से पहले volume, spread, order-book depth और price movement को अलग-अलग समझें।",
+  "quiz": [
+    {
+      "question": "1. Liquidity का अर्थ क्या है?",
+      "options": [
+        "केवल dividend मिलना",
+        "Asset को अपेक्षाकृत आसानी से खरीदने-बेचने की क्षमता",
+        "Guaranteed return",
+        "Company का नाम"
+      ],
+      "answerIndex": 1,
+      "explanation": "Liquidity बताती है कि asset को price पर बहुत बड़ा प्रभाव डाले बिना कितना आसानी से trade किया जा सकता है।"
+    },
+    {
+      "question": "2. Volatility क्या दर्शाती है?",
+      "options": [
+        "केवल company size",
+        "Account opening fees",
+        "Price के उतार-चढ़ाव की मात्रा",
+        "Demat account balance"
+      ],
+      "answerIndex": 2,
+      "explanation": "Volatility price movement की मात्रा को दर्शाती है।"
+    },
+    {
+      "question": "3. क्या High Volatility profit की गारंटी है?",
+      "options": [
+        "नहीं",
+        "हाँ, हमेशा",
+        "केवल नए investors के लिए",
+        "केवल holidays में"
+      ],
+      "answerIndex": 0,
+      "explanation": "High volatility में prices ऊपर या नीचे दोनों दिशाओं में तेजी से जा सकती हैं।"
+    },
+    {
+      "question": "4. क्या high liquidity वाले stock में volatility नहीं हो सकती?",
+      "options": [
+        "हाँ, कभी नहीं",
+        "केवल रात में",
+        "केवल dividend date पर",
+        "हो सकती है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Liquidity और volatility अलग-अलग गुण हैं; दोनों एक साथ मौजूद हो सकते हैं।"
+    },
+    {
+      "question": "5. Liquidity समझने के लिए कौन-सी जानकारी उपयोगी है?",
+      "options": [
+        "केवल company logo",
+        "Volume, spread और order-book depth",
+        "केवल social media likes",
+        "केवल share का नाम"
+      ],
+      "answerIndex": 1,
+      "explanation": "Volume, spread और order-book depth liquidity का आकलन करने में मदद कर सकते हैं।"
+    }
+  ]
+    },
+  {
+  "id": "market-capitalization-basics",
+  "title": "87. Market Capitalization क्या है? — Large, Mid और Small Cap",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Market Capitalization का calculation और company size के सामान्य वर्गीकरण को समझें।",
+  "lessons": [
+    "1. Market Capitalization क्या है?",
+    "2. Market Cap का Formula",
+    "3. Large Cap, Mid Cap और Small Cap",
+    "4. Market Cap और Company Value",
+    "5. Market Cap की सीमाएं"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Market Cap का अर्थ",
+      "content": "Market Capitalization किसी company के outstanding shares की market price के आधार पर निकला कुल market value estimate है। इसका सामान्य formula है: Share Price × Total Outstanding Shares."
+    },
+    {
+      "title": "Calculation का उदाहरण",
+      "content": "यदि किसी company के 10 करोड़ outstanding shares हैं और market price ₹50 है, तो सरल calculation के अनुसार market capitalization ₹500 करोड़ होगी। Price बदलने पर market cap भी बदल सकती है।"
+    },
+    {
+      "title": "Large, Mid और Small Cap",
+      "content": "ये company size से जुड़े वर्ग हैं। भारत में mutual fund categorisation के लिए SEBI के निर्धारित नियम और सूची लागू होती है। सामान्य चर्चा में प्रयुक्त labels और आधिकारिक fund categories को बिना जांचे समान नहीं मानना चाहिए।"
+    }
+  ],
+  "examples": [
+    "10 करोड़ shares × ₹50 = ₹500 करोड़ market capitalization.",
+    "दो कंपनियों की share price समान हो सकती है, लेकिन outstanding shares अलग होने पर उनका market cap अलग होगा।"
+  ],
+  "keyTerms": [
+    "Market Capitalization: Shares की market price पर आधारित कुल market value",
+    "Outstanding Shares: जारी और वर्तमान में outstanding shares",
+    "Large Cap: निर्धारित classification के अनुसार बड़ी कंपनियों का वर्ग",
+    "Mid Cap: निर्धारित classification के अनुसार मध्यम आकार की कंपनियों का वर्ग",
+    "Small Cap: निर्धारित classification के अनुसार छोटी कंपनियों का वर्ग"
+  ],
+  "risks": [
+    "Market cap अपने-आप company की financial quality नहीं बताता।",
+    "Small-cap shares में liquidity और volatility risks अधिक हो सकते हैं, लेकिन हर company का risk अलग होता है।",
+    "Share price और market cap दोनों समय के साथ बदलते हैं।"
+  ],
+  "commonMistakes": [
+    "कम share price को सस्ती company समझना।",
+    "बड़े market cap को guaranteed safe investment मानना।",
+    "Market cap को company के cash balance के बराबर समझना।"
+  ],
+  "summary": [
+    "Market Cap = Share Price × Outstanding Shares.",
+    "Market cap company के market size का एक measure है।",
+    "Company की quality समझने के लिए अन्य financial information भी जरूरी है।"
+  ],
+  "beginnerTip": "Market Cap को valuation, debt, earnings, cash flow और business risks के साथ मिलाकर समझें।",
+  "quiz": [
+    {
+      "question": "1. Market Capitalization का सामान्य formula क्या है?",
+      "options": [
+        "Share Price × Outstanding Shares",
+        "Profit ÷ Tax",
+        "Debt + Dividend",
+        "Cash × Employees"
+      ],
+      "answerIndex": 0,
+      "explanation": "Market cap का सामान्य calculation share price को outstanding shares से multiply करके होता है।"
+    },
+    {
+      "question": "2. 10 करोड़ shares की price ₹50 हो तो market cap कितना होगा?",
+      "options": [
+        "₹50 करोड़",
+        "₹100 करोड़",
+        "₹500 करोड़",
+        "₹5,000 करोड़"
+      ],
+      "answerIndex": 2,
+      "explanation": "10 करोड़ × ₹50 = ₹500 करोड़।"
+    },
+    {
+      "question": "3. क्या कम share price का अर्थ हमेशा सस्ती company है?",
+      "options": [
+        "हाँ",
+        "नहीं",
+        "केवल सोमवार को",
+        "केवल small-cap में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Company के outstanding shares और financial स्थिति को देखे बिना केवल share price से valuation तय नहीं होती।"
+    },
+    {
+      "question": "4. Market Cap अपने-आप क्या साबित नहीं करता?",
+      "options": [
+        "Market value का अनुमान",
+        "Outstanding shares का महत्व",
+        "Share price का प्रभाव",
+        "Company की financial quality या guaranteed safety"
+      ],
+      "answerIndex": 3,
+      "explanation": "Market cap company की quality या safety की पूर्ण गारंटी नहीं देता।"
+    },
+    {
+      "question": "5. Market Cap के साथ और क्या देखना उपयोगी है?",
+      "options": [
+        "केवल company का logo",
+        "Debt, earnings और cash flow",
+        "केवल online rumours",
+        "केवल share का नाम"
+      ],
+      "answerIndex": 1,
+      "explanation": "Debt, earnings, cash flow और business risks company को समझने में मदद करते हैं।"
+    }
+  ]
+  },
+  {
+  "id": "face-value-book-value-market-price",
+  "title": "88. Face Value, Book Value और Market Price में अंतर",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Share की Face Value, Book Value और Market Price को examples के साथ समझें।",
+  "lessons": [
+    "1. Face Value क्या है?",
+    "2. Book Value क्या है?",
+    "3. Market Price क्या है?",
+    "4. तीनों Values में अंतर",
+    "5. Investment Analysis में इनका उपयोग"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Face Value",
+      "content": "Face Value share की nominal value होती है, जिसे company अपने share capital structure में निर्धारित करती है। यह सामान्यतः बाजार में share खरीदने-बेचने की मौजूदा कीमत नहीं होती।"
+    },
+    {
+      "title": "Book Value",
+      "content": "Book Value को सरल रूप में assets में से liabilities घटाकर प्राप्त net assets से समझा जा सकता है। Per-share book value निकालने में लागू accounting definitions और shares की संख्या का उपयोग किया जाता है।"
+    },
+    {
+      "title": "Market Price",
+      "content": "Market Price वह price है जिस पर market में share trade हो रहा है। यह demand, supply, expectations, financial performance और अन्य परिस्थितियों से बदल सकती है।"
+    }
+  ],
+  "examples": [
+    "किसी share की face value ₹10 और market price ₹150 हो सकती है। दोनों अलग concepts हैं।",
+    "किसी company की book value per share ₹80 हो सकती है, जबकि उसका market price ₹100 हो; इससे अकेले यह तय नहीं होता कि share सही मूल्य पर है या नहीं।"
+  ],
+  "keyTerms": [
+    "Face Value: Share की nominal value",
+    "Book Value: Accounting records पर आधारित net assets value",
+    "Market Price: Market में चल रही trading price",
+    "Net Assets: Assets minus liabilities",
+    "Valuation: Company या security के मूल्य का आकलन"
+  ],
+  "risks": [
+    "Book value में सभी intangible assets या future growth का market impact पूरी तरह दिखाई नहीं दे सकता।",
+    "Market price तेजी से बदल सकती है।",
+    "Face Value के आधार पर अकेले investment decision लेना उचित नहीं है।"
+  ],
+  "commonMistakes": [
+    "Face Value को current market price समझना।",
+    "Market price book value से कम होने को guaranteed bargain मानना।",
+    "Accounting figures की तारीख और definitions को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Face Value nominal share value है।",
+    "Book Value accounting-based net asset value से संबंधित है।",
+    "Market Price market conditions के अनुसार बदलती है।"
+  ],
+  "beginnerTip": "इन तीनों values को अलग रखें और company की earnings, debt, cash flow और business outlook भी पढ़ें।",
+  "quiz": [
+    {
+      "question": "1. Face Value क्या है?",
+      "options": [
+        "हर दिन बदलने वाली market price",
+        "Share की nominal value",
+        "Company का कुल loan",
+        "Investor का profit"
+      ],
+      "answerIndex": 1,
+      "explanation": "Face Value share की nominal value होती है।"
+    },
+    {
+      "question": "2. Market Price किससे प्रभावित हो सकती है?",
+      "options": [
+        "केवल face value से",
+        "केवल share certificate से",
+        "Demand, supply और market expectations से",
+        "केवल account password से"
+      ],
+      "answerIndex": 2,
+      "explanation": "Market price demand, supply, performance और expectations से प्रभावित हो सकती है।"
+    },
+    {
+      "question": "3. Book Value किससे संबंधित है?",
+      "options": [
+        "Accounting-based net assets",
+        "Social media likes",
+        "केवल daily trading volume",
+        "Investor के bank password"
+      ],
+      "answerIndex": 0,
+      "explanation": "Book value accounting records पर आधारित net assets से जुड़ी होती है।"
+    },
+    {
+      "question": "4. Face Value ₹10 होने का क्या अर्थ है?",
+      "options": [
+        "Share हमेशा ₹10 में trade होगा",
+        "Company guaranteed dividend देगी",
+        "Share का market risk नहीं है",
+        "यह nominal value है, market price अलग हो सकती है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Face Value और Market Price अलग concepts हैं।"
+    },
+    {
+      "question": "5. क्या Book Value से अकेले तय हो जाता है कि share सस्ता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "नहीं, अन्य financial और business factors भी जरूरी हैं",
+        "केवल holidays पर",
+        "केवल face value ₹10 होने पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Valuation के लिए book value के साथ अन्य financial और business information भी जरूरी है।"
+    }
+  ]
+    },
+  {
+  "id": "pe-ratio-pb-ratio-basics",
+  "title": "89. P/E Ratio और P/B Ratio क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Price-to-Earnings और Price-to-Book ratios का अर्थ, calculation और limitations सीखें।",
+  "lessons": [
+    "1. P/E Ratio क्या है?",
+    "2. P/B Ratio क्या है?",
+    "3. Ratios की Calculation",
+    "4. Companies के Ratios की तुलना",
+    "5. Ratios की सीमाएं और सावधानियां"
+  ],
+  "detailedLessons": [
+    {
+      "title": "P/E Ratio",
+      "content": "P/E यानी Price-to-Earnings Ratio का सामान्य formula है: Market Price per Share ÷ Earnings per Share (EPS). यह बताता है कि वर्तमान price, reported या estimated per-share earnings के मुकाबले कितनी है। Earnings period और calculation basis की जांच जरूरी है।"
+    },
+    {
+      "title": "P/B Ratio",
+      "content": "P/B यानी Price-to-Book Ratio का सामान्य formula है: Market Price per Share ÷ Book Value per Share. यह market price की तुलना accounting-based book value से करता है। अलग-अलग industries में इसकी उपयोगिता अलग हो सकती है।"
+    },
+    {
+      "title": "Ratios की तुलना",
+      "content": "किसी ratio को अकेले देखकर share सस्ता या महंगा घोषित नहीं करना चाहिए। Growth, profitability, debt, cash flow, industry structure और accounting quality भी महत्वपूर्ण हैं। Negative earnings होने पर P/E ratio सामान्य रूप से meaningful comparison नहीं दे सकता।"
+    }
+  ],
+  "examples": [
+    "यदि share price ₹200 और EPS ₹10 है, तो P/E = 20।",
+    "यदि share price ₹150 और book value per share ₹75 है, तो P/B = 2।"
+  ],
+  "keyTerms": [
+    "P/E Ratio: Price divided by Earnings per Share",
+    "P/B Ratio: Price divided by Book Value per Share",
+    "EPS: Earnings per Share",
+    "Valuation: Price के मुकाबले business value का आकलन",
+    "Industry Comparison: समान business वाली companies की तुलना"
+  ],
+  "risks": [
+    "एक high P/E ratio growth expectations या overvaluation दोनों से जुड़ा हो सकता है।",
+    "एक low P/E ratio अपने-आप undervaluation साबित नहीं करता।",
+    "Book value कुछ industries में business value का सीमित प्रतिनिधित्व कर सकती है।"
+  ],
+  "commonMistakes": [
+    "सबसे कम P/E वाली company को स्वतः सबसे अच्छी मानना।",
+    "Different industries के ratios की बिना context तुलना करना।",
+    "EPS की अवधि और one-time gains को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "P/E ratio price की तुलना earnings से करता है।",
+    "P/B ratio price की तुलना book value से करता है।",
+    "Ratios को company और industry context के साथ समझना चाहिए।"
+  ],
+  "beginnerTip": "Ratio देखने पर पहले यह जांचें कि earnings और book value किस अवधि और accounting basis पर आधारित हैं।",
+  "quiz": [
+    {
+      "question": "1. P/E Ratio का सामान्य formula क्या है?",
+      "options": [
+        "Market Price per Share ÷ EPS",
+        "Debt ÷ Employees",
+        "Dividend × Face Value",
+        "Assets + Liabilities"
+      ],
+      "answerIndex": 0,
+      "explanation": "P/E ratio का सामान्य formula share price divided by EPS है।"
+    },
+    {
+      "question": "2. Share price ₹200 और EPS ₹10 हो, तो P/E कितना है?",
+      "options": [
+        "2",
+        "10",
+        "20",
+        "200"
+      ],
+      "answerIndex": 2,
+      "explanation": "₹200 ÷ ₹10 = 20।"
+    },
+    {
+      "question": "3. P/B Ratio किसकी तुलना करता है?",
+      "options": [
+        "Trading hours और holidays",
+        "Market price और book value per share",
+        "Volume और delivery quantity मात्र",
+        "Tax और account password"
+      ],
+      "answerIndex": 1,
+      "explanation": "P/B ratio market price की तुलना book value per share से करता है।"
+    },
+    {
+      "question": "4. क्या Low P/E अपने-आप अच्छी investment साबित करता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल नए shares में",
+        "केवल market holidays में",
+        "नहीं, अन्य factors भी जांचने चाहिए"
+      ],
+      "answerIndex": 3,
+      "explanation": "Low P/E कमजोर growth, business problems या अन्य कारणों से भी हो सकता है।"
+    },
+    {
+      "question": "5. Ratios की तुलना करते समय क्या उपयोगी है?",
+      "options": [
+        "Industry और company fundamentals",
+        "केवल share का नाम",
+        "केवल logo का रंग",
+        "Social media rumours"
+      ],
+      "answerIndex": 0,
+      "explanation": "Industry context और company fundamentals ratio interpretation में महत्वपूर्ण हैं।"
+    }
+  ]
+    },
+  {
+  "id": "dividend-yield-eps-basics",
+  "title": "90. Dividend Yield और EPS क्या हैं?",
+  "category": "Stock Market",
+  "level": "Beginner",
+  "description": "Dividend Yield और Earnings Per Share यानी EPS का अर्थ, calculation और limitations समझें।",
+  "lessons": [
+    "1. Dividend क्या है?",
+    "2. Dividend Yield का Formula",
+    "3. Earnings Per Share यानी EPS",
+    "4. Dividend Yield और EPS में अंतर",
+    "5. Dividend और Earnings Data की सीमाएं"
+  ],
+  "detailedLessons": [
+    {
+      "title": "Dividend",
+      "content": "Dividend कंपनी द्वारा shareholders को दिया जाने वाला distribution है, यदि company और उसके लागू governance तथा legal requirements के अनुसार घोषित किया जाए। Dividend मिलना निश्चित नहीं है और company इसे घटा या रोक सकती है।"
+    },
+    {
+      "title": "Dividend Yield",
+      "content": "Dividend Yield का सामान्य formula है: Annual Dividend per Share ÷ Current Market Price per Share × 100. यह current price के मुकाबले dividend का percentage दिखाता है। Historical dividend future dividend की guarantee नहीं है।"
+    },
+    {
+      "title": "Earnings Per Share",
+      "content": "EPS यानी Earnings Per Share company की earnings को प्रति share आधार पर दर्शाता है। सामान्य calculation में applicable net profit attributable to ordinary shareholders को weighted average outstanding shares से divide किया जाता है। Basic और diluted EPS में अंतर हो सकता है।"
+    }
+  ],
+  "examples": [
+    "यदि annual dividend ₹5 per share और market price ₹100 है, तो dividend yield 5% होगी।",
+    "यदि applicable earnings ₹100 करोड़ और weighted average shares 10 करोड़ हैं, तो सरल उदाहरण में EPS ₹10 होगा।"
+  ],
+  "keyTerms": [
+    "Dividend: Shareholders को किया जाने वाला distribution",
+    "Dividend Yield: Annual dividend का market price से percentage संबंध",
+    "EPS: Earnings Per Share",
+    "Basic EPS: Basic share count के आधार पर earnings per share",
+    "Diluted EPS: संभावित dilution को ध्यान में रखने वाला EPS"
+  ],
+  "risks": [
+    "High dividend yield share price में गिरावट के कारण भी हो सकती है।",
+    "Past dividend future payment की guarantee नहीं देता।",
+    "One-time earnings EPS को अस्थायी रूप से प्रभावित कर सकती हैं।"
+  ],
+  "commonMistakes": [
+    "High dividend yield को guaranteed return समझना।",
+    "EPS को company के cash balance के बराबर मानना।",
+    "Basic EPS और diluted EPS के अंतर को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Dividend company द्वारा shareholders को किया जाने वाला distribution है।",
+    "Dividend Yield annual dividend को current market price के संदर्भ में दिखाती है।",
+    "EPS earnings को प्रति share आधार पर दिखाता है।"
+  ],
+  "beginnerTip": "Dividend Yield और EPS के साथ company की cash flow, debt, earnings consistency और official announcements भी जांचें।",
+  "quiz": [
+    {
+      "question": "1. Dividend Yield का सामान्य formula क्या है?",
+      "options": [
+        "Market Price ÷ Employees",
+        "Annual Dividend per Share ÷ Market Price × 100",
+        "Debt × Share Count",
+        "EPS + Face Value"
+      ],
+      "answerIndex": 1,
+      "explanation": "Dividend Yield annual dividend per share को current market price से divide करके percentage में निकाली जाती है।"
+    },
+    {
+      "question": "2. Annual dividend ₹5 और market price ₹100 हो, तो yield कितनी है?",
+      "options": [
+        "5%",
+        "10%",
+        "20%",
+        "50%"
+      ],
+      "answerIndex": 0,
+      "explanation": "₹5 ÷ ₹100 × 100 = 5%।"
+    },
+    {
+      "question": "3. EPS क्या दर्शाता है?",
+      "options": [
+        "केवल share का face value",
+        "Trading Account का balance",
+        "Earnings per Share",
+        "Market holiday count"
+      ],
+      "answerIndex": 2,
+      "explanation": "EPS company की earnings को प्रति share आधार पर दर्शाता है।"
+    },
+    {
+      "question": "4. क्या High Dividend Yield future dividend की guarantee है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल large-cap में",
+        "केवल एक साल के लिए",
+        "नहीं"
+      ],
+      "answerIndex": 3,
+      "explanation": "Dividend company के निर्णय और financial condition पर निर्भर करता है।"
+    },
+    {
+      "question": "5. Dividend Yield और EPS के साथ क्या देखना उपयोगी है?",
+      "options": [
+        "केवल logo",
+        "Cash flow, debt और earnings consistency",
+        "केवल social media followers",
+        "केवल market का रंग"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cash flow, debt और earnings consistency company की financial स्थिति समझने में मदद करते हैं।"
+    }
+  ]
+  }
     ]
