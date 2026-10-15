@@ -2144,7 +2144,179 @@
       "7. Regular Plan में मिलने वाली सेवाओं को समझना।",
       "8. Plan चुनने से पहले जरूरी सवाल।"
     ],
-    "beginnerTip": "Direct और Regular Plans के बीच चुनाव करते समय लागत, उपलब्ध सहायता, अपनी जानकारी और जरूरतों को समझें।"
+    {
+  "id": "direct-vs-regular-mutual-funds",
+  "title": "Direct vs Regular Mutual Funds",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Direct और Regular Mutual Fund Plans के बीच अंतर, लागत, सेवाएँ और जोखिम समझें।",
+  "lessons": [
+    "1. Direct Plan क्या होता है?",
+    "2. Regular Plan क्या होता है?",
+    "3. दोनों Plans में Distribution की भूमिका।",
+    "4. Expense Ratio में संभावित अंतर।",
+    "5. Returns की तुलना करते समय किन बातों का ध्यान रखें?",
+    "6. Direct Plan में स्वयं जानकारी जुटाने की जिम्मेदारी।",
+    "7. Regular Plan में मिलने वाली सेवाओं को समझना।",
+    "8. Plan चुनने से पहले जरूरी सवाल।"
+  ],
+  "beginnerTip": "Direct और Regular Plans के बीच चुनाव करते समय लागत, उपलब्ध सहायता, अपनी जानकारी और जरूरतों को समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. Direct Plan क्या होता है?",
+      "content": "Direct Plan में निवेशक Mutual Fund Scheme में सीधे Fund House के माध्यम से निवेश करता है, बिना Distributor के माध्यम से निवेश किए। इसकी Expense Ratio सामान्यतः उसी Scheme के Regular Plan से कम हो सकती है। Direct Plan में भी बाजार जोखिम बना रहता है।"
+    },
+    {
+      "title": "2. Regular Plan क्या होता है?",
+      "content": "Regular Plan में निवेश Distributor या मध्यस्थ के माध्यम से किया जाता है। Distributor निवेश प्रक्रिया समझने और संबंधित सेवाएँ देने में सहायता कर सकता है। इस Plan की लागत में Distribution से जुड़ा खर्च शामिल हो सकता है।"
+    },
+    {
+      "title": "3. Distribution की भूमिका",
+      "content": "Distributor Scheme की जानकारी देने, दस्तावेजी प्रक्रिया और निवेश संबंधी सामान्य सहायता में भूमिका निभा सकता है। सेवाओं का स्तर अलग-अलग हो सकता है। निवेशक को यह समझना चाहिए कि उपलब्ध सहायता किस प्रकार की है।"
+    },
+    {
+      "title": "4. Expense Ratio में अंतर",
+      "content": "Expense Ratio Scheme के संचालन से जुड़ी लागत का एक अनुपात है। एक ही Scheme के Direct और Regular Plans की लागत अलग हो सकती है। निवेश से पहले नवीनतम आधिकारिक दस्तावेजों में मौजूदा खर्च की जाँच करें।"
+    },
+    {
+      "title": "5. Returns की तुलना",
+      "content": "तुलना करते समय एक ही Scheme के Direct Plan की तुलना Direct Plan से और Regular Plan की तुलना Regular Plan से करें। समान समयावधि, Risk Profile, लागू खर्च और निवेश उद्देश्य को ध्यान में रखें। पिछले Returns भविष्य के परिणामों की गारंटी नहीं हैं।"
+    },
+    {
+      "title": "6. Direct Plan में जिम्मेदारी",
+      "content": "Direct Plan चुनने पर निवेशक को Scheme का उद्देश्य, जोखिम, Portfolio, लागत और दस्तावेज स्वयं समझने की जरूरत हो सकती है। यदि जानकारी पर्याप्त न हो, तो किसी योग्य और उपयुक्त वित्तीय पेशेवर से सहायता लेने पर विचार करें।"
+    },
+    {
+      "title": "7. Regular Plan में सेवाएँ",
+      "content": "Regular Plan में Distributor की सेवाएँ उपलब्ध हो सकती हैं, लेकिन उनकी प्रकृति और गुणवत्ता अलग हो सकती है। यह भी स्पष्ट करें कि सेवा के लिए कौन-सी लागत अप्रत्यक्ष रूप से Plan में शामिल है और आपको वास्तव में क्या सहायता मिलेगी।"
+    },
+    {
+      "title": "8. Plan चुनने से पहले सवाल",
+      "content": "अपनी वित्तीय जानकारी, निवेश का उद्देश्य, समयसीमा, जोखिम सहने की क्षमता, लागत और आवश्यक सहायता पर विचार करें। केवल कम Expense Ratio या किसी व्यक्ति की सलाह के आधार पर निर्णय न लें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: लागत का अंतर",
+      "content": "मान लें कि किसी Scheme के Direct Plan का वार्षिक Expense Ratio 0.50% और Regular Plan का 1.00% है। यह केवल उदाहरण है, वास्तविक दर नहीं। दोनों के खर्च और अन्य विशेषताओं को आधिकारिक दस्तावेजों से जाँचें।"
+    },
+    {
+      "title": "उदाहरण 2: स्वयं जानकारी जुटाना",
+      "content": "एक निवेशक Scheme का उद्देश्य, Portfolio और जोखिम पढ़कर स्वयं निर्णय लेता है। उसे यह सुनिश्चित करना चाहिए कि वह Scheme को समझता है और जरूरत पड़ने पर विश्वसनीय सहायता प्राप्त कर सकता है।"
+    },
+    {
+      "title": "उदाहरण 3: सहायता की जरूरत",
+      "content": "किसी नए निवेशक को दस्तावेज समझने में कठिनाई होती है। वह Plan चुनने से पहले उपलब्ध सेवाओं, लागत और सलाह देने वाले व्यक्ति की योग्यता की जाँच कर सकता है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Direct Plan",
+      "meaning": "ऐसा Mutual Fund Plan जिसमें निवेश Distributor के माध्यम से नहीं किया जाता।"
+    },
+    {
+      "term": "Regular Plan",
+      "meaning": "ऐसा Plan जिसमें निवेश Distributor या मध्यस्थ के माध्यम से किया जाता है।"
+    },
+    {
+      "term": "Distributor",
+      "meaning": "Mutual Fund वितरण से जुड़ा व्यक्ति या संस्था।"
+    },
+    {
+      "term": "Expense Ratio",
+      "meaning": "Scheme के संचालन से जुड़े खर्चों का अनुपात।"
+    },
+    {
+      "term": "NAV",
+      "meaning": "Net Asset Value, जो Fund की प्रति Unit परिसंपत्ति का शुद्ध मूल्य दर्शाती है।"
+    },
+    {
+      "term": "Portfolio",
+      "meaning": "Fund द्वारा रखी गई विभिन्न निवेश परिसंपत्तियों का समूह।"
+    },
+    {
+      "term": "Risk Profile",
+      "meaning": "किसी निवेशक की वित्तीय स्थिति और जोखिम सहने की क्षमता का आकलन।"
+    }
+  ],
+  "risks": [
+    "Direct Plan में कम लागत होने का अर्थ यह नहीं कि बाजार जोखिम कम हो जाता है।",
+    "Regular Plan में उपलब्ध सहायता हर Distributor के लिए समान नहीं होती।",
+    "केवल पिछले Returns देखकर Plan चुनना भ्रामक हो सकता है।",
+    "लागत, Scheme का उद्देश्य और जोखिम समझे बिना निवेश करना नुकसानदायक हो सकता है।",
+    "किसी भी Plan में लाभ या मूलधन की गारंटी मानकर न चलें।"
+  ],
+  "commonMistakes": [
+    "Direct Plan को जोखिम-मुक्त समझना।",
+    "Regular Plan की सभी सेवाओं को बिना जाँच के समान मान लेना।",
+    "केवल Expense Ratio के आधार पर निर्णय लेना।",
+    "अलग-अलग प्रकार के Plans के Returns की गलत तुलना करना।",
+    "आधिकारिक Scheme दस्तावेज न पढ़ना।"
+  ],
+  "summary": [
+    "Direct और Regular एक ही Mutual Fund Scheme के अलग-अलग Plans हो सकते हैं।",
+    "दोनों Plans की लागत अलग हो सकती है।",
+    "Regular Plan में Distributor की सेवाएँ मिल सकती हैं।",
+    "Direct Plan में जानकारी स्वयं जुटाने की जिम्मेदारी अधिक हो सकती है।",
+    "लागत, उद्देश्य, जोखिम और उपलब्ध सहायता को साथ में समझना चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Direct Plan की एक सामान्य विशेषता क्या है?",
+      "options": [
+        "इसमें बाजार जोखिम नहीं होता",
+        "इसमें Distributor के माध्यम से निवेश नहीं किया जाता",
+        "इसमें हमेशा लाभ होता है",
+        "इसमें कोई खर्च नहीं होता"
+      ],
+      "answerIndex": 1,
+      "explanation": "Direct Plan में निवेश Distributor के माध्यम से नहीं किया जाता, लेकिन बाजार जोखिम और खर्च बने रहते हैं।"
+    },
+    {
+      "question": "2. Regular Plan में कौन शामिल हो सकता है?",
+      "options": [
+        "Distributor या मध्यस्थ",
+        "केवल Stock Exchange",
+        "केवल कंपनी का Founder",
+        "कोई भी व्यक्ति बिना प्रक्रिया के"
+      ],
+      "answerIndex": 0,
+      "explanation": "Regular Plan में Distributor या मध्यस्थ के माध्यम से निवेश किया जा सकता है।"
+    },
+    {
+      "question": "3. Plan चुनते समय क्या देखना चाहिए?",
+      "options": [
+        "केवल नाम",
+        "केवल विज्ञापन",
+        "लागत, जोखिम, उद्देश्य और उपलब्ध सहायता",
+        "केवल एक दिन का Return"
+      ],
+      "answerIndex": 2,
+      "explanation": "सही तुलना के लिए कई पहलुओं का मूल्यांकन जरूरी है।"
+    },
+    {
+      "question": "4. क्या Direct Plan में बाजार जोखिम समाप्त हो जाता है?",
+      "options": [
+        "हाँ, हमेशा",
+        "केवल एक महीने के लिए",
+        "केवल बड़ी राशि पर",
+        "नहीं, बाजार जोखिम बना रहता है"
+      ],
+      "answerIndex": 3,
+      "explanation": "Plan का प्रकार बाजार से जुड़े जोखिमों को समाप्त नहीं करता।"
+    },
+    {
+      "question": "5. Returns की तुलना कैसे करनी चाहिए?",
+      "options": [
+        "समान Scheme और समान अवधि के उपयुक्त Plans की तुलना करके",
+        "केवल विज्ञापन देखकर",
+        "केवल सबसे बड़ी संख्या देखकर",
+        "अलग-अलग समयावधियों की तुलना करके"
+      ],
+      "answerIndex": 0,
+      "explanation": "समान Scheme और अवधि की तुलना अधिक उपयोगी होती है।"
+    }
+  ]
   },
   {
     "id": "active-vs-passive-funds",
@@ -2162,8 +2334,181 @@
       "7. Costs और Returns की तुलना।",
       "8. दोनों तरीकों के जोखिम और सीमाएँ।"
     ],
-    "beginnerTip": "Active Fund हमेशा Index से बेहतर प्रदर्शन नहीं करता और Passive Fund भी बाजार के नुकसान से सुरक्षित नहीं होता।"
-  },
+    {
+  "id": "active-vs-passive-funds",
+  "title": "Active vs Passive Funds",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Active और Passive Mutual Funds की कार्यप्रणाली, लागत, Benchmark और जोखिम समझें।",
+  "lessons": [
+    "1. Active Fund क्या होता है?",
+    "2. Passive Fund क्या होता है?",
+    "3. Fund Manager की भूमिका।",
+    "4. Benchmark Index का अर्थ।",
+    "5. Active और Passive Investing में अंतर।",
+    "6. Tracking Error का परिचय।",
+    "7. Costs और Returns की तुलना।",
+    "8. दोनों तरीकों के जोखिम और सीमाएँ।"
+  ],
+  "beginnerTip": "Active Fund हमेशा Index से बेहतर प्रदर्शन नहीं करता और Passive Fund भी बाजार के नुकसान से सुरक्षित नहीं होता।",
+  "detailedLessons": [
+    {
+      "title": "1. Active Fund क्या होता है?",
+      "content": "Active Fund में Fund Manager और उसकी टीम निवेश उद्देश्य के अनुसार प्रतिभूतियों का चयन और Portfolio में बदलाव करते हैं। लक्ष्य Benchmark से बेहतर प्रदर्शन करना हो सकता है, लेकिन ऐसा होना निश्चित नहीं है।"
+    },
+    {
+      "title": "2. Passive Fund क्या होता है?",
+      "content": "Passive Fund किसी चुने हुए Index या Benchmark के प्रदर्शन को यथासंभव दोहराने का प्रयास करता है। इसमें आम तौर पर Index के घटकों और उनके भार के अनुसार Portfolio बनाया जाता है।"
+    },
+    {
+      "title": "3. Fund Manager की भूमिका",
+      "content": "Active Fund में Manager निवेश संबंधी चयन और बदलाव करता है। Passive Fund में उसका काम Benchmark को सही ढंग से Follow करने, Portfolio को आवश्यकतानुसार समायोजित करने और संचालन की निगरानी पर केंद्रित हो सकता है।"
+    },
+    {
+      "title": "4. Benchmark Index",
+      "content": "Benchmark वह मानक है जिससे Fund के प्रदर्शन की तुलना की जाती है। उदाहरण के लिए, किसी Fund का उद्देश्य किसी विशेष बाजार Index को Follow करना या उसके प्रदर्शन से बेहतर परिणाम प्राप्त करने का प्रयास करना हो सकता है।"
+    },
+    {
+      "title": "5. मुख्य अंतर",
+      "content": "Active Fund में निवेश चयन के लिए अधिक विवेकाधीन निर्णय हो सकते हैं। Passive Fund का उद्देश्य Benchmark को Track करना होता है। लागत, Portfolio, जोखिम और परिणाम Scheme के अनुसार बदल सकते हैं।"
+    },
+    {
+      "title": "6. Tracking Error",
+      "content": "Tracking Error बताता है कि Passive Fund का Return उसके Benchmark के Return से कितना अलग रहा है, इसे मापने के एक सांख्यिकीय तरीके के रूप में। कम Tracking Error का अर्थ यह नहीं कि Fund में बाजार जोखिम नहीं है।"
+    },
+    {
+      "title": "7. Costs और Returns",
+      "content": "Passive Funds की लागत कई मामलों में कम हो सकती है, जबकि Active Funds की लागत अधिक हो सकती है। यह हर Scheme के लिए समान नियम नहीं है। Returns की तुलना समान अवधि, Benchmark, जोखिम और खर्चों को ध्यान में रखकर करें।"
+    },
+    {
+      "title": "8. जोखिम और सीमाएँ",
+      "content": "Active Fund में गलत चयन या रणनीति के कारण Benchmark से कमजोर प्रदर्शन संभव है। Passive Fund अपने Benchmark के गिरने पर गिर सकता है और Index को पूरी तरह Track नहीं कर सकता। दोनों में बाजार जोखिम हो सकता है।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: Active Fund",
+      "content": "एक Active Fund का Manager कंपनियों के वित्तीय आँकड़ों का अध्ययन करके Portfolio में कुछ Shares चुनता है। इन निर्णयों के कारण Fund का प्रदर्शन Benchmark से बेहतर या कमजोर हो सकता है।"
+    },
+    {
+      "title": "उदाहरण 2: Passive Fund",
+      "content": "एक Index Fund अपने Benchmark Index के घटकों और उनके भार को Follow करने का प्रयास करता है। Index में बदलाव होने पर Fund का Portfolio भी आवश्यकतानुसार समायोजित हो सकता है।"
+    },
+    {
+      "title": "उदाहरण 3: प्रदर्शन की तुलना",
+      "content": "यदि Benchmark एक अवधि में 10% बढ़ता है और कोई Fund 9.5% बढ़ता है, तो उसका प्रदर्शन उस अवधि में Benchmark से कम रहा। ये केवल समझाने के लिए काल्पनिक आँकड़े हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Active Fund",
+      "meaning": "ऐसा Fund जिसमें निवेश चयन और Portfolio प्रबंधन सक्रिय निर्णयों पर आधारित होता है।"
+    },
+    {
+      "term": "Passive Fund",
+      "meaning": "ऐसा Fund जो किसी Benchmark Index को Track करने का प्रयास करता है।"
+    },
+    {
+      "term": "Fund Manager",
+      "meaning": "Fund के निवेश और Portfolio प्रबंधन की जिम्मेदारी निभाने वाला पेशेवर।"
+    },
+    {
+      "term": "Benchmark",
+      "meaning": "Fund के प्रदर्शन की तुलना करने का मानक।"
+    },
+    {
+      "term": "Tracking Error",
+      "meaning": "Fund और उसके Benchmark के प्रदर्शन के अंतर की परिवर्तनशीलता को मापने वाला एक संकेतक।"
+    },
+    {
+      "term": "Portfolio",
+      "meaning": "Fund में रखी गई निवेश परिसंपत्तियों का समूह।"
+    },
+    {
+      "term": "Expense Ratio",
+      "meaning": "Fund के संचालन से संबंधित खर्चों का अनुपात।"
+    }
+  ],
+  "risks": [
+    "Active Fund अपने Benchmark से कमजोर प्रदर्शन कर सकता है।",
+    "Passive Fund का मूल्य उसके Benchmark के गिरने पर घट सकता है।",
+    "Tracking Error के कारण Passive Fund का प्रदर्शन Benchmark से अलग हो सकता है।",
+    "अतीत का प्रदर्शन भविष्य के परिणामों की गारंटी नहीं है।",
+    "कम लागत अपने-आप बेहतर परिणाम सुनिश्चित नहीं करती।"
+  ],
+  "commonMistakes": [
+    "यह मानना कि Active Fund हमेशा बेहतर Return देगा।",
+    "Passive Fund को नुकसान-मुक्त समझना।",
+    "Benchmark की पहचान और उद्देश्य को अनदेखा करना।",
+    "केवल एक साल के Returns देखकर तुलना करना।",
+    "लागत और जोखिम को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Active Fund में निवेश चयन सक्रिय निर्णयों से होता है।",
+    "Passive Fund किसी Benchmark को Track करने का प्रयास करता है।",
+    "Benchmark प्रदर्शन की तुलना करने का मानक है।",
+    "Tracking Error Fund और Benchmark के प्रदर्शन में अंतर दर्शाने में मदद करता है।",
+    "दोनों प्रकार के Funds में बाजार जोखिम हो सकता है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Active Fund की मुख्य विशेषता क्या है?",
+      "options": [
+        "यह कभी Portfolio नहीं बदलता",
+        "यह केवल Bank Deposit में निवेश करता है",
+        "इसमें निवेश चयन के लिए सक्रिय निर्णय लिए जाते हैं",
+        "इसमें नुकसान असंभव है"
+      ],
+      "answerIndex": 2,
+      "explanation": "Active Fund में निवेश चयन और Portfolio प्रबंधन सक्रिय निर्णयों पर आधारित होता है।"
+    },
+    {
+      "question": "2. Passive Fund का सामान्य उद्देश्य क्या है?",
+      "options": [
+        "हर वर्ष निश्चित लाभ देना",
+        "किसी Benchmark को Track करना",
+        "बाजार जोखिम खत्म करना",
+        "केवल एक कंपनी में निवेश करना"
+      ],
+      "answerIndex": 1,
+      "explanation": "Passive Fund चुने गए Benchmark के प्रदर्शन को दोहराने का प्रयास करता है।"
+    },
+    {
+      "question": "3. Benchmark क्या है?",
+      "options": [
+        "एक प्रकार का बैंक खाता",
+        "एक निश्चित ब्याज की गारंटी",
+        "एक कर भुगतान रसीद",
+        "प्रदर्शन की तुलना का मानक"
+      ],
+      "answerIndex": 3,
+      "explanation": "Benchmark का उपयोग Fund के प्रदर्शन की तुलना करने के लिए किया जाता है।"
+    },
+    {
+      "question": "4. क्या Passive Fund में नुकसान संभव है?",
+      "options": [
+        "हाँ, बाजार गिरने पर नुकसान संभव है",
+        "नहीं, कभी नहीं",
+        "केवल रविवार को",
+        "केवल बड़ी राशि पर"
+      ],
+      "answerIndex": 0,
+      "explanation": "Passive Fund बाजार और अपने Benchmark से जुड़े जोखिमों से प्रभावित हो सकता है।"
+    },
+    {
+      "question": "5. Tracking Error किससे संबंधित है?",
+      "options": [
+        "बैंक खाते के PIN से",
+        "निवेशक की उम्र से",
+        "Fund और Benchmark के प्रदर्शन के अंतर से",
+        "केवल कर की दर से"
+      ],
+      "answerIndex": 2,
+      "explanation": "Tracking Error Passive Fund और उसके Benchmark के प्रदर्शन के अंतर की परिवर्तनशीलता का एक माप है।"
+    }
+  ]
+},
+
   {
     "id": "index-fund-basics",
     "title": "Index Fund Basics",
@@ -2180,7 +2525,183 @@
       "7. Market Downturn में Index Fund का व्यवहार।",
       "8. Index Fund की जानकारी कैसे जाँचें?"
     ],
-    "beginnerTip": "Index Fund का प्रदर्शन उसके Benchmark और बाजार की चाल से प्रभावित होता है। Diversification होने पर भी नुकसान संभव है।"
+    {
+  "id": "index-fund-basics",
+  "title": "Index Fund Basics",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Index Funds का उद्देश्य, कार्यप्रणाली, Diversification और उनसे जुड़े जोखिम समझें।",
+  "lessons": [
+    "1. Index Fund क्या है?",
+    "2. Index को Follow करने का अर्थ।",
+    "3. Index Fund कैसे काम करता है?",
+    "4. Benchmark और Fund Portfolio का संबंध।",
+    "5. Expense Ratio और Tracking Error।",
+    "6. Index Funds में Diversification की भूमिका।",
+    "7. Market Downturn में Index Fund का व्यवहार।",
+    "8. Index Fund की जानकारी कैसे जाँचें?"
+  ],
+  "beginnerTip": "Index Fund का प्रदर्शन उसके Benchmark और बाजार की चाल से प्रभावित होता है। Diversification होने पर भी नुकसान संभव है।",
+  "detailedLessons": [
+    {
+      "title": "1. Index Fund क्या है?",
+      "content": "Index Fund एक Mutual Fund है जो किसी चुने हुए Index के प्रदर्शन को Track करने का प्रयास करता है। Index में शामिल प्रतिभूतियों और उनके भार के अनुसार Fund अपना Portfolio बनाता है।"
+    },
+    {
+      "title": "2. Index को Follow करना",
+      "content": "Index बाजार के किसी हिस्से या चुने गए समूह के प्रदर्शन को मापने का तरीका है। Index Fund उसी Index के घटकों और भार को यथासंभव Follow करने की कोशिश करता है।"
+    },
+    {
+      "title": "3. Index Fund कैसे काम करता है?",
+      "content": "Fund के Portfolio में Benchmark के अनुसार Shares या अन्य संबंधित प्रतिभूतियाँ रखी जा सकती हैं। Index के घटक या उनके भार बदलने पर Fund को भी आवश्यकतानुसार बदलाव करना पड़ सकता है।"
+    },
+    {
+      "title": "4. Benchmark और Portfolio",
+      "content": "Benchmark Fund के निवेश उद्देश्य को समझने में मदद करता है। Fund का वास्तविक Portfolio, उपलब्ध नकदी, खर्च और अन्य संचालन संबंधी कारणों से Benchmark से थोड़ा अलग हो सकता है।"
+    },
+    {
+      "title": "5. Expense Ratio और Tracking Error",
+      "content": "Expense Ratio Fund के संचालन की लागत का अनुपात है। Tracking Error यह समझने में मदद करता है कि Fund का प्रदर्शन Benchmark से किस हद तक अलग रहा। दोनों को आधिकारिक Scheme दस्तावेजों में जाँचें।"
+    },
+    {
+      "title": "6. Diversification की भूमिका",
+      "content": "यदि Index में कई कंपनियाँ शामिल हैं, तो Index Fund कई कंपनियों में निवेश के माध्यम से Diversification दे सकता है। फिर भी यह किसी खास देश, सेक्टर या बाजार हिस्से पर केंद्रित हो सकता है।"
+    },
+    {
+      "title": "7. Market Downturn का प्रभाव",
+      "content": "यदि Benchmark Index गिरता है, तो उसे Track करने वाला Fund भी गिर सकता है। Index Fund का उद्देश्य बाजार को Track करना है, हर परिस्थिति में नुकसान से बचाना नहीं।"
+    },
+    {
+      "title": "8. जानकारी कैसे जाँचें?",
+      "content": "Fund का नाम, Benchmark, निवेश उद्देश्य, Expense Ratio, Tracking Error, Portfolio और Riskometer देखें। आधिकारिक Scheme Information Document और नवीनतम Factsheet पढ़ें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: Index को Track करना",
+      "content": "मान लें कि कोई Index Fund किसी काल्पनिक Index को Track करता है। Index में शामिल कंपनियों के मूल्य बदलने पर Fund का मूल्य भी बदल सकता है।"
+    },
+    {
+      "title": "उदाहरण 2: Diversification",
+      "content": "यदि किसी Index में विभिन्न क्षेत्रों की 50 कंपनियाँ हैं, तो उसे Track करने वाला Fund उन कंपनियों में निवेश कर सकता है। इससे एक कंपनी पर निर्भरता कम हो सकती है, लेकिन पूरे बाजार के गिरने का जोखिम बना रहता है।"
+    },
+    {
+      "title": "उदाहरण 3: Tracking Difference",
+      "content": "यदि किसी अवधि में Benchmark का Return 8% और Fund का Return 7.7% रहा, तो दोनों के Return में 0.3 प्रतिशत अंक का अंतर है। ये केवल शैक्षिक उदाहरण के आँकड़े हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Index",
+      "meaning": "चुनी गई प्रतिभूतियों के समूह के प्रदर्शन को मापने वाला मानक।"
+    },
+    {
+      "term": "Index Fund",
+      "meaning": "किसी Benchmark Index को Track करने का प्रयास करने वाला Mutual Fund।"
+    },
+    {
+      "term": "Benchmark",
+      "meaning": "Fund के प्रदर्शन की तुलना के लिए उपयोग किया जाने वाला मानक।"
+    },
+    {
+      "term": "Diversification",
+      "meaning": "निवेश को अलग-अलग प्रतिभूतियों या क्षेत्रों में बाँटना।"
+    },
+    {
+      "term": "Expense Ratio",
+      "meaning": "Fund के संचालन खर्चों का अनुपात।"
+    },
+    {
+      "term": "Tracking Error",
+      "meaning": "Fund और Benchmark के प्रदर्शन के अंतर की परिवर्तनशीलता का माप।"
+    },
+    {
+      "term": "Portfolio",
+      "meaning": "Fund के निवेशों का समूह।"
+    },
+    {
+      "term": "Riskometer",
+      "meaning": "Mutual Fund Scheme के जोखिम स्तर को दर्शाने वाला संकेतक।"
+    }
+  ],
+  "risks": [
+    "Benchmark गिरने पर Index Fund का मूल्य भी गिर सकता है।",
+    "Index Fund अपने Benchmark को पूरी तरह Track नहीं कर सकता।",
+    "किसी एक सेक्टर या बाजार हिस्से पर केंद्रित Index में Concentration Risk हो सकता है।",
+    "कम Expense Ratio होने पर भी निवेश में नुकसान संभव है।",
+    "अतीत के Index Returns भविष्य के परिणामों की गारंटी नहीं देते।"
+  ],
+  "commonMistakes": [
+    "Index Fund को गारंटीड Return वाला निवेश समझना।",
+    "यह मानना कि हर Index Fund समान होता है।",
+    "Benchmark और Fund के निवेश उद्देश्य को न पढ़ना।",
+    "Tracking Error और लागत को अनदेखा करना।",
+    "Diversification को पूरी सुरक्षा समझ लेना।"
+  ],
+  "summary": [
+    "Index Fund किसी Benchmark को Track करने का प्रयास करता है।",
+    "उसका Portfolio Benchmark के घटकों और भार से प्रभावित होता है।",
+    "Expense Ratio और Tracking Error महत्वपूर्ण संकेतक हैं।",
+    "Diversification जोखिम को समाप्त नहीं करता।",
+    "निवेश से पहले आधिकारिक दस्तावेजों और जोखिमों की जाँच करनी चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Index Fund का मुख्य उद्देश्य क्या है?",
+      "options": [
+        "हर महीने निश्चित Return देना",
+        "किसी Benchmark Index को Track करना",
+        "बाजार के सभी जोखिम समाप्त करना",
+        "केवल Bank Deposits रखना"
+      ],
+      "answerIndex": 1,
+      "explanation": "Index Fund किसी चुने गए Benchmark Index के प्रदर्शन को Track करने का प्रयास करता है।"
+    },
+    {
+      "question": "2. Benchmark किस काम आता है?",
+      "options": [
+        "पासवर्ड बनाने में",
+        "बैंक खाता खोलने में",
+        "Fund के प्रदर्शन की तुलना करने में",
+        "निश्चित लाभ सुनिश्चित करने में"
+      ],
+      "answerIndex": 2,
+      "explanation": "Benchmark Fund के प्रदर्शन की तुलना करने का मानक होता है।"
+    },
+    {
+      "question": "3. क्या Index Fund में नुकसान हो सकता है?",
+      "options": [
+        "हाँ, बाजार गिरने पर नुकसान हो सकता है",
+        "नहीं, कभी नहीं",
+        "केवल पहली खरीद पर",
+        "केवल छोटी राशि पर"
+      ],
+      "answerIndex": 0,
+      "explanation": "Index Fund का मूल्य उसके Benchmark और संबंधित बाजार से प्रभावित होता है।"
+    },
+    {
+      "question": "4. Tracking Error किससे संबंधित है?",
+      "options": [
+        "निवेशक के बैंक PIN से",
+        "Fund और Benchmark के प्रदर्शन के अंतर से",
+        "केवल टैक्स भुगतान से",
+        "Fund के नाम की लंबाई से"
+      ],
+      "answerIndex": 1,
+      "explanation": "Tracking Error Fund और Benchmark के प्रदर्शन के अंतर की परिवर्तनशीलता से संबंधित है।"
+    },
+    {
+      "question": "5. Index Fund चुनते समय क्या देखना चाहिए?",
+      "options": [
+        "केवल उसका नाम",
+        "केवल विज्ञापन",
+        "केवल एक दिन का Return",
+        "Benchmark, लागत, जोखिम और आधिकारिक दस्तावेज"
+      ],
+      "answerIndex": 3,
+      "explanation": "Fund को समझने के लिए उसके उद्देश्य, लागत, जोखिम और दस्तावेज देखना जरूरी है।"
+    }
+  ]
   },
   {
     "id": "equity-mutual-funds",
@@ -2198,7 +2719,183 @@
       "7. Fund Factsheet में क्या देखें?",
       "8. Equity Funds से जुड़े सामान्य भ्रम।"
     ],
-    "beginnerTip": "Equity Mutual Funds में बाजार के उतार-चढ़ाव के कारण नुकसान हो सकता है। केवल पिछले Returns देखकर निर्णय न लें।"
+    {
+  "id": "equity-mutual-funds",
+  "title": "Equity Mutual Funds",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Equity Mutual Funds के निवेश उद्देश्य, प्रमुख प्रकार, बाजार जोखिम और जाँच के तरीके सीखें।",
+  "lessons": [
+    "1. Equity Mutual Fund क्या है?",
+    "2. Shares में निवेश की भूमिका।",
+    "3. Large Cap, Mid Cap और Small Cap का परिचय।",
+    "4. Equity Fund के निवेश उद्देश्य।",
+    "5. Market Volatility का प्रभाव।",
+    "6. Investment Horizon और Risk Tolerance।",
+    "7. Fund Factsheet में क्या देखें?",
+    "8. Equity Funds से जुड़े सामान्य भ्रम।"
+  ],
+  "beginnerTip": "Equity Mutual Funds में बाजार के उतार-चढ़ाव के कारण नुकसान हो सकता है। केवल पिछले Returns देखकर निर्णय न लें।",
+  "detailedLessons": [
+    {
+      "title": "1. Equity Mutual Fund क्या है?",
+      "content": "Equity Mutual Fund मुख्य रूप से कंपनियों के Shares में निवेश करता है। इसका उद्देश्य और निवेश रणनीति Scheme के अनुसार अलग हो सकती है। Shares के मूल्य में बदलाव से Fund की NAV बढ़ या घट सकती है।"
+    },
+    {
+      "title": "2. Shares में निवेश की भूमिका",
+      "content": "Shares में निवेश से कंपनी के व्यावसायिक प्रदर्शन और बाजार की स्थितियों का प्रभाव पड़ता है। Equity Fund कई कंपनियों में निवेश कर सकता है, लेकिन उसका Return निश्चित नहीं होता।"
+    },
+    {
+      "title": "3. Large Cap, Mid Cap और Small Cap",
+      "content": "ये कंपनियों के बाजार पूँजीकरण से संबंधित श्रेणियाँ हैं। अलग-अलग श्रेणियों में जोखिम, मूल्य परिवर्तन और Liquidity की स्थिति अलग हो सकती है। Fund की वास्तविक Category और निवेश नियम आधिकारिक दस्तावेजों में देखें।"
+    },
+    {
+      "title": "4. निवेश उद्देश्य",
+      "content": "कुछ Equity Funds किसी विशेष Market Capitalisation, Sector, Theme या व्यापक बाजार पर ध्यान देते हैं। Scheme का उद्देश्य पढ़ें, ताकि यह समझ सकें कि वह किस प्रकार की कंपनियों में निवेश कर सकती है।"
+    },
+    {
+      "title": "5. Market Volatility",
+      "content": "बाजार की खबरें, ब्याज दरें, आर्थिक स्थिति, कंपनी के परिणाम और निवेशकों की भावनाएँ Share Prices को प्रभावित कर सकती हैं। Equity Fund की NAV में उतार-चढ़ाव होना सामान्य है।"
+    },
+    {
+      "title": "6. Investment Horizon और Risk Tolerance",
+      "content": "Investment Horizon वह समय है जिसके लिए पैसा निवेशित रखने की योजना है। Risk Tolerance बताती है कि निवेशक कितना उतार-चढ़ाव और संभावित नुकसान सह सकता है। लंबी समयसीमा भी नुकसान की संभावना समाप्त नहीं करती।"
+    },
+    {
+      "title": "7. Fund Factsheet",
+      "content": "Factsheet में निवेश उद्देश्य, Benchmark, Portfolio, Sector Allocation, खर्च, प्रदर्शन और अन्य जानकारी हो सकती है। नवीनतम आधिकारिक Factsheet पढ़ें और तुलना समान अवधि व उचित Benchmark के आधार पर करें।"
+    },
+    {
+      "title": "8. सामान्य भ्रम",
+      "content": "पिछले वर्षों में अच्छे Returns मिलने से भविष्य में वैसा Return सुनिश्चित नहीं होता। Diversification जोखिम कम करने में मदद कर सकता है, लेकिन बाजार गिरावट या Concentration Risk को पूरी तरह खत्म नहीं करता।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: Diversified Equity Fund",
+      "content": "एक काल्पनिक Equity Fund विभिन्न क्षेत्रों की कंपनियों में निवेश करता है। अलग-अलग कंपनियों में निवेश होने पर भी बाजार में व्यापक गिरावट आने पर Fund की NAV घट सकती है।"
+    },
+    {
+      "title": "उदाहरण 2: Sector Fund",
+      "content": "कोई Fund मुख्य रूप से एक खास Sector में निवेश करता है। उस Sector की स्थिति खराब होने पर Fund पर अधिक प्रभाव पड़ सकता है। यह Concentration Risk का उदाहरण है।"
+    },
+    {
+      "title": "उदाहरण 3: Return की तुलना",
+      "content": "दो Equity Funds की तुलना करते समय समान अवधि, Benchmark, निवेश उद्देश्य, खर्च और जोखिम को देखना चाहिए। केवल सबसे अधिक Return दिखाने वाले Fund को चुनना पर्याप्त नहीं है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Equity",
+      "meaning": "किसी कंपनी में हिस्सेदारी से संबंधित निवेश।"
+    },
+    {
+      "term": "Equity Mutual Fund",
+      "meaning": "मुख्य रूप से Shares में निवेश करने वाला Mutual Fund।"
+    },
+    {
+      "term": "Market Capitalisation",
+      "meaning": "कंपनी के कुल बाजार मूल्य का माप, जिसे सामान्यतः Share Price और कुल Shares के आधार पर निकाला जाता है।"
+    },
+    {
+      "term": "Volatility",
+      "meaning": "किसी निवेश के मूल्य में उतार-चढ़ाव की मात्रा।"
+    },
+    {
+      "term": "Investment Horizon",
+      "meaning": "वह समयावधि जिसके लिए निवेश रखने की योजना है।"
+    },
+    {
+      "term": "Risk Tolerance",
+      "meaning": "निवेशक की संभावित नुकसान और उतार-चढ़ाव सहने की क्षमता।"
+    },
+    {
+      "term": "Benchmark",
+      "meaning": "Fund के प्रदर्शन की तुलना करने का मानक।"
+    },
+    {
+      "term": "Factsheet",
+      "meaning": "Fund के उद्देश्य, Portfolio, लागत और प्रदर्शन से जुड़ी जानकारी वाला दस्तावेज।"
+    }
+  ],
+  "risks": [
+    "बाजार में गिरावट से Equity Fund की NAV कम हो सकती है।",
+    "Sector या कुछ कंपनियों पर अधिक निर्भरता से Concentration Risk बढ़ सकता है।",
+    "पिछले Returns भविष्य के प्रदर्शन की गारंटी नहीं देते।",
+    "कम समय में धन की आवश्यकता होने पर बाजार गिरावट के दौरान निवेश बेचना पड़ सकता है।",
+    "विदेशी बाजार, मुद्रा या अन्य विशेष निवेशों से अतिरिक्त जोखिम हो सकते हैं, यदि Scheme उनमें निवेश करती है।"
+  ],
+  "commonMistakes": [
+    "Equity Mutual Fund को निश्चित Return वाला उत्पाद समझना।",
+    "केवल पिछले Returns देखकर Fund चुनना।",
+    "Fund का निवेश उद्देश्य और Category न पढ़ना।",
+    "अपनी जोखिम सहने की क्षमता को अनदेखा करना।",
+    "Diversification को नुकसान से पूरी सुरक्षा समझना।"
+  ],
+  "summary": [
+    "Equity Mutual Funds मुख्य रूप से Shares में निवेश करते हैं।",
+    "अलग-अलग Equity Funds के उद्देश्य और जोखिम अलग होते हैं।",
+    "Market Volatility के कारण NAV घट-बढ़ सकती है।",
+    "Investment Horizon और Risk Tolerance महत्वपूर्ण हैं।",
+    "Factsheet, Benchmark, Portfolio और लागत की जाँच करनी चाहिए।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Equity Mutual Fund मुख्य रूप से कहाँ निवेश करता है?",
+      "options": [
+        "केवल नकदी में",
+        "कंपनियों के Shares में",
+        "केवल सोने के आभूषणों में",
+        "केवल बैंक के चालू खाते में"
+      ],
+      "answerIndex": 1,
+      "explanation": "Equity Mutual Funds मुख्य रूप से कंपनियों के Shares में निवेश करते हैं।"
+    },
+    {
+      "question": "2. Volatility का क्या अर्थ है?",
+      "options": [
+        "निश्चित ब्याज",
+        "बिना जोखिम का निवेश",
+        "मूल्य में उतार-चढ़ाव",
+        "निवेश की गारंटी"
+      ],
+      "answerIndex": 2,
+      "explanation": "Volatility निवेश के मूल्य में होने वाले उतार-चढ़ाव को दर्शाती है।"
+    },
+    {
+      "question": "3. क्या पिछले Returns भविष्य के Returns की गारंटी देते हैं?",
+      "options": [
+        "नहीं",
+        "हाँ, हमेशा",
+        "केवल एक वर्ष के लिए",
+        "केवल बड़ी राशि पर"
+      ],
+      "answerIndex": 0,
+      "explanation": "पिछला प्रदर्शन भविष्य के परिणामों की गारंटी नहीं होता।"
+    },
+    {
+      "question": "4. Sector Fund का एक प्रमुख जोखिम क्या हो सकता है?",
+      "options": [
+        "हर परिस्थिति में निश्चित लाभ",
+        "कोई जोखिम नहीं",
+        "केवल दस्तावेजी खर्च",
+        "एक Sector पर अधिक निर्भरता"
+      ],
+      "answerIndex": 3,
+      "explanation": "किसी एक Sector पर अधिक निर्भरता से Concentration Risk हो सकता है।"
+    },
+    {
+      "question": "5. Fund Factsheet क्यों पढ़नी चाहिए?",
+      "options": [
+        "केवल Fund का रंग देखने के लिए",
+        "उद्देश्य, Portfolio, लागत और प्रदर्शन समझने के लिए",
+        "निश्चित लाभ की गारंटी पाने के लिए",
+        "बाजार जोखिम समाप्त करने के लिए"
+      ],
+      "answerIndex": 1,
+      "explanation": "Factsheet Fund के बारे में महत्वपूर्ण जानकारी देती है।"
+    }
+  ]
   },
   {
     "id": "debt-mutual-funds",
@@ -2216,7 +2913,183 @@
       "7. Liquidity और Redemption से जुड़े पहलू।",
       "8. Debt Funds की जानकारी कैसे जाँचें?"
     ],
-    "beginnerTip": "Debt Mutual Funds बैंक जमा के समान नहीं हैं और इनमें भी जोखिम होता है। Returns या मूलधन की गारंटी मानकर न चलें।"
+    {
+  "id": "debt-mutual-funds",
+  "title": "Debt Mutual Funds",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Debt Mutual Funds, Bonds, Interest Rate Risk, Credit Risk और अन्य महत्वपूर्ण पहलुओं को समझें।",
+  "lessons": [
+    "1. Debt Mutual Fund क्या है?",
+    "2. Bonds और Debt Securities का परिचय।",
+    "3. Interest Rate Risk क्या है?",
+    "4. Credit Risk का अर्थ।",
+    "5. Duration और Maturity में अंतर।",
+    "6. अलग-अलग Debt Fund Categories।",
+    "7. Liquidity और Redemption से जुड़े पहलू।",
+    "8. Debt Funds की जानकारी कैसे जाँचें?"
+  ],
+  "beginnerTip": "Debt Mutual Funds बैंक जमा के समान नहीं हैं और इनमें भी जोखिम होता है। Returns या मूलधन की गारंटी मानकर न चलें।",
+  "detailedLessons": [
+    {
+      "title": "1. Debt Mutual Fund क्या है?",
+      "content": "Debt Mutual Fund मुख्य रूप से Bonds, Treasury Bills और अन्य Debt Securities में निवेश करता है। इसकी NAV ब्याज दरों, जारीकर्ता की Credit Quality और बाजार की स्थितियों से प्रभावित हो सकती है।"
+    },
+    {
+      "title": "2. Bonds और Debt Securities",
+      "content": "Bond एक प्रकार का ऋण साधन है। इसमें जारीकर्ता निवेशकों से धन जुटाता है और शर्तों के अनुसार ब्याज तथा मूलधन चुकाने का वादा करता है। Debt Fund इन प्रतिभूतियों में निवेश कर सकता है, लेकिन Fund के निवेशक को मूलधन या Return की गारंटी नहीं मिलती।"
+    },
+    {
+      "title": "3. Interest Rate Risk",
+      "content": "बाजार की ब्याज दरों में बदलाव Bond की कीमत को प्रभावित कर सकता है। अन्य स्थितियाँ समान रहने पर ब्याज दरें बढ़ने से मौजूदा Fixed-Rate Bonds की कीमत घट सकती है। इससे Debt Fund की NAV पर असर पड़ सकता है।"
+    },
+    {
+      "title": "4. Credit Risk",
+      "content": "Credit Risk वह जोखिम है जिसमें Bond जारीकर्ता ब्याज या मूलधन का भुगतान समय पर नहीं कर पाता। जारीकर्ता की Credit Quality कमजोर होने पर उसकी प्रतिभूतियों का मूल्य प्रभावित हो सकता है।"
+    },
+    {
+      "title": "5. Duration और Maturity",
+      "content": "Maturity वह समय है जब ऋण प्रतिभूति का निर्धारित भुगतान पूरा होना है। Duration ब्याज दरों में बदलाव के प्रति Bond या Portfolio की कीमत की संवेदनशीलता समझने का एक माप है। दोनों का अर्थ अलग है।"
+    },
+    {
+      "title": "6. Debt Fund Categories",
+      "content": "Debt Funds की विभिन्न Categories अलग-अलग प्रकार की प्रतिभूतियों, अवधि और Credit Quality पर ध्यान दे सकती हैं। केवल Category के नाम से जोखिम का पूरा आकलन नहीं होता; Scheme के दस्तावेज और Portfolio देखें।"
+    },
+    {
+      "title": "7. Liquidity और Redemption",
+      "content": "Mutual Fund Units को सामान्यतः Scheme के नियमों के अनुसार Redeem किया जा सकता है। भुगतान का समय, लागू Exit Load, बाजार की स्थिति और अन्य शर्तें Scheme के अनुसार बदल सकती हैं।"
+    },
+    {
+      "title": "8. जानकारी कैसे जाँचें?",
+      "content": "Fund का Riskometer, Portfolio, Credit Quality, Duration, Expense Ratio और Scheme Information Document देखें। निवेश से पहले यह समझें कि Fund किस प्रकार की प्रतिभूतियों में निवेश करता है।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: ब्याज दर में बदलाव",
+      "content": "मान लें कि बाजार में ब्याज दरें बढ़ती हैं। कुछ मौजूदा Bonds की कीमत घट सकती है, जिससे उन्हें रखने वाले Debt Fund की NAV प्रभावित हो सकती है। वास्तविक प्रभाव Portfolio और परिस्थितियों पर निर्भर करता है।"
+    },
+    {
+      "title": "उदाहरण 2: Credit Risk",
+      "content": "यदि कोई कंपनी अपने ऋण का भुगतान करने में कठिनाई का सामना करती है, तो उसके Bonds की कीमत घट सकती है। उस कंपनी में निवेश करने वाले Debt Fund पर भी असर पड़ सकता है।"
+    },
+    {
+      "title": "उदाहरण 3: Maturity और Duration",
+      "content": "दो Bonds की Maturity समान हो सकती है, लेकिन उनकी Coupon Rate और Cash Flow अलग होने से Duration अलग हो सकता है। इसलिए केवल Maturity देखकर ब्याज दर का जोखिम नहीं समझा जा सकता।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Debt Mutual Fund",
+      "meaning": "मुख्य रूप से ऋण प्रतिभूतियों में निवेश करने वाला Mutual Fund।"
+    },
+    {
+      "term": "Bond",
+      "meaning": "ऐसा ऋण साधन जिसमें जारीकर्ता निर्धारित शर्तों के अनुसार भुगतान करने का दायित्व लेता है।"
+    },
+    {
+      "term": "Interest Rate Risk",
+      "meaning": "ब्याज दरों में बदलाव के कारण निवेश के मूल्य पर पड़ने वाला जोखिम।"
+    },
+    {
+      "term": "Credit Risk",
+      "meaning": "जारीकर्ता के निर्धारित भुगतान न कर पाने का जोखिम।"
+    },
+    {
+      "term": "Maturity",
+      "meaning": "ऋण साधन की निर्धारित अवधि पूरी होने का समय।"
+    },
+    {
+      "term": "Duration",
+      "meaning": "ब्याज दरों के बदलाव के प्रति Bond की कीमत की संवेदनशीलता समझने में उपयोगी माप।"
+    },
+    {
+      "term": "Credit Quality",
+      "meaning": "जारीकर्ता की ऋण भुगतान क्षमता का आकलन।"
+    },
+    {
+      "term": "Redemption",
+      "meaning": "Mutual Fund Units को Scheme के नियमों के अनुसार वापस भुनाने की प्रक्रिया।"
+    }
+  ],
+  "risks": [
+    "ब्याज दरों में बदलाव से Debt Securities और Fund की NAV प्रभावित हो सकती है।",
+    "जारीकर्ता भुगतान न कर पाए तो Credit Risk से नुकसान संभव है।",
+    "कुछ प्रतिभूतियों को बेचने में कठिनाई होने पर Liquidity Risk हो सकता है।",
+    "Debt Mutual Funds में भी मूलधन और Return की गारंटी नहीं होती।",
+    "Portfolio की Credit Quality और Duration को नजरअंदाज करना जोखिमपूर्ण हो सकता है।"
+  ],
+  "commonMistakes": [
+    "Debt Mutual Fund को बैंक जमा जैसा गारंटीड उत्पाद समझना।",
+    "यह मानना कि Debt Fund की NAV कभी नहीं गिरती।",
+    "केवल पिछला Return देखकर Fund चुनना।",
+    "Credit Risk और Interest Rate Risk में अंतर न समझना।",
+    "Maturity और Duration को एक ही अर्थ में इस्तेमाल करना।"
+  ],
+  "summary": [
+    "Debt Funds मुख्य रूप से Bonds और अन्य ऋण प्रतिभूतियों में निवेश करते हैं।",
+    "Interest Rate Risk और Credit Risk महत्वपूर्ण जोखिम हैं।",
+    "Maturity और Duration अलग-अलग अवधारणाएँ हैं।",
+    "Redemption की शर्तें Scheme के अनुसार बदल सकती हैं।",
+    "आधिकारिक दस्तावेज, Portfolio और Riskometer की जाँच जरूरी है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Debt Mutual Fund मुख्य रूप से किसमें निवेश करता है?",
+      "options": [
+        "केवल आभूषणों में",
+        "केवल जमीन में",
+        "Bonds और अन्य Debt Securities में",
+        "केवल नकदी के बाहर"
+      ],
+      "answerIndex": 2,
+      "explanation": "Debt Funds मुख्य रूप से Bonds और अन्य ऋण प्रतिभूतियों में निवेश करते हैं।"
+    },
+    {
+      "question": "2. Credit Risk क्या है?",
+      "options": [
+        "जारीकर्ता के भुगतान न कर पाने का जोखिम",
+        "केवल बाजार बंद होने का समय",
+        "निवेशक की उम्र",
+        "निश्चित Return मिलने की गारंटी"
+      ],
+      "answerIndex": 0,
+      "explanation": "Credit Risk तब होता है जब जारीकर्ता निर्धारित भुगतान करने में असमर्थ हो सकता है।"
+    },
+    {
+      "question": "3. अन्य स्थितियाँ समान रहने पर ब्याज दरें बढ़ने से मौजूदा Fixed-Rate Bonds की कीमत पर क्या असर हो सकता है?",
+      "options": [
+        "हर बार दोगुनी हो जाती है",
+        "हमेशा स्थिर रहती है",
+        "उसका कोई संबंध नहीं",
+        "कीमत घट सकती है"
+      ],
+      "answerIndex": 3,
+      "explanation": "बाजार की ब्याज दरें बढ़ने पर मौजूदा Fixed-Rate Bonds की कीमत घट सकती है।"
+    },
+    {
+      "question": "4. क्या Debt Mutual Fund में नुकसान संभव है?",
+      "options": [
+        "नहीं, कभी नहीं",
+        "हाँ, विभिन्न जोखिमों के कारण",
+        "केवल रविवार को",
+        "केवल पहली खरीद पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Debt Funds भी ब्याज दर, Credit और Liquidity जैसे जोखिमों से प्रभावित हो सकते हैं।"
+    },
+    {
+      "question": "5. Fund की जाँच में क्या देखना चाहिए?",
+      "options": [
+        "केवल Fund का नाम",
+        "केवल विज्ञापन",
+        "Portfolio, Credit Quality, Duration और आधिकारिक दस्तावेज",
+        "केवल एक दिन का Return"
+      ],
+      "answerIndex": 2,
+      "explanation": "इन जानकारियों से Fund की संरचना और संभावित जोखिम समझने में मदद मिलती है।"
+    }
+  ]
   },
   {
     "id": "hybrid-mutual-funds",
@@ -2234,7 +3107,183 @@
       "7. Hybrid Funds के जोखिम।",
       "8. Fund के उद्देश्य और Portfolio की जाँच।"
     ],
-    "beginnerTip": "Hybrid Fund में दो Asset Classes होने से जोखिम समाप्त नहीं होता। वास्तविक Allocation और Fund की Category को समझें।"
+    {
+  "id": "hybrid-mutual-funds",
+  "title": "Hybrid Mutual Funds",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Equity और Debt में निवेश करने वाले Hybrid Funds की संरचना, Asset Allocation और जोखिम समझें।",
+  "lessons": [
+    "1. Hybrid Mutual Fund क्या है?",
+    "2. Equity और Debt का संयोजन।",
+    "3. Asset Allocation का अर्थ।",
+    "4. Aggressive और Conservative Hybrid Categories का परिचय।",
+    "5. Balanced Advantage Funds का परिचय।",
+    "6. Portfolio Rebalancing की भूमिका।",
+    "7. Hybrid Funds के जोखिम।",
+    "8. Fund के उद्देश्य और Portfolio की जाँच।"
+  ],
+  "beginnerTip": "Hybrid Fund में दो Asset Classes होने से जोखिम समाप्त नहीं होता। वास्तविक Allocation और Fund की Category को समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. Hybrid Mutual Fund क्या है?",
+      "content": "Hybrid Mutual Fund एक ही Scheme में Equity, Debt और कुछ मामलों में अन्य अनुमत परिसंपत्तियों का संयोजन रख सकता है। इसका उद्देश्य और Asset Allocation संबंधित Scheme के नियमों पर निर्भर करता है।"
+    },
+    {
+      "title": "2. Equity और Debt का संयोजन",
+      "content": "Equity बाजार में हिस्सेदारी से जुड़ी होती है, जबकि Debt निवेश ऋण प्रतिभूतियों से संबंधित होते हैं। दोनों की कीमतें अलग-अलग कारणों से बदल सकती हैं। दोनों को मिलाने से जोखिम खत्म नहीं होता।"
+    },
+    {
+      "title": "3. Asset Allocation",
+      "content": "Asset Allocation बताता है कि Portfolio का कितना हिस्सा विभिन्न परिसंपत्ति वर्गों में लगाया गया है। यह Allocation स्थिर हो सकता है या Scheme के नियमों के अनुसार बदल सकता है।"
+    },
+    {
+      "title": "4. Aggressive और Conservative Hybrid",
+      "content": "अलग-अलग Hybrid Categories में Equity और Debt का अनुपात अलग होता है। अधिक Equity Exposure होने पर बाजार के उतार-चढ़ाव का प्रभाव अधिक हो सकता है। किसी Category के सटीक नियमों के लिए नवीनतम आधिकारिक Scheme दस्तावेज देखें।"
+    },
+    {
+      "title": "5. Balanced Advantage Funds",
+      "content": "Balanced Advantage या Dynamic Asset Allocation Funds अपनी निर्धारित रणनीति के अनुसार Equity और Debt के बीच Allocation बदल सकते हैं। बदलाव का तरीका Scheme की नीति पर निर्भर करता है और यह बाजार के नुकसान से सुरक्षा की गारंटी नहीं देता।"
+    },
+    {
+      "title": "6. Portfolio Rebalancing",
+      "content": "Rebalancing का अर्थ Portfolio के Allocation को निर्धारित लक्ष्य या Scheme की रणनीति के अनुरूप समायोजित करना है। इससे जोखिम संरचना को बनाए रखने में मदद मिल सकती है, लेकिन लाभ की गारंटी नहीं मिलती।"
+    },
+    {
+      "title": "7. Hybrid Funds के जोखिम",
+      "content": "Equity हिस्सा बाजार गिरावट से और Debt हिस्सा ब्याज दर, Credit तथा Liquidity जोखिमों से प्रभावित हो सकता है। Scheme की रणनीति, लागत और वास्तविक Portfolio समझना जरूरी है।"
+    },
+    {
+      "title": "8. उद्देश्य और Portfolio की जाँच",
+      "content": "Scheme का उद्देश्य, Equity-Debt Allocation, Benchmark, Expense Ratio, Riskometer, Portfolio और आधिकारिक दस्तावेज पढ़ें। केवल Hybrid शब्द देखकर Fund को सुरक्षित या संतुलित न मानें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: Equity-Debt Allocation",
+      "content": "एक काल्पनिक Hybrid Fund अपने Portfolio का 60% Equity और 40% Debt में रखता है। यह केवल उदाहरण है, किसी वास्तविक Scheme का वर्तमान Allocation नहीं। बाजार की स्थिति से दोनों हिस्सों का मूल्य बदल सकता है।"
+    },
+    {
+      "title": "उदाहरण 2: Allocation में बदलाव",
+      "content": "एक Dynamic Allocation Fund अपनी नीति के अनुसार समय-समय पर Equity और Debt का अनुपात बदलता है। यह बदलाव Fund की रणनीति का हिस्सा है, लेकिन सही बाजार समय का अनुमान हमेशा संभव नहीं होता।"
+    },
+    {
+      "title": "उदाहरण 3: दो जोखिमों का प्रभाव",
+      "content": "यदि बाजार में Shares की कीमतें गिरती हैं और साथ ही Portfolio के कुछ Bonds की कीमतें भी घटती हैं, तो Hybrid Fund की NAV पर दोनों का असर हो सकता है।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Hybrid Fund",
+      "meaning": "ऐसा Mutual Fund जो एक से अधिक परिसंपत्ति वर्गों में निवेश कर सकता है।"
+    },
+    {
+      "term": "Asset Allocation",
+      "meaning": "विभिन्न परिसंपत्ति वर्गों में निवेश बाँटने की योजना।"
+    },
+    {
+      "term": "Equity",
+      "meaning": "कंपनियों में हिस्सेदारी से संबंधित निवेश।"
+    },
+    {
+      "term": "Debt",
+      "meaning": "Bonds और अन्य ऋण प्रतिभूतियों से संबंधित निवेश।"
+    },
+    {
+      "term": "Rebalancing",
+      "meaning": "Portfolio के Allocation को लक्ष्य या रणनीति के अनुसार समायोजित करना।"
+    },
+    {
+      "term": "Dynamic Asset Allocation",
+      "meaning": "रणनीति के अनुसार परिसंपत्ति वर्गों का अनुपात बदलने का तरीका।"
+    },
+    {
+      "term": "Riskometer",
+      "meaning": "Mutual Fund Scheme के जोखिम स्तर को दर्शाने वाला संकेतक।"
+    },
+    {
+      "term": "Portfolio",
+      "meaning": "Fund के निवेशों का समूह।"
+    }
+  ],
+  "risks": [
+    "Equity हिस्से के कारण बाजार गिरावट से नुकसान हो सकता है।",
+    "Debt हिस्से में ब्याज दर और Credit Risk हो सकता है।",
+    "Allocation बदलने की रणनीति हमेशा सही परिणाम नहीं देती।",
+    "Hybrid शब्द अपने-आप कम जोखिम की गारंटी नहीं है।",
+    "Scheme की वास्तविक संरचना समय के साथ बदल सकती है।"
+  ],
+  "commonMistakes": [
+    "Hybrid Fund को जोखिम-मुक्त समझना।",
+    "हर Hybrid Fund में Equity और Debt का अनुपात समान मानना।",
+    "Scheme का निवेश उद्देश्य न पढ़ना।",
+    "केवल पुराने Returns देखकर निर्णय लेना।",
+    "Portfolio और Riskometer को नजरअंदाज करना।"
+  ],
+  "summary": [
+    "Hybrid Funds एक से अधिक परिसंपत्ति वर्गों में निवेश कर सकते हैं।",
+    "Equity और Debt का अनुपात Scheme के अनुसार बदलता है।",
+    "Asset Allocation Fund की जोखिम संरचना समझने में मदद करता है।",
+    "Rebalancing से जोखिम समाप्त नहीं होता।",
+    "Scheme के उद्देश्य, Portfolio और जोखिम की जाँच जरूरी है।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Hybrid Mutual Fund की मुख्य विशेषता क्या है?",
+      "options": [
+        "इसमें कभी नुकसान नहीं होता",
+        "यह केवल एक ही कंपनी में निवेश करता है",
+        "यह Equity और Debt जैसे परिसंपत्ति वर्गों को मिला सकता है",
+        "इसमें हमेशा निश्चित ब्याज मिलता है"
+      ],
+      "answerIndex": 2,
+      "explanation": "Hybrid Funds एक से अधिक परिसंपत्ति वर्गों में निवेश कर सकते हैं।"
+    },
+    {
+      "question": "2. Asset Allocation क्या बताता है?",
+      "options": [
+        "निवेश विभिन्न परिसंपत्ति वर्गों में कैसे बाँटा गया है",
+        "केवल Fund का नाम",
+        "निवेशक का पासवर्ड",
+        "निश्चित लाभ की तारीख"
+      ],
+      "answerIndex": 0,
+      "explanation": "Asset Allocation Portfolio के निवेशों का विभाजन दर्शाता है।"
+    },
+    {
+      "question": "3. क्या Hybrid Fund में नुकसान संभव है?",
+      "options": [
+        "नहीं, कभी नहीं",
+        "हाँ, Equity और Debt दोनों से जुड़े जोखिम हो सकते हैं",
+        "केवल रविवार को",
+        "केवल बड़ी राशि पर"
+      ],
+      "answerIndex": 1,
+      "explanation": "Hybrid Funds के विभिन्न हिस्से अपने-अपने बाजार जोखिमों से प्रभावित हो सकते हैं।"
+    },
+    {
+      "question": "4. Rebalancing का क्या अर्थ है?",
+      "options": [
+        "हर निवेश बेच देना",
+        "निश्चित लाभ प्राप्त करना",
+        "केवल नया बैंक खाता खोलना",
+        "Portfolio Allocation को लक्ष्य या रणनीति के अनुसार समायोजित करना"
+      ],
+      "answerIndex": 3,
+      "explanation": "Rebalancing से Portfolio का Allocation तय रणनीति के अनुरूप रखने में मदद मिल सकती है।"
+    },
+    {
+      "question": "5. Hybrid Fund चुनते समय क्या देखना चाहिए?",
+      "options": [
+        "केवल उसका नाम",
+        "केवल विज्ञापन",
+        "Allocation, उद्देश्य, जोखिम और आधिकारिक दस्तावेज",
+        "केवल एक दिन का Return"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fund की संरचना और जोखिम समझने के लिए आधिकारिक जानकारी की जाँच जरूरी है।"
+    }
+  ]
   },
   {
     "id": "etf-basics",
@@ -2252,7 +3301,183 @@
       "7. Expense Ratio और Tracking Error।",
       "8. ETF से जुड़े प्रमुख जोखिम।"
     ],
-    "beginnerTip": "ETF की Exchange Price उसकी NAV से अलग हो सकती है। खरीदने से पहले Liquidity, Spread और संबंधित खर्च समझें।"
+    {
+  "id": "etf-basics",
+  "title": "Exchange Traded Funds (ETFs)",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "ETF की कार्यप्रणाली, Exchange पर Trading, NAV, Liquidity और प्रमुख जोखिम समझें।",
+  "lessons": [
+    "1. ETF का Full Form और अर्थ।",
+    "2. ETF कैसे काम करता है?",
+    "3. ETF और Index Fund में अंतर।",
+    "4. Stock Exchange पर ETF की Trading।",
+    "5. Market Price और NAV में अंतर।",
+    "6. Liquidity और Bid-Ask Spread।",
+    "7. Expense Ratio और Tracking Error।",
+    "8. ETF से जुड़े प्रमुख जोखिम।"
+  ],
+  "beginnerTip": "ETF की Exchange Price उसकी NAV से अलग हो सकती है। खरीदने से पहले Liquidity, Spread और संबंधित खर्च समझें।",
+  "detailedLessons": [
+    {
+      "title": "1. ETF क्या है?",
+      "content": "ETF का पूरा नाम Exchange Traded Fund है। यह एक Fund होता है जिसकी Units Stock Exchange पर Shares की तरह खरीदी और बेची जा सकती हैं। ETF किसी Index, परिसंपत्ति वर्ग या निर्धारित निवेश रणनीति को Track कर सकता है।"
+    },
+    {
+      "title": "2. ETF कैसे काम करता है?",
+      "content": "ETF निवेशकों के धन को Scheme के उद्देश्य के अनुसार परिसंपत्तियों में लगाता है। Exchange पर इसकी Units की कीमत खरीदारों और विक्रेताओं की माँग तथा उपलब्धता से प्रभावित होती है।"
+    },
+    {
+      "title": "3. ETF और Index Fund",
+      "content": "कई Index Funds और ETFs किसी Benchmark को Track कर सकते हैं। सामान्य Index Mutual Fund की खरीद-बिक्री लागू नियमों के अनुसार NAV आधारित प्रक्रिया से होती है, जबकि ETF Exchange पर बाजार मूल्य पर Trade होता है। सटीक प्रक्रिया उत्पाद और नियमों पर निर्भर करती है।"
+    },
+    {
+      "title": "4. Exchange पर Trading",
+      "content": "ETF खरीदने या बेचने के लिए सामान्यतः Demat Account और Trading Account की आवश्यकता होती है। Order देने से पहले Trading Symbol, मात्रा, कीमत, Liquidity और लागू शुल्क समझें।"
+    },
+    {
+      "title": "5. Market Price और NAV",
+      "content": "NAV Fund की प्रति Unit शुद्ध परिसंपत्ति का मूल्य है। ETF की Exchange Price माँग और आपूर्ति के कारण NAV से ऊपर या नीचे हो सकती है। इस अंतर को समझना खरीदने और बेचने के निर्णय में उपयोगी है।"
+    },
+    {
+      "title": "6. Liquidity और Bid-Ask Spread",
+      "content": "Liquidity बताती है कि किसी ETF को उचित कीमत पर कितनी आसानी से खरीदा या बेचा जा सकता है। Bid-Ask Spread खरीदने की सर्वोत्तम उपलब्ध कीमत और बेचने की सर्वोत्तम उपलब्ध कीमत का अंतर है। अधिक Spread Trading Cost बढ़ा सकता है।"
+    },
+    {
+      "title": "7. Expense Ratio और Tracking Error",
+      "content": "Expense Ratio Fund के संचालन की लागत दर्शाता है। यदि ETF किसी Benchmark को Track करता है, तो Tracking Error उसके और Benchmark के प्रदर्शन में अंतर की परिवर्तनशीलता समझने में मदद करता है।"
+    },
+    {
+      "title": "8. ETF के प्रमुख जोखिम",
+      "content": "ETF का मूल्य संबंधित बाजार, Index या परिसंपत्ति वर्ग से प्रभावित हो सकता है। कम Liquidity, बड़ा Bid-Ask Spread, NAV से अंतर और Tracking Error भी महत्वपूर्ण हो सकते हैं। Exchange पर उपलब्ध होने से ETF जोखिम-मुक्त नहीं हो जाता।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: ETF की खरीद",
+      "content": "एक निवेशक अपने Trading Account से ETF की Units खरीदने का Order देता है। Order किस कीमत पर पूरा होगा, यह उपलब्ध Orders, Liquidity और चुने गए Order Type पर निर्भर करता है।"
+    },
+    {
+      "title": "उदाहरण 2: NAV और Market Price",
+      "content": "मान लें कि किसी ETF की अनुमानित NAV ₹100 है, लेकिन Exchange पर उसकी कीमत ₹101 है। यह केवल उदाहरण है। निवेशक को यह समझना चाहिए कि Exchange Price और NAV अलग हो सकते हैं।"
+    },
+    {
+      "title": "उदाहरण 3: Bid-Ask Spread",
+      "content": "यदि ETF की सर्वोत्तम खरीद कीमत ₹99.90 और सर्वोत्तम बिक्री कीमत ₹100.10 है, तो Spread ₹0.20 है। ये केवल काल्पनिक कीमतें हैं और वास्तविक बाजार दरें नहीं हैं।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "ETF",
+      "meaning": "Exchange पर Trade होने वाला Fund।"
+    },
+    {
+      "term": "NAV",
+      "meaning": "Fund की प्रति Unit शुद्ध परिसंपत्ति का मूल्य।"
+    },
+    {
+      "term": "Market Price",
+      "meaning": "Exchange पर ETF की Units के लिए उपलब्ध बाजार कीमत।"
+    },
+    {
+      "term": "Liquidity",
+      "meaning": "उचित कीमत पर खरीदने या बेचने की आसानी।"
+    },
+    {
+      "term": "Bid-Ask Spread",
+      "meaning": "सर्वोत्तम उपलब्ध खरीद और बिक्री कीमत के बीच अंतर।"
+    },
+    {
+      "term": "Demat Account",
+      "meaning": "प्रतिभूतियों को इलेक्ट्रॉनिक रूप में रखने वाला खाता।"
+    },
+    {
+      "term": "Expense Ratio",
+      "meaning": "Fund के संचालन खर्चों का अनुपात।"
+    },
+    {
+      "term": "Tracking Error",
+      "meaning": "ETF और उसके Benchmark के प्रदर्शन के अंतर की परिवर्तनशीलता का माप।"
+    }
+  ],
+  "risks": [
+    "ETF की Market Price NAV से ऊपर या नीचे हो सकती है।",
+    "कम Liquidity के कारण Order अपेक्षित कीमत पर पूरा नहीं हो सकता।",
+    "बड़ा Bid-Ask Spread लेन-देन की लागत बढ़ा सकता है।",
+    "Benchmark या संबंधित बाजार में गिरावट से ETF का मूल्य घट सकता है।",
+    "लागू Brokerage और अन्य शुल्क निवेश के परिणामों को प्रभावित कर सकते हैं।"
+  ],
+  "commonMistakes": [
+    "ETF को बिना जोखिम वाला निवेश समझना।",
+    "Market Price और NAV को हमेशा समान मानना।",
+    "Liquidity और Bid-Ask Spread की जाँच न करना।",
+    "Order Type और Trading Symbol को बिना समझे Order देना।",
+    "केवल Expense Ratio देखकर ETF चुनना।"
+  ],
+  "summary": [
+    "ETF की Units Stock Exchange पर Trade होती हैं।",
+    "ETF का उद्देश्य और निवेश संरचना उसके उत्पाद के अनुसार बदलती है।",
+    "Market Price और NAV में अंतर हो सकता है।",
+    "Liquidity और Bid-Ask Spread महत्वपूर्ण हैं।",
+    "खरीदने से पहले लागत, Benchmark और जोखिम की जाँच करें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. ETF का पूरा नाम क्या है?",
+      "options": [
+        "Electronic Transfer Fund",
+        "Exchange Traded Fund",
+        "Equity Tax Formula",
+        "Estimated Trading Fee"
+      ],
+      "answerIndex": 1,
+      "explanation": "ETF का पूरा नाम Exchange Traded Fund है।"
+    },
+    {
+      "question": "2. ETF की Units सामान्यतः कहाँ Trade होती हैं?",
+      "options": [
+        "केवल बैंक की शाखा में",
+        "केवल डाकघर में",
+        "Stock Exchange पर",
+        "केवल किसी कंपनी के कार्यालय में"
+      ],
+      "answerIndex": 2,
+      "explanation": "ETF की Units Stock Exchange पर खरीदी और बेची जा सकती हैं।"
+    },
+    {
+      "question": "3. ETF की Market Price और NAV के बारे में कौन-सा कथन सही है?",
+      "options": [
+        "दोनों हमेशा समान होते हैं",
+        "NAV कभी बदलती नहीं",
+        "Market Price का कोई महत्व नहीं",
+        "दोनों अलग हो सकते हैं"
+      ],
+      "answerIndex": 3,
+      "explanation": "माँग और आपूर्ति के कारण ETF की Exchange Price NAV से अलग हो सकती है।"
+    },
+    {
+      "question": "4. Bid-Ask Spread क्या है?",
+      "options": [
+        "खरीद और बिक्री की सर्वोत्तम उपलब्ध कीमतों का अंतर",
+        "केवल वार्षिक लाभ",
+        "बैंक खाते का शुल्क",
+        "निवेशक की उम्र"
+      ],
+      "answerIndex": 0,
+      "explanation": "Bid-Ask Spread सर्वोत्तम उपलब्ध खरीद और बिक्री कीमतों के बीच अंतर है।"
+    },
+    {
+      "question": "5. ETF खरीदने से पहले क्या जाँचना चाहिए?",
+      "options": [
+        "केवल नाम",
+        "Liquidity, Spread, लागत और निवेश उद्देश्य",
+        "केवल विज्ञापन",
+        "निश्चित लाभ की गारंटी"
+      ],
+      "answerIndex": 1,
+      "explanation": "ETF के जोखिम और लागत समझने के लिए इन पहलुओं की जाँच जरूरी है।"
+    }
+  ]
   },
   {
     "id": "mutual-fund-risk-research",
@@ -2270,7 +3495,190 @@
       "7. Portfolio, Costs और Fund Objective की जाँच।",
       "8. Guaranteed Returns के भ्रामक दावों को पहचानना।"
     ],
-    "beginnerTip": "Fund चुनने से पहले आधिकारिक दस्तावेज पढ़ें। पिछले Returns भविष्य के प्रदर्शन की गारंटी नहीं देते।"
+    {
+  "id": "mutual-fund-risk-research",
+  "title": "Mutual Fund Risks & Research",
+  "category": "Mutual Funds",
+  "level": "Beginner",
+  "description": "Mutual Fund की जाँच, जोखिम समझना, आधिकारिक दस्तावेज पढ़ना और भ्रामक दावों को पहचानना सीखें।",
+  "lessons": [
+    "1. Mutual Fund में जोखिम के प्रमुख प्रकार।",
+    "2. Riskometer क्या बताता है?",
+    "3. Scheme Information Document (SID) का परिचय।",
+    "4. Key Information Memorandum (KIM) क्या है?",
+    "5. Fund Factsheet कैसे पढ़ें?",
+    "6. Benchmark और Performance की तुलना।",
+    "7. Portfolio, Costs और Fund Objective की जाँच।",
+    "8. Guaranteed Returns के भ्रामक दावों को पहचानना।"
+  ],
+  "beginnerTip": "Fund चुनने से पहले आधिकारिक दस्तावेज पढ़ें। पिछले Returns भविष्य के प्रदर्शन की गारंटी नहीं देते।",
+  "detailedLessons": [
+    {
+      "title": "1. Mutual Fund में जोखिम",
+      "content": "Mutual Fund में Market Risk, Credit Risk, Interest Rate Risk, Liquidity Risk और Concentration Risk जैसे जोखिम हो सकते हैं। वास्तविक जोखिम इस बात पर निर्भर करता है कि Scheme किस प्रकार की परिसंपत्तियों में निवेश करती है।"
+    },
+    {
+      "title": "2. Riskometer क्या बताता है?",
+      "content": "Riskometer Scheme के जोखिम स्तर को दर्शाने वाला संकेतक है। इसे समझने के साथ Scheme का उद्देश्य, Portfolio और अन्य आधिकारिक दस्तावेज भी पढ़ें। Riskometer भविष्य के नुकसान की सटीक भविष्यवाणी नहीं करता।"
+    },
+    {
+      "title": "3. Scheme Information Document (SID)",
+      "content": "SID में Scheme का निवेश उद्देश्य, रणनीति, परिसंपत्ति आवंटन, जोखिम, लागत और अन्य महत्वपूर्ण शर्तें दी जाती हैं। निवेश से पहले नवीनतम लागू दस्तावेज पढ़ना उपयोगी है।"
+    },
+    {
+      "title": "4. Key Information Memorandum (KIM)",
+      "content": "KIM Scheme से जुड़ी प्रमुख जानकारी का संक्षिप्त दस्तावेज है। इसमें महत्वपूर्ण विशेषताएँ और शर्तें मिल सकती हैं। अधिक विस्तृत जानकारी के लिए संबंधित SID और अन्य आधिकारिक दस्तावेज देखें।"
+    },
+    {
+      "title": "5. Fund Factsheet कैसे पढ़ें?",
+      "content": "Factsheet में Portfolio, Sector Allocation, Benchmark, प्रदर्शन, खर्च और अन्य जानकारी हो सकती है। यह जाँचें कि दस्तावेज किस तारीख का है, क्योंकि आँकड़े समय के साथ बदल सकते हैं।"
+    },
+    {
+      "title": "6. Benchmark और Performance",
+      "content": "Fund के प्रदर्शन की तुलना उसके उपयुक्त Benchmark और समान प्रकार की Schemes से करें। समान अवधि और लागू खर्चों को ध्यान में रखें। केवल एक छोटे समय की अवधि से Fund की गुणवत्ता का निष्कर्ष न निकालें।"
+    },
+    {
+      "title": "7. Portfolio, Costs और Objective",
+      "content": "Scheme के निवेश उद्देश्य से पता चलता है कि वह किस प्रकार के निवेश करना चाहती है। Portfolio बताता है कि वास्तविक निवेश कहाँ हैं। Expense Ratio और अन्य लागू लागतें भी निवेश के परिणामों को प्रभावित कर सकती हैं।"
+    },
+    {
+      "title": "8. Guaranteed Returns के दावे",
+      "content": "Mutual Fund निवेश बाजार जोखिम के अधीन होते हैं। कोई व्यक्ति निश्चित या असामान्य रूप से ऊँचे Returns का दावा करे तो सावधानी बरतें। केवल संदेश, स्क्रीनशॉट या सोशल मीडिया पोस्ट पर भरोसा न करें; जानकारी आधिकारिक स्रोतों से जाँचें।"
+    }
+  ],
+  "examples": [
+    {
+      "title": "उदाहरण 1: Factsheet की तारीख",
+      "content": "किसी निवेशक को इंटरनेट पर पुरानी Factsheet मिलती है। निवेश से पहले उसे Fund House के आधिकारिक स्रोत से नवीनतम उपलब्ध दस्तावेज खोजकर आँकड़ों और Portfolio की तारीख जाँचनी चाहिए।"
+    },
+    {
+      "title": "उदाहरण 2: Benchmark से तुलना",
+      "content": "एक Fund ने किसी अवधि में 8% Return दिया और उसका Benchmark 9% रहा। यह केवल काल्पनिक उदाहरण है। तुलना करते समय समान अवधि, जोखिम, लागत और Fund के उद्देश्य को भी देखना चाहिए।"
+    },
+    {
+      "title": "उदाहरण 3: Guaranteed Return का दावा",
+      "content": "सोशल मीडिया पर कोई व्यक्ति Mutual Fund से निश्चित लाभ का वादा करता है और तुरंत पैसा भेजने को कहता है। निवेशक को दावा सत्यापित करना चाहिए, व्यक्तिगत जानकारी साझा करने से बचना चाहिए और आधिकारिक स्रोतों से जाँच करनी चाहिए।"
+    }
+  ],
+  "keyTerms": [
+    {
+      "term": "Riskometer",
+      "meaning": "Mutual Fund Scheme के जोखिम स्तर को दर्शाने वाला संकेतक।"
+    },
+    {
+      "term": "SID",
+      "meaning": "Scheme Information Document, जिसमें Scheme की विस्तृत जानकारी और शर्तें होती हैं।"
+    },
+    {
+      "term": "KIM",
+      "meaning": "Key Information Memorandum, जिसमें Scheme की प्रमुख जानकारी संक्षेप में दी जाती है।"
+    },
+    {
+      "term": "Factsheet",
+      "meaning": "Fund के Portfolio, प्रदर्शन, Benchmark और लागत जैसी जानकारी वाला दस्तावेज।"
+    },
+    {
+      "term": "Benchmark",
+      "meaning": "Fund के प्रदर्शन की तुलना करने का मानक।"
+    },
+    {
+      "term": "Expense Ratio",
+      "meaning": "Fund के संचालन खर्चों का अनुपात।"
+    },
+    {
+      "term": "Portfolio",
+      "meaning": "Fund द्वारा रखी गई निवेश परिसंपत्तियों का समूह।"
+    },
+    {
+      "term": "Market Risk",
+      "meaning": "बाजार की चाल के कारण निवेश के मूल्य में होने वाले बदलाव का जोखिम।"
+    },
+    {
+      "term": "Credit Risk",
+      "meaning": "जारीकर्ता के निर्धारित भुगतान न कर पाने का जोखिम।"
+    }
+  ],
+  "risks": [
+    "बाजार में बदलाव से Fund की NAV घट सकती है।",
+    "पुराने आँकड़ों के आधार पर निर्णय लेने से गलत निष्कर्ष निकल सकते हैं।",
+    "केवल एक प्रदर्शन अवधि देखकर Scheme की तुलना करना भ्रामक हो सकता है।",
+    "फर्जी सलाह, नकली वेबसाइट और Guaranteed Returns के दावे वित्तीय धोखाधड़ी का जोखिम पैदा कर सकते हैं।",
+    "Scheme के उद्देश्य और Portfolio को समझे बिना निवेश करने से अनचाहा जोखिम लिया जा सकता है।",
+    "आधिकारिक दस्तावेज पढ़ने के बावजूद भविष्य का Return निश्चित नहीं होता।"
+  ],
+  "commonMistakes": [
+    "Riskometer को भविष्य के नुकसान की सटीक भविष्यवाणी समझना।",
+    "SID, KIM और Factsheet को बिना पढ़े निवेश करना।",
+    "केवल पिछले Returns या Star Rating पर भरोसा करना।",
+    "Fund के Benchmark और निवेश उद्देश्य की जाँच न करना।",
+    "Guaranteed Returns के दावे पर बिना सत्यापन भरोसा करना।",
+    "किसी अनजान व्यक्ति को OTP, Password या संवेदनशील वित्तीय जानकारी देना।"
+  ],
+  "summary": [
+    "Mutual Funds में अलग-अलग प्रकार के जोखिम हो सकते हैं।",
+    "Riskometer जोखिम को समझने में मदद करता है, लेकिन भविष्य की गारंटी नहीं देता।",
+    "SID, KIM और Factsheet महत्वपूर्ण आधिकारिक दस्तावेज हैं।",
+    "Benchmark और समान अवधि के प्रदर्शन की तुलना करें।",
+    "Portfolio, लागत और निवेश उद्देश्य की जाँच करें।",
+    "Guaranteed Returns के दावों से सावधान रहें और आधिकारिक स्रोतों पर भरोसा करें।"
+  ],
+  "quiz": [
+    {
+      "question": "1. Riskometer का मुख्य उद्देश्य क्या है?",
+      "options": [
+        "निश्चित Return बताना",
+        "बाजार की दिशा की गारंटी देना",
+        "Scheme के जोखिम स्तर को दर्शाना",
+        "निवेशक का पासवर्ड दिखाना"
+      ],
+      "answerIndex": 2,
+      "explanation": "Riskometer Scheme के जोखिम स्तर को दर्शाता है, लेकिन भविष्य के परिणामों की गारंटी नहीं देता।"
+    },
+    {
+      "question": "2. SID में क्या जानकारी मिल सकती है?",
+      "options": [
+        "Scheme का उद्देश्य, जोखिम और शर्तें",
+        "केवल सोशल मीडिया टिप्पणियाँ",
+        "निवेशक का बैंक PIN",
+        "निश्चित लाभ का वादा"
+      ],
+      "answerIndex": 0,
+      "explanation": "SID Scheme की विस्तृत जानकारी और महत्वपूर्ण शर्तों का दस्तावेज है।"
+    },
+    {
+      "question": "3. Fund Factsheet पढ़ते समय क्या जाँचना चाहिए?",
+      "options": [
+        "केवल उसका रंग",
+        "केवल Fund का नाम",
+        "केवल विज्ञापन",
+        "दस्तावेज की तारीख, Portfolio, Benchmark और लागत"
+      ],
+      "answerIndex": 3,
+      "explanation": "Factsheet के आँकड़ों की तारीख और प्रमुख विवरण जाँचना जरूरी है।"
+    },
+    {
+      "question": "4. Mutual Fund में Guaranteed Returns का दावा मिलने पर क्या करना चाहिए?",
+      "options": [
+        "तुरंत पैसा भेज देना",
+        "आधिकारिक स्रोतों से दावा जाँचना और सावधानी बरतना",
+        "अपना OTP साझा करना",
+        "बिना पढ़े दस्तावेज स्वीकार करना"
+      ],
+      "answerIndex": 1,
+      "explanation": "ऐसे दावों पर भरोसा करने से पहले सत्यापन जरूरी है। Mutual Fund निवेश बाजार जोखिम के अधीन होते हैं।"
+    },
+    {
+      "question": "5. Fund के प्रदर्शन की तुलना कैसे करनी चाहिए?",
+      "options": [
+        "केवल एक दिन के Return से",
+        "केवल विज्ञापन से",
+        "उपयुक्त Benchmark, समान अवधि, लागत और जोखिम के आधार पर",
+        "केवल Fund के नाम से"
+      ],
+      "answerIndex": 2,
+      "explanation": "उचित तुलना के लिए Benchmark, अवधि, लागत और जोखिम को साथ में देखना चाहिए।"
+    }
+  ]
   },
     {
     "id": "personal-finance-basics",
