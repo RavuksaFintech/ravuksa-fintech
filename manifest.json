@@ -8,6 +8,7 @@
   "start_url": "/ravuksa-fintech/",
   "scope": "/ravuksa-fintech/",
   "display": "standalone",
+  "prefer_related_applications": false,
   "orientation": "portrait",
   "theme_color": "#0b1f3a",
   "background_color": "#ffffff",
