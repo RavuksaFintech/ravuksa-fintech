@@ -950,6 +950,109 @@ width: 100%;
 box-sizing: border-box;
 }
     }
+    /* RAVUKSA FINTECH - Animated Financial Background */
+
+header#home.hero {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+}
+
+/* Subtle moving financial grid */
+header#home.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: -1;
+pointer-events: none;
+opacity: 0.55;
+
+background-image:
+linear-gradient(
+rgba(8, 127, 140, 0.055) 1px,
+transparent 1px
+),
+linear-gradient(
+90deg,
+rgba(8, 127, 140, 0.055) 1px,
+transparent 1px
+);
+
+background-size: 38px 38px;
+animation: ravuksaFinancialGrid 28s linear infinite;
+}
+
+/* Soft teal glow for a modern financial-tech look */
+header#home.hero::after {
+content: "";
+position: absolute;
+top: 12%;
+right: -100px;
+width: 340px;
+height: 340px;
+border-radius: 50%;
+pointer-events: none;
+z-index: -1;
+
+background: radial-gradient(
+circle,
+rgba(45, 212, 191, 0.16) 0%,
+rgba(45, 212, 191, 0.06) 42%,
+transparent 72%
+);
+
+animation: ravuksaHeroGlow 8s ease-in-out infinite alternate;
+}
+
+/* Keep hero content above decorative effects */
+header#home.hero > .wrap {
+position: relative;
+z-index: 1;
+}
+
+/* Gentle grid movement */
+@keyframes ravuksaFinancialGrid {
+from {
+background-position: 0 0, 0 0;
+}
+
+to {
+background-position: 38px 38px, 38px 38px;
+}
+}
+
+/* Gentle background glow movement */
+@keyframes ravuksaHeroGlow {
+from {
+transform: translate3d(0, 0, 0) scale(1);
+}
+
+to {
+transform: translate3d(-18px, 16px, 0) scale(1.08);
+}
+}
+
+/* Mobile optimization */
+@media (max-width: 760px) {
+header#home.hero::after {
+width: 240px;
+height: 240px;
+top: 8%;
+right: -100px;
+}
+
+header#home.hero::before {
+opacity: 0.4;
+}
+}
+
+/* Accessibility: reduce animations when requested */
+@media (prefers-reduced-motion: reduce) {
+header#home.hero::before,
+header#home.hero::after {
+animation: none !important;
+}
+    }
     /* RAVUKSA FINTECH - Premium Explore Cards */
 
 #quick-access {
