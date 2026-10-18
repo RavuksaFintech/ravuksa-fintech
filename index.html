@@ -1416,6 +1416,166 @@ header#home.ravuksa-hero-upgraded .ravuksa-chart-card {
     font-size: 19px;
   }
     }
+    /* RAVUKSA FINTECH - Professional Why Section */
+
+#why-ravuksa {
+  position: relative;
+  padding: 65px 5%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8fc 100%);
+}
+
+#why-ravuksa .wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#why-ravuksa .section-title {
+  margin-bottom: 14px;
+  color: #14243a;
+  font-size: clamp(29px, 4vw, 39px);
+  font-weight: 850;
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+
+#why-ravuksa .sub {
+  max-width: 760px;
+  margin: 0 auto 12px;
+  color: #526174;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+#why-ravuksa .wrap > p[style] {
+  max-width: 750px;
+  margin: 10px auto 32px !important;
+  padding: 13px 18px;
+  border-left: 3px solid #0d9488;
+  border-radius: 0 10px 10px 0;
+  background: #eaf7f6;
+  color: #285568 !important;
+  font-size: 14px !important;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#why-ravuksa .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+#why-ravuksa .grid > .card {
+  min-width: 0;
+  padding: 28px 25px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 6px 22px rgba(20, 36, 58, 0.055);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+#why-ravuksa .grid > .card:hover {
+  transform: translateY(-5px);
+  border-color: #9edbd8;
+  box-shadow: 0 15px 32px rgba(20, 36, 58, 0.10);
+}
+
+#why-ravuksa .grid > .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 16px;
+  border: 1px solid #d7eeee;
+  border-radius: 16px;
+  background: #eaf8f7;
+  font-size: 28px;
+}
+
+#why-ravuksa .grid > .card h3 {
+  margin: 0 0 10px;
+  color: #14243a;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#why-ravuksa .grid > .card p {
+  margin: 0;
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+#why-ravuksa .grid > .card {
+  animation: ravuksaWhyCardIn 0.65s ease both;
+}
+
+#why-ravuksa .grid > .card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+#why-ravuksa .grid > .card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+#why-ravuksa .grid > .card:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+@keyframes ravuksaWhyCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  #why-ravuksa {
+    padding: 44px 5%;
+  }
+
+  #why-ravuksa .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #why-ravuksa .grid > .card {
+    padding: 22px 19px;
+  }
+
+  #why-ravuksa .grid > .card h3 {
+    font-size: 18px;
+  }
+
+  #why-ravuksa .sub {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #why-ravuksa .grid > .card {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  #why-ravuksa .grid > .card:hover {
+    transform: none;
+  }
+    }
     /* RAVUKSA FINTECH - Premium Explore Cards */
 
 #quick-access {
