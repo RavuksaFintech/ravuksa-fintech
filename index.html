@@ -11430,6 +11430,223 @@ if ("serviceWorker" in navigator) {
 })();
 </script>
   
+<!-- RAVUKSA FINTECH - Daily Learning JavaScript -->
+
+<script>
+(function () {
+  "use strict";
+
+  const dailySection = document.getElementById("ravuksa-daily-learning");
+
+  if (!dailySection || dailySection.dataset.initialized === "true") {
+    return;
+  }
+
+  dailySection.dataset.initialized = "true";
+
+  const thoughts = [
+    {
+      category: "Personal Finance",
+      title: "वित्तीय निर्णय लेने से पहले जानकारी और जोखिम को समझें।",
+      explanation: "बेहतर वित्तीय समझ की शुरुआत सही प्रश्न पूछने, विश्वसनीय जानकारी पढ़ने और संभावित जोखिमों को पहचानने से होती है।",
+      action: "अपनी बचत, खर्च और वित्तीय लक्ष्यों की समीक्षा करें।",
+      topic: "personal-finance-basics"
+    },
+    {
+      category: "Saving & Budgeting",
+      title: "बचत की शुरुआत अपने खर्च को समझने से होती है।",
+      explanation: "जब आप अपनी आय और खर्च का रिकॉर्ड रखते हैं, तो अनावश्यक खर्च पहचानना और वित्तीय लक्ष्य बनाना आसान हो जाता है।",
+      action: "अपने पिछले सात दिनों के खर्च लिखें और उनकी समीक्षा करें।",
+      topic: "budgeting-basics"
+    },
+    {
+      category: "Stock Market Education",
+      title: "शेयर की कीमत और कंपनी की वास्तविक स्थिति एक ही चीज नहीं हैं।",
+      explanation: "किसी शेयर की कीमत कई कारणों से बदल सकती है। कंपनी को समझने के लिए उसके कारोबार, वित्तीय विवरण और जोखिमों का अध्ययन करना उपयोगी है।",
+      action: "सीखें कि किसी कंपनी के कारोबार और वित्तीय विवरणों को कैसे पढ़ा जाता है।",
+      topic: "stock-market-basics"
+    },
+    {
+      category: "Investment Risk",
+      title: "अधिक संभावित रिटर्न के साथ अधिक जोखिम भी हो सकता है।",
+      explanation: "किसी निवेश के पिछले प्रदर्शन से भविष्य के परिणाम निश्चित नहीं होते। निवेश को समझते समय जोखिम, समयावधि और अपने उद्देश्य पर विचार करना चाहिए।",
+      action: "किसी भी वित्तीय उत्पाद के जोखिम और उसकी शर्तें पढ़ें।",
+      topic: "risk-management"
+    },
+    {
+      category: "Mutual Fund Education",
+      title: "Mutual Fund चुनने से पहले उसके उद्देश्य और जोखिम को समझें।",
+      explanation: "अलग-अलग Mutual Funds के निवेश उद्देश्य, लागत, पोर्टफोलियो और जोखिम अलग हो सकते हैं। केवल पिछले रिटर्न के आधार पर निर्णय लेना पर्याप्त नहीं है।",
+      action: "Mutual Fund के Riskometer और Expense Ratio का अर्थ समझें।",
+      topic: "mutual-fund-basics"
+    },
+    {
+      category: "Banking Education",
+      title: "बैंक में ब्याज की दर के साथ उसकी शर्तें भी समझें।",
+      explanation: "बचत खाते, FD और दूसरे बैंकिंग उत्पादों में ब्याज, अवधि, निकासी और अन्य शर्तें अलग-अलग हो सकती हैं।",
+      action: "अपने बैंकिंग उत्पाद की ब्याज दर और लागू शर्तें पढ़ें।",
+      topic: "banking-basics"
+    },
+    {
+      category: "Digital Financial Safety",
+      title: "अपना OTP, PIN या पासवर्ड किसी के साथ साझा न करें।",
+      explanation: "अनजान कॉल, संदेश या लिंक के जरिए गोपनीय जानकारी माँगना धोखाधड़ी का संकेत हो सकता है। किसी भी अनुरोध को आधिकारिक माध्यम से सत्यापित करें।",
+      action: "अपने बैंक और ईमेल खातों की सुरक्षा सेटिंग जाँचें।",
+      topic: "financial-fraud-awareness"
+    },
+    {
+      category: "Trading Education",
+      title: "ट्रेडिंग में नुकसान की संभावना को समझना जरूरी है।",
+      explanation: "बाजार की कीमतें तेजी से बदल सकती हैं। किसी भी ट्रेड में लाभ निश्चित नहीं होता, इसलिए जोखिम प्रबंधन और अनुशासन को समझना महत्वपूर्ण है।",
+      action: "स्टॉप-लॉस और पोजिशन साइजिंग का शैक्षणिक अर्थ सीखें।",
+      topic: "risk-management"
+    },
+    {
+      category: "Long-Term Financial Planning",
+      title: "वित्तीय लक्ष्य स्पष्ट होने से योजना बनाना आसान होता है।",
+      explanation: "अलग-अलग लक्ष्यों की समयावधि, आवश्यक राशि और जोखिम सहने की क्षमता अलग हो सकती है। स्पष्ट लक्ष्य आपको अपनी योजना को व्यवस्थित करने में मदद करते हैं।",
+      action: "एक अल्पकालिक और एक दीर्घकालिक वित्तीय लक्ष्य लिखें।",
+      topic: "personal-finance-basics"
+    },
+    {
+      category: "Financial Awareness",
+      title: "वित्तीय जानकारी की जाँच उसके स्रोत से करें।",
+      explanation: "सोशल मीडिया पर दिखाई देने वाला हर वित्तीय दावा सही या पूरा नहीं होता। महत्वपूर्ण जानकारी को विश्वसनीय और आधिकारिक स्रोतों से सत्यापित करना चाहिए।",
+      action: "किसी वित्तीय दावे को साझा करने से पहले उसके मूल स्रोत की जाँच करें।",
+      topic: "financial-fraud-awareness"
+    }
+  ];
+
+  const categoryElement = document.getElementById("ravuksa-daily-category");
+  const titleElement = document.getElementById("ravuksa-daily-thought");
+  const explanationElement = document.getElementById("ravuksa-daily-explanation");
+  const actionElement = document.getElementById("ravuksa-daily-action");
+  const dateElement = document.getElementById("ravuksa-daily-date");
+  const topicLink = document.getElementById("ravuksa-daily-topic-link");
+  const nextButton = document.getElementById("ravuksa-next-learning");
+
+  if (
+    !categoryElement ||
+    !titleElement ||
+    !explanationElement ||
+    !actionElement ||
+    !dateElement ||
+    !topicLink ||
+    !nextButton
+  ) {
+    return;
+  }
+
+  const today = new Date();
+  const dateKey =
+    today.getFullYear() + "-" +
+    String(today.getMonth() + 1).padStart(2, "0") + "-" +
+    String(today.getDate()).padStart(2, "0");
+
+  dateElement.textContent = today.toLocaleDateString("hi-IN", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+
+  function getDailyIndex() {
+    let totalDays = 0;
+    const start = new Date(2026, 0, 1);
+    const current = new Date(
+      today.getFullYear(),
+      today.getMonth(),
+      today.getDate()
+    );
+
+    totalDays = Math.floor((current - start) / 86400000);
+
+    return ((totalDays % thoughts.length) + thoughts.length) % thoughts.length;
+  }
+
+  let currentIndex = getDailyIndex();
+
+  try {
+    const savedDate = localStorage.getItem("ravuksaDailyLearningDate");
+    const savedIndex = Number(
+      localStorage.getItem("ravuksaDailyLearningIndex")
+    );
+
+    if (
+      savedDate === dateKey &&
+      Number.isInteger(savedIndex) &&
+      savedIndex >= 0 &&
+      savedIndex < thoughts.length
+    ) {
+      currentIndex = savedIndex;
+    }
+  } catch (error) {
+    // Daily Learning continues even if local storage is unavailable.
+  }
+
+  function showThought(index, animate) {
+    currentIndex = (index + thoughts.length) % thoughts.length;
+
+    const thought = thoughts[currentIndex];
+
+    categoryElement.textContent = thought.category;
+    titleElement.textContent = thought.title;
+    explanationElement.textContent = thought.explanation;
+    actionElement.textContent = thought.action;
+
+    const safeTopicIds = [
+      "personal-finance-basics",
+      "budgeting-basics",
+      "stock-market-basics",
+      "risk-management",
+      "mutual-fund-basics",
+      "banking-basics",
+      "financial-fraud-awareness"
+    ];
+
+    topicLink.href = safeTopicIds.includes(thought.topic)
+      ? "#learning-categories"
+      : "#learning-categories";
+
+    topicLink.setAttribute(
+      "aria-label",
+      "Learning Center में " + thought.category + " से संबंधित सामग्री देखें"
+    );
+
+    if (animate) {
+      const content = dailySection.querySelector(".ravuksa-daily-content");
+
+      if (content) {
+        content.animate(
+          [
+            { opacity: 0.45, transform: "translateY(7px)" },
+            { opacity: 1, transform: "translateY(0)" }
+          ],
+          {
+            duration: 320,
+            easing: "ease-out"
+          }
+        );
+      }
+    }
+
+    try {
+      localStorage.setItem("ravuksaDailyLearningDate", dateKey);
+      localStorage.setItem("ravuksaDailyLearningIndex", String(currentIndex));
+    } catch (error) {
+      // The feature still works without local storage.
+    }
+  }
+
+  nextButton.addEventListener("click", function () {
+    showThought(currentIndex + 1, true);
+  });
+
+  showThought(currentIndex, false);
+})();
+</script>
+
+<!-- END RAVUKSA FINTECH - Daily Learning JavaScript -->
+
   
 </body>
 </html>
