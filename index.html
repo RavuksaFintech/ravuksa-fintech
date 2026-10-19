@@ -1576,6 +1576,421 @@ header#home.ravuksa-hero-upgraded .ravuksa-chart-card {
     transform: none;
   }
     }
+    /* RAVUKSA FINTECH - Daily Learning Professional Design */
+
+#ravuksa-daily-learning {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 5%;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(13, 148, 136, 0.07), transparent 30%),
+    linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+}
+
+#ravuksa-daily-learning .wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 15px;
+  padding: 8px 13px;
+  border: 1px solid #cfe9e7;
+  border-radius: 30px;
+  background: #effaf9;
+  color: #087f8c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+#ravuksa-daily-learning .ravuksa-live-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: #0d9488;
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.12);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading h2 {
+  margin: 0 0 12px;
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading h2 span {
+  color: #087f8c;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid #dce6ef;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(20, 36, 58, 0.075);
+  animation: ravuksaDailyCardIn 0.65s ease both;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #14243a, #087f8c, #42b8a9);
+  content: "";
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e8eef4;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border: 1px solid #d3eeeb;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #e7f8f6, #f4fbff);
+  font-size: 27px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tag {
+  color: #087f8c;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-date {
+  color: #78879a;
+  font-size: 12px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: auto;
+  padding-left: 12px;
+  color: #14243a;
+  text-align: right;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number span {
+  color: #8190a3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number strong {
+  color: #087f8c;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content {
+  padding: 27px 0 24px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-category {
+  display: inline-block;
+  margin-bottom: 13px;
+  padding: 6px 11px;
+  border-radius: 7px;
+  background: #eef7fb;
+  color: #315b78;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content h3 {
+  max-width: 850px;
+  margin: 0 0 15px;
+  color: #14243a;
+  font-size: clamp(23px, 3.5vw, 32px);
+  font-weight: 800;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content > p {
+  max-width: 850px;
+  margin: 0;
+  color: #526174;
+  font-size: 15px;
+  line-height: 1.95;
+  overflow-wrap: anywhere;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 17px 19px;
+  border: 1px solid #d8eeeb;
+  border-radius: 14px;
+  background: linear-gradient(110deg, #eefaf8, #f8fcff);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip > span {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip p {
+  margin: 0;
+  color: #40576b;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip strong {
+  color: #087f8c;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn,
+#ravuksa-daily-learning .ravuksa-daily-next-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 18px;
+  border-radius: 11px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn {
+  border: 1px solid #087f8c;
+  background: #087f8c;
+  color: #ffffff;
+  box-shadow: 0 5px 13px rgba(8, 127, 140, 0.16);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-next-btn {
+  border: 1px solid #d8e2ec;
+  background: #ffffff;
+  color: #24384e;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn:hover,
+#ravuksa-daily-learning .ravuksa-daily-next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 19px rgba(20, 36, 58, 0.10);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn:hover {
+  background: #066d77;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-bottom-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 27px;
+  color: #8290a1;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 1.5px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-line {
+  width: 35px;
+  height: 1px;
+  background: #d7e4eb;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-disclaimer {
+  margin: 17px 0 0;
+  color: #8190a3;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@keyframes ravuksaDailyCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  #ravuksa-daily-learning {
+    padding: 43px 5%;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-heading {
+    margin-bottom: 22px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-eyebrow {
+    max-width: 100%;
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-heading > p {
+    font-size: 14px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-card {
+    padding: 21px 17px;
+    border-radius: 18px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-card-top {
+    gap: 11px;
+    padding-bottom: 17px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-icon {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 13px;
+    font-size: 23px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-tag {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-date {
+    font-size: 11px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number {
+    padding-left: 4px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number span {
+    font-size: 8px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number strong {
+    font-size: 12px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content {
+    padding: 22px 0;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content h3 {
+    font-size: 23px;
+    line-height: 1.55;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content > p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-tip {
+    padding: 14px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-bottom-line {
+    gap: 7px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-line {
+    width: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ravuksa-daily-learning .ravuksa-daily-card {
+    animation: none !important;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn {
+    transition: none !important;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn:hover,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn:hover {
+    transform: none;
+  }
+}
+
+/* END RAVUKSA DAILY LEARNING CSS */
+    
     /* RAVUKSA FINTECH - Premium Explore Cards */
 
 #quick-access {
