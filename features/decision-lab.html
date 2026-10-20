@@ -1,73 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="theme-color" content="#0b1f3a">
-  <meta name="description" content="Learn budgeting, emergency funds, saving and financial risk through interactive educational scenarios.">
-
-  <link rel="manifest" href="../manifest.json">
-
-  <title>Financial Decision Lab | RAVUKSA FINTECH</title>
-
-  <style>
+  <meta name="description" content="सरल हिंदी और English में वित्तीय फैसले, बजट, बचत और जोखिम के बारे में सीखें। Learn financial decisions through simple Hindi and English.">
+  <link rel="manifest" href="../manifest.json">  <title>Financial Decision Lab | RAVUKSA FINTECH</title>  <style>
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
       background: #f3f7fc;
       color: #18304d;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .topbar {
       background: #0b1f3a;
       color: white;
-      padding: 18px 16px;
+      padding: 22px 16px;
       text-align: center;
     }
 
     .topbar h1 {
       margin: 0;
-      font-size: 25px;
+      font-size: 26px;
     }
 
     .topbar p {
       margin: 5px 0 0;
       color: #dbeafe;
-      font-size: 14px;
     }
 
     .container {
       width: min(900px, 92%);
-      margin: 28px auto;
+      margin: 25px auto;
     }
 
-    .intro,
-    .lab-card,
-    .result-card {
+    .intro, .lab-card, .result-card {
       background: white;
       border: 1px solid #dce6f1;
       border-radius: 16px;
       padding: 22px;
       margin-bottom: 20px;
-      box-shadow: 0 5px 18px rgba(11, 31, 58, 0.05);
+      box-shadow: 0 5px 18px rgba(11,31,58,.05);
     }
 
-    .intro h2,
-    .lab-card h2 {
-      margin-top: 0;
+    h2 {
       color: #0b1f3a;
+      line-height: 1.5;
     }
 
     .scenario {
       background: #edf6ff;
       border-left: 4px solid #0d9488;
-      padding: 14px;
+      padding: 15px;
       border-radius: 8px;
       margin: 16px 0;
     }
@@ -81,27 +70,24 @@
     .option-btn {
       width: 100%;
       text-align: left;
-      padding: 14px;
+      padding: 15px;
       border: 1px solid #cbd8e6;
-      background: #fff;
+      background: white;
       border-radius: 10px;
       color: #18304d;
       font-size: 15px;
-      line-height: 1.5;
+      line-height: 1.8;
       cursor: pointer;
-      transition: border-color 0.2s, background 0.2s;
     }
 
     .option-btn:hover,
     .option-btn:focus-visible {
       border-color: #0d9488;
       background: #f0fdfa;
-      outline: none;
     }
 
     .option-btn:disabled {
       cursor: default;
-      opacity: 0.85;
     }
 
     .option-btn.correct {
@@ -115,14 +101,13 @@
     }
 
     .feedback {
-      padding: 15px;
+      padding: 16px;
       border-radius: 10px;
-      margin-top: 16px;
+      margin-top: 18px;
       background: #f1f5f9;
     }
 
-    .primary-btn,
-    .back-btn {
+    .primary-btn, .back-btn {
       display: inline-block;
       padding: 12px 18px;
       border: none;
@@ -138,14 +123,14 @@
       color: white;
     }
 
+    .primary-btn:hover {
+      background: #0f766e;
+    }
+
     .back-btn {
       background: #0b1f3a;
       color: white;
       margin-bottom: 20px;
-    }
-
-    .primary-btn:hover {
-      background: #0f766e;
     }
 
     .result-card {
@@ -154,15 +139,14 @@
     }
 
     .score {
-      font-size: 36px;
+      font-size: 38px;
       font-weight: bold;
       color: #0d9488;
     }
 
-    .disclaimer {
-      font-size: 13px;
+    .muted {
       color: #64748b;
-      margin: 20px 0;
+      font-size: 14px;
     }
 
     footer {
@@ -175,328 +159,317 @@
 
     @media (max-width: 600px) {
       .topbar h1 {
-        font-size: 21px;
+        font-size: 22px;
       }
 
-      .intro,
-      .lab-card,
-      .result-card {
+      .intro, .lab-card, .result-card {
         padding: 17px;
       }
     }
-  </style>
-</head>
+  </style></head><body><header class="topbar">
+  <h1>🧠 Financial Decision Lab</h1>
+  <p>वित्तीय फैसले सीखें • Learn to Make Better Financial Decisions</p>
+</header><main class="container">  <a class="back-btn" href="../index.html">
+    ← मुख्य वेबसाइट पर जाएँ | Back to RAVUKSA FINTECH
+  </a>  <section class="intro">
+    <h2>स्वागत है! | Welcome to the Decision Lab</h2><p>
+  यहाँ आप काल्पनिक परिस्थितियों के माध्यम से बजट, बचत, कर्ज़ और
+  वित्तीय जोखिम के बारे में सीख सकते हैं।
+</p>
 
-<body>
+<p>
+  Learn about budgeting, savings, debt and financial risks through
+  simple fictional situations.
+</p>
 
-  <header class="topbar">
-    <h1>🧠 Financial Decision Lab</h1>
-    <p>Learn to evaluate everyday financial decisions</p>
-  </header>
+<p>
+  हर सवाल पढ़ें, अपना जवाब चुनें और उसके बाद दिया गया explanation समझें।
+  यहाँ कोई असली लेन-देन नहीं होता।
+</p>
 
-  <main class="container">
+<p>
+  Read each question, select your answer and learn from the explanation.
+  No real financial transactions take place.
+</p>
 
-    <a class="back-btn" href="../index.html">← Back to RAVUKSA FINTECH</a>
+  </section>  <section class="lab-card" id="questionCard">
+    <p id="progress">स्थिति 1 / Scenario 1 of 5</p><h2 id="questionTitle"></h2>
 
-    <section class="intro">
-      <h2>Welcome to the Decision Lab</h2>
+<div class="scenario" id="scenarioText"></div>
 
-      <p>
-        Explore fictional financial situations and learn how budgeting,
-        emergency savings, debt management and risk awareness can help
-        you make more informed decisions.
-      </p>
+<h3>अपना जवाब चुनें | Choose Your Answer</h3>
 
-      <p>
-        Read each scenario, select an option and learn from the explanation.
-        There are no real transactions or financial commitments.
-      </p>
-    </section>
+<div class="options" id="options"></div>
 
-    <section class="lab-card" id="questionCard">
-      <p id="progress">Scenario 1 of 5</p>
+<div class="feedback" id="feedback" aria-live="polite" hidden></div>
 
-      <h2 id="questionTitle">Loading scenario...</h2>
+<button class="primary-btn" id="nextButton" type="button"
+  style="display:none;margin-top:18px;">
+  अगला सवाल | Next Scenario →
+</button>
 
-      <div class="scenario" id="scenarioText"></div>
+  </section>  <section class="result-card" id="resultCard" aria-live="polite">
+    <h2>अभ्यास पूरा हुआ! | Lab Completed!</h2><p>आपका अभ्यास स्कोर | Your Practice Score</p>
 
-      <div class="options" id="options"></div>
+<div class="score" id="finalScore">0/5</div>
 
-      <div
-        class="feedback"
-        id="feedback"
-        aria-live="polite"
-        hidden
-      ></div>
+<p id="resultMessage"></p>
 
-      <button
-        class="primary-btn"
-        id="nextButton"
-        type="button"
-        style="display:none;margin-top:18px;"
-      >
-        Next Scenario →
-      </button>
-    </section>
+<button class="primary-btn" id="restartButton" type="button">
+  फिर से अभ्यास करें | Try Again
+</button>
 
-    <section class="result-card" id="resultCard" aria-live="polite">
-      <h2>Lab Completed!</h2>
+  </section>  <section class="intro">
+    <h2>आपने क्या सीखा? | What You Practised</h2><p>✓ महीने का बजट बनाना | Monthly budgeting</p>
+<p>✓ Emergency Fund की ज़रूरत | Importance of emergency savings</p>
+<p>✓ ज़्यादा ब्याज वाले कर्ज़ को समझना | Understanding high-interest debt</p>
+<p>✓ वित्तीय जोखिम पहचानना | Recognising financial risks</p>
+<p>✓ बचत के लक्ष्य का मूल्यांकन | Evaluating savings goals</p>
 
-      <p>Your educational practice score:</p>
+<p class="muted">
+  यह केवल शैक्षणिक अभ्यास है, व्यक्तिगत वित्तीय या निवेश सलाह नहीं।
+  वास्तविक फैसले आपकी आय, ज़रूरतों, जिम्मेदारियों और परिस्थितियों पर निर्भर करते हैं।
+</p>
 
-      <div class="score" id="finalScore">0/5</div>
+<p class="muted">
+  Educational practice only, not personalised financial or investment advice.
+  Real decisions depend on your circumstances.
+</p>
 
-      <p id="resultMessage"></p>
+  </section></main><footer>
+  © <span id="year"></span> RAVUKSA FINTECH |
+  Financial Education &amp; Market Learning
+</footer><script>
+  const scenarios = [
+    {
+      title: "1. Monthly Budget — महीने का बजट",
 
-      <button class="primary-btn" id="restartButton" type="button">
-        Try Again
-      </button>
-    </section>
+      situation:
+        "एक व्यक्ति की मासिक आय ₹25,000 है और ज़रूरी खर्च ₹16,000 हैं। वह बचत भी करना चाहता है। उसे सबसे पहले क्या करना चाहिए?\n\nA person earns ₹25,000 per month and spends ₹16,000 on essential expenses. The person also wants to save money. What is a sensible first step?",
 
-    <section class="intro">
-      <h2>What You Practised</h2>
+      options: [
+        "बिना हिसाब के खर्च करना और अंत में पैसे बचें तो बचाना। | Spend freely and save only if money remains.",
+        "बजट बनाना, बचत का लक्ष्य तय करना और खर्चों का हिसाब रखना। | Make a budget, set a savings goal and track spending.",
+        "खर्च बढ़ाने के लिए हर महीने कर्ज़ लेना। | Borrow money every month to increase spending."
+      ],
 
-      <p>
-        ✓ Monthly budgeting and essential expenses
-      </p>
+      answer: 1,
 
-      <p>
-        ✓ Emergency fund awareness
-      </p>
+      explanation:
+        "सही तरीका बजट बनाना है। इससे पता चलता है कि पैसे कहाँ खर्च हो रहे हैं और कितनी बचत संभव है। | A budget helps track spending and identify realistic savings."
+    },
 
-      <p>
-        ✓ Understanding high-interest debt
-      </p>
+    {
+      title: "2. Emergency Fund — आपातकालीन बचत",
 
-      <p>
-        ✓ Evaluating financial risks
-      </p>
+      situation:
+        "आपके पास कुछ बचत है, लेकिन अचानक मेडिकल या घर की मरम्मत का खर्च आने पर परेशानी हो सकती है। आप क्या कर सकते हैं?\n\nYou have some savings, but an unexpected medical or repair bill could cause difficulty. What could you consider?",
 
-      <p>
-        ✓ Comparing needs, goals and available savings
-      </p>
+      options: [
+        "सारा पैसा जोखिम वाले निवेश में लगा देना। | Put all the money into a risky investment.",
+        "आपातकालीन खर्चों को नज़रअंदाज़ करना। | Ignore possible emergencies.",
+        "अपनी ज़रूरत और आय के अनुसार धीरे-धीरे अलग Emergency Fund बनाना। | Gradually build accessible emergency savings according to your needs."
+      ],
 
-      <p class="disclaimer">
-        Educational use only. These fictional scenarios are not personalised
-        financial, tax or investment advice. Real decisions depend on
-        individual circumstances.
-      </p>
-    </section>
+      answer: 2,
 
-  </main>
+      explanation:
+        "Emergency Fund अचानक आने वाले खर्चों में मदद कर सकता है। कितनी बचत चाहिए, यह आपकी ज़रूरतों और आय की स्थिरता पर निर्भर करता है। | Emergency savings can help with unexpected costs. The suitable amount depends on your circumstances."
+    },
 
-  <footer>
-    © <span id="year"></span> RAVUKSA FINTECH |
-    Financial Education &amp; Market Learning
-  </footer>
+    {
+      title: "3. High-Interest Debt — ज़्यादा ब्याज वाला कर्ज़",
 
-  <script>
-    const scenarios = [
-      {
-        title: "1. Monthly Budget",
-        situation:
-          "A fictional learner earns ₹25,000 per month. Essential expenses are ₹16,000. The learner also wants to save money. What is a sensible first step?",
-        options: [
-          "Spend freely and save only if money remains",
-          "Plan essential expenses, set a realistic savings goal and track spending",
-          "Borrow money every month to increase spending"
-        ],
-        answer: 1,
-        explanation:
-          "A budget helps track income, essential expenses and savings. A realistic plan should also allow for irregular expenses and changing circumstances."
-      },
-      {
-        title: "2. Emergency Fund",
-        situation:
-          "A learner has some savings but no emergency reserve. An unexpected medical or repair expense could arise. What should the learner consider?",
-        options: [
-          "Keep all available money in a risky asset",
-          "Ignore emergencies because they are unpredictable",
-          "Gradually build accessible emergency savings according to personal needs"
-        ],
-        answer: 2,
-        explanation:
-          "Accessible emergency savings can help cover unexpected costs. The appropriate amount depends on essential expenses, income stability and personal responsibilities."
-      },
-      {
-        title: "3. High-Interest Debt",
-        situation:
-          "A person has outstanding high-interest credit card debt and is considering a non-essential purchase. What should be evaluated first?",
-        options: [
-          "The debt interest, essential expenses and ability to repay",
-          "Only the advertised discount on the purchase",
-          "Whether another loan can be taken without reviewing its cost"
-        ],
-        answer: 0,
-        explanation:
-          "Understanding interest charges, repayment obligations and essential needs can help a person evaluate borrowing and discretionary spending more carefully."
-      },
-      {
-        title: "4. Financial Risk",
-        situation:
-          "Someone hears a claim that an opportunity guarantees unusually high returns with no risk. What is the most sensible response?",
-        options: [
-          "Commit all savings immediately",
-          "Check the claims, understand the risks and verify relevant official information",
-          "Trust the claim because it came from a popular social media account"
-        ],
-        answer: 1,
-        explanation:
-          "No investment opportunity should be assumed to be risk-free merely because someone promises high returns. Verification and independent research matter."
-      },
-      {
-        title: "5. Saving for a Goal",
-        situation:
-          "A learner plans to pay an important expense soon but is considering placing the required money into a highly volatile investment. What should be considered?",
-        options: [
-          "Choose the most volatile option because it may rise quickly",
-          "Ignore when the money will be needed",
-          "Consider the time available, possible losses, liquidity and the importance of the goal"
-        ],
-        answer: 2,
-        explanation:
-          "Financial choices should account for when money is needed, the ability to withstand losses and the consequences of not having funds available on time."
-      }
-    ];
+      situation:
+        "किसी व्यक्ति पर Credit Card का ज़्यादा ब्याज वाला कर्ज़ है। वह एक गैर-ज़रूरी चीज़ खरीदना चाहता है। पहले उसे क्या समझना चाहिए?\n\nA person has high-interest credit card debt and wants to buy a non-essential item. What should be considered first?",
 
-    let currentQuestion = 0;
-    let score = 0;
-    let answered = false;
+      options: [
+        "ब्याज, ज़रूरी खर्च और कर्ज़ चुकाने की क्षमता। | Interest costs, essential expenses and repayment ability.",
+        "केवल सामान पर मिलने वाली छूट। | Only the discount on the item.",
+        "बिना हिसाब किए दूसरा कर्ज़ लेना। | Taking another loan without reviewing its cost."
+      ],
 
-    const questionCard = document.getElementById("questionCard");
-    const resultCard = document.getElementById("resultCard");
-    const progress = document.getElementById("progress");
-    const questionTitle = document.getElementById("questionTitle");
-    const scenarioText = document.getElementById("scenarioText");
-    const optionsContainer = document.getElementById("options");
-    const feedback = document.getElementById("feedback");
-    const nextButton = document.getElementById("nextButton");
+      answer: 0,
 
-    function showScenario() {
-      answered = false;
+      explanation:
+        "कर्ज़ का ब्याज और भुगतान की ज़िम्मेदारी समझना ज़रूरी है। खरीदने से पहले यह भी देखें कि ज़रूरी खर्च पूरे हो रहे हैं या नहीं। | Understand interest costs and repayment obligations before making non-essential purchases."
+    },
 
-      const item = scenarios[currentQuestion];
+    {
+      title: "4. Financial Risk — वित्तीय जोखिम",
 
-      progress.textContent =
-        "Scenario " + (currentQuestion + 1) + " of " + scenarios.length;
+      situation:
+        "कोई व्यक्ति दावा करता है कि एक योजना में बहुत ज़्यादा रिटर्न मिलेगा और कोई जोखिम नहीं है। आपको क्या करना चाहिए?\n\nSomeone claims that an opportunity offers very high returns with no risk. What should you do?",
 
-      questionTitle.textContent = item.title;
-      scenarioText.textContent = item.situation;
+      options: [
+        "अपनी सारी बचत तुरंत लगा देना। | Invest all your savings immediately.",
+        "दावे की जाँच करना, जोखिम समझना और आधिकारिक जानकारी देखना। | Verify the claims, understand the risks and check official information.",
+        "केवल Social Media पर लोकप्रिय होने के कारण भरोसा करना। | Trust it because it is popular on social media."
+      ],
 
-      optionsContainer.replaceChildren();
-      feedback.hidden = true;
-      feedback.textContent = "";
-      nextButton.style.display = "none";
+      answer: 1,
 
-      item.options.forEach(function(option, index) {
-        const button = document.createElement("button");
+      explanation:
+        "बहुत ज़्यादा रिटर्न और शून्य जोखिम का दावा चेतावनी का संकेत हो सकता है। पैसे लगाने से पहले स्वतंत्र जाँच और जोखिम की समझ ज़रूरी है। | Promises of high returns without risk can be a warning sign. Independent research matters."
+    },
 
-        button.type = "button";
-        button.className = "option-btn";
-        button.textContent =
-          String.fromCharCode(65 + index) + ". " + option;
+    {
+      title: "5. Saving for a Goal — लक्ष्य के लिए बचत",
 
-        button.addEventListener("click", function() {
-          selectAnswer(index);
-        });
+      situation:
+        "आपको कुछ महीनों में एक ज़रूरी खर्च के लिए पैसे चाहिए। आप उन पैसों को ऐसे निवेश में लगाने के बारे में सोच रहे हैं जिसकी कीमत बहुत ऊपर-नीचे हो सकती है। क्या देखें?\n\nYou need money for an important expense in a few months. You are considering a highly volatile investment. What should you evaluate?",
 
-        optionsContainer.appendChild(button);
-      });
+      options: [
+        "सबसे ज़्यादा उतार-चढ़ाव वाला विकल्प चुनना। | Choose the most volatile option.",
+        "यह न सोचना कि पैसे कब चाहिए होंगे। | Ignore when the money will be needed.",
+        "समय, संभावित नुकसान, पैसे की उपलब्धता और लक्ष्य की ज़रूरत को समझना। | Consider timing, possible losses, access to money and the importance of the goal."
+      ],
+
+      answer: 2,
+
+      explanation:
+        "किसी लक्ष्य के लिए पैसा चुनते समय यह समझना ज़रूरी है कि पैसा कब चाहिए और नुकसान होने पर क्या उस ज़रूरी खर्च को पूरा कर पाएँगे। | Financial decisions should account for when the money is needed and whether losses could affect the goal."
     }
+  ];
 
-    function selectAnswer(selectedIndex) {
-      if (answered) return;
+  let currentQuestion = 0;
+  let score = 0;
+  let answered = false;
 
-      answered = true;
+  const questionCard = document.getElementById("questionCard");
+  const resultCard = document.getElementById("resultCard");
+  const progress = document.getElementById("progress");
+  const questionTitle = document.getElementById("questionTitle");
+  const scenarioText = document.getElementById("scenarioText");
+  const optionsContainer = document.getElementById("options");
+  const feedback = document.getElementById("feedback");
+  const nextButton = document.getElementById("nextButton");
 
-      const item = scenarios[currentQuestion];
-      const buttons = optionsContainer.querySelectorAll("button");
-      const isCorrect = selectedIndex === item.answer;
+  function showScenario() {
+    answered = false;
 
-      if (isCorrect) {
-        score++;
-      }
+    const item = scenarios[currentQuestion];
 
-      buttons.forEach(function(button, index) {
-        button.disabled = true;
+    progress.textContent =
+      "स्थिति " + (currentQuestion + 1) +
+      " / Scenario " + (currentQuestion + 1) +
+      " of " + scenarios.length;
 
-        if (index === item.answer) {
-          button.classList.add("correct");
-        } else if (index === selectedIndex) {
-          button.classList.add("incorrect");
-        }
+    questionTitle.textContent = item.title;
+    scenarioText.textContent = item.situation;
+
+    optionsContainer.replaceChildren();
+    feedback.hidden = true;
+    feedback.textContent = "";
+    nextButton.style.display = "none";
+
+    item.options.forEach(function(option, index) {
+      const button = document.createElement("button");
+
+      button.type = "button";
+      button.className = "option-btn";
+      button.textContent =
+        String.fromCharCode(65 + index) + ". " + option;
+
+      button.addEventListener("click", function() {
+        selectAnswer(index);
       });
 
-      feedback.hidden = false;
-      feedback.textContent =
-        (isCorrect ? "✓ Correct! " : "Learning point: ") +
-        item.explanation;
+      optionsContainer.appendChild(button);
+    });
+  }
 
-      nextButton.textContent =
-        currentQuestion === scenarios.length - 1
-          ? "View Results →"
-          : "Next Scenario →";
+  function selectAnswer(selectedIndex) {
+    if (answered) return;
 
-      nextButton.style.display = "inline-block";
-    }
+    answered = true;
 
-    function showResults() {
-      questionCard.style.display = "none";
-      resultCard.style.display = "block";
+    const item = scenarios[currentQuestion];
+    const buttons = optionsContainer.querySelectorAll("button");
+    const isCorrect = selectedIndex === item.answer;
 
-      document.getElementById("finalScore").textContent =
-        score + "/" + scenarios.length;
+    if (isCorrect) score++;
 
-      let message;
+    buttons.forEach(function(button, index) {
+      button.disabled = true;
 
-      if (score === scenarios.length) {
-        message =
-          "Excellent work! Review the explanations to reinforce your learning.";
-      } else if (score >= 3) {
-        message =
-          "Good effort! Review the explanations and try again to strengthen your understanding.";
-      } else {
-        message =
-          "Every attempt is a learning opportunity. Review the explanations and practise again.";
-      }
-
-      document.getElementById("resultMessage").textContent = message;
-
-      resultCard.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
-    nextButton.addEventListener("click", function() {
-      if (currentQuestion < scenarios.length - 1) {
-        currentQuestion++;
-        showScenario();
-      } else {
-        showResults();
+      if (index === item.answer) {
+        button.classList.add("correct");
+      } else if (index === selectedIndex) {
+        button.classList.add("incorrect");
       }
     });
 
-    document.getElementById("restartButton").addEventListener("click", function() {
-      currentQuestion = 0;
-      score = 0;
+    feedback.hidden = false;
 
-      resultCard.style.display = "none";
-      questionCard.style.display = "block";
+    feedback.textContent =
+      (isCorrect
+        ? "✓ सही जवाब! | Correct Answer! "
+        : "सीखने की बात | Learning Point: ") +
+      item.explanation;
 
+    nextButton.textContent =
+      currentQuestion === scenarios.length - 1
+        ? "परिणाम देखें | View Results →"
+        : "अगला सवाल | Next Scenario →";
+
+    nextButton.style.display = "inline-block";
+  }
+
+  function showResults() {
+    questionCard.style.display = "none";
+    resultCard.style.display = "block";
+
+    document.getElementById("finalScore").textContent =
+      score + "/" + scenarios.length;
+
+    let message;
+
+    if (score === scenarios.length) {
+      message =
+        "बहुत बढ़िया! सभी जवाब सही हैं। Explanations पढ़कर अपनी समझ और मज़बूत करें। | Excellent! Review the explanations to reinforce your learning.";
+    } else if (score >= 3) {
+      message =
+        "अच्छा प्रयास! Explanations पढ़ें और फिर से अभ्यास करें। | Good effort! Review the explanations and try again.";
+    } else {
+      message =
+        "कोई बात नहीं, अभ्यास से सीखना आसान होता है। जवाबों के कारण पढ़ें और दोबारा कोशिश करें। | Every attempt is a learning opportunity. Review the explanations and try again.";
+    }
+
+    document.getElementById("resultMessage").textContent = message;
+
+    resultCard.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  nextButton.addEventListener("click", function() {
+    if (currentQuestion < scenarios.length - 1) {
+      currentQuestion++;
       showScenario();
+    } else {
+      showResults();
+    }
+  });
 
-      questionCard.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    });
+  document.getElementById("restartButton").addEventListener("click", function() {
+    currentQuestion = 0;
+    score = 0;
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    resultCard.style.display = "none";
+    questionCard.style.display = "block";
 
     showScenario();
-  </script>
 
-</body>
-</html>
+    questionCard.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  showScenario();
+</script></body>
+  </html>
