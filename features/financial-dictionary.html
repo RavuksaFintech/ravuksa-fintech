@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1f3a">
+
+  <title>Financial Dictionary | RAVUKSA FINTECH</title>
+
+  <meta name="description" content="आसान हिंदी और English में वित्तीय शब्दों के अर्थ और उदाहरण सीखें। Learn financial terms in simple Hindi and English with RAVUKSA FINTECH.">
+
+  <link rel="manifest" href="../manifest.json">
+
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --blue: #1769d2;
+      --light-blue: #edf5ff;
+      --text: #243247;
+      --muted: #64748b;
+      --border: #dce5ef;
+      --bg: #f5f8fc;
+      --white: #ffffff;
+      --green: #087443;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      background: var(--navy);
+      color: white;
+      padding: 14px 18px;
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+
+    .back-link {
+      color: white;
+      text-decoration: none;
+      border: 1px solid #68809c;
+      border-radius: 9px;
+      padding: 7px 12px;
+      font-size: 14px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b1f3a, #174c85);
+      color: white;
+      padding: 42px 18px 46px;
+      text-align: center;
+    }
+
+    .hero-inner {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 5px 12px;
+      border: 1px solid #7699bf;
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 {
+      font-size: clamp(29px, 5vw, 43px);
+      line-height: 1.25;
+      margin: 18px 0 12px;
+    }
+
+    .hero p {
+      max-width: 690px;
+      margin: 0 auto;
+      color: #e1ecf8;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 26px 16px 45px;
+    }
+
+    .search-panel {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 25px rgba(11, 31, 58, 0.05);
+      margin-top: -48px;
+      position: relative;
+    }
+
+    .search-panel label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 14px 15px;
+      border: 1px solid #b9c9dc;
+      border-radius: 10px;
+      font-size: 16px;
+      background: white;
+      color: var(--text);
+    }
+
+    #searchInput:focus {
+      outline: 3px solid #d6e8ff;
+      border-color: var(--blue);
+    }
+
+    .search-help {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 8px 0 0;
+    }
+
+    .category-title {
+      margin: 30px 0 12px;
+      font-size: 17px;
+    }
+
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .category-btn {
+      background: white;
+      color: var(--navy);
+      border: 1px solid var(--border);
+      padding: 9px 13px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: white;
+    }
+
+    .results-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 27px 0 16px;
+    }
+
+    .results-heading h2 {
+      margin: 0;
+      font-size: 23px;
+      color: var(--navy);
+    }
+
+    #resultCount {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dictionary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .term-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 19px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .term-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(11, 31, 58, 0.07);
+    }
+
+    .term-category {
+      display: inline-block;
+      background: var(--light-blue);
+      color: #1454a0;
+      padding: 4px 9px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .term-card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      margin: 12px 0 3px;
+    }
+
+    .term-hindi {
+      color: var(--green);
+      font-weight: 700;
+      margin: 0 0 12px;
+    }
+
+    .term-label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    .term-definition {
+      margin: 3px 0 0;
+      font-size: 14px;
+    }
+
+    .term-example {
+      background: #f5f8fc;
+      border-left: 3px solid var(--blue);
+      padding: 10px 12px;
+      border-radius: 5px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      background: white;
+      text-align: center;
+      padding: 35px 18px;
+      border: 1px dashed #b9c9dc;
+      border-radius: 14px;
+    }
+
+    .empty-state h3 {
+      margin-top: 0;
+      color: var(--navy);
+    }
+
+    .clear-btn {
+      margin-top: 8px;
+      padding: 9px 14px;
+      border: 0;
+      background: var(--blue);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .disclaimer {
+      margin-top: 28px;
+      padding: 17px;
+      background: #fff8e8;
+      border: 1px solid #f0dfb5;
+      border-radius: 12px;
+      font-size: 13px;
+      color: #654f1e;
+    }
+
+    .footer {
+      background: var(--navy);
+      color: #e0e9f4;
+      text-align: center;
+      padding: 23px 16px;
+      font-size: 13px;
+    }
+
+    .footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding: 34px 16px 42px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .dictionary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-panel {
+        padding: 16px;
+      }
+
+      .term-card {
+        padding: 16px;
+      }
+
+      .results-heading h2 {
+        font-size: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">RAVUKSA FINTECH</div>
+      <a class="back-link" href="../index.html">← Home / होम</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">FINANCIAL EDUCATION</span>
+      <h1>Financial Dictionary<br>वित्तीय शब्दकोश</h1>
+      <p>
+        मुश्किल वित्तीय शब्दों को आसान भाषा में समझिए।
+        Understand financial terms in simple Hindi and English.
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <section class="search-panel" aria-label="Dictionary search">
+      <label for="searchInput">
+        🔎 शब्द खोजें / Search a Financial Term
+      </label>
+
+      <input
+        id="searchInput"
+        type="search"
+        placeholder="जैसे Share, SIP, शेयर, बैंक..."
+        autocomplete="off"
+        aria-describedby="searchHelp"
+      >
+
+      <p class="search-help" id="searchHelp">
+        English शब्द, हिंदी शब्द या अर्थ का कोई हिस्सा लिखें।
+        Type an English term, Hindi term or part of a definition.
+      </p>
+    </section>
+
+    <h2 class="category-title">श्रेणी चुनें / Choose a Category</h2>
+
+    <div class="categories" id="categoryButtons">
+      <button type="button" class="category-btn active" data-category="All">
+        सभी / All
+      </button>
+      <button type="button" class="category-btn" data-category="Stock Market">
+        Stock Market
+      </button>
+      <button type="button" class="category-btn" data-category="Mutual Funds">
+        Mutual Funds
+      </button>
+      <button type="button" class="category-btn" data-category="Banking">
+        Banking
+      </button>
+      <button type="button" class="category-btn" data-category="Personal Finance">
+        Personal Finance
+      </button>
+      <button type="button" class="category-btn" data-category="Risk & Safety">
+        Risk & Safety
+      </button>
+    </div>
+
+    <div class="results-heading">
+      <h2>वित्तीय शब्द / Financial Terms</h2>
+      <span id="resultCount" aria-live="polite"></span>
+    </div>
+
+    <section
+      class="dictionary-grid"
+      id="dictionaryGrid"
+      aria-live="polite"
+    ></section>
+
+    <aside class="disclaimer">
+      <strong>महत्वपूर्ण सूचना / Important Notice:</strong><br>
+      यह शब्दकोश केवल वित्तीय शिक्षा और सामान्य जानकारी के लिए है।
+      यह व्यक्तिगत वित्तीय, कानूनी या निवेश सलाह नहीं है।
+      वास्तविक वित्तीय निर्णय लेने से पहले संबंधित जानकारी और जोखिमों की जाँच करें।
+      <br><br>
+      This dictionary is for financial education and general information only.
+      It does not provide personalized financial, legal or investment advice.
+    </aside>
+
+  </main>
+
+  <footer class="footer">
+    <p><strong>RAVUKSA FINTECH</strong></p>
+    <p>Learn. Understand. Make Informed Decisions.</p>
+    <p>सीखिए • समझिए • आगे बढ़िए</p>
+  </footer>
+
+  <script>
+    const financialTerms = [
+      {
+        term: "Share",
+        hindi: "शेयर",
+        category: "Stock Market",
+        definition: "A unit representing ownership in a company.",
+        meaning: "किसी कंपनी में हिस्सेदारी की एक इकाई।",
+        example: "Example: If you own a share, you own a small part of that company.",
+        exampleHi: "उदाहरण: किसी कंपनी का एक शेयर रखने का अर्थ है उस कंपनी में छोटी-सी हिस्सेदारी होना।"
+      },
+      {
+        term: "Stock Exchange",
+        hindi: "शेयर बाज़ार",
+        category: "Stock Market",
+        definition: "A regulated marketplace where eligible securities are bought and sold.",
+        meaning: "एक विनियमित बाज़ार जहाँ पात्र प्रतिभूतियों की खरीद-बिक्री होती है।",
+        example: "Examples in India include NSE and BSE.",
+        exampleHi: "भारत में NSE और BSE इसके उदाहरण हैं।"
+      },
+      {
+        term: "Demat Account",
+        hindi: "डीमैट खाता",
+        category: "Stock Market",
+        definition: "An account used to hold securities electronically.",
+        meaning: "शेयर और अन्य प्रतिभूतियों को इलेक्ट्रॉनिक रूप में रखने वाला खाता।",
+        example: "It is similar to a digital holding account for eligible securities.",
+        exampleHi: "इसे प्रतिभूतियों को डिजिटल रूप में रखने वाला खाता समझ सकते हैं।"
+      },
+      {
+        term: "Trading Account",
+        hindi: "ट्रेडिंग खाता",
+        category: "Stock Market",
+        definition: "An account used to place buy and sell orders through a broker.",
+        meaning: "ब्रोकर के माध्यम से खरीदने और बेचने के ऑर्डर देने के लिए इस्तेमाल होने वाला खाता।",
+        example: "A user may use a trading account to place an order on an exchange.",
+        exampleHi: "इसके माध्यम से उपयोगकर्ता एक्सचेंज पर खरीद या बिक्री का ऑर्डर दे सकता है।"
+      },
+      {
+        term: "Bull Market",
+        hindi: "तेज़ी वाला बाज़ार",
+        category: "Stock Market",
+        definition: "A market period in which prices generally trend upward.",
+        meaning: "ऐसी अवधि जिसमें बाज़ार की कीमतों में सामान्यतः बढ़त का रुझान होता है।",
+        example: "A broad and sustained rise in prices may indicate a bull market.",
+        exampleHi: "कीमतों में व्यापक और लगातार बढ़त तेज़ी वाले बाज़ार का संकेत हो सकती है।"
+      },
+      {
+        term: "Bear Market",
+        hindi: "मंदी वाला बाज़ार",
+        category: "Stock Market",
+        definition: "A market period in which prices generally trend downward.",
+        meaning: "ऐसी अवधि जिसमें बाज़ार की कीमतों में सामान्यतः गिरावट का रुझान होता है।",
+        example: "A prolonged broad market decline may be described as a bear market.",
+        exampleHi: "बाज़ार में लंबे समय तक व्यापक गिरावट को मंदी वाला बाज़ार कहा जा सकता है।"
+      },
+      {
+        term: "Market Index",
+        hindi: "बाज़ार सूचकांक",
+        category: "Stock Market",
+        definition: "A measure that tracks the performance of a selected group of securities.",
+        meaning: "चुनी हुई प्रतिभूतियों के समूह के प्रदर्शन को मापने वाला सूचक।",
+        example: "Nifty 50 and Sensex are well-known Indian market indices.",
+        exampleHi: "Nifty 50 और Sensex भारत के प्रसिद्ध बाज़ार सूचकांक हैं।"
+      },
+      {
+        term: "Dividend",
+        hindi: "लाभांश",
+        category: "Stock Market",
+        definition: "A distribution a company may make to eligible shareholders, subject to applicable rules and approvals.",
+        meaning: "नियमों और आवश्यक मंज़ूरियों के अधीन कंपनी द्वारा पात्र शेयरधारकों को दिया जाने वाला लाभांश।",
+        example: "A dividend is not guaranteed and can vary or be absent.",
+        exampleHi: "लाभांश की गारंटी नहीं होती; इसकी राशि बदल सकती है या लाभांश नहीं भी मिल सकता।"
+      },
+      {
+        term: "IPO",
+        hindi: "प्रारंभिक सार्वजनिक निर्गम",
+        category: "Stock Market",
+        definition: "An Initial Public Offering is when a company offers shares to the public under applicable regulations.",
+        meaning: "जब कोई कंपनी लागू नियमों के अनुसार पहली बार जनता को अपने शेयर पेश करती है।",
+        example: "An IPO has offer documents, eligibility conditions and investment risks.",
+        exampleHi: "IPO में ऑफर दस्तावेज़, पात्रता की शर्तें और निवेश जोखिम होते हैं।"
+      },
+      {
+        term: "Market Capitalization",
+        hindi: "बाज़ार पूँजीकरण",
+        category: "Stock Market",
+        definition: "The market value of a company's outstanding shares, generally calculated as share price multiplied by outstanding shares.",
+        meaning: "कंपनी के कुल जारी और बकाया शेयरों का बाज़ार मूल्य।",
+        example: "Share price × outstanding shares is the basic calculation.",
+        exampleHi: "मूल गणना: शेयर की कीमत × कुल बकाया शेयर।"
+      },
+      {
+        term: "Mutual Fund",
+        hindi: "म्यूचुअल फंड",
+        category: "Mutual Funds",
+        definition: "An investment vehicle that pools money from investors and invests according to its stated objective.",
+        meaning: "ऐसा निवेश माध्यम जो कई निवेशकों का पैसा एकत्र करके घोषित उद्देश्य के अनुसार निवेश करता है।",
+        example: "Different funds may invest in shares, bonds or other permitted assets.",
+        exampleHi: "अलग-अलग फंड शेयर, बॉन्ड या अन्य अनुमत संपत्तियों में निवेश कर सकते हैं।"
+      },
+      {
+        term: "NAV",
+        hindi: "नेट एसेट वैल्यू",
+        category: "Mutual Funds",
+        definition: "Net Asset Value represents a mutual fund scheme's assets minus liabilities per unit, calculated under applicable rules.",
+        meaning: "म्यूचुअल फंड की संपत्तियों में से देनदारियाँ घटाने के बाद प्रति यूनिट मूल्य।",
+        example: "NAV is not by itself a measure of whether a fund is cheap or expensive.",
+        exampleHi: "केवल NAV देखकर यह तय नहीं होता कि कोई फंड सस्ता है या महँगा।"
+      },
+      {
+        term: "SIP",
+        hindi: "सिस्टेमैटिक इन्वेस्टमेंट प्लान",
+        category: "Mutual Funds",
+        definition: "A method of investing a specified amount at regular intervals in a mutual fund.",
+        meaning: "म्यूचुअल फंड में नियमित अंतराल पर तय राशि निवेश करने का तरीका।",
+        example: "A monthly SIP invests at regular intervals, but returns are not guaranteed.",
+        exampleHi: "मासिक SIP में नियमित निवेश होता है, लेकिन रिटर्न की गारंटी नहीं होती।"
+      },
+      {
+        term: "Expense Ratio",
+        hindi: "व्यय अनुपात",
+        category: "Mutual Funds",
+        definition: "A measure of a mutual fund scheme's recurring operating expenses relative to its assets.",
+        meaning: "फंड की संपत्तियों के अनुपात में उसके नियमित संचालन खर्च का माप।",
+        example: "Costs can affect an investor's overall returns over time.",
+        exampleHi: "समय के साथ खर्च निवेशक के कुल रिटर्न को प्रभावित कर सकते हैं।"
+      },
+      {
+        term: "Asset Allocation",
+        hindi: "संपत्ति आवंटन",
+        category: "Mutual Funds",
+        definition: "How money is distributed among asset classes such as equities, bonds and cash.",
+        meaning: "पैसे को शेयर, बॉन्ड और नकदी जैसी अलग-अलग संपत्ति श्रेणियों में बाँटना।",
+        example: "Allocation depends on goals, time horizon and risk tolerance.",
+        exampleHi: "आवंटन लक्ष्य, समयावधि और जोखिम सहने की क्षमता पर निर्भर करता है।"
+      },
+      {
+        term: "Bank Account",
+        hindi: "बैंक खाता",
+        category: "Banking",
+        definition: "An account maintained with a bank for permitted financial transactions.",
+        meaning: "बैंक में खोला गया खाता, जिसका उपयोग अनुमत वित्तीय लेन-देन के लिए होता है।",
+        example: "A savings account can be used to deposit and withdraw money.",
+        exampleHi: "बचत खाते से पैसे जमा और निकाले जा सकते हैं।"
+      },
+      {
+        term: "Savings Account",
+        hindi: "बचत खाता",
+        category: "Banking",
+        definition: "A bank account generally used to keep money accessible while potentially earning interest.",
+        meaning: "पैसे सुरक्षित रखने और आवश्यकता पर उपलब्ध रखने के लिए सामान्यतः इस्तेमाल होने वाला बैंक खाता।",
+        example: "Interest rates and account conditions vary by bank and product.",
+        exampleHi: "ब्याज दर और खाते की शर्तें बैंक तथा उत्पाद के अनुसार अलग हो सकती हैं।"
+      },
+      {
+        term: "Fixed Deposit",
+        hindi: "सावधि जमा",
+        category: "Banking",
+        definition: "A deposit placed with a bank or eligible institution for a specified period under stated terms.",
+        meaning: "निर्धारित शर्तों के अनुसार तय अवधि के लिए जमा की गई राशि।",
+        example: "Check the interest terms, premature withdrawal rules and applicable deposit protection.",
+        exampleHi: "ब्याज की शर्तें, समय से पहले निकासी के नियम और लागू जमा सुरक्षा जाँचें।"
+      },
+      {
+        term: "Interest Rate",
+        hindi: "ब्याज दर",
+        category: "Banking",
+        definition: "The percentage charged on borrowing or paid on deposits over a specified period.",
+        meaning: "उधार पर लिया जाने वाला या जमा पर दिया जाने वाला प्रतिशत।",
+        example: "Always check whether a rate is annual, fixed or variable.",
+        exampleHi: "जाँचें कि दर सालाना है, स्थिर है या बदलने वाली है।"
+      },
+      {
+        term: "Inflation",
+        hindi: "महँगाई",
+        category: "Personal Finance",
+        definition: "A general increase in prices over time that reduces the purchasing power of money.",
+        meaning: "समय के साथ कीमतों में सामान्य वृद्धि, जिससे पैसे की खरीदने की क्षमता घटती है।",
+        example: "If prices rise, the same amount of money may buy fewer goods.",
+        exampleHi: "कीमतें बढ़ने पर उतने ही पैसे से पहले की तुलना में कम सामान मिल सकता है।"
+      },
+      {
+        term: "Budget",
+        hindi: "बजट",
+        category: "Personal Finance",
+        definition: "A plan for expected income and expenses over a period.",
+        meaning: "किसी अवधि की अनुमानित आय और खर्च का प्लान।",
+        example: "A monthly budget helps track where money is coming from and going.",
+        exampleHi: "मासिक बजट से पता चलता है कि पैसा कहाँ से आ रहा है और कहाँ खर्च हो रहा है।"
+      },
+      {
+        term: "Emergency Fund",
+        hindi: "आपातकालीन निधि",
+        category: "Personal Finance",
+        definition: "Money set aside for unexpected expenses or income disruptions.",
+        meaning: "अचानक होने वाले खर्चों या आय में रुकावट के लिए अलग रखी गई राशि।",
+        example: "It should be accessible when needed and suited to a person's circumstances.",
+        exampleHi: "यह जरूरत के समय उपलब्ध होनी च
