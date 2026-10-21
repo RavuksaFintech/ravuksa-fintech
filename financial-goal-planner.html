@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1f3a">
+<title>Financial Goal Planner | RAVUKSA FINTECH</title>
+<meta name="description" content="Plan savings goals with a simple bilingual financial goal planner from RAVUKSA FINTECH.">
+<link rel="manifest" href="../manifest.json"><style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#182b49;line-height:1.6}
+header{background:linear-gradient(135deg,#0b1f3a,#174a7e);color:white;text-align:center;padding:32px 16px}
+header h1{margin:0 0 8px;font-size:clamp(26px,5vw,38px)}
+header p{margin:0;color:#e0ebf8}
+.wrap{max-width:850px;margin:auto;padding:22px 15px}
+.back{display:inline-block;margin-bottom:18px;text-decoration:none;color:#0759b5;font-weight:bold}
+.card{background:#fff;border:1px solid #e1e8f0;border-radius:16px;padding:20px;margin-bottom:18px;box-shadow:0 5px 18px rgba(20,40,70,.04)}
+h2{margin-top:0;font-size:23px}
+label{display:block;font-weight:bold;margin:15px 0 6px}
+input,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font-size:16px;background:white;color:#172b4d}
+input:focus,select:focus{outline:2px solid #2563eb;border-color:#2563eb}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px}
+button{border:0;border-radius:10px;background:#0b1f3a;color:white;padding:13px 18px;font-size:16px;font-weight:bold;cursor:pointer;margin-top:20px;width:100%}
+button:hover{background:#174a7e}
+.result{display:none}
+.result h2{color:#14532d}
+.result-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:12px}
+.metric{background:#f0f6ff;border:1px solid #dce9fa;padding:15px;border-radius:12px}
+.metric span{display:block;font-size:13px;color:#52647b}
+.metric strong{display:block;font-size:23px;margin-top:5px;overflow-wrap:anywhere;color:#123d76}
+.progress-track{height:14px;background:#e2e8f0;border-radius:20px;overflow:hidden;margin-top:10px}
+.progress-bar{height:100%;width:0;background:#16a34a;transition:width .3s}
+.note{font-size:13px;color:#5b6b80}
+.error{color:#b91c1c;font-weight:bold;margin-top:12px}
+.disclaimer{background:#fff8e7;border:1px solid #f0dfb2;border-radius:12px;padding:15px;font-size:13px}
+footer{text-align:center;padding:22px;color:#607086;font-size:13px}
+</style></head><body>
+<header>
+  <h1>🎯 Financial Goal Planner</h1>
+  <p>वित्तीय लक्ष्य योजना | Plan Your Savings, Step by Step</p>
+</header><main class="wrap">
+  <a class="back" href="../index.html">← Back to RAVUKSA FINTECH</a>  <section class="card">
+    <h2>1. Set Your Goal | अपना लक्ष्य चुनें</h2>
+    <p>अपने लक्ष्य की जानकारी भरें। सभी राशियाँ भारतीय रुपये (₹) में दर्ज करें।</p><label for="goalName">Goal Name | लक्ष्य का नाम</label>
+<select id="goalName">
+  <option value="Emergency Fund">Emergency Fund — आपातकालीन बचत</option>
+  <option value="Education">Education — शिक्षा</option>
+  <option value="Home">Home — घर</option>
+  <option value="Vehicle">Vehicle — वाहन</option>
+  <option value="Travel">Travel — यात्रा</option>
+  <option value="Other">Other — अन्य लक्ष्य</option>
+</select>
+
+<div class="grid">
+  <div>
+    <label for="target">Target Amount (₹) | लक्ष्य की राशि</label>
+    <input id="target" type="number" min="1" step="any" placeholder="e.g. 200000">
+  </div>
+  <div>
+    <label for="saved">Current Savings (₹) | मौजूदा बचत</label>
+    <input id="saved" type="number" min="0" step="any" value="0">
+  </div>
+  <div>
+    <label for="months">Time to Goal (months) | समय (महीने)</label>
+    <input id="months" type="number" min="1" max="1200" step="1" placeholder="e.g. 24">
+  </div>
+</div>
+
+<button id="calculateBtn" type="button">Calculate My Plan | योजना बनाएँ</button>
+<p id="error" class="error" role="alert"></p>
+
+  </section>  <section id="result" class="card result" aria-live="polite">
+    <h2>2. Your Savings Plan | आपकी बचत योजना</h2>
+    <p id="summary"></p><div class="result-grid">
+  <div class="metric">
+    <span>Remaining Amount | बाकी राशि</span>
+    <strong id="remaining">₹0</strong>
+  </div>
+  <div class="metric">
+    <span>Monthly Savings Needed | हर महीने बचत</span>
+    <strong id="monthly">₹0</strong>
+  </div>
+  <div class="metric">
+    <span>Weekly Estimate | साप्ताहिक अनुमान</span>
+    <strong id="weekly">₹0</strong>
+  </div>
+  <div class="metric">
+    <span>Current Goal Progress | लक्ष्य की प्रगति</span>
+    <strong id="progressText">0%</strong>
+  </div>
+</div>
+
+<h3>Goal Progress | लक्ष्य की प्रगति</h3>
+<div class="progress-track" role="progressbar" id="progressTrack" aria-label="Goal progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+<p class="note" id="progressNote"></p>
+<p class="note">यह गणना मानती है कि अतिरिक्त ब्याज या निवेश रिटर्न नहीं मिलेगा और आप नियमित रूप से बचत करेंगे।</p>
+
+  </section>  <section class="card">
+    <h2>How to Use | इस्तेमाल कैसे करें</h2>
+    <ol>
+      <li>अपना वित्तीय लक्ष्य चुनें।</li>
+      <li>लक्ष्य की कुल राशि दर्ज करें।</li>
+      <li>पहले से मौजूद बचत दर्ज करें।</li>
+      <li>लक्ष्य पूरा करने के लिए उपलब्ध महीनों की संख्या दर्ज करें।</li>
+      <li>Calculate My Plan दबाकर अनुमान देखें।</li>
+    </ol>
+  </section>  <section class="disclaimer">
+    <strong>Educational Disclaimer:</strong> This tool provides a basic savings estimate for educational purposes only. It does not provide personalised financial or investment advice. Actual expenses and circumstances may change.
+    <br><br>
+    <strong>शैक्षणिक सूचना:</strong> यह टूल केवल बचत की सामान्य गणना के लिए है। यह व्यक्तिगत वित्तीय या निवेश सलाह नहीं देता। वास्तविक खर्च और परिस्थितियाँ बदल सकती हैं।
+  </section>
+</main><footer>© RAVUKSA FINTECH · Financial Education & Market Learning</footer><script>
+(function(){
+  const $ = id => document.getElementById(id);
+
+  function formatINR(value){
+    return new Intl.NumberFormat("en-IN",{
+      style:"currency",
+      currency:"INR",
+      maximumFractionDigits:2
+    }).format(value);
+  }
+
+  $("calculateBtn").addEventListener("click",function(){
+    $("error").textContent = "";
+    $("result").style.display = "none";
+
+    const target = Number($("target").value);
+    const saved = Number($("saved").value);
+    const months = Number($("months").value);
+
+    if(!Number.isFinite(target) || target <= 0){
+      $("error").textContent = "Please enter a target amount greater than zero. कृपया लक्ष्य की सही राशि दर्ज करें।";
+      return;
+    }
+    if(!Number.isFinite(saved) || saved < 0){
+      $("error").textContent = "Current savings cannot be negative. मौजूदा बचत शून्य या उससे अधिक होनी चाहिए।";
+      return;
+    }
+    if(!Number.isInteger(months) || months < 1 || months > 1200){
+      $("error").textContent = "Enter a whole number of months from 1 to 1200. कृपया 1 से 1200 के बीच पूरे महीने दर्ज करें।";
+      return;
+    }
+
+    const remaining = Math.max(0,target-saved);
+    const monthly = remaining/months;
+    const weekly = monthly*12/52;
+    const progress = Math.min(100,(saved/target)*100);
+    const goal = $("goalName").value;
+
+    $("summary").textContent = remaining === 0
+      ? "Great! Your current savings meet or exceed your selected goal. आपका लक्ष्य मौजूदा बचत से पूरा हो चुका है।"
+      : "For your goal: " + goal + ", save regularly over the next " + months + " months. लक्ष्य पूरा करने के लिए नियमित बचत करें।";
+
+    $("remaining").textContent = formatINR(remaining);
+    $("monthly").textContent = formatINR(monthly);
+    $("weekly").textContent = formatINR(weekly);
+    $("progressText").textContent = progress.toFixed(1) + "%";
+    $("progressBar").style.width = progress + "%";
+    $("progressTrack").setAttribute("aria-valuenow",progress.toFixed(1));
+    $("progressNote").textContent = formatINR(saved) + " saved out of " + formatINR(target) + " target.";
+
+    $("result").style.display = "block";
+    $("result").scrollIntoView({behavior:"smooth",block:"start"});
+  });
+})();
+</script></body>
+  </html>
