@@ -1,0 +1,773 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Personal Budget Planner | RAVUKSA FINTECH</title>  <meta name="description" content="Plan your monthly income, expenses and savings with the free bilingual Personal Budget Planner from RAVUKSA FINTECH.">  <meta name="theme-color" content="#0b1f3a">  <style>
+    :root {
+      --navy: #0b1f3a;
+      --blue: #1769aa;
+      --light: #f3f7fb;
+      --border: #dce5ef;
+      --text: #243449;
+      --muted: #64748b;
+      --green: #16805d;
+      --red: #c0392b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .topbar {
+      background: var(--navy);
+      color: white;
+      padding: 16px 20px;
+    }
+
+    .topbar-inner {
+      max-width: 1050px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+    }
+
+    .back-link {
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.45);
+      padding: 8px 13px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 16px 35px;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      color: var(--navy);
+      font-size: clamp(27px, 5vw, 38px);
+      line-height: 1.25;
+      margin: 0 0 10px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      margin: 8px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e1efff;
+      color: #174e83;
+      padding: 5px 12px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .panel {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 23px;
+      margin-bottom: 22px;
+      box-shadow: 0 5px 20px rgba(11,31,58,0.04);
+    }
+
+    .panel h2 {
+      color: var(--navy);
+      margin: 0 0 5px;
+      font-size: 22px;
+    }
+
+    .section-desc {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      font-size: 16px;
+      color: var(--text);
+      background: white;
+    }
+
+    input:focus,
+    select:focus {
+      outline: 2px solid #93c5fd;
+      border-color: var(--blue);
+    }
+
+    .expense-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .expense-item {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 13px;
+    }
+
+    .expense-item label {
+      margin-bottom: 8px;
+    }
+
+    .expense-item input {
+      background: white;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 9px;
+      padding: 12px 19px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: var(--blue);
+      color: white;
+    }
+
+    .secondary {
+      background: #e8eef5;
+      color: var(--navy);
+    }
+
+    button:hover {
+      filter: brightness(0.96);
+    }
+
+    .results {
+      display: none;
+    }
+
+    .results.visible {
+      display: block;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+      margin-top: 18px;
+    }
+
+    .summary-card {
+      border: 1px solid var(--border);
+      background: #f8fafc;
+      padding: 17px;
+      border-radius: 12px;
+    }
+
+    .summary-card .label {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .summary-card .value {
+      font-size: clamp(20px, 4vw, 27px);
+      font-weight: 800;
+      overflow-wrap: anywhere;
+    }
+
+    .income-value {
+      color: var(--blue);
+    }
+
+    .expense-value {
+      color: var(--red);
+    }
+
+    .saving-value {
+      color: var(--green);
+    }
+
+    .status {
+      margin-top: 18px;
+      border-radius: 10px;
+      padding: 16px;
+      background: #edf4fb;
+      border: 1px solid var(--border);
+    }
+
+    .status h3 {
+      margin: 0 0 5px;
+      color: var(--navy);
+    }
+
+    .progress-track {
+      height: 12px;
+      background: #e2e8f0;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 100%;
+      background: var(--green);
+      transition: width 0.3s ease;
+    }
+
+    .breakdown {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .breakdown th,
+    .breakdown td {
+      padding: 11px 8px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      overflow-wrap: anywhere;
+    }
+
+    .breakdown th:last-child,
+    .breakdown td:last-child {
+      text-align: right;
+    }
+
+    .notice {
+      font-size: 13px;
+      color: var(--muted);
+      background: #fff;
+      border-left: 4px solid var(--blue);
+      padding: 14px;
+      border-radius: 7px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px 15px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin-top: 20px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .panel {
+        padding: 17px;
+      }
+
+      .form-grid,
+      .expense-list,
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button-row button {
+        width: 100%;
+      }
+
+      .brand {
+        font-size: 17px;
+      }
+    }
+  </style></head><body>  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">RAVUKSA FINTECH</div>
+      <a class="back-link" href="./financial-tools-hub.html">
+        ← Back to Tools Hub
+      </a>
+    </div>
+  </header>  <main class="container"><section class="hero">
+  <span class="badge">PERSONAL FINANCE EDUCATION</span>
+
+  <h1>💰 Personal Budget Planner</h1>
+
+  <p><strong>व्यक्तिगत मासिक बजट योजना</strong></p>
+
+  <p>
+    Plan your monthly income, track expenses and understand your savings.
+  </p>
+
+  <p>
+    अपनी मासिक आय और खर्च दर्ज करें और अपनी बचत का अनुमान जानें।
+  </p>
+</section>
+
+<form id="budgetForm">
+
+  <section class="panel">
+    <h2>1. Monthly Income | मासिक आय</h2>
+
+    <p class="section-desc">
+      Enter your total monthly take-home income.
+      अपनी कुल मासिक आय दर्ज करें।
+    </p>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="monthlyIncome">
+          Monthly Income (₹) | मासिक आय
+        </label>
+
+        <input
+          type="number"
+          id="monthlyIncome"
+          min="0"
+          step="0.01"
+          placeholder="Example: 40000"
+          required
+        >
+      </div>
+
+      <div class="field">
+        <label for="budgetMonth">
+          Budget Month | बजट का महीना
+        </label>
+
+        <input
+          type="month"
+          id="budgetMonth"
+          required
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>2. Monthly Expenses | मासिक खर्च</h2>
+
+    <p class="section-desc">
+      Enter your estimated spending in each category.
+      हर श्रेणी में अपना अनुमानित मासिक खर्च दर्ज करें।
+    </p>
+
+    <div class="expense-list">
+
+      <div class="expense-item">
+        <label for="housing">🏠 Housing / Rent | घर का किराया</label>
+        <input type="number" id="housing" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="food">🍲 Food & Groceries | भोजन</label>
+        <input type="number" id="food" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="utilities">💡 Bills & Utilities | बिजली-पानी के बिल</label>
+        <input type="number" id="utilities" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="transport">🚌 Transport | यात्रा</label>
+        <input type="number" id="transport" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="health">🏥 Health & Medical | स्वास्थ्य</label>
+        <input type="number" id="health" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="education">📚 Education | शिक्षा</label>
+        <input type="number" id="education" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="emi">🏦 Loan EMI | लोन की किस्त</label>
+        <input type="number" id="emi" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="shopping">🛍️ Shopping & Personal | खरीदारी</label>
+        <input type="number" id="shopping" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="entertainment">🎬 Entertainment | मनोरंजन</label>
+        <input type="number" id="entertainment" min="0" step="0.01" value="0">
+      </div>
+
+      <div class="expense-item">
+        <label for="other">📦 Other Expenses | अन्य खर्च</label>
+        <input type="number" id="other" min="0" step="0.01" value="0">
+      </div>
+
+    </div>
+
+    <div class="button-row">
+      <button type="submit" class="primary">
+        Calculate My Budget | बजट निकालें
+      </button>
+
+      <button type="reset" class="secondary" id="resetButton">
+        Reset | दोबारा शुरू करें
+      </button>
+    </div>
+  </section>
+
+</form>
+
+<section class="panel results" id="results" aria-live="polite">
+  <h2>3. Your Budget Summary | आपके बजट का सारांश</h2>
+
+  <p class="section-desc" id="resultMonth"></p>
+
+  <div class="summary-grid">
+
+    <div class="summary-card">
+      <div class="label">Total Income | कुल आय</div>
+      <div class="value income-value" id="totalIncome">₹0</div>
+    </div>
+
+    <div class="summary-card">
+      <div class="label">Total Expenses | कुल खर्च</div>
+      <div class="value expense-value" id="totalExpenses">₹0</div>
+    </div>
+
+    <div class="summary-card">
+      <div class="label">Money Remaining | बची हुई राशि</div>
+      <div class="value saving-value" id="remainingMoney">₹0</div>
+    </div>
+
+    <div class="summary-card">
+      <div class="label">Savings Rate | बचत प्रतिशत</div>
+      <div class="value" id="savingsRate">0%</div>
+    </div>
+
+  </div>
+
+  <div class="status">
+    <h3 id="budgetStatus">Budget Status | बजट की स्थिति</h3>
+    <p id="budgetMessage"></p>
+
+    <div class="progress-track" aria-label="Savings percentage">
+      <div class="progress-bar" id="savingsBar"></div>
+    </div>
+
+    <p id="savingsBarLabel"></p>
+  </div>
+
+  <h3>Expense Breakdown | खर्च का विवरण</h3>
+
+  <table class="breakdown">
+    <thead>
+      <tr>
+        <th>Category | श्रेणी</th>
+        <th>Amount | राशि</th>
+      </tr>
+    </thead>
+
+    <tbody id="expenseBreakdown"></tbody>
+  </table>
+
+  <div class="button-row">
+    <button type="button" class="primary" id="printButton">
+      Print / Save as PDF
+    </button>
+  </div>
+</section>
+
+<section class="notice">
+  <strong>Important | महत्वपूर्ण:</strong>
+  This tool is for educational budgeting purposes only.
+  Results depend on the figures you enter. This planner does not provide
+  personalised financial, tax or investment advice.
+  <br><br>
+  यह टूल केवल बजट और वित्तीय शिक्षा के लिए है। परिणाम आपके द्वारा दर्ज की गई
+  जानकारी पर निर्भर करते हैं। यह व्यक्तिगत वित्तीय, टैक्स या निवेश सलाह नहीं है।
+</section>
+
+  </main>  <footer>
+    © <span id="currentYear"></span> RAVUKSA FINTECH |
+    Financial Education & Market Learning
+  </footer>  <script>
+    (function () {
+      "use strict";
+
+      const form = document.getElementById("budgetForm");
+      const results = document.getElementById("results");
+      const monthInput = document.getElementById("budgetMonth");
+
+      const expenseCategories = [
+        { id: "housing", label: "Housing / Rent — घर का किराया" },
+        { id: "food", label: "Food & Groceries — भोजन" },
+        { id: "utilities", label: "Bills & Utilities — बिल" },
+        { id: "transport", label: "Transport — यात्रा" },
+        { id: "health", label: "Health & Medical — स्वास्थ्य" },
+        { id: "education", label: "Education — शिक्षा" },
+        { id: "emi", label: "Loan EMI — लोन की किस्त" },
+        { id: "shopping", label: "Shopping & Personal — खरीदारी" },
+        { id: "entertainment", label: "Entertainment — मनोरंजन" },
+        { id: "other", label: "Other Expenses — अन्य खर्च" }
+      ];
+
+      function formatMoney(amount) {
+        return new Intl.NumberFormat("en-IN", {
+          style: "currency",
+          currency: "INR",
+          maximumFractionDigits: 2
+        }).format(amount);
+      }
+
+      function getAmount(id) {
+        const input = document.getElementById(id);
+        const value = input.value.trim();
+
+        if (value === "") {
+          return 0;
+        }
+
+        const amount = Number(value);
+
+        if (!Number.isFinite(amount) || amount < 0) {
+          throw new Error("Please enter valid non-negative amounts.");
+        }
+
+        return amount;
+      }
+
+      function showResults() {
+        try {
+          const income = getAmount("monthlyIncome");
+
+          if (income <= 0) {
+            alert("Please enter monthly income greater than zero.\nकृपया शून्य से अधिक मासिक आय दर्ज करें।");
+            document.getElementById("monthlyIncome").focus();
+            return;
+          }
+
+          const month = monthInput.value;
+
+          if (!month) {
+            alert("Please select your budget month.\nकृपया बजट का महीना चुनें।");
+            monthInput.focus();
+            return;
+          }
+
+          const expenses = expenseCategories.map(function (category) {
+            return {
+              label: category.label,
+              amount: getAmount(category.id)
+            };
+          });
+
+          const totalExpenses = expenses.reduce(function (total, item) {
+            return total + item.amount;
+          }, 0);
+
+          const remaining = income - totalExpenses;
+          const savingsRate = (remaining / income) * 100;
+          const spendingRate = (totalExpenses / income) * 100;
+
+          document.getElementById("totalIncome").textContent =
+            formatMoney(income);
+
+          document.getElementById("totalExpenses").textContent =
+            formatMoney(totalExpenses);
+
+          const remainingElement = document.getElementById("remainingMoney");
+
+          remainingElement.textContent = formatMoney(remaining);
+          remainingElement.classList.toggle("expense-value", remaining < 0);
+          remainingElement.classList.toggle("saving-value", remaining >= 0);
+
+          document.getElementById("savingsRate").textContent =
+            savingsRate.toFixed(1) + "%";
+
+          document.getElementById("resultMonth").textContent =
+            "Budget month: " + month;
+
+          const status = document.getElementById("budgetStatus");
+          const message = document.getElementById("budgetMessage");
+
+          if (remaining < 0) {
+            status.textContent = "⚠️ Expenses Exceed Income | खर्च आय से अधिक";
+            message.textContent =
+              "आपके खर्च आय से " + formatMoney(Math.abs(remaining)) +
+              " अधिक हैं। खर्चों की समीक्षा करें।";
+          } else if (remaining === 0) {
+            status.textContent = "⚖️ No Money Left | कोई राशि शेष नहीं";
+            message.textContent =
+              "आपकी पूरी आय खर्च हो रही है। संभावित बचत के अवसरों की समीक्षा करें।";
+          } else if (savingsRate < 10) {
+            status.textContent = "💡 Low Savings | बचत कम है";
+            message.textContent =
+              "आपकी आय का " + savingsRate.toFixed(1) +
+              "% बच रहा है। खर्चों की समीक्षा करके बचत बढ़ाने के अवसर देखें।";
+          } else if (savingsRate < 20) {
+            status.textContent = "✅ Some Savings | कुछ बचत हो रही है";
+            message.textContent =
+              "आपकी आय का " + savingsRate.toFixed(1) +
+              "% बच रहा है। अपने लक्ष्यों के अनुसार बजट की समीक्षा करते रहें।";
+          } else {
+            status.textContent = "🌱 Positive Savings | अच्छी बचत";
+            message.textContent =
+              "आपकी आय का " + savingsRate.toFixed(1) +
+              "% खर्चों के बाद बच रहा है। अपनी जरूरतों और लक्ष्यों के अनुसार योजना बनाएँ।";
+          }
+
+          const progress = Math.max(0, Math.min(100, savingsRate));
+
+          document.getElementById("savingsBar").style.width =
+            progress + "%";
+
+          document.getElementById("savingsBarLabel").textContent =
+            "Savings rate: " + savingsRate.toFixed(1) +
+            "% | बचत प्रतिशत: " + savingsRate.toFixed(1) + "%";
+
+          const breakdown = document.getElementById("expenseBreakdown");
+          breakdown.replaceChildren();
+
+          expenses.forEach(function (item) {
+            const row = document.createElement("tr");
+            const nameCell = document.createElement("td");
+            const amountCell = document.createElement("td");
+
+            nameCell.textContent = item.label;
+            amountCell.textContent = formatMoney(item.amount);
+
+            row.appendChild(nameCell);
+            row.appendChild(amountCell);
+            breakdown.appendChild(row);
+          });
+
+          const totalRow = document.createElement("tr");
+          const totalLabel = document.createElement("th");
+          const totalAmount = document.createElement("th");
+
+          totalLabel.textContent = "Total Expenses — कुल खर्च";
+          totalAmount.textContent = formatMoney(totalExpenses);
+
+          totalRow.appendChild(totalLabel);
+          totalRow.appendChild(totalAmount);
+          breakdown.appendChild(totalRow);
+
+          results.classList.add("visible");
+          results.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        } catch (error) {
+          alert(
+            "Please check your entries. All expenses must be valid, non-negative amounts.\n" +
+            "कृपया सभी खर्चों की राशि जाँचें। कोई भी राशि नकारात्मक नहीं हो सकती।"
+          );
+        }
+      }
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        showResults();
+      });
+
+      document.getElementById("resetButton").addEventListener("click", function () {
+        results.classList.remove("visible");
+        document.getElementById("savingsBar").style.width = "0%";
+
+        window.setTimeout(function () {
+          monthInput.value = new Date().toISOString().slice(0, 7);
+        }, 0);
+      });
+
+      document.getElementById("printButton").addEventListener("click", function () {
+        window.print();
+      });
+
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      monthInput.value = new Date().toISOString().slice(0, 7);
+
+    })();
+  </script>  <style>
+    @media print {
+      .topbar,
+      .hero,
+      #budgetForm,
+      .notice,
+      footer,
+      #printButton {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .results {
+        display: block !important;
+        border: none;
+        box-shadow: none;
+      }
+    }
+  </style></body>
+  </html>
