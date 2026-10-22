@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1f3a">
+<title>Financial Literacy Score | RAVUKSA FINTECH</title>
+<meta name="description" content="Test your financial knowledge with a bilingual educational quiz covering savings, banking, stock markets, mutual funds and risk management.">
+<style>
+:root{--navy:#0b1f3a;--teal:#087f8c;--blue:#2563eb;--light:#f3f7fb;--text:#172b4d;--muted:#607086;--border:#dce5ef;--green:#16804a;--red:#b42318}
+*{box-sizing:border-box}
+body{margin:0;background:var(--light);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+header{background:var(--navy);color:white;padding:26px 16px;text-align:center}
+header h1{margin:0;font-size:clamp(25px,5vw,36px)}
+header p{margin:6px 0 0;color:#d9e8f5}
+.container{width:min(850px,92%);margin:22px auto 40px}
+.card{background:white;border:1px solid var(--border);border-radius:16px;padding:20px;margin-bottom:18px;box-shadow:0 5px 18px #0b1f3a0a}
+h2{margin-top:0;font-size:22px}
+.notice{background:#eaf5f7;border-left:4px solid var(--teal);padding:12px 14px;border-radius:8px;font-size:14px}
+.progress-wrap{background:#e5eaf0;height:9px;border-radius:20px;overflow:hidden;margin:12px 0}
+#progress{height:100%;width:0;background:var(--teal);transition:width .2s}
+.question-count{font-size:14px;color:var(--muted);font-weight:bold}
+.question{font-size:19px;font-weight:bold;margin:8px 0 16px}
+.option{display:flex;gap:10px;align-items:flex-start;padding:12px;border:1px solid var(--border);border-radius:10px;margin:9px 0;cursor:pointer}
+.option:has(input:checked){border-color:var(--teal);background:#eefafa}
+.option input{margin-top:6px;accent-color:var(--teal)}
+button,.btn{display:inline-block;border:0;border-radius:9px;padding:12px 18px;font-size:15px;font-weight:bold;cursor:pointer;text-decoration:none}
+.primary{background:var(--teal);color:white}
+.secondary{background:#eaf0f7;color:var(--navy)}
+button:disabled{opacity:.45;cursor:not-allowed}
+.actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px;flex-wrap:wrap}
+.small{font-size:13px;color:var(--muted)}
+.hidden{display:none!important}
+.score{font-size:48px;font-weight:800;color:var(--teal);line-height:1.2}
+.result-row{padding:12px 0;border-bottom:1px solid var(--border)}
+.result-row:last-child{border:0}
+.bar{height:8px;background:#e8edf3;border-radius:20px;overflow:hidden;margin-top:5px}
+.bar span{display:block;height:100%;background:var(--teal)}
+footer{text-align:center;padding:22px;color:var(--muted);font-size:13px}
+a{color:var(--teal)}
+@media(max-width:520px){.card{padding:16px}.actions button{flex:1}.question{font-size:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div>RAVUKSA FINTECH</div>
+  <h1>Financial Literacy Score</h1>
+  <p>वित्तीय साक्षरता स्कोर | Test Your Financial Knowledge</p>
+</header><main class="container">
+  <div class="card">
+    <h2>अपना वित्तीय ज्ञान परखें</h2>
+    <p>बचत, बैंकिंग, शेयर बाजार, म्यूचुअल फंड और जोखिम प्रबंधन से जुड़े 10 सवालों के जवाब दें।</p>
+    <div class="notice">यह एक शैक्षणिक क्विज़ है। आपका स्कोर केवल इस क्विज़ में दिए गए उत्तरों को दर्शाता है, आपकी वास्तविक वित्तीय स्थिति या निवेश क्षमता को नहीं।</div>
+    <p class="small">कुल प्रश्न: 10 · प्रत्येक सही उत्तर: 10 अंक · अधिकतम स्कोर: 100</p>
+    <button class="primary" id="startBtn">Start Quiz / क्विज़ शुरू करें</button>
+  </div>  <section id="quiz" class="card hidden" aria-live="polite">
+    <div class="question-count" id="counter"></div>
+    <div class="progress-wrap"><div id="progress"></div></div>
+    <div id="category" class="small"></div>
+    <div class="question" id="question"></div>
+    <div id="options"></div>
+    <div id="feedback" class="notice hidden"></div>
+    <div class="actions">
+      <button class="secondary" id="prevBtn">← Previous / पिछला</button>
+      <button class="primary" id="nextBtn">Next / अगला →</button>
+    </div>
+    <p class="small">आप पिछले प्रश्न पर लौटकर अपना उत्तर बदल सकते हैं।</p>
+  </section>  <section id="result" class="card hidden" aria-live="polite">
+    <h2>Your Financial Literacy Score</h2>
+    <p class="small">आपके दिए गए उत्तरों के आधार पर</p>
+    <div class="score"><span id="score">0</span><span style="font-size:23px">/100</span></div>
+    <h3 id="level"></h3>
+    <p id="summary"></p>
+    <h3>विषय के अनुसार परिणाम | Topic Breakdown</h3>
+    <div id="breakdown"></div>
+    <h3>आगे क्या सीखें? | What to Learn Next</h3>
+    <ul id="suggestions"></ul>
+    <div class="notice">यह स्कोर केवल इस छोटे शैक्षणिक क्विज़ में आपके प्रदर्शन का संकेत है। इसे निवेश निर्णय लेने या किसी व्यक्ति की वित्तीय क्षमता का प्रमाण मानकर उपयोग न करें।</div>
+    <div class="actions">
+      <button class="primary" id="retryBtn">Try Again / दोबारा प्रयास करें</button>
+      <a class="btn secondary" href="../index.html">Back to Home / होम पेज</a>
+    </div>
+  </section>
+</main><footer>
+  RAVUKSA FINTECH · Financial Education & Market Learning<br>
+  शैक्षणिक उद्देश्य के लिए בלבד। यह व्यक्तिगत वित्तीय या निवेश सलाह नहीं है।
+</footer><script>
+const questions = [
+ {c:"Saving & Budgeting | बचत और बजट",q:"What is a budget? | बजट क्या है?",o:["A plan for income and expenses / आय और खर्च की योजना","A guaranteed profit / निश्चित मुनाफा","A type of bank card / बैंक कार्ड का प्रकार","A stock exchange / शेयर बाजार"],a:0,why:"A budget helps plan income, expenses and savings. / बजट आय, खर्च और बचत की योजना बनाने में मदद करता है."},
+ {c:"Saving & Budgeting | बचत और बजट",q:"Why is an emergency fund useful? | आपातकालीन फंड क्यों उपयोगी है?",o:["For unplanned essential expenses / अचानक जरूरी खर्चों के लिए","To guarantee stock profits / शेयर बाजार में मुनाफे की गारंटी","To avoid every bill / हर बिल से बचने के लिए","It is never useful / इसका कोई उपयोग नहीं"],a:0,why:"It can help cover unexpected essential costs. / यह अचानक आने वाले जरूरी खर्चों में मदद कर सकता है."},
+ {c:"Banking | बैंकिंग",q:"What does a bank statement usually show? | बैंक स्टेटमेंट में आमतौर पर क्या दिखता है?",o:["Account transactions / खाते के लेन-देन","Future stock prices / भविष्य के शेयर भाव","Guaranteed investment returns / निश्चित निवेश रिटर्न","Your exact future income / भविष्य की निश्चित आय"],a:0,why:"A bank statement records account transactions and balances. / बैंक स्टेटमेंट खाते के लेन-देन और बैलेंस दिखाता है."},
+ {c:"Banking | बैंकिंग",q:"What is the safest response to an OTP request from an unknown caller? | अनजान कॉलर OTP माँगे तो क्या करें?",o:["Share it quickly / तुरंत बता दें","Never share it / OTP साझा न करें","Post it online / ऑनलाइन पोस्ट करें","Send it to several people / कई लोगों को भेजें"],a:1,why:"Never disclose OTPs, passwords or PINs to unknown callers. / अनजान लोगों को OTP, पासवर्ड या PIN न बताएँ."},
+ {c:"Stock Market | शेयर बाजार",q:"What does owning a share generally mean? | शेयर रखने का सामान्य अर्थ क्या है?",o:["Part ownership in a company / कंपनी में आंशिक हिस्सेदारी","A guaranteed bank deposit / निश्चित बैंक जमा","A government salary / सरकारी वेतन","A loan with no risk / बिना जोखिम का कर्ज"],a:0,why:"A share generally represents ownership in a company. / शेयर आमतौर पर कंपनी में हिस्सेदारी दर्शाता है."},
+ {c:"Stock Market | शेयर बाजार",q:"Can stock prices go down as well as up? | क्या शेयर के भाव बढ़ने के साथ घट भी सकते हैं?",o:["No, prices only rise / नहीं, भाव केवल बढ़ते हैं","Yes, prices can move both ways / हाँ, भाव दोनों दिशाओं में बदल सकते हैं","Only on weekends / केवल सप्ताहांत में","Only when a bank closes / केवल बैंक बंद होने पर"],a:1,why:"Market prices fluctuate and losses are possible. / बाजार भाव बदलते रहते हैं और नुकसान संभव है."},
+ {c:"Mutual Funds | म्यूचुअल फंड",q:"What is a mutual fund? | म्यूचुअल फंड क्या है?",o:["A pool of money invested according to a scheme / योजना के अनुसार निवेश किया गया सामूहिक धन","A guaranteed prize / निश्चित इनाम","A personal bank password / बैंक पासवर्ड","A type of tax receipt / टैक्स रसीद"],a:0,why:"A mutual fund pools money from investors and invests according to its scheme. / म्यूचुअल फंड निवेशकों का पैसा एकत्र करके योजना के अनुसार निवेश करता है."},
+ {c:"Mutual Funds | म्यूचुअल फंड",q:"Does every mutual fund guarantee returns? | क्या हर म्यूचुअल फंड रिटर्न की गारंटी देता है?",o:["Yes, always / हाँ, हमेशा","Only after one month / केवल एक महीने बाद","No, returns are not generally guaranteed / नहीं, सामान्यतः रिटर्न की गारंटी नहीं होती","Yes, if advertised / विज्ञापन हो तो हाँ"],a:2,why:"Mutual fund returns depend on the scheme and market; they are not generally guaranteed. / म्यूचुअल फंड का रिटर्न योजना और बाजार पर निर्भर करता है."},
+ {c:"Risk Management | जोखिम प्रबंधन",q:"What does diversification mean? | विविधीकरण का क्या अर्थ है?",o:["Putting all money into one asset / सारा पैसा एक जगह लगाना","Spreading investments across different assets / निवेश को अलग-अलग परिसंपत्तियों में बाँटना","Borrowing without a plan / बिना योजना कर्ज लेना","Ignoring risk / जोखिम को अनदेखा करना"],a:1,why:"Diversification spreads exposure but cannot eliminate all risk. / विविधीकरण जोखिम को बाँटता है, लेकिन पूरी तरह समाप्त नहीं करता."},
+ {c:"Risk Management | जोखिम प्रबंधन",q:"What should you do before making an investment decision? | निवेश निर्णय से पहले क्या करना चाहिए?",o:["Believe every online claim / हर ऑनलाइन दावे पर भरोसा","Check reliable information, risks and your needs / भरोसेमंद जानकारी, जोखिम और अपनी जरूरतें जाँचें","Invest because of pressure / दबाव में निवेश करें","Assume high returns are certain / ऊँचे रिटर्न को निश्चित मानें"],a:1,why:"Understand the product, its risks, and whether it suits your circumstances. / उत्पाद, उसके जोखिम और अपनी जरूरतों के अनुसार उसकी उपयुक्तता समझें."}
+];
+
+const categories = ["Saving & Budgeting | बचत और बजट","Banking | बैंकिंग","Stock Market | शेयर बाजार","Mutual Funds | म्यूचुअल फंड","Risk Management | जोखिम प्रबंधन"];
+let answers = Array(questions.length).fill(null);
+let current = 0;
+let reviewed = false;
+
+const $ = id => document.getElementById(id);
+
+$("startBtn").addEventListener("click", () => {
+  $("quiz").classList.remove("hidden");
+  $("result").classList.add("hidden");
+  $("startBtn").classList.add("hidden");
+  current = 0;
+  renderQuestion();
+  $("quiz").scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+function renderQuestion(){
+  reviewed = false;
+  const item = questions[current];
+  $("counter").textContent = `Question ${current+1} of ${questions.length} | प्रश्न ${current+1}/${questions.length}`;
+  $("progress").style.width = `${((current+1)/questions.length)*100}%`;
+  $("category").textContent = item.c;
+  $("question").textContent = item.q;
+  $("options").innerHTML = "";
+  $("feedback").classList.add("hidden");
+  item.o.forEach((option,index)=>{
+    const label = document.createElement("label");
+    label.className = "option";
+    const radio = document.createElement("input");
+    radio.type = "radio";
+    radio.name = "answer";
+    radio.value = index;
+    radio.checked = answers[current] === index;
+    radio.addEventListener("change",()=>{answers[current]=index;});
+    const span = document.createElement("span");
+    span.textContent = option;
+    label.append(radio,span);
+    $("options").appendChild(label);
+  });
+  $("prevBtn").disabled = current === 0;
+  $("nextBtn").textContent = current === questions.length-1 ? "See Score / स्कोर देखें" : "Next / अगला →";
+}
+
+$("prevBtn").addEventListener("click",()=>{
+  if(current>0){current--;renderQuestion();}
+});
+$("nextBtn").addEventListener("click",()=>{
+  if(answers[current]===null){
+    $("feedback").textContent="कृपया आगे बढ़ने से पहले एक उत्तर चुनें। / Please select an answer first.";
+    $("feedback").classList.remove("hidden");
+    return;
+  }
+  if(current<questions.length-1){current++;renderQuestion();}
+  else showResults();
+});
+
+function showResults(){
+  $("quiz").classList.add("hidden");
+  $("result").classList.remove("hidden");
+  $("startBtn").classList.add("hidden");
+  let correct=0;
+  const stats={};
+  questions.forEach((q,i)=>{
+    if(!stats[q.c]) stats[q.c]={total:0,correct:0};
+    stats[q.c].total++;
+    if(answers[i]===q.a){correct++;stats[q.c].correct++;}
+  });
+  const score=correct*10;
+  $("score").textContent=score;
+  let level,summary;
+  if(score>=80){level="Strong Quiz Performance | बहुत अच्छा प्रदर्शन";summary="आपने इस क्विज़ में अच्छा प्रदर्शन किया। अपनी जानकारी को विश्वसनीय स्रोतों से लगातार बढ़ाते रहें।";}
+  else if(score>=50){level="Building Knowledge | ज्ञान बढ़ रहा है";summary="आपकी कुछ बुनियादी समझ अच्छी है। जिन विषयों में गलत उत्तर दिए हैं, उन्हें दोबारा पढ़ें।";}
+  else{level="Keep Learning | सीखना जारी रखें";summary="यह सीखने का अच्छा शुरुआती बिंदु है। बुनियादी विषय पढ़ें और फिर से प्रयास करें।";}
+  $("level").textContent=level;
+  $("summary").textContent=summary;
+  $("breakdown").innerHTML="";
+  const needsWork=[];
+  categories.forEach(cat=>{
+    const s=stats[cat];
+    const pct=Math.round((s.correct/s.total)*100);
+    const row=document.createElement("div");
+    row.className="result-row";
+    const title=document.createElement("strong");
+    title.textContent=cat;
+    const marks=document.createElement("div");
+    marks.textContent=`${s.correct} / ${s.total} correct (${pct}%)`;
+    const bar=document.createElement("div");
+    bar.className="bar";
+    const fill=document.createElement("span");
+    fill.style.width=pct+"%";
+    bar.appendChild(fill);
+    row.append(title,marks,bar);
+    $("breakdown").appendChild(row);
+    if(pct<100) needsWork.push(cat);
+  });
+  $("suggestions").innerHTML="";
+  if(needsWork.length===0){
+    const li=document.createElement("li");
+    li.textContent="शानदार! अब इन विषयों को विश्वसनीय शैक्षणिक स्रोतों से और गहराई से पढ़ें।";
+    $("suggestions").appendChild(li);
+  } else {
+    needsWork.forEach(cat=>{
+      const li=document.createElement("li");
+      li.textContent="Review / दोबारा पढ़ें: "+cat;
+      $("suggestions").appendChild(li);
+    });
+  }
+  $("result").scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("retryBtn").addEventListener("click",()=>{
+  answers=Array(questions.length).fill(null);
+  current=0;
+  $("result").classList.add("hidden");
+  $("quiz").classList.remove("hidden");
+  renderQuestion();
+  $("quiz").scrollIntoView({behavior:"smooth",block:"start"});
+});
+</script></body>
+</html>
