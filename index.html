@@ -11470,6 +11470,93 @@ async function loadMarketMovers() {
 loadMarketMovers();
   </script>
 
+  <script>
+async function loadHomeMarketSnapshot() {
+  const gainersBox = document.getElementById("home-top-gainers");
+  const losersBox = document.getElementById("home-top-losers");
+  const dateBox = document.getElementById("home-market-date");
+  const timeBox = document.getElementById("home-market-time");
+
+  if (!gainersBox || !losersBox || !dateBox || !timeBox) return;
+
+  try {
+    const response = await fetch("./data/trending.json");
+
+    if (!response.ok) {
+      throw new Error("Market data unavailable");
+    }
+
+    const data = await response.json();
+    const stocks = data.trending_stocks || data;
+
+    const allStocks = [
+      ...(stocks.top_gainers || []),
+      ...(stocks.top_losers || [])
+    ];
+
+    const datedStock = allStocks.find(stock => stock.date);
+
+    if (datedStock) {
+      const dateParts = datedStock.date.split("-");
+      dateBox.textContent =
+        dateParts.length === 3
+          ? dateParts[2] + "-" + dateParts[1] + "-" + dateParts[0]
+          : datedStock.date;
+    } else {
+      dateBox.textContent = "Not available";
+    }
+
+    const timedStock = allStocks.find(stock => stock.time);
+
+    timeBox.textContent = timedStock
+      ? timedStock.time
+      : "Not available";
+
+    function renderList(list, box) {
+      box.replaceChildren();
+
+      if (!Array.isArray(list) || list.length === 0) {
+        box.textContent = "Market data is currently unavailable.";
+        return;
+      }
+
+      list.slice(0, 5).forEach(stock => {
+        const item = document.createElement("div");
+        item.style.cssText =
+          "padding:10px 0;border-bottom:1px solid #e2e8f0;";
+
+        const name = document.createElement("strong");
+        name.textContent =
+          stock.company_name || stock.ticker_id || "Stock";
+
+        const details = document.createElement("p");
+        details.style.cssText =
+          "margin:5px 0 0;font-size:14px;";
+
+        details.textContent =
+          "₹" + (stock.price ?? "N/A") +
+          " | Change: " + (stock.percent_change ?? "N/A") + "%";
+
+        item.append(name, details);
+        box.appendChild(item);
+      });
+    }
+
+    renderList(stocks.top_gainers, gainersBox);
+    renderList(stocks.top_losers, losersBox);
+
+  } catch (error) {
+    dateBox.textContent = "Unavailable";
+    timeBox.textContent = "Unavailable";
+    gainersBox.textContent = "Market data is temporarily unavailable.";
+    losersBox.textContent = "Market data is temporarily unavailable.";
+
+    console.error("Home market snapshot error:", error);
+  }
+}
+
+loadHomeMarketSnapshot();
+  </script>
   
 <script>
 if ("serviceWorker" in navigator) {
