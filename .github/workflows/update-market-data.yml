@@ -30,6 +30,38 @@ jobs:
 
           python -m json.tool data/trending.json > /dev/null
 
+      - name: Remove duplicate stocks
+        run: |
+          python - <<'PY'
+          import json
+
+          path = "data/trending.json"
+
+          with open(path, "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          trending = data.get("trending_stocks", {})
+
+          for key in ("top_gainers", "top_losers"):
+              stocks = trending.get(key, [])
+              unique_stocks = []
+              seen = set()
+
+              for stock in stocks:
+                  ticker = stock.get("ticker_id")
+                  if ticker and ticker in seen:
+                      continue
+                  if ticker:
+                      seen.add(ticker)
+                  unique_stocks.append(stock)
+
+              trending[key] = unique_stocks
+
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+
+          print("Duplicate stocks removed successfully.")
+
       - name: Save updated market data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
