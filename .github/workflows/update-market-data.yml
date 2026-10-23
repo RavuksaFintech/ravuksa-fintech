@@ -48,19 +48,23 @@ jobs:
               seen = set()
 
               for stock in stocks:
-                  ticker = stock.get("ticker_id")
-                  if ticker and ticker in seen:
-                      continue
+                  ticker = str(stock.get("ticker_id", "")).strip().upper()
+
                   if ticker:
+                      if ticker in seen:
+                          print(f"Duplicate removed from {key}: {ticker}")
+                          continue
                       seen.add(ticker)
+
                   unique_stocks.append(stock)
 
               trending[key] = unique_stocks
 
           with open(path, "w", encoding="utf-8") as f:
               json.dump(data, f, ensure_ascii=False, indent=2)
+              f.write("\n")
 
-          print("Duplicate stocks removed successfully.")
+          print("Duplicate stock cleanup completed.")
 
       - name: Save updated market data
         uses: stefanzweifel/git-auto-commit-action@v5
