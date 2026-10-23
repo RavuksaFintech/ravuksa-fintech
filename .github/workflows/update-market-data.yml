@@ -1,76 +1,84 @@
 name: Update Market Data
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "15 4,6,8,10 * * 1-5"
+workflow_dispatch:
+schedule:
+- cron: "15 4,6,8,10 * * 1-5"
 
 permissions:
-  contents: write
+contents: write
 
 jobs:
-  update-market-data:
-    runs-on: ubuntu-latest
+update-market-data:
+runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+steps:
+  - name: Checkout repository
+    uses: actions/checkout@v4
+    with:
+      fetch-depth: 0
 
-      - name: Fetch trending stocks
-        env:
-          INDIANAPI_KEY: ${{ secrets.INDIANAPI_KEY }}
-        run: |
-          mkdir -p data
+  - name: Fetch trending stocks
+    env:
+      INDIANAPI_KEY: ${{ secrets.INDIANAPI_KEY }}
+    run: |
+      mkdir -p data
 
-          curl --fail --silent --show-error \
-            --retry 2 \
-            -H "X-API-Key: $INDIANAPI_KEY" \
-            "https://stock.indianapi.in/trending" \
-            -o data/trending.json
+      curl --fail --silent --show-error \
+        --retry 2 \
+        -H "X-API-Key: $INDIANAPI_KEY" \
+        "https://stock.indianapi.in/trending" \
+        -o data/trending.json
 
-          python -m json.tool data/trending.json > /dev/null
+      python -m json.tool data/trending.json > /dev/null
 
-      - name: Remove duplicate stocks
-        run: |
-          python - <<'PY'
-          import json
+  - name: Remove duplicate stocks
+    run: |
+      python - <<'PY'
+      import json
 
-          path = "data/trending.json"
+      path = "data/trending.json"
 
-          with open(path, "r", encoding="utf-8") as f:
-              data = json.load(f)
+      with open(path, "r", encoding="utf-8") as f:
+          data = json.load(f)
 
-          trending = data.get("trending_stocks", {})
+      trending = data.get("trending_stocks", {})
 
-          for key in ("top_gainers", "top_losers"):
-              stocks = trending.get(key, [])
-              unique_stocks = []
-              seen = set()
+      for key in ("top_gainers", "top_losers"):
+          stocks = trending.get(key, [])
+          unique_stocks = []
+          seen = set()
 
-              for stock in stocks:
-                  ticker = str(stock.get("ticker_id", "")).strip().upper()
+          for stock in stocks:
+              ticker = str(stock.get("ticker_id", "")).strip().upper()
 
-                  if ticker:
-                      if ticker in seen:
-                          print(f"Duplicate removed from {key}: {ticker}")
-                          continue
-                      seen.add(ticker)
+              if ticker and ticker in seen:
+                  print(f"Duplicate removed from {key}: {ticker}")
+                  continue
 
-                  unique_stocks.append(stock)
+              if ticker:
+                  seen.add(ticker)
 
-              trending[key] = unique_stocks
+              unique_stocks.append(stock)
 
-          with open(path, "w", encoding="utf-8") as f:
-              json.dump(data, f, ensure_ascii=False, indent=2)
-              f.write("\n")
+          trending[key] = unique_stocks
 
-          print("Duplicate stock cleanup completed.")
+      with open(path, "w", encoding="utf-8") as f:
+          json.dump(data, f, ensure_ascii=False, indent=2)
+          f.write("\n")
 
-          - name: Save updated market data
-  run: |
-  git config user.name "github-actions[bot]"
-  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-  git add data/trending.json
-  git commit -m "Update market trending data" || echo "No changes to commit"
-  git pull --rebase origin main
-  git push origin HEAD:main
+      print("Duplicate stock cleanup completed.")
+      PY
+
+  - name: Save updated market data
+    run: |
+      git config user.name "github-actions[bot]"
+      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      git add data/trending.json
+
+      if ! git diff --cached --quiet; then
+        git commit -m "Update market trending data"
+        git push origin HEAD:main
+      else
+        echo "No changes to commit"
+      fi
