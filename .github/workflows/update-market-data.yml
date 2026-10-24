@@ -1,84 +1,90 @@
 name: Update Market Data
 
 on:
-workflow_dispatch:
-schedule:
-- cron: "15 4,6,8,10 * * 1-5"
+  workflow_dispatch:
+  schedule:
+    - cron: "15 4,6,8,10 * * 1-5"
 
 permissions:
-contents: write
+  contents: write
+
+concurrency:
+  group: update-market-data
+  cancel-in-progress: false
 
 jobs:
-update-market-data:
-runs-on: ubuntu-latest
+  update-market-data:
+    runs-on: ubuntu-latest
 
-steps:
-  - name: Checkout repository
-    uses: actions/checkout@v4
-    with:
-      fetch-depth: 0
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-  - name: Fetch trending stocks
-    env:
-      INDIANAPI_KEY: ${{ secrets.INDIANAPI_KEY }}
-    run: |
-      mkdir -p data
+      - name: Fetch trending stocks
+        env:
+          INDIANAPI_KEY: ${{ secrets.INDIANAPI_KEY }}
+        run: |
+          mkdir -p data
+          curl --fail --silent --show-error \
+            --retry 2 \
+            -H "X-API-Key: $INDIANAPI_KEY" \
+            "https://stock.indianapi.in/trending" \
+            -o data/trending.json
+          python -m json.tool data/trending.json > /dev/null
 
-      curl --fail --silent --show-error \
-        --retry 2 \
-        -H "X-API-Key: $INDIANAPI_KEY" \
-        "https://stock.indianapi.in/trending" \
-        -o data/trending.json
+      - name: Remove duplicate stocks
+        run: |
+          python - <<'PY'
+          import json
 
-      python -m json.tool data/trending.json > /dev/null
+          path = "data/trending.json"
 
-  - name: Remove duplicate stocks
-    run: |
-      python - <<'PY'
-      import json
+          with open(path, "r", encoding="utf-8") as f:
+              data = json.load(f)
 
-      path = "data/trending.json"
+          trending = data.get("trending_stocks", {})
 
-      with open(path, "r", encoding="utf-8") as f:
-          data = json.load(f)
+          for key in ("top_gainers", "top_losers"):
+              stocks = trending.get(key, [])
+              unique_stocks = []
+              seen = set()
 
-      trending = data.get("trending_stocks", {})
+              for stock in stocks:
+                  ticker = str(stock.get("ticker_id", "")).strip().upper()
 
-      for key in ("top_gainers", "top_losers"):
-          stocks = trending.get(key, [])
-          unique_stocks = []
-          seen = set()
+                  if ticker and ticker in seen:
+                      print(f"Duplicate removed from {key}: {ticker}")
+                      continue
 
-          for stock in stocks:
-              ticker = str(stock.get("ticker_id", "")).strip().upper()
+                  if ticker:
+                      seen.add(ticker)
 
-              if ticker and ticker in seen:
-                  print(f"Duplicate removed from {key}: {ticker}")
-                  continue
+                  unique_stocks.append(stock)
 
-              if ticker:
-                  seen.add(ticker)
+              trending[key] = unique_stocks
 
-              unique_stocks.append(stock)
+          with open(path, "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+              f.write("\n")
 
-          trending[key] = unique_stocks
+          print("Duplicate stock cleanup completed.")
+          PY
 
-      with open(path, "w", encoding="utf-8") as f:
-          json.dump(data, f, ensure_ascii=False, indent=2)
-          f.write("\n")
+      - name: Save updated market data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      print("Duplicate stock cleanup completed.")
-      PY
+          git add data/trending.json
 
-  - name: Save updated market data
-    run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      git add data/trending.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
 
-      if ! git diff --cached --quiet; then
-        git commit -m "Update market trending data"
-        git push origin HEAD:main
-      else
-        echo "No changes to commit"
-      fi
+          git commit -m "Update market trending data"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main
