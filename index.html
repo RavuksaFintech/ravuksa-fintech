@@ -495,9 +495,26 @@ footer{
     flex:1 1 100%;
   }
     }
-/* Home Page Clean View */
-body > section:not(#quick-access):not(#why-ravuksa):not(#feedback):not(#ravuksa-daily-learning){
-  display:none;
+    /* Home Page Clean View */
+body > section:not(#quick-access):not(#why-ravuksa):not(#feedback):not(#ravuksa-daily-learning):not(#market-indices) {
+  display: none;
+}
+
+body > header#home {
+  display: block;
+}
+
+body > section:target {
+  display: block !important;
+}
+
+body > section#home-market-snapshot {
+  display: block !important;
+}
+
+/* Market Indices should remain visible */
+body > section#market-indices {
+  display: block !important;
     }
 
 body > header#home{
