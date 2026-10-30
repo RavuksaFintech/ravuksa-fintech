@@ -4306,11 +4306,49 @@ transform: none;
 </div>
 </nav>
 
-  <!-- RAVUKSA FINTECH MARKET TICKER START --><div id="ravuksa-market-ticker" style="width:100%; overflow:hidden; background:#ffffff; border-bottom:1px solid #e5e7eb;">  <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js"></script><tv-ticker-tape symbols="BSE:SENSEX,NSE:NIFTY,NSE:BANKNIFTY" show-hover theme="light"></tv-ticker-tape>                                                                                                                                                                                                                                                      
+<!-- RAVUKSA FINTECH MARKET TICKER START -->
+
+<div id="ravuksa-market-ticker"
+     style="width:100%;display:flex;align-items:center;gap:14px;
+     overflow-x:auto;white-space:nowrap;background:#ffffff;
+     border-bottom:1px solid #e5e7eb;padding:4px 10px;
+     box-sizing:border-box;">
+
+  <!-- SENSEX LIVE TICKER -->
+  <div style="flex:1;min-width:180px;overflow:hidden;">
+    <script type="module"
+      src="https://widgets.tradingview-widget.com/w/en/tv-ticker-tape.js">
+    </script>
+
+    <tv-ticker-tape
+      symbols="BSE:SENSEX"
+      show-hover
+      theme="light">
+    </tv-ticker-tape>
+  </div>
+
+  <!-- NIFTY 50 LINK -->
+  <a href="https://www.tradingview.com/symbols/NSE-NIFTY/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="color:#087f8c;font-size:13px;font-weight:700;
+     text-decoration:none;flex-shrink:0;">
+    NIFTY 50 ↗
+  </a>
+
+  <!-- NIFTY BANK LINK -->
+  <a href="https://in.tradingview.com/symbols/NSE-BANKNIFTY/"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="color:#087f8c;font-size:13px;font-weight:700;
+     text-decoration:none;flex-shrink:0;">
+    NIFTY BANK ↗
+  </a>
 
 </div>
-<!-- RAVUKSA FINTECH MARKET TICKER END -->
 
+<!-- RAVUKSA FINTECH MARKET TICKER END -->
+  
 <header id="home" class="hero ravuksa-hero-upgraded">
   <div class="wrap ravuksa-hero-layout"><div class="ravuksa-hero-content">
 
