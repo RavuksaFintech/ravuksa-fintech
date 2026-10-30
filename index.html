@@ -4324,10 +4324,42 @@ transform: none;
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:18px;">
       <article style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;min-width:0;">
         <h3 style="text-align:center;color:#0b1f3a;margin:4px 0 12px;">NIFTY 50</h3>
-        <div style="height:420px;">
-          <script type="module" src="https://widgets.tradingview-widget.com/w/en/tv-advanced-chart.js"></script>
-          <tv-advanced-chart symbol="NSE:NIFTY" allow-symbol-change></tv-advanced-chart>
-        </div>
+       <div style="height:420px;width:100%;">
+  <div class="tradingview-widget-container" style="height:100%;width:100%;">
+    <div class="tradingview-widget-container__widget"
+         style="height:100%;width:100%;"></div>
+
+    <script type="text/javascript"
+      src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+      async>
+    {
+      "autosize": true,
+      "symbol": "NSE:NIFTY",
+      "interval": "D",
+      "timezone": "Asia/Kolkata",
+      "theme": "light",
+      "style": "1",
+      "locale": "en",
+      "allow_symbol_change": true,
+      "calendar": false,
+      "details": false,
+      "hide_side_toolbar": true,
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "hide_volume": false,
+      "hotlist": false,
+      "save_image": false,
+      "withdateranges": true,
+      "backgroundColor": "#ffffff",
+      "gridColor": "rgba(46,46,46,0.06)",
+      "studies": [],
+      "watchlist": [],
+      "compareSymbols": [],
+      "support_host": "https://www.tradingview.com"
+    }
+    </script>
+  </div>
+       </div>
       </article>
 
       <article style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;min-width:0;">
