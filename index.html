@@ -4364,9 +4364,42 @@ transform: none;
 
       <article style="background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:12px;min-width:0;">
         <h3 style="text-align:center;color:#0b1f3a;margin:4px 0 12px;">NIFTY BANK</h3>
-        <div style="height:420px;">
-          <tv-advanced-chart symbol="NSE:BANKNIFTY" allow-symbol-change></tv-advanced-chart>
-        </div>
+       <div style="height:420px;width:100%;">
+  <div class="tradingview-widget-container" style="height:100%;width:100%;">
+    <div class="tradingview-widget-container__widget"
+         style="height:100%;width:100%;"></div>
+
+    <script type="text/javascript"
+      src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js"
+      async>
+    {
+      "autosize": true,
+      "symbol": "NSE:BANKNIFTY",
+      "interval": "D",
+      "timezone": "Asia/Kolkata",
+      "theme": "light",
+      "style": "1",
+      "locale": "en",
+      "allow_symbol_change": true,
+      "calendar": false,
+      "details": false,
+      "hide_side_toolbar": true,
+      "hide_top_toolbar": false,
+      "hide_legend": false,
+      "hide_volume": false,
+      "hotlist": false,
+      "save_image": false,
+      "withdateranges": true,
+      "backgroundColor": "#ffffff",
+      "gridColor": "rgba(46,46,46,0.06)",
+      "studies": [],
+      "watchlist": [],
+      "compareSymbols": [],
+      "support_host": "https://www.tradingview.com"
+    }
+    </script>
+  </div>
+       </div>
       </article>
     </div>
 
