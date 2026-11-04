@@ -1,0 +1,164 @@
+/* RAVUKSA AI ASSISTANT - STYLES */
+
+#ravuksa-ai-button {
+  position: fixed;
+  right: 20px;
+  bottom: 22px;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #087f8c, #2563eb);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 22px rgba(0, 0, 0, 0.22);
+  animation: ravuksaAIFloat 3s ease-in-out infinite;
+}
+
+#ravuksa-ai-button .ai-icon {
+  font-size: 23px;
+}
+
+@keyframes ravuksaAIFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+#ravuksa-ai-button:hover {
+  transform: scale(1.04);
+}
+
+#ravuksa-ai-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 88px;
+  z-index: 99999;
+  width: min(370px, calc(100vw - 28px));
+  height: min(520px, calc(100dvh - 120px));
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 8px 35px rgba(0, 0, 0, 0.25);
+  font-family: Arial, sans-serif;
+}
+
+#ravuksa-ai-chat.open {
+  display: flex;
+}
+
+.ravuksa-ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: #0b1f3a;
+  color: #fff;
+}
+
+.ravuksa-ai-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.ravuksa-ai-header p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+#ravuksa-ai-close {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#ravuksa-ai-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px;
+  background: #f4f7fb;
+}
+
+.ravuksa-ai-message {
+  width: fit-content;
+  max-width: 88%;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.ravuksa-ai-message.bot {
+  background: #fff;
+  color: #172b45;
+  border: 1px solid #e4eaf2;
+}
+
+.ravuksa-ai-message.user {
+  margin-left: auto;
+  background: #087f8c;
+  color: #fff;
+}
+
+.ravuksa-ai-input-area {
+  display: flex;
+  gap: 8px;
+  padding: 11px;
+  border-top: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+#ravuksa-ai-input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px;
+  border: 1px solid #ccd5df;
+  border-radius: 10px;
+  outline: none;
+  font-size: 13px;
+}
+
+#ravuksa-ai-send {
+  padding: 0 15px;
+  border: 0;
+  border-radius: 10px;
+  background: #087f8c;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ravuksa-ai-disclaimer {
+  padding: 7px 10px;
+  background: #fff;
+  color: #687386;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (max-width: 480px) {
+  #ravuksa-ai-button {
+    right: 14px;
+    bottom: 16px;
+    padding: 11px 14px;
+  }
+
+  #ravuksa-ai-chat {
+    right: 10px;
+    bottom: 75px;
+    width: calc(100vw - 20px);
+    height: min(520px, calc(100dvh - 100px));
+  }
+    }
