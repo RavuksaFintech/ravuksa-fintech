@@ -167,7 +167,9 @@ Hello! Ask me your financial education questions in English, Hindi or Hinglish.
 
   function getAnswer(question) {
     const q = question.toLowerCase().trim();
-    const isHindi = /[\u0900-\u097F]/.test(question);
+    const isHindi =
+  /[\u0900-\u097F]/.test(question) ||
+  /\b(kya|kaise|kyun|kyu|hai|hain|hota|hoti|hote|samjhao|samjhaiye|batao|bataiye|hindi|mein|me|ka|ki|ke|aur|kya)\b/i.test(question);
 
     let bestMatch = null;
     let bestScore = 0;
