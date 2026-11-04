@@ -4239,6 +4239,111 @@ transform: none;
     background: #0b1f3a;
     color: #ffffff;
   }
+  
+/* RAVUKSA PREMIUM EXPLORE BUTTON */
+
+.ravuksa-explore-premium {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px;
+  min-height: 76px;
+  margin: 0 0 22px;
+  padding: 13px 19px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    110deg,
+    #071b35,
+    #087f8c,
+    #1266c5
+  );
+
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 22px rgba(8,127,140,0.25),
+    0 0 14px rgba(18,102,197,0.15);
+
+  position: relative;
+  overflow: hidden;
+  animation: ravuksaExplorePulse 2.5s infinite;
+  transition: transform 0.3s ease;
+}
+
+.ravuksa-explore-premium:hover {
+  transform: translateY(-3px) scale(1.015);
+}
+
+.ravuksa-explore-premium .explore-icon {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.ravuksa-explore-premium .explore-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.ravuksa-explore-premium .explore-text strong {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.ravuksa-explore-premium .explore-text small {
+  font-size: 11px;
+  color: #d9faff;
+  font-weight: 500;
+}
+
+.ravuksa-explore-premium .explore-arrow {
+  font-size: 27px;
+  font-weight: 800;
+  flex-shrink: 0;
+  animation: ravuksaArrowMove 1.2s infinite;
+}
+
+@keyframes ravuksaExplorePulse {
+  0%, 100% {
+    box-shadow: 0 8px 22px rgba(8,127,140,0.22);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(8,127,140,0.48);
+  }
+}
+
+@keyframes ravuksaArrowMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ravuksa-explore-premium,
+  .ravuksa-explore-premium .explore-arrow {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ravuksa-explore-premium {
+    max-width: 100%;
+    min-height: 76px;
+    margin-bottom: 20px;
+  }
+}
+  
 </style>
   
   
