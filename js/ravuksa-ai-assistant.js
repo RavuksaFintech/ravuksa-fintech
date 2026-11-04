@@ -244,7 +244,7 @@
     ),
 
     record(
-      [' sebi','securities and exchange board of india','सेबी'],
+  ['sebi','securities and exchange board of india','सेबी'],
       'SEBI is the Securities and Exchange Board of India. It regulates the securities market and works to protect investors and promote market development under Indian law.',
       'SEBI का पूरा नाम Securities and Exchange Board of India है। यह भारतीय कानून के तहत प्रतिभूति बाजार को नियंत्रित करता है और निवेशकों के हितों की सुरक्षा तथा बाजार के विकास पर काम करता है।'
     ),
@@ -1707,4 +1707,161 @@
       'शुभ रात्रि! सीखते रहिए और वित्तीय रूप से जागरूक रहिए।'
     ),
 
-     
+  ];
+
+  // KNOWLEDGE BASE END
+
+     /* =========================================================
+     LANGUAGE DETECTION
+  ========================================================= */
+
+  function detectLanguage(question) {
+    if (/[\u0900-\u097F]/.test(question)) return 'hi';
+
+    if (/\b(kya|kaise|kyun|kyu|hai|hain|hota|hoti|hote|samjhao|samjhaiye|batao|bataiye|mein|me|ka|ki|ke|aur|karo|karein|bataye)\b/i.test(question)) {
+      return 'hi';
+    }
+
+    return 'en';
+  }
+
+  /* =========================================================
+     QUESTION NORMALIZATION
+  ========================================================= */
+
+  function normalize(text) {
+    return String(text)
+      .toLowerCase()
+      .replace(/[^\w\s\u0900-\u097F]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  /* =========================================================
+     FIND ANSWER
+  ========================================================= */
+
+  function findAnswer(question) {
+    const q = normalize(question);
+
+    if (!q) return null;
+
+    let bestRecord = null;
+    let bestScore = 0;
+
+    knowledge.forEach(item => {
+      item.keys.forEach(key => {
+        const k = normalize(key);
+
+        if (!k) return;
+
+        let score = 0;
+
+        if (q === k) {
+          score = 100;
+        } else if (q.includes(k)) {
+          score = 80 + Math.min(k.length, 15);
+        } else if (k.includes(q) && q.length >= 4) {
+          score = 65;
+        } else {
+          const questionWords = q.split(' ').filter(word => word.length > 2);
+          const keyWords = k.split(' ').filter(word => word.length > 2);
+
+          if (questionWords.length && keyWords.length) {
+            const matched = questionWords.filter(word =>
+              keyWords.some(keyWord =>
+                keyWord === word ||
+                (word.length >= 4 && keyWord.startsWith(word)) ||
+                (keyWord.length >= 4 && word.startsWith(keyWord))
+              )
+            );
+
+            score = (matched.length / questionWords.length) * 50;
+          }
+        }
+
+        if (score > bestScore) {
+          bestScore = score;
+          bestRecord = item;
+        }
+      });
+    });
+
+    return bestScore >= 45 ? bestRecord : null;
+  }
+
+  /* =========================================================
+     SEND QUESTION
+  ========================================================= */
+
+  function sendQuestion() {
+    const question = input.value.trim();
+
+    if (!question) return;
+
+    addMessage(question, 'user');
+
+    input.value = '';
+
+    const language = detectLanguage(question);
+    lastLanguage = language;
+
+    const answer = findAnswer(question);
+
+    if (answer) {
+      lastRecord = answer;
+
+      addMessage(
+        language === 'hi' ? answer.hi : answer.en,
+        'bot'
+      );
+
+      return;
+    }
+
+    lastRecord = null;
+
+    if (language === 'hi') {
+      addMessage(
+        'क्षमा करें! मुझे इस सवाल का सही जवाब अपने मौजूदा Knowledge Base में नहीं मिला। आप इसे दूसरे शब्दों में पूछ सकते हैं या RAVUKSA FINTECH के Learning Center, Financial Dictionary और Tools & Learning Hub को देख सकते हैं।',
+        'bot'
+      );
+    } else {
+      addMessage(
+        'Sorry! I could not find a reliable answer in my current knowledge base. Try asking in different words or visit the RAVUKSA FINTECH Learning Center, Financial Dictionary or Tools & Learning Hub.',
+        'bot'
+      );
+    }
+  }
+
+  /* =========================================================
+     OPEN AND CLOSE CHAT
+  ========================================================= */
+
+  chat.style.display = 'none';
+
+  button.addEventListener('click', function () {
+    chat.style.display = 'flex';
+    button.style.display = 'none';
+    input.focus();
+  });
+
+  chat.querySelector('#ravuksa-ai-close').addEventListener('click', function () {
+    chat.style.display = 'none';
+    button.style.display = 'flex';
+  });
+
+  /* =========================================================
+     SEND BUTTON AND ENTER KEY
+  ========================================================= */
+
+  chat.querySelector('#ravuksa-ai-send').addEventListener('click', sendQuestion);
+
+  input.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      sendQuestion();
+    }
+  });
+
+})();
