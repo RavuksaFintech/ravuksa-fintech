@@ -9,3 +9,134 @@ section{padding:clamp(36px,5vw,64px) 0!important}section .wrap{max-width:1240px!
 #home-market-snapshot .card,#home-market-snapshot .market-card{border-radius:16px!important}#home-market-snapshot h2{margin-bottom:8px}#tools input,#tools select,#tools button,section input,section select,section textarea{border-radius:9px}input,select,textarea{border:1px solid #ccd8e5!important;padding:10px 12px!important}button{cursor:pointer}footer{background:var(--rf-navy)!important;color:#e8f2ff!important}footer a{color:#bcebe7!important}
 @media(max-width:760px){nav:not(.rf-explore-rail){padding:10px 14px!important}nav:not(.rf-explore-rail) .nav{gap:8px!important}.rf-market-strip .rf-strip-inner{justify-content:flex-start;min-width:max-content;animation:rfTicker 24s linear infinite}.rf-explore-rail{padding-inline:14px}.rf-explore-label{min-width:70px;font-size:10px}.rf-explore-row a{font-size:12px;padding:8px 12px}header.hero{padding:34px 0 42px!important}header.hero .ravuksa-hero-layout{grid-template-columns:1fr!important;display:grid!important;gap:24px!important}header.hero h1{font-size:36px!important}section{padding:34px 0!important}section .wrap{width:calc(100% - 28px)!important}.quick-access-card,.learning-category-card{padding:16px!important}}
 @keyframes rfTicker{0%{transform:translateX(0)}100%{transform:translateX(-22%)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* ==========================================
+   RAVUKSA FINTECH - PREMIUM CORPORATE THEME
+   ========================================== */
+
+/* Main Website Background */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 5% 5%, rgba(8,127,140,0.045), transparent 35%),
+    radial-gradient(ellipse at 95% 25%, rgba(37,99,235,0.045), transparent 32%),
+    #f5f8fc !important;
+  color: #17263b;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* Clean Section Background */
+section {
+  background-color: transparent;
+}
+
+/* Premium White Cards */
+.card,
+.feature-card,
+.tool-card,
+.learning-card,
+.quick-card,
+.resource-card,
+.calculator-card,
+.hub-card,
+article.card {
+  background: #ffffff !important;
+  border: 1px solid #e3eaf2 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 5px 22px rgba(15, 35, 65, 0.055) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Card Hover Effect */
+.card:hover,
+.feature-card:hover,
+.tool-card:hover,
+.learning-card:hover,
+.quick-card:hover,
+.resource-card:hover,
+.calculator-card:hover,
+.hub-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(15, 35, 65, 0.10) !important;
+  border-color: #c9dce9 !important;
+}
+
+/* Professional Headings */
+h1, h2, h3, h4 {
+  color: #102746;
+  letter-spacing: -0.35px;
+}
+
+/* Paragraph Text */
+p {
+  line-height: 1.75;
+}
+
+/* Premium Hero Background */
+.ravuksa-hero-upgraded {
+  background: linear-gradient(
+    135deg,
+    #0b1f3a 0%,
+    #123d59 55%,
+    #087f8c 100%
+  ) !important;
+  border-radius: 0 0 26px 26px;
+}
+
+/* Soft Section Separation */
+.section-title {
+  color: #102746;
+}
+
+/* Professional Form Fields */
+input,
+select,
+textarea {
+  border: 1px solid #d7e1ec;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #087f8c;
+  box-shadow: 0 0 0 3px rgba(8,127,140,0.10);
+}
+
+/* Responsive Background */
+@media (max-width: 768px) {
+  body {
+    background:
+      linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%) !important;
+  }
+
+  .card,
+  .feature-card,
+  .tool-card,
+  .learning-card,
+  .quick-card,
+  .resource-card,
+  .calculator-card,
+  .hub-card {
+    border-radius: 13px !important;
+  }
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .feature-card,
+  .tool-card,
+  .learning-card,
+  .quick-card,
+  .resource-card,
+  .calculator-card,
+  .hub-card {
+    transition: none !important;
+  }
+}
