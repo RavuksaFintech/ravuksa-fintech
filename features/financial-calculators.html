@@ -1,86 +1,382 @@
-:root{--navy:#0b1f3a;--teal:#087f8c;--blue:#2563eb;--bg:#f3f7fb;--ink:#17263b;--muted:#607086;--line:#dce5ef} *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Arial,sans-serif} header{background:linear-gradient(135deg,#0b1f3a,#087f8c);color:#fff;padding:28px 16px;text-align:center} header h1{margin:0 0 8px;font-size:clamp(25px,5vw,36px)}header p{margin:0;opacity:.92} .wrap{max-width:1050px;margin:22px auto;padding:0 14px} .back{display:inline-block;margin:0 0 16px;color:var(--teal);font-weight:700;text-decoration:none} .intro,.card,.notice{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 4px 16px #0b1f3a0b} .intro h2{margin:0 0 6px}.intro p{margin:0;color:var(--muted)} .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px} .card h2{font-size:19px;margin:0 0 12px;color:var(--navy)} label{display:block;font-size:14px;font-weight:700;margin:10px 0 5px} input,select{width:100%;padding:11px;border:1px solid #cbd6e2;border-radius:8px;font-size:16px;background:#fff;color:var(--ink)} button{border:0;border-radius:8px;background:var(--teal);color:#fff;padding:11px 16px;font-weight:700;font-size:15px;margin-top:13px;cursor:pointer} .result{margin-top:12px;padding:12px;background:#eaf7f7;border-left:4px solid var(--teal);border-radius:7px;min-height:44px;font-weight:700} small,.muted{color:var(--muted)}.notice{font-size:14px;color:#48576a} footer{text-align:center;padding:24px;color:var(--muted);font-size:13px} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1f3a">
 
-Financial Calculators
+<title>Financial Calculators | RAVUKSA FINTECH</title>
 
-वित्तीय कैलकुलेटर | Learn • Calculate • Understand
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f3f7fb;
+color:#17263b;
+line-height:1.6;
+}
+header{
+background:linear-gradient(135deg,#0b1f3a,#087f8c);
+color:white;
+text-align:center;
+padding:30px 15px;
+}
+header h1{margin:0;font-size:30px}
+header p{margin:5px 0}
+.container{
+max-width:1000px;
+margin:25px auto;
+padding:0 14px;
+}
+.back{
+display:inline-block;
+color:#087f8c;
+font-weight:bold;
+text-decoration:none;
+margin-bottom:18px;
+}
+.intro,.card,.disclaimer{
+background:white;
+padding:18px;
+border-radius:13px;
+border:1px solid #dce5ef;
+margin-bottom:16px;
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:16px;
+}
+.card h2{
+font-size:19px;
+color:#0b1f3a;
+margin-top:0;
+}
+label{
+display:block;
+font-weight:bold;
+font-size:14px;
+margin:10px 0 5px;
+}
+input,select{
+width:100%;
+padding:11px;
+border:1px solid #cbd5e1;
+border-radius:8px;
+font-size:16px;
+}
+button{
+background:#087f8c;
+color:white;
+border:0;
+padding:11px 16px;
+border-radius:8px;
+font-weight:bold;
+margin-top:13px;
+cursor:pointer;
+}
+.result{
+background:#eaf7f7;
+border-left:4px solid #087f8c;
+padding:12px;
+margin-top:12px;
+border-radius:6px;
+font-weight:bold;
+}
+.disclaimer{font-size:14px;color:#526174}
+footer{text-align:center;padding:20px;color:#64748b}
+</style>
+</head>
 
-← Back to RAVUKSA FINTECH 
+<body>
 
-10 Educational Financial Tools
+<header>
+<h1>Financial Calculators</h1>
+<p>वित्तीय कैलकुलेटर | Learn • Calculate • Understand</p>
+</header>
 
-इन calculators का उपयोग अलग-अलग वित्तीय अवधारणाओं को समझने और अनुमान लगाने के लिए करें। परिणाम अनुमानित हैं।
+<main class="container">
 
-1. EMI Calculator
+<a class="back" href="../index.html">← Back to RAVUKSA FINTECH</a>
 
-Loan Amount (₹) Annual Interest Rate (%) Loan Tenure (Years) Calculate EMI
+<section class="intro">
+<h2>10 Educational Financial Tools</h2>
+<p>वित्तीय अवधारणाओं को समझने के लिए 10 उपयोगी calculators। सभी परिणाम अनुमानित हैं।</p>
+</section>
 
-Your result will appear here.
+<div class="grid">
 
-2. Fixed Deposit (FD) Calculator
+<section class="card">
+<h2>1. EMI Calculator</h2>
+<label>Loan Amount (₹)</label>
+<input id="emiP" type="number" value="500000">
+<label>Annual Interest Rate (%)</label>
+<input id="emiR" type="number" value="9">
+<label>Tenure (Years)</label>
+<input id="emiY" type="number" value="5">
+<button onclick="emi()">Calculate EMI</button>
+<div class="result" id="emiOut">Your result will appear here.</div>
+</section>
 
-Deposit Amount (₹) Annual Interest Rate (%) Tenure (Years) CompoundingQuarterlyMonthlyHalf-yearlyYearly Calculate FD
+<section class="card">
+<h2>2. Fixed Deposit (FD) Calculator</h2>
+<label>Deposit Amount (₹)</label>
+<input id="fdP" type="number" value="100000">
+<label>Annual Interest Rate (%)</label>
+<input id="fdR" type="number" value="7">
+<label>Tenure (Years)</label>
+<input id="fdY" type="number" value="3">
+<label>Compounding</label>
+<select id="fdN">
+<option value="4">Quarterly</option>
+<option value="12">Monthly</option>
+<option value="2">Half-yearly</option>
+<option value="1">Yearly</option>
+</select>
+<button onclick="fd()">Calculate FD</button>
+<div class="result" id="fdOut">Your result will appear here.</div>
+</section>
 
-Your result will appear here.
+<section class="card">
+<h2>3. Recurring Deposit (RD) Calculator</h2>
+<label>Monthly Deposit (₹)</label>
+<input id="rdP" type="number" value="2000">
+<label>Annual Interest Rate (%)</label>
+<input id="rdR" type="number" value="6.5">
+<label>Tenure (Years)</label>
+<input id="rdY" type="number" value="2">
+<button onclick="rd()">Calculate RD</button>
+<div class="result" id="rdOut">Your result will appear here.</div>
+</section>
 
-3. Recurring Deposit (RD) Calculator
+<section class="card">
+<h2>4. Loan Interest Calculator</h2>
+<label>Loan Amount (₹)</label>
+<input id="liP" type="number" value="200000">
+<label>Annual Interest Rate (%)</label>
+<input id="liR" type="number" value="10">
+<label>Tenure (Years)</label>
+<input id="liY" type="number" value="3">
+<button onclick="loanInterest()">Calculate Interest</button>
+<div class="result" id="liOut">Your result will appear here.</div>
+</section>
 
-Monthly Deposit (₹) Annual Interest Rate (%) Tenure (Years) Calculate RD
+<section class="card">
+<h2>5. SWP Calculator</h2>
+<label>Initial Investment (₹)</label>
+<input id="swP" type="number" value="500000">
+<label>Monthly Withdrawal (₹)</label>
+<input id="swW" type="number" value="5000">
+<label>Annual Return (%)</label>
+<input id="swR" type="number" value="6">
+<label>Period (Years)</label>
+<input id="swY" type="number" value="5">
+<button onclick="swp()">Calculate SWP</button>
+<div class="result" id="swOut">Your result will appear here.</div>
+</section>
 
-Your result will appear here.
+<section class="card">
+<h2>6. Lumpsum Calculator</h2>
+<label>Investment Amount (₹)</label>
+<input id="lsP" type="number" value="100000">
+<label>Expected Annual Return (%)</label>
+<input id="lsR" type="number" value="10">
+<label>Period (Years)</label>
+<input id="lsY" type="number" value="10">
+<button onclick="lumpsum()">Calculate Lumpsum</button>
+<div class="result" id="lsOut">Your result will appear here.</div>
+</section>
 
-Approximation using monthly compounding. 
+<section class="card">
+<h2>7. SIP vs Lumpsum Comparison</h2>
+<label>Monthly SIP (₹)</label>
+<input id="cmpS" type="number" value="5000">
+<label>Lumpsum Amount (₹)</label>
+<input id="cmpL" type="number" value="60000">
+<label>Annual Return (%)</label>
+<input id="cmpR" type="number" value="10">
+<label>Period (Years)</label>
+<input id="cmpY" type="number" value="5">
+<button onclick="compare()">Compare</button>
+<div class="result" id="cmpOut">Your result will appear here.</div>
+</section>
 
-4. Loan Interest Calculator
+<section class="card">
+<h2>8. Asset Allocation Calculator</h2>
+<label>Equity Allocation (%)</label>
+<input id="aaE" type="number" value="60">
+<label>Debt Allocation (%)</label>
+<input id="aaD" type="number" value="30">
+<label>Other Allocation (%)</label>
+<input id="aaO" type="number" value="10">
+<label>Portfolio Value (₹)</label>
+<input id="aaP" type="number" value="100000">
+<button onclick="allocation()">Calculate Allocation</button>
+<div class="result" id="aaOut">Your result will appear here.</div>
+</section>
 
-Loan Amount (₹) Annual Simple Interest Rate (%) Tenure (Years) Calculate Interest
+<section class="card">
+<h2>9. Retirement Planning Calculator</h2>
+<label>Current Age</label>
+<input id="retA" type="number" value="30">
+<label>Retirement Age</label>
+<input id="retB" type="number" value="60">
+<label>Monthly Expense Today (₹)</label>
+<input id="retE" type="number" value="30000">
+<label>Expected Inflation (%)</label>
+<input id="retI" type="number" value="6">
+<label>Post-retirement Years</label>
+<input id="retY" type="number" value="25">
+<button onclick="retirement()">Calculate Retirement Need</button>
+<div class="result" id="retOut">Your result will appear here.</div>
+</section>
 
-Your result will appear here.
+<section class="card">
+<h2>10. Income Tax Estimator</h2>
+<p>New Tax Regime – Simplified Estimate</p>
+<label>Annual Taxable Income (₹)</label>
+<input id="taxI" type="number" value="1200000">
+<button onclick="tax()">Estimate Tax</button>
+<div class="result" id="taxOut">Your result will appear here.</div>
+</section>
 
-Uses simple interest for learning purposes. 
+</div>
 
-5. SWP Calculator
+<section class="disclaimer">
+<strong>Important Disclaimer | महत्वपूर्ण सूचना</strong>
+<p>
+RAVUKSA FINTECH provides these calculators for educational and informational purposes only.
+Results are estimates and are not guaranteed outcomes, personalised financial or tax advice,
+or investment recommendations. Actual rates, taxes, fees and returns may differ.
+Please verify details with official sources or a qualified professional.
+</p>
+</section>
 
-Initial Investment (₹) Monthly Withdrawal (₹) Expected Annual Return (%) Period (Years) Estimate SWP
+</main>
 
-Your result will appear here.
+<footer>
+© RAVUKSA FINTECH | Financial Education & Market Learning
+</footer>
 
-Assumes a constant monthly return; actual returns vary. 
+<script>
+function v(id){
+return Number(document.getElementById(id).value);
+}
 
-6. Lumpsum Calculator
+function money(n){
+return "₹"+n.toLocaleString("en-IN",{maximumFractionDigits:2});
+}
 
-One-time Investment (₹) Expected Annual Return (%) Period (Years) Calculate Value
+function out(id,text){
+document.getElementById(id).innerHTML=text;
+}
 
-Your result will appear here.
+function valid(...values){
+return values.every(x=>Number.isFinite(x)&&x>=0);
+}
 
-7. SIP vs Lumpsum Comparison
+function emi(){
+let p=v("emiP"),r=v("emiR")/1200,n=v("emiY")*12;
+if(!valid(p,r,n)||p<=0||n<=0)return out("emiOut","Enter valid values.");
+let m=r===0?p/n:p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+out("emiOut","Monthly EMI: "+money(m)+"<br>Total Payment: "+money(m*n)+"<br>Total Interest: "+money(m*n-p));
+}
 
-Monthly SIP (₹) Lumpsum Amount (₹) Expected Annual Return (%) Period (Years) Compare
+function fd(){
+let p=v("fdP"),r=v("fdR")/100,n=v("fdN"),t=v("fdY");
+if(!valid(p,r,t)||p<=0||t<=0)return out("fdOut","Enter valid values.");
+let a=p*Math.pow(1+r/n,n*t);
+out("fdOut","Maturity Value: "+money(a)+"<br>Estimated Interest: "+money(a-p));
+}
 
-Your result will appear here.
+function rd(){
+let p=v("rdP"),r=v("rdR")/1200,n=Math.round(v("rdY")*12);
+if(!valid(p,r,n)||p<=0||n<=0)return out("rdOut","Enter valid values.");
+let a=r===0?p*n:p*(Math.pow(1+r,n)-1)/r*(1+r);
+out("rdOut","Total Deposit: "+money(p*n)+"<br>Maturity Value: "+money(a)+"<br>Interest: "+money(a-p*n));
+}
 
-Illustrative comparison; timing and market returns affect outcomes. 
+function loanInterest(){
+let p=v("liP"),r=v("liR")/100,t=v("liY");
+if(!valid(p,r,t)||p<=0)return out("liOut","Enter valid values.");
+let i=p*r*t;
+out("liOut","Simple Interest: "+money(i)+"<br>Total Amount: "+money(p+i));
+}
 
-8. Asset Allocation Calculator
+function swp(){
+let p=v("swP"),w=v("swW"),r=v("swR")/1200,n=Math.round(v("swY")*12);
+if(!valid(p,w,r,n)||p<=0||n<=0)return out("swOut","Enter valid values.");
+let balance=p,withdrawn=0;
+for(let i=0;i<n&&balance>0;i++){
+balance*=1+r;
+let amount=Math.min(w,balance);
+balance-=amount;
+withdrawn+=amount;
+}
+out("swOut","Total Withdrawn: "+money(withdrawn)+"<br>Remaining Balance: "+money(balance));
+}
 
-Equity Allocation (%) Debt Allocation (%) Other Allocation (%) Total Portfolio Value (₹) Calculate Allocation
+function lumpsum(){
+let p=v("lsP"),r=v("lsR")/100,t=v("lsY");
+if(!valid(p,r,t))return out("lsOut","Enter valid values.");
+let a=p*Math.pow(1+r,t);
+out("lsOut","Future Value: "+money(a)+"<br>Estimated Gain: "+money(a-p));
+}
 
-Your result will appear here.
+function compare(){
+let s=v("cmpS"),l=v("cmpL"),r=v("cmpR")/1200,n=Math.round(v("cmpY")*12);
+if(!valid(s,l,r,n)||n<=0)return out("cmpOut","Enter valid values.");
+let sip=r===0?s*n:s*(Math.pow(1+r,n)-1)/r*(1+r);
+let lump=l*Math.pow(1+r,n);
+out("cmpOut","SIP Value: "+money(sip)+"<br>Lumpsum Value: "+money(lump));
+}
 
-9. Retirement Planning Calculator
+function allocation(){
+let e=v("aaE"),d=v("aaD"),o=v("aaO"),p=v("aaP");
+if(!valid(e,d,o,p)||e+d+o!==100)return out("aaOut","Equity, Debt and Other must total 100%.");
+out("aaOut","Equity: "+money(p*e/100)+"<br>Debt: "+money(p*d/100)+"<br>Other: "+money(p*o/100));
+}
 
-Current Age Retirement Age Monthly Expense Today (₹) Expected Inflation (%) Post-retirement Years Estimate Retirement Need
+function retirement(){
+let a=v("retA"),b=v("retB"),e=v("retE"),i=v("retI")/100,y=v("retY");
+if(!valid(a,b,e,i,y)||b<=a||y<=0)return out("retOut","Enter valid ages and values.");
+let future=e*Math.pow(1+i,b-a);
+let total=future*12*y;
+out("retOut","Years to Retirement: "+(b-a)+"<br>Monthly Expense at Retirement: "+money(future)+"<br>Estimated Total Expense: "+money(total));
+}
 
-Your result will appear here.
+function tax(){
+let income=v("taxI");
+if(!valid(income))return out("taxOut","Enter valid income.");
 
-Estimates future monthly expenses and total expenses without investment returns. 
+let slabs=[
+[400000,0],
+[400000,0.05],
+[400000,0.10],
+[400000,0.15],
+[400000,0.20],
+[400000,0.25],
+[Infinity,0.30]
+];
 
-10. Income Tax Estimator – New Regime
+let left=income;
+let total=0;
 
-Annual Taxable Income (₹) Estimate Tax
+for(let i=0;i<slabs.length;i++){
+let part=Math.min(left,slabs[i][0]);
+if(part>0)total+=part*slabs[i][1];
+left-=part;
+if(left<=0)break;
+}
 
-Your result will appear here.
+let rebate=income<=1200000?Math.min(total,60000):0;
+total-=rebate;
+total+=total*0.04;
 
-Indicative simplified estimate for FY 2026–27 / AY 2027–28. Verify current rules and eligibility with official tax guidance. 
+out("taxOut","Estimated Tax including cess: "+money(total)+"<br><small>Simplified indicative estimate. Actual tax depends on eligibility, deductions, exemptions and applicable rules.</small>");
+}
+</script>
 
-Important Disclaimer | महत्वपूर्ण सूचना:
-RAVUKSA FINTECH provides these calculators for educational and informational purposes only. Results are estimates based on the inputs and assumptions shown; they are not guaranteed outcomes, personalised financial/tax advice, or a recommendation to invest, borrow, or buy any product. Actual rates, fees, taxes, rules and returns may differ. Please verify details with official sources or a qualified professional. © RAVUKSA FINTECH | Financial Education & Market Learning const val=id=>Number(document.getElementById(id).value); const money=n=>'₹'+(Number.isFinite(n)?n:0).toLocaleString('en-IN',{maximumFractionDigits:2}); const show=(id,s)=>document.getElementById(id).innerHTML=s; const valid=(...x)=>x.every(n=>Number.isFinite(n)&&n>=0); function emi(){let p=val('emiP'),r=val('emiR')/1200,n=val('emiY')*12;if(!valid(p,r,n)||!p||!n)return show('emiOut','Please enter valid positive values.');let m=r? p*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):p/n;show('emiOut',`Monthly EMI: ${money(m)}<br>Total Payment: ${money(m*n)}<br>Total Interest: ${money(m*n-p)}`)} function fd(){let p=val('fdP'),r=val('fdR')/100,n=val('fdN'),t=val('fdY');if(!valid(p,r,t)||!p||!t)return show('fdOut','Please enter valid positive values.');let a=p*Math.pow(1+r/n,n*t);show('fdOut',`Maturity Value: ${money(a)}<br>Estimated Interest: ${money(a-p)}`)} function rd(){let p=val('rdP'),r=val('rdR')/1200,n=Math.round(val('rdY')*12);if(!valid(p,r,n)||!p||!n)return show('rdOut','Please enter valid positive values.');let a=r? p*(Math.pow(1+r,n)-1)/r*(1+r):p*n;show('rdOut',`Total Deposits: ${money(p*n)}<br>Estimated Maturity: ${money(a)}<br>Estimated Interest: ${money(a-p*n)}`)} function loanInterest(){let p=val('liP'),r=val('liR')/100,t=val('liY');if(!valid(p,r,t)||!p)return show('liOut','Please enter valid values.');let i=p*r*t;show('liOut',`Simple Interest: ${money(i)}<br>Total Amount: ${money(p+i)}`)} function swp(){let p=val('swP'),w=val('swW'),r=val('swR')/1200,n=Math.round(val('swY')*12);if(!valid(p,w,r,n)||!p||!n)return show('swOut','Please enter valid values.');let b=p,paid=0;for(let i=0;i<n&&b>0;i++){b*=1+r;let x=Math.min(w,b);b-=x;paid+=x}show('swOut',`Total Withdrawn: ${money(paid)}<br>Estimated Balance: ${money(b)}`)} function lumpsum(){let p=val('lsP'),r=val('lsR')/100,t=val('lsY');if(!valid(p,r,t))return show('lsOut','Please enter valid values.');let a=p*Math.pow(1+r,t);show('lsOut',`Future Value: ${money(a)}<br>Estimated Gain: ${money(a-p)}`)} function compare(){let s=val('cmpS'),l=val('cmpL'),r=val('cmpR')/1200,n=Math.round(val('cmpY')*12);if(!valid(s,l,r,n)||!n)return show('cmpOut','Please enter valid values.');let sip=r?s*(Math.pow(1+r,n)-1)/r*(1+r):s*n;let lump=l*Math.pow(1+r,n);show('cmpOut',`SIP Invested: ${money(s*n)} → Value: ${money(sip)}<br>Lumpsum Invested: ${money(l)} → Value: ${money(lump)}`)} function allocation(){let e=val('aaE'),d=val('aaD'),o=val('aaO'),p=val('aaP');if(!valid(e,d,o,p)||e+d+o!==100)return show('aaOut','Equity + Debt + Other must total exactly 100%.');show('aaOut',`Equity: ${money(p*e/100)} (${e}%)<br>Debt: ${money(p*d/100)} (${d}%)<br>Other: ${money(p*o/100)} (${o}%)`)} function retirement(){let a=val('retA'),b=val('retB'),e=val('retE'),i=val('retI')/100,y=val('retY');if(!valid(a,b,e,i,y)||b<=a||!y)return show('retOut','Retirement age must be greater than current age. Enter valid values.');let future=e*Math.pow(1+i,b-a),total=future*12*y;show('retOut',`Years to Retirement: ${b-a}<br>Estimated Monthly Expense at Retirement: ${money(future)}<br>Simple Total Expense for ${y} years: ${money(total)}`)} function tax(){let income=val('taxI');if(!valid(income))return show('taxOut','Please enter a valid income.');let slabs=400000,0],[400000,.05],[400000,.10],[400000,.15],[400000,.20],[400000,.25],[Infinity,.30,left=income,t=0;for(let [cap,rate] of slabs){let part=Math.min(left,cap);if(part>0)t+=part*rate;left-=part;if(left<=0)break}let rebate=income<=1200000?Math.min(t,60000):0;t-=rebate;let cess=t*.04;t+=cess;show('taxOut',`Estimated Tax including 4% cess: ${money(t)}<br><small>Illustrative slab calculation with assumed eligible rebate up to ₹12 lakh; eligibility and other provisions can change the result.</small>`)} 
+</body>
+  </html>
