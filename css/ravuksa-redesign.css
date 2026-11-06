@@ -357,3 +357,115 @@ a {
   }
 }
 
+/* ==========================================
+   RAVUKSA FINTECH - MOBILE RESPONSIVE
+   ========================================== */
+
+/* Prevent Horizontal Overflow */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Responsive Images */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+  .wrap,
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Responsive Grids */
+  .grid,
+  .cards-grid,
+  .features-grid,
+  .tools-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  /* Responsive Cards */
+  .card,
+  .feature-card,
+  .tool-card,
+  .learning-card,
+  .quick-card,
+  .resource-card,
+  .calculator-card,
+  .hub-card {
+    width: 100%;
+    min-width: 0;
+    padding: 18px;
+  }
+
+  /* Responsive Tables */
+  table {
+    min-width: 600px;
+  }
+
+  .table-responsive,
+  .table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Form Fields */
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Better Section Spacing */
+  section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  /* Prevent Long Text Overflow */
+  h1, h2, h3, p, a {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+
+  .wrap,
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .card,
+  .feature-card,
+  .tool-card,
+  .learning-card,
+  .hub-card {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  button,
+  .btn {
+    max-width: 100%;
+  }
+}
+
