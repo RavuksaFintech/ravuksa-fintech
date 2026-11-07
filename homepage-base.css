@@ -1,0 +1,4297 @@
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f7f9fc;
+  color:#172033;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid #e2e8f0;
+  padding:14px 5%;
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  font-weight:800;
+  letter-spacing:1px;
+  font-size:20px;
+}
+
+.logo span{
+  color:#16a085;
+}
+
+nav a{
+  font-size:14px;
+  margin-left:18px;
+  color:#172033;
+}
+
+.hero{
+  padding:90px 5% 75px;
+  background:linear-gradient(135deg,#ffffff,#eef6ff);
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto;
+}
+
+.badge{
+  display:inline-block;
+  border:1px solid #b7d9d0;
+  border-radius:30px;
+  padding:7px 14px;
+  color:#087f68;
+  background:#f0faf7;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+h1{
+  font-size:clamp(40px,8vw,72px);
+  line-height:1.05;
+  margin-bottom:18px;
+  color:#172033;
+}
+
+h1 span{
+  color:#16a085;
+}
+
+    .hero-tagline{
+  margin:18px 0 24px;
+  padding:10px 16px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  border-left:4px solid #16a085;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 5px 18px rgba(20,40,70,.08);
+  animation:heroTaglineMove 3s ease-in-out infinite alternate;
+}
+
+.hero-tagline span{
+  color:#16a085;
+  font-weight:700;
+}
+
+.hero-tagline strong{
+  color:#526174;
+  font-size:14px;
+}
+
+@keyframes heroTaglineMove{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(8px);
+  }
+}
+
+@media (max-width:600px){
+  .hero-tagline{
+    font-size:13px;
+    margin-top:12px;
+  }
+
+  .hero-tagline strong{
+    font-size:13px;
+  }
+    }
+    
+.hero p{
+  max-width:650px;
+  color:#526174;
+  font-size:18px;
+}
+
+.btns{
+  margin-top:30px;
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:13px 20px;
+  border-radius:10px;
+  font-weight:700;
+  display:inline-block;
+}
+
+.primary{
+  background:#16a085;
+  color:#fff;
+}
+
+.secondary{
+  border:1px solid #b8c5d3;
+  color:#172033;
+  background:#fff;
+}
+
+section{
+  padding:65px 5%;
+}
+
+.section-title{
+  font-size:32px;
+  margin-bottom:12px;
+  color:#172033;
+}
+
+.sub{
+  color:#607086;
+  margin-bottom:30px;
+}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
+.card{
+  background:#ffffff;
+  border:1px solid #e1e7ef;
+  border-radius:16px;
+  padding:24px;
+  box-shadow:0 4px 16px rgba(20,40,70,.06);
+}
+
+.card h3{
+  margin:10px 0 8px;
+  color:#172033;
+}
+
+.card p{
+  color:#607086;
+  font-size:14px;
+}
+
+.icon{
+  font-size:28px;
+}
+
+    .about{background:#f4f7fb}
+
+.founder{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+  align-items:center;
+}
+
+.founder-photo{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #16a085;
+  display:block;
+  margin:0 auto 18px;
+}
+
+.highlight{
+  border-left:4px solid #16a085;
+  padding:22px;
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 4px 16px rgba(20,40,70,.05);
+}
+
+.notice{
+  font-size:13px;
+  color:#596a7d;
+  background:#eef3f8;
+  border:1px solid #d8e1ea;
+  padding:18px;
+  border-radius:12px;
+}
+
+footer{
+  padding:30px 5%;
+  border-top:1px solid #e1e7ef;
+  color:#65758a;
+  background:#ffffff;
+  font-size:13px;
+  text-align:center;
+}
+
+/* Mobile Hamburger Menu */
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:0;
+  color:#172033;
+  font-size:28px;
+  cursor:pointer;
+  padding:5px;
+}
+
+.mobile-menu{
+  display:none;
+  background:#ffffff;
+  border-top:1px solid #e2e8f0;
+  padding:10px 5%;
+}
+
+.mobile-menu a{
+  display:block;
+  padding:12px 0;
+  color:#172033;
+  border-bottom:1px solid #e5eaf0;
+}
+
+@media(max-width:760px){
+
+  .grid,
+  .founder{
+    grid-template-columns:1fr;
+  }
+
+  nav .links{
+    display:none;
+  }
+
+  .hero{
+    padding-top:65px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  nav .links{
+    display:none;
+  }
+
+  .mobile-menu.active{
+    display:block;
+  }
+}
+
+/* Search */
+
+.search-box{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-left:auto;
+  margin-right:15px;
+}
+
+.search-box input{
+  width:180px;
+  padding:9px 12px;
+  border:1px solid #ccd6e2;
+  border-radius:8px;
+  background:#ffffff;
+  color:#172033;
+  outline:none;
+}
+
+.search-box input::placeholder{
+  color:#8290a2;
+}
+
+.search-box button{
+  padding:9px 11px;
+  border:0;
+  border-radius:8px;
+  background:#1d8cff;
+  color:#fff;
+  cursor:pointer;
+}
+
+@media(max-width:760px){
+
+  .search-box{
+    margin-right:10px;
+  }
+
+  .search-box input{
+    width:120px;
+  }
+}
+
+/* Search Results */
+
+.search-results{
+  position:absolute;
+  top:100%;
+  right:0;
+  width:280px;
+  max-height:350px;
+  overflow-y:auto;
+  background:#ffffff;
+  border:1px solid #d9e1ea;
+  border-radius:10px;
+  margin-top:6px;
+  z-index:9999;
+  display:none;
+  box-shadow:0 8px 25px rgba(20,40,70,.12);
+}
+
+.search-result-item{
+  padding:12px;
+  color:#172033;
+  border-bottom:1px solid #e5eaf0;
+  cursor:pointer;
+}
+
+.search-result-item:hover{
+  background:#f0f6fb;
+}
+
+.search-no-result{
+  padding:12px;
+  color:#68788c;
+    }
+    .quick-access-card{
+  transition:transform .25s ease,box-shadow .25s ease;
+  border-top:4px solid #1d8cff;
+      border-radius:20px;
+}
+
+.quick-access-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 25px rgba(20,40,70,.15);
+    }
+    .quick-access-card h3{
+  font-size:18px;
+  margin-top:12px;
+}
+
+.quick-access-card p{
+  font-size:13px;
+  line-height:1.5;
+    }
+    .learning-category-card{
+  transition:transform .25s ease,box-shadow .25s ease;
+  border-top:4px solid #16a085;
+  border-radius:18px;
+}
+
+.learning-category-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(20,40,70,.12);
+}
+    .quick-access-card:nth-child(1){border-top-color:#1d8cff;}
+.quick-access-card:nth-child(2){border-top-color:#16a085;}
+.quick-access-card:nth-child(3){border-top-color:#8e44ad;}
+.quick-access-card:nth-child(4){border-top-color:#e67e22;}
+.quick-access-card:nth-child(5){border-top-color:#2980b9;}
+.quick-access-card:nth-child(6){border-top-color:#c0392b;}
+.quick-access-card:nth-child(7){border-top-color:#27ae60;}
+.quick-access-card:nth-child(8){border-top-color:#f39c12;}
+.quick-access-card:nth-child(9){border-top-color:#2c3e50;}
+.quick-access-card:nth-child(10){border-top-color:#7f8c8d;}
+.quick-access-card:nth-child(11){border-top-color:#d35400;}
+    
+    .search-highlight {
+  background: yellow;
+  color: black;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 700;
+    }
+    .search-highlight-active {
+  background: orange;
+  color: black;
+  outline: 2px solid #ff9800;
+    }
+    #why-ravuksa{
+  padding-top:50px;
+  border-top:1px solid #e2e8f0;
+    }
+   #beginner-learning,
+#intermediate-learning,
+#advanced-learning{
+  display:none;
+    } 
+    .tools-quick-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:20px 0 25px;
+}
+
+.tools-quick-buttons .btn{
+  flex:1 1 140px;
+  text-align:center;
+}
+
+@media (max-width:600px){
+  .tools-quick-buttons .btn{
+    flex:1 1 100%;
+  }
+    }
+    /* Home Page Clean View */
+body > section:not(#quick-access):not(#why-ravuksa):not(#feedback):not(#ravuksa-daily-learning):not(#market-indices) {
+  display: none;
+}
+
+body > header#home {
+  display: block;
+}
+
+body > section:target {
+  display: block !important;
+}
+
+body > section#home-market-snapshot {
+  display: block !important;
+}
+
+/* Market Indices should remain visible */
+body > section#market-indices {
+  display: block !important;
+    }
+
+body > header#home{
+  display:block;
+    }
+    body > section:target{
+  display:block !important;
+    }
+    body > section#home-market-snapshot {
+  display: block !important;
+    }
+    /* =====================================
+   RAVUKSA FINTECH
+   PROFESSIONAL DESIGN SYSTEM V1
+===================================== */
+
+:root {
+  --rf-primary: #087f8c;
+  --rf-primary-dark: #075e68;
+  --rf-primary-light: #e8f7f8;
+
+  --rf-accent: #2563eb;
+  --rf-accent-light: #eff6ff;
+
+  --rf-heading: #172033;
+  --rf-text: #526174;
+  --rf-muted: #65758a;
+
+  --rf-border: #dce5ef;
+  --rf-surface: #ffffff;
+  --rf-background: #f5f8fc;
+
+  --rf-radius: 16px;
+  --rf-radius-small: 10px;
+
+  --rf-shadow:
+    0 5px 18px rgba(23, 32, 51, 0.07);
+
+  --rf-shadow-hover:
+    0 12px 28px rgba(23, 32, 51, 0.13);
+}
+
+/* Overall website */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  background: var(--rf-background);
+  color: var(--rf-heading);
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+
+.section-title {
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 14px;
+}
+
+.sub {
+  max-width: 760px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--rf-text);
+}
+
+/* Navigation */
+
+nav {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--rf-border);
+  box-shadow: 0 3px 15px rgba(23, 32, 51, 0.04);
+  backdrop-filter: blur(12px);
+}
+
+nav a {
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--rf-primary);
+}
+
+/* General cards */
+
+.card {
+  position: relative;
+  background: var(--rf-surface);
+  border: 1px solid var(--rf-border);
+  border-radius: var(--rf-radius);
+  box-shadow: var(--rf-shadow);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.card h3 {
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.card p {
+  line-height: 1.75;
+}
+
+/* Only cards that are clickable */
+
+a.card {
+  display: block;
+  cursor: pointer;
+}
+
+a.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--rf-shadow-hover);
+  border-color: #a7d9df;
+}
+
+a.card:focus-visible,
+.btn:focus-visible,
+button:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+/* Quick access cards */
+
+.quick-access-card {
+  border-top: 4px solid var(--rf-accent);
+  border-radius: 18px;
+}
+
+.quick-access-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--rf-shadow-hover);
+}
+
+/* Learning category cards */
+
+.learning-category-card {
+  border-top: 4px solid var(--rf-primary);
+  border-radius: 18px;
+}
+
+.learning-category-card:hover {
+  border-color: #9bd8dc;
+}
+
+/* Buttons */
+
+.btn,
+button.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 12px 20px;
+  border-radius: 11px;
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.4;
+  cursor: pointer;
+  text-align: center;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn:hover,
+button.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 17px rgba(23, 32, 51, 0.12);
+}
+
+.btn.primary,
+.btn.primary:visited {
+  background: linear-gradient(
+    135deg,
+    var(--rf-primary),
+    var(--rf-primary-dark)
+  );
+  color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.btn.secondary,
+.btn.secondary:visited {
+  background: #ffffff;
+  color: var(--rf-heading);
+  border: 1px solid #cbd7e4;
+}
+
+.btn.secondary:hover {
+  background: var(--rf-primary-light);
+  border-color: var(--rf-primary);
+  color: var(--rf-primary-dark);
+}
+
+/* Button groups */
+
+.btns {
+  gap: 12px;
+  align-items: center;
+}
+
+/* Featured highlight panels */
+
+.highlight {
+  border-left: 5px solid var(--rf-primary);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    var(--rf-primary-light)
+  );
+  box-shadow: var(--rf-shadow);
+}
+
+/* Notices */
+
+.notice {
+  border-radius: 13px;
+  border: 1px solid var(--rf-border);
+  background: #f0f5fa;
+  line-height: 1.75;
+}
+
+/* Form controls */
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--rf-accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* Search controls */
+
+.search-box input {
+  border-radius: 10px;
+}
+
+.search-box button {
+  border-radius: 10px;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.search-box button:hover {
+  background: #176ed0;
+  transform: translateY(-1px);
+}
+
+/* Footer */
+
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--rf-border);
+  line-height: 1.8;
+}
+
+/* Mobile refinements */
+
+@media (max-width: 760px) {
+
+  section {
+    padding: 44px 5%;
+  }
+
+  .hero {
+    padding: 58px 5% 48px;
+  }
+
+  h1 {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.12;
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
+
+  .sub {
+    font-size: 15px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btns {
+    gap: 10px;
+  }
+
+  .btn {
+    min-height: 44px;
+  }
+
+  .search-results {
+    width: min(280px, 90vw);
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+    }
+    /* RAVUKSA FINTECH - Premium Hero Design */
+
+header#home.hero {
+position: relative;
+overflow: hidden;
+padding: 85px 5% 75px;
+background:
+radial-gradient(ellipse at 90% 10%, rgba(45, 212, 191, 0.16), transparent 38%),
+linear-gradient(135deg, #f8fbff 0%, #eaf5fb 55%, #f2fbf9 100%);
+border-bottom: 1px solid #dce8f1;
+}
+
+header#home.hero .wrap {
+max-width: 1100px;
+}
+
+header#home.hero .badge {
+display: inline-block;
+padding: 9px 15px;
+margin-bottom: 22px;
+border: 1px solid #b9e5e4;
+border-radius: 30px;
+background: #e6f7f5;
+color: #087f8c;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1px;
+}
+
+header#home.hero h1 {
+max-width: 850px;
+margin: 0 0 22px;
+color: #14243a;
+font-size: clamp(38px, 6vw, 66px);
+font-weight: 850;
+line-height: 1.12;
+letter-spacing: -1.5px;
+}
+
+header#home.hero h1 span {
+color: #087f8c;
+}
+
+header#home.hero .wrap > p {
+max-width: 760px;
+margin: 0 0 28px;
+color: #526174;
+font-size: 17px;
+line-height: 1.9;
+}
+
+header#home.hero .btns {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 14px;
+margin-bottom: 22px;
+}
+
+header#home.hero .hero-tagline {
+display: flex;
+flex-direction: column;
+gap: 6px;
+padding: 12px 16px;
+border-left: 3px solid #0d9488;
+border-radius: 0 10px 10px 0;
+background: rgba(255, 255, 255, 0.75);
+}
+
+header#home.hero .hero-tagline span {
+color: #087f8c;
+font-size: 15px;
+font-weight: 800;
+}
+
+header#home.hero .hero-tagline strong {
+color: #526174;
+font-size: 13px;
+line-height: 1.6;
+}
+
+header#home.hero > .wrap > .btn.secondary {
+margin-top: 4px;
+}
+
+@media (max-width: 760px) {
+header#home.hero {
+padding: 58px 5% 48px;
+}
+
+header#home.hero h1 {
+font-size: clamp(35px, 9vw, 48px);
+letter-spacing: -0.7px;
+}
+
+header#home.hero .wrap > p {
+font-size: 15px;
+line-height: 1.8;
+}
+
+header#home.hero .btns {
+align-items: stretch;
+}
+
+header#home.hero .hero-tagline {
+width: 100%;
+box-sizing: border-box;
+}
+    }
+    /* RAVUKSA FINTECH - Animated Financial Background */
+
+header#home.hero {
+position: relative;
+isolation: isolate;
+overflow: hidden;
+}
+
+/* Subtle moving financial grid */
+header#home.hero::before {
+content: "";
+position: absolute;
+inset: 0;
+z-index: -1;
+pointer-events: none;
+opacity: 0.55;
+
+background-image:
+linear-gradient(
+rgba(8, 127, 140, 0.055) 1px,
+transparent 1px
+),
+linear-gradient(
+90deg,
+rgba(8, 127, 140, 0.055) 1px,
+transparent 1px
+);
+
+background-size: 38px 38px;
+animation: ravuksaFinancialGrid 28s linear infinite;
+}
+
+/* Soft teal glow for a modern financial-tech look */
+header#home.hero::after {
+content: "";
+position: absolute;
+top: 12%;
+right: -100px;
+width: 340px;
+height: 340px;
+border-radius: 50%;
+pointer-events: none;
+z-index: -1;
+
+background: radial-gradient(
+circle,
+rgba(45, 212, 191, 0.16) 0%,
+rgba(45, 212, 191, 0.06) 42%,
+transparent 72%
+);
+
+animation: ravuksaHeroGlow 8s ease-in-out infinite alternate;
+}
+
+/* Keep hero content above decorative effects */
+header#home.hero > .wrap {
+position: relative;
+z-index: 1;
+}
+
+/* Gentle grid movement */
+@keyframes ravuksaFinancialGrid {
+from {
+background-position: 0 0, 0 0;
+}
+
+to {
+background-position: 38px 38px, 38px 38px;
+}
+}
+
+/* Gentle background glow movement */
+@keyframes ravuksaHeroGlow {
+from {
+transform: translate3d(0, 0, 0) scale(1);
+}
+
+to {
+transform: translate3d(-18px, 16px, 0) scale(1.08);
+}
+}
+
+/* Mobile optimization */
+@media (max-width: 760px) {
+header#home.hero::after {
+width: 240px;
+height: 240px;
+top: 8%;
+right: -100px;
+}
+
+header#home.hero::before {
+opacity: 0.4;
+}
+}
+
+/* Accessibility: reduce animations when requested */
+@media (prefers-reduced-motion: reduce) {
+header#home.hero::before,
+header#home.hero::after {
+animation: none !important;
+}
+    }
+    /* RAVUKSA FINTECH - Animated Financial Hero Layout */
+
+header#home.ravuksa-hero-upgraded .ravuksa-hero-layout {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center;
+  gap: 42px;
+}
+
+header#home.ravuksa-hero-upgraded .ravuksa-hero-content {
+  min-width: 0;
+  animation: ravuksaHeroTextIn 0.8s ease both;
+}
+
+header#home.ravuksa-hero-upgraded .ravuksa-hero-content h1 {
+  max-width: 650px;
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: 1.13;
+  overflow-wrap: break-word;
+}
+
+header#home.ravuksa-hero-upgraded .ravuksa-hero-content > p {
+  max-width: 600px;
+  margin: 0 0 26px;
+  color: #526174;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+header#home.ravuksa-hero-upgraded .ravuksa-chart-card {
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #d6e6ee;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 20px 55px rgba(20, 36, 58, 0.10);
+  animation: ravuksaChartIn 0.9s ease 0.15s both;
+}
+
+.ravuksa-chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ravuksa-chart-label {
+  color: #087f8c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.ravuksa-chart-header h3 {
+  margin: 8px 0 0;
+  color: #14243a;
+  font-size: 23px;
+  line-height: 1.35;
+}
+
+.ravuksa-chart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #e8f7f5;
+  font-size: 25px;
+}
+
+.ravuksa-chart-summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 23px 0 12px;
+}
+
+.ravuksa-chart-summary > div {
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #e2edf3;
+  border-radius: 12px;
+  background: #f7fafc;
+}
+
+.ravuksa-chart-summary span {
+  display: block;
+  margin-bottom: 5px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.ravuksa-chart-summary strong {
+  display: block;
+  color: #26374d;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ravuksa-chart-visual {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #f7fcfd, #ffffff);
+}
+
+.ravuksa-chart-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#dce9ef 1px, transparent 1px),
+    linear-gradient(90deg, #dce9ef 1px, transparent 1px);
+  background-size: 42px 38px;
+  opacity: 0.65;
+}
+
+.ravuksa-market-svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ravuksa-chart-area {
+  fill: url(#ravuksaChartFill);
+  opacity: 0;
+  animation: ravuksaAreaAppear 1.6s ease 0.4s forwards;
+}
+
+.ravuksa-chart-line {
+  fill: none;
+  stroke: #0d9488;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  animation: ravuksaLineDraw 2.2s ease 0.3s forwards;
+}
+
+.ravuksa-chart-point {
+  fill: #0d9488;
+  stroke: #ffffff;
+  stroke-width: 3;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ravuksaPointAppear 0.5s ease 2.2s forwards,
+             ravuksaPointPulse 2s ease-in-out 2.7s infinite;
+}
+
+.ravuksa-chart-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.ravuksa-chart-footer span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.ravuksa-chart-footer i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0d9488;
+}
+
+.ravuksa-chart-bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 19px;
+  padding: 14px;
+  border-radius: 13px;
+  background: #edf8f8;
+}
+
+.ravuksa-chart-bottom > span {
+  font-size: 23px;
+}
+
+.ravuksa-chart-bottom p {
+  margin: 0;
+  color: #285568;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+@keyframes ravuksaHeroTextIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ravuksaChartIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ravuksaLineDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes ravuksaAreaAppear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ravuksaPointAppear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ravuksaPointPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+/* Mobile and tablet layout */
+
+@media (max-width: 900px) {
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-content h1 {
+    max-width: 700px;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-chart-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 760px) {
+  header#home.ravuksa-hero-upgraded {
+    padding: 58px 5% 48px;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-layout {
+    gap: 28px;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-content h1 {
+    font-size: clamp(34px, 8.5vw, 46px);
+    letter-spacing: -0.7px;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-content > p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  header#home.ravuksa-hero-upgraded .ravuksa-chart-card {
+    padding: 18px;
+    border-radius: 19px;
+  }
+
+  .ravuksa-chart-header h3 {
+    font-size: 20px;
+  }
+
+  .ravuksa-chart-visual {
+    height: 165px;
+  }
+
+  .ravuksa-chart-summary > div {
+    padding: 11px;
+  }
+}
+
+/* Accessibility: respect reduced-motion settings */
+
+@media (prefers-reduced-motion: reduce) {
+  header#home.ravuksa-hero-upgraded .ravuksa-hero-content,
+  header#home.ravuksa-hero-upgraded .ravuksa-chart-card,
+  .ravuksa-chart-area,
+  .ravuksa-chart-line,
+  .ravuksa-chart-point {
+    animation: none !important;
+  }
+
+  .ravuksa-chart-area,
+  .ravuksa-chart-point {
+    opacity: 1;
+  }
+
+  .ravuksa-chart-line {
+    stroke-dashoffset: 0;
+  }
+}
+    /* RAVUKSA FINTECH - Quick Access Account Heading */
+
+#quick-access .quick-access-account-heading {
+  grid-column: 1 / -1;
+  margin-top: 18px;
+  padding: 20px 22px;
+  border: 1px solid #dce5ef;
+  border-left: 4px solid #087f8c;
+  border-radius: 14px;
+  background: linear-gradient(110deg, #edf8f8, #ffffff);
+}
+
+#quick-access .quick-access-account-heading h3 {
+  margin: 0 0 6px;
+  color: #14243a;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+#quick-access .quick-access-account-heading p {
+  margin: 0;
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  #quick-access .quick-access-account-heading {
+    padding: 16px;
+  }
+
+  #quick-access .quick-access-account-heading h3 {
+    font-size: 19px;
+  }
+    }
+    /* RAVUKSA FINTECH - Professional Why Section */
+
+#why-ravuksa {
+  position: relative;
+  padding: 65px 5%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f3f8fc 100%);
+}
+
+#why-ravuksa .wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#why-ravuksa .section-title {
+  margin-bottom: 14px;
+  color: #14243a;
+  font-size: clamp(29px, 4vw, 39px);
+  font-weight: 850;
+  letter-spacing: -0.7px;
+  text-align: center;
+}
+
+#why-ravuksa .sub {
+  max-width: 760px;
+  margin: 0 auto 12px;
+  color: #526174;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+}
+
+#why-ravuksa .wrap > p[style] {
+  max-width: 750px;
+  margin: 10px auto 32px !important;
+  padding: 13px 18px;
+  border-left: 3px solid #0d9488;
+  border-radius: 0 10px 10px 0;
+  background: #eaf7f6;
+  color: #285568 !important;
+  font-size: 14px !important;
+  line-height: 1.8;
+  text-align: center;
+}
+
+#why-ravuksa .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+#why-ravuksa .grid > .card {
+  min-width: 0;
+  padding: 28px 25px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 6px 22px rgba(20, 36, 58, 0.055);
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease,
+              border-color 0.25s ease;
+}
+
+#why-ravuksa .grid > .card:hover {
+  transform: translateY(-5px);
+  border-color: #9edbd8;
+  box-shadow: 0 15px 32px rgba(20, 36, 58, 0.10);
+}
+
+#why-ravuksa .grid > .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 16px;
+  border: 1px solid #d7eeee;
+  border-radius: 16px;
+  background: #eaf8f7;
+  font-size: 28px;
+}
+
+#why-ravuksa .grid > .card h3 {
+  margin: 0 0 10px;
+  color: #14243a;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#why-ravuksa .grid > .card p {
+  margin: 0;
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+#why-ravuksa .grid > .card {
+  animation: ravuksaWhyCardIn 0.65s ease both;
+}
+
+#why-ravuksa .grid > .card:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+#why-ravuksa .grid > .card:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+#why-ravuksa .grid > .card:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+@keyframes ravuksaWhyCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  #why-ravuksa {
+    padding: 44px 5%;
+  }
+
+  #why-ravuksa .grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  #why-ravuksa .grid > .card {
+    padding: 22px 19px;
+  }
+
+  #why-ravuksa .grid > .card h3 {
+    font-size: 18px;
+  }
+
+  #why-ravuksa .sub {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #why-ravuksa .grid > .card {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  #why-ravuksa .grid > .card:hover {
+    transform: none;
+  }
+    }
+    /* RAVUKSA FINTECH - Daily Learning Professional Design */
+
+#ravuksa-daily-learning {
+  position: relative;
+  overflow: hidden;
+  padding: 64px 5%;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(13, 148, 136, 0.07), transparent 30%),
+    linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+}
+
+#ravuksa-daily-learning .wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading {
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 15px;
+  padding: 8px 13px;
+  border: 1px solid #cfe9e7;
+  border-radius: 30px;
+  background: #effaf9;
+  color: #087f8c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+#ravuksa-daily-learning .ravuksa-live-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  border-radius: 50%;
+  background: #0d9488;
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.12);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading h2 {
+  margin: 0 0 12px;
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 850;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading h2 span {
+  color: #087f8c;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px;
+  border: 1px solid #dce6ef;
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 18px 50px rgba(20, 36, 58, 0.075);
+  animation: ravuksaDailyCardIn 0.65s ease both;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #14243a, #087f8c, #42b8a9);
+  content: "";
+}
+
+#ravuksa-daily-learning .ravuksa-daily-card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e8eef4;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border: 1px solid #d3eeeb;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #e7f8f6, #f4fbff);
+  font-size: 27px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-labels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tag {
+  color: #087f8c;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-date {
+  color: #78879a;
+  font-size: 12px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-left: auto;
+  padding-left: 12px;
+  color: #14243a;
+  text-align: right;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number span {
+  color: #8190a3;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-number strong {
+  color: #087f8c;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content {
+  padding: 27px 0 24px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-category {
+  display: inline-block;
+  margin-bottom: 13px;
+  padding: 6px 11px;
+  border-radius: 7px;
+  background: #eef7fb;
+  color: #315b78;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content h3 {
+  max-width: 850px;
+  margin: 0 0 15px;
+  color: #14243a;
+  font-size: clamp(23px, 3.5vw, 32px);
+  font-weight: 800;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-content > p {
+  max-width: 850px;
+  margin: 0;
+  color: #526174;
+  font-size: 15px;
+  line-height: 1.95;
+  overflow-wrap: anywhere;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 17px 19px;
+  border: 1px solid #d8eeeb;
+  border-radius: 14px;
+  background: linear-gradient(110deg, #eefaf8, #f8fcff);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip > span {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip p {
+  margin: 0;
+  color: #40576b;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-tip strong {
+  color: #087f8c;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 25px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn,
+#ravuksa-daily-learning .ravuksa-daily-next-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 18px;
+  border-radius: 11px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn {
+  border: 1px solid #087f8c;
+  background: #087f8c;
+  color: #ffffff;
+  box-shadow: 0 5px 13px rgba(8, 127, 140, 0.16);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-next-btn {
+  border: 1px solid #d8e2ec;
+  background: #ffffff;
+  color: #24384e;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn:hover,
+#ravuksa-daily-learning .ravuksa-daily-next-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 19px rgba(20, 36, 58, 0.10);
+}
+
+#ravuksa-daily-learning .ravuksa-daily-primary-btn:hover {
+  background: #066d77;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-bottom-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 27px;
+  color: #8290a1;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 1.5px;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-line {
+  width: 35px;
+  height: 1px;
+  background: #d7e4eb;
+}
+
+#ravuksa-daily-learning .ravuksa-daily-disclaimer {
+  margin: 17px 0 0;
+  color: #8190a3;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@keyframes ravuksaDailyCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 760px) {
+  #ravuksa-daily-learning {
+    padding: 43px 5%;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-heading {
+    margin-bottom: 22px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-eyebrow {
+    max-width: 100%;
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-heading > p {
+    font-size: 14px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-card {
+    padding: 21px 17px;
+    border-radius: 18px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-card-top {
+    gap: 11px;
+    padding-bottom: 17px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-icon {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 13px;
+    font-size: 23px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-tag {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-date {
+    font-size: 11px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number {
+    padding-left: 4px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number span {
+    font-size: 8px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-number strong {
+    font-size: 12px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content {
+    padding: 22px 0;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content h3 {
+    font-size: 23px;
+    line-height: 1.55;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-content > p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-tip {
+    padding: 14px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-bottom-line {
+    gap: 7px;
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-line {
+    width: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ravuksa-daily-learning .ravuksa-daily-card {
+    animation: none !important;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn {
+    transition: none !important;
+  }
+
+  #ravuksa-daily-learning .ravuksa-daily-primary-btn:hover,
+  #ravuksa-daily-learning .ravuksa-daily-next-btn:hover {
+    transform: none;
+  }
+}
+
+/* END RAVUKSA DAILY LEARNING CSS */
+    
+    /* RAVUKSA FINTECH - Premium Explore Cards */
+
+#quick-access {
+background: #f5f8fc !important;
+padding: 55px 5% !important;
+}
+
+#quick-access .section-title {
+color: #14243a;
+font-size: clamp(28px, 4vw, 36px) !important;
+font-weight: 850;
+letter-spacing: -0.6px;
+}
+
+#quick-access .sub {
+margin: 0 auto 30px;
+color: #617186;
+line-height: 1.8;
+}
+
+#quick-access .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+align-items: stretch;
+}
+
+#quick-access a.quick-access-card {
+min-width: 0;
+padding: 26px 20px;
+text-align: center;
+text-decoration: none;
+background: #ffffff;
+border: 1px solid #dce5ef;
+border-top: 4px solid #087f8c;
+border-radius: 18px;
+box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+transition: transform 0.22s ease,
+box-shadow 0.22s ease,
+border-color 0.22s ease;
+}
+
+#quick-access a.quick-access-card:hover {
+transform: translateY(-5px);
+border-color: #8ed4d6;
+box-shadow: 0 12px 28px rgba(23, 32, 51, 0.12);
+}
+
+#quick-access .quick-access-card .icon {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 54px;
+height: 54px;
+margin-bottom: 12px;
+border-radius: 15px;
+background: #e8f7f8;
+font-size: 27px;
+}
+
+#quick-access .quick-access-card h3 {
+margin: 4px 0 10px;
+color: #172033;
+font-size: 18px;
+font-weight: 800;
+line-height: 1.4;
+}
+
+#quick-access .quick-access-card p {
+margin: 0;
+color: #617186;
+font-size: 14px;
+line-height: 1.7;
+}
+
+#quick-access a.quick-access-card:focus-visible {
+outline: 3px solid #60a5fa;
+outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+#quick-access {
+padding: 40px 5% !important;
+}
+
+#quick-access .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 13px;
+}
+
+#quick-access a.quick-access-card {
+padding: 20px 12px;
+border-radius: 15px;
+}
+
+#quick-access .quick-access-card h3 {
+font-size: 16px;
+}
+
+#quick-access .quick-access-card p {
+font-size: 13px;
+}
+}
+
+@media (max-width: 380px) {
+#quick-access .grid {
+grid-template-columns: 1fr;
+}
+    }
+    /* RAVUKSA FINTECH - Premium Navigation */
+
+nav {
+  position: relative;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid #dce5ef;
+  box-shadow: 0 4px 18px rgba(23, 32, 51, 0.07);
+}
+
+nav .nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 3%;
+}
+
+nav .logo {
+  flex-shrink: 0;
+}
+
+nav .logo img {
+  max-width: 155px;
+  object-fit: contain;
+}
+
+nav .search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+nav .search-box input {
+  width: 130px;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid #dce5ef;
+  background: #f8fafc;
+  color: #172033;
+}
+
+nav .search-box button {
+  min-height: 40px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  background: #087f8c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav .links a,
+nav .mobile-menu a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 10px;
+  border-radius: 9px;
+  color: #26374d;
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+nav .links a:hover,
+nav .mobile-menu a:hover {
+  background: #e8f7f8;
+  color: #087f8c;
+}
+
+nav .menu-btn {
+  border: 1px solid #dce5ef;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #172033;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Mobile Navigation */
+
+@media (max-width: 760px) {
+  nav .nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 4%;
+  }
+
+  nav .logo img {
+    max-width: 125px;
+    height: auto !important;
+  }
+
+  nav .search-box {
+    flex: 1;
+    min-width: 130px;
+  }
+
+  nav .search-box input {
+    width: 100%;
+  }
+
+  nav .links {
+    display: none;
+  }
+
+  nav .mobile-menu {
+    padding: 10px 4% 16px;
+    background: #ffffff;
+    border-top: 1px solid #e5edf5;
+  }
+
+  nav .mobile-menu a {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 3px 0;
+    font-size: 14px;
+  }
+    }
+    /* RAVUKSA FINTECH - Premium Learning Center */
+
+#learning-categories {
+  background: linear-gradient(180deg, #f5f9fd 0%, #ffffff 100%);
+  padding: 60px 5%;
+}
+
+#learning-categories .section-title {
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 38px) !important;
+  font-weight: 850;
+  letter-spacing: -0.6px;
+}
+
+#learning-categories > .wrap > .sub {
+  max-width: 760px;
+  margin-top: 12px;
+  line-height: 1.85;
+}
+
+/* Beginner, Intermediate and Advanced buttons */
+
+#learning-categories > .wrap > div:first-of-type {
+  gap: 12px !important;
+  margin: 24px 0 30px !important;
+}
+
+#learning-categories > .wrap > div:first-of-type .btn {
+  min-width: 130px;
+  border-radius: 999px;
+  font-weight: 750;
+}
+
+/* Dynamic Learning featured card */
+
+#learning-categories > .wrap > div:nth-of-type(2) > a {
+  border: 1px solid #b8d9fa !important;
+  border-left: 5px solid #2563eb !important;
+  background: linear-gradient(120deg, #eaf4ff, #ffffff 75%) !important;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.09) !important;
+}
+
+#learning-categories > .wrap > div:nth-of-type(2) > a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Learning category cards */
+
+#learning-categories .grid {
+  gap: 20px;
+  align-items: stretch;
+}
+
+#learning-categories a.learning-category-card {
+  padding: 25px 22px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+  text-decoration: none;
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              border-color 0.22s ease;
+}
+
+#learning-categories a.learning-category-card:hover {
+  transform: translateY(-5px);
+  border-color: #a7d9df;
+  box-shadow: 0 12px 26px rgba(23, 32, 51, 0.11);
+}
+
+#learning-categories .learning-category-card .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #e8f7f8;
+  font-size: 27px;
+}
+
+#learning-categories .learning-category-card h3 {
+  margin: 14px 0 8px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+#learning-categories .learning-category-card p {
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#learning-categories .learning-category-card:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 4px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 760px) {
+  #learning-categories {
+    padding: 42px 5%;
+  }
+
+  #learning-categories .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+  }
+
+  #learning-categories a.learning-category-card {
+    padding: 19px 14px;
+  }
+
+  #learning-categories .learning-category-card h3 {
+    font-size: 16px;
+  }
+
+  #learning-categories .learning-category-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  #learning-categories .grid {
+    grid-template-columns: 1fr;
+  }
+    }
+    /* RAVUKSA FINTECH - Premium Financial Tools */
+
+#tools {
+  background: linear-gradient(180deg, #f5f9fd 0%, #ffffff 100%);
+  padding: 60px 5%;
+}
+
+#tools .section-title {
+  color: #14243a;
+  font-size: clamp(28px, 4vw, 38px) !important;
+  font-weight: 850;
+  letter-spacing: -0.6px;
+}
+
+#tools > .wrap > .sub {
+  max-width: 800px;
+  line-height: 1.85;
+  margin: 16px 0 24px;
+}
+
+/* Quick calculator buttons */
+
+#tools .tools-quick-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+#tools .tools-quick-buttons .btn {
+  min-width: 95px;
+  border-radius: 999px;
+  font-weight: 750;
+}
+
+/* Educational notice */
+
+#tools .notice {
+  padding: 18px 20px;
+  border: 1px solid #cfe3f4;
+  border-left: 5px solid #087f8c;
+  border-radius: 13px;
+  background: #f0f8fc;
+  color: #40546b;
+  line-height: 1.85;
+}
+
+/* Calculator cards */
+
+#tools .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+#tools .grid > .card {
+  min-width: 0;
+  padding: 25px 22px;
+  border: 1px solid #dce5ef;
+  border-top: 4px solid #087f8c;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(23, 32, 51, 0.06);
+  transition: transform 0.22s ease,
+              box-shadow 0.22s ease,
+              border-color 0.22s ease;
+}
+
+#tools .grid > .card:hover {
+  transform: translateY(-4px);
+  border-color: #a7d9df;
+  box-shadow: 0 12px 26px rgba(23, 32, 51, 0.11);
+}
+
+#tools .grid > .card .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #e8f7f8;
+  font-size: 27px;
+}
+
+#tools .grid > .card h3 {
+  margin: 14px 0 10px;
+  color: #172033;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+#tools .grid > .card p {
+  color: #617186;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#tools .grid > .card .btns {
+  margin-top: 18px;
+}
+
+#tools .grid > .card .btn {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile layout */
+
+@media (max-width: 760px) {
+  #tools {
+    padding: 42px 5%;
+  }
+
+  #tools .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 13px;
+  }
+
+  #tools .grid > .card {
+    padding: 19px 14px;
+  }
+
+  #tools .grid > .card h3 {
+    font-size: 16px;
+  }
+
+  #tools .grid > .card p {
+    font-size: 13px;
+  }
+
+  #tools .tools-quick-buttons .btn {
+    min-width: 0;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  #tools .grid {
+    grid-template-columns: 1fr;
+  }
+    }
+    /* =====================================
+   RAVUKSA FINTECH - PREMIUM MARKET DASHBOARD
+===================================== */
+
+#market-dashboard {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 55%);
+}
+
+#market-dashboard .section-title {
+  color: #12345a;
+  font-size: clamp(26px, 4vw, 36px);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#market-dashboard > .wrap > .sub {
+  text-align: center;
+  color: #52657b;
+  line-height: 1.8;
+  margin: 18px 0;
+}
+
+/* Market Status Card */
+#market-dashboard #marketStatus {
+  font-size: 17px;
+  font-weight: 700;
+  color: #12345a;
+  line-height: 1.7;
+}
+
+#market-dashboard #marketLastUpdated {
+  color: #64748b;
+  overflow-wrap: anywhere;
+}
+
+#market-dashboard .card,
+#market-dashboard .highlight,
+#market-dashboard .notice {
+  border-radius: 18px;
+  border: 1px solid #e0eaf5;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+}
+
+#market-dashboard .card {
+  background: #ffffff;
+  padding: 23px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#market-dashboard .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#market-dashboard .highlight {
+  background: linear-gradient(135deg, #f0fdfa, #f8fbff);
+  padding: 23px;
+}
+
+#market-dashboard .notice {
+  background: #fffaf0;
+  padding: 20px;
+  border-left: 4px solid #e8a23a;
+}
+
+#market-dashboard .card h3,
+#market-dashboard .highlight h3,
+#market-dashboard .notice h3 {
+  color: #12345a;
+  line-height: 1.5;
+}
+
+#market-dashboard .card p,
+#market-dashboard .highlight p,
+#market-dashboard .notice p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+#market-dashboard .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#market-dashboard .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 22px;
+}
+
+#market-dashboard .card h2[id$="Value"] {
+  color: #087f8c;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+#market-dashboard .card [id$="Change"] {
+  color: #64748b;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+#market-dashboard .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+#market-dashboard .btns .btn {
+  border-radius: 10px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#market-dashboard .card .btns {
+  margin-bottom: 14px;
+}
+
+/* IPO cards */
+#market-dashboard .highlight .grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+#market-dashboard .highlight .card {
+  border-top: 3px solid #0d9488;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 768px) {
+  #market-dashboard {
+    padding: 25px 0 35px;
+  }
+
+  #market-dashboard .grid,
+  #market-dashboard .highlight .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #market-dashboard .card,
+  #market-dashboard .highlight,
+  #market-dashboard .notice {
+    padding: 18px;
+  }
+
+  #market-dashboard .card h2[id$="Value"] {
+    font-size: 26px;
+  }
+
+  #market-dashboard .btns {
+    gap: 9px;
+  }
+
+  #market-dashboard .btns .btn {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #market-dashboard .card {
+    transition: none;
+  }
+
+  #market-dashboard .card:hover {
+    transform: none;
+  }
+    }
+    /* =====================================
+   PREMIUM INVESTOR EDUCATION RESOURCES
+===================================== */
+
+#investor-resources {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 60%);
+}
+
+#investor-resources .section-title {
+  color: #12345a;
+  font-size: clamp(25px, 4vw, 35px);
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+#investor-resources .sub {
+  color: #52657b;
+  text-align: center;
+  line-height: 1.8;
+  margin: 18px 0 25px;
+}
+
+#investor-resources .notice,
+#investor-resources .highlight {
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.06);
+  line-height: 1.8;
+}
+
+#investor-resources .notice {
+  background: #fffaf0;
+  border: 1px solid #f4e5c4;
+  border-left: 4px solid #e8a23a;
+}
+
+#investor-resources .highlight {
+  background: linear-gradient(135deg, #f0fdfa, #f5f8ff);
+  border: 1px solid #dcebe9;
+}
+
+#investor-resources .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+#investor-resources .card {
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-top: 3px solid #0d9488;
+  border-radius: 17px;
+  padding: 23px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#investor-resources .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#investor-resources .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#investor-resources .card h3 {
+  color: #12345a;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#investor-resources .card p {
+  color: #52657b;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+#investor-resources .card .btn {
+  margin-top: auto;
+  border-radius: 10px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+#investor-resources .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#investor-resources .highlight h3 {
+  color: #12345a;
+  line-height: 1.5;
+}
+
+#investor-resources .highlight p {
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #investor-resources .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #investor-resources {
+    padding: 25px 0 35px;
+  }
+
+  #investor-resources .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #investor-resources .card,
+  #investor-resources .notice,
+  #investor-resources .highlight {
+    padding: 18px;
+  }
+
+  #investor-resources .card h3 {
+    font-size: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #investor-resources .card {
+    transition: none;
+  }
+
+  #investor-resources .card:hover {
+    transform: none;
+  }
+    }
+    /* =====================================
+   RAVUKSA FINTECH - PREMIUM RISK & SAFETY
+===================================== */
+
+#risk-safety {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 65%);
+}
+
+#risk-safety .section-title {
+  color: #12345a;
+  font-size: clamp(25px, 4vw, 35px);
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#risk-safety .sub {
+  color: #52657b;
+  text-align: center;
+  line-height: 1.8;
+  margin: 18px 0 28px;
+}
+
+#risk-safety .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#risk-safety .card {
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-top: 3px solid #0d9488;
+  border-radius: 17px;
+  padding: 23px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#risk-safety .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#risk-safety .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+#risk-safety .card h3 {
+  color: #12345a;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#risk-safety .card p {
+  color: #52657b;
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 0;
+}
+
+#risk-safety .highlight {
+  background: linear-gradient(135deg, #fff7ed, #fffaf5);
+  border: 1px solid #fed7aa;
+  border-left: 4px solid #ea580c;
+  border-radius: 17px;
+  padding: 23px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.05);
+}
+
+#risk-safety .highlight h3 {
+  color: #9a3412;
+  line-height: 1.5;
+}
+
+#risk-safety .highlight p {
+  color: #52657b !important;
+  line-height: 1.85;
+}
+
+#risk-safety .btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+#risk-safety .btns .btn {
+  border-radius: 10px;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #risk-safety .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #risk-safety {
+    padding: 25px 0 35px;
+  }
+
+  #risk-safety .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #risk-safety .card,
+  #risk-safety .highlight {
+    padding: 18px;
+  }
+
+  #risk-safety .card h3 {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #risk-safety .card {
+    transition: none;
+  }
+
+  #risk-safety .card:hover {
+    transform: none;
+  }
+    }
+    /* =====================================
+   RAVUKSA FINTECH - PREMIUM PLATFORMS
+===================================== */
+
+#platforms {
+  padding: 35px 0 45px;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 65%);
+}
+
+#platforms .section-title {
+  color: #12345a;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+#platforms > .wrap > .section-title {
+  text-align: center;
+  font-size: clamp(27px, 4vw, 36px);
+  margin-bottom: 18px;
+}
+
+#platforms .sub {
+  color: #52657b;
+  line-height: 1.85;
+}
+
+#platforms .notice {
+  padding: 22px;
+  background: #fffaf0;
+  border: 1px solid #f4e5c4;
+  border-left: 4px solid #e8a23a;
+  border-radius: 17px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.06);
+  line-height: 1.8;
+}
+
+#platforms .highlight {
+  padding: 23px;
+  background: linear-gradient(135deg, #f0fdfa, #f5f8ff);
+  border: 1px solid #dcebe9;
+  border-radius: 17px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.06);
+}
+
+#platforms .highlight h3 {
+  color: #12345a;
+  line-height: 1.5;
+}
+
+#platforms .highlight p {
+  color: #52657b;
+  line-height: 1.85;
+}
+
+#platforms .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+#platforms .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-top: 3px solid #0d9488;
+  border-radius: 16px;
+  box-shadow: 0 7px 22px rgba(24, 58, 96, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#platforms .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 13px 28px rgba(24, 58, 96, 0.12);
+}
+
+#platforms .card h3 {
+  color: #12345a;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#platforms .card p {
+  color: #52657b;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+#platforms .card .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  min-height: 42px;
+  margin-top: auto;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#platforms > .wrap > .btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+#platforms .btns .btn {
+  border-radius: 10px;
+}
+
+#platforms .wrap > h2[id$="-platforms"] {
+  scroll-margin-top: 90px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #platforms .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #platforms {
+    padding: 25px 0 35px;
+  }
+
+  #platforms .grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  #platforms .card,
+  #platforms .highlight,
+  #platforms .notice {
+    padding: 18px;
+  }
+
+  #platforms .card h3 {
+    font-size: 18px;
+  }
+
+  #platforms .wrap > h2[id$="-platforms"] {
+    font-size: 23px !important;
+    scroll-margin-top: 75px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #platforms .card {
+    transition: none;
+  }
+
+  #platforms .card:hover {
+    transform: none;
+  }
+    }
+    /* RAVUKSA FINTECH - PREMIUM COMMUNITY DESIGN */
+#community {
+padding: 65px 20px;
+background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+color: #17324d;
+}
+
+#community .wrap {
+max-width: 1150px;
+margin: 0 auto;
+}
+
+#community .section-title {
+color: #12345a;
+text-align: center;
+font-size: clamp(26px, 4vw, 36px);
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+#community .sub {
+max-width: 720px;
+margin: 0 auto 32px;
+text-align: center;
+color: #5b7087;
+line-height: 1.8;
+}
+
+#community .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+margin-top: 28px;
+}
+
+#community .card {
+padding: 26px 22px;
+background: #ffffff;
+border: 1px solid #dce8f5;
+border-radius: 18px;
+box-shadow: 0 8px 24px rgba(25, 65, 110, 0.07);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#community .card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 30px rgba(25, 65, 110, 0.12);
+}
+
+#community .icon {
+font-size: 34px;
+margin-bottom: 14px;
+}
+
+#community .card h3 {
+color: #174b82;
+font-size: 19px;
+margin-bottom: 10px;
+}
+
+#community .card p {
+color: #5b7087;
+line-height: 1.75;
+font-size: 15px;
+}
+
+#community .highlight {
+padding: 28px;
+background: linear-gradient(135deg, #12345a, #1769aa);
+border: 1px solid #2d76b7;
+border-radius: 20px;
+color: #ffffff;
+box-shadow: 0 12px 28px rgba(18, 52, 90, 0.16);
+}
+
+#community .highlight h3 {
+color: #ffffff;
+font-size: 22px;
+}
+
+#community .highlight p {
+color: #e1efff !important;
+line-height: 1.8;
+}
+
+#community .btns {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+margin-top: 22px;
+}
+
+#community .btn {
+border-radius: 10px;
+font-weight: 700;
+transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#community .btn:hover {
+transform: translateY(-2px);
+opacity: 0.92;
+}
+
+@media (max-width: 760px) {
+#community {
+padding: 45px 15px;
+}
+
+#community .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+#community .card {
+padding: 20px 16px;
+}
+
+#community .highlight {
+padding: 22px 18px;
+}
+}
+
+@media (max-width: 480px) {
+#community .grid {
+grid-template-columns: 1fr;
+}
+
+#community .btns {
+flex-direction: column;
+}
+
+#community .btns .btn {
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+#community .card,
+#community .btn {
+transition: none;
+}
+
+#community .card:hover,
+#community .btn:hover {
+transform: none;
+}
+    }
+    /* RAVUKSA FINTECH - PREMIUM ABOUT DESIGN */
+#about {
+padding: 65px 20px;
+background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+color: #17324d;
+}
+
+#about .wrap {
+max-width: 1150px;
+margin: 0 auto;
+}
+
+#about .section-title {
+text-align: center;
+color: #12345a;
+font-size: clamp(26px, 4vw, 36px);
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+#about .sub {
+text-align: center;
+color: #5b7087;
+line-height: 1.8;
+margin: 0 auto 32px;
+}
+
+#about .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+margin-top: 28px;
+}
+
+#about .card {
+padding: 26px 22px;
+background: #ffffff;
+border: 1px solid #dce8f5;
+border-radius: 18px;
+box-shadow: 0 8px 24px rgba(25, 65, 110, 0.07);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#about .card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 30px rgba(25, 65, 110, 0.12);
+}
+
+#about .icon {
+font-size: 34px;
+margin-bottom: 14px;
+}
+
+#about .card h3 {
+color: #174b82;
+font-size: 19px;
+margin-bottom: 10px;
+}
+
+#about .card p {
+color: #5b7087;
+font-size: 15px;
+line-height: 1.8;
+}
+
+#about .highlight {
+margin-top: 30px;
+padding: 30px;
+background: linear-gradient(135deg, #12345a, #1769aa);
+border: 1px solid #2d76b7;
+border-radius: 20px;
+box-shadow: 0 12px 28px rgba(18, 52, 90, 0.16);
+color: #ffffff;
+}
+
+#about .highlight h3 {
+color: #ffffff;
+font-size: 23px;
+}
+
+#about .founder {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 30px;
+}
+
+#about .founder > div {
+flex: 1;
+min-width: 0;
+}
+
+#about .founder p {
+line-height: 1.8;
+}
+
+#about .founder-photo {
+display: block;
+width: 190px;
+height: 220px;
+object-fit: cover;
+object-position: center top;
+border: 3px solid rgba(255, 255, 255, 0.75);
+border-radius: 16px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+#about .notice {
+padding: 20px 22px;
+background: #eaf4ff;
+color: #294966;
+border: 1px solid #cfe3f7;
+border-left: 5px solid #2475bd;
+border-radius: 12px;
+line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+#about {
+padding: 45px 15px;
+}
+
+#about .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+#about .card {
+padding: 20px 16px;
+}
+
+#about .highlight {
+padding: 22px 18px;
+}
+
+#about .founder {
+flex-direction: column-reverse;
+align-items: flex-start;
+gap: 22px;
+}
+
+#about .founder-photo {
+width: 150px;
+height: 175px;
+align-self: center;
+}
+}
+
+@media (max-width: 480px) {
+#about .grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+#about .card {
+transition: none;
+}
+
+#about .card:hover {
+transform: none;
+}
+    }
+    /* RAVUKSA FINTECH - PREMIUM CONTACT DESIGN */
+#contact {
+padding: 65px 20px;
+background: linear-gradient(180deg, #edf5ff 0%, #ffffff 100%);
+color: #17324d;
+}
+
+#contact .wrap {
+max-width: 1150px;
+margin: 0 auto;
+}
+
+#contact .section-title {
+color: #12345a;
+text-align: center;
+font-size: clamp(26px, 4vw, 36px);
+font-weight: 800;
+margin-bottom: 12px;
+}
+
+#contact .sub {
+max-width: 720px;
+margin: 0 auto 32px;
+text-align: center;
+color: #5b7087;
+line-height: 1.8;
+}
+
+#contact .grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 22px;
+margin-top: 28px;
+}
+
+#contact .card {
+padding: 26px 22px;
+background: #ffffff;
+border: 1px solid #dce8f5;
+border-radius: 18px;
+box-shadow: 0 8px 24px rgba(25, 65, 110, 0.07);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+overflow-wrap: anywhere;
+}
+
+#contact .card:hover {
+transform: translateY(-5px);
+box-shadow: 0 14px 30px rgba(25, 65, 110, 0.12);
+}
+
+#contact .icon {
+font-size: 34px;
+margin-bottom: 14px;
+}
+
+#contact .card h3 {
+color: #174b82;
+font-size: 19px;
+margin-bottom: 10px;
+}
+
+#contact .card p {
+color: #5b7087;
+font-size: 15px;
+line-height: 1.8;
+}
+
+#contact .card a {
+color: #1769aa;
+font-weight: 600;
+text-decoration: none;
+overflow-wrap: anywhere;
+}
+
+#contact .card a:hover {
+color: #0d477b;
+text-decoration: underline;
+}
+
+#contact .highlight {
+margin-top: 30px;
+padding: 28px;
+background: linear-gradient(135deg, #12345a, #1769aa);
+border: 1px solid #2d76b7;
+border-radius: 20px;
+color: #ffffff;
+box-shadow: 0 12px 28px rgba(18, 52, 90, 0.16);
+}
+
+#contact .highlight h3 {
+color: #ffffff;
+font-size: 22px;
+}
+
+#contact .highlight p {
+color: #e1efff;
+line-height: 1.8;
+}
+
+#contact .btns {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+justify-content: center;
+}
+
+#contact .btn {
+border-radius: 10px;
+font-weight: 700;
+transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#contact .btn:hover {
+transform: translateY(-2px);
+opacity: 0.92;
+}
+
+@media (max-width: 760px) {
+#contact {
+padding: 45px 15px;
+}
+
+#contact .grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 14px;
+}
+
+#contact .card {
+padding: 20px 16px;
+}
+
+#contact .highlight {
+padding: 22px 18px;
+}
+}
+
+@media (max-width: 480px) {
+#contact .grid {
+grid-template-columns: 1fr;
+}
+
+#contact .btns .btn {
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+#contact .card,
+#contact .btn {
+transition: none;
+}
+
+#contact .card:hover,
+#contact .btn:hover {
+transform: none;
+}
+    }
+    /* RAVUKSA FINTECH - PREMIUM FOOTER DESIGN */
+footer {
+padding: 42px 20px 25px !important;
+background: linear-gradient(135deg, #102b49, #174b78) !important;
+color: #dce9f7 !important;
+border-top: 4px solid #3b9df2 !important;
+text-align: center;
+}
+
+footer .wrap {
+max-width: 1100px;
+margin: 0 auto;
+}
+
+footer h3 {
+color: #ffffff !important;
+font-size: 25px;
+font-weight: 800;
+letter-spacing: 1px;
+margin-bottom: 12px !important;
+}
+
+footer p {
+color: #dce9f7;
+line-height: 1.8;
+margin-bottom: 8px !important;
+overflow-wrap: anywhere;
+}
+
+footer p strong {
+color: #ffffff;
+}
+
+footer a {
+color: #8fd0ff;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.2s ease;
+}
+
+footer a:hover {
+color: #ffffff;
+text-decoration: underline;
+}
+
+footer p:last-child {
+margin-top: 22px;
+padding-top: 18px;
+border-top: 1px solid rgba(255, 255, 255, 0.18);
+color: #b9cde2;
+font-size: 13px;
+}
+
+@media (max-width: 480px) {
+footer {
+padding: 32px 16px 22px !important;
+}
+
+footer h3 {
+font-size: 22px;
+}
+
+footer p {
+font-size: 14px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+footer a {
+transition: none;
+}
+    }
+    /* HOME PAGE - FOUNDER & CEO PROFILE */
+    .home-founder {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+max-width: 900px;
+margin: 38px auto 10px;
+padding: 26px;
+text-align: left;
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #d7e7f7;
+border-radius: 22px;
+box-shadow: 0 12px 32px rgba(18, 52, 90, 0.12);
+box-sizing: border-box;
+}
+
+    .home-founder-photo {
+display: block;
+flex: 0 0 180px;
+width: 180px;
+height: 210px;
+object-fit: cover;
+object-position: center top;
+border: 4px solid #ffffff;
+outline: 2px solid #c8e1fa;
+border-radius: 16px;
+box-shadow: 0 8px 22px rgba(18, 52, 90, 0.15);
+}
+
+    .home-founder-info {
+flex: 1;
+min-width: 0;
+}
+    
+  .home-founder-label {
+display: inline-block;
+margin-bottom: 9px;
+color: #1769aa;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
+
+    .home-founder-info h2 {
+margin: 0 0 7px;
+color: #12345a;
+font-size: clamp(25px, 3vw, 34px);
+font-weight: 800;
+}
+
+    .home-founder-info h3 {
+margin: 0 0 14px;
+color: #1769aa;
+font-size: 17px;
+line-height: 1.5;
+}
+
+    .home-founder-info p {
+margin: 0 0 18px;
+color: #52677e;
+font-size: 15px;
+line-height: 1.8;
+}
+
+.home-founder-info .btn {
+display: inline-block;
+text-decoration: none;
+}
+
+@media (max-width: 600px) {
+.home-founder {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 14px;
+width: 100%;
+max-width: 100%;
+margin: 24px auto 8px;
+padding: 20px 16px;
+text-align: center;
+box-sizing: border-box;
+border-radius: 18px;
+}
+
+.home-founder-photo {
+display: block;
+flex: none;
+width: 110px;
+height: 130px;
+max-width: 100%;
+margin: 0 auto;
+object-fit: cover;
+object-position: center top;
+}
+
+.home-founder-info {
+width: 100%;
+max-width: 100%;
+min-width: 0;
+box-sizing: border-box;
+}
+
+.home-founder-label {
+font-size: 12px;
+line-height: 1.5;
+overflow-wrap: normal;
+}
+
+.home-founder-info h2 {
+font-size: 25px;
+line-height: 1.3;
+overflow-wrap: normal;
+}
+
+.home-founder-info h3 {
+font-size: 16px;
+line-height: 1.5;
+color: #1769aa;
+overflow-wrap: normal;
+word-break: normal;
+}
+
+.home-founder-info p {
+font-size: 14px;
+line-height: 1.7;
+overflow-wrap: normal;
+word-break: normal;
+}
+
+.home-founder-info .btn {
+max-width: 100%;
+white-space: normal;
+box-sizing: border-box;
+}
+    }
+    
+    /* PREMIUM MARKET INDEX CARDS */
+#market-dashboard > .wrap > .grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 22px;
+margin-top: 25px;
+}
+
+#market-dashboard > .wrap > .grid > .card {
+position: relative;
+min-width: 0;
+padding: 25px;
+overflow: hidden;
+background: linear-gradient(145deg, #ffffff, #f1f7ff);
+border: 1px solid #d5e5f6;
+border-radius: 20px;
+box-shadow: 0 8px 25px rgba(18, 52, 90, 0.08);
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#market-dashboard > .wrap > .grid > .card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg, #1769aa, #57b6f5);
+}
+
+#market-dashboard > .wrap > .grid > .card:hover {
+transform: translateY(-4px);
+box-shadow: 0 14px 30px rgba(18, 52, 90, 0.13);
+}
+
+#market-dashboard > .wrap > .grid > .card .icon {
+font-size: 32px;
+margin-bottom: 12px;
+}
+
+#market-dashboard > .wrap > .grid > .card h3 {
+color: #174b82;
+font-size: 21px;
+margin: 0 0 10px;
+}
+
+#market-dashboard > .wrap > .grid > .card h2 {
+color: #12345a;
+font-size: 30px;
+font-weight: 800;
+margin: 14px 0;
+overflow-wrap: anywhere;
+}
+
+#market-dashboard > .wrap > .grid > .card p {
+color: #5b7087;
+line-height: 1.75;
+overflow-wrap: anywhere;
+}
+
+#market-dashboard > .wrap > .grid > .card .btns {
+margin: 12px 0;
+}
+
+#market-dashboard > .wrap > .grid > .card .btn {
+border-radius: 9px;
+font-weight: 700;
+}
+
+@media (max-width: 600px) {
+#market-dashboard > .wrap > .grid {
+grid-template-columns: 1fr;
+gap: 16px;
+}
+
+#market-dashboard > .wrap > .grid > .card {
+padding: 22px 18px;
+}
+
+#market-dashboard > .wrap > .grid > .card h2 {
+font-size: 27px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+#market-dashboard > .wrap > .grid > .card {
+transition: none;
+}
+
+#market-dashboard > .wrap > .grid > .card:hover {
+transform: none;
+}
+    }
+    
+/* PREMIUM DESIGN - TOP GAINERS & TOP LOSERS */
+
+#market-movers .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+#market-movers .grid > .card {
+  position: relative;
+  min-width: 0;
+  padding: 28px 24px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f1f7ff);
+  border: 1px solid #d5e5f6;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(18, 52, 90, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+#market-movers .grid > .card:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #16a34a, #86efac);
+}
+
+#market-movers .grid > .card:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #dc2626, #fca5a5);
+}
+
+#market-movers .grid > .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(18, 52, 90, 0.14);
+}
+
+#market-movers .grid > .card .icon {
+  font-size: 36px;
+  margin-bottom: 14px;
+}
+
+#market-movers .grid > .card h3 {
+  color: #174b82;
+  font-size: 23px;
+  margin: 0 0 14px;
+}
+
+#market-movers .grid > .card p {
+  color: #52677e;
+  font-size: 15px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+#market-movers .grid > .card p strong {
+  color: #174b82;
+}
+
+@media (max-width: 600px) {
+  #market-movers .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  #market-movers .grid > .card {
+    padding: 25px 20px;
+    border-radius: 17px;
+  }
+
+  #market-movers .grid > .card h3 {
+    font-size: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #market-movers .grid > .card {
+    transition: none;
+  }
+
+  #market-movers .grid > .card:hover {
+    transform: none;
+  }
+}
+
+    @media (max-width: 600px) {
+  #mainLogo {
+    height: 56px !important;
+    width: auto !important;
+  }
+    }
+
+  /* RAVUKSA FINTECH - PROFESSIONAL FOOTER */
+.ravuksa-footer {
+  margin-top: 35px;
+  padding: 40px 5% 22px;
+  background: #f5f8fc;
+  border-top: 1px solid #dce6f1;
+  color: #52677e;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.ravuksa-footer .footer-brand {
+  margin-bottom: 30px;
+}
+
+.ravuksa-footer .footer-brand h3 {
+  margin: 0 0 10px;
+  color: #12345a;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.ravuksa-footer .footer-brand p {
+  margin: 6px 0;
+  line-height: 1.7;
+}
+
+.ravuksa-footer .footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  padding: 25px 0;
+  border-top: 1px solid #dce6f1;
+  border-bottom: 1px solid #dce6f1;
+}
+
+.ravuksa-footer .footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  min-width: 0;
+}
+
+.ravuksa-footer .footer-column h4 {
+  margin: 0 0 5px;
+  color: #12345a;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.ravuksa-footer .footer-column a,
+.ravuksa-footer .footer-contact a {
+  color: #1769aa;
+  text-decoration: none;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.ravuksa-footer .footer-column a:hover,
+.ravuksa-footer .footer-contact a:hover {
+  color: #12345a;
+  text-decoration: underline;
+}
+
+.ravuksa-footer .footer-contact {
+  padding: 22px 0 12px;
+  line-height: 1.8;
+}
+
+.ravuksa-footer .footer-contact p {
+  margin: 5px 0;
+}
+
+.ravuksa-footer .footer-contact strong {
+  color: #12345a;
+}
+
+.ravuksa-footer .footer-bottom {
+  padding-top: 18px;
+  border-top: 1px solid #dce6f1;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ravuksa-footer .footer-bottom p {
+  margin: 5px 0;
+}
+
+@media (max-width: 700px) {
+  .ravuksa-footer {
+    padding: 30px 18px 20px;
+  }
+
+  .ravuksa-footer .footer-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 18px;
+  }
+
+  .ravuksa-footer .footer-brand h3 {
+    font-size: 22px;
+  }
+
+  .ravuksa-footer .footer-column h4 {
+    font-size: 15px;
+  }
+
+  .ravuksa-footer .footer-column a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ravuksa-footer .footer-links {
+    grid-template-columns: 1fr;
+  }
+  }
+
+    /* RAVUKSA FOOTER - CLEAR TEXT AND LINKS */
+.ravuksa-footer {
+  background: #f5f8fc !important;
+  color: #334155 !important;
+}
+
+.ravuksa-footer h3,
+.ravuksa-footer h4 {
+  color: #12345a !important;
+  opacity: 1 !important;
+}
+
+.ravuksa-footer p {
+  color: #334155 !important;
+  opacity: 1 !important;
+}
+
+.ravuksa-footer .footer-column a,
+.ravuksa-footer .footer-contact a {
+  color: #0759a6 !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+}
+
+.ravuksa-footer .footer-column a:hover,
+.ravuksa-footer .footer-contact a:hover {
+  color: #12345a !important;
+  text-decoration: underline;
+}
+
+.ravuksa-footer .footer-contact strong {
+  color: #12345a !important;
+}
+
+.ravuksa-footer .footer-bottom {
+  color: #334155 !important;
+}
+
+.ravuksa-footer .footer-bottom p {
+  color: #334155 !important;
+}
+    
+  
+
+
+  #ravuksaInstallButton {
+    position: relative;
+    top: auto;
+    right: auto;
+    z-index: 10;
+    display: none;
+    margin: 10px 12px 12px auto;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0b1f3a;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  #ravuksaInstallHelp {
+    position: fixed;
+    z-index: 100000;
+    top: 60px;
+    right: 12px;
+    width: min(300px, calc(100vw - 24px));
+    padding: 14px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #172033;
+    border: 1px solid #dbe2ea;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    display: none;
+  }
+
+  #ravuksaInstallHelp button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0b1f3a;
+    color: #ffffff;
+  }
+  
+/* RAVUKSA PREMIUM EXPLORE BUTTON */
+
+.ravuksa-explore-premium {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px;
+  min-height: 76px;
+  margin: 0 0 22px;
+  padding: 13px 19px;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    110deg,
+    #071b35,
+    #087f8c,
+    #1266c5
+  );
+
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 22px rgba(8,127,140,0.25),
+    0 0 14px rgba(18,102,197,0.15);
+
+  position: relative;
+  overflow: hidden;
+  animation: ravuksaExplorePulse 2.5s infinite;
+  transition: transform 0.3s ease;
+}
+
+.ravuksa-explore-premium:hover {
+  transform: translateY(-3px) scale(1.015);
+}
+
+.ravuksa-explore-premium .explore-icon {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.ravuksa-explore-premium .explore-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 4px;
+}
+
+.ravuksa-explore-premium .explore-text strong {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.ravuksa-explore-premium .explore-text small {
+  font-size: 11px;
+  color: #d9faff;
+  font-weight: 500;
+}
+
+.ravuksa-explore-premium .explore-arrow {
+  font-size: 27px;
+  font-weight: 800;
+  flex-shrink: 0;
+  animation: ravuksaArrowMove 1.2s infinite;
+}
+
+@keyframes ravuksaExplorePulse {
+  0%, 100% {
+    box-shadow: 0 8px 22px rgba(8,127,140,0.22);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(8,127,140,0.48);
+  }
+}
+
+@keyframes ravuksaArrowMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ravuksa-explore-premium,
+  .ravuksa-explore-premium .explore-arrow {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .ravuksa-explore-premium {
+    max-width: 100%;
+    min-height: 76px;
+    margin-bottom: 20px;
+  }
+}
+  
+
