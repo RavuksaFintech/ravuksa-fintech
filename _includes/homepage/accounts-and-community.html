@@ -1,0 +1,342 @@
+<section class="about" id="register">
+<div class="wrap">
+<h2 class="section-title">📝 Create Your Account</h2>
+<p class="sub">
+      RAVUKSA FINTECH पर अपना free account बनाएं और learning platform का उपयोग करें।
+    </p>
+<div class="card" style="max-width:500px;margin:30px auto;">
+<label for="registerName">Full Name</label>
+<input id="registerName" placeholder="Enter your full name" style="width:100%;padding:12px;margin:8px 0 16px;" type="text"/>
+<label for="registerEmail">Email Address</label>
+<input id="registerEmail" placeholder="Enter your email" style="width:100%;padding:12px;margin:8px 0 16px;" type="email"/>
+<label for="registerPassword">Password</label>
+<input id="registerPassword" placeholder="Create a password" style="width:100%;padding:12px;margin:8px 0 16px;" type="password"/>
+<label for="registerConfirmPassword">Confirm Password</label>
+<input id="registerConfirmPassword" placeholder="Confirm your password" style="width:100%;padding:12px;margin:8px 0 16px;" type="password"/>
+<div class="btns">
+<button class="btn" onclick="registerUser()" type="button">
+          📝 Create Account
+        </button>
+</div>
+<p id="registerMessage" style="margin-top:15px;"></p>
+<p style="margin-top:20px;">
+        Already have an account?
+        <a href="#login">🔐 Login</a>
+</p>
+</div>
+<div class="btns">
+<a class="btn secondary" href="#learn">
+        ← Back to Learning
+      </a>
+</div>
+</div>
+</section>
+
+<section class="about" id="profile-settings">
+<div class="wrap">
+<h2 class="section-title">👤 My Profile</h2>
+<div class="card" style="max-width:650px;margin:30px auto;">
+<div style="text-align:center;margin-bottom:25px;">
+<div id="profileAvatar" style="
+       width:90px;
+       height:90px;
+       margin:0 auto 12px;
+       border-radius:50%;
+       background:#eef3f8;
+       display:flex;
+       align-items:center;
+       justify-content:center;
+       font-size:42px;
+       border:2px solid #d8e1ea;
+       ">
+    👤
+  </div>
+<p style="margin:0;font-size:14px;color:#65758a;">
+    Your Profile
+  </p>
+</div>
+<h3>👤 Basic Profile Information</h3>
+<div style="margin-top:18px;padding:12px;background:#f7f9fc;border-radius:8px;">
+<strong>📧 Account Email</strong>
+<p id="profileEmail" style="margin-top:6px;color:#65758a;">
+    Login email will appear here
+  </p>
+</div>
+<label style="display:block;margin-top:20px;">
+    Full Name
+  </label>
+<input id="profileName" placeholder="Enter your full name" style="width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ccc;" type="text"/>
+<label style="display:block;margin-top:18px;">
+    Username
+  </label>
+<input id="profileUsername" placeholder="Choose a username" style="width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ccc;" type="text"/>
+<label style="display:block;margin-top:18px;">
+    Bio
+  </label>
+<textarea id="profileBio" placeholder="Tell us something about yourself..." rows="4" style="width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ccc;resize:vertical;"></textarea>
+<div style="margin-top:18px;">
+<label style="display:block;">
+    🎯 Learning Level
+  </label>
+<select id="profileLevel" style="width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ccc;">
+<option value="">Select your learning level</option>
+<option value="Beginner">🌱 Beginner</option>
+<option value="Intermediate">📈 Intermediate</option>
+<option value="Advanced">🚀 Advanced</option>
+</select>
+</div>
+<div class="btns" style="margin-top:20px;">
+<button class="btn primary" onclick="saveProfile()" type="button">
+      💾 Save Profile
+    </button>
+<p id="profileMessage" style="margin-top:15px;text-align:center;font-size:14px;">
+</p>
+<div class="card" style="margin-top:25px;">
+<h3>📊 Learning Progress</h3>
+<p style="margin-top:8px;color:#65758a;">
+    अपने financial learning journey की progress यहाँ track करें।
+  </p>
+<div class="grid" style="margin-top:20px;">
+<div class="card">
+<div class="icon">📚</div>
+<h3>Topics Started</h3>
+<p id="topicsStarted" style="font-size:24px;font-weight:700;margin-top:8px;">0</p>
+</div>
+<div class="card">
+<div class="icon">✅</div>
+<h3>Topics Completed</h3>
+<p id="topicsCompleted" style="font-size:24px;font-weight:700;margin-top:8px;">0</p>
+</div>
+<div class="card">
+<div class="icon">🏆</div>
+<h3>Quiz Progress</h3>
+<p id="quizProgress" style="font-size:24px;font-weight:700;margin-top:8px;">0%</p>
+</div>
+<div class="card">
+<div class="icon">📈</div>
+<h3>Overall Progress</h3>
+<p id="overallProgress" style="font-size:24px;font-weight:700;margin-top:8px;">0%</p>
+</div>
+</div>
+<div class="notice" style="margin-top:20px;">
+<strong>💡 Coming Soon</strong>
+<p style="margin-top:6px;">
+      Learning activity, completed topics, quizzes और progress
+      future में automatically update होंगे।
+    </p>
+</div>
+</div>
+</div>
+</div>
+<p class="sub">
+      अपने RAVUKSA FINTECH account और learning profile को यहाँ manage करें।
+    </p>
+<div class="grid">
+<div class="card">
+<div class="icon">👤</div>
+<h3>Profile Details</h3>
+<p style="margin-top:8px;">
+          अपना नाम, username और basic profile information यहाँ manage करें।
+        </p>
+</div>
+<div class="card">
+<div class="icon">📚</div>
+<h3>Learning Progress</h3>
+<p style="margin-top:8px;">
+          आपकी learning journey और progress यहाँ दिखाई जाएगी।
+        </p>
+</div>
+<div class="card">
+<div class="icon">🔐</div>
+<h3>Account &amp; Security</h3>
+<p style="margin-top:8px;">
+          Account security और login-related settings यहाँ manage की जाएँगी।
+        </p>
+</div>
+</div>
+<div class="btns" style="margin-top:30px;">
+<a class="btn secondary" href="#home">← Back to Home</a>
+</div>
+</div>
+</section>
+
+<section class="about" id="login">
+<div class="wrap">
+<h2 class="section-title">🔐 Login</h2>
+<p class="sub">
+      अपने RAVUKSA FINTECH account में login करें।
+    </p>
+<div class="card" style="max-width:500px;margin:30px auto;">
+<label for="loginEmail">Email Address</label>
+<input id="loginEmail" placeholder="Enter your email" style="width:100%;padding:12px;margin:8px 0 16px;" type="email"/>
+<label for="loginPassword">Password</label>
+<input id="loginPassword" placeholder="Enter your password" style="width:100%;padding:12px;margin:8px 0 16px;" type="password"/>
+<div class="btns">
+<button class="btn" onclick="loginUser()" type="button">
+          🔐 Login
+        </button>
+</div>
+<p id="loginMessage" style="margin-top:15px;"></p>
+<p style="margin-top:20px;">
+        Don't have an account?
+        <a href="#register">📝 Create Account</a>
+</p>
+</div>
+<div class="btns">
+<a class="btn secondary" href="#learn">
+        ← Back to Learning
+      </a>
+</div>
+</div>
+</section>
+
+<section class="about" id="feedback">
+<div class="wrap">
+<h2 class="section-title">⭐ Customer Feedback &amp; Rating</h2>
+<p class="sub">
+      RAVUKSA FINTECH की website और service आपको कैसी लगी?
+      अपना honest feedback और rating जरूर दें।
+    </p>
+<p style="text-align:center;font-size:14px;color:#65758a;margin-top:-5px;">
+Your feedback helps us improve RAVUKSA FINTECH for everyone.
+    </p>
+<div class="card" style="max-width:600px;margin:30px auto;">
+<label for="feedbackRating">Your Rating</label>
+<select id="feedbackRating" style="width:100%;padding:12px;margin:8px 0 18px;">
+<option value="">Select Rating</option>
+<option value="5">⭐⭐⭐⭐⭐ — Excellent</option>
+<option value="4">⭐⭐⭐⭐ — Very Good</option>
+<option value="3">⭐⭐⭐ — Good</option>
+<option value="2">⭐⭐ — Needs Improvement</option>
+<option value="1">⭐ — Poor</option>
+</select>
+<label for="feedbackText">Your Feedback</label>
+<textarea id="feedbackText" placeholder="Tell us about your experience..." rows="5" style="width:100%;padding:12px;margin:8px 0 18px;resize:vertical;"></textarea>
+<div class="btns">
+<button class="btn" onclick="submitFeedback()" type="button">
+          ⭐ Submit Feedback
+        </button>
+</div>
+<p id="feedbackMessage" style="margin-top:15px;"></p>
+</div>
+</div>
+</section>
+
+<section class="about" id="sip-calculator">
+<div class="wrap">
+<h2 class="section-title">SIP Calculator</h2>
+<p class="sub">
+      Estimate the future value of your monthly SIP investment using your investment amount, expected return and time period.
+    </p>
+<div class="card" style="max-width:600px;margin:0 auto;">
+<label for="sipMonthly">Monthly Investment (₹)</label>
+<input id="sipMonthly" min="1" placeholder="Example: 5000" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="sipRate">Expected Annual Return (%)</label>
+<input id="sipRate" min="0" placeholder="Example: 12" step="0.1" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="sipYears">Investment Period (Years)</label>
+<input id="sipYears" min="1" placeholder="Example: 10" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<button class="btn primary" onclick="calculateSIP()" type="button">
+        Calculate SIP
+      </button>
+<div id="sipResult" style="margin-top:20px;padding:16px;border-radius:10px;background:rgba(255,255,255,0.08);">
+        Enter your details and click Calculate SIP.
+      </div>
+<p style="margin-top:10px;font-size:13px;color:#65758a;text-align:center;">
+  ℹ️ यह SIP result केवल educational estimate है। Actual returns market performance के अनुसार अलग हो सकते हैं।
+      </p>
+</div>
+</div>
+<div class="btns" style="margin-top:25px;">
+<a class="btn secondary" href="#tools">
+    ← Back to Tools / Calculators
+  </a>
+</div>
+</section>
+
+<section class="about" id="compound-calculator">
+<div class="wrap">
+<h2 class="section-title">Compound Interest Calculator</h2>
+<p class="sub">
+      Calculate the estimated future value of a lump-sum investment using principal, expected annual return and time period.
+    </p>
+<div class="card" style="max-width:600px;margin:0 auto;">
+<label for="compoundPrincipal">Initial Investment (₹)</label>
+<input id="compoundPrincipal" min="1" placeholder="Example: 100000" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="compoundRate">Expected Annual Return (%)</label>
+<input id="compoundRate" min="0" placeholder="Example: 10" step="0.1" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="compoundYears">Investment Period (Years)</label>
+<input id="compoundYears" min="1" placeholder="Example: 10" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<button class="btn primary" onclick="calculateCompound()" type="button">
+        Calculate
+      </button>
+<div id="compoundResult" style="margin-top:20px;padding:16px;border-radius:10px;background:rgba(22,160,133,0.08);">
+        Enter your details and click Calculate.
+      </div>
+<p style="margin-top:10px;font-size:13px;color:#65758a;text-align:center;">
+  ℹ️ यह Compound Interest result केवल educational estimate है। Actual returns अलग हो सकते हैं।
+      </p>
+</div>
+</div>
+</section>
+
+<section class="about" id="investment-calculator">
+<div class="wrap">
+<h2 class="section-title">Investment Calculator</h2>
+<p class="sub">
+Calculate the estimated future value of an investment using investment amount, expected annual return and time period.
+</p>
+<div class="card" style="max-width:600px;margin:0 auto;">
+<label for="investmentAmount">Initial Investment (₹)</label>
+<input id="investmentAmount" min="1" placeholder="Example: 100000" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="investmentRate">Expected Annual Return (%)</label>
+<input id="investmentRate" min="0" placeholder="Example: 10" step="0.1" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<label for="investmentYears">Investment Period (Years)</label>
+<input id="investmentYears" min="1" placeholder="Example: 10" style="width:100%;padding:12px;margin:8px 0 16px;border-radius:8px;border:1px solid #ccc;" type="number"/>
+<button class="btn primary" onclick="calculateInvestment()" type="button">
+Calculate
+</button>
+<div id="investmentResult" style="margin-top:20px;padding:16px;border-radius:10px;background:rgba(22,160,133,0.08);">
+Enter your details and click Calculate.
+</div>
+<p style="margin-top:10px;font-size:13px;color:#65758a;text-align:center;">
+  ℹ️ यह Investment result केवल educational estimate है। Actual returns market performance के अनुसार अलग हो सकते हैं।
+  </p>
+</div>
+</div>
+</section>
+
+<section class="about" id="community">
+<div class="wrap">
+<h2 class="section-title">Join the RAVUKSA Community</h2>
+<p class="sub">Learn, share knowledge and stay connected with a learning-focused financial community.</p>
+<div class="grid">
+<div class="card">
+<div class="icon">📚</div>
+<h3>Learn Together</h3>
+<p>Explore financial-market concepts and learn from educational resources in a simple way.</p>
+</div>
+<div class="card">
+<div class="icon">💬</div>
+<h3>Share Knowledge</h3>
+<p>Share learning experiences, questions and useful market-related knowledge with the community.</p>
+</div>
+<div class="card">
+<div class="icon">📊</div>
+<h3>Market Learning</h3>
+<p>Continue learning about investing, trading, analysis, risk management and financial markets.</p>
+</div>
+</div>
+<div class="highlight" style="margin-top:30px">
+<h3>🚀 Community Access Coming Soon</h3>
+<p style="margin-top:8px;color:#b8c8d9">
+RAVUKSA FINTECH is preparing a dedicated community space for learners. Community access details will be announced soon.
+</p>
+<div class="btns">
+<a class="btn primary" href="#contact">Get Updates</a>
+<a class="btn secondary" href="#learn">Explore Learning</a>
+</div>
+</div>
+</div>
+
+  </section>
+  
