@@ -590,7 +590,8 @@ serverTimestamp
 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
-      window.db = getFirestore(app);
+      const db = getFirestore(app);
+window.db = db;
     window.registerUser = async function() {
 
   const name = document.getElementById("registerName").value.trim();
