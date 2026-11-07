@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 
   <title>Privacy Policy | RAVUKSA FINTECH</title>
 
-  <meta name="description" content="Read the RAVUKSA FINTECH Privacy Policy to understand user information, Firebase services, learning progress, third-party services and privacy practices.">
+  <meta name="description" content="Read the RAVUKSA FINTECH Privacy Policy covering Firebase Authentication, Firestore profiles, feedback, learning progress, browser storage and third-party services.">
 
   <link rel="stylesheet" href="../css/ravuksa-redesign.css">
 
@@ -123,16 +124,17 @@
     <h2>1. About This Policy</h2>
 
     <p>
-      RAVUKSA FINTECH is a Financial Education & Market
+      RAVUKSA FINTECH is a Financial Education &amp; Market
       Learning platform. This Privacy Policy explains
-      the information that may be processed when users
-      access or interact with our website and its features.
+      information practices associated with our website,
+      account services and educational features.
     </p>
 
     <p>
-      By using the platform, users should review this
-      policy and understand the information practices
-      described here.
+      This policy describes the website functionality
+      identified during our technical review. Actual
+      practices may also depend on third-party service
+      configurations and applicable requirements.
     </p>
   </section>
 
@@ -141,47 +143,45 @@
 
     <p>
       Depending on the features used, the platform may
-      process information such as:
+      process the following information:
     </p>
 
     <ul>
-      <li>Name or username provided by the user.</li>
-      <li>Email address used for account registration or login.</li>
-      <li>Profile information voluntarily submitted by the user.</li>
-      <li>Learning activity and topic completion progress.</li>
-      <li>Information submitted through interactive platform features.</li>
-      <li>Basic technical information processed by hosting or service providers.</li>
+      <li>Name and username provided by the user.</li>
+      <li>Email address associated with account registration and login.</li>
+      <li>Profile information such as bio and learning level.</li>
+      <li>Learning activity, topic completion and quiz progress, where saved.</li>
+      <li>Feedback rating and feedback message submitted by the user.</li>
+      <li>Basic technical information processed by hosting, browser or service providers.</li>
     </ul>
 
     <p>
-      The information processed may vary depending on
-      the features available and the services used.
+      Please do not submit passwords, OTPs, banking credentials
+      or confidential financial information through public forms.
     </p>
   </section>
 
   <section class="privacy-section">
-    <h2>3. Account & Firebase Services</h2>
+    <h2>3. Account Registration &amp; Firebase Authentication</h2>
 
     <p>
-      Certain account and learning features of RAVUKSA
-      FINTECH use Google Firebase services.
+      RAVUKSA FINTECH uses Google Firebase Authentication
+      for email and password registration, login and logout.
     </p>
 
     <p>
-      Depending on the enabled configuration, Firebase
-      Authentication and Cloud Firestore may process
-      account information, profile details and learning
-      progress.
+      During registration and login, Firebase Authentication
+      processes the account information required to provide
+      these services. The website uses the authenticated
+      user's account identity to support profile functionality.
     </p>
 
     <p>
-      Such information is used to support account access,
-      profile functionality and learning-related features.
-    </p>
-
-    <p>
-      Firebase services are subject to Google's applicable
-      privacy and security documentation.
+      Google sign-in, email verification and password-reset
+      functions are not currently confirmed as implemented
+      in the website's user-facing code. Their availability
+      in the Firebase Console does not mean these features
+      are available on the website.
     </p>
 
     <p>
@@ -194,89 +194,208 @@
   </section>
 
   <section class="privacy-section">
-    <h2>4. How Information May Be Used</h2>
+    <h2>4. Profile &amp; Learning Information</h2>
+
+    <p>
+      Our website uses Firebase Cloud Firestore to store
+      profile information and associated learning progress
+      where these features are used.
+    </p>
+
+    <p>The identified profile fields may include:</p>
+
+    <ul>
+      <li>User ID (UID) and account email address.</li>
+      <li>Name and username.</li>
+      <li>Bio and learning level.</li>
+      <li>Topics started and topics completed.</li>
+      <li>Quiz progress and overall learning progress.</li>
+      <li>Profile update timestamp.</li>
+    </ul>
+
+    <p>
+      Profile records are stored in the
+      <strong>profiles</strong> Firestore collection and
+      associated with the authenticated user's UID.
+    </p>
+
+    <p>
+      Current Firestore security rules restrict profile
+      reading and writing to the authenticated user whose
+      UID matches the profile document ID.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>5. Feedback Information</h2>
+
+    <p>
+      When an authenticated user submits feedback, the website
+      sends information to the Firestore
+      <strong>feedback</strong> collection.
+    </p>
+
+    <p>The identified feedback fields include:</p>
+
+    <ul>
+      <li>User ID (UID).</li>
+      <li>Account email address.</li>
+      <li>Rating submitted by the user.</li>
+      <li>Feedback message.</li>
+      <li>Submission timestamp.</li>
+    </ul>
+
+    <p>
+      Under the current Firestore rules, authenticated users
+      can create feedback records, while client-side reading,
+      updating and deleting of feedback records are denied.
+    </p>
+
+    <p>
+      The current create rule does not independently verify
+      that the UID submitted in the feedback record matches
+      the authenticated user's UID.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>6. Database Location &amp; Firebase Storage</h2>
+
+    <p>
+      Our reviewed Firebase Cloud Firestore database uses
+      the location identifier <strong>nam5</strong>.
+    </p>
+
+    <p>
+      The two Firestore collections identified during our
+      review are <strong>profiles</strong> and
+      <strong>feedback</strong>.
+    </p>
+
+    <p>
+      Firebase Storage is not currently set up in the
+      Firebase project based on the configuration reviewed.
+      This statement does not cover other hosting or
+      third-party storage services.
+    </p>
+
+    <p>
+      Firebase services are subject to Google's applicable
+      privacy and service terms.
+      <a href="https://firebase.google.com/support/privacy"
+         target="_blank" rel="noopener noreferrer">
+        Read Firebase Privacy Information
+      </a>.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>7. Local Storage &amp; Offline Functionality</h2>
+
+    <p>
+      The website uses browser local storage for limited
+      daily-learning interface information.
+    </p>
+
+    <p>The identified local storage keys are:</p>
+
+    <ul>
+      <li><strong>ravuksaDailyLearningDate:</strong> stores the daily learning date.</li>
+      <li><strong>ravuksaDailyLearningIndex:</strong> stores the current daily learning item index.</li>
+    </ul>
+
+    <p>
+      These values support the daily-learning interface and
+      are separate from the Firebase account password.
+    </p>
+
+    <p>
+      Our service worker also uses browser caching for the
+      website homepage and web app manifest to support
+      basic offline access.
+    </p>
+
+    <p>
+      Other browser, hosting or third-party services may
+      use their own technical storage mechanisms.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>8. Third-Party Services &amp; Market Data</h2>
+
+    <p>
+      RAVUKSA FINTECH uses third-party services for certain
+      website functions, including hosting, authentication,
+      database services and market information where configured.
+    </p>
+
+    <p>
+      Certain market-data features may use IndianAPI.
+      Market information may be delayed, incomplete or
+      subject to provider limitations.
+    </p>
+
+    <p>
+      Third-party providers operate under their own privacy
+      policies, terms and technical practices. We do not
+      control their independent data-handling practices.
+    </p>
+
+    <p>
+      We do not claim that market-data providers receive
+      user profile or feedback information unless such
+      processing is specifically disclosed.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>9. How Information May Be Used</h2>
 
     <p>Information may be used to:</p>
 
     <ul>
-      <li>Provide account and profile functionality.</li>
-      <li>Save and display learning progress.</li>
-      <li>Improve website features and user experience.</li>
-      <li>Maintain platform functionality and security.</li>
-      <li>Respond to user enquiries and support requests.</li>
-      <li>Understand and troubleshoot technical issues.</li>
+      <li>Provide registration, login and account functionality.</li>
+      <li>Display and maintain user profile information.</li>
+      <li>Save and display learning progress where supported.</li>
+      <li>Receive and review user feedback.</li>
+      <li>Maintain website functionality and security.</li>
+      <li>Improve educational content and user experience.</li>
+      <li>Investigate technical issues and respond to enquiries.</li>
     </ul>
   </section>
 
   <section class="privacy-section">
-    <h2>5. Third-Party Services</h2>
+    <h2>10. Data Security</h2>
 
     <p>
-      RAVUKSA FINTECH may use third-party services to
-      support website hosting, authentication, database
-      functionality and market information.
+      Our reviewed implementation uses Firebase Authentication
+      and Firestore security rules to control access to
+      account-related and database functions.
     </p>
 
     <p>
-      For example, certain market data features may use
-      IndianAPI where configured.
+      Current rules restrict profile access by authenticated
+      user UID and deny client-side reading, updating and
+      deleting of feedback records.
     </p>
 
     <p>
-      These third-party providers may process information
-      under their own privacy policies and service terms.
-    </p>
-
-    <p>
-      Users are encouraged to review the applicable
-      policies of third-party services.
-    </p>
-  </section>
-
-  <section class="privacy-section">
-    <h2>6. Cookies & Browser Storage</h2>
-
-    <p>
-      The website and its service providers may use
-      browser storage, cookies or similar technologies
-      where required for website functionality.
-    </p>
-
-    <p>
-      These technologies may support account sessions,
-      website preferences, offline functionality or
-      other enabled features.
-    </p>
-
-    <p>
-      Available controls may depend on the user's
-      browser and device settings.
-    </p>
-  </section>
-
-  <section class="privacy-section">
-    <h2>7. Data Security</h2>
-
-    <p>
-      We aim to use appropriate practices to protect
-      information processed through the platform.
-    </p>
-
-    <p>
-      However, no website, internet transmission or
-      electronic storage system can be guaranteed
-      completely secure.
+      No internet-based service or electronic storage system
+      can be guaranteed completely secure. We do not make
+      an absolute guarantee against unauthorized access,
+      data loss or service interruption.
     </p>
 
     <div class="privacy-note">
-      Users should never share passwords, OTPs,
-      banking credentials or confidential financial
-      information through public forms or messages.
+      Users should never share passwords, OTPs, banking
+      credentials or confidential financial information
+      through public forms or messages.
     </div>
   </section>
 
   <section class="privacy-section">
-    <h2>8. Data Sharing & Retention</h2>
+    <h2>11. Data Sharing &amp; Retention</h2>
 
     <p>
       Information may be processed by service providers
@@ -284,68 +403,78 @@
     </p>
 
     <p>
-      We do not claim that information is never shared
-      or retained. Actual handling depends on the
-      services used, their configuration and applicable
-      legal requirements.
+      A specific data-retention period has not been
+      established in this policy. Information may remain
+      in relevant services according to operational needs,
+      provider settings and applicable legal requirements.
     </p>
 
     <p>
-      Users should contact us for questions about
-      information associated with their accounts.
+      We do not claim that information is never shared,
+      retained or processed by service providers.
     </p>
   </section>
 
   <section class="privacy-section">
-    <h2>9. User Choices & Requests</h2>
+    <h2>12. User Choices &amp; Privacy Requests</h2>
 
     <p>
-      Users may contact RAVUKSA FINTECH to ask questions
-      about their information or request assistance
-      concerning account-related data.
+      Users may contact RAVUKSA FINTECH with questions
+      or requests concerning information associated
+      with their accounts.
     </p>
 
     <p>
-      Account and data requests may require identity
-      verification and may be subject to applicable
-      legal and technical limitations.
-    </p>
-  </section>
-
-  <section class="privacy-section">
-    <h2>10. Children's Privacy</h2>
-
-    <p>
-      The platform is not intended to knowingly collect
-      personal information from children in violation
-      of applicable laws.
+      Requests may require identity verification and
+      may be subject to applicable legal requirements,
+      technical limitations and third-party service rules.
     </p>
 
     <p>
-      Where required, appropriate consent and safeguards
-      should be followed before processing children's
-      personal information.
+      The current website implementation does not establish
+      an automated self-service account or data deletion
+      facility.
     </p>
   </section>
 
   <section class="privacy-section">
-    <h2>11. Policy Updates</h2>
+    <h2>13. Children's Privacy</h2>
+
+    <p>
+      Our platform provides financial education and
+      market-learning content. Users should follow
+      applicable age requirements and parental or
+      guardian guidance where necessary.
+    </p>
+
+    <p>
+      Please contact us if you believe a child has
+      submitted personal information inappropriately.
+    </p>
+  </section>
+
+  <section class="privacy-section">
+    <h2>14. External Links &amp; Policy Updates</h2>
+
+    <p>
+      Our website may contain links to external websites,
+      including educational and financial-regulatory resources.
+      We are not responsible for their independent privacy
+      practices or content.
+    </p>
 
     <p>
       This Privacy Policy may be updated when website
-      features, services or applicable requirements change.
+      features, service configurations or applicable
+      requirements change. Revised versions will be
+      published on this page.
     </p>
 
-    <p>
-      Updated versions will be published on this page.
-      Users are encouraged to review it periodically.
-    </p>
-
-    <p><strong>Last updated:</strong> 7 November 2026</p>
+    <p><strong>Last updated:</strong> 8 November 2026</p>
   </section>
 
   <section class="privacy-section">
-    <h2>12. Contact Us</h2>
+    <h2>15. Contact Us</h2>
 
     <p>
       For privacy-related questions or requests,
@@ -353,7 +482,7 @@
     </p>
 
     <p>
-      <strong>Founder & CEO:</strong> Rajesh Kumar
+      <strong>Founder &amp; CEO:</strong> Rajesh Kumar
     </p>
 
     <p>
@@ -369,6 +498,17 @@
         rajeshkumar35965@gmail.com
       </a>
     </p>
+
+    <div class="privacy-note">
+      <strong>Important Educational Disclaimer:</strong>
+      RAVUKSA FINTECH provides financial education and
+      market-learning information. Website content is
+      educational in nature and is not personalised
+      investment advice or a guarantee of financial returns.
+      This Privacy Policy is an informational statement
+      of identified website practices, not a certification
+      of legal or regulatory compliance.
+    </div>
   </section>
 
   <div style="text-align:center;">
@@ -384,4 +524,4 @@
 </main>
 
 </body>
-      </html>
+</html>
