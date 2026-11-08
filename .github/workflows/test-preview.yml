@@ -1,0 +1,30 @@
+name: Test Branch Preview Build
+
+on:
+  push:
+    branches:
+      - homepage-modular-test
+
+permissions:
+  contents: read
+
+jobs:
+  build-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout test branch
+        uses: actions/checkout@v4
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload preview ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: homepage-preview
+          path: ./_site
+          retention-days: 3
