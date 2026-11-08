@@ -180,3 +180,20 @@ transition: none !important;
 animation: none !important;
 }
   }
+
+/* FORCE HIDE DESKTOP LINKS ON MOBILE */
+
+@media screen and (max-width: 760px) {
+  nav:not(.rf-explore-rail) .links {
+    display: none !important;
+  }
+
+  nav:not(.rf-explore-rail) .mobile-menu {
+    display: none !important;
+  }
+
+  nav:not(.rf-explore-rail) .mobile-menu.active {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
