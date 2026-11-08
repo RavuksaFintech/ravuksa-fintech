@@ -197,3 +197,70 @@ animation: none !important;
     flex-direction: column !important;
   }
 }
+
+/* RAVUKSA MAIN NAVIGATION - FINAL MOBILE FIX */
+
+.rf-main-navigation {
+  position: sticky !important;
+  top: 0;
+  z-index: 10000 !important;
+  overflow: visible !important;
+  isolation: isolate;
+  background: #ffffff;
+}
+
+.rf-main-navigation .nav {
+  position: relative;
+  z-index: 10002;
+}
+
+.rf-main-navigation .menu-btn {
+  position: relative;
+  z-index: 10005;
+  pointer-events: auto !important;
+}
+
+.rf-main-navigation .mobile-menu {
+  display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 75vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  background: #ffffff;
+  z-index: 10004;
+  pointer-events: auto;
+}
+
+.rf-main-navigation .mobile-menu.active {
+  display: flex !important;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 760px) {
+  .rf-main-navigation .links {
+    display: none !important;
+  }
+
+  .rf-main-navigation .menu-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rf-main-navigation .mobile-menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 761px) {
+  .rf-main-navigation .mobile-menu {
+    display: none !important;
+  }
+  }
