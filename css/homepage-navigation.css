@@ -1,0 +1,252 @@
+/* =========================================
+   RAVUKSA FINTECH
+   CLEAN RESPONSIVE NAVIGATION
+   Desktop + Mobile
+========================================= */
+
+/* MAIN NAVIGATION */
+
+.rf-main-navigation {
+  position: sticky !important;
+  top: 0;
+  z-index: 10000 !important;
+  overflow: visible !important;
+  isolation: isolate;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff !important;
+  border-bottom: 1px solid #dce5ef;
+  box-shadow: 0 4px 18px rgba(11,31,58,.06);
+}
+
+/* NAVIGATION INNER ROW */
+
+.rf-main-navigation .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+
+.rf-main-navigation .logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* MENU BUTTON - HIDDEN ON DESKTOP */
+
+.rf-main-navigation .menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 13px;
+  border: 1px solid #dce5ef;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b1f3a;
+  font-size: 23px;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  z-index: 10005;
+}
+
+/* SEARCH */
+
+.rf-main-navigation .search-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 240px;
+  max-width: 100%;
+}
+
+.rf-main-navigation .search-box input {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.rf-main-navigation .search-box button {
+  flex-shrink: 0;
+}
+
+/* DESKTOP LINKS */
+
+.rf-main-navigation .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px 13px;
+}
+
+.rf-main-navigation .links a {
+  color: #17263b;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+  padding: 7px 3px;
+}
+
+.rf-main-navigation .links a:hover {
+  color: #087f8c;
+}
+
+/* MOBILE MENU - ALWAYS CLOSED BY DEFAULT */
+
+.rf-main-navigation .mobile-menu {
+  display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 75vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px 16px 18px;
+  background: #ffffff;
+  border-top: 1px solid #e5ebf2;
+  border-bottom: 1px solid #dce5ef;
+  box-shadow: 0 14px 25px rgba(11,31,58,.13);
+  z-index: 10004;
+}
+
+/* OPEN MENU */
+
+.rf-main-navigation .mobile-menu.active {
+  display: flex !important;
+  flex-direction: column;
+}
+
+/* MOBILE MENU LINKS */
+
+.rf-main-navigation .mobile-menu a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  margin: 3px 0;
+  border-radius: 9px;
+  background: #f5f8fc;
+  color: #17263b;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+  border: 1px solid #e8edf4;
+}
+
+.rf-main-navigation .mobile-menu a:hover,
+.rf-main-navigation .mobile-menu a:focus {
+  background: #e8f7f7;
+  color: #087f8c;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 760px) {
+
+  .rf-main-navigation {
+    padding: 10px 14px !important;
+  }
+
+  .rf-main-navigation .nav {
+    display: grid !important;
+    grid-template-columns: 1fr auto;
+    gap: 10px !important;
+    align-items: center;
+  }
+
+  .rf-main-navigation .logo {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .rf-main-navigation .menu-btn {
+    display: inline-flex !important;
+    grid-column: 2;
+    grid-row: 1;
+    pointer-events: auto !important;
+  }
+
+  .rf-main-navigation .search-box {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 100%;
+    max-width: none;
+  }
+
+  .rf-main-navigation .links {
+    display: none !important;
+  }
+
+  .rf-main-navigation .mobile-menu:not(.active) {
+    display: none !important;
+  }
+
+  .rf-main-navigation .mobile-menu.active {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .rf-market-strip,
+  .rf-explore-rail {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media screen and (max-width: 380px) {
+
+  .rf-main-navigation .search-box input {
+    font-size: 13px;
+  }
+
+  .rf-main-navigation .mobile-menu a {
+    font-size: 13px;
+    padding: 11px;
+  }
+}
+
+/* DESKTOP: MOBILE MENU NEVER VISIBLE */
+
+@media screen and (min-width: 761px) {
+
+  .rf-main-navigation .menu-btn {
+    display: none !important;
+  }
+
+  .rf-main-navigation .mobile-menu {
+    display: none !important;
+  }
+
+  .rf-main-navigation .links {
+    display: flex !important;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .rf-main-navigation,
+  .rf-main-navigation *,
+  .rf-main-navigation *::before,
+  .rf-main-navigation *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
