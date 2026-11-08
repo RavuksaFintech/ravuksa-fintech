@@ -4,8 +4,9 @@ Desktop + Mobile Responsive Menu
 ========================================= */
 
 nav:not(.rf-explore-rail) {
-position: relative;
-z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav:not(.rf-explore-rail) .nav {
