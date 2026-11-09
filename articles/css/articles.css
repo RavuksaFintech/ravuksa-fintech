@@ -1,1 +1,272 @@
+/* =========================================
+   RAVUKSA FINTECH - ARTICLES DESIGN
+   Independent stylesheet
+========================================= */
 
+:root {
+  --article-navy: #0b1f3a;
+  --article-teal: #087f8c;
+  --article-blue: #2563eb;
+  --article-ink: #17263b;
+  --article-muted: #64748b;
+  --article-bg: #f3f7fb;
+  --article-line: #dce5ef;
+  --article-white: #ffffff;
+}
+
+.rf-articles-page,
+.rf-articles-page * {
+  box-sizing: border-box;
+}
+
+.rf-articles-page {
+  margin: 0;
+  background: var(--article-bg);
+  color: var(--article-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.rf-articles-page a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.rf-articles-header {
+  background: var(--article-navy);
+  color: var(--article-white);
+  padding: 18px 16px;
+}
+
+.rf-articles-header-inner {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.rf-articles-brand {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+.rf-articles-brand span {
+  color: #45c5c5;
+}
+
+.rf-articles-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.rf-articles-nav a {
+  color: white;
+  font-size: 14px;
+  transition: color .2s ease;
+}
+
+.rf-articles-nav a:hover {
+  color: #65d5d5;
+}
+
+.rf-articles-hero {
+  background: linear-gradient(135deg, #0b1f3a, #123b60);
+  color: white;
+  padding: 65px 18px;
+  text-align: center;
+}
+
+.rf-articles-hero-inner {
+  max-width: 850px;
+  margin: auto;
+}
+
+.rf-articles-label {
+  display: inline-block;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.rf-articles-hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.2;
+  margin: 20px 0 14px;
+}
+
+.rf-articles-hero p {
+  color: #e0eaf4;
+  font-size: 16px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.rf-articles-container {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 0 18px;
+}
+
+.rf-articles-section-heading {
+  margin-bottom: 24px;
+}
+
+.rf-articles-section-heading h2 {
+  color: var(--article-navy);
+  font-size: 27px;
+  margin: 0 0 6px;
+}
+
+.rf-articles-section-heading p {
+  color: var(--article-muted);
+  margin: 0;
+}
+
+.rf-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.rf-article-card {
+  background: var(--article-white);
+  border: 1px solid var(--article-line);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.rf-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(11,31,58,.09);
+}
+
+.rf-article-card-content {
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.rf-article-category {
+  color: var(--article-teal);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+
+.rf-article-card h3 {
+  color: var(--article-navy);
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.rf-article-card p {
+  color: var(--article-muted);
+  font-size: 14px;
+  margin: 0 0 18px;
+}
+
+.rf-article-meta {
+  color: var(--article-muted);
+  font-size: 12px;
+  margin-top: auto;
+  padding-bottom: 12px;
+}
+
+.rf-article-read {
+  color: var(--article-teal);
+  font-size: 14px;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.rf-article-read:hover {
+  color: var(--article-blue);
+}
+
+.rf-articles-info {
+  background: white;
+  border: 1px solid var(--article-line);
+  border-left: 4px solid var(--article-teal);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 35px;
+}
+
+.rf-articles-info h3 {
+  color: var(--article-navy);
+  margin: 0 0 8px;
+}
+
+.rf-articles-info p {
+  color: var(--article-muted);
+  margin: 0;
+  font-size: 14px;
+}
+
+.rf-articles-footer {
+  background: var(--article-navy);
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+  margin-top: 55px;
+  font-size: 13px;
+}
+
+.rf-articles-footer a {
+  color: #75d7d7;
+}
+
+@media (max-width: 850px) {
+  .rf-articles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .rf-articles-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rf-articles-nav {
+    gap: 13px;
+  }
+
+  .rf-articles-hero {
+    padding: 45px 18px;
+  }
+
+  .rf-articles-hero p {
+    font-size: 14px;
+  }
+
+  .rf-articles-container {
+    margin: 28px auto;
+  }
+
+  .rf-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .rf-articles-section-heading h2 {
+    font-size: 23px;
+  }
+  }
