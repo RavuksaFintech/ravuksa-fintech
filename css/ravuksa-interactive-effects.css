@@ -1,0 +1,102 @@
+/* RAVUKSA FINTECH - Lightweight Interactive Effects */
+
+/* 1. Scroll progress bar */
+#ravuksa-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00bcd4, #35e6df, #ffffff);
+  box-shadow: 0 0 8px rgba(53, 230, 223, 0.65);
+  z-index: 10001;
+  pointer-events: none;
+}
+
+/* 2. Back to top button */
+#ravuksa-back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(53, 230, 223, 0.65);
+  border-radius: 50%;
+  background: rgba(7, 25, 48, 0.92);
+  color: #35e6df;
+  font-size: 22px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .25s ease, transform .25s ease, visibility .25s ease, box-shadow .25s ease;
+  z-index: 10002;
+  box-shadow: 0 0 12px rgba(0, 188, 212, 0.18);
+}
+
+#ravuksa-back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#ravuksa-back-to-top:hover,
+#ravuksa-back-to-top:focus-visible {
+  box-shadow: 0 0 18px rgba(53, 230, 223, 0.55);
+  outline: none;
+}
+
+/* 3. Subtle button hover animation */
+.btn,
+button.btn,
+button:not(#ravuksa-back-to-top) {
+  transition: box-shadow .22s ease, filter .22s ease, transform .22s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover,
+  button.btn:hover {
+    box-shadow: 0 0 0 1px rgba(53, 230, 223, 0.28), 0 0 16px rgba(0, 188, 212, 0.22);
+    filter: brightness(1.06);
+  }
+}
+
+/* 4. Section reveal animation */
+.rf-reveal-ready {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+
+.rf-reveal-ready.rf-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 5. Card glow effect */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover,
+  a.card:hover,
+  .ravuksa-daily-card:hover {
+    box-shadow: 0 0 0 1px rgba(53, 230, 223, 0.20), 0 8px 24px rgba(0, 188, 212, 0.13);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ravuksa-back-to-top,
+  .btn,
+  button,
+  .rf-reveal-ready,
+  .card,
+  .ravuksa-daily-card {
+    transition: none !important;
+  }
+
+  .rf-reveal-ready {
+    opacity: 1;
+    transform: none;
+  }
+  }
