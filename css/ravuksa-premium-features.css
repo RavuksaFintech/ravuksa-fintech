@@ -527,3 +527,27 @@ html {
 #rf-platform-highlights .rf-platform-status {
     display: block !important;
 }
+
+/* Restore Green Live Status Dot */
+
+#rf-platform-highlights .rf-status-dot {
+    display: inline-block !important;
+    width: 9px !important;
+    height: 9px !important;
+    min-width: 9px !important;
+    background: #16c75b !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 10px rgba(22, 199, 91, 0.75) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    animation: rf-live-pulse 1.5s infinite !important;
+}
+
+@keyframes rf-live-pulse {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(22, 199, 91, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 14px rgba(22, 199, 91, 0.9);
+    }
+}
