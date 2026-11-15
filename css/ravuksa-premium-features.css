@@ -552,49 +552,36 @@ html {
     }
 }
 
-/* =====================================
-   RAVUKSA WHATSAPP COMMUNITY TEXT FIX
-===================================== */
+/* RAVUKSA WHATSAPP SECTION - DARK BOLD TEXT FIX */
 
-#community .highlight,
-#community .highlight h3,
-#community .highlight p,
-#community .highlight div {
+#community .highlight h3 {
+    color: #000000 !important;
+    font-weight: 900 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    text-shadow: none !important;
+}
+
+#community .highlight p {
+    color: #000000 !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    line-height: 1.8 !important;
+    text-shadow: none !important;
+}
+
+#community .highlight > div {
+    color: #000000 !important;
     opacity: 1 !important;
     visibility: visible !important;
 }
 
-#community .highlight h3 {
-    color: #075e35 !important;
-    font-size: 23px !important;
-    font-weight: 800 !important;
-    line-height: 1.5 !important;
-}
-
-#community .highlight p {
-    color: #315b49 !important;
-    font-size: 16px !important;
-    font-weight: 500 !important;
-    line-height: 1.8 !important;
-}
-
-#community .highlight {
-    height: auto !important;
-    min-height: 0 !important;
-    overflow: visible !important;
-    padding: 30px 20px !important;
-    box-sizing: border-box !important;
-}
-
 #community .highlight .btns {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 12px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
-@media (max-width: 600px) {
-    #community .highlight p {
-        font-size: 15px !important;
-    }
+#community .highlight .btns a {
+    font-weight: 900 !important;
 }
