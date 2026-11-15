@@ -197,3 +197,209 @@ html {
         transition: none;
     }
 }
+
+/* =========================================
+   RAVUKSA FINTECH - PREMIUM HIGHLIGHTS
+========================================= */
+
+.rf-platform-highlights {
+    width: 100%;
+    padding: 55px 20px;
+    background: linear-gradient(
+        135deg,
+        #071426,
+        #0b2440,
+        #071426
+    );
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.rf-platform-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* FEATURE CARD */
+
+.rf-feature-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px 25px;
+    text-align: center;
+    background: linear-gradient(
+        145deg,
+        rgba(17, 43, 70, 0.98),
+        rgba(7, 20, 38, 0.98)
+    );
+    border: 1px solid rgba(0, 210, 255, 0.35);
+    border-radius: 22px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rf-feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 45px rgba(0, 210, 255, 0.15);
+}
+
+.rf-feature-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.rf-feature-card h2 {
+    color: #ffffff;
+    font-size: clamp(21px, 3vw, 28px);
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+.rf-feature-card .rf-counter {
+    color: #00d9ff;
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 12px 0;
+}
+
+.rf-feature-card p {
+    color: #d2e2f0;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px auto 0;
+    max-width: 480px;
+}
+
+/* PLATFORM STATUS */
+
+.rf-platform-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #e6f5ff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.rf-status-dot {
+    flex-shrink: 0;
+}
+
+/* COPY LINK BUTTON */
+
+.rf-copy-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #00bfe8, #087cff);
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 190, 232, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rf-copy-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 190, 232, 0.4);
+}
+
+.rf-copy-link:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+/* LOADER CONTENT */
+
+.rf-loader-content {
+    width: min(90%, 420px);
+    text-align: center;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.rf-loader-brand {
+    color: #ffffff;
+    font-size: clamp(23px, 5vw, 32px);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.rf-loader-content p {
+    color: #bdefff;
+    font-size: 14px;
+    margin: 12px 0 20px;
+}
+
+.rf-loader-content span {
+    display: block;
+    color: #d7eaff;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .rf-platform-highlights {
+        padding: 35px 15px;
+    }
+
+    .rf-feature-card {
+        padding: 28px 18px;
+        border-radius: 18px;
+    }
+
+    .rf-feature-icon {
+        font-size: 36px;
+    }
+
+    .rf-feature-card .rf-counter {
+        font-size: 46px;
+    }
+
+    .rf-feature-card p {
+        font-size: 14px;
+    }
+
+    .rf-platform-status {
+        font-size: 13px;
+    }
+
+    .rf-copy-link {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .rf-feature-card,
+    .rf-copy-link {
+        transition: none;
+    }
+
+    .rf-feature-card:hover,
+    .rf-copy-link:hover {
+        transform: none;
+    }
+}
+
+/* END PREMIUM HIGHLIGHTS */
