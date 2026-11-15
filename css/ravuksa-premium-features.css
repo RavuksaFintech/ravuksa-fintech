@@ -485,3 +485,39 @@ html {
     }
 
 }
+
+/* RAVUKSA FINTECH - PREMIUM TEXT VISIBILITY FIX */
+
+/* Financial Tools & Calculators Heading */
+.rf-feature-card h2 {
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Platform Development Status */
+.rf-platform-status {
+    color: #123b63 !important;
+    font-weight: 800 !important;
+    background: #e5f4ff !important;
+    border: 1px solid #8bd5ff !important;
+    padding: 12px 20px;
+    border-radius: 30px;
+}
+
+/* Status Dot */
+.rf-status-dot {
+    background: #00a6d6 !important;
+    box-shadow: 0 0 10px rgba(0, 166, 214, 0.5);
+}
+
+/* Description Text */
+.rf-feature-card p {
+    color: #eaf6ff !important;
+}
+
+/* Copy Website Link */
+.rf-copy-link {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
