@@ -551,3 +551,50 @@ html {
         box-shadow: 0 0 14px rgba(22, 199, 91, 0.9);
     }
 }
+
+/* =====================================
+   RAVUKSA WHATSAPP COMMUNITY TEXT FIX
+===================================== */
+
+#community .highlight,
+#community .highlight h3,
+#community .highlight p,
+#community .highlight div {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#community .highlight h3 {
+    color: #075e35 !important;
+    font-size: 23px !important;
+    font-weight: 800 !important;
+    line-height: 1.5 !important;
+}
+
+#community .highlight p {
+    color: #315b49 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 1.8 !important;
+}
+
+#community .highlight {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+}
+
+#community .highlight .btns {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 12px !important;
+}
+
+@media (max-width: 600px) {
+    #community .highlight p {
+        font-size: 15px !important;
+    }
+}
