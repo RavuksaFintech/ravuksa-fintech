@@ -1,0 +1,1028 @@
+---
+---
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1f3a">
+
+<title>Market Capitalization क्या है? Large Cap, Mid Cap और Small Cap समझें | RAVUKSA FINTECH</title>
+
+<meta name="description" content="Market Capitalization क्या है और इसकी गणना कैसे होती है? Large Cap, Mid Cap, Small Cap, Free-Float Market Cap और SEBI की classification को विस्तार से हिंदी में समझें।">
+
+<meta name="keywords" content="Market Capitalization in Hindi, Large Cap Mid Cap Small Cap, Market Cap Meaning, Free Float Market Cap, SEBI Market Cap Classification, Stock Market Education">
+
+<link rel="canonical" href="https://ravuksafintech.github.io/ravuksa-fintech/articles/posts/market-capitalization-guide.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Market Capitalization क्या है? Large Cap, Mid Cap और Small Cap">
+<meta property="og:description" content="Market Cap, कंपनी का आकार, SEBI classification और Free-Float Market Cap को सरल हिंदी में समझें।">
+<meta property="og:url" content="https://ravuksafintech.github.io/ravuksa-fintech/articles/posts/market-capitalization-guide.html">
+<meta property="og:site_name" content="RAVUKSA FINTECH">
+
+<style>
+:root {
+  --navy: #0b1f3a;
+  --teal: #087f8c;
+  --blue: #2563eb;
+  --light: #f4f8fb;
+  --text: #263445;
+  --muted: #64748b;
+  --border: #dce5ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.article-header {
+  background: var(--navy);
+  color: #fff;
+  padding: 18px 5%;
+}
+
+.article-header a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 18px;
+  font-size: 14px;
+}
+
+.article-header a:hover {
+  text-decoration: underline;
+}
+
+.article-container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.article-hero {
+  background: #fff;
+  padding: 32px 26px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 22px;
+}
+
+.article-label {
+  display: inline-block;
+  background: #e5f4f5;
+  color: var(--teal);
+  padding: 5px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.article-hero h1 {
+  color: var(--navy);
+  font-size: 30px;
+  line-height: 1.4;
+  margin: 16px 0 12px;
+}
+
+.article-hero p {
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0;
+}
+
+.article-content {
+  background: #fff;
+  padding: 28px 26px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.article-content h2 {
+  color: var(--navy);
+  font-size: 23px;
+  line-height: 1.5;
+  margin-top: 36px;
+  border-left: 4px solid var(--teal);
+  padding-left: 12px;
+}
+
+.article-content h3 {
+  color: var(--teal);
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.article-content p {
+  margin: 13px 0;
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: 24px;
+}
+
+.article-content li {
+  margin: 8px 0;
+}
+
+.info-box {
+  background: #eef7fb;
+  border-left: 4px solid var(--blue);
+  padding: 16px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+}
+
+.warning-box {
+  background: #fff7e8;
+  border-left: 4px solid #d99a20;
+  padding: 16px 18px;
+  margin: 22px 0;
+  border-radius: 8px;
+}
+
+.formula-box {
+  background: #eaf6f3;
+  border: 1px solid #c7e6dd;
+  padding: 18px;
+  margin: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--navy);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: var(--navy);
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background: #f5f8fb;
+}
+
+.source-list a {
+  color: var(--blue);
+  overflow-wrap: anywhere;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 15px 0;
+}
+
+.faq-item h3 {
+  margin: 0 0 7px;
+}
+
+.article-disclaimer {
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.article-footer {
+  text-align: center;
+  padding: 25px 15px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.article-footer a {
+  color: var(--teal);
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .article-hero {
+    padding: 24px 18px;
+  }
+
+  .article-hero h1 {
+    font-size: 24px;
+  }
+
+  .article-content {
+    padding: 22px 17px;
+  }
+
+  .article-content h2 {
+    font-size: 20px;
+  }
+
+  .article-header a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="article-header">
+  <a href="/ravuksa-fintech/">RAVUKSA FINTECH</a>
+  <a href="/ravuksa-fintech/articles/">Articles</a>
+  <a href="/ravuksa-fintech/">Home</a>
+  <a href="/ravuksa-fintech/#learning-categories">Learning Center</a>
+  <a href="/ravuksa-fintech/features/financial-tools-hub.html">Financial Tools</a>
+</header>
+
+<main class="article-container">
+
+<section class="article-hero">
+  <span class="article-label">STOCK MARKET & INVESTING</span>
+
+  <h1>Market Capitalization क्या है? Large Cap, Mid Cap और Small Cap को विस्तार से समझें</h1>
+
+  <p>
+    किसी कंपनी का Market Capitalization क्या बताता है?
+    Large Cap, Mid Cap और Small Cap कंपनियों में क्या अंतर होता है?
+    इस विस्तृत गाइड में Market Cap की गणना, SEBI की classification,
+    Free-Float Market Cap, जोखिम और निवेश व ट्रेडिंग में इसकी उपयोगिता समझें।
+  </p>
+</section>
+
+<article class="article-content">
+
+<h2>1. Market Capitalization क्या है?</h2>
+
+<p>
+Market Capitalization, जिसे सामान्य रूप से Market Cap कहा जाता है,
+किसी Listed Company के सभी जारी और बकाया शेयरों का मौजूदा बाजार मूल्य
+बताता है।
+</p>
+
+<p>
+सरल भाषा में समझें तो शेयर बाजार किसी कंपनी के सभी बकाया शेयरों को
+मौजूदा शेयर कीमत पर कितना मूल्य दे रहा है, उसे उस कंपनी का Market
+Capitalization कहते हैं।
+</p>
+
+<p>
+Market Cap का उपयोग कंपनियों के आकार की तुलना करने और उन्हें
+Large Cap, Mid Cap तथा Small Cap जैसी श्रेणियों में समझने के लिए
+किया जाता है।
+</p>
+
+<div class="info-box">
+  <strong>ध्यान दें:</strong> Market Capitalization कंपनी का बाजार
+  द्वारा निर्धारित शेयर मूल्य है। यह कंपनी की कुल संपत्ति, बैंक बैलेंस
+  या कंपनी की वास्तविक बिक्री का सीधा माप नहीं है।
+</div>
+
+<h2>2. Market Capitalization की गणना कैसे होती है?</h2>
+
+<p>
+Market Capitalization की गणना के लिए कंपनी के कुल Outstanding Shares
+और वर्तमान Market Price का उपयोग किया जाता है।
+</p>
+
+<div class="formula-box">
+  Market Capitalization = Current Share Price × Total Outstanding Shares
+</div>
+
+<h3>एक उदाहरण से समझें</h3>
+
+<p>
+मान लीजिए किसी कंपनी के कुल 2 करोड़ Outstanding Shares हैं और
+उसके एक शेयर की बाजार कीमत ₹250 है।
+</p>
+
+<ul>
+  <li>कुल Outstanding Shares = 2 करोड़</li>
+  <li>एक शेयर की कीमत = ₹250</li>
+  <li>Market Capitalization = 2 करोड़ × ₹250</li>
+  <li><strong>Market Capitalization = ₹500 करोड़</strong></li>
+</ul>
+
+<p>
+इसका अर्थ है कि उस कंपनी का कुल बाजार पूंजीकरण ₹500 करोड़ है।
+</p>
+
+<p>
+यदि शेयर की कीमत बढ़ती या घटती है, तो बाकी चीजें समान रहने पर
+कंपनी का Market Cap भी बदल जाता है।
+</p>
+
+<h2>3. Large Cap, Mid Cap और Small Cap क्या हैं?</h2>
+
+<p>
+भारतीय शेयर बाजार में कंपनियों को उनके Market Capitalization के
+आधार पर अलग-अलग श्रेणियों में समझा जाता है।
+</p>
+
+<p>
+इन श्रेणियों को समझना निवेशकों के लिए महत्वपूर्ण है, क्योंकि कंपनी
+का आकार उसकी Liquidity, बाजार में भागीदारी और जोखिम की प्रकृति को
+समझने में मदद कर सकता है।
+</p>
+
+<h3>Large Cap Companies</h3>
+
+<p>
+Large Cap वे कंपनियाँ होती हैं जो Market Capitalization के आधार पर
+सबसे बड़ी कंपनियों में शामिल होती हैं।
+</p>
+
+<p>
+इन कंपनियों का कारोबार सामान्यतः बड़े स्तर पर होता है और इनके शेयरों
+में बाजार की भागीदारी अपेक्षाकृत अधिक हो सकती है।
+</p>
+
+<p>
+Large Cap कंपनियों में भी शेयर की कीमत गिर सकती है। बड़ा Market Cap
+किसी कंपनी को जोखिम-मुक्त नहीं बनाता।
+</p>
+
+<h3>Mid Cap Companies</h3>
+
+<p>
+Mid Cap कंपनियाँ Market Capitalization के आधार पर Large Cap के बाद
+आने वाली कंपनियाँ होती हैं।
+</p>
+
+<p>
+इनमें भविष्य में कारोबार बढ़ाने की संभावनाएँ हो सकती हैं, लेकिन
+इनका प्रदर्शन कंपनी की वित्तीय स्थिति, उद्योग, प्रतिस्पर्धा और
+बाजार परिस्थितियों पर निर्भर करता है।
+</p>
+
+<p>
+कुछ Mid Cap शेयरों में Large Cap की तुलना में अधिक उतार-चढ़ाव और
+कम Liquidity देखने को मिल सकती है।
+</p>
+
+<h3>Small Cap Companies</h3>
+
+<p>
+Small Cap कंपनियाँ Market Capitalization Ranking में Mid Cap के
+बाद आती हैं।
+</p>
+
+<p>
+इनमें कुछ कंपनियाँ शुरुआती विकास के चरण में हो सकती हैं और कुछ
+विशेष उद्योगों या सीमित बाजारों में काम करती हैं।
+</p>
+
+<p>
+इन कंपनियों में विकास की संभावना के साथ-साथ व्यवसाय, वित्तीय
+प्रदर्शन, Liquidity और शेयर कीमत में उतार-चढ़ाव से जुड़े जोखिम
+भी हो सकते हैं।
+</p>
+
+<h2>4. SEBI के अनुसार Large Cap, Mid Cap और Small Cap की Classification</h2>
+
+<p>
+भारत में Equity Mutual Fund Schemes के निवेश क्षेत्र में एकरूपता
+बनाए रखने के लिए SEBI ने Large Cap, Mid Cap और Small Cap कंपनियों
+की परिभाषा निर्धारित की है।
+</p>
+
+<p>
+SEBI के निर्धारित नियमों के अनुसार कंपनियों की श्रेणी उनके
+Full Market Capitalization की Ranking से तय होती है।
+</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Market Cap Ranking</th>
+      <th>सरल अर्थ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Large Cap</td>
+      <td>1st से 100th</td>
+      <td>सबसे बड़ी 100 कंपनियाँ</td>
+    </tr>
+    <tr>
+      <td>Mid Cap</td>
+      <td>101st से 250th</td>
+      <td>अगली 150 कंपनियाँ</td>
+    </tr>
+    <tr>
+      <td>Small Cap</td>
+      <td>251st से आगे</td>
+      <td>251वीं और उसके बाद की कंपनियाँ</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="warning-box">
+  <strong>महत्वपूर्ण:</strong> Large Cap, Mid Cap और Small Cap के लिए
+  कोई एक स्थायी रुपये की सीमा निर्धारित नहीं है। यह वर्गीकरण
+  कंपनियों की Market Capitalization Ranking पर आधारित है।
+  इसलिए अलग-अलग समय पर इन श्रेणियों की रुपये में सीमा बदल सकती है।
+</div>
+
+<h3>AMFI की भूमिका क्या है?</h3>
+
+<p>
+AMFI यानी Association of Mutual Funds in India, SEBI और Stock
+Exchanges से प्राप्त जानकारी के आधार पर कंपनियों की निर्धारित
+सूची तैयार करता है।
+</p>
+
+<p>
+यह सूची हर छह महीने में अपडेट की जाती है। इसमें कंपनियों के
+पिछले छह महीनों के औसत Full Market Capitalization को ध्यान में
+रखा जाता है।
+</p>
+
+<p>
+Mutual Funds को संबंधित Equity Scheme के लिए लागू श्रेणी
+निर्धारण में AMFI की प्रकाशित सूची अपनानी होती है।
+</p>
+
+<div class="info-box">
+  उदाहरण के लिए, यदि कोई कंपनी अगली अपडेटेड सूची में 100वीं
+  Ranking से नीचे चली जाती है, तो भविष्य की लागू सूची में
+  उसकी Category बदल सकती है। इसलिए किसी कंपनी की श्रेणी
+  हमेशा स्थायी नहीं रहती।
+</div>
+
+<h2>5. Full Market Cap और Free-Float Market Cap में अंतर</h2>
+
+<p>
+Market Capitalization को समझते समय Full Market Cap और Free-Float
+Market Cap के बीच अंतर जानना भी जरूरी है।
+</p>
+
+<h3>Full Market Capitalization</h3>
+
+<p>
+Full Market Cap की गणना कंपनी के सभी Outstanding Shares को
+मौजूदा शेयर कीमत से गुणा करके की जाती है।
+</p>
+
+<h3>Free-Float Market Capitalization</h3>
+
+<p>
+Free-Float Market Cap में केवल उन शेयरों को शामिल किया जाता है
+जो बाजार में सामान्य ट्रेडिंग के लिए उपलब्ध माने जाते हैं।
+</p>
+
+<p>
+कुछ शेयर Promoters, सरकार या अन्य Strategic Holders के पास
+लंबी अवधि के लिए हो सकते हैं। लागू Index Methodology के अनुसार
+ऐसे प्रतिबंधित या रणनीतिक हिस्से को Free-Float गणना में
+शामिल नहीं किया जा सकता।
+</p>
+
+<div class="formula-box">
+  Free-Float Market Cap = Share Price × Free-Float Shares
+</div>
+
+<h3>उदाहरण</h3>
+
+<p>
+मान लीजिए किसी कंपनी के कुल 10 करोड़ शेयर हैं और शेयर की
+कीमत ₹100 है।
+</p>
+
+<ul>
+  <li>कुल शेयर = 10 करोड़</li>
+  <li>शेयर कीमत = ₹100</li>
+  <li>Full Market Cap = ₹1,000 करोड़</li>
+  <li>मान लें Free-Float Shares = 4 करोड़</li>
+  <li>Free-Float Market Cap = ₹400 करोड़</li>
+</ul>
+
+<p>
+इस उदाहरण में Full Market Cap ₹1,000 करोड़ है, जबकि
+Free-Float Market Cap ₹400 करोड़ है।
+</p>
+
+<div class="info-box">
+  <strong>एक महत्वपूर्ण अंतर:</strong> SEBI की Large Cap,
+  Mid Cap और Small Cap classification Full Market Capitalization
+  पर आधारित है। जबकि कई Stock Market Indices में Index Weightage
+  तय करने के लिए Free-Float Market Capitalization का उपयोग किया
+  जाता है।
+</div>
+
+<h2>6. Market Cap और Share Price में क्या अंतर है?</h2>
+
+<p>
+कई नए निवेशक मानते हैं कि ₹50 का शेयर ₹2,000 के शेयर से सस्ता है।
+लेकिन केवल शेयर की कीमत देखकर कंपनी का मूल्यांकन करना सही नहीं है।
+</p>
+
+<p>
+किसी कंपनी का Market Cap उसके कुल Outstanding Shares और
+शेयर कीमत दोनों पर निर्भर करता है।
+</p>
+
+<h3>उदाहरण</h3>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>जानकारी</th>
+      <th>Company A</th>
+      <th>Company B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Share Price</td>
+      <td>₹50</td>
+      <td>₹2,000</td>
+    </tr>
+    <tr>
+      <td>Total Shares</td>
+      <td>100 करोड़</td>
+      <td>2 करोड़</td>
+    </tr>
+    <tr>
+      <td>Market Cap</td>
+      <td>₹5,000 करोड़</td>
+      <td>₹4,000 करोड़</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>
+यहाँ Company A का शेयर मूल्य कम है, लेकिन उसका Market Cap
+Company B से अधिक है।
+</p>
+
+<p>
+इसलिए केवल कम शेयर कीमत देखकर किसी कंपनी को सस्ता और अधिक
+शेयर कीमत देखकर महँगा नहीं कहा जा सकता।
+</p>
+
+<h2>7. Market Capitalization और Company Valuation में अंतर</h2>
+
+<p>
+Market Capitalization और Company Valuation एक-दूसरे से जुड़े
+हुए हैं, लेकिन दोनों का अर्थ समान नहीं है।
+</p>
+
+<p>
+Market Cap शेयर बाजार में कंपनी के Equity Shares का कुल
+बाजार मूल्य बताता है।
+</p>
+
+<p>
+जबकि Company Valuation का विश्लेषण करते समय कंपनी की कमाई,
+Cash Flow, Assets, Liabilities, Growth, Debt, Business Model
+और भविष्य की संभावनाओं जैसे कई पहलुओं पर विचार किया जाता है।
+</p>
+
+<h3>Enterprise Value क्या है?</h3>
+
+<p>
+Enterprise Value यानी EV एक ऐसा वित्तीय माप है जो कंपनी के
+व्यवसाय के कुल मूल्य को समझने में मदद करता है।
+</p>
+
+<p>
+एक सामान्य रूप में इसकी गणना इस प्रकार समझी जा सकती है:
+</p>
+
+<div class="formula-box">
+  Enterprise Value = Market Cap + Total Debt - Cash and Cash Equivalents
+</div>
+
+<p>
+वास्तविक विश्लेषण में Preferred Shares और Minority Interest
+जैसे अन्य घटक भी शामिल हो सकते हैं।
+</p>
+
+<div class="warning-box">
+  Market Cap देखकर अकेले यह तय नहीं किया जा सकता कि कोई
+  कंपनी महँगी है या सस्ती। इसके लिए Fundamental Analysis
+  और Valuation Ratios का अध्ययन करना आवश्यक है।
+</div>
+
+<h2>8. Large Cap, Mid Cap और Small Cap में Risk का अंतर</h2>
+
+<p>
+तीनों श्रेणियों में निवेश करने के अपने अलग-अलग अवसर और जोखिम
+हो सकते हैं। किसी एक श्रेणी को हर परिस्थिति में सबसे अच्छा
+या सबसे खराब नहीं कहा जा सकता।
+</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>पहलू</th>
+      <th>Large Cap</th>
+      <th>Mid Cap</th>
+      <th>Small Cap</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>कंपनी का आकार</td>
+      <td>बड़ा</td>
+      <td>मध्यम</td>
+      <td>छोटा</td>
+    </tr>
+    <tr>
+      <td>Liquidity</td>
+      <td>अक्सर अधिक</td>
+      <td>कंपनी पर निर्भर</td>
+      <td>कुछ शेयरों में कम</td>
+    </tr>
+    <tr>
+      <td>Price Volatility</td>
+      <td>तुलनात्मक रूप से कम हो सकती है</td>
+      <td>अधिक हो सकती है</td>
+      <td>काफी अधिक हो सकती है</td>
+    </tr>
+    <tr>
+      <td>Business Risk</td>
+      <td>अलग-अलग स्तर का</td>
+      <td>अलग-अलग स्तर का</td>
+      <td>कई मामलों में अधिक</td>
+    </tr>
+    <tr>
+      <td>Growth Potential</td>
+      <td>कंपनी पर निर्भर</td>
+      <td>कंपनी पर निर्भर</td>
+      <td>कंपनी पर निर्भर</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>
+यह तालिका सामान्य समझ के लिए है। वास्तविक जोखिम कंपनी के
+कारोबार, वित्तीय स्थिति, शेयर की Liquidity, Valuation और
+बाजार की परिस्थितियों के अनुसार बदलता है।
+</p>
+
+<h2>9. Market Capitalization और Liquidity का संबंध</h2>
+
+<p>
+Liquidity का अर्थ है कि किसी शेयर को बाजार में कितनी आसानी
+से खरीदा या बेचा जा सकता है, बिना कीमत पर बहुत अधिक प्रभाव
+डाले।
+</p>
+
+<p>
+कई बड़ी कंपनियों के शेयरों में अधिक Trading Volume और
+Market Participation देखने को मिल सकती है। इससे उनमें
+खरीदने और बेचने के अवसर अपेक्षाकृत आसानी से मिल सकते हैं।
+</p>
+
+<p>
+कुछ छोटे Market Cap वाली कंपनियों में Trading Volume कम
+हो सकता है। ऐसी स्थिति में बड़े Order के कारण शेयर की
+कीमत पर अधिक प्रभाव पड़ सकता है।
+</p>
+
+<p>
+लेकिन Market Cap अकेले Liquidity का माप नहीं है।
+किसी शेयर की वास्तविक Liquidity समझने के लिए Trading Volume,
+Bid-Ask Spread, Market Depth और Delivery Data जैसे पहलुओं
+का भी अध्ययन करना चाहिए।
+</p>
+
+<h2>10. Market Cap का निवेशकों के लिए क्या महत्व है?</h2>
+
+<p>
+Market Cap निवेशकों को कंपनियों के आकार और उनकी श्रेणी
+समझने में मदद करता है।
+</p>
+
+<ul>
+  <li><strong>Company Comparison:</strong> समान उद्योग की कंपनियों
+  के आकार की तुलना करने में मदद मिलती है।</li>
+
+  <li><strong>Portfolio Understanding:</strong> निवेशक समझ सकते हैं
+  कि उनका पोर्टफोलियो Large, Mid और Small Cap कंपनियों में
+  कितना फैला हुआ है।</li>
+
+  <li><strong>Risk Analysis:</strong> कंपनी के आकार के साथ जुड़े
+  संभावित जोखिमों का अध्ययन करने में मदद मिलती है।</li>
+
+  <li><strong>Mutual Fund Analysis:</strong> Equity Mutual Fund
+  की श्रेणी और उसके निवेश क्षेत्र को समझने में सहायता मिलती है।</li>
+
+  <li><strong>Market Research:</strong> अलग-अलग आकार की कंपनियों
+  और उनके उद्योगों का विश्लेषण किया जा सकता है।</li>
+</ul>
+
+<h2>11. Trading में Market Capitalization क्यों महत्वपूर्ण है?</h2>
+
+<p>
+Market Capitalization केवल Long-Term Investors के लिए ही
+महत्वपूर्ण नहीं है। Traders भी इसे Market Research के दौरान
+देख सकते हैं।
+</p>
+
+<h3>1. Volatility को समझना</h3>
+
+<p>
+कुछ Small Cap और Mid Cap शेयरों में कीमतों का उतार-चढ़ाव
+अधिक हो सकता है। Traders को ऐसे शेयरों में Risk Management
+पर विशेष ध्यान देना चाहिए।
+</p>
+
+<h3>2. Liquidity की जाँच</h3>
+
+<p>
+किसी शेयर में Trade करने से पहले उसके Trading Volume,
+Bid-Ask Spread और Market Depth को देखना जरूरी है।
+</p>
+
+<h3>3. Position Sizing</h3>
+
+<p>
+किसी Trade में कितनी पूंजी लगाई जाए, यह तय करते समय
+Market Cap के साथ-साथ Stop Loss, Volatility और
+Risk-Reward Ratio पर भी विचार करना चाहिए।
+</p>
+
+<h3>4. गलत तुलना से बचना</h3>
+
+<p>
+केवल कम कीमत वाले शेयरों को सस्ता मानकर खरीदना उचित
+विश्लेषण नहीं है। Market Cap और Valuation को साथ में
+समझना अधिक उपयोगी है।
+</p>
+
+<div class="warning-box">
+  Market Cap देखकर किसी शेयर में Entry या Exit का निर्णय
+  नहीं लिया जा सकता। Trading के लिए Price Action, Volume,
+  Technical Analysis, Risk Management और अपनी Trading
+  Strategy का अध्ययन भी जरूरी है।
+</div>
+
+<h2>12. Market Cap बदलने के प्रमुख कारण</h2>
+
+<p>
+कंपनी का Market Capitalization समय के साथ बदल सकता है।
+इसके कुछ प्रमुख कारण हैं:
+</p>
+
+<ol>
+  <li><strong>Share Price Movement:</strong> शेयर की कीमत
+  बढ़ने या घटने से Market Cap बदलता है।</li>
+
+  <li><strong>New Share Issue:</strong> कंपनी नए शेयर जारी
+  करती है तो Outstanding Shares की संख्या बदल सकती है।</li>
+
+  <li><strong>Share Buyback:</strong> कंपनी अपने शेयर वापस
+  खरीदती है तो Outstanding Shares कम हो सकते हैं।</li>
+
+  <li><strong>Corporate Actions:</strong> कुछ Corporate Actions
+  के कारण शेयरों की संख्या या कीमत में बदलाव हो सकता है।</li>
+
+  <li><strong>Business Performance:</strong> कंपनी की कमाई,
+  Growth, Debt और भविष्य की संभावनाओं से बाजार का मूल्यांकन
+  प्रभावित हो सकता है।</li>
+
+  <li><strong>Market Sentiment:</strong> आर्थिक घटनाएँ,
+  ब्याज दरें, उद्योग की स्थिति और निवेशकों की भावनाएँ
+  शेयर की कीमत को प्रभावित कर सकती हैं।</li>
+</ol>
+
+<h2>13. Market Cap Analysis करते समय होने वाली सामान्य गलतियाँ</h2>
+
+<ul>
+  <li>केवल शेयर की कीमत देखकर कंपनी को सस्ता या महँगा समझना।</li>
+  <li>यह मान लेना कि Large Cap कंपनी में कोई जोखिम नहीं है।</li>
+  <li>यह मान लेना कि Small Cap कंपनी हमेशा अधिक Return देगी।</li>
+  <li>Market Cap और Free-Float Market Cap को एक जैसा समझना।</li>
+  <li>Market Cap को कंपनी की वास्तविक संपत्ति समझ लेना।</li>
+  <li>कंपनी के Debt, Profit और Cash Flow को नजरअंदाज करना।</li>
+  <li>पुरानी Market Cap Classification को बिना जाँच के इस्तेमाल करना।</li>
+  <li>केवल Market Cap के आधार पर निवेश या ट्रेडिंग का निर्णय लेना।</li>
+</ul>
+
+  <h2>14. Market Capitalization का सही तरीके से विश्लेषण कैसे करें?</h2>
+
+<p>
+किसी कंपनी का अध्ययन करते समय Market Cap को अकेले नहीं,
+बल्कि दूसरे Financial और Market Indicators के साथ समझना चाहिए।
+</p>
+
+<p>एक व्यवस्थित विश्लेषण के लिए इन बिंदुओं पर ध्यान दें:</p>
+
+<ol>
+  <li>कंपनी का वर्तमान Market Capitalization देखें।</li>
+  <li>उसकी लागू Large, Mid या Small Cap Category की पुष्टि करें।</li>
+  <li>कंपनी की Sales और Profit Growth का अध्ययन करें।</li>
+  <li>Debt और Cash Flow की स्थिति समझें।</li>
+  <li>P/E, P/B और अन्य Valuation Ratios देखें।</li>
+  <li>कंपनी के उद्योग और प्रतिस्पर्धियों से तुलना करें।</li>
+  <li>Trading के लिए Volume, Liquidity और Volatility भी देखें।</li>
+  <li>निवेश या ट्रेडिंग से पहले जोखिम और अपनी क्षमता का आकलन करें।</li>
+</ol>
+
+<div class="info-box">
+  <strong>RAVUKSA FINTECH Learning Note:</strong>
+  Market Capitalization कंपनी का आकार समझने का एक महत्वपूर्ण
+  तरीका है, लेकिन किसी कंपनी की गुणवत्ता या भविष्य की सफलता
+  का प्रमाण नहीं है। सही विश्लेषण के लिए Fundamental Analysis,
+  Valuation और Risk Management को साथ में समझना जरूरी है।
+</div>
+
+<h2>15. Frequently Asked Questions (FAQs)</h2>
+
+<div class="faq-item">
+  <h3>Q1. Market Capitalization क्या होता है?</h3>
+  <p>
+  Market Capitalization किसी कंपनी के कुल Outstanding Shares
+  और मौजूदा शेयर कीमत का गुणनफल होता है। यह कंपनी के Equity
+  Shares का कुल बाजार मूल्य बताता है।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q2. Market Cap की गणना कैसे की जाती है?</h3>
+  <p>
+  Market Cap = Current Share Price × Total Outstanding Shares.
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q3. Large Cap कंपनियाँ कौन-सी होती हैं?</h3>
+  <p>
+  SEBI की Equity Mutual Fund Classification में Full Market
+  Capitalization Ranking के अनुसार पहली 100 कंपनियाँ Large
+  Cap मानी जाती हैं।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q4. Mid Cap कंपनियाँ कौन-सी होती हैं?</h3>
+  <p>
+  निर्धारित Ranking में 101वीं से 250वीं तक की कंपनियाँ
+  Mid Cap श्रेणी में आती हैं।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q5. Small Cap कंपनियाँ कौन-सी होती हैं?</h3>
+  <p>
+  निर्धारित Ranking में 251वीं और उसके बाद आने वाली कंपनियाँ
+  Small Cap श्रेणी में आती हैं।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q6. क्या Small Cap कंपनियाँ हमेशा अधिक Return देती हैं?</h3>
+  <p>
+  नहीं। Small Cap कंपनियों में Growth की संभावनाएँ हो सकती हैं,
+  लेकिन उनमें अधिक Volatility, Liquidity और Business Risk
+  भी हो सकते हैं। Return की कोई गारंटी नहीं होती।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q7. क्या Large Cap कंपनियों में जोखिम नहीं होता?</h3>
+  <p>
+  नहीं। Large Cap कंपनियों के शेयरों में भी बाजार जोखिम,
+  आर्थिक जोखिम, कंपनी से जुड़े जोखिम और कीमतों में गिरावट
+  की संभावना रहती है।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q8. Free-Float Market Cap क्या है?</h3>
+  <p>
+  Free-Float Market Cap केवल उन शेयरों के बाजार मूल्य को
+  दर्शाता है जिन्हें लागू Index Methodology के अनुसार
+  सामान्य ट्रेडिंग के लिए उपलब्ध माना जाता है।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q9. क्या Market Cap और Company Valuation एक ही हैं?</h3>
+  <p>
+  नहीं। Market Cap कंपनी के Equity Shares का बाजार मूल्य
+  है। Company Valuation में कंपनी की कमाई, Cash Flow,
+  Debt, Assets और भविष्य की संभावनाओं सहित कई पहलुओं
+  का विश्लेषण किया जाता है।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q10. Market Cap Classification कितनी बार बदलती है?</h3>
+  <p>
+  SEBI के निर्धारित Mutual Fund Classification Framework
+  के अनुसार AMFI कंपनियों की सूची हर छह महीने में अपडेट
+  करता है। इसलिए कंपनियों की श्रेणी बदल सकती है।
+  </p>
+</div>
+
+<div class="faq-item">
+  <h3>Q11. क्या Market Cap देखकर शेयर खरीदना चाहिए?</h3>
+  <p>
+  केवल Market Cap देखकर निवेश का निर्णय नहीं लेना चाहिए।
+  कंपनी की Financial Health, Valuation, Business Model,
+  Management, Industry और Risk का भी अध्ययन करना चाहिए।
+  </p>
+</div>
+
+<h2>16. Official Learning Resources</h2>
+
+<p>
+Market Capitalization और भारतीय शेयर बाजार की Classification
+को अधिक गहराई से समझने के लिए नीचे दिए गए आधिकारिक स्रोतों
+का अध्ययन करें।
+</p>
+
+<ul class="source-list">
+  <li>
+    <a href="https://www.sebi.gov.in/" target="_blank" rel="noopener noreferrer">
+      SEBI – Securities and Exchange Board of India
+    </a>
+    <br>भारतीय प्रतिभूति बाजार के नियम और निवेशक शिक्षा।
+  </li>
+
+  <li>
+    <a href="https://www.amfiindia.com/otherdata/categorisation-of-stocks" target="_blank" rel="noopener noreferrer">
+      AMFI – Categorisation of Stocks
+    </a>
+    <br>Large Cap, Mid Cap और Small Cap कंपनियों की आधिकारिक सूची।
+  </li>
+
+  <li>
+    <a href="https://www.nseindia.com/" target="_blank" rel="noopener noreferrer">
+      NSE – National Stock Exchange of India
+    </a>
+    <br>भारतीय शेयर बाजार, कंपनियों और Market Information से संबंधित जानकारी।
+  </li>
+
+  <li>
+    <a href="https://www.bseindia.com/" target="_blank" rel="noopener noreferrer">
+      BSE – Bombay Stock Exchange
+    </a>
+    <br>Listed Companies और Market Information।
+  </li>
+</ul>
+
+<div class="article-disclaimer">
+  <strong>Educational Disclaimer:</strong>
+  यह लेख केवल Financial Education और Market Awareness के उद्देश्य
+  से तैयार किया गया है। इसमें दी गई जानकारी को किसी भी प्रकार की
+  व्यक्तिगत निवेश सलाह, खरीदने या बेचने की सिफारिश अथवा Return
+  की गारंटी न समझें। शेयर बाजार में निवेश और ट्रेडिंग में जोखिम
+  होता है। किसी भी वित्तीय निर्णय से पहले स्वयं Research करें
+  और आवश्यकता होने पर योग्य वित्तीय सलाहकार से परामर्श लें।
+  <br><br>
+  <strong>RAVUKSA FINTECH</strong> का उद्देश्य निवेशकों को
+  Financial Education, Market Learning और Risk Awareness
+  प्रदान करना है।
+</div>
+
+</article>
+
+<footer class="article-footer">
+  <p>© 2026 RAVUKSA FINTECH. All Rights Reserved.</p>
+  <p>
+    <a href="/ravuksa-fintech/">Home</a> |
+    <a href="/ravuksa-fintech/articles/">Articles & Insights</a> |
+    <a href="/ravuksa-fintech/features/financial-tools-hub.html">Financial Tools</a>
+  </p>
+  <p>Learn. Understand. Make Informed Decisions.</p>
+</footer>
+
+</main>
+
+</body>
+</html>
